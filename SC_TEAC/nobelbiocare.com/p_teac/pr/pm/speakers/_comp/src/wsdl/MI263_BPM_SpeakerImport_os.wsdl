@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/BPM/Speakers" xmlns:p2="http://server.speakers.nobelbiocare.cq.namics.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="MI263_BPM_SpeakerImport_os" targetNamespace="http://nobelbiocare.com/BPM/Speakers">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+    <ifw:category>ifmmessif</ifw:category>
+    <ifw:VersionID>7dc8bc116b9111e6b94d0000005f8a66</ifw:VersionID>
+    <ifw:lifeCycleInfo>
+      <objectState/>
+      <objectstatus value="A"/>
+      <personresponsible value="chdaro"/>
+      <changed by="chdaro" on="1472218330536"/>
+    </ifw:lifeCycleInfo>
+    <ifw:runtimeVersion uri="urn:sap-com:soap:runtime:application:client"/>
+    <ifw:communicationProfile uri="prf_dt_if_com_stateless"/>
+    <ifw:securityProfile uri="prf_dt_if_sec_basic"/>
+    <ifw:interfacePattern p2p="true"/>
+    <ifw:isSensitiveData>false</ifw:isSensitiveData>
+    <ifw:classifications>
+      <ifw:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"/>
+      <ifw:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="050ad8c26ba6379e9f78e3736526861b"/>
+    </ifw:classifications>
+    <ifw:additionalAttributes/>
+    <ifw:methods>
+      <ifw:method name="MI263_BPM_SpeakerImport_os">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>false</ifw:isInbound>
+        <ifw:interfaceCategory>outbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:contextobjects/>
+      </ifw:method>
+    </ifw:methods>
+    <ifw:messages>
+      <ifw:message name="p2.IOException">
+        <ifw:messType>ifmextmes</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ED_CQ5_Speakers_wsdl</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://nobelbiocare.com/BPM/Speakers</ifw:elem>
+          <ifw:elem id="SUBNAME">IOException</ifw:elem>
+          <ifw:elem id="SUBNAMESPACE">http://server.speakers.nobelbiocare.cq.namics.com/</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://nobelbiocare.com/BPM/Speakers</ifw:technicalNamespace>
+        <ifw:VersionID>14510f056b9111e6b6ed0000005f8a66</ifw:VersionID>
+      </ifw:message>
+      <ifw:message name="p2.uploadFile">
+        <ifw:messType>ifmextmes</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ED_CQ5_Speakers_wsdl</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://nobelbiocare.com/BPM/Speakers</ifw:elem>
+          <ifw:elem id="SUBNAME">uploadFile</ifw:elem>
+          <ifw:elem id="SUBNAMESPACE">http://server.speakers.nobelbiocare.cq.namics.com/</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://nobelbiocare.com/BPM/Speakers</ifw:technicalNamespace>
+        <ifw:VersionID>14510f056b9111e6b6ed0000005f8a66</ifw:VersionID>
+      </ifw:message>
+      <ifw:message name="p2.uploadFileResponse">
+        <ifw:messType>ifmextmes</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ED_CQ5_Speakers_wsdl</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://nobelbiocare.com/BPM/Speakers</ifw:elem>
+          <ifw:elem id="SUBNAME">uploadFileResponse</ifw:elem>
+          <ifw:elem id="SUBNAMESPACE">http://server.speakers.nobelbiocare.cq.namics.com/</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://nobelbiocare.com/BPM/Speakers</ifw:technicalNamespace>
+        <ifw:VersionID>14510f056b9111e6b6ed0000005f8a66</ifw:VersionID>
+      </ifw:message>
+    </ifw:messages>
+    <ifw:matchingInterfaces/>
+    <ifw:genericProperties>
+      <ifw:swcvinfo>
+        <ifw:guid>dc2258106ad711e697b4e1ec0a3e5c13</ifw:guid>
+        <ifw:name>BPM, 1.0 of nobelbiocare.com</ifw:name>
+      </ifw:swcvinfo>
+      <ifw:languages>
+        <ifw:language internalCode="EN" original="true"/>
+      </ifw:languages>
+      <ifw:documentation type="I">
+        <name>_ID_050ad8c26ba6379e9f78e3736526861b_ifmmessif</name>
+        <namespace>http://nobelbiocare.com/BPM/Speakers</namespace>
+      </ifw:documentation>
+    </ifw:genericProperties>
+  </ifw:properties>
+  <wsp:Policy wsu:Id="OP_MI263_BPM_SpeakerImport_os"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://server.speakers.nobelbiocare.cq.namics.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://server.speakers.nobelbiocare.cq.namics.com/">
+      <xsd:element name="uploadFile" type="uploadFile"/>
+      <xsd:element name="IOException" type="IOException"/>
+      <xsd:element name="uploadFileResponse" type="uploadFileResponse"/>
+      <xsd:complexType name="speakerResponseObject">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="speakerId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="status" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="fileUploader">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="biographyC" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="contactAliasC" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="fileContent" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="fileName" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="fileType" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="id" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="operations" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="pictureIdC" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="preferredLectureTopicsC" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="speakerLanguagesC" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="speakerTypeC" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="title" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="uploadFile">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="file" type="fileUploader"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="IOException">
+        <xsd:sequence/>
+      </xsd:complexType>
+      <xsd:complexType name="uploadFileResponse">
+        <xsd:sequence>
+          <xsd:element form="qualified" minOccurs="0" name="speakerResponse" type="speakerResponseObject"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="p2.uploadFile">
+    <wsdl:documentation/>
+    <wsdl:part element="p2:uploadFile" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="p2.uploadFileResponse">
+    <wsdl:documentation/>
+    <wsdl:part element="p2:uploadFileResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="p2.IOException">
+    <wsdl:documentation/>
+    <wsdl:part element="p2:IOException" name="IOException"/>
+  </wsdl:message>
+  <wsdl:portType name="MI263_BPM_SpeakerImport_os">
+    <wsdl:documentation/>
+    <wsdl:operation name="MI263_BPM_SpeakerImport_os">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_MI263_BPM_SpeakerImport_os"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:p2.uploadFile"/>
+      <wsdl:output message="p1:p2.uploadFileResponse"/>
+      <wsdl:fault message="p1:p2.IOException" name="p2.IOException"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MI263_BPM_SpeakerImport_osBinding" type="p1:MI263_BPM_SpeakerImport_os">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="MI263_BPM_SpeakerImport_os">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="p2.IOException">
+        <soap:fault xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="p2.IOException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

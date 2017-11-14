@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webservices xmlns="http://www.sap.com/webas/710/ws/webservices-j2ee-engine-alt-descriptor">
+  <webservice-description>
+    <webservice-name>MI255_BPM_TEAC_Create_Update_Course_ia_nobelbiocarecom2Fpteac2Fpr2Fpm2Fcourse2FETStartMI255</webservice-name>
+    <wsdl-file>META-INF/wsdl/nobelbiocarecom2Fpteac2Fpr2Fpm2Fcourse2FETStartMI255/src/wsdl/MI255_BPM_TEAC_Create_Update_Course_ia.wsdl</wsdl-file>
+    <wsdl-service namespace="http://nobelbiocare.com/BPM/TnE">MI255_BPM_TEAC_Create_Update_Course_iaService</wsdl-service>
+    <port-component>
+      <port-name>MI255_BPM_TEAC_Create_Update_Course_ia</port-name>
+      <wsdl-port namespace="http://nobelbiocare.com/BPM/TnE">MI255_BPM_TEAC_Create_Update_Course_iaPort</wsdl-port>
+      <url>/bpm/nobelbiocarecom/pteac/pr/pm/course/ETStartMI255</url>
+      <implementation-link>
+        <property name="implementation-id">GalaxyImpl</property>
+        <property name="service-identifier">nobelbiocare.com/p_teac/pr/pm/course/ET_Start_MI255</property>
+      </implementation-link>
+      <meta-data>
+        <property name="transport">soap_and_xi</property>
+      </meta-data>
+    </port-component>
+  </webservice-description>
+</webservices>

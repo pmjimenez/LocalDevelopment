@@ -1,0 +1,49 @@
+>>> === execute (on Mon Nov 06 17:11:37 CET 2017)===
+com.sap.tc.buildplugin.pdef.PdefValidator: Execution starts on Mon Nov 06 17:11:37 CET 2017
+
+
+
+File: sourceDir1: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\P_SFDC_SC\nobelbiocare.com\p_sfdc\_comp\src
+File: compilePPDir1: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\P_SFDC_SC\nobelbiocare.com\p_sfdc_sc\_comp\gen\default\public\default
+File: compilePPDir2: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\sc_sfdc\_comp\gen\default\public\default
+>>> === getProductValueMap===
+InputFileMap: {.description=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\P_SFDC_SC\nobelbiocare.com\p_sfdc\_comp\src\.description}
+Reading product info from: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\P_SFDC_SC\nobelbiocare.com\p_sfdc\_comp\src\.description
+ProductValueMap: {Name=P_SFDC, Vendor=nobelbiocare.com, Version=1.0}
+<<< === getProductValueMap===
+>>> === generateProductCR===
+>>> === getSoftcompValueMap===
+InputFileMap: {.description=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\P_SFDC_SC\nobelbiocare.com\p_sfdc_sc\_comp\gen\default\public\default\.description}
+SoftcompValueMap: {Name=P_SFDC_SC, GUID=99d2a400-e9e5-11e6-b2b9-df5b0a3e7548, Vendor=nobelbiocare.com, ElementTypeID=0, Version=1.0}
+<<< === getSoftcompValueMap===
+>>> === getSoftcompValueMap===
+InputFileMap: {.description=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\sc_sfdc\_comp\gen\default\public\default\.description}
+SoftcompValueMap: {Name=SC_SFDC, GUID=8d5acea0-e9e5-11e6-94ce-df5b0a3e7548, Vendor=nobelbiocare.com, ElementTypeID=0, Version=1.0}
+<<< === getSoftcompValueMap===
+Opening model input stream from plugin resource for task: ModelImport
+Resource opened for ModelImport: data/cimmodel.dat
+>>> === createCIMContentAndExport===
+No PPMS numbers available in product
+>>> === addSoftwareComponentsToSoftwareUnit===
+Next softcomp map to add: {Name=P_SFDC_SC, GUID=99d2a400-e9e5-11e6-b2b9-df5b0a3e7548, Vendor=nobelbiocare.com, ElementTypeID=0, Version=1.0}
+unit: //plugin/active:SAP_SoftwareFeature.IdentifyingNumber="0",Name="null",ProductName="P_SFDC",Vendor="nobelbiocare.com",Version="1.0"
+name: P_SFDC_SC
+vendor: nobelbiocare.com
+version: 1.0
+elementTypeId: 0
+GUID: 99d2a400-e9e5-11e6-b2b9-df5b0a3e7548
+Next softcomp map to add: {Name=SC_SFDC, GUID=8d5acea0-e9e5-11e6-94ce-df5b0a3e7548, Vendor=nobelbiocare.com, ElementTypeID=0, Version=1.0}
+unit: //plugin/active:SAP_SoftwareFeature.IdentifyingNumber="0",Name="null",ProductName="P_SFDC",Vendor="nobelbiocare.com",Version="1.0"
+name: SC_SFDC
+vendor: nobelbiocare.com
+version: 1.0
+elementTypeId: 0
+GUID: 8d5acea0-e9e5-11e6-94ce-df5b0a3e7548
+<<< === addSoftwareComponentsToSoftwareUnit===
+<<< === createCIMContentAndExport===
+Opening model input stream from plugin resource for task: ModelCopy
+Resource opened for ModelCopy: data/cimmodel.dat
+<<< === generateProductCR===
+>>> === generateProductLD===
+<<< === generateProductLD===
+com.sap.tc.buildplugin.pdef.PdefValidator: Execution ends on Mon Nov 06 17:11:39 CET 2017

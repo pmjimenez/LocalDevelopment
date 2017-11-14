@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>ldap/j2ee/extlib/ldapapi</name>
+<vendor>nobelbiocare.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>External Library</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>api</name>
+<purpose>compilation</purpose>
+</public-part>
+<dependencies/>
+</metadata>
+<source-components/>
+<archives>
+<archive location="ldap.jar" type="filesystem">
+<additional-path attributes="jar,java-library">lib/java/ldap.jar</additional-path>
+</archive>
+</archives>
+<entities>
+<entity>
+<name>ldap.jar</name>
+<entity-type>Archive</entity-type>
+<entity-sub-type>Java Library</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="ldap.jar" source-location="DC" source-path="libraries">
+<file path="lib/java/ldap.jar" source-path="ldap.jar"/>
+</fileset>
+</entity>
+</entities>
+</content>

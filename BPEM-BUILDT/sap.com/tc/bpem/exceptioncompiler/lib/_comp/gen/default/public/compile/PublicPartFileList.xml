@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>tc/bpem/exceptioncompiler/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>compile</name>
+<purpose>compilation</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bi/libs</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">compile</pp-ref>
+<pp-ref purpose="infrastructure">libinf</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bi/libs</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">compile</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bi/model/flow</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bi/model/flow</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bi/model/flow</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bpmn2tn/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">assemble</pp-ref>
+<pp-ref purpose="compilation">compile</pp-ref>
+<pp-ref purpose="infrastructure">libinf</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bpmn2tn/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">assemble</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bpmn2tn/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">compile</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bpmn2tn/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">libinf</pp-ref>
+<at-build-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/compiler/base</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">compile</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/wsdl20</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/wsdl20</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/wsdl20</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/xsd1</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/xsd1</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/xsd1</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/moin/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>External Library</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components/>
+<archives>
+<archive location="javalib" path="lib/java/sap.com~tc~bpem~exceptioncompiler~lib~compile.jar" type="jar">
+<property key="attributes">jar,java-library</property>
+</archive>
+<archive location="jdoclet" path="doc/java/sap.com~tc~bpem~exceptioncompiler~lib~compile.jdar" type="zip">
+<property key="attributes">java-documentation-archive,solid</property>
+</archive>
+<archive location="srcarchive" path="src/java/src.zip" type="zip"/>
+</archives>
+<entities>
+<entity>
+<name>com</name>
+<package>com</package>
+<entity-type>Java Package Tree</entity-type>
+<entity-sub-type>Class</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="gen" source-path="classes">
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/exception/ExceptionCompiler.class"/>
+</fileset>
+<fileset location="jdoclet" source-location="gen" source-path="javadoc/compile">
+<file path=".digest"/>
+<file path=".log"/>
+<file path=".symbols"/>
+<file path="class-list"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/exception/ExceptionCompiler.jdoc"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/exception/package-info.jdoc"/>
+<file path="publisher-doc/sapcm.dc/sap.com/tc/bpem/exceptioncompiler/lib/publisher-info.jdoc"/>
+<file path="publisher-doc/sapcm.pp/sap.com/tc/bpem/exceptioncompiler/lib/compile/publisher-info.jdoc"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="src">
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/exception/ExceptionCompiler.java"/>
+</fileset>
+</entity>
+</entities>
+</content>

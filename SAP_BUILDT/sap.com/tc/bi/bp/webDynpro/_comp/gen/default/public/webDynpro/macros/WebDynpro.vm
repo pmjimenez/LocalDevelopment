@@ -1,0 +1,215 @@
+##
+## Ant build script for a WebDynpro DC
+##
+#macro (BuildWDComponent)
+
+    ## check if the DC is actually a Mobile WebDynpro DC
+    #set ($mobileProperties = $dc_util.getPropertiesAsMap($dc_properties, "mobile-webdynpro", "http://xml.sap.com/2005/06/MobilePlatform"))
+    #if ($mobileProperties.size() > 0)
+        #set ($isMobileWebDynpro = true)
+        #set ($mobileType = $mobileProperties.get("type"))
+        ## for a mobile webdynpro we have to wrap the primary deployable
+        ## archive in another SDA. Thus we will generate the primary deployable
+        ## archive in different folders.
+        #set ($wd_primary_sda = "${dc_gen_tempDir}/${wd_deployFile}.sda")
+        #if ($mobileType == "deployable")
+        $dc_util.logInfo("  Component is a Mobile Web Dynpro component, deployable will be wrapped.")
+        #elseif ($mobileType == "module")
+        $dc_util.logInfo("  Component is a Mobile Web Dynpro module.")
+        #else
+        $dc_util.logInfo("  Unknown Mobile Web Dynpro type ${mobileType}.")
+        #end
+    #else
+        #set ($isMobileWebDynpro = false)
+        #set ($wd_primary_sda = "${dc_deployDir}/${wd_deployFile}.ear")
+    #end
+
+    ## check if the DC is a WebDynpro Pattern
+    #set ($wdpatternProperties = $dc_util.getPropertiesAsMap($dc_properties, "webdynpro-pattern", "http://xml.sap.com/2005/06/WebDynproPatterns"))
+    #if ($wdpatternProperties.size() > 0)
+        #set ($isWebDynproPattern = true)
+        #if ($isMobileWebDynpro)
+            $dc_util.fail("A WebDynpro component can not be a mobile component and a pattern component.")
+        #end
+    #else
+        #set ($isWebDynproPattern = false)
+    #end
+    $dc_util.setGlobalContextValue("isWebDynproPattern", $isWebDynproPattern)
+
+    #if ($isWebDynproPattern)
+        ## WebDynpro Patterns will include Jar files from compilation
+        ## public parts in the WDA, thus we have to create public parts
+        ## first.
+        $antBase.addTargetDependency("createWDA", "createPublicParts")
+        $dc_util.logInfo("  Component is a Web Dynpro Pattern component, public part archives will be included in deployable.")
+    #else
+        $antBase.addTargetDependency("createPublicParts", "createDeployArchive")
+    #end
+
+    $dc_util.logInfo("  Web Dynpro project version: ${wd_projectVersion}")
+
+    ## check for JSF
+    #set ($wdProperties = $dc_util.getFlatPropertiesAsMap($dc_properties, "http://xml.sap.com/2004/07/DCProperties/WebDynpro"))
+    #set ($applicationDescriptor = false)
+    #if ($wdProperties.size() > 0)
+        #set ($wd_jsfVersion = false)
+        #set ($wd_jsfVersion = $wdProperties.get("wdFacesVersion"))
+        #if ($wd_jsfVersion)
+            $dc_util.logInfo("  Web Dynpro JSF version:     ${wd_jsfVersion}")
+            #if ($dc_util.compareVersions("${wd_jsfVersion}", "1.0") >= 0)
+                $dc_util.setGlobalContextValue("dc_ear_version", "5.0")
+                $dc_util.setGlobalContextValue("dc_web_version", "2.5")
+                #if ($dc_sourceDirs.contains("META-INF"))
+                    #if ($dc_util.isFile("${dc_rootDir}/META-INF/application.xml"))
+                        #set ($applicationDescriptor = "${dc_rootDir}/META-INF/application.xml")
+                    #end
+                #end
+            #else
+                <!-- JSF version lower than 1.0 -->
+            #end
+        #end
+    #end
+
+    ##
+    ## Generate everything
+    ##
+    #######################
+    #StartTarget("compile")
+        #FullDefaultWebDynproGeneration($dc_packageDirsAsFiles)
+        $webDynproBase.convertContentXLF()
+    #EndTarget()
+
+
+    ##
+    ## Create WDA (Web Dynpro Archive)
+    ##
+    ###################################
+    #StartTargetDep("createWDA" "compile")
+        ## pack WebDynpro archive
+        #set($wdapp_rootfolder = $dc_util.createTempDir("wda-pp"))
+        #CreateWebDynproArchivePP($wdapp_rootfolder)
+        #set($dummy = $dc_depend_assemblyPPs.add($wdapp_rootfolder))
+    #EndTarget()
+
+
+    ##
+    ##  Create Deployable Archive
+    ##
+    ################################
+
+    #StartTargetDep("createDeployArchive" "createWDA")
+
+        <echo message="Create deploy file $wd_deployFile"/>
+        #MkDir($dc_deployDir)
+        #CreateDefaultJ2EEEngineDescriptor("${dc_gen_tempDir}/wd.xml")
+
+        #set($outs = $dc_util.getGeneratorTypeOutputFolders("sap.com~wdgen", "default"))
+        <!-- $outs -->
+        #if ($outs.size() > 0)
+            #if ($outs.size() > 1)
+                $dc_util.logWarning("Web Dynpro generator was executed more than once, using application descriptors from first invocation.");
+            #end
+            #set($wdgen_outputDir = "$outs.get(0)")
+        #else
+            $dc_util.fail("Can not create deploy archive, no output folder for Web Dynpro generator found.");
+        #end
+
+        ##BeginCreateDeployUnit("default", "$dc_deployDir" $dc_depend_assemblyPPs)
+        #BeginCreateDeployFile("sap.com~j2ee.EAR_SDA" "${wd_primary_sda}" "${dc_gen_tempDir}/wd.xml" $dc_depend_assemblyPPs)
+            #if($applicationDescriptor)
+            <descriptor type="application.xml"             file="${applicationDescriptor}"/>
+            #else
+            <descriptor type="application.xml"             file="${wdgen_outputDir}/application.xml"/>
+            #end
+            <descriptor type="application-j2ee-engine.xml" file="${wdgen_outputDir}/application-j2ee-engine.xml"/>
+            <option key="update-descriptors" value="true"/>
+            <moduletype mode="exclude-immediate" type="SAP-J2EE-Module[container-type[MOBILE]]"/>
+            <moduletype mode="include-immediate" type="SAP-J2EE-Module"/>
+            <moduletype mode="include-immediate" type="J2EE-Module"/>
+            <moduletype mode="exclude-immediate" type="jar"/>
+            #if($dc_util.isDefinedSourceFolder("META-INF"))
+            <fileset dir="${dc_rootDir}" >
+                <include name="META-INF/**"/>
+            </fileset>
+            #end
+        #EndCreateDeployFile()
+    #EndTarget()
+
+
+    ##
+    ## Ant target to copy the files for the public parts
+    ##
+    #if ($isMobileWebDynpro)
+        #if ($mobileType == "deployable")
+            #StartTargetDep("createMobileDeployArchive" "createDeployArchive")
+
+                #set($mobile_inf = "MOBILE-INF")
+                #if ($dc_util.isDefinedSourceFolder("${mobile_inf}"))
+                    #BeginZip("${dc_gen_tempDir}/mobile-descriptions.zip")
+                        <fileset dir="${dc_rootDir}/${mobile_inf}"/>
+                    #EndZip()
+                #else
+                    <echo message="Warning: ${mobile_inf} is not defined as source folder"/>
+                #end
+
+                ## create deploy descriptor for sda
+                #CreateDefaultJ2EEEngineDescriptor("${dc_gen_tempDir}/SDM-dd.xml")
+                #BeginCreateDeployFile("sap.com~j2ee.EAR_SDA" "${dc_deployDir}/${wd_deployFile}.sda" "${dc_gen_tempDir}/SDM-dd.xml" $dc_depend_assemblyPPs)
+                    <deployoption key="include-source-archive" value="false"/>
+                    <deployoption key="include-deploy-dependencies" value="false"/>
+                    <module file="${dc_gen_tempDir}/mobile-descriptions.zip" attributes="SAP-J2EE-Module[container-type[MOBILE]]"/>
+                    <module file="${wd_primary_sda}" attributes="SAP-J2EE-Module[container-type[MOBILE]]"/>
+                    <moduletype mode="include-immediate" type="SAP-J2EE-Module[container-type[MOBILE]]"/>
+                    <moduletype mode="exclude"           type=""/>
+                #EndCreateDeployFile()
+            #EndTarget()
+        #end
+    #end
+
+    #if ($isMobileWebDynpro && ($mobileType == "module"))
+        #StartTargetDep("createPublicParts" "compile")
+            #foreach($pp in $dc_public_parts)
+                #BeginPackPP($pp)
+                <packer location="filesystem" type="filesystem">
+                    <property key="attributes" value="SAP-J2EE-Module[container-type[MOBILE]]"/>
+                </packer>
+                <entityhandler classname="com.sap.tc.buildplugin.pp.entity.EHDeployArchive">
+                    <entitytype type="Mobile WebDynpro Module"/>
+                    <property key="packer-location" value="filesystem"/>
+                    <property key="path" value="lib/mobilewebdynpro/${wd_deployFile}.sda"/>
+                    <property key="file" value="${dc_gen_tempDir}/${wd_deployFile}.sda"/>
+                </entityhandler>
+                #EndPackNamedPP($pp)
+            #end
+        #EndTarget()
+    #else
+        $javaBase.createPublicParts()
+    #end
+#end
+
+#macro(AddRTDep $unit $type $subtype $vendor $name)
+    $unit.addRuntimeDependency($dc_depend_allDependencies.createDependency($name, $vendor, $type, $subtype, "sap.com"))
+#end
+
+#macro(CheckWDDependencies)
+    #set($defaultUnit = false)
+    #set($defaultUnit = $dc_deployUnits.getDeployUnit("default"))
+    #if($defaultUnit)
+        #if ($wd_projectVersion == 0)
+            #AddRTDep($defaultUnit "J2EE Server Component" "Library" "sap.com" "tc/bl/jrfc/api")
+            #AddRTDep($defaultUnit "J2EE Server Component" "Library" "sap.com" "tc/cmi")
+            #AddRTDep($defaultUnit "J2EE Server Component" "Library" "sap.com" "tc/graphics/igs")
+            #AddRTDep($defaultUnit "J2EE Server Component" "Library" "sap.com" "com.sap.lcr.api.cimclient")
+            #AddRTDep($defaultUnit "J2EE Server Component" "Library" "sap.com" "tc/je/webservices/lib")
+            #AddRTDep($defaultUnit "J2EE Server Component" "Library" "sap.com" "tc/ddic/runtime/facade")
+            #AddRTDep($defaultUnit "J2EE Server Component" "Library" "sap.com" "tc/aii/base/offline/facade")
+
+            #AddRTDep($defaultUnit "J2EE Server Component" "Service" "sap.com" "sld")
+            #AddRTDep($defaultUnit "J2EE Server Component" "Service" "sap.com" "tc/je/security/api")
+
+            #AddRTDep($defaultUnit "J2EE" "Enterprise Application" "sap.com" "tc/wd/api")
+        #end
+    #else
+        $dc_util.fail("Could not get default deploy unit.")
+    #end
+#end

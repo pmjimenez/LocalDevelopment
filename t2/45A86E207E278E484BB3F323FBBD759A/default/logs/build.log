@@ -1,0 +1,162 @@
+Development Component Build (2017-11-14 10:26:26 GMT+01:00 (CET))
+  Component name: p_sfdc/infra/sgc
+  Component vendor: nobelbiocare.com
+  SC compartment: SC_SFDC
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: pedro.jimenez@MADNB2016
+  DC root folder: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\p_sfdc\infra\sgc\_comp\
+  DC type: MassConfiguration
+  Host: MADNB2016
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/enterpriseApplication"
+   validating dependency to  public part "def" of DC "sap.com/bie/sca/scdl/contributors/mc"
+   validating dependency to  public part "def" of DC "sap.com/bie/sca/scdl/gen"
+   validating dependency to  public part "def" of DC "sap.com/bie/sca/scdl/gen/mc"
+   validating dependency to  public part "def" of DC "sap.com/bie/sca/scdl/gen/xlf2prop"
+   validating dependency to  public part "MM_Inf" of DC "sap.com/ide/es/config/mc/model/bi"
+   validating dependency to  public part "MM_Inf" of DC "sap.com/tc/moin/bi/model/textverticalization"
+   validating dependency to  public part "def" of DC "sap.com/tc/moin/bi/moinext"
+   validating dependency to  public part "libinf" of DC "sap.com/tc/moin/bi/moinlibs"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/enterpriseApplication
+   starting build plugin from : D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\enterpriseApplication\_comp\gen\default\public\enterpriseApplication\
+
+
+
+Build Plugin 'EnterpriseApplicationPlugin', Version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:50:02 +0200, CL209430)
+   development component:  p_sfdc/infra/sgc (nobelbiocare.com)
+      software component:  SC_SFDC (nobelbiocare.com)
+       support component:  Default
+                location:  localDevelopment
+                    type:  MassConfiguration
+           build variant:  default
+         source location:  pedro.jimenez@MADNB2016
+         output location:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\45A86E207E278E484BB3F323FBBD759A\default
+       generation folder:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\45A86E207E278E484BB3F323FBBD759A
+       plugin start time:  2017-11-14 10:26:31 GMT+01:00 (CET)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.45-b01 (1.6, Sun Microsystems Inc.)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Source folder "mc" exists but is empty and will be ignored.
+Checking path lengths for sources
+Path length checks finished in 0 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.094 seconds
+ 
+Creating Ant build file..
+  Creating output file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\45A86E207E278E484BB3F323FBBD759A\default\logs\build.xml
+  Using Java class:     com.sap.tc.buildplugin.BuildEnterpriseApplication
+MoinInit generator started.
+Metamodels found.
+Output folder found.
+Target "createPublicParts" has a dependency on "compile" but no such target exists. Dependency will be ignored.
+Target "createDeployArchive" has a dependency on "compile" but no such target exists. Dependency will be ignored.
+Target "Xlf2PropBase" has a dependency on "compile" but no such target exists. Dependency will be ignored.
+Target "ScdlBase" has a dependency on "compile" but no such target exists. Dependency will be ignored.
+Build file creation finished in 0.406 seconds
+ 
+Starting Ant..
+  Using build file:     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\45A86E207E278E484BB3F323FBBD759A\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+ScdlBase:
+  [MOINInit] Meta models found.
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ESCONF_BUILDT\sap.com\ide\es\config\mc\model\bi\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~ide~es~config~mc~model_xmi.zip
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip
+  [MOINInit] WARNING: [System.err] [Invoked from com.sap.bc.krn.perf.PerfTimes.internal_TRC(PerfTimes.java:103)]
+  [MOINInit] WARNING: [System.err] PerfTimes : loadNativeLayer: loading jperflib failed. no jperflib in java.library.path
+  [MOINInit] DataArea name: DefaultDataArea
+  [MOINInit] Moin initialized in 2364 milliseconds.
+      [echo] Registering folder: gensrc/extcfg for path: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\45A86E207E278E484BB3F323FBBD759A\gensrc\extcfg/
+      [echo] Starting Extension Configuration generator...
+  [gen_scdl] 		[SCDL_GEN] Initializing Scdl Generation...
+  [gen_scdl] 		[SCDL_GEN] Initialization successfully completed.
+  [gen_scdl] 		[SCDL_GEN] Starting retrieval of information from contributors...
+  [gen_scdl] 		[SCDL_GEN] Information retrieval from contributors successfully completed!
+  [gen_scdl] 		[SCDL_GEN] Starting composite export to SCDL...
+  [gen_scdl] 			[SCDL-EXPORT] Scdl file output location: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\45A86E207E278E484BB3F323FBBD759A/scdl_output\META-INF\p_sfdc~infra~sgc.composite
+  [gen_scdl] 			[SCDL-EXPORT] sca contribution XML output location: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\45A86E207E278E484BB3F323FBBD759A/scdl_output\META-INF\sca-contribution.xml
+  [gen_scdl] 		[SCDL_GEN] Conversion successfully completed!
+     [timer] Extension Configuration generator finished in 1.049 seconds
+ 
+[MOINShutdown] About to shutdown MOIN...
+[MOINShutdown] MOIN shut down in 63 milliseconds.
+ 
+Xlf2PropBase:
+      [echo] Start XLF conversion
+  [xlf2prop] Found 0 XLF files to convert in folder "mc"
+     [timer] XLF conversion finished in 0 seconds
+ 
+ 
+createPublicParts:
+  [pppacker] Packing public part 'mc'
+  [pppacker] DC being built: p_sfdc/infra/sgc
+  [pppacker] Searching for entity: mc.
+  [pppacker] Checking path: src
+  [pppacker] Model Folder Tree 'mc' is outside of defined package or source folders.
+  [pppacker] Packed   0 files for entity mc (Model Folder Tree)
+  [pppacker] Packed 1 entity for public part 'mc'
+     [timer] Packing of public part 'mc' finished in 0.1 seconds
+ 
+ 
+createDeployArchive:
+       [cdu] Preparing archive for deploy unit "default"
+       [cdu]   deployment type: "J2EE"
+ 
+       [cdu] Creating Ant build file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\45A86E207E278E484BB3F323FBBD759A\default\logs\buildDeployArchive.xml
+ 
+       [cdu] Creating descriptor META-INF/sda-dd.xml ...
+ 
+       [cdu] Skipping creation of application.xml for JEE5 archive.
+ 
+       [cdu] Creating descriptor META-INF/application-j2ee-engine.xml ...
+ 
+       [cdu] Collecting modules ...
+       [cdu] Ant build file creation finished in 0.047 seconds
+ 
+packDeployArchive:
+      [copy] Copied 1 empty directory to 1 empty directory under D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\45A86E207E278E484BB3F323FBBD759A\sda\META-INF\sca-resources
+ [srcpacker] Creating source archive
+ [srcpacker] No sources available for packing, no archive will be created.
+     [timer] Source archive creation finished in 0.025 seconds
+ 
+    [jarsap] Info: JarSAP version 20090803.1000
+    [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
+    [jarsap] Building: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\45A86E207E278E484BB3F323FBBD759A\default\deploy\nobelbiocare.com~p_sfdc~infra~sgc.ear with compression
+     [timer] JarSAP finished in 0.596 seconds
+ 
+ 
+build:
+ 
+Ant runtime 5.31 seconds
+ 
+Ant build finished OK
+MOIN forced shutdown initiated.
+ 
+Build plugin finished at 2017-11-14 10:26:38 GMT+01:00 (CET)
+Total build plugin runtime: 7.545 seconds
+ 
+Build finished with WARNING
+
+==== Post-Processing ====   started at 2017-11-14 10:26:38.691 CET
+Comparison of previous and actual build results took: 0.093 seconds
+
+Copy the build results 
+  from: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\45A86E207E278E484BB3F323FBBD759A\default\
+  to:   D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\p_sfdc\infra\sgc\_comp\gen\default\
+
+The build results of the following public parts were not copied, since they have not changed:
+  mc

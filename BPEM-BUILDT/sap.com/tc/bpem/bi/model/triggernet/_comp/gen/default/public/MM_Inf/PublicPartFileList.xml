@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>tc/bpem/bi/model/triggernet</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>MM_Inf</name>
+<purpose>infrastructure</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>tc/bpem/model/triggernet_packer</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>com.sap.tc.moin.nwdi.dctype.mm</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">MM_Asseml</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/model/triggernet_packer</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>com.sap.tc.moin.nwdi.dctype.mm</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/model/triggernet_packer</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>com.sap.tc.moin.nwdi.dctype.mm</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components/>
+<archives>
+<archive location="javalib" path="lib/java/sap.com~tc~bpem~bi~model~triggernet~MM_Inf.jar" type="jar">
+<property key="attributes">jar,java-library</property>
+</archive>
+</archives>
+<entities/>
+</content>

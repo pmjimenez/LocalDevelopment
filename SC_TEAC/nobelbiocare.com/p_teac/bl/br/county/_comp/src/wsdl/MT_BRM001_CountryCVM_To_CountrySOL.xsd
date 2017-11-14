@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="http://nobelbiocare.com/storeonline/TnE" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/storeonline/TnE">
+  <xsd:element name="MT_BRM001_CountryCVM_To_CountrySOL" type="DT_BRM001_CountryCVM_To_CountrySOL"/>
+  <xsd:complexType name="DT_BRM001_CountryCVM_To_CountrySOL">
+    <xsd:sequence>
+      <xsd:element name="Country_Key" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Country Key returned by CVM</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Country_Name" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Country Name in SOL</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,12 @@
+<technologies version="1">
+  <technology name="sap.com/tc/bi/bp/javaLib">
+    <uses>sap.com/tc/bi/javatech</uses>
+    <buildfile-creators>
+      <creator classname="com.sap.tc.buildplugin.BuildJavaLib"
+               step="build" sequence="build"/>
+    </buildfile-creators>
+    <datacontextprovider>
+      <provider classname="com.sap.tc.buildplugin.techdev.veloant.CreateBuildFileAction"/>
+    </datacontextprovider>
+  </technology>
+</technologies>

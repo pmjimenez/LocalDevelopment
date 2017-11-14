@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" xmlns:sap="http://www.sap.com" xmlns:sapconfig="http://www.sap.com/webas/2007/03/esoa/config/system" xmlns:sapimplbpm="http://www.sap.com/webas/2007/03/esoa/implementation/bpm" xmlns:sapinterfacewsdlloc="http://www.sap.com/xmlns/sapsca/1.0" xmlns:xins="http://www.sap.com/xmlns/sapsca/xi/1.0" name="p_sfdc~pr~pm~re~lytd" targetNamespace="http://www.sap.com">
+<component name="nobelbiocare.com~p_sfdc~pr~pm~re~lytd~BPMcomponent">
+<sapimplbpm:implementation.bpm/>
+<reference name="ef58443f-52bb-47ce-98f7-280b6b88e7dd" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_LastYearToDate_XI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI281_BPM_GetAccountId_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~lytd.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~lytd/MI281_BPM_GetAccountId_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_REVENUE_SFDC"/>
+</reference>
+<reference name="056ae0fe-1b00-4e8a-90f9-50c05145973d" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_LastYearToDate_SOAP">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(nobelbiocarecom_p_sfdcprpmrelytd_OM_LYTD_RejectedPortType)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~lytd.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~lytd/OM_LYTD_Rejected.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="d1e1988b-1f02-47fb-afbd-a10197e0424e" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SampleTimerServiceGroup">
+<interface.wsdl interface="http://sap.com/glx/sampletimer/#wsdl.interface(SampleTimer)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~lytd.bpem#wsdls/sap.com~tc~bpem~content~predefs~default/rootwsdl_SimpleTimerServices.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="a74b10e2-ac56-48c4-8036-da4410235cbf" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_LastYearToDate_XI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI286_BPM_ControlFlow_oa)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~lytd.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~lytd/MI286_BPM_ControlFlow_oa.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_REVENUE_SFDC"/>
+</reference>
+<reference name="6957c212-228f-42bf-bdfc-e340372ea240" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_LastYearToDate_XI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI281_BPM_CustomerRevenueLYTD_Push_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~lytd.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~lytd/MI281_BPM_CustomerRevenueLYTD_Push_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_REVENUE_SFDC"/>
+</reference>
+<reference name="f2682d90-90e2-4fdf-9f16-c826781e4f84" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_LastYearToDate_SOAP">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(nobelbiocarecom_p_sfdcprpmrelytd_OM_AccId_2_LYTDPortType)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~lytd.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~lytd/OM_AccId_2_LYTD.wsdl"/>
+<binding.ws/>
+</reference>
+</component>
+<component name="nobelbiocare.com~p_sfdc~pr~pm~re~lytd~OperationMappingComponent" sapinterfacewsdlloc:helperContextManagement="containerManaged">
+<sapimplbpm:implementation.piom/>
+<service name="nobelbiocare_com_p_sfdc_pr_pm_re_lytd_OM_LYTD_Rejected_Service">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(nobelbiocarecom_p_sfdcprpmrelytd_OM_LYTD_RejectedPortType)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~lytd.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~lytd/OM_LYTD_Rejected.wsdl"/>
+<binding.ws port="/nobelbiocare_com_p_sfdc_pr_pm_re_lytd_OM_LYTD_Rejected_Service/nobelbiocarecom_p_sfdcprpmrelytd_OM_LYTD_RejectedPortType#wsdl.endpoint(http://nobelbiocare.com/BPM/SFDC/Revenue#nobelbiocarecom_p_sfdcprpmrelytd_OM_LYTD_RejectedPortType)"/>
+<sapinterfacewsdlloc:sapextensions omguid="a4b510e5dbeb3c0eb52b145131b33bc5" svguid="dc2258106ad711e697b4e1ec0a3e5c13">
+<sapinterfacewsdlloc:input>
+<sapinterfacewsdlloc:type name="MT_LastYearToDate_Result" namespace="http://nobelbiocare.com/BPM/SFDC/Revenue"/>
+</sapinterfacewsdlloc:input>
+<sapinterfacewsdlloc:output>
+<sapinterfacewsdlloc:type name="MT_LYTD_Rejected" namespace="http://nobelbiocare.com/BPM/SFDC/Revenue"/>
+</sapinterfacewsdlloc:output>
+</sapinterfacewsdlloc:sapextensions>
+</service>
+<service name="nobelbiocare_com_p_sfdc_pr_pm_re_lytd_OM_AccId_2_LYTD_Service">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(nobelbiocarecom_p_sfdcprpmrelytd_OM_AccId_2_LYTDPortType)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~lytd.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~lytd/OM_AccId_2_LYTD.wsdl"/>
+<binding.ws port="/nobelbiocare_com_p_sfdc_pr_pm_re_lytd_OM_AccId_2_LYTD_Service/nobelbiocarecom_p_sfdcprpmrelytd_OM_AccId_2_LYTDPortType#wsdl.endpoint(http://nobelbiocare.com/BPM/SFDC/Revenue#nobelbiocarecom_p_sfdcprpmrelytd_OM_AccId_2_LYTDPortType)"/>
+<sapinterfacewsdlloc:sapextensions omguid="4aa684c9366b3bd79e2fbefa11a651ec" svguid="dc2258106ad711e697b4e1ec0a3e5c13">
+<sapinterfacewsdlloc:input>
+<sapinterfacewsdlloc:type name="MT_LYTD_AccId" namespace="http://nobelbiocare.com/BPM/SFDC/Revenue"/>
+</sapinterfacewsdlloc:input>
+<sapinterfacewsdlloc:output>
+<sapinterfacewsdlloc:type name="MT_AccId_Found_LYTD" namespace="http://nobelbiocare.com/BPM/SFDC/Revenue"/>
+</sapinterfacewsdlloc:output>
+</sapinterfacewsdlloc:sapextensions>
+</service>
+</component>
+<sapconfig:serviceGroups>
+<sapconfig:serviceGroup bundle="987da1f3-c738-469e-badd-3cb20d6bbbb7.consgroup" sgName="SR_Revenue_LastYearToDate_XI"/>
+<sapconfig:serviceGroup bundle="fe42955c-afc3-40fa-87a9-d7f0b91bc058.consgroup" sgName="SR_Revenue_LastYearToDate_SOAP"/>
+</sapconfig:serviceGroups>
+<sapconfig:service-group-configuration serviceGroup="SR_Revenue_LastYearToDate_SOAP">
+<sapconfig:localProvider/>
+</sapconfig:service-group-configuration>
+</composite>

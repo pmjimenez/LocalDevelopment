@@ -1,0 +1,10 @@
+# Critical error event definition p2.StandardMessageFault (MOFId: E03D8471D5945E28F1DD11E68EF0548757986900)
+NETWORK,616C0EBC9DCEDD1615890303499D6218,p2.StandardMessageFault
+REVISIONID,4,7,Galaxy exception compiler as of NetWeaver CE 7.31 SP 17 (Build Time: 2015-09-14 08:43:18)
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,616C0EBC9DCEDD1615890303499D6218,SCOPE=1B307BB9ADE72FC40C9494435F9F7644
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,616C0EBC9DCEDD1615890303499D6218,ROOT,NAME=StandardMessageFault
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,616C0EBC9DCEDD1615890303499D6218,ROOT,NAMESPACE=http://sap.com/xi/BASIS/Global
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,616C0EBC9DCEDD1615890303499D6218,ROOT,TYPE=E03D847131FCD1A5F1D811E684EA548757986900
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,616C0EBC9DCEDD1615890303499D6218,ROOT,TYPENAMESPACE=http://sap.com/xi/BASIS/Global
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,616C0EBC9DCEDD1615890303499D6218,ROOT,EXCEPTION_COMPILER_VERSION=2

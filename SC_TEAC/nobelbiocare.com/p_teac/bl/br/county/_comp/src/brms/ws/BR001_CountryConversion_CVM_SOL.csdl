@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:c="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://nobelbiocare.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd0="http://nobelbiocare.com/storeonline/TnE" targetNamespace="http://nobelbiocare.com">
+  <wsdl:types>    
+    <xsd:schema xmlns:tns="http://nobelbiocare.com/storeonline/TnE" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/storeonline/TnE">
+  <xsd:element name="MT_BRM001_CountryCVM_To_CountrySOL" type="tns:DT_BRM001_CountryCVM_To_CountrySOL"/>
+  <xsd:complexType name="DT_BRM001_CountryCVM_To_CountrySOL">
+    <xsd:sequence>
+      <xsd:element name="Country_Key" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Country Key returned by CVM</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Country_Name" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Country Name in SOL</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd0tns="http://nobelbiocare.com/storeonline/TnE" xmlns:yns="http://nobelbiocare.com" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://nobelbiocare.com">
+  <xs:import namespace="http://nobelbiocare.com/storeonline/TnE"/>		
+  <xs:element name="Request-nobelbiocare.com-p-teac-bl-br-county-BR001-CountryConversion-CVM-SOL-BR001-CountryConversion-CVM-SOL" type="yns:RulesTypes-nobelbiocare.com-p-teac-bl-br-county-BR001-CountryConversion-CVM-SOL-BR001-CountryConversion-CVM-SOL"/>		
+  <xs:element name="Response-nobelbiocare.com-p-teac-bl-br-county-BR001-CountryConversion-CVM-SOL-BR001-CountryConversion-CVM-SOL" type="yns:RulesTypes-nobelbiocare.com-p-teac-bl-br-county-BR001-CountryConversion-CVM-SOL-BR001-CountryConversion-CVM-SOL"/>			
+  <xs:complexType name="RulesTypes-nobelbiocare.com-p-teac-bl-br-county-BR001-CountryConversion-CVM-SOL-BR001-CountryConversion-CVM-SOL">
+   <xs:sequence>
+    <xs:element ref="xsd0tns:MT_BRM001_CountryCVM_To_CountrySOL"/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:schema>		
+  </wsdl:types>
+  <wsdl:message name="RulesRequest">
+    <wsdl:part element="tns:Request-nobelbiocare.com-p-teac-bl-br-county-BR001-CountryConversion-CVM-SOL-BR001-CountryConversion-CVM-SOL" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="RulesResponse">
+    <wsdl:part element="tns:Response-nobelbiocare.com-p-teac-bl-br-county-BR001-CountryConversion-CVM-SOL-BR001-CountryConversion-CVM-SOL" name="output"/>
+  </wsdl:message>
+  <wsdl:portType name="BR001_CountryConversion_CVM_SOLPortType">
+    <wsdl:operation name="invokeRules" parameterOrder="parameters">
+      <wsdl:input message="tns:RulesRequest"/>
+      <wsdl:output message="tns:RulesResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="BR001_CountryConversion_CVM_SOLPortTypeBinding" type="tns:BR001_CountryConversion_CVM_SOLPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="invokeRules">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BR001_CountryConversion_CVM_SOL">
+    <wsdl:port binding="tns:BR001_CountryConversion_CVM_SOLPortTypeBinding" name="BR001_CountryConversion_CVM_SOLPort">
+      <soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="http://localhost:50500/nobelbiocare.com~p_teac~bl~br~county-BR001_CountryConversion_CVM_SOL/BR001_CountryConversion_CVM_SOL/BR001_CountryConversion_CVM_SOLPortType"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

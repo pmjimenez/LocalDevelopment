@@ -1,0 +1,10 @@
+# Critical error event definition p3.globalFaultsResponse (MOFId: E0B5C67A54FEB66F9ABC11E69B5F0205857FEB80)
+NETWORK,CF98DA03A301A152D26F1CC08E679E9F,p3.globalFaultsResponse
+REVISIONID,4,7,Galaxy exception compiler as of NetWeaver CE 7.31 SP 17 (Build Time: 2015-09-14 08:43:18)
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,CF98DA03A301A152D26F1CC08E679E9F,SCOPE=4BC532DB4819A8DBF7D173DCCF6199C9
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,CF98DA03A301A152D26F1CC08E679E9F,ROOT,NAME=globalFaultsResponseParam
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,CF98DA03A301A152D26F1CC08E679E9F,ROOT,NAMESPACE=urn:Magento
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,CF98DA03A301A152D26F1CC08E679E9F,ROOT,TYPE=E0B249477026E8469ABA11E6A5DC0205857FEB80
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,CF98DA03A301A152D26F1CC08E679E9F,ROOT,TYPENAMESPACE=urn:Magento
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,CF98DA03A301A152D26F1CC08E679E9F,ROOT,EXCEPTION_COMPILER_VERSION=2

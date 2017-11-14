@@ -1,0 +1,10 @@
+# Message event definition ET_Start_MI255 (MOFId: E0019B62508818C4790111E6ACA60205857FEB80)
+NETWORK,78d7be2fe98bc92c44163246bb96683b,nobelbiocare.com/p_teac/pr/pm/course/ET_Start_MI255
+REVISIONID,4,7,Galaxy interface compiler as of NetWeaver CE 7.30. Give yourself to the dark side.
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_teac/pr/pm/course/ET_Start_MI255,MI255_BPM_TEAC_Create_Update_Course_ia,SCOPE=BA28394D4C730989317F022BE97E38F4
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_teac/pr/pm/course/ET_Start_MI255,MI255_BPM_TEAC_Create_Update_Course_ia,ELEMENT,NAME=$http://nobelbiocare.com/bpm/teac:SRecords
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_teac/pr/pm/course/ET_Start_MI255,MI255_BPM_TEAC_Create_Update_Course_ia,ELEMENT,NAMESPACE=http://nobelbiocare.com/bpm/teac
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_teac/pr/pm/course/ET_Start_MI255,MI255_BPM_TEAC_Create_Update_Course_ia,TYPE,NAME=#23#SRecordsType
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_teac/pr/pm/course/ET_Start_MI255,MI255_BPM_TEAC_Create_Update_Course_ia,TYPE,NAMESPACE=http://nobelbiocare.com/bpm/teac
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_teac/pr/pm/course/ET_Start_MI255,MI255_BPM_TEAC_Create_Update_Course_ia,MESSAGEPATTERN_INONLY=true

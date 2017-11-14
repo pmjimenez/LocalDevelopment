@@ -1,0 +1,38 @@
+ #*
+ * This is the Velocity macro library used for dictionary generation.
+ *
+ * This library is only provided for convenience. All macros defined in this
+ * file should be backed by some Java implementation.
+ *#
+
+#**
+ * Default invocation of the Data Dictionary generator. The only parameters
+ * you need to define are:
+ *
+ * sources      list of source paths for the Data Dictionary generator.
+ * classes      path to the target folder where the generator will store
+ *              its output
+ *#
+#macro(DefaultDDicGeneration $sources $classes $metadatapath)
+    $dictBase.defaultDDicGeneration($sources, $classes, $metadatapath)
+#end
+
+
+#**
+ * Create an additional database content deployable containing *_dbc.xml
+ * files from declared source folders. The deployable will have the same
+ * name as the default deployable, but with the suffix "+dbc.sda", e.g
+ * <archive_name>.sda -> <archive_name>+dbc.sda
+ *#
+#macro(CreateDBContentArchive $createDeployDependency)
+    $dictBase.createDBContentArchive($createDeployDependency)
+#end
+
+#**
+ * Merges translation *.xlf files with the original *.dbc files. The resulting
+ * *.dbc files are written to the temp folder "translation_dir". From there they
+ * are collected by createDBContentArchive.
+ *#
+#macro(CreateDBContentTranslation)
+    $dictBase.createDBContentTranslation()
+#end

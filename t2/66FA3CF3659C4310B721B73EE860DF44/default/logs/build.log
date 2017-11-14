@@ -1,0 +1,116 @@
+Development Component Build (2017-11-06 17:11:40 GMT+01:00 (CET))
+  Component name: p_sfdc/bl/ear
+  Component vendor: nobelbiocare.com
+  SC compartment: SC_SFDC
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: pedro.jimenez@MADNB2016
+  DC root folder: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\p_sfdc\bl\ear\_comp\
+  DC type: J2EE
+  DC subtype: Enterprise Application
+  Host: MADNB2016
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/enterpriseApplication"
+   validating dependency to  public part "ejbjar" of DC "nobelbiocare.com/p_sfdc/bl/ejb"
+   validating dependency to used DC "nobelbiocare.com/p_sfdc/infra/sgc"
+   validating dependency to  public part "mc" of DC "nobelbiocare.com/p_sfdc/infra/sgc"
+   validating dependency to  public part "def" of DC "sap.com/bie/sca/contributionxml/gen"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/enterpriseApplication
+   starting build plugin from : D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\enterpriseApplication\_comp\gen\default\public\enterpriseApplication\
+
+
+
+Build Plugin 'EnterpriseApplicationPlugin', Version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:50:02 +0200, CL209430)
+   development component:  p_sfdc/bl/ear (nobelbiocare.com)
+      software component:  SC_SFDC (nobelbiocare.com)
+       support component:  Default
+                location:  localDevelopment
+                    type:  J2EE, subtype Enterprise Application
+           build variant:  default
+         source location:  pedro.jimenez@MADNB2016
+         output location:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\66FA3CF3659C4310B721B73EE860DF44\default
+       generation folder:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\66FA3CF3659C4310B721B73EE860DF44
+       plugin start time:  2017-11-06 17:11:40 GMT+01:00 (CET)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.45-b01 (1.6, Sun Microsystems Inc.)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Checking path lengths for sources
+Path length checks finished in 0 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.007 seconds
+ 
+Creating Ant build file..
+  Creating output file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\66FA3CF3659C4310B721B73EE860DF44\default\logs\build.xml
+  Using Java class:     com.sap.tc.buildplugin.BuildEnterpriseApplication
+Target "createDeployArchive" has a dependency on "compile" but no such target exists. Dependency will be ignored.
+Build file creation finished in 0.036 seconds
+ 
+Starting Ant..
+  Using build file:     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\66FA3CF3659C4310B721B73EE860DF44\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+sca_contrib_target:
+      [echo] Starting sca-contribution.xml generator...
+[gen_contribution_xml] 			[SCA-CONTRIB-GEN] Sca contribution XML output location: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\66FA3CF3659C4310B721B73EE860DF44\META-INF\sca-contribution.xml
+     [timer] Starting sca-contribution.xml generator finished in 0.014 seconds
+ 
+ 
+createDeployArchive:
+       [cdu] Preparing archive for deploy unit "default"
+       [cdu]   deployment type: "J2EE"
+ 
+       [cdu] Creating Ant build file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\66FA3CF3659C4310B721B73EE860DF44\default\logs\buildDeployArchive.xml
+ 
+       [cdu] Creating descriptor META-INF/sda-dd.xml ...
+ 
+       [cdu] Skipping creation of application.xml for JEE5 archive.
+ 
+       [cdu] Validating descriptor D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\p_sfdc\bl\ear\_comp\META-INF\application-j2ee-engine.xml
+       [cdu] Setting provider name to "nobelbiocare.com".
+       [cdu] Adding reference for runtime dependency on component "p_sfdc/infra/sgc" (vendor "nobelbiocare.com", type "application")
+ 
+       [cdu] Collecting modules ...
+       [cdu] Adding module 'nobelbiocare.com~p_sfdc~bl~ejb~ejbjar.jar' from DC 'p_sfdc/bl/ejb' (vendor 'nobelbiocare.com'), public part 'ejbjar'
+       [cdu] Ant build file creation finished in 0.03 seconds
+ 
+packDeployArchive:
+ [srcpacker] Creating source archive
+ [srcpacker] No sources available for packing, no archive will be created.
+     [timer] Source archive creation finished in 0.013 seconds
+ 
+    [jarsap] Info: JarSAP version 20090803.1000
+    [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
+    [jarsap] Building: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\66FA3CF3659C4310B721B73EE860DF44\default\deploy\nobelbiocare.com~p_sfdc~bl~ear.ear with compression
+     [timer] JarSAP finished in 0.013 seconds
+ 
+ 
+build:
+ 
+Ant runtime 0.093 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2017-11-06 17:11:41 GMT+01:00 (CET)
+Total build plugin runtime: 0.236 seconds
+ 
+Build finished OK
+
+==== Post-Processing ====   started at 2017-11-06 17:11:41.131 CET
+Comparison of previous and actual build results took: 0 seconds
+
+Copy the build results 
+  from: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\66FA3CF3659C4310B721B73EE860DF44\default\
+  to:   D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\p_sfdc\bl\ear\_comp\gen\default\

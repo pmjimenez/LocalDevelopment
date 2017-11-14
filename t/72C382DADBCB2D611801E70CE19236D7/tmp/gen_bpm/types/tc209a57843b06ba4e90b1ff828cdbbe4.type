@@ -1,0 +1,10 @@
+ROOT_0,TARGET_NAMESPACE=nobelbiocare.com/po_salesforce_02/pr/pm/E0A81F4C28E0F7F9B2D411E4B440000C29AF3A8A
+ROOT_0,SCHEMA_LOCATION=nobelbiocare.com/po_salesforce_02/pr/pm/E0A81F4C28E0F7F9B2D411E4B440000C29AF3A8A
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="nobelbiocare.com/po_salesforce_02/pr/pm/E0A81F4C28E0F7F9B2D411E4B440000C29AF3A8A" xmlns:tns="nobelbiocare.com/po_salesforce_02/pr/pm/E0A81F4C28E0F7F9B2D411E4B440000C29AF3A8A" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="request" type="tns:request" sdox:aliasName="$nobelbiocare.com/po_salesforce_02/pr/pm/E0A81F4C28E0F7F9B2D411E4B440000C29AF3A8A:request" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="request" ns1:hiddenInTree="" xmlns:ns1="http://sap.com/esm/ui/ext" ns2:hiddenInDataChooser="" xmlns:ns2="sap.com/glx/system" sdox:aliasName="#request" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence></xsd:sequence>   </xsd:complexType> </xsd:schema> 
+
+ROOT_1,TARGET_NAMESPACE=nobelbiocare.com/po_salesforce_02/pr/pm/E0A81F4C28E0F7F9B2D411E4B440000C29AF3A8A
+ROOT_1,SCHEMA_LOCATION=nobelbiocare.com/po_salesforce_02/pr/pm/E0A81F4C28E0F7F9B2D411E4B440000C29AF3A8A
+ROOT_1,ROOTID=1
+ROOT_1,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="nobelbiocare.com/po_salesforce_02/pr/pm/E0A81F4C28E0F7F9B2D411E4B440000C29AF3A8A" xmlns:tns="nobelbiocare.com/po_salesforce_02/pr/pm/E0A81F4C28E0F7F9B2D411E4B440000C29AF3A8A" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="response" type="tns:response" sdox:aliasName="$nobelbiocare.com/po_salesforce_02/pr/pm/E0A81F4C28E0F7F9B2D411E4B440000C29AF3A8A:response" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="response" ns1:hiddenInTree="" xmlns:ns1="http://sap.com/esm/ui/ext" ns2:hiddenInDataChooser="" xmlns:ns2="sap.com/glx/system" sdox:aliasName="#response" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="result" type="xsd:string" sdox:aliasName="$result"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+

@@ -1,0 +1,10 @@
+ROOT_0,TARGET_NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Revenue
+ROOT_0,SCHEMA_LOCATION=http://nobelbiocare.com/BPM/SFDC/Revenue
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:tns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="MT_GetSumWs" type="tns:DT_GetSumWs" sdox:aliasName="$http://nobelbiocare.com/BPM/SFDC/Revenue:MT_GetSumWs" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="DT_GetSumWs" sdox:aliasName="#DT_GetSumWs" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="runBatch" type="xsd:string" minOccurs="0" sdox:aliasName="$runBatch"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+
+ROOT_1,TARGET_NAMESPACE=http://soap.sforce.com/schemas/class/GetSumWebservices
+ROOT_1,SCHEMA_LOCATION=http://soap.sforce.com/schemas/class/GetSumWebservices
+ROOT_1,ROOTID=1
+ROOT_1,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://soap.sforce.com/schemas/class/GetSumWebservices" xmlns:tns="http://soap.sforce.com/schemas/class/GetSumWebservices" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="runBatchResponse" sdox:aliasName="$http://soap.sforce.com/schemas/class/GetSumWebservices:runBatchResponse" xmlns:sdox="commonj.sdo/xml">     <xsd:complexType sdox:aliasName="E000054C9A71362060A411E78D5254EFEC7B6400">       <xsd:sequence></xsd:sequence>     </xsd:complexType>   </xsd:element> </xsd:schema> 
+

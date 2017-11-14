@@ -1,0 +1,10 @@
+ROOT_0,TARGET_NAMESPACE=nobelbiocare.com/p_teac/pr/pm/course/P_BPM_002_Courses_CVM_SO/TEAC_Courses_Management/A4__Get_option_values_for_multi_select_loop
+ROOT_0,SCHEMA_LOCATION=nobelbiocare.com/p_teac/pr/pm/course/P_BPM_002_Courses_CVM_SO/TEAC_Courses_Management/A4__Get_option_values_for_multi_select_loop
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="nobelbiocare.com/p_teac/pr/pm/course/P_BPM_002_Courses_CVM_SO/TEAC_Courses_Management/A4__Get_option_values_for_multi_select_loop" xmlns:tns="nobelbiocare.com/p_teac/pr/pm/course/P_BPM_002_Courses_CVM_SO/TEAC_Courses_Management/A4__Get_option_values_for_multi_select_loop" xmlns:ns1="urn:Magento" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:import namespace="urn:Magento" schemaLocation="urn:Magento"></xsd:import>   <xsd:element name="currentCollectionItem" type="ns1:catalogAttributeEntity" sdox:aliasName="$nobelbiocare.com/p_teac/pr/pm/course/P_BPM_002_Courses_CVM_SO/TEAC_Courses_Management/A4__Get_option_values_for_multi_select_loop:currentCollectionItem" xmlns:sdox="commonj.sdo/xml"></xsd:element> </xsd:schema> 
+
+CHILD_0,TARGET_NAMESPACE=urn:Magento
+CHILD_0,SCHEMA_LOCATION=urn:Magento
+CHILD_0,ROOTID=0
+CHILD_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="urn:Magento" xmlns:tns="urn:Magento" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:complexType name="catalogAttributeEntity" sdox:aliasName="#catalogAttributeEntity" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="attribute_id" type="xsd:int" minOccurs="0" sdox:aliasName="$attribute_id"></xsd:element>       <xsd:element name="code" type="xsd:string" minOccurs="0" sdox:aliasName="$code"></xsd:element>       <xsd:element name="type" type="xsd:string" minOccurs="0" sdox:aliasName="$type"></xsd:element>       <xsd:element name="required" type="xsd:string" minOccurs="0" sdox:aliasName="$required"></xsd:element>       <xsd:element name="scope" type="xsd:string" minOccurs="0" sdox:aliasName="$scope"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+

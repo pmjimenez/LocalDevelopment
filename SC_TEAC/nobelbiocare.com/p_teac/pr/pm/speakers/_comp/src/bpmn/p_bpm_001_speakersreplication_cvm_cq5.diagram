@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Partition xmlns:m='http://xml.sap.com/moin'>
+<C n='sap.com/com/sap/mi/gfw/mm' i='1' v='1.0'/>
+<M c='1' q='links.PictogramLinkReferencesBusinessObjects' i='45E806E30284FE5FB2DF4EEE3C28FAD397F8DCD7' se='1' ce='-1' oe='0'/>
+<M c='1' q='pictograms.ConnectionStartsAtAnchor' i='45E806E308B17408B49D40731BCBA3D70B50316A' se='1' ce='-1' oe='-1'/>
+<M c='1' q='pictograms.RoundedRectangle' i='45E806E30B111639635B45AD24A896FDC10DD7D2' ova='renderingStyle'/>
+<M c='1' q='datatypes.Color' i='45E806E31BEE0BFC06414C9B3C40BD0ABFB5FC54'/>
+<M c='1' q='pictograms.Shape' i='45E806E31FD033AD65384259299DEBAA310F446D'/>
+<M c='1' q='pictograms.ConnectionContainsConnectionDecorators' i='45E806E32B4E1991DC38488135D0E28ED9340535' se='1' ce='1' oe='-1'/>
+<M c='1' q='pictograms.GraphicsAlgorithmHasForegroundColor' i='45E806E339C380ACB9D54742385FA5A67110FC14' se='1' ce='-1' oe='-1'/>
+<M c='1' q='pictograms.DiagramContainsColors' i='45E806E346B62DC200B947272E8FDE657EE11680' se='1' ce='1' oe='-1'/>
+<M c='1' q='links.DiagramLinkReferencesDiagram' i='45E806E34864C34AAB914D1B0575B8FF0AE0200F' se='1' ce='-1' oe='-1'/>
+<M c='1' q='pictograms.ContainershapeContainsShapes' i='45E806E34DAA68EC93FA462426FBB19CF45B7D2E' se='1' ce='1' oe='0'/>
+<M c='1' q='pictograms.Image' i='45E806E353FEC7AFE8BF4ED114A7CEA6587A9600' ova='renderingStyle'/>
+<M c='1' q='links.PictogramLink' i='45E806E357AEC9BF0C7D4C3417DA8693C081773B'/>
+<M c='1' q='pictograms.Font' i='45E806E35856AAF1B14B4F923905D5D6147B02C7'/>
+<M c='1' q='pictograms.RenderingStyle' i='45E806E35FC54737B8C242AB002CC014A8DEA9DF'/>
+<M c='1' q='pictograms.GraphicsAlgorithmContainsGraphicsAlgorithms' i='45E806E369D37BBE0A1A4E2E3EEFCF9F8305FE0A' se='0' ce='0' oe='1'/>
+<M c='1' q='links.DiagramLinkReferencesPictogramLinks' i='45E806E369DC288747324E4122F8E53651800C8C' se='1' ce='-1' oe='-1'/>
+<M c='1' q='pictograms.Rectangle' i='45E806E37120AD4D7CC74AC23483FCA2046A785F' ova='renderingStyle'/>
+<M c='1' q='pictograms.ContainerShape' i='45E806E37581995B8D82418E1867F74ADBD2C64E'/>
+<M c='1' q='pictograms.ConnectionDecorator' i='45E806E3823C2857C9934BCF2144E2FB68FB4D69'/>
+<M c='1' q='pictograms.Ellipse' i='45E806E382BF5E26C64846B90538E8C23BABA3D0' ova='renderingStyle'/>
+<M c='1' q='pictograms.DiagramAggregatesConnections' i='45E806E391102595F404410628AEB33F0B572BA1' se='1' ce='1' oe='-1'/>
+<M c='1' q='pictograms.ChopboxAnchor' i='45E806E3940A148E39184EB42774A56C14F847CD'/>
+<M c='1' q='pictograms.GraphicsAlgorithmHasBackgroundColor' i='45E806E39B5A5621D3A049D41BDCF825E4F1DFCD' se='0' ce='-1' oe='-1'/>
+<M c='1' q='pictograms.Polygon' i='45E806E39CA8988B64AE496E1611E79464444C32' ova='renderingStyle'/>
+<M c='1' q='pictograms.FreeFormConnection' i='45E806E39F302197BFF04AA81DC1DEDE91076514'/>
+<M c='1' q='pictograms.Text' i='45E806E3A3CF4A417DA2471C338590FC98B94E68' ova='renderingStyle,font'/>
+<M c='1' q='links.PictogramElementContainsPictogramLink' i='45E806E3A923DD06475A493C25D3E37647D0913C' se='0' ce='0' oe='-1'/>
+<M c='1' q='pictograms.Diagram' i='45E806E3B28EF07AFA0A4F2C342AC45B58528277'/>
+<M c='1' q='pictograms.AnchorcontainerAggregatesAnchors' i='45E806E3C1BD2143396B4C431D6F8DCA605AD011' se='1' ce='1' oe='-1'/>
+<M c='1' q='pictograms.Polyline' i='45E806E3D229789CCBAB417F1E1AD3B2356BC7B0' ova='renderingStyle'/>
+<M c='1' q='pictograms.ConnectionEndsAtAnchor' i='45E806E3EEA012BCF524491F27BACC87C8BA3CFC' se='1' ce='-1' oe='-1'/>
+<M c='1' q='links.DiagramLink' i='45E806E3F50C9691A7AD41B1112AD1FB129489D9'/>
+<M c='1' q='pictograms.PictogramelementContainsGraphicsalgorithm' i='45E806E3FAA2BB1CBA6D4FD32BB3E5E85E90D191' se='1' ce='1' oe='-1'/>
+<M c='1' q='pictograms.MultiText' i='4649B449B306D1A783B7407702D58FB97D352380' ova='renderingStyle,font'/>
+<M c='1' q='pictograms.Style' i='46973F2C80BDECBB311F11DCC8D8001125D59A18' ova='renderingStyle,font'/>
+<M c='1' q='pictograms.StyleContainerContainsStyles' i='46973F2C80C28091311F11DCAD2F001125D59A18' se='1' ce='1' oe='-1'/>
+<M c='1' q='pictograms.GraphicsAlgorithmReferencesStyle' i='46973F2C80C28094311F11DCB45C001125D59A18' se='1' ce='-1' oe='-1'/>
+<pictograms.FreeFormConnection m:c='1' m:i='E0180D082497BEFF7A9411E6C0C60205857FEB80' visible='true' active='true'/>
+<links.PictogramLink m:c='1' m:i='E0180D082497BF007A9411E69B8E0205857FEB80'/>
+<pictograms.Polyline m:c='1' m:i='E0180D082497DFF97A9411E6C7710205857FEB80' lineWidth='2' filled='false' width='0' height='0' x='0' y='0'/>
+<pictograms.ConnectionDecorator m:c='1' m:i='E0180D082497DFFA7A9411E6C61F0205857FEB80' visible='true' active='false' locationRelative='true' location='1.0'/>
+<pictograms.Polyline m:c='1' m:i='E0180D082497DFFB7A9411E6C3740205857FEB80' lineWidth='2' filled='false' width='0' height='0' x='0' y='0'>
+<points x='-7' y='3' before='0' after='0'/>
+<points x='0' y='0' before='0' after='0'/>
+<points x='-7' y='-3' before='0' after='0'/>
+</pictograms.Polyline>
+<pictograms.FreeFormConnection m:c='1' m:i='E0180D082E90007C7A9411E68B550205857FEB80' visible='true' active='true'/>
+<links.PictogramLink m:c='1' m:i='E0180D082E9019BA7A9411E6A2140205857FEB80'/>
+<pictograms.Polyline m:c='1' m:i='E0180D082E9045197A9411E69CD80205857FEB80' lineWidth='2' filled='false' width='0' height='0' x='0' y='0'/>
+<pictograms.ConnectionDecorator m:c='1' m:i='E0180D082E90451A7A9411E690410205857FEB80' visible='true' active='false' locationRelative='true' location='1.0'/>
+<pictograms.Polyline m:c='1' m:i='E0180D082E90451B7A9411E688570205857FEB80' lineWidth='2' filled='false' width='0' height='0' x='0' y='0'>
+<points x='-7' y='3' before='0' after='0'/>
+<points x='0' y='0' before='0' after='0'/>
+<points x='-7' y='-3' before='0' after='0'/>
+</pictograms.Polyline>
+<pictograms.Ellipse m:c='1' m:i='E0180D082EF695D26DFB11E6C3A30205857FEB80' filled='true' lineVisible='false' width='16' height='16' x='7' y='7'/>
+<pictograms.Rectangle m:c='1' m:i='E0180D084CB3929A6DFB11E6B73C0205857FEB80' lineWidth='1' renderingStyle='E0180D084CB3C1F26DFB11E6C2440205857FEB80' width='14' height='9' x='9' y='11'/>
+<pictograms.Polyline m:c='1' m:i='E0180D084CB3C1F06DFB11E6816E0205857FEB80' lineWidth='1' filled='false' width='0' height='0' x='0' y='0'>
+<points x='0' y='0' before='0' after='0'/>
+<points x='8' y='6' before='0' after='0'/>
+</pictograms.Polyline>
+<pictograms.Polyline m:c='1' m:i='E0180D084CB3C1F16DFB11E6B92D0205857FEB80' lineWidth='1' filled='false' width='0' height='0' x='0' y='0'>
+<points x='6' y='6' before='0' after='0'/>
+<points x='14' y='0' before='0' after='0'/>
+</pictograms.Polyline>
+<pictograms.RenderingStyle m:c='1' m:i='E0180D084CB3C1F26DFB11E6C2440205857FEB80' predefinedStyleId='blue-white-gloss'/>
+<pictograms.Polygon m:c='1' m:i='E0180D087B6A5FB97A9311E692610205857FEB80' filled='false' lineVisible='false' width='0' height='0' x='0' y='0'>
+<points x='21' y='7' before='0' after='0'/>
+<points x='15' y='21' before='0' after='0'/>
+</pictograms.Polygon>
+<pictograms.Polygon m:c='1' m:i='E0180D087E48013F7A9311E6A4FD0205857FEB80' filled='false' lineVisible='false' width='0' height='0' x='0' y='0'>
+<points x='21' y='7' before='0' after='0'/>
+<points x='15' y='21' before='0' after='0'/>
+</pictograms.Polygon>
+<pictograms.FreeFormConnection m:c='1' m:i='E0180D0888E089E97A9311E6B2CC0205857FEB80' visible='true' active='true'/>
+<links.PictogramLink m:c='1' m:i='E0180D0888E0AB177A9311E6BABC0205857FEB80'/>
+<pictograms.Polyline m:c='1' m:i='E0180D0888E0DBDE7A9311E6A6E10205857FEB80' lineWidth='2' filled='false' width='0' height='0' x='0' y='0'/>
+<pictograms.ConnectionDecorator m:c='1' m:i='E0180D0888E0DBDF7A9311E6BED40205857FEB80' visible='true' active='false' locationRelative='true' location='1.0'/>
+<pictograms.Polyline m:c='1' m:i='E0180D0888E0FEB07A9311E6B1310205857FEB80' lineWidth='2' filled='false' width='0' height='0' x='0' y='0'>
+<points x='-7' y='3' before='0' after='0'/>
+<points x='0' y='0' before='0' after='0'/>
+<points x='-7' y='-3' before='0' after='0'/>
+</pictograms.Polyline>
+<pictograms.FreeFormConnection m:c='1' m:i='E0180D089F73BA6F7A9311E6A7A10205857FEB80' visible='true' active='true'>
+<properties key='mTC' value='true'/>
+<bendpoints x='434' y='125' before='0' after='0'/>
+<bendpoints x='434' y='360' before='0' after='0'/>
+</pictograms.FreeFormConnection>
+<links.PictogramLink m:c='1' m:i='E0180D089F73BA707A9311E690830205857FEB80'/>
+<pictograms.Polyline m:c='1' m:i='E0180D089F73F62A7A9311E6AF770205857FEB80' lineWidth='2' filled='false' width='0' height='0' x='0' y='0'/>
+<pictograms.ConnectionDecorator m:c='1' m:i='E0180D089F73F62B7A9311E6AF410205857FEB80' visible='true' active='false' locationRelative='true' location='1.0'/>
+<pictograms.Polyline m:c='1' m:i='E0180D089F73F62C7A9311E6C3440205857FEB80' lineWidth='2' filled='false' width='0' height='0' x='0' y='0'>
+<points x='-7' y='3' before='0' after='0'/>
+<points x='0' y='0' before='0' after='0'/>
+<points x='-7' y='-3' before='0' after='0'/>
+</pictograms.Polyline>
+<pictograms.FreeFormConnection m:c='1' m:i='E0180D08AA5C12687A9311E6BAE10205857FEB80' visible='true' active='true'>
+<properties key='mTC' value='true'/>
+<bendpoints x='1079' y='360' before='0' after='0'/>
+<bendpoints x='1079' y='135' before='0' after='0'/>
+</pictograms.FreeFormConnection>
+<links.PictogramLink m:c='1' m:i='E0180D08AA5C12697A9311E6C53C0205857FEB80'/>
+<pictograms.Polyline m:c='1' m:i='E0180D08AA5C42AA7A9311E6C5760205857FEB80' lineWidth='2' filled='false' width='0' height='0' x='0' y='0'/>
+<pictograms.ConnectionDecorator m:c='1' m:i='E0180D08AA5C42AB7A9311E6CCCA0205857FEB80' visible='true' active='false' locationRelative='true' location='1.0'/>
+<pictograms.Polyline m:c='1' m:i='E0180D08AA5C42AC7A9311E6A0D60205857FEB80' lineWidth='2' filled='false' width='0' height='0' x='0' y='0'>
+<points x='-7' y='3' before='0' after='0'/>
+<points x='0' y='0' before='0' after='0'/>
+<points x='-7' y='-3' before='0' after='0'/>
+</pictograms.Polyline>
+<pictograms.Style m:c='1' m:i='E0180D08AB345FC56DF511E6CA450205857FEB80' id='STYLES'/>
+<pictograms.Style m:c='1' m:i='E0180D08AB34A4156DF511E6C4170205857FEB80' lineWidth='2' filled='true' id='com.sap.glx.ide.flow.patterns.WorkflowPattern'/>
+<datatypes.Color m:c='1' m:i='E0180D08AB34FA516DF511E6CFED0205857FEB80' red='0' green='0' blue='0'/>
+<pictograms.Style m:c='1' m:i='E0180D08AB34FA526DF511E681E20205857FEB80' lineWidth='2' renderingStyle='E0180D08AB34FA546DF511E695E50205857FEB80' transparency='0.4' id='com.sap.glx.ide.flow.patterns.LanePattern'/>
+<datatypes.Color m:c='1' m:i='E0180D08AB34FA536DF511E691A00205857FEB80' red='182' green='191' blue='172'/>
+<pictograms.RenderingStyle m:c='1' m:i='E0180D08AB34FA546DF511E695E50205857FEB80' predefinedStyleId='light-yellow'/>
+<pictograms.Style m:c='1' m:i='E0180D08AB34FA556DF511E6C8BC0205857FEB80' lineStyle='DASH' renderingStyle='E0180D08AB351D796DF511E696070205857FEB80' id='com.sap.glx.ide.flow.patterns.LanePattern.INACTIVE'/>
+<pictograms.RenderingStyle m:c='1' m:i='E0180D08AB351D796DF511E696070205857FEB80' predefinedStyleId='light-gray'/>
+<pictograms.Style m:c='1' m:i='E0180D08AB351D7A6DF511E6B30B0205857FEB80' lineWidth='2' renderingStyle='E0180D08AB351D7B6DF511E6BCFB0205857FEB80' transparency='0.4' id='com.sap.glx.ide.flow.patterns.PoolPattern'/>
+<pictograms.RenderingStyle m:c='1' m:i='E0180D08AB351D7B6DF511E6BCFB0205857FEB80' predefinedStyleId='light-yellow'/>
+<pictograms.Style m:c='1' m:i='E0180D08AB3527C16DF511E6C6520205857FEB80' lineStyle='DASH' renderingStyle='E0180D08AB3527C26DF511E6A2A20205857FEB80' id='com.sap.glx.ide.flow.patterns.PoolPattern.INACTIVE'/>
+<pictograms.RenderingStyle m:c='1' m:i='E0180D08AB3527C26DF511E6A2A20205857FEB80' predefinedStyleId='light-gray'/>
+<pictograms.Style m:c='1' m:i='E0180D08AB3527C36DF511E6AE690205857FEB80' lineWidth='2' filled='true' id='com.sap.glx.ide.flow.patterns.LaneObjectPattern'/>
+<datatypes.Color m:c='1' m:i='E0180D08AB3559B36DF511E6C1EC0205857FEB80' red='98' green='131' blue='167'/>
+<pictograms.Style m:c='1' m:i='E0180D08AB3559B46DF511E6C33F0205857FEB80' lineWidth='2' lineStyle='SOLID' renderingStyle='E0180D08AB3559B56DF511E6A6220205857FEB80' id='com.sap.glx.ide.flow.patterns.ActivityPattern'/>
+<pictograms.RenderingStyle m:c='1' m:i='E0180D08AB3559B56DF511E6A6220205857FEB80' predefinedStyleId='blue-white-gloss'/>
+<pictograms.Style m:c='1' m:i='E0180D08AB3578A26DF511E6C76E0205857FEB80' lineVisible='false' transparency='0.4' id='com.sap.glx.ide.flow.patterns.AnnotationPattern'/>
+<pictograms.Style m:c='1' m:i='E0180D08AB3578A36DF511E68C180205857FEB80' lineWidth='1' filled='true' id='com.sap.glx.ide.flow.patterns.BoundaryEventPattern'/>
+<pictograms.Style m:c='1' m:i='E0180D08AB35A5156DF511E6BA250205857FEB80' id='com.sap.glx.ide.flow.patterns.WorkflowPattern.TEXT' font='E0630A07AB35A5166DF511E687DB0205857FEB80' horizontalAlignment='ALIGNMENT_CENTER' verticalAlignment='ALIGNMENT_CENTER'/>
+<pictograms.Style m:c='1' m:i='E0180D08AB35CB786DF511E6A0510205857FEB80' id='com.sap.glx.ide.flow.patterns.PoolPattern.TEXT' font='E0630A07AB35CB796DF511E6AA510205857FEB80'/>
+<pictograms.Style m:c='1' m:i='E0180D08AB35CB7A6DF511E6AD740205857FEB80' id='com.sap.glx.ide.flow.patterns.LanePattern.TEXT' font='E0630A07AB36116D6DF511E6B0C70205857FEB80'/>
+<pictograms.FreeFormConnection m:c='1' m:i='E0180D08D1041BA26F7911E6B1A40205857FEB80' visible='true' active='true'/>
+<links.PictogramLink m:c='1' m:i='E0180D08D1041BA36F7911E680920205857FEB80'/>
+<pictograms.Polyline m:c='1' m:i='E0180D08D10461296F7911E6BA6E0205857FEB80' lineWidth='2' filled='false' width='0' height='0' x='0' y='0'/>
+<pictograms.ConnectionDecorator m:c='1' m:i='E0180D08D104612A6F7911E69A3A0205857FEB80' visible='true' active='false' locationRelative='true' location='1.0'/>
+<pictograms.Polyline m:c='1' m:i='E0180D08D10466626F7911E689700205857FEB80' lineWidth='2' filled='false' width='0' height='0' x='0' y='0'>
+<points x='-7' y='3' before='0' after='0'/>
+<points x='0' y='0' before='0' after='0'/>
+<points x='-7' y='-3' before='0' after='0'/>
+</pictograms.Polyline>
+<pictograms.Diagram m:c='1' m:i='E03D999BAA49719F6DF511E685F60205857FEB80' visible='true' active='false' gridUnit='10' diagramTypeId='com.sap.glx.ide.diagramtype.flow' name='P_BPM_001_SpeakersReplication_CVM_CQ5' snapToGrid='true' showGuides='true'>
+<properties key='dataFlowVisible' value='true'/>
+<properties key='dataObjectsVisible' value='true'/>
+<properties key='annotationsFlowVisible' value='true'/>
+<properties key='containerOrientation' value='orientationHorizontal'/>
+<properties key='dropIntoConnection' value='false'/>
+</pictograms.Diagram>
+<pictograms.Rectangle m:c='1' m:i='E03D999BAA4971A06DF511E6CC4B0205857FEB80' width='1000' height='1000' x='0' y='0'/>
+<datatypes.Color m:c='1' m:i='E03D999BAA4971A16DF511E681510205857FEB80' red='227' green='238' blue='249'/>
+<datatypes.Color m:c='1' m:i='E03D999BAA49A7EA6DF511E692020205857FEB80' red='255' green='255' blue='255'/>
+<links.PictogramLink m:c='1' m:i='E03D999BAA49F52F6DF511E6BBB60205857FEB80'/>
+<links.DiagramLink m:c='1' m:i='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<pictograms.ContainerShape m:c='1' m:i='E0630A07A55B3D896DF911E697F10205857FEB80' visible='true' active='true'>
+<properties key='dataObjectsReference' value='false'/>
+</pictograms.ContainerShape>
+<pictograms.Rectangle m:c='1' m:i='E0630A07A55B3D8A6DF911E6BE900205857FEB80' filled='false' lineVisible='false' width='90' height='62' x='255' y='10'/>
+<pictograms.Polygon m:c='1' m:i='E0630A07A55B612C6DF911E6C6640205857FEB80' lineWidth='1' filled='true' width='30' height='42' x='30' y='0'>
+<points x='0' y='0' before='0' after='0'/>
+<points x='23' y='0' before='0' after='0'/>
+<points x='30' y='7' before='0' after='0'/>
+<points x='30' y='42' before='0' after='0'/>
+<points x='0' y='42' before='0' after='0'/>
+<points x='0' y='0' before='0' after='0'/>
+</pictograms.Polygon>
+<pictograms.Polygon m:c='1' m:i='E0630A07A55B612D6DF911E695F80205857FEB80' lineWidth='1' filled='true' width='0' height='0' x='0' y='0'>
+<points x='23' y='0' before='0' after='0'/>
+<points x='23' y='7' before='0' after='0'/>
+<points x='30' y='7' before='0' after='0'/>
+<points x='23' y='0' before='0' after='0'/>
+</pictograms.Polygon>
+<pictograms.ChopboxAnchor m:c='1' m:i='E0630A07A55B99216DF911E698730205857FEB80' visible='false' active='false'/>
+<pictograms.Text m:c='1' m:i='E0630A07A55B99226DF911E6C6070205857FEB80' width='90' height='20' x='0' y='42' font='E0630A07A55B99236DF911E6B6700205857FEB80' horizontalAlignment='ALIGNMENT_CENTER' value='DO_Speakers_Out'/>
+<pictograms.Font m:c='1' m:i='E0630A07A55B99236DF911E6B6700205857FEB80' name='Arial' size='8' italic='false' bold='false'/>
+<links.PictogramLink m:c='1' m:i='E0630A07A55BB5376DF911E6CF060205857FEB80'/>
+<pictograms.ContainerShape m:c='1' m:i='E0630A07AB3411CA6DF511E694290205857FEB80' visible='true' active='true'>
+<properties key='containerExpanded' value='true'/>
+<properties key='containerWidth' value='1276'/>
+<properties key='containerHeight' value='511'/>
+</pictograms.ContainerShape>
+<pictograms.Rectangle m:c='1' m:i='E0630A07AB3411CB6DF511E6AE520205857FEB80' width='1276' height='511' x='30' y='30'/>
+<pictograms.Font m:c='1' m:i='E0630A07AB35A5166DF511E687DB0205857FEB80' name='Arial' size='8' italic='false' bold='false'/>
+<pictograms.Font m:c='1' m:i='E0630A07AB35CB796DF511E6AA510205857FEB80' name='Arial' size='8' italic='false' bold='true'/>
+<pictograms.Font m:c='1' m:i='E0630A07AB36116D6DF511E6B0C70205857FEB80' name='Arial' size='8' italic='false' bold='true'/>
+<pictograms.ChopboxAnchor m:c='1' m:i='E0630A07AB36116E6DF511E682190205857FEB80' visible='false' active='false'/>
+<pictograms.Shape m:c='1' m:i='E0630A07AB36116F6DF511E6814D0205857FEB80' visible='true' active='false'/>
+<pictograms.Text m:c='1' m:i='E0630A07AB3611706DF511E6CA370205857FEB80' width='20' height='475' x='5' y='18' angle='270' value='TEAC Replications Speakers File'/>
+<links.PictogramLink m:c='1' m:i='E0630A07AB3659956DF511E68C820205857FEB80'/>
+<pictograms.ContainerShape m:c='1' m:i='E0630A07AB380D446DF511E685580205857FEB80' visible='true' active='true'>
+<properties key='lanePreMoveX' value='27'/>
+<properties key='lanePreMoveY' value='0'/>
+<properties key='resizedLaneInitialX' value='27'/>
+<properties key='resizedLaneInitialY' value='0'/>
+</pictograms.ContainerShape>
+<pictograms.Rectangle m:c='1' m:i='E0630A07AB3866366DF511E6BFA40205857FEB80' width='1249' height='161' x='27' y='0'/>
+<pictograms.Shape m:c='1' m:i='E0630A07AB3866376DF511E69FA20205857FEB80' visible='true' active='false'/>
+<pictograms.Text m:c='1' m:i='E0630A07AB3866386DF511E698110205857FEB80' transparency='0.0' width='20' height='161' x='5' y='0' angle='270' value='Salesforce'/>
+<links.PictogramLink m:c='1' m:i='E0630A07AB38854A6DF511E6AC2B0205857FEB80'/>
+<pictograms.ContainerShape m:c='1' m:i='E0630A07AB392B686DF511E685790205857FEB80' visible='true' active='true'>
+<properties key='lanePreMoveX' value='27'/>
+<properties key='lanePreMoveY' value='159'/>
+<properties key='resizedLaneInitialX' value='27'/>
+<properties key='resizedLaneInitialY' value='159'/>
+</pictograms.ContainerShape>
+<pictograms.Rectangle m:c='1' m:i='E0630A07AB392B696DF511E6A8E90205857FEB80' width='1249' height='352' x='27' y='159'/>
+<pictograms.Shape m:c='1' m:i='E0630A07AB392B6A6DF511E6A5840205857FEB80' visible='true' active='false'/>
+<pictograms.Text m:c='1' m:i='E0630A07AB392B6B6DF511E6BD460205857FEB80' width='20' height='352' x='5' y='0' angle='270' value='CQ5'/>
+<links.PictogramLink m:c='1' m:i='E0630A07AB3969516DF511E686C30205857FEB80'/>
+<pictograms.ContainerShape m:c='1' m:i='E0630A07AB3A42A26DF511E6CD340205857FEB80' visible='true' active='true'/>
+<pictograms.Rectangle m:c='1' m:i='E0630A07AB3A42A36DF511E6A7170205857FEB80' filled='false' lineVisible='false' width='91' height='51' x='63' y='80'/>
+<pictograms.Ellipse m:c='1' m:i='E0630A07AB3A42A46DF511E6C8340205857FEB80' renderingStyle='E0630A07AB3A42A56DF511E68A630205857FEB80' width='31' height='31' x='30' y='0'/>
+<pictograms.RenderingStyle m:c='1' m:i='E0630A07AB3A42A56DF511E68A630205857FEB80' predefinedStyleId='blue-white-gloss'/>
+<pictograms.ChopboxAnchor m:c='1' m:i='E0630A07AB3A7B506DF511E6A43D0205857FEB80' visible='false' active='false'/>
+<pictograms.Text m:c='1' m:i='E0630A07AB3A7B516DF511E6B8650205857FEB80' width='91' height='20' x='0' y='31' value='Start'/>
+<links.PictogramLink m:c='1' m:i='E0630A07AB3A7B526DF511E698E40205857FEB80'/>
+<pictograms.ContainerShape m:c='1' m:i='E0630A07AB3B25846DF511E69DC60205857FEB80' visible='true' active='true'/>
+<pictograms.Rectangle m:c='1' m:i='E0630A07AB3B423F6DF511E69BA30205857FEB80' filled='false' lineVisible='false' width='91' height='51' x='1053' y='90'/>
+<pictograms.Ellipse m:c='1' m:i='E0630A07AB3B42406DF511E698650205857FEB80' lineWidth='4' renderingStyle='E0630A07AB3B42416DF511E6B82F0205857FEB80' width='31' height='31' x='30' y='0'/>
+<pictograms.RenderingStyle m:c='1' m:i='E0630A07AB3B42416DF511E6B82F0205857FEB80' predefinedStyleId='blue-white-gloss'/>
+<pictograms.ChopboxAnchor m:c='1' m:i='E0630A07AB3B82406DF511E6C3E80205857FEB80' visible='false' active='false'/>
+<pictograms.Text m:c='1' m:i='E0630A07AB3B94886DF511E698F80205857FEB80' width='91' height='20' x='0' y='31' value='End'/>
+<links.PictogramLink m:c='1' m:i='E0630A07AB3B94896DF511E6C4BB0205857FEB80'/>
+<pictograms.ContainerShape m:c='1' m:i='E0630A07B41B36376DF811E6A8C30205857FEB80' visible='true' active='true'>
+<properties key='dataObjectsReference' value='false'/>
+</pictograms.ContainerShape>
+<pictograms.Rectangle m:c='1' m:i='E0630A07B41B4F676DF811E6A8880205857FEB80' filled='false' lineVisible='false' width='90' height='62' x='63' y='10'/>
+<pictograms.Polygon m:c='1' m:i='E0630A07B420D59C6DF811E691140205857FEB80' lineWidth='1' filled='true' width='30' height='42' x='30' y='0'>
+<points x='0' y='0' before='0' after='0'/>
+<points x='23' y='0' before='0' after='0'/>
+<points x='30' y='7' before='0' after='0'/>
+<points x='30' y='42' before='0' after='0'/>
+<points x='0' y='42' before='0' after='0'/>
+<points x='0' y='0' before='0' after='0'/>
+</pictograms.Polygon>
+<pictograms.Polygon m:c='1' m:i='E0630A07B422A8356DF811E6820E0205857FEB80' lineWidth='1' filled='true' width='0' height='0' x='0' y='0'>
+<points x='23' y='0' before='0' after='0'/>
+<points x='23' y='7' before='0' after='0'/>
+<points x='30' y='7' before='0' after='0'/>
+<points x='23' y='0' before='0' after='0'/>
+</pictograms.Polygon>
+<pictograms.ChopboxAnchor m:c='1' m:i='E0630A07B422DC276DF811E6CB8F0205857FEB80' visible='false' active='false'/>
+<pictograms.Text m:c='1' m:i='E0630A07B422E34A6DF811E680C80205857FEB80' width='90' height='20' x='0' y='42' font='E0630A07B422E34B6DF811E698AA0205857FEB80' horizontalAlignment='ALIGNMENT_CENTER' value='DO_Speakers'/>
+<pictograms.Font m:c='1' m:i='E0630A07B422E34B6DF811E698AA0205857FEB80' name='Arial' size='8' italic='false' bold='false'/>
+<links.PictogramLink m:c='1' m:i='E0630A07B4231D136DF811E68BC00205857FEB80'/>
+<pictograms.ContainerShape m:c='1' m:i='E0630A07C98922DE6E0011E690800205857FEB80' visible='true' active='true'/>
+<pictograms.Rectangle m:c='1' m:i='E0630A07C98922DF6E0011E68BA40205857FEB80' filled='false' lineVisible='false' width='147' height='107' x='227' y='42'/>
+<pictograms.RoundedRectangle m:c='1' m:i='E0630A07C98922E06E0011E6BE5B0205857FEB80' width='95' height='55' x='26' y='26' cornerHeight='12' cornerWidth='12'/>
+<pictograms.ChopboxAnchor m:c='1' m:i='E0630A07C98922E16E0011E69EAD0205857FEB80' visible='false' active='false'/>
+<pictograms.MultiText m:c='1' m:i='E0630A07C98922E26E0011E6996D0205857FEB80' width='77' height='30' x='15' y='5' value='A1. Get Attachments'/>
+<pictograms.Image m:c='1' m:i='E0630A07C98922E46E0011E68BAE0205857FEB80' width='24' height='24' x='0' y='0' id='Automated' stretchH='false' stretchV='false' proportional='false'/>
+<pictograms.Image m:c='1' m:i='E0630A07C98922E56E0011E6C4A00205857FEB80' width='48' height='24' x='23' y='31' id='image.loop.multiinstanceloop' stretchH='false' stretchV='false' proportional='false'/>
+<links.PictogramLink m:c='1' m:i='E0630A07C98922E66E0011E695D60205857FEB80'/>
+<pictograms.ContainerShape m:c='1' m:i='E0C4897F12941DBB7A9111E680670205857FEB80' visible='true' active='true'>
+<properties key='containerExpanded' value='true'/>
+<properties key='containerWidth' value='147'/>
+<properties key='containerHeight' value='107'/>
+<properties key='containerExpanedWidth' value='583'/>
+<properties key='containerExpanedHeight' value='353'/>
+</pictograms.ContainerShape>
+<pictograms.Rectangle m:c='1' m:i='E0C4897F12941DBC7A9111E6C92F0205857FEB80' filled='false' lineVisible='false' width='583' height='353' x='397' y='-5'/>
+<pictograms.RoundedRectangle m:c='1' m:i='E0C4897F12941DBD7A9111E6AC440205857FEB80' width='531' height='301' x='26' y='26' cornerHeight='12' cornerWidth='12'/>
+<pictograms.ChopboxAnchor m:c='1' m:i='E0C4897F12945ACF7A9111E6ABD90205857FEB80' visible='false' active='false'/>
+<pictograms.MultiText m:c='1' m:i='E0C4897F12945AD07A9111E687C60205857FEB80' width='530' height='300' x='1' y='1' verticalAlignment='ALIGNMENT_TOP' value='Send a feedback to Salesforce for Each Speaker Replicated in CQ5'/>
+<pictograms.Image m:c='1' m:i='E0C4897F1294962F7A9111E6CCCF0205857FEB80' width='24' height='24' x='0' y='0' id='image.common.empty' stretchH='false' stretchV='false' proportional='false'/>
+<pictograms.Image m:c='1' m:i='E0C4897F129496307A9111E698860205857FEB80' width='48' height='24' x='241' y='277' id='image.loop.multiinstanceloop' stretchH='false' stretchV='false' proportional='false'/>
+<links.PictogramLink m:c='1' m:i='E0C4897F1294E8447A9111E6C0840205857FEB80'/>
+<pictograms.ContainerShape m:c='1' m:i='E0C4897F12A05AF77A9111E6C1350205857FEB80' visible='true' active='true'/>
+<pictograms.Rectangle m:c='1' m:i='E0C4897F12A05AF87A9111E699BA0205857FEB80' filled='false' lineVisible='false' width='91' height='51' x='33' y='139'/>
+<pictograms.Ellipse m:c='1' m:i='E0C4897F12A05AF97A9111E6AB830205857FEB80' renderingStyle='E0C4897F12A087DD7A9111E689A10205857FEB80' width='31' height='31' x='30' y='0'/>
+<pictograms.RenderingStyle m:c='1' m:i='E0C4897F12A087DD7A9111E689A10205857FEB80' predefinedStyleId='blue-white-gloss'/>
+<pictograms.ChopboxAnchor m:c='1' m:i='E0C4897F12A087DF7A9111E6C3B20205857FEB80' visible='false' active='false'/>
+<pictograms.Text m:c='1' m:i='E0C4897F12A087E07A9111E697A20205857FEB80' width='91' height='20' x='0' y='31' value='Start SP'/>
+<links.PictogramLink m:c='1' m:i='E0C4897F12A0B7007A9111E697D60205857FEB80'/>
+<pictograms.ContainerShape m:c='1' m:i='E0C4897F12A165077A9111E6B1190205857FEB80' visible='true' active='true'/>
+<pictograms.Rectangle m:c='1' m:i='E0C4897F12A165087A9111E6C4A00205857FEB80' filled='false' lineVisible='false' width='91' height='51' x='456' y='139'/>
+<pictograms.Ellipse m:c='1' m:i='E0C4897F12A165097A9111E6A86F0205857FEB80' lineWidth='4' renderingStyle='E0C4897F12A18F9F7A9111E6B0B50205857FEB80' width='31' height='31' x='30' y='0'/>
+<pictograms.RenderingStyle m:c='1' m:i='E0C4897F12A18F9F7A9111E6B0B50205857FEB80' predefinedStyleId='blue-white-gloss'/>
+<pictograms.ChopboxAnchor m:c='1' m:i='E0C4897F12A18FA17A9111E698AB0205857FEB80' visible='false' active='false'/>
+<pictograms.Text m:c='1' m:i='E0C4897F12A1C4DA7A9111E6B97D0205857FEB80' width='91' height='20' x='0' y='31' value='End SP'/>
+<links.PictogramLink m:c='1' m:i='E0C4897F12A1C4DB7A9111E69D450205857FEB80'/>
+<pictograms.ContainerShape m:c='1' m:i='E0C4897F2490A06C7A9411E6884F0205857FEB80' visible='true' active='true'/>
+<pictograms.Rectangle m:c='1' m:i='E0C4897F2490A06D7A9411E6CC5C0205857FEB80' filled='false' lineVisible='false' width='147' height='107' x='330' y='101'/>
+<pictograms.RoundedRectangle m:c='1' m:i='E0C4897F2490E78B7A9411E6ABB10205857FEB80' width='95' height='55' x='26' y='26' cornerHeight='12' cornerWidth='12'/>
+<pictograms.ChopboxAnchor m:c='1' m:i='E0C4897F2490E78C7A9411E68E260205857FEB80' visible='false' active='false'/>
+<pictograms.MultiText m:c='1' m:i='E0C4897F2490E78D7A9411E691FE0205857FEB80' width='77' height='45' x='15' y='5' value='A3. Send Feedback CVM'/>
+<pictograms.Image m:c='1' m:i='E0C4897F24910F177A9411E688E40205857FEB80' width='24' height='24' x='0' y='0' id='Automated' stretchH='false' stretchV='false' proportional='false'/>
+<pictograms.Image m:c='1' m:i='E0C4897F24910F187A9411E6850D0205857FEB80' width='48' height='24' x='23' y='31' id='image.common.empty' stretchH='false' stretchV='false' proportional='false'/>
+<links.PictogramLink m:c='1' m:i='E0C4897F249131FB7A9411E6A8220205857FEB80'/>
+<pictograms.ContainerShape m:c='1' m:i='E0C4897F528AD1B17A9411E6BBD90205857FEB80' visible='true' active='true'>
+<properties key='dataObjectsReference' value='false'/>
+</pictograms.ContainerShape>
+<pictograms.Rectangle m:c='1' m:i='E0C4897F528AEBD07A9411E694B00205857FEB80' filled='false' lineVisible='false' width='90' height='62' x='158' y='57'/>
+<pictograms.Polygon m:c='1' m:i='E0C4897F528AEBD17A9411E689270205857FEB80' lineWidth='1' filled='true' width='30' height='42' x='30' y='0'>
+<points x='0' y='0' before='0' after='0'/>
+<points x='23' y='0' before='0' after='0'/>
+<points x='30' y='7' before='0' after='0'/>
+<points x='30' y='42' before='0' after='0'/>
+<points x='0' y='42' before='0' after='0'/>
+<points x='0' y='0' before='0' after='0'/>
+</pictograms.Polygon>
+<pictograms.Polygon m:c='1' m:i='E0C4897F528AEBD27A9411E6C7550205857FEB80' lineWidth='1' filled='true' width='0' height='0' x='0' y='0'>
+<points x='23' y='0' before='0' after='0'/>
+<points x='23' y='7' before='0' after='0'/>
+<points x='30' y='7' before='0' after='0'/>
+<points x='23' y='0' before='0' after='0'/>
+</pictograms.Polygon>
+<pictograms.ChopboxAnchor m:c='1' m:i='E0C4897F528B0E157A9411E6C8960205857FEB80' visible='false' active='false'/>
+<pictograms.Text m:c='1' m:i='E0C4897F528B0E167A9411E6B0B00205857FEB80' width='90' height='20' x='0' y='42' font='E0C4897F528B0E177A9411E69A140205857FEB80' horizontalAlignment='ALIGNMENT_CENTER' value='DO_Rep_Result'/>
+<pictograms.Font m:c='1' m:i='E0C4897F528B0E177A9411E69A140205857FEB80' name='Arial' size='8' italic='false' bold='false'/>
+<links.PictogramLink m:c='1' m:i='E0C4897F528B0E187A9411E6A27B0205857FEB80'/>
+<pictograms.ContainerShape m:c='1' m:i='E0C4897F88D7C80B7A9311E6C51A0205857FEB80' visible='true' active='true'/>
+<pictograms.Rectangle m:c='1' m:i='E0C4897F88D7C80C7A9311E6C1AC0205857FEB80' filled='false' lineVisible='false' width='147' height='107' x='130' y='101'/>
+<pictograms.RoundedRectangle m:c='1' m:i='E0C4897F88D7FA7C7A9311E69FAC0205857FEB80' width='95' height='55' x='26' y='26' cornerHeight='12' cornerWidth='12'/>
+<pictograms.ChopboxAnchor m:c='1' m:i='E0C4897F88D7FA7D7A9311E6C7B10205857FEB80' visible='false' active='false'/>
+<pictograms.MultiText m:c='1' m:i='E0C4897F88D7FA7E7A9311E6B80D0205857FEB80' width='77' height='45' x='15' y='5' value='A2. replicate in CQ5'/>
+<pictograms.Image m:c='1' m:i='E0C4897F88D81EA57A9311E68D540205857FEB80' width='24' height='24' x='0' y='0' id='Automated' stretchH='false' stretchV='false' proportional='false'/>
+<pictograms.Image m:c='1' m:i='E0C4897F88D840107A9311E69B490205857FEB80' width='48' height='24' x='23' y='31' id='image.common.empty' stretchH='false' stretchV='false' proportional='false'/>
+<links.PictogramLink m:c='1' m:i='E0C4897F88D840117A9311E6C7630205857FEB80'/>
+<links.PictogramLinkReferencesBusinessObjects c='1'>
+<L f='local:E0C4897F249790DF7A9411E6C60E0205857FEB80' s='E0180D082497BF007A9411E69B8E0205857FEB80'/>
+<L f='local:E0C4897F2E8FDCEC7A9411E6B4E50205857FEB80' s='E0180D082E9019BA7A9411E6A2140205857FEB80'/>
+<L f='local:E0C4897F88E054167A9311E6A28E0205857FEB80' s='E0180D0888E0AB177A9311E6BABC0205857FEB80'/>
+<L f='local:E0C4897F9F73840F7A9311E6A26E0205857FEB80' s='E0180D089F73BA707A9311E690830205857FEB80'/>
+<L f='local:E0C4897FAA5BBDFA7A9311E6A7060205857FEB80' s='E0180D08AA5C12697A9311E6C53C0205857FEB80'/>
+<L f='local:E0DCF6CDD103EC806F7911E6BB170205857FEB80' s='E0180D08D1041BA36F7911E680920205857FEB80'/>
+<L f='local:E03D999BA9DB6E806DF511E6AC1C0205857FEB80' s='E03D999BAA49F52F6DF511E6BBB60205857FEB80'/>
+<L f='local:E03D999BA9DB6E836DF511E6BD280205857FEB80' s='E03D999BAA49F52F6DF511E6BBB60205857FEB80'/>
+<L f='local:E03D999BA9FFA4C56DF511E6A0920205857FEB80' s='E03D999BAA49F52F6DF511E6BBB60205857FEB80'/>
+<L f='local:E0630A07A557E4E56DF911E6928E0205857FEB80' s='E0630A07A55BB5376DF911E6CF060205857FEB80'/>
+<L f='local:E03D999BAA4A11EC6DF511E6BD110205857FEB80' s='E0630A07AB3659956DF511E68C820205857FEB80'/>
+<L f='local:E03D999BAA70D28F6DF511E6CF8C0205857FEB80' s='E0630A07AB38854A6DF511E6AC2B0205857FEB80'/>
+<L f='local:E03D999BAAA9F4B86DF511E688D20205857FEB80' s='E0630A07AB3969516DF511E686C30205857FEB80'/>
+<L f='local:E03D999BAAE2B8D86DF511E6CE1E0205857FEB80' s='E0630A07AB3A7B526DF511E698E40205857FEB80'/>
+<L f='local:E03D999BAAE3A9B56DF511E68F1E0205857FEB80' s='E0630A07AB3B94896DF511E6C4BB0205857FEB80'/>
+<L f='local:E0630A07B40DAF566DF811E698960205857FEB80' s='E0630A07B4231D136DF811E68BC00205857FEB80'/>
+<L f='local:E0630A07C98922D66E0011E6C8BC0205857FEB80' s='E0630A07C98922E66E0011E695D60205857FEB80'/>
+<L f='local:E0C4897F1292F6CF7A9111E6878D0205857FEB80' s='E0C4897F1294E8447A9111E6C0840205857FEB80'/>
+<L f='local:E0C4897F12A011E87A9111E6BE5B0205857FEB80' s='E0C4897F12A0B7007A9111E697D60205857FEB80'/>
+<L f='local:E0C4897F12A130217A9111E68FA00205857FEB80' s='E0C4897F12A1C4DB7A9111E69D450205857FEB80'/>
+<L f='local:E0C4897F248731907A9411E6B3E10205857FEB80' s='E0C4897F249131FB7A9411E6A8220205857FEB80'/>
+<L f='local:E0C4897F5289F56B7A9411E6C7040205857FEB80' s='E0C4897F528B0E187A9411E6A27B0205857FEB80'/>
+<L f='local:E0C4897F88D791C27A9311E6B4B70205857FEB80' s='E0C4897F88D840117A9311E6C7630205857FEB80'/>
+</links.PictogramLinkReferencesBusinessObjects>
+<pictograms.ConnectionStartsAtAnchor c='1'>
+<L f='E0C4897F88D7FA7D7A9311E6C7B10205857FEB80' s='E0180D082497BEFF7A9411E6C0C60205857FEB80'/>
+<L f='E0C4897F2490E78C7A9411E68E260205857FEB80' s='E0180D082E90007C7A9411E68B550205857FEB80'/>
+<L f='E0C4897F12A087DF7A9111E6C3B20205857FEB80' s='E0180D0888E089E97A9311E6B2CC0205857FEB80'/>
+<L f='E0630A07C98922E16E0011E69EAD0205857FEB80' s='E0180D089F73BA6F7A9311E6A7A10205857FEB80'/>
+<L f='E0C4897F12945ACF7A9111E6ABD90205857FEB80' s='E0180D08AA5C12687A9311E6BAE10205857FEB80'/>
+<L f='E0630A07AB3A7B506DF511E6A43D0205857FEB80' s='E0180D08D1041BA26F7911E6B1A40205857FEB80'/>
+</pictograms.ConnectionStartsAtAnchor>
+<pictograms.ConnectionContainsConnectionDecorators c='1'>
+<L f='E0180D082497DFFA7A9411E6C61F0205857FEB80' s='E0180D082497BEFF7A9411E6C0C60205857FEB80'/>
+<L f='E0180D082E90451A7A9411E690410205857FEB80' s='E0180D082E90007C7A9411E68B550205857FEB80'/>
+<L f='E0180D0888E0DBDF7A9311E6BED40205857FEB80' s='E0180D0888E089E97A9311E6B2CC0205857FEB80'/>
+<L f='E0180D089F73F62B7A9311E6AF410205857FEB80' s='E0180D089F73BA6F7A9311E6A7A10205857FEB80'/>
+<L f='E0180D08AA5C42AB7A9311E6CCCA0205857FEB80' s='E0180D08AA5C12687A9311E6BAE10205857FEB80'/>
+<L f='E0180D08D104612A6F7911E69A3A0205857FEB80' s='E0180D08D1041BA26F7911E6B1A40205857FEB80'/>
+</pictograms.ConnectionContainsConnectionDecorators>
+<pictograms.GraphicsAlgorithmHasForegroundColor c='1'>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D082497DFF97A9411E6C7710205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D082497DFFB7A9411E6C3740205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D082E9045197A9411E69CD80205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D082E90451B7A9411E688570205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D0888E0DBDE7A9311E6A6E10205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D0888E0FEB07A9311E6B1310205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D089F73F62A7A9311E6AF770205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D089F73F62C7A9311E6C3440205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D08AA5C42AA7A9311E6C5760205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D08AA5C42AC7A9311E6A0D60205857FEB80'/>
+<L f='E0180D08AB34FA516DF511E6CFED0205857FEB80' s='E0180D08AB34A4156DF511E6C4170205857FEB80'/>
+<L f='E0180D08AB34FA536DF511E691A00205857FEB80' s='E0180D08AB34FA526DF511E681E20205857FEB80'/>
+<L f='E0180D08AB34FA536DF511E691A00205857FEB80' s='E0180D08AB351D7A6DF511E6B30B0205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D08AB3527C36DF511E6AE690205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D08AB3559B46DF511E6C33F0205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D08AB3578A36DF511E68C180205857FEB80'/>
+<L f='E0180D08AB34FA516DF511E6CFED0205857FEB80' s='E0180D08AB35A5156DF511E6BA250205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D08D10461296F7911E6BA6E0205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0180D08D10466626F7911E689700205857FEB80'/>
+<L f='E03D999BAA4971A16DF511E681510205857FEB80' s='E03D999BAA4971A06DF511E6CC4B0205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0630A07A55B612C6DF911E6C6640205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0630A07A55B612D6DF911E695F80205857FEB80'/>
+<L f='E0180D08AB34FA516DF511E6CFED0205857FEB80' s='E0630A07A55B99226DF911E6C6070205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0630A07B420D59C6DF811E691140205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0630A07B422A8356DF811E6820E0205857FEB80'/>
+<L f='E0180D08AB34FA516DF511E6CFED0205857FEB80' s='E0630A07B422E34A6DF811E680C80205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0C4897F528AEBD17A9411E689270205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E0C4897F528AEBD27A9411E6C7550205857FEB80'/>
+<L f='E0180D08AB34FA516DF511E6CFED0205857FEB80' s='E0C4897F528B0E167A9411E6B0B00205857FEB80'/>
+</pictograms.GraphicsAlgorithmHasForegroundColor>
+<pictograms.DiagramContainsColors c='1'>
+<L f='E0180D08AB34FA516DF511E6CFED0205857FEB80' s='E03D999BAA49719F6DF511E685F60205857FEB80'/>
+<L f='E0180D08AB34FA536DF511E691A00205857FEB80' s='E03D999BAA49719F6DF511E685F60205857FEB80'/>
+<L f='E0180D08AB3559B36DF511E6C1EC0205857FEB80' s='E03D999BAA49719F6DF511E685F60205857FEB80'/>
+<L f='E03D999BAA4971A16DF511E681510205857FEB80' s='E03D999BAA49719F6DF511E685F60205857FEB80'/>
+<L f='E03D999BAA49A7EA6DF511E692020205857FEB80' s='E03D999BAA49719F6DF511E685F60205857FEB80'/>
+</pictograms.DiagramContainsColors>
+<links.DiagramLinkReferencesDiagram c='1'>
+<L f='E03D999BAA49719F6DF511E685F60205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+</links.DiagramLinkReferencesDiagram>
+<pictograms.ContainershapeContainsShapes c='1'>
+<L f='E0630A07AB3411CA6DF511E694290205857FEB80' s='E03D999BAA49719F6DF511E685F60205857FEB80'/>
+<L f='E0630A07AB36116F6DF511E6814D0205857FEB80' s='E0630A07AB3411CA6DF511E694290205857FEB80'/>
+<L f='E0630A07AB380D446DF511E685580205857FEB80' s='E0630A07AB3411CA6DF511E694290205857FEB80'/>
+<L f='E0630A07AB392B686DF511E685790205857FEB80' s='E0630A07AB3411CA6DF511E694290205857FEB80'/>
+<L f='E0630A07AB3866376DF511E69FA20205857FEB80' s='E0630A07AB380D446DF511E685580205857FEB80'/>
+<L f='E0630A07AB3A42A26DF511E6CD340205857FEB80' s='E0630A07AB380D446DF511E685580205857FEB80'/>
+<L f='E0630A07AB3B25846DF511E69DC60205857FEB80' s='E0630A07AB380D446DF511E685580205857FEB80'/>
+<L f='E0630A07B41B36376DF811E6A8C30205857FEB80' s='E0630A07AB380D446DF511E685580205857FEB80'/>
+<L f='E0630A07A55B3D896DF911E697F10205857FEB80' s='E0630A07AB380D446DF511E685580205857FEB80'/>
+<L f='E0630A07C98922DE6E0011E690800205857FEB80' s='E0630A07AB380D446DF511E685580205857FEB80'/>
+<L f='E0630A07AB392B6A6DF511E6A5840205857FEB80' s='E0630A07AB392B686DF511E685790205857FEB80'/>
+<L f='E0C4897F12941DBB7A9111E680670205857FEB80' s='E0630A07AB392B686DF511E685790205857FEB80'/>
+<L f='E0C4897F12A05AF77A9111E6C1350205857FEB80' s='E0C4897F12941DBB7A9111E680670205857FEB80'/>
+<L f='E0C4897F12A165077A9111E6B1190205857FEB80' s='E0C4897F12941DBB7A9111E680670205857FEB80'/>
+<L f='E0C4897F88D7C80B7A9311E6C51A0205857FEB80' s='E0C4897F12941DBB7A9111E680670205857FEB80'/>
+<L f='E0C4897F2490A06C7A9411E6884F0205857FEB80' s='E0C4897F12941DBB7A9111E680670205857FEB80'/>
+<L f='E0C4897F528AD1B17A9411E6BBD90205857FEB80' s='E0C4897F12941DBB7A9111E680670205857FEB80'/>
+</pictograms.ContainershapeContainsShapes>
+<pictograms.GraphicsAlgorithmContainsGraphicsAlgorithms c='1'>
+<L f='E0180D084CB3929A6DFB11E6B73C0205857FEB80' s='E0180D084CB3C1F06DFB11E6816E0205857FEB80'/>
+<L f='E0180D084CB3929A6DFB11E6B73C0205857FEB80' s='E0180D084CB3C1F16DFB11E6B92D0205857FEB80'/>
+<L f='E0630A07A55B3D8A6DF911E6BE900205857FEB80' s='E0630A07A55B612C6DF911E6C6640205857FEB80'/>
+<L f='E0630A07A55B3D8A6DF911E6BE900205857FEB80' s='E0630A07A55B99226DF911E6C6070205857FEB80'/>
+<L f='E0630A07A55B612C6DF911E6C6640205857FEB80' s='E0630A07A55B612D6DF911E695F80205857FEB80'/>
+<L f='E0630A07AB3A42A36DF511E6A7170205857FEB80' s='E0630A07AB3A42A46DF511E6C8340205857FEB80'/>
+<L f='E0630A07AB3A42A36DF511E6A7170205857FEB80' s='E0630A07AB3A7B516DF511E6B8650205857FEB80'/>
+<L f='E0630A07AB3A42A46DF511E6C8340205857FEB80' s='E0180D084CB3929A6DFB11E6B73C0205857FEB80'/>
+<L f='E0630A07AB3B423F6DF511E69BA30205857FEB80' s='E0630A07AB3B42406DF511E698650205857FEB80'/>
+<L f='E0630A07AB3B423F6DF511E69BA30205857FEB80' s='E0630A07AB3B94886DF511E698F80205857FEB80'/>
+<L f='E0630A07AB3B42406DF511E698650205857FEB80' s='E0180D082EF695D26DFB11E6C3A30205857FEB80'/>
+<L f='E0630A07B41B4F676DF811E6A8880205857FEB80' s='E0630A07B420D59C6DF811E691140205857FEB80'/>
+<L f='E0630A07B41B4F676DF811E6A8880205857FEB80' s='E0630A07B422E34A6DF811E680C80205857FEB80'/>
+<L f='E0630A07B420D59C6DF811E691140205857FEB80' s='E0630A07B422A8356DF811E6820E0205857FEB80'/>
+<L f='E0630A07C98922DF6E0011E68BA40205857FEB80' s='E0630A07C98922E06E0011E6BE5B0205857FEB80'/>
+<L f='E0630A07C98922E06E0011E6BE5B0205857FEB80' s='E0630A07C98922E26E0011E6996D0205857FEB80'/>
+<L f='E0630A07C98922E06E0011E6BE5B0205857FEB80' s='E0630A07C98922E46E0011E68BAE0205857FEB80'/>
+<L f='E0630A07C98922E06E0011E6BE5B0205857FEB80' s='E0630A07C98922E56E0011E6C4A00205857FEB80'/>
+<L f='E0C4897F12941DBC7A9111E6C92F0205857FEB80' s='E0C4897F12941DBD7A9111E6AC440205857FEB80'/>
+<L f='E0C4897F12941DBD7A9111E6AC440205857FEB80' s='E0C4897F12945AD07A9111E687C60205857FEB80'/>
+<L f='E0C4897F12941DBD7A9111E6AC440205857FEB80' s='E0C4897F1294962F7A9111E6CCCF0205857FEB80'/>
+<L f='E0C4897F12941DBD7A9111E6AC440205857FEB80' s='E0C4897F129496307A9111E698860205857FEB80'/>
+<L f='E0C4897F12A05AF87A9111E699BA0205857FEB80' s='E0C4897F12A05AF97A9111E6AB830205857FEB80'/>
+<L f='E0C4897F12A05AF87A9111E699BA0205857FEB80' s='E0C4897F12A087E07A9111E697A20205857FEB80'/>
+<L f='E0C4897F12A05AF97A9111E6AB830205857FEB80' s='E0180D087B6A5FB97A9311E692610205857FEB80'/>
+<L f='E0C4897F12A165087A9111E6C4A00205857FEB80' s='E0C4897F12A165097A9111E6A86F0205857FEB80'/>
+<L f='E0C4897F12A165087A9111E6C4A00205857FEB80' s='E0C4897F12A1C4DA7A9111E6B97D0205857FEB80'/>
+<L f='E0C4897F12A165097A9111E6A86F0205857FEB80' s='E0180D087E48013F7A9311E6A4FD0205857FEB80'/>
+<L f='E0C4897F2490A06D7A9411E6CC5C0205857FEB80' s='E0C4897F2490E78B7A9411E6ABB10205857FEB80'/>
+<L f='E0C4897F2490E78B7A9411E6ABB10205857FEB80' s='E0C4897F2490E78D7A9411E691FE0205857FEB80'/>
+<L f='E0C4897F2490E78B7A9411E6ABB10205857FEB80' s='E0C4897F24910F177A9411E688E40205857FEB80'/>
+<L f='E0C4897F2490E78B7A9411E6ABB10205857FEB80' s='E0C4897F24910F187A9411E6850D0205857FEB80'/>
+<L f='E0C4897F528AEBD07A9411E694B00205857FEB80' s='E0C4897F528AEBD17A9411E689270205857FEB80'/>
+<L f='E0C4897F528AEBD07A9411E694B00205857FEB80' s='E0C4897F528B0E167A9411E6B0B00205857FEB80'/>
+<L f='E0C4897F528AEBD17A9411E689270205857FEB80' s='E0C4897F528AEBD27A9411E6C7550205857FEB80'/>
+<L f='E0C4897F88D7C80C7A9311E6C1AC0205857FEB80' s='E0C4897F88D7FA7C7A9311E69FAC0205857FEB80'/>
+<L f='E0C4897F88D7FA7C7A9311E69FAC0205857FEB80' s='E0C4897F88D7FA7E7A9311E6B80D0205857FEB80'/>
+<L f='E0C4897F88D7FA7C7A9311E69FAC0205857FEB80' s='E0C4897F88D81EA57A9311E68D540205857FEB80'/>
+<L f='E0C4897F88D7FA7C7A9311E69FAC0205857FEB80' s='E0C4897F88D840107A9311E69B490205857FEB80'/>
+</pictograms.GraphicsAlgorithmContainsGraphicsAlgorithms>
+<links.DiagramLinkReferencesPictogramLinks c='1'>
+<L f='E0180D082497BF007A9411E69B8E0205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0180D082E9019BA7A9411E6A2140205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0180D0888E0AB177A9311E6BABC0205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0180D089F73BA707A9311E690830205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0180D08AA5C12697A9311E6C53C0205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0180D08D1041BA36F7911E680920205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E03D999BAA49F52F6DF511E6BBB60205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0630A07A55BB5376DF911E6CF060205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0630A07AB3659956DF511E68C820205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0630A07AB38854A6DF511E6AC2B0205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0630A07AB3969516DF511E686C30205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0630A07AB3A7B526DF511E698E40205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0630A07AB3B94896DF511E6C4BB0205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0630A07B4231D136DF811E68BC00205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0630A07C98922E66E0011E695D60205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0C4897F1294E8447A9111E6C0840205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0C4897F12A0B7007A9111E697D60205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0C4897F12A1C4DB7A9111E69D450205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0C4897F249131FB7A9411E6A8220205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0C4897F528B0E187A9411E6A27B0205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+<L f='E0C4897F88D840117A9311E6C7630205857FEB80' s='E03D999BAA49F5306DF511E687220205857FEB80'/>
+</links.DiagramLinkReferencesPictogramLinks>
+<pictograms.DiagramAggregatesConnections c='1'>
+<L f='E0180D082497BEFF7A9411E6C0C60205857FEB80' s='E03D999BAA49719F6DF511E685F60205857FEB80'/>
+<L f='E0180D082E90007C7A9411E68B550205857FEB80' s='E03D999BAA49719F6DF511E685F60205857FEB80'/>
+<L f='E0180D0888E089E97A9311E6B2CC0205857FEB80' s='E03D999BAA49719F6DF511E685F60205857FEB80'/>
+<L f='E0180D089F73BA6F7A9311E6A7A10205857FEB80' s='E03D999BAA49719F6DF511E685F60205857FEB80'/>
+<L f='E0180D08AA5C12687A9311E6BAE10205857FEB80' s='E03D999BAA49719F6DF511E685F60205857FEB80'/>
+<L f='E0180D08D1041BA26F7911E6B1A40205857FEB80' s='E03D999BAA49719F6DF511E685F60205857FEB80'/>
+</pictograms.DiagramAggregatesConnections>
+<pictograms.GraphicsAlgorithmHasBackgroundColor c='1'>
+<L f='E0180D082497DFFB7A9411E6C3740205857FEB80' s='E0180D08AB3559B36DF511E6C1EC0205857FEB80'/>
+<L f='E0180D082E90451B7A9411E688570205857FEB80' s='E0180D08AB3559B36DF511E6C1EC0205857FEB80'/>
+<L f='E0180D082EF695D26DFB11E6C3A30205857FEB80' s='E0180D08AB3559B36DF511E6C1EC0205857FEB80'/>
+<L f='E0180D0888E0FEB07A9311E6B1310205857FEB80' s='E0180D08AB3559B36DF511E6C1EC0205857FEB80'/>
+<L f='E0180D089F73F62C7A9311E6C3440205857FEB80' s='E0180D08AB3559B36DF511E6C1EC0205857FEB80'/>
+<L f='E0180D08AA5C42AC7A9311E6A0D60205857FEB80' s='E0180D08AB3559B36DF511E6C1EC0205857FEB80'/>
+<L f='E0180D08AB34A4156DF511E6C4170205857FEB80' s='E03D999BAA49A7EA6DF511E692020205857FEB80'/>
+<L f='E0180D08AB3559B46DF511E6C33F0205857FEB80' s='E03D999BAA49A7EA6DF511E692020205857FEB80'/>
+<L f='E0180D08D10466626F7911E689700205857FEB80' s='E0180D08AB3559B36DF511E6C1EC0205857FEB80'/>
+<L f='E03D999BAA4971A06DF511E6CC4B0205857FEB80' s='E03D999BAA49A7EA6DF511E692020205857FEB80'/>
+<L f='E0630A07A55B612C6DF911E6C6640205857FEB80' s='E03D999BAA49A7EA6DF511E692020205857FEB80'/>
+<L f='E0630A07A55B612D6DF911E695F80205857FEB80' s='E03D999BAA49A7EA6DF511E692020205857FEB80'/>
+<L f='E0630A07B420D59C6DF811E691140205857FEB80' s='E03D999BAA49A7EA6DF511E692020205857FEB80'/>
+<L f='E0630A07B422A8356DF811E6820E0205857FEB80' s='E03D999BAA49A7EA6DF511E692020205857FEB80'/>
+<L f='E0C4897F528AEBD17A9411E689270205857FEB80' s='E03D999BAA49A7EA6DF511E692020205857FEB80'/>
+<L f='E0C4897F528AEBD27A9411E6C7550205857FEB80' s='E03D999BAA49A7EA6DF511E692020205857FEB80'/>
+</pictograms.GraphicsAlgorithmHasBackgroundColor>
+<links.PictogramElementContainsPictogramLink c='1'>
+<L f='E0180D082497BEFF7A9411E6C0C60205857FEB80' s='E0180D082497BF007A9411E69B8E0205857FEB80'/>
+<L f='E0180D082E90007C7A9411E68B550205857FEB80' s='E0180D082E9019BA7A9411E6A2140205857FEB80'/>
+<L f='E0180D0888E089E97A9311E6B2CC0205857FEB80' s='E0180D0888E0AB177A9311E6BABC0205857FEB80'/>
+<L f='E0180D089F73BA6F7A9311E6A7A10205857FEB80' s='E0180D089F73BA707A9311E690830205857FEB80'/>
+<L f='E0180D08AA5C12687A9311E6BAE10205857FEB80' s='E0180D08AA5C12697A9311E6C53C0205857FEB80'/>
+<L f='E0180D08D1041BA26F7911E6B1A40205857FEB80' s='E0180D08D1041BA36F7911E680920205857FEB80'/>
+<L f='E03D999BAA49719F6DF511E685F60205857FEB80' s='E03D999BAA49F52F6DF511E6BBB60205857FEB80'/>
+<L f='E0630A07A55B3D896DF911E697F10205857FEB80' s='E0630A07A55BB5376DF911E6CF060205857FEB80'/>
+<L f='E0630A07AB3411CA6DF511E694290205857FEB80' s='E0630A07AB3659956DF511E68C820205857FEB80'/>
+<L f='E0630A07AB380D446DF511E685580205857FEB80' s='E0630A07AB38854A6DF511E6AC2B0205857FEB80'/>
+<L f='E0630A07AB392B686DF511E685790205857FEB80' s='E0630A07AB3969516DF511E686C30205857FEB80'/>
+<L f='E0630A07AB3A42A26DF511E6CD340205857FEB80' s='E0630A07AB3A7B526DF511E698E40205857FEB80'/>
+<L f='E0630A07AB3B25846DF511E69DC60205857FEB80' s='E0630A07AB3B94896DF511E6C4BB0205857FEB80'/>
+<L f='E0630A07B41B36376DF811E6A8C30205857FEB80' s='E0630A07B4231D136DF811E68BC00205857FEB80'/>
+<L f='E0630A07C98922DE6E0011E690800205857FEB80' s='E0630A07C98922E66E0011E695D60205857FEB80'/>
+<L f='E0C4897F12941DBB7A9111E680670205857FEB80' s='E0C4897F1294E8447A9111E6C0840205857FEB80'/>
+<L f='E0C4897F12A05AF77A9111E6C1350205857FEB80' s='E0C4897F12A0B7007A9111E697D60205857FEB80'/>
+<L f='E0C4897F12A165077A9111E6B1190205857FEB80' s='E0C4897F12A1C4DB7A9111E69D450205857FEB80'/>
+<L f='E0C4897F2490A06C7A9411E6884F0205857FEB80' s='E0C4897F249131FB7A9411E6A8220205857FEB80'/>
+<L f='E0C4897F528AD1B17A9411E6BBD90205857FEB80' s='E0C4897F528B0E187A9411E6A27B0205857FEB80'/>
+<L f='E0C4897F88D7C80B7A9311E6C51A0205857FEB80' s='E0C4897F88D840117A9311E6C7630205857FEB80'/>
+</links.PictogramElementContainsPictogramLink>
+<pictograms.AnchorcontainerAggregatesAnchors c='1'>
+<L f='E0630A07A55B99216DF911E698730205857FEB80' s='E0630A07A55B3D896DF911E697F10205857FEB80'/>
+<L f='E0630A07AB36116E6DF511E682190205857FEB80' s='E0630A07AB3411CA6DF511E694290205857FEB80'/>
+<L f='E0630A07AB3A7B506DF511E6A43D0205857FEB80' s='E0630A07AB3A42A26DF511E6CD340205857FEB80'/>
+<L f='E0630A07AB3B82406DF511E6C3E80205857FEB80' s='E0630A07AB3B25846DF511E69DC60205857FEB80'/>
+<L f='E0630A07B422DC276DF811E6CB8F0205857FEB80' s='E0630A07B41B36376DF811E6A8C30205857FEB80'/>
+<L f='E0630A07C98922E16E0011E69EAD0205857FEB80' s='E0630A07C98922DE6E0011E690800205857FEB80'/>
+<L f='E0C4897F12945ACF7A9111E6ABD90205857FEB80' s='E0C4897F12941DBB7A9111E680670205857FEB80'/>
+<L f='E0C4897F12A087DF7A9111E6C3B20205857FEB80' s='E0C4897F12A05AF77A9111E6C1350205857FEB80'/>
+<L f='E0C4897F12A18FA17A9111E698AB0205857FEB80' s='E0C4897F12A165077A9111E6B1190205857FEB80'/>
+<L f='E0C4897F2490E78C7A9411E68E260205857FEB80' s='E0C4897F2490A06C7A9411E6884F0205857FEB80'/>
+<L f='E0C4897F528B0E157A9411E6C8960205857FEB80' s='E0C4897F528AD1B17A9411E6BBD90205857FEB80'/>
+<L f='E0C4897F88D7FA7D7A9311E6C7B10205857FEB80' s='E0C4897F88D7C80B7A9311E6C51A0205857FEB80'/>
+</pictograms.AnchorcontainerAggregatesAnchors>
+<pictograms.ConnectionEndsAtAnchor c='1'>
+<L f='E0C4897F2490E78C7A9411E68E260205857FEB80' s='E0180D082497BEFF7A9411E6C0C60205857FEB80'/>
+<L f='E0C4897F12A18FA17A9111E698AB0205857FEB80' s='E0180D082E90007C7A9411E68B550205857FEB80'/>
+<L f='E0C4897F88D7FA7D7A9311E6C7B10205857FEB80' s='E0180D0888E089E97A9311E6B2CC0205857FEB80'/>
+<L f='E0C4897F12945ACF7A9111E6ABD90205857FEB80' s='E0180D089F73BA6F7A9311E6A7A10205857FEB80'/>
+<L f='E0630A07AB3B82406DF511E6C3E80205857FEB80' s='E0180D08AA5C12687A9311E6BAE10205857FEB80'/>
+<L f='E0630A07C98922E16E0011E69EAD0205857FEB80' s='E0180D08D1041BA26F7911E6B1A40205857FEB80'/>
+</pictograms.ConnectionEndsAtAnchor>
+<pictograms.PictogramelementContainsGraphicsalgorithm c='1'>
+<L f='E0180D082497DFF97A9411E6C7710205857FEB80' s='E0180D082497BEFF7A9411E6C0C60205857FEB80'/>
+<L f='E0180D082497DFFB7A9411E6C3740205857FEB80' s='E0180D082497DFFA7A9411E6C61F0205857FEB80'/>
+<L f='E0180D082E9045197A9411E69CD80205857FEB80' s='E0180D082E90007C7A9411E68B550205857FEB80'/>
+<L f='E0180D082E90451B7A9411E688570205857FEB80' s='E0180D082E90451A7A9411E690410205857FEB80'/>
+<L f='E0180D0888E0DBDE7A9311E6A6E10205857FEB80' s='E0180D0888E089E97A9311E6B2CC0205857FEB80'/>
+<L f='E0180D0888E0FEB07A9311E6B1310205857FEB80' s='E0180D0888E0DBDF7A9311E6BED40205857FEB80'/>
+<L f='E0180D089F73F62A7A9311E6AF770205857FEB80' s='E0180D089F73BA6F7A9311E6A7A10205857FEB80'/>
+<L f='E0180D089F73F62C7A9311E6C3440205857FEB80' s='E0180D089F73F62B7A9311E6AF410205857FEB80'/>
+<L f='E0180D08AA5C42AA7A9311E6C5760205857FEB80' s='E0180D08AA5C12687A9311E6BAE10205857FEB80'/>
+<L f='E0180D08AA5C42AC7A9311E6A0D60205857FEB80' s='E0180D08AA5C42AB7A9311E6CCCA0205857FEB80'/>
+<L f='E0180D08D10461296F7911E6BA6E0205857FEB80' s='E0180D08D1041BA26F7911E6B1A40205857FEB80'/>
+<L f='E0180D08D10466626F7911E689700205857FEB80' s='E0180D08D104612A6F7911E69A3A0205857FEB80'/>
+<L f='E03D999BAA4971A06DF511E6CC4B0205857FEB80' s='E03D999BAA49719F6DF511E685F60205857FEB80'/>
+<L f='E0630A07A55B3D8A6DF911E6BE900205857FEB80' s='E0630A07A55B3D896DF911E697F10205857FEB80'/>
+<L f='E0630A07AB3411CB6DF511E6AE520205857FEB80' s='E0630A07AB3411CA6DF511E694290205857FEB80'/>
+<L f='E0630A07AB3611706DF511E6CA370205857FEB80' s='E0630A07AB36116F6DF511E6814D0205857FEB80'/>
+<L f='E0630A07AB3866366DF511E6BFA40205857FEB80' s='E0630A07AB380D446DF511E685580205857FEB80'/>
+<L f='E0630A07AB3866386DF511E698110205857FEB80' s='E0630A07AB3866376DF511E69FA20205857FEB80'/>
+<L f='E0630A07AB392B696DF511E6A8E90205857FEB80' s='E0630A07AB392B686DF511E685790205857FEB80'/>
+<L f='E0630A07AB392B6B6DF511E6BD460205857FEB80' s='E0630A07AB392B6A6DF511E6A5840205857FEB80'/>
+<L f='E0630A07AB3A42A36DF511E6A7170205857FEB80' s='E0630A07AB3A42A26DF511E6CD340205857FEB80'/>
+<L f='E0630A07AB3B423F6DF511E69BA30205857FEB80' s='E0630A07AB3B25846DF511E69DC60205857FEB80'/>
+<L f='E0630A07B41B4F676DF811E6A8880205857FEB80' s='E0630A07B41B36376DF811E6A8C30205857FEB80'/>
+<L f='E0630A07C98922DF6E0011E68BA40205857FEB80' s='E0630A07C98922DE6E0011E690800205857FEB80'/>
+<L f='E0C4897F12941DBC7A9111E6C92F0205857FEB80' s='E0C4897F12941DBB7A9111E680670205857FEB80'/>
+<L f='E0C4897F12A05AF87A9111E699BA0205857FEB80' s='E0C4897F12A05AF77A9111E6C1350205857FEB80'/>
+<L f='E0C4897F12A165087A9111E6C4A00205857FEB80' s='E0C4897F12A165077A9111E6B1190205857FEB80'/>
+<L f='E0C4897F2490A06D7A9411E6CC5C0205857FEB80' s='E0C4897F2490A06C7A9411E6884F0205857FEB80'/>
+<L f='E0C4897F528AEBD07A9411E694B00205857FEB80' s='E0C4897F528AD1B17A9411E6BBD90205857FEB80'/>
+<L f='E0C4897F88D7C80C7A9311E6C1AC0205857FEB80' s='E0C4897F88D7C80B7A9311E6C51A0205857FEB80'/>
+</pictograms.PictogramelementContainsGraphicsalgorithm>
+<pictograms.StyleContainerContainsStyles c='1'>
+<L f='E0180D08AB34A4156DF511E6C4170205857FEB80' s='E0180D08AB345FC56DF511E6CA450205857FEB80'/>
+<L f='E0180D08AB35A5156DF511E6BA250205857FEB80' s='E0180D08AB345FC56DF511E6CA450205857FEB80'/>
+<L f='E0180D08AB34FA526DF511E681E20205857FEB80' s='E0180D08AB34A4156DF511E6C4170205857FEB80'/>
+<L f='E0180D08AB351D7A6DF511E6B30B0205857FEB80' s='E0180D08AB34A4156DF511E6C4170205857FEB80'/>
+<L f='E0180D08AB3527C36DF511E6AE690205857FEB80' s='E0180D08AB34A4156DF511E6C4170205857FEB80'/>
+<L f='E0180D08AB3559B46DF511E6C33F0205857FEB80' s='E0180D08AB34A4156DF511E6C4170205857FEB80'/>
+<L f='E0180D08AB3578A26DF511E6C76E0205857FEB80' s='E0180D08AB34A4156DF511E6C4170205857FEB80'/>
+<L f='E0180D08AB3578A36DF511E68C180205857FEB80' s='E0180D08AB34A4156DF511E6C4170205857FEB80'/>
+<L f='E0180D08AB34FA556DF511E6C8BC0205857FEB80' s='E0180D08AB34FA526DF511E681E20205857FEB80'/>
+<L f='E0180D08AB3527C16DF511E6C6520205857FEB80' s='E0180D08AB351D7A6DF511E6B30B0205857FEB80'/>
+<L f='E0180D08AB35CB786DF511E6A0510205857FEB80' s='E0180D08AB35A5156DF511E6BA250205857FEB80'/>
+<L f='E0180D08AB35CB7A6DF511E6AD740205857FEB80' s='E0180D08AB35A5156DF511E6BA250205857FEB80'/>
+<L f='E0180D08AB345FC56DF511E6CA450205857FEB80' s='E03D999BAA49719F6DF511E685F60205857FEB80'/>
+</pictograms.StyleContainerContainsStyles>
+<pictograms.GraphicsAlgorithmReferencesStyle c='1'>
+<L f='E0180D08AB3527C36DF511E6AE690205857FEB80' s='E0180D084CB3929A6DFB11E6B73C0205857FEB80'/>
+<L f='E0180D08AB3527C36DF511E6AE690205857FEB80' s='E0180D084CB3C1F06DFB11E6816E0205857FEB80'/>
+<L f='E0180D08AB3527C36DF511E6AE690205857FEB80' s='E0180D084CB3C1F16DFB11E6B92D0205857FEB80'/>
+<L f='E0180D08AB351D7A6DF511E6B30B0205857FEB80' s='E0630A07AB3411CB6DF511E6AE520205857FEB80'/>
+<L f='E0180D08AB35CB786DF511E6A0510205857FEB80' s='E0630A07AB3611706DF511E6CA370205857FEB80'/>
+<L f='E0180D08AB34FA526DF511E681E20205857FEB80' s='E0630A07AB3866366DF511E6BFA40205857FEB80'/>
+<L f='E0180D08AB35CB7A6DF511E6AD740205857FEB80' s='E0630A07AB3866386DF511E698110205857FEB80'/>
+<L f='E0180D08AB34FA526DF511E681E20205857FEB80' s='E0630A07AB392B696DF511E6A8E90205857FEB80'/>
+<L f='E0180D08AB35CB7A6DF511E6AD740205857FEB80' s='E0630A07AB392B6B6DF511E6BD460205857FEB80'/>
+<L f='E0180D08AB3527C36DF511E6AE690205857FEB80' s='E0630A07AB3A42A46DF511E6C8340205857FEB80'/>
+<L f='E0180D08AB35A5156DF511E6BA250205857FEB80' s='E0630A07AB3A7B516DF511E6B8650205857FEB80'/>
+<L f='E0180D08AB3527C36DF511E6AE690205857FEB80' s='E0630A07AB3B42406DF511E698650205857FEB80'/>
+<L f='E0180D08AB35A5156DF511E6BA250205857FEB80' s='E0630A07AB3B94886DF511E698F80205857FEB80'/>
+<L f='E0180D08AB3559B46DF511E6C33F0205857FEB80' s='E0630A07C98922E06E0011E6BE5B0205857FEB80'/>
+<L f='E0180D08AB35A5156DF511E6BA250205857FEB80' s='E0630A07C98922E26E0011E6996D0205857FEB80'/>
+<L f='E0180D08AB3559B46DF511E6C33F0205857FEB80' s='E0C4897F12941DBD7A9111E6AC440205857FEB80'/>
+<L f='E0180D08AB35A5156DF511E6BA250205857FEB80' s='E0C4897F12945AD07A9111E687C60205857FEB80'/>
+<L f='E0180D08AB3527C36DF511E6AE690205857FEB80' s='E0C4897F12A05AF97A9111E6AB830205857FEB80'/>
+<L f='E0180D08AB35A5156DF511E6BA250205857FEB80' s='E0C4897F12A087E07A9111E697A20205857FEB80'/>
+<L f='E0180D08AB3527C36DF511E6AE690205857FEB80' s='E0C4897F12A165097A9111E6A86F0205857FEB80'/>
+<L f='E0180D08AB35A5156DF511E6BA250205857FEB80' s='E0C4897F12A1C4DA7A9111E6B97D0205857FEB80'/>
+<L f='E0180D08AB3559B46DF511E6C33F0205857FEB80' s='E0C4897F2490E78B7A9411E6ABB10205857FEB80'/>
+<L f='E0180D08AB35A5156DF511E6BA250205857FEB80' s='E0C4897F2490E78D7A9411E691FE0205857FEB80'/>
+<L f='E0180D08AB3559B46DF511E6C33F0205857FEB80' s='E0C4897F88D7FA7C7A9311E69FAC0205857FEB80'/>
+<L f='E0180D08AB35A5156DF511E6BA250205857FEB80' s='E0C4897F88D7FA7E7A9311E6B80D0205857FEB80'/>
+</pictograms.GraphicsAlgorithmReferencesStyle>
+</Partition>

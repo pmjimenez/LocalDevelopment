@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>tc/bpem/bpmn2tn/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>libinf</name>
+<purpose>infrastructure</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>com.sap.base.technology.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>ide/es/config/mc/model</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>com.sap.tc.moin.nwdi.dctype.mm</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">MM_Asseml</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>ide/es/config/mc/model</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>com.sap.tc.moin.nwdi.dctype.mm</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>ide/es/config/mc/model/bi</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>ide/es/config/mc/model/bi</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>public.test.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">apiinfra</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>public.test.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">apimock</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bi/framework</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bi/testtech2</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">def</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bi/model/flow</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bi/model/flow</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bi/model/flow</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bi/model/triggernet</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bi/model/triggernet</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bi/model/triggernet</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/compiler/base</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">compile</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/shared/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/wsdl20</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/wsdl20</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/wsdl20</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/xsd1</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/xsd1</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/xsd1</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/wsdlexdexport</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">libinf_comp</pp-ref>
+<pp-ref purpose="infrastructure">libinf</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/wsdlexdexport</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">libinf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/wsdlexdexport</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">libinf_comp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/moin/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>External Library</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/moin/bi/moinext</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">def</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/moin/bi/moinlibs</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">libinf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/moin/model/textverticalization</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>com.sap.tc.moin.nwdi.dctype.mm</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">MM_Asseml</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/moin/model/textverticalization</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>com.sap.tc.moin.nwdi.dctype.mm</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components/>
+<archives>
+<archive location="javalib" path="lib/java/sap.com~tc~bpem~bpmn2tn~lib~libinf.jar" type="jar">
+<property key="attributes">jar,java-library</property>
+</archive>
+<archive location="srcarchive" path="src/java/src.zip" type="zip"/>
+</archives>
+<entities>
+<entity>
+<name>com</name>
+<package>com</package>
+<entity-type>Java Package Tree</entity-type>
+<entity-sub-type>Class</entity-sub-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="gen" source-path="classes">
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/BidiMap.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/Comparators$1.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/Comparators$2.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/Comparators$3.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/Comparators$4.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/Comparators$5.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/Comparators$6.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/Comparators$7.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/Comparators.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/CompilerContext$1.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/CompilerContext$SimpleTypes.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/CompilerContext.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/CompilerRun.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/CompilerState$1.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/CompilerState$DataContainerComparator.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/CompilerState.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/Triple.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/BaseFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ClassFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ClusterNodeFilterFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ConfigurationFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ConstantFilterFactory$1.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ConstantFilterFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/DBCorrelationFactory$1.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/DBCorrelationFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ExecutionFactory$1.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ExecutionFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/JoinFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/LockFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ModificationsComparatorFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/NodeFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ParameterFilterFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/SourceFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/SwitchFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/SwizzleFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/TargetFactory.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/AbstractVersioningCallback.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/AppendVersioningCallback.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/ClassHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/ClassVersioningCallback.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/ContextHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/DependencyHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/GalaxyClassHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/IdentifierHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/IntermediateMessageEventContext.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/MappingHelper$MappingCompilerContext.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/MappingHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/MessageTriggerContext.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/NormalizationHelper$ReferenceType.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/NormalizationHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/OperationHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/PairsAdapter.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/ScriptHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/ScriptVersioningCallback.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/SunbeamHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/TypeHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/ValidationHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/VersioningCallback.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/VersioningHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/WorkflowHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/eventlog/EventLogHelper.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/eventlog/EventTypeIds.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/AbstractLiteral.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/BooleanLiteral.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/DoubleLiteral.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/FloatLiteral.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/IntegerLiteral.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/Literal.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/LongLiteral.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/NullLiteral.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/StringLiteral.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/Variable.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/scope/ContextCascadeNode.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/scope/DonFrame.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/scope/FrameNode.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/scope/ProjectionNode.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/AutomatedActivityRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/BaseCompilerRule$Direction.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/BaseCompilerRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/BlankEndEventRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/BoundaryEventRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/CatchEventMessageRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/CompilerRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/DataObjectRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/EmbeddedScopeRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/EndControlRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/ErrorEndControlRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/EventionHandlerRule$1.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/EventionHandlerRule$HandlerActivityType.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/EventionHandlerRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/IntermediateCatchEventRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/IntermediateControlRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/IntermediateSunbeamRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/MappingActivityRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/NotificationActivityRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/ParallelJoinRule$1.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/ParallelJoinRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/ParallelSplitRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/PickSplitRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/RaiseEventionRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/ReportingActivityRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/StartControlRule$1.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/StartControlRule$StartOption.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/StartControlRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/SubflowRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/TaskReferenceRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/ThrowEventRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/TimerControlRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/ViewRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/XORJoinRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/XORSplitRule.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/AdvancedScript.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/BooleanLiteral.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/IntegerLiteral.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/Literal.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/LongLiteral.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/Parameter.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/Script.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/ScriptException.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/ScriptGenerator.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/ScriptName.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/ScriptVariable.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/StringLiteral.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/CollectArtifactsStage$1.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/CollectArtifactsStage$CollectArtifactsResult.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/CollectArtifactsStage.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/CompileArtifactsStage.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/CompilerStage.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/CreateScopeClassesStage.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/DetermineDependingViewsStage.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/GenerateDebugSymbolsStage.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/GenerateScenarioLibraryStage.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/LabelEdgesStage$1.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/LabelEdgesStage$LabelEdgesResult.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/LabelEdgesStage$MessageFlowObjectComparator.class"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/LabelEdgesStage.class"/>
+<file path="com/sap/glx/paradigmInterface/triggernet/assembler/GalaxyAssembler$AssemblerRun.class"/>
+<file path="com/sap/glx/paradigmInterface/triggernet/assembler/GalaxyAssembler.class"/>
+<file path="com/sap/glx/paradigmInterface/triggernet/nodes/DBCorrelationJoin.class"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="src">
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/BidiMap.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/Comparators.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/CompilerContext.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/CompilerRun.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/CompilerState.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/Triple.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/BaseFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ClassFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ClusterNodeFilterFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ConfigurationFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ConstantFilterFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/DBCorrelationFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ExecutionFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/JoinFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/LockFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ModificationsComparatorFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/NodeFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/ParameterFilterFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/SourceFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/SwitchFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/SwizzleFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/factories/TargetFactory.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/AbstractVersioningCallback.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/AppendVersioningCallback.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/ClassHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/ClassVersioningCallback.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/ContextHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/DependencyHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/GalaxyClassHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/IdentifierHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/IntermediateMessageEventContext.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/MappingHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/MessageTriggerContext.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/NormalizationHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/OperationHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/PairsAdapter.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/ScriptHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/ScriptVersioningCallback.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/SunbeamHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/TypeHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/ValidationHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/VersioningCallback.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/VersioningHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/WorkflowHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/eventlog/EventLogHelper.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/eventlog/EventTypeIds.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/AbstractLiteral.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/BooleanLiteral.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/DoubleLiteral.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/FloatLiteral.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/IntegerLiteral.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/Literal.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/LongLiteral.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/NullLiteral.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/StringLiteral.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/literals/Variable.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/scope/ContextCascadeNode.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/scope/DonFrame.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/scope/FrameNode.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/helpers/scope/ProjectionNode.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/AutomatedActivityRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/BaseCompilerRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/BlankEndEventRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/BoundaryEventRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/CatchEventMessageRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/CompilerRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/DataObjectRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/EmbeddedScopeRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/EndControlRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/ErrorEndControlRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/EventionHandlerRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/IntermediateCatchEventRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/IntermediateControlRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/IntermediateSunbeamRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/MappingActivityRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/NotificationActivityRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/ParallelJoinRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/ParallelSplitRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/PickSplitRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/RaiseEventionRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/ReportingActivityRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/StartControlRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/SubflowRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/TaskReferenceRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/ThrowEventRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/TimerControlRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/ViewRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/XORJoinRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/rules/XORSplitRule.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/AdvancedScript.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/BooleanLiteral.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/IntegerLiteral.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/Literal.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/LongLiteral.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/Parameter.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/Script.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/ScriptException.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/ScriptGenerator.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/ScriptName.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/ScriptVariable.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/scripts/StringLiteral.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/CollectArtifactsStage.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/CompileArtifactsStage.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/CompilerStage.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/CreateScopeClassesStage.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/DetermineDependingViewsStage.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/GenerateDebugSymbolsStage.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/GenerateScenarioLibraryStage.java"/>
+<file path="com/sap/glx/paradigmInterface/bpmn/compiler/stage/LabelEdgesStage.java"/>
+<file path="com/sap/glx/paradigmInterface/triggernet/assembler/GalaxyAssembler.java"/>
+<file path="com/sap/glx/paradigmInterface/triggernet/nodes/DBCorrelationJoin.java"/>
+</fileset>
+</entity>
+</entities>
+</content>

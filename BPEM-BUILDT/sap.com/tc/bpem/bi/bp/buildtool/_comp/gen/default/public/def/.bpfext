@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<technologies version="1">
+  <technology name="tc/bpem/bi/bp/buildtool">
+    <uses>sap.com/tc/bi/core</uses>
+    <uses>sap.com/tc/moin/bi/moinext</uses>
+    <ant-tasks>
+			<task name="BpemTask"
+				classname="com.sap.tc.glx.BpemTask">
+				<description>Compiler task for BPEM</description>
+			</task>			
+		</ant-tasks>
+
+			<generators>
+
+			<generator type="sap.com~bpem">
+				<implementation-type>java</implementation-type>
+				<implementation-name>
+					com.sap.tc.glx.BpemTaskGenerator
+				</implementation-name>
+				<inputs>
+					<input name="default" required="true" default-value="$dc_sourceDirsAsFiles"/>
+				</inputs>
+
+				<outputs>
+					<output name="default" required="true">
+						<description>
+						</description>
+						<default-value>gen_jmi</default-value>
+					</output>
+				</outputs>
+			</generator>
+
+			<chain type="sap.com~bpem_chain"
+				implementation-type="java">
+
+				<generators>
+					<generator id="moininit" type="sap.com~moininit" />
+					<generator id="bpem" type="sap.com~bpem" />
+					<generator id="shutdown" type="sap.com~moinshutdown" />
+				</generators>
+
+				<inputs>
+					<input name="default" required="true"
+						default-value="$dc_sourceDirsAsFiles" />
+				</inputs>
+				<links>
+					<link>
+						<source type="input" name="default" />
+						<destination id="moininit" type="input"
+							name="default" />
+					</link>
+					
+					<link>
+            			<source id="moininit" type="output" name="default"/>
+	        			<!-- dummy definition in order to execute bpem after moininit -->
+            			<destination id="bpem" type="input"  name="default"/>
+          			</link>
+					
+					<link>
+            			<source id="bpem" type="output" name="default"/>
+	        			<!-- dummy definition in order to execute moinshutdown -->
+            			<destination id="shutdown" type="input"  name="default"/>
+          			</link>
+				</links>
+			</chain>
+		</generators>
+	 <buildfile-creators>
+      <creator classname="com.sap.tc.glx.BuildFileCreator"
+               step="build" sequence="build"/>
+	    </buildfile-creators>
+	<development-component>
+   	<descriptor>
+    	<vendor>sap.com</vendor>
+    	<type>Process Composer</type>
+		<any-subtype/>
+	</descriptor>
+	</development-component>
+
+  </technology>
+
+</technologies>

@@ -1,0 +1,19 @@
+<technologies version="1">
+  <technology name="sap.com/tc/bi/bp/webDynpro">
+    <uses>sap.com/tc/bi/wdtech</uses>
+    <deploy-units>
+      <deploy-unit>
+        <name>default</name>
+        <archive-type>sap.com~j2ee.EAR_SDA</archive-type>
+        <type>J2EE</type>
+        <runtime>SAPJ2EE-Component[type[application]]</runtime>
+      </deploy-unit>
+    </deploy-units>
+    <definition>
+      <folder-attributes path="META-INF" attribute="meta-inf"/>
+      <folder-attributes path="WEB-INF" attribute="web-inf,webdynpro-app-archive[prefix[WEB-INF/]]"/>
+      <folder-attributes path="src/mimes" attribute="webdynpro-app-archive"/>
+      <folder-attributes path="src/configuration" attribute="webdynpro-app-archive[prefix[WEB-INF/webdynpro/]]"/>
+    </definition>
+  </technology>
+</technologies>

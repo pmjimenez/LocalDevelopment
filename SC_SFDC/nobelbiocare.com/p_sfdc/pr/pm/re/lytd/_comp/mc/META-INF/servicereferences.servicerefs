@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Partition xmlns:m='http://xml.sap.com/moin'>
+<C n='sap.com/com/sap/ide/es/config/mc/model' i='1' v='2.0.0'/>
+<M c='1' q='mc.logicalsystem.QName' i='471DAFAC55EC9E6C814111DCA447003005C6B92C'/>
+<M c='1' q='mc.servicereferences.ServiceReference' i='471DAFAC55EE250E814111DC8ECA003005C6B92C'/>
+<M c='1' q='mc.servicereferences.serviceref_logicalSystem' i='471DAFAC55EFABA2814111DCC1B9003005C6B92C' se='1' ce='-1' oe='-1'/>
+<M c='1' q='mc.servicereferences.serviceref_authenticationProfile' i='471DAFAC55EFABA5814111DCA3E1003005C6B92C' se='1' ce='-1' oe='-1'/>
+<M c='1' q='mc.servicereferences.serviceref_qname' i='471DAFAC55F13240814111DCC062003005C6B92C' se='1' ce='1' oe='-1'/>
+<M c='1' q='mc.servicereferences.ServiceReferenceCustomAttributes' i='E071FFE67B8562C5384611E09E32002710A58A9C'/>
+<M c='1' q='mc.servicereferences.ref_CustomAttributes' i='E071FFE6FAC645EF384611E08198002710A58A9C' se='1' ce='-1' oe='-1'/>
+<mc.logicalsystem.QName m:c='1' m:i='E00EA3B76838AC89F95611E680740205857FEB80' name='MI286_BPM_ControlFlow_oa' namespace='http://nobelbiocare.com/BPM/SFDC/Revenue'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E00EA3B76838AC8AF95611E695120205857FEB80' id='a74b10e2-ac56-48c4-8036-da4410235cbf' type='WS' bindingType='XI' scdlBindingType='xi'/>
+<mc.logicalsystem.QName m:c='1' m:i='E00EA3B7A7CF5A2BF95511E6C62E0205857FEB80' name='SampleTimer' namespace='http://sap.com/glx/sampletimer/'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E00EA3B7A7CF5A2CF95511E6C25D0205857FEB80' id='d1e1988b-1f02-47fb-afbd-a10197e0424e' type='WS' bindingType='WS' scdlBindingType='ws'/>
+<mc.logicalsystem.QName m:c='1' m:i='E00EA3B7B9E93945F95511E691170205857FEB80' name='nobelbiocarecom_p_sfdcprpmrelytd_OM_LYTD_RejectedPortType' namespace='http://nobelbiocare.com/BPM/SFDC/Revenue'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E00EA3B7B9EBAEC1F95511E68EB70205857FEB80' id='056ae0fe-1b00-4e8a-90f9-50c05145973d' type='WS' bindingType='WS' scdlBindingType='ws'/>
+<mc.logicalsystem.QName m:c='1' m:i='E00EA3B7BF579663F95611E6C2C10205857FEB80' name='MI281_BPM_CustomerRevenueLYTD_Push_os' namespace='http://nobelbiocare.com/BPM/SFDC/Revenue'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E00EA3B7BF579664F95611E699280205857FEB80' id='6957c212-228f-42bf-bdfc-e340372ea240' type='WS' bindingType='XI' scdlBindingType='xi'/>
+<mc.logicalsystem.QName m:c='1' m:i='E01DFA6E536AECBC01F111E7B0C20205857FEB80' name='nobelbiocarecom_p_sfdcprpmrelytd_OM_AccId_2_LYTDPortType' namespace='http://nobelbiocare.com/BPM/SFDC/Revenue'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E01DFA6E536AECBD01F111E7AC430205857FEB80' id='f2682d90-90e2-4fdf-9f16-c826781e4f84' type='WS' bindingType='WS' scdlBindingType='ws'/>
+<mc.logicalsystem.QName m:c='1' m:i='E01DFA6ED8E5709601ED11E7C1E60205857FEB80' name='MI281_BPM_GetAccountId_os' namespace='http://nobelbiocare.com/BPM/SFDC/Revenue'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E01DFA6ED8E5709701ED11E7B7190205857FEB80' id='ef58443f-52bb-47ce-98f7-280b6b88e7dd' type='WS' bindingType='XI' scdlBindingType='xi'/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0630A07297530CDF95711E6C5B90205857FEB80' key='senderPartyName' value=''/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0630A07297549D4F95711E6BFDF0205857FEB80' key='senderServiceName' value='BPM_REVENUE_SFDC'/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0630A0739758EB0F95711E687280205857FEB80' key='senderPartyName' value=''/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0630A0739758EB1F95711E6C7450205857FEB80' key='senderServiceName' value='BPM_REVENUE_SFDC'/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0630A07ED8AD389573011E7C09454EFEC7B6400' key='senderPartyName' value=''/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0630A07ED8AD38A573011E7A01954EFEC7B6400' key='senderServiceName' value='BPM_REVENUE_SFDC'/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0E4E66E6DA67E5B01F211E799690205857FEB80' key='senderPartyName' value=''/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0E4E66E6DA67E5C01F211E799B60205857FEB80' key='senderServiceName' value='BPM_REVENUE_SFDC'/>
+<mc.servicereferences.serviceref_logicalSystem c='1'>
+<L f='local:E00EA3B7683628CCF95611E6AA990205857FEB80' s='E00EA3B76838AC8AF95611E695120205857FEB80'/>
+<L f='local:4925559F5D230461B6FD11DD82620018717335EB' s='E00EA3B7A7CF5A2CF95511E6C25D0205857FEB80'/>
+<L f='local:E00EA3B7B9E5E240F95511E686DB0205857FEB80' s='E00EA3B7B9EBAEC1F95511E68EB70205857FEB80'/>
+<L f='local:E00EA3B7683628CCF95611E6AA990205857FEB80' s='E00EA3B7BF579664F95611E699280205857FEB80'/>
+<L f='local:E00EA3B7B9E5E240F95511E686DB0205857FEB80' s='E01DFA6E536AECBD01F111E7AC430205857FEB80'/>
+<L f='local:E00EA3B7683628CCF95611E6AA990205857FEB80' s='E01DFA6ED8E5709701ED11E7B7190205857FEB80'/>
+</mc.servicereferences.serviceref_logicalSystem>
+<mc.servicereferences.serviceref_authenticationProfile c='1'>
+<L f='local:E00EA3B7E28DD489F95411E6BC610205857FEB80' s='E00EA3B76838AC8AF95611E695120205857FEB80'/>
+<L f='local:E00EA3B7E28DD489F95411E6BC610205857FEB80' s='E00EA3B7A7CF5A2CF95511E6C25D0205857FEB80'/>
+<L f='local:E00EA3B7E28DD489F95411E6BC610205857FEB80' s='E00EA3B7B9EBAEC1F95511E68EB70205857FEB80'/>
+<L f='local:E00EA3B7E28DD489F95411E6BC610205857FEB80' s='E00EA3B7BF579664F95611E699280205857FEB80'/>
+<L f='local:E00EA3B7E28DD489F95411E6BC610205857FEB80' s='E01DFA6E536AECBD01F111E7AC430205857FEB80'/>
+<L f='local:E00EA3B7E28DD489F95411E6BC610205857FEB80' s='E01DFA6ED8E5709701ED11E7B7190205857FEB80'/>
+</mc.servicereferences.serviceref_authenticationProfile>
+<mc.servicereferences.serviceref_qname c='1'>
+<L f='E00EA3B76838AC89F95611E680740205857FEB80' s='E00EA3B76838AC8AF95611E695120205857FEB80'/>
+<L f='E00EA3B7A7CF5A2BF95511E6C62E0205857FEB80' s='E00EA3B7A7CF5A2CF95511E6C25D0205857FEB80'/>
+<L f='E00EA3B7B9E93945F95511E691170205857FEB80' s='E00EA3B7B9EBAEC1F95511E68EB70205857FEB80'/>
+<L f='E00EA3B7BF579663F95611E6C2C10205857FEB80' s='E00EA3B7BF579664F95611E699280205857FEB80'/>
+<L f='E01DFA6E536AECBC01F111E7B0C20205857FEB80' s='E01DFA6E536AECBD01F111E7AC430205857FEB80'/>
+<L f='E01DFA6ED8E5709601ED11E7C1E60205857FEB80' s='E01DFA6ED8E5709701ED11E7B7190205857FEB80'/>
+</mc.servicereferences.serviceref_qname>
+<mc.servicereferences.ref_CustomAttributes c='1'>
+<L f='E0630A07297530CDF95711E6C5B90205857FEB80' s='E00EA3B76838AC8AF95611E695120205857FEB80'/>
+<L f='E0630A07297549D4F95711E6BFDF0205857FEB80' s='E00EA3B76838AC8AF95611E695120205857FEB80'/>
+<L f='E0630A0739758EB0F95711E687280205857FEB80' s='E00EA3B7BF579664F95611E699280205857FEB80'/>
+<L f='E0630A0739758EB1F95711E6C7450205857FEB80' s='E00EA3B7BF579664F95611E699280205857FEB80'/>
+<L f='E0E4E66E6DA67E5B01F211E799690205857FEB80' s='E01DFA6ED8E5709701ED11E7B7190205857FEB80'/>
+<L f='E0E4E66E6DA67E5C01F211E799B60205857FEB80' s='E01DFA6ED8E5709701ED11E7B7190205857FEB80'/>
+</mc.servicereferences.ref_CustomAttributes>
+</Partition>

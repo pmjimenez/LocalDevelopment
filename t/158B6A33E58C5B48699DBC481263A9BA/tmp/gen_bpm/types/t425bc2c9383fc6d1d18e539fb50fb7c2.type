@@ -1,0 +1,10 @@
+ROOT_0,TARGET_NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Revenue
+ROOT_0,SCHEMA_LOCATION=http://nobelbiocare.com/BPM/SFDC/Revenue
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:tns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="MT_AccountId" type="tns:DT_AccountId" sdox:aliasName="$http://nobelbiocare.com/BPM/SFDC/Revenue:MT_AccountId" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="DT_AccountId" sdox:aliasName="#DT_AccountId" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="Row" minOccurs="0" maxOccurs="unbounded" sdox:aliasName="$Row">         <xsd:complexType sdox:aliasName="E0356A04FD97BD09010B11E79C6C0205857FEB80">           <xsd:sequence>             <xsd:element name="Id" type="xsd:string" sdox:aliasName="$Id"></xsd:element>             <xsd:element name="SapId" type="xsd:string" sdox:aliasName="$SapId"></xsd:element>           </xsd:sequence>         </xsd:complexType>       </xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+
+ROOT_1,TARGET_NAMESPACE=urn:partner.soap.sforce.com
+ROOT_1,SCHEMA_LOCATION=urn:partner.soap.sforce.com
+ROOT_1,ROOTID=1
+ROOT_1,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="urn:partner.soap.sforce.com" xmlns:tns="urn:partner.soap.sforce.com" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="query" sdox:aliasName="$urn:partner.soap.sforce.com:query" xmlns:sdox="commonj.sdo/xml">     <xsd:complexType sdox:aliasName="E0356A04E52E9475010D11E784190205857FEB80">       <xsd:sequence>         <xsd:element name="queryString" type="xsd:string" sdox:aliasName="$urn:partner.soap.sforce.com:queryString"></xsd:element>       </xsd:sequence>     </xsd:complexType>   </xsd:element> </xsd:schema> 
+

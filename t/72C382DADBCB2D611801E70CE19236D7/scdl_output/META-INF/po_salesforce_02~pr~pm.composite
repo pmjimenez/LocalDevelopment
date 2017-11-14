@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" xmlns:sap="http://www.sap.com" xmlns:sapconfig="http://www.sap.com/webas/2007/03/esoa/config/system" xmlns:sapimplbpm="http://www.sap.com/webas/2007/03/esoa/implementation/bpm" xmlns:sapinterfacewsdlloc="http://www.sap.com/xmlns/sapsca/1.0" xmlns:xins="http://www.sap.com/xmlns/sapsca/xi/1.0" name="po_salesforce_02~pr~pm" targetNamespace="http://www.sap.com">
+<component name="nobelbiocare.com~po_salesforce_02~pr~pm~BPMcomponent">
+<sapimplbpm:implementation.bpm/>
+<reference name="5d6bee05-83b7-493d-8dd7-ff2a455f678a" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MIZ050_CFT_Contacts">
+<interface.wsdl interface="http://nobelbiocare.com/Salesforce/Contacts#wsdl.interface(MIZ050_TravelOD_contacts)" sapinterfacewsdlloc:location="nobelbiocare.com~po_salesforce_02~pr~pm.bpem#wsdls/nobelbiocare.com~po_salesforce_02~pr~pm/MIZ050_TravelOD_contacts.wsdl"/>
+<xins:binding.xi senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="cc81b8e3-e952-47ed-a882-7a6786796c0f" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MIZ050C_Replication_Result_to_SAP">
+<interface.wsdl interface="http://nobelbiocare.com/Salesforce/Contacts#wsdl.interface(MIZ050C_TravelOD_contacts_Resp_EnhancedSAP)" sapinterfacewsdlloc:location="nobelbiocare.com~po_salesforce_02~pr~pm.bpem#wsdls/nobelbiocare.com~po_salesforce_02~pr~pm/MIZ050C_TravelOD_contacts_Resp_EnhancedSAP.wsdl"/>
+<xins:binding.xi senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="6d294f96-214b-4b3f-88ae-aa2c84b96900" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MIZ041_Salesforce_login">
+<interface.wsdl interface="http://nobelbiocare.com/Salesforce/Contacts#wsdl.interface(MIZ041_Salesforce_login)" sapinterfacewsdlloc:location="nobelbiocare.com~po_salesforce_02~pr~pm.bpem#wsdls/nobelbiocare.com~po_salesforce_02~pr~pm/MIZ041_Salesforce_login.wsdl"/>
+<xins:binding.xi senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="7983295b-5fa5-45d0-844b-de89c2cc6701" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MIZ043_Salesforce_query">
+<interface.wsdl interface="http://nobelbiocare.com/Salesforce/Contacts#wsdl.interface(MIZ043_Salesforce_query)" sapinterfacewsdlloc:location="nobelbiocare.com~po_salesforce_02~pr~pm.bpem#wsdls/nobelbiocare.com~po_salesforce_02~pr~pm/MIZ043_Salesforce_query.wsdl"/>
+<xins:binding.xi senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="a6125ab3-3ca6-44bd-9897-7795781931da" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SampleTimerServiceGroup">
+<interface.wsdl interface="http://sap.com/glx/sampletimer/#wsdl.interface(SampleTimer)" sapinterfacewsdlloc:location="nobelbiocare.com~po_salesforce_02~pr~pm.bpem#wsdls/sap.com~tc~bpem~content~predefs~default/rootwsdl_SimpleTimerServices.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="b8ae50d0-fdba-49b4-b1ad-2e20af5fe5dc" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MIZ044_SalesForce_QueryMore">
+<interface.wsdl interface="http://nobelbiocare.com/Salesforce/Contacts#wsdl.interface(MIZ044_Salesforce_queryMore)" sapinterfacewsdlloc:location="nobelbiocare.com~po_salesforce_02~pr~pm.bpem#wsdls/nobelbiocare.com~po_salesforce_02~pr~pm/MIZ044_Salesforce_queryMore.wsdl"/>
+<xins:binding.xi senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="3e15c914-2095-48d0-853e-e48a770332bd" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MIZ040_Trigger_Req">
+<interface.wsdl interface="http://nobelbiocare.com/Salesforce/Contacts#wsdl.interface(MIZ040_Salesforce_TravelOD_Customers_Trigger_Req)" sapinterfacewsdlloc:location="nobelbiocare.com~po_salesforce_02~pr~pm.bpem#wsdls/nobelbiocare.com~po_salesforce_02~pr~pm/MIZ040_Salesforce_TravelOD_Customers_Trigger_Req.wsdl"/>
+<xins:binding.xi senderServiceName="BPM_SYSTEM"/>
+</reference>
+</component>
+<sapconfig:serviceGroups>
+<sapconfig:serviceGroup bundle="5851c222-c860-499f-b188-d2b2707dc454.consgroup" sgName="MIZ043_Salesforce_query"/>
+<sapconfig:serviceGroup bundle="65625d58-6033-4d5d-bb44-b3957494d6af.consgroup" sgName="MIZ044_SalesForce_QueryMore"/>
+<sapconfig:serviceGroup bundle="a9fd8b04-5096-4400-bff5-9bf5038ad71c.consgroup" sgName="MIZ041_Salesforce_login"/>
+<sapconfig:serviceGroup bundle="bc0d94cc-c6cf-486a-baa5-835a304cdacb.consgroup" sgName="MIZ040_Trigger_Req"/>
+<sapconfig:serviceGroup bundle="c708a2b7-a5ad-463d-a032-23499afff532.consgroup" sgName="MIZ050_CFT_Contacts"/>
+<sapconfig:serviceGroup bundle="f45c09ad-8d9c-451e-8751-09a291dd128e.consgroup" sgName="MIZ050C_Replication_Result_to_SAP"/>
+</sapconfig:serviceGroups>
+</composite>

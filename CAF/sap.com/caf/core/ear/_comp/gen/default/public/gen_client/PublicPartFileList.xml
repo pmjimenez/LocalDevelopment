@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>caf/core/ear</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>Enterprise Application</sub-type>
+</component-type>
+</development-component>
+<public-part>
+<name>gen_client</name>
+<purpose>compilation</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>caf/core/ejbmodule</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">client</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/core/ejbmodule</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">ejbjar</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/core/ejbmodule</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">gen_client</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/core/ejbmodule</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">persistence</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">bi_api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/base/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/ear</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>Enterprise Application</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">destmapping</pp-ref>
+<pp-ref purpose="compilation">gen_api</pp-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.jee5.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">apiwithoutjsf</pp-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/je/usermanagement/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components>
+<source-component>
+<id>1</id>
+<development-component>
+<name>caf/core/ejbmodule</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</development-component>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>caf/km.proxyjava</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">ClientApi</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/km/proxyapi</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">KMDataAccess</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/base</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">compilation</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/ear</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>Enterprise Application</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/ear</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>Enterprise Application</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">gen_api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/impl</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">ClientAPI</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.jee5.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">apiwithoutjsf</pp-ref>
+<pp-ref purpose="">api</pp-ref>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.jee5.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/je/usermanagement/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</source-component>
+<source-component>
+<id>2</id>
+<development-component>
+<name>caf/runtime/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</development-component>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>com.sap.base.technology.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.application.lib.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.jee5.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">apiwithoutjsf</pp-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.jee5.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</source-component>
+</source-components>
+<archives>
+<archive location="javalib" path="lib/java/sap.com~caf~core~ear~gen_client.jar" type="jar">
+<property key="attributes">jar,java-library</property>
+</archive>
+<archive location="jdoclet" path="doc/java/sap.com~caf~core~ejbmodule~gen_client.jdar" type="zip">
+<property key="attributes">java-documentation-archive,solid</property>
+<additional-path attributes="java-documentation-archive,solid">doc/java/sap.com~caf~runtime~api~bi_api.jdar</additional-path>
+</archive>
+<archive location="srcarchive" path="src/java/src.zip" type="zip"/>
+</archives>
+<entities>
+<entity>
+<id>132be922-3342-4bc3-b7f8-9b39e2d4de75</id>
+<name/>
+<entity-type/>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<source-id>2</source-id>
+<fileset location="javalib" source-location="DC" source-path="ejbModule">
+<file path="META-INF/MANIFEST.MF"/>
+<file path="META-INF/ejb-j2ee-engine.xml"/>
+</fileset>
+<fileset location="javalib" source-location="DC" source-path="src">
+<file path="META-INF/persistence.xml"/>
+<file path="META-INF/wsdl/caf.core.faults.xsd"/>
+<file path="META-INF/wsdl/caf.core.services.xsd"/>
+<file path="META-INF/wsdl/int/all_merged.wsdl"/>
+<file path="META-INF/wsdl/query_filter.xsd"/>
+</fileset>
+<fileset location="javalib" source-location="gen" source-path="classes">
+<file path="com/sap/caf/core/services/appsrv/doccontent/AddRelatedObjectRid.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/AddRelatedObjectRidResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/Checkin.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/CheckinResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/Checkout.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/CheckoutResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/CopyDocument.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/CopyDocumentResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DeleteVersion.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DeleteVersionResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DisableDocumentVersioning.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DisableDocumentVersioningResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DocContentBean.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DocContentBeanImpl.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DocContentSEI.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DocContentServiceLocal.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/EnableDocumentVersioning.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/EnableDocumentVersioningResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetCurrentVersion.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetCurrentVersionResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetDocumentVersion.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetDocumentVersionResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetLockInfo.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetLockInfoResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetRelatedObjectRids.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetRelatedObjectRidsResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetVersionHistory.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetVersionHistoryResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsAttached.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsAttachedResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsDocumentLocked.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsDocumentLockedResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsDocumentVersioned.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsDocumentVersionedResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/LockDocument.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/LockDocumentResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/ObjectFactory.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/ReadDocumentContent.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/ReadDocumentContentResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/RelateDocument.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/RelateDocumentResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/RemoveRelatedObjectRid.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/RemoveRelatedObjectRidResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/SetAsCurrentVersion.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/SetAsCurrentVersionResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UnLockDocument.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UnLockDocumentResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UnlockDocumentWithToken.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UnlockDocumentWithTokenResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadDocument.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadDocumentResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadDocumentWithType.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadDocumentWithTypeResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadExtLink.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadExtLinkResponse.class"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/package-info.class"/>
+<file path="com/sap/caf/core/services/bi/BICompositeExpression.class"/>
+<file path="com/sap/caf/core/services/bi/BILogicalOperator.class"/>
+<file path="com/sap/caf/core/services/bi/BIOperator.class"/>
+<file path="com/sap/caf/core/services/bi/BISelection.class"/>
+<file path="com/sap/caf/core/services/bi/IBIExpression.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AddAuthUser.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AddAuthUserResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AddRelatedObjectRid.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AddRelatedObjectRidResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AssociationDocumentTorelatedObjectRefs.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/Create.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/CreateResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/Delete.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DeleteResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentBO.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentBean.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentBeanImpl.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentSEI.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentService.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentServiceLocal.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindAll.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindAllResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByDocumentId.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByDocumentIdResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByMultipleParameters.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByMultipleParametersResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByRid.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByRidResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByTitle.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByTitleResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/GetAuthUser.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/GetAuthUserResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/ObjectFactory.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/Read.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/ReadResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RelateDocument.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RelateDocumentResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RemoveAuthUser.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RemoveAuthUserResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RemoveRelatedObjectRid.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RemoveRelatedObjectRidResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/Update.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/UpdateResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/package-info.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/Create.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/CreateResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/Delete.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/DeleteResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/FindAll.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/FindAllResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/FindByMultipleParameters.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/FindByMultipleParametersResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/ObjectFactory.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/Read.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/ReadResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectBO.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectBean.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectBeanImpl.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectSEI.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectService.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectServiceLocal.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/Update.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/UpdateResponse.class"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/package-info.class"/>
+<file path="com/sap/caf/core/services/types/Document.class"/>
+<file path="com/sap/caf/core/services/types/DocumentLockInfo.class"/>
+<file path="com/sap/caf/core/services/types/ObjectFactory.class"/>
+<file path="com/sap/caf/core/services/types/RelatedObject.class"/>
+<file path="com/sap/caf/core/services/types/package-info.class"/>
+<file path="com/sap/caf/core/utils/DocumentDataAccessHelper.class"/>
+</fileset>
+<fileset location="jdoclet" source-location="gen" source-path="javadoc/bi_api">
+<file path=".digest"/>
+<file path=".log"/>
+<file path=".symbols"/>
+<file path="class-list"/>
+<file path="com/sap/caf/core/services/bi/BICompositeExpression.jdoc"/>
+<file path="com/sap/caf/core/services/bi/BILogicalOperator.jdoc"/>
+<file path="com/sap/caf/core/services/bi/BIOperator.jdoc"/>
+<file path="com/sap/caf/core/services/bi/BISelection.jdoc"/>
+<file path="com/sap/caf/core/services/bi/IBIExpression.jdoc"/>
+<file path="com/sap/caf/core/services/bi/package-info.jdoc"/>
+<file path="publisher-doc/sapcm.dc/sap.com/caf/runtime/api/publisher-info.jdoc"/>
+<file path="publisher-doc/sapcm.pp/sap.com/caf/runtime/api/bi_api/publisher-info.jdoc"/>
+</fileset>
+<fileset location="jdoclet" source-location="gen" source-path="javadoc/gen_client">
+<file path=".digest"/>
+<file path=".log"/>
+<file path=".symbols"/>
+<file path="class-list"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/AddRelatedObjectRid.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/AddRelatedObjectRidResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/Checkin.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/CheckinResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/Checkout.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/CheckoutResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/CopyDocument.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/CopyDocumentResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DeleteVersion.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DeleteVersionResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DisableDocumentVersioning.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DisableDocumentVersioningResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DocContentBean.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DocContentBeanImpl.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DocContentSEI.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DocContentServiceLocal.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/EnableDocumentVersioning.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/EnableDocumentVersioningResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetCurrentVersion.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetCurrentVersionResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetDocumentVersion.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetDocumentVersionResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetLockInfo.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetLockInfoResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetRelatedObjectRids.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetRelatedObjectRidsResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetVersionHistory.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetVersionHistoryResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsAttached.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsAttachedResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsDocumentLocked.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsDocumentLockedResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsDocumentVersioned.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsDocumentVersionedResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/LockDocument.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/LockDocumentResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/ObjectFactory.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/ReadDocumentContent.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/ReadDocumentContentResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/RelateDocument.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/RelateDocumentResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/RemoveRelatedObjectRid.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/RemoveRelatedObjectRidResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/SetAsCurrentVersion.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/SetAsCurrentVersionResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UnLockDocument.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UnLockDocumentResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UnlockDocumentWithToken.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UnlockDocumentWithTokenResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadDocument.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadDocumentResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadDocumentWithType.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadDocumentWithTypeResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadExtLink.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadExtLinkResponse.jdoc"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/package-info.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AddAuthUser.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AddAuthUserResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AddRelatedObjectRid.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AddRelatedObjectRidResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AssociationDocumentTorelatedObjectRefs.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/Create.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/CreateResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/Delete.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DeleteResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentBO.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentBean.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentBeanImpl.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentSEI.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentService.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentServiceLocal.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindAll.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindAllResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByDocumentId.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByDocumentIdResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByMultipleParameters.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByMultipleParametersResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByRid.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByRidResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByTitle.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByTitleResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/GetAuthUser.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/GetAuthUserResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/ObjectFactory.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/Read.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/ReadResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RelateDocument.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RelateDocumentResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RemoveAuthUser.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RemoveAuthUserResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RemoveRelatedObjectRid.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RemoveRelatedObjectRidResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/Update.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/UpdateResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/package-info.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/Create.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/CreateResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/Delete.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/DeleteResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/FindAll.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/FindAllResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/FindByMultipleParameters.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/FindByMultipleParametersResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/ObjectFactory.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/Read.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/ReadResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectBO.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectBean.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectBeanImpl.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectSEI.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectService.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectServiceLocal.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/Update.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/UpdateResponse.jdoc"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/package-info.jdoc"/>
+<file path="com/sap/caf/core/services/types/Document.jdoc"/>
+<file path="com/sap/caf/core/services/types/DocumentLockInfo.jdoc"/>
+<file path="com/sap/caf/core/services/types/ObjectFactory.jdoc"/>
+<file path="com/sap/caf/core/services/types/RelatedObject.jdoc"/>
+<file path="com/sap/caf/core/services/types/package-info.jdoc"/>
+<file path="com/sap/caf/core/utils/DocumentDataAccessHelper.jdoc"/>
+<file path="com/sap/caf/core/utils/package-info.jdoc"/>
+<file path="publisher-doc/sapcm.dc/sap.com/caf/core/ejbmodule/publisher-info.jdoc"/>
+<file path="publisher-doc/sapcm.pp/sap.com/caf/core/ejbmodule/gen_client/publisher-info.jdoc"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="ejbModule">
+<file path="com/sap/caf/core/services/appsrv/doccontent/DocContentBeanImpl.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentBeanImpl.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectBeanImpl.java"/>
+<file path="com/sap/caf/core/utils/DocumentDataAccessHelper.java"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="src">
+<file path="com/sap/caf/core/services/appsrv/doccontent/AddRelatedObjectRid.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/AddRelatedObjectRidResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/Checkin.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/CheckinResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/Checkout.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/CheckoutResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/CopyDocument.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/CopyDocumentResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DeleteVersion.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DeleteVersionResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DisableDocumentVersioning.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DisableDocumentVersioningResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DocContentBean.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DocContentSEI.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/DocContentServiceLocal.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/EnableDocumentVersioning.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/EnableDocumentVersioningResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetCurrentVersion.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetCurrentVersionResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetDocumentVersion.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetDocumentVersionResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetLockInfo.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetLockInfoResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetRelatedObjectRids.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetRelatedObjectRidsResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetVersionHistory.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/GetVersionHistoryResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsAttached.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsAttachedResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsDocumentLocked.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsDocumentLockedResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsDocumentVersioned.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/IsDocumentVersionedResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/LockDocument.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/LockDocumentResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/ObjectFactory.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/ReadDocumentContent.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/ReadDocumentContentResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/RelateDocument.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/RelateDocumentResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/RemoveRelatedObjectRid.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/RemoveRelatedObjectRidResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/SetAsCurrentVersion.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/SetAsCurrentVersionResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UnLockDocument.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UnLockDocumentResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UnlockDocumentWithToken.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UnlockDocumentWithTokenResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadDocument.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadDocumentResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadDocumentWithType.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadDocumentWithTypeResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadExtLink.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/UploadExtLinkResponse.java"/>
+<file path="com/sap/caf/core/services/appsrv/doccontent/package-info.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AddAuthUser.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AddAuthUserResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AddRelatedObjectRid.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AddRelatedObjectRidResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/AssociationDocumentTorelatedObjectRefs.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/Create.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/CreateResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/Delete.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DeleteResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentBO.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentBean.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentSEI.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentService.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/DocumentServiceLocal.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindAll.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindAllResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByDocumentId.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByDocumentIdResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByMultipleParameters.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByMultipleParametersResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByRid.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByRidResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByTitle.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/FindByTitleResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/GetAuthUser.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/GetAuthUserResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/ObjectFactory.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/Read.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/ReadResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RelateDocument.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RelateDocumentResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RemoveAuthUser.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RemoveAuthUserResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RemoveRelatedObjectRid.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/RemoveRelatedObjectRidResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/Update.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/UpdateResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/package-info.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/Create.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/CreateResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/Delete.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/DeleteResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/FindAll.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/FindAllResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/FindByMultipleParameters.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/FindByMultipleParametersResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/ObjectFactory.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/Read.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/ReadResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectBO.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectBean.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectSEI.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectService.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectServiceLocal.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/Update.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/UpdateResponse.java"/>
+<file path="com/sap/caf/core/services/bonode/document/document/relatedobject/package-info.java"/>
+<file path="com/sap/caf/core/services/types/Document.java"/>
+<file path="com/sap/caf/core/services/types/DocumentLockInfo.java"/>
+<file path="com/sap/caf/core/services/types/ObjectFactory.java"/>
+<file path="com/sap/caf/core/services/types/RelatedObject.java"/>
+<file path="com/sap/caf/core/services/types/package-info.java"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="src/packages">
+<file path="com/sap/caf/core/services/bi/BICompositeExpression.java"/>
+<file path="com/sap/caf/core/services/bi/BILogicalOperator.java"/>
+<file path="com/sap/caf/core/services/bi/BIOperator.java"/>
+<file path="com/sap/caf/core/services/bi/BISelection.java"/>
+<file path="com/sap/caf/core/services/bi/IBIExpression.java"/>
+</fileset>
+</entity>
+</entities>
+</content>

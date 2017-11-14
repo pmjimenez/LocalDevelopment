@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<technologies version="1">
+  <technology name="sap.com/tc/bi/bp/pdef">
+    <!--uses>sap.com/tc/moin/bi/emfext</uses-->
+	<development-component>                                             
+  		<descriptor vendor="sap.com" type="Product Description"/>
+	</development-component>                                            
+
+	<buildfile-creators>
+     	<creator
+       		classname="com.sap.tc.buildplugin.pdef.PdefBuildFileCreator"
+      	  	step="build"
+         	sequence="build"/>
+	 </buildfile-creators>
+	
+	<ant-tasks>
+		<task name="PdefGeneratorTask"
+			classname="com.sap.tc.buildplugin.pdef.PdefGeneratorTask">
+			<description>Project Definition Generation Task</description>
+		</task>
+	</ant-tasks>
+	
+	<generators>
+			<generator type="sap.com~sl.pdef.task.generator">
+				<implementation-type>java</implementation-type>
+				<implementation-name>com.sap.tc.buildplugin.pdef.PdefTaskGenerator</implementation-name>
+
+			    <inputs>
+				  <input name="source" required="true" default-value="$dc_sourceDirsAsFiles" />
+                                  <input name="compile_pp" required="true" default-value="$dc_depend_compilePPs" />
+				</inputs>
+							
+				<parameters>
+      				<parameter name="outputFolderName" required="true" />
+    			</parameters>
+    			
+				<outputs>
+					<output name="default" required="true">
+						<description> 
+							The output path where generated model partitions will be put
+						</description>
+					</output>
+					<output name="packdir" required="true">
+						<description> 
+							The output path where CIM-XML files will be put
+						</description>
+					</output>
+					<output name="tempdir" required="true">
+						<description> 
+							The output path where the deployment descriptor will be created
+						</description>
+					</output>
+				</outputs>
+			</generator>
+
+			<chain type="sap.com~sl.pdef_chain" implementation-type="java">
+				<generators>
+<!--
+					<generator id="moininit" type="sap.com~moininit" />
+-->
+					<generator id="pdef" type="sap.com~sl.pdef.task.generator" />
+<!--
+					<generator id="shutdown" type="sap.com~moinshutdown" />
+					<sequence>moininit,pdef,shutdown</sequence>
+-->
+				</generators>
+				<outputs>
+					<output name="default" required="true">
+						<default-value>moin_temp_out/testoutput</default-value>
+					</output>
+					<output name="packdir" required="true"/>
+					<output name="tempdir" required="true"/>
+        		</outputs>
+				<parameters>
+      				<parameter name="outputFolderName" default-value="testoutput" />
+    			</parameters>
+				<links>
+<!--
+					<link>
+						<source	                   type="parameter" name="outputFolderName" />
+						<destination id="moininit" type="parameter" name="outputFolderName" />
+					</link>
+-->
+					<link>
+						<source	                   type="parameter" name="outputFolderName" />
+						<destination id="pdef" type="parameter" name="outputFolderName" />
+					</link>
+					<link>
+						<source	                type="output" name="packdir" />
+						<destination id="pdef"  type="output" name="packdir" />
+					</link>
+					<link>
+						<source	                type="output" name="tempdir" />
+						<destination id="pdef"  type="output" name="tempdir" />
+					</link>
+  			       	<link>
+            			<source  		           type="output" name="default"/>
+            			<destination id="pdef" type="output" name="default"/>
+          			</link>
+  				</links>				
+			</chain>
+		</generators>
+    
+
+  </technology>
+</technologies>

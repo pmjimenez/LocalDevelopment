@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>p_sfdc/bl/caf/permissions</name>
+<vendor>nobelbiocare.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Content</type>
+<sub-type>UME Permissions</sub-type>
+</component-type>
+</development-component>
+<public-part>
+<name>Content Archive</name>
+<purpose>assembly</purpose>
+</public-part>
+<dependencies/>
+</metadata>
+<source-components/>
+<archives>
+<archive location="Content Archive" path="nobelbiocare.com~p_sfdc~bl~caf~permissions.ump" type="zip">
+<property key="attributes">SAP-J2EE-Module[container-type[com.sap.security.ume]]</property>
+</archive>
+</archives>
+<entities>
+<entity>
+<name>Content Archive</name>
+<entity-type>Content Archive</entity-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="Content Archive">
+<file path="actions.xml"/>
+</fileset>
+</entity>
+</entities>
+</content>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" xmlns:sap="http://www.sap.com" xmlns:sapconfig="http://www.sap.com/webas/2007/03/esoa/config/system" xmlns:sapimplbpm="http://www.sap.com/webas/2007/03/esoa/implementation/bpm" xmlns:sapinterfacewsdlloc="http://www.sap.com/xmlns/sapsca/1.0" xmlns:xins="http://www.sap.com/xmlns/sapsca/xi/1.0" name="p_teac~pr~pm~course" targetNamespace="http://www.sap.com">
+<component name="nobelbiocare.com~p_teac~pr~pm~course~BPMcomponent">
+<sapimplbpm:implementation.bpm/>
+<reference name="986e4725-08f9-441f-bad5-43d74fc27a1d" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MI266_BPM_Login_os">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/TnE#wsdl.interface(MI266_BPM_Login_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~course.bpem#wsdls/nobelbiocare.com~p_teac~pr~pm~course/MI266_BPM_Login_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="7d7213aa-8a0d-4f9a-b38d-7cd8bca41c4f" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MI255_BPM_TEAC_Create_Update_Course">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/TnE#wsdl.interface(MI255_BPM_TEAC_Create_Update_Course_ia)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~course.bpem#wsdls/nobelbiocare.com~p_teac~pr~pm~course/MI255_BPM_TEAC_Create_Update_Course_ia.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="e6180d23-9d46-4dc0-8427-8b6ee2a7310a" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SampleTimerServiceGroup">
+<interface.wsdl interface="http://sap.com/glx/sampletimer/#wsdl.interface(SampleTimer)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~course.bpem#wsdls/sap.com~tc~bpem~content~predefs~default/rootwsdl_SimpleTimerServices.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="8cdca482-335a-4826-a1ff-5b9ca50a8fd3" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MI269_BPM_GetListOfValuesForMultiselectionProductAttributes">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/TnE#wsdl.interface(MI269_BPM_GetListOfValuesForMultiselectionProductAttributes_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~course.bpem#wsdls/nobelbiocare.com~p_teac~pr~pm~course/MI269_BPM_GetListOfValuesForMultiselectionProductAttributes_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="a717a04c-cd8f-41c0-bb7d-401e559c725b" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MI255_BPM_Mix_Create_Update_Teac">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/TnE#wsdl.interface(MI255_BPM_TEAC_Create_Update_Course_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~course.bpem#wsdls/nobelbiocare.com~p_teac~pr~pm~course/MI255_BPM_TEAC_Create_Update_Course_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="47be2d2d-fcf6-4e92-8092-e85fe3033dfb" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MI267_BPM_GetProductLines_os">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/TnE#wsdl.interface(MI267_BPM_GetProductLines_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~course.bpem#wsdls/nobelbiocare.com~p_teac~pr~pm~course/MI267_BPM_GetProductLines_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="2c95d8af-74ee-48e0-acee-adfcda954352" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MI272_Get_ProductID">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/TnE#wsdl.interface(MI272_BPM_GetProductID_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~course.bpem#wsdls/nobelbiocare.com~p_teac~pr~pm~course/MI272_BPM_GetProductID_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="6fb9fb05-d97b-4a40-a78d-8b8830fd1935" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MI257_BPM_Create_Update_Course_Result">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/TnE#wsdl.interface(MI257_BPM_Create_Update_Course_Result_oa)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~course.bpem#wsdls/nobelbiocare.com~p_teac~pr~pm~course/MI257_BPM_Create_Update_Course_Result_oa.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="039d50a3-1041-474f-ba64-772327b70be4" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MI256_BPM_Get_Speaker_engagement_oa">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/TnE#wsdl.interface(MI256_BPM_Get_Speaker_engagement_oa)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~course.bpem#wsdls/nobelbiocare.com~p_teac~pr~pm~course/MI256_BPM_Get_Speaker_engagement_oa.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="52e47553-67c4-4418-8720-fa5370ab46d2" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MI268_BPM_GetMultiselectionProductAttributes_os">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/TnE#wsdl.interface(MI268_BPM_GetMultiselectionProductAttributes_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~course.bpem#wsdls/nobelbiocare.com~p_teac~pr~pm~course/MI268_BPM_GetMultiselectionProductAttributes_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_SYSTEM"/>
+</reference>
+</component>
+<sapconfig:serviceGroups>
+<sapconfig:serviceGroup bundle="100db73f-60d9-480e-984c-68992606b65e.consgroup" sgName="MI267_BPM_GetProductLines_os"/>
+<sapconfig:serviceGroup bundle="412a1839-350e-4384-bc93-20a74b54417f.consgroup" sgName="MI272_Get_ProductID"/>
+<sapconfig:serviceGroup bundle="43227e63-778a-4136-b63c-37946d9b9bed.consgroup" sgName="MI269_BPM_GetListOfValuesForMultiselectionProductAttributes"/>
+<sapconfig:serviceGroup bundle="4e0a3521-ae08-4bfa-a027-5304632a5230.consgroup" sgName="MI256_BPM_Get_Speaker_engagement_oa"/>
+<sapconfig:serviceGroup bundle="571a2992-3975-4df5-a751-9f03a970e712.consgroup" sgName="MI255_BPM_TEAC_Create_Update_Course"/>
+<sapconfig:serviceGroup bundle="5de92776-6b5f-44f1-ade6-c96f25b0f226.consgroup" sgName="MI266_BPM_Login_os"/>
+<sapconfig:serviceGroup bundle="a4f49941-b528-4d26-98c4-fcb7f4da4b2b.consgroup" sgName="MI255_BPM_Mix_Create_Update_Teac"/>
+<sapconfig:serviceGroup bundle="bfa6fcef-7896-43b2-badd-1e5f1d696b5e.consgroup" sgName="MI268_BPM_GetMultiselectionProductAttributes_os"/>
+<sapconfig:serviceGroup bundle="fed49bb0-0c83-49ee-8ecc-003223bf0bce.consgroup" sgName="MI257_BPM_Create_Update_Course_Result"/>
+</sapconfig:serviceGroups>
+</composite>

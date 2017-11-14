@@ -1,0 +1,123 @@
+Development Component Build (2017-11-06 17:11:37 GMT+01:00 (CET))
+  Component name: sc_sfdc
+  Component vendor: nobelbiocare.com
+  SC compartment: SC_SFDC
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: pedro.jimenez@MADNB2016
+  DC root folder: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\sc_sfdc\_comp\
+  DC type: Software Component Description
+  Host: MADNB2016
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/scdef"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/scdef
+   starting build plugin from : D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\scdef\_comp\gen\default\public\def\
+
+
+
+Build Plugin 'sap.com/tc/bi/bp/scdef', Version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:53:16 +0200, CL209430)
+   development component:  sc_sfdc (nobelbiocare.com)
+      software component:  SC_SFDC (nobelbiocare.com)
+       support component:  NONE
+                location:  localDevelopment
+                    type:  Software Component Description
+           build variant:  default
+         source location:  pedro.jimenez@MADNB2016
+         output location:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\954ECC6161BB9D2CF8FAD9BC7824CB4A\default
+       generation folder:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\954ECC6161BB9D2CF8FAD9BC7824CB4A
+       plugin start time:  2017-11-06 17:11:37 GMT+01:00 (CET)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.45-b01 (1.6, Sun Microsystems Inc.)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Checking path lengths for sources
+Path length checks finished in 0 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.006 seconds
+ 
+Creating Ant build file..
+  Creating output file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\954ECC6161BB9D2CF8FAD9BC7824CB4A\default\logs\build.xml
+  Using Java class:     com.sap.tc.buildplugin.scdef.ScdefBuildFileCreator
+  +++ com.sap.tc.buildplugin.scdef.ScdefBuildFileCreator: chainName: sap.com~sl.scdef_chain
+  +++ forcing SDA creation, DC does not contain complete product model
+Build file creation finished in 0.032 seconds
+ 
+Starting Ant..
+  Using build file:     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\954ECC6161BB9D2CF8FAD9BC7824CB4A\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+translate:
+      [echo] +++ com.sap.tc.buildplugin.scdef.ScdefTaskGenerator: taskName: ScdefGeneratorTask
+      [echo] localContext: com.sap.tc.buildplugin.util.DataContext@6fe4f9
+      [echo] inputPaths: {compile_pp=[], source=[D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\sc_sfdc\_comp\src]}
+      [echo] outputPaths: {default=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\954ECC6161BB9D2CF8FAD9BC7824CB4A\testoutput, packdir=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\954ECC6161BB9D2CF8FAD9BC7824CB4A\sld_pack01, tempdir=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\954ECC6161BB9D2CF8FAD9BC7824CB4A\sld_temp01}
+      [echo] usedPaths: {}
+      [echo] parameters: {outputFolderName=testoutput}
+      [echo] File(source): D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\sc_sfdc\_comp\src
+[ScdefGeneratorTask] Executing inside of com.sap.tc.buildplugin.scdef.ScdefValidator...
+[ScdefGeneratorTask] packDir: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\954ECC6161BB9D2CF8FAD9BC7824CB4A\sld_pack01
+[ScdefGeneratorTask] tempDir: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\954ECC6161BB9D2CF8FAD9BC7824CB4A\sld_temp01
+ 
+createPublicParts:
+  [pppacker] Packing public part 'default'
+  [pppacker] Packed   1 file  for entity / (Folder)
+  [pppacker] Packed 1 entity for public part 'default'
+     [timer] Packing of public part 'default' finished in 0.016 seconds
+ 
+ 
+createDeployArchive:
+       [cda] Preparing archive for deploy unit "default"
+       [cda]   deployment type: "CONTENT" / "SL-SDA"
+       [cda]   deploy options:
+       [cda]     software-type = CONTENT
+       [cda]     software-subtype = SL-SDA
+ 
+       [cda] Creating Ant build file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\954ECC6161BB9D2CF8FAD9BC7824CB4A\default\logs\buildDeployArchive.xml
+ 
+ 
+       [cda] Collecting modules ...
+       [cda] Ant build file creation finished in 0.017 seconds
+ 
+packDeployArchive:
+ [srcpacker] Creating source archive
+ [srcpacker] No sources available for packing, no archive will be created.
+     [timer] Source archive creation finished in 0.017 seconds
+ 
+    [jarsap] Info: JarSAP version 20090803.1000
+    [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
+    [jarsap] Building: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\954ECC6161BB9D2CF8FAD9BC7824CB4A\default\deploy\nobelbiocare.com~sc_sfdc.sda with compression
+     [timer] JarSAP finished in 0.011 seconds
+ 
+ 
+build:
+ 
+Ant runtime 0.091 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2017-11-06 17:11:37 GMT+01:00 (CET)
+Total build plugin runtime: 0.208 seconds
+ 
+Build finished OK
+
+==== Post-Processing ====   started at 2017-11-06 17:11:37.568 CET
+Comparison of previous and actual build results took: 0.004 seconds
+
+Copy the build results 
+  from: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\954ECC6161BB9D2CF8FAD9BC7824CB4A\default\
+  to:   D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\sc_sfdc\_comp\gen\default\
+
+The build results of the following public parts were not copied, since they have not changed:
+  default

@@ -1,0 +1,214 @@
+## convenience macros moved to the end to avoid velocity error messages.
+
+#macro (BuildAdditionalLib $swtype $serviceclass $runtimeclass)
+    $dc_util.logWarning(" ")
+    $dc_util.logWarning("*************************************************************")
+    $dc_util.logWarning("**                                                         **")
+    $dc_util.logWarning("**           This build plugin is deprecated.              **")
+    $dc_util.logWarning("**                                                         **")
+    $dc_util.logWarning("**  Use the official J2EE Server Component/Library type.   **")
+    $dc_util.logWarning("**                                                         **")
+    $dc_util.logWarning("*************************************************************")
+    $dc_util.logWarning(" ")
+
+    ##
+    ## compile
+    ##
+    #StartTarget("compile")
+        #CompileDCJavaSources()
+    #EndTarget()
+
+
+    ##
+    ## create xxx-dd.xml descriptor
+    ##
+    ##  @todo: replace echo task with better output
+    #StartTarget("ddxml")
+        <tstamp/>
+        <echo message="Creating $dc_gen_tempDir/${swtype}-dd.xml"/>
+        #BeginCreateSDADescriptor("$dc_gen_tempDir/${swtype}-dd.xml" "$swtype" "engine")
+            <substitutionvariable name="com.sap.datasource.default"/>
+        #EndCreateSDADescriptor()
+    #EndTarget()
+
+
+    ##
+    ## create provider.xml descriptor
+    ##
+    #StartTarget("providerxml")
+        #MkDir("${dc_gen_tempDir}/server")
+        <tstamp/>
+        <echo message="Creating $dc_gen_tempDir/server/provider.xml"/>
+        <echo append="true" file="$dc_gen_tempDir/server/provider.xml"><![CDATA[<?xml version="1.0" ?>
+#if ($swtype == "primary-service")
+<!DOCTYPE provider-descriptor SYSTEM "service.provider.dtd">
+#else
+<!DOCTYPE provider-descriptor SYSTEM "library.provider.dtd">
+#end
+  <provider-descriptor>
+<!-- provider.xml generated $dc_location $dc_counter -->
+    <display-name>
+        $dc_name
+    </display-name>
+    <component-name>
+        $dc_name
+    </component-name>
+#if( ! ($serviceclass == "") )
+    <application-frame>
+      $serviceclass
+    </application-frame>
+#end
+#if( ! ($runtimeclass == "") )
+  <runtime-editor>
+    $runtimeclass
+  </runtime-editor>
+#end
+    <major-version>
+      1
+    </major-version>
+    <minor-version>
+      0
+    </minor-version>
+    <micro-version>
+      0
+    </micro-version>
+    <provider-name>
+      $dc_vendor
+    </provider-name>
+    <references>
+
+#set ($error="")
+#set ($quote='"')
+
+#foreach( $dc_dep in $dc_depend_allDependencies )
+
+#if($dc_dep.AtRuntime)
+
+    #set ($ref_vendor = "$dc_dep.Vendor")
+    #set ($ref_name   = "$dc_dep.Name")
+    #set ($ref_qual   = "$dc_dep.RuntimeQualifier")
+    #set ($ref_type   = "$dc_dep.CTSubType")
+    #if( "$dc_dep.CTType" == "")
+        #set ($error = "$error<fail message=${quote}DC Type cannot be determined for $dc_dep.Vendor/$dc_dep.Name${quote}/>")
+    #end
+    #if( "$dc_dep.CTType/$dc_dep.CTSubType" == "Java/")
+        #set ($error = "$error<fail message=${quote}DC Java-SubType cannot be determined for $dc_dep.Vendor/$dc_dep.Name${quote}/>")
+    #end
+
+#*
+    #if( $ref_name == "applocking" )             #set ($ref_type = "Service")
+    #elseif( $ref_name == "opensql" )            #set ($ref_type = "Library")
+    #elseif( $ref_name == "com.sap.exception" )        #set ($ref_type = "Library")
+    #elseif( $ref_name == "com.sap.security.api.sda" )    #set ($ref_type = "Library")
+    #elseif( $ref_name == "com.sap.security.core.sda" )    #set ($ref_type = "Library")
+    #elseif( $ref_name == "sapxmltoolkit" )            #set ($ref_type = "Library")
+    #elseif( $ref_name == "jmx" )                #set ($ref_type = "Service")
+    #elseif( $ref_name == "jddi" )                #set ($ref_name = "jdbdictionary")
+    #elseif( $ref_name == "com.sap.engine.client.lib" )    #set ($ref_name = "appclient") #set ($ref_type = "Service")
+    #end
+*#
+    #if( $ref_name == "jddi" )                              #set ($ref_name = "jdbdictionary")
+    #elseif( $ref_name == "naming_api" )                    #set ($ref_name = "naming") #set ($ref_type = "Service")
+    #elseif( $ref_name == "jta" )                           #set ($ref_name = "ts") #set ($ref_type = "Service")
+    #elseif( $ref_name == "security_api" )                  #set ($ref_name = "security")
+##    #elseif( $ref_name == "tc/wd/webdynpro" )               #set ($ref_name = "webdynpro")
+    #elseif( $ref_name == "caf/mp/base/trexclient" )        #set ($ref_name = "com.sap.km.trex.client")
+    #elseif( $ref_name == "trex.jc._client" )               #set ($ref_name = "com.sap.km.trex.client")
+##    #elseif( $ref_name == "com.sap.engine.client.lib" )   #set ($ref_name = "appclient") #set ($ref_type = "Service")
+    #end
+
+    #if( $ref_type == "Library" )           #set ($ref_type = "library")
+    #elseif( $ref_type == "Service" )       #set ($ref_type = "service")
+    #elseif( $ref_type == "Interface" )     #set ($ref_type = "interface")
+    #else                                   #set ($ref_type = "")
+    #end
+
+    #if( $dc_dep.RuntimeQualifier == "" )           #set ($ref_qual = "weak")
+    #elseif( $dc_dep.RuntimeQualifier == "strong" ) #set ($ref_qual = "hard")
+    #end
+
+    #if( $ref_type == "")
+        <!-- ignoring $!dc_dep.RuntimeQualifier reference to $dc_dep.Vendor/$dc_dep.Name $dc_dep.CTType/$!dc_dep.CTSubType -->
+    #else
+        <reference type="$ref_type" strength="$ref_qual" provider-name="$ref_vendor">$ref_name</reference>
+    #end
+
+#end
+
+#end
+    </references>
+    <jars>
+#*
+#foreach($pp in $dc_public_parts)
+       <jar-name>${pp.Name}.jar</jar-name>
+#end
+*#
+    <jar-name>${dc_deployFile}.jar</jar-name>
+    </jars>
+  </provider-descriptor>
+]]>
+
+  </echo>
+$error
+    #EndTarget()
+
+    ##
+    ##  create SDA
+    ##
+    #StartTargetDep("sda" "compile,ddxml,providerxml")
+        <tstamp/>
+        <echo message="Creating ${dc_deployFile}.jar"/>
+        #MkDir("${dc_gen_tempDir}/int-pp")
+        #BeginPackInternalPP("J2EE Server Component Archive" "${dc_gen_tempDir}/int-pp")
+            <entity name="" package="" type="Java Package Tree" subtype="Class"/>
+        #EndPackInternalPP("J2EE Server Component Archive")
+
+        <echo message="Creating ${dc_deployFile}.sda"/>
+        #set($localList = $dc_util.createSingleItemList("${dc_gen_tempDir}/int-pp"))
+        #BeginCreateDeployFile("sap.com~j2ee.J2EE_LIBRARY_SDA" "${dc_deployDir}/${dc_deployFile}.sda" "$dc_gen_tempDir/${swtype}-dd.xml" $localList)
+            <descriptor file="$dc_gen_tempDir/server/provider.xml" type="provider.xml" destpath="server/provider.xml"/>
+            <fileset dir="${dc_rootDir}/src">
+                <include name="server/**" />
+            </fileset>
+            <fileset dir="${dc_rootDir}">
+                <include name="server/**" />
+            </fileset>
+            <fileset dir="$dc_gen_tempDir">
+                <include name="server/**" />
+            </fileset>
+        #EndCreateDeployFile()
+
+    #EndTarget()
+
+    ##
+    ## create public parts
+    ##
+    #StartTargetDep("createPublicParts" "compile")
+
+        #if( $dc_packageDirs.size() > 0 )
+            #foreach($pp in $dc_public_parts)
+                #PackPublicPart($pp)
+            #end
+        #else
+          <echo message="Nothing to copy or package (No package-folder defined)"/>
+        #end
+    #EndTarget()
+
+#end
+
+#macro (BuildPrimaryLibrary)
+#BuildAdditionalLib("primary-library" "" "")
+#end
+
+#macro (BuildSecondaryLibrary)
+#BuildAdditionalLib("library" "" "")
+#end
+
+#macro (BuildPrimaryService $serviceclass)
+#BuildAdditionalLib("primary-service" $serviceclass "")
+#end
+
+#macro (BuildPrimaryServiceWithRuntimeUI $serviceclass $runtimeclass)
+#BuildAdditionalLib("primary-service" $serviceclass $runtimeclass)
+#end
+

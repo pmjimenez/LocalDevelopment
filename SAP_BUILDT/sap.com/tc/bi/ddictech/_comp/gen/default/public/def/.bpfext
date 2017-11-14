@@ -1,0 +1,107 @@
+<technologies version="1">
+  <technology name="sap.com/tc/bi/ddictech">
+    <uses>sap.com/tc/bi/javatech</uses>
+    <entity>
+      <descriptor type="Dictionary Simple Type" subtype="Source">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHDdic"/>
+      </descriptor>
+      <descriptor type="Dictionary Database Table" subtype="Source">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHDdic"/>
+      </descriptor>
+      <descriptor type="Dictionary Structure" subtype="Source">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHDdic"/>
+      </descriptor>
+      <descriptor type="Dictionary Database View" subtype="Source">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHDdic"/>
+      </descriptor>
+    </entity>
+    <datacontextprovider>
+      <provider classname="com.sap.tc.buildplugin.DdicMacroContextProvider"/>
+      <element name="ddic_model_path" class="java.io.File" attributes="dictionary[model]"/>
+    </datacontextprovider>
+    <generators>
+      <generator type="sap.com~ddgen">
+        <implementation-type>java</implementation-type>
+        <implementation-name>com.sap.tc.buildplugin.gen.DDicGenerator</implementation-name>
+        <input-types>
+          <type pattern="**/*.dt*" attributes="debug"/>
+        </input-types>
+        <inputs>
+          <input name="default" required="true">
+            <default-value>$dc_packageDirsAsFiles</default-value>
+            <description>
+              Source paths containing Data Dictionary objects.
+            </description>
+          </input>
+        </inputs>
+        <outputs>
+          <output name="default" required="true">
+            <description>
+              The output path where generated class files will be put
+            </description>
+            <default-value>gen_ddic</default-value>
+          </output>
+          <output name="packages" required="false">
+            <description>relative folder to default</description>
+            <default-value>${default}/datatypes</default-value>
+            <attributes>virtual</attributes>
+          </output>
+        </outputs>
+        <usedpaths>
+          <path name="models" default-value="$ddic_model_path">
+            <description>List of model archives</description>
+          </path>
+          <path name="classpath" default-value="$dc_depend_compileArchives">
+            <description>List of dictionary archives used for generation </description>
+          </path>
+          <path name="metadata"/>
+        </usedpaths>
+        <parameters>
+          <parameter name="deployment" default-value="true"/>
+          <parameter name="language" default-value="$ddic_languages"/>
+          <parameter name="vendor" default-value="$dc_vendor">
+            <description>Vendor name of the DC</description>
+          </parameter>
+          <parameter name="dcname" default-value="$dc_name">
+            <description>Name of the DC</description>
+          </parameter>
+          <parameter name="archivename" default-value="$ddic_deployFile"/>
+          <parameter name="projectlanguage" default-value="$dc_originalLocale"/>
+        </parameters>
+      </generator>
+      <extension type="sap.com~ddgen_cleanup" extends="sap.com~javac">
+        <execute-before>sap.com~jlin</execute-before>
+        <implementation-type>java</implementation-type>
+        <implementation-after>com.sap.tc.buildplugin.gen.DDicJavacPostprocess</implementation-after>
+      </extension>
+    </generators>
+    <buildfile-creators>
+      <library>
+        <implementation-name>com.sap.tc.buildplugin.DictionaryBase</implementation-name>
+        <interface-name>com.sap.tc.buildplugin.IDictionaryBase</interface-name>
+        <context-name>dictBase</context-name>
+      </library>
+    </buildfile-creators>
+    <source-filesets>
+      <generator type="sap.com~xlf2prop">
+        <exclude name="**/*.dtsimpletype*.xlf"/>
+        <exclude name="**/*.dtstructure*.xlf"/>
+      </generator>
+    </source-filesets>
+    <ant-tasks>
+      <task name="ddgen"
+         classname="com.sap.dictionary.generation.ant.DDGenAntTask"
+              on-demand="true"/>
+      <task name="publicpartlist"
+          classname="com.sap.tc.buildplugin.ddic.CreatePPEntitiesInfo"/>
+      <task name="translatedbc"
+          classname="com.sap.dbcontent.translation.dbcfiles.CreateTranslatedDBCFiles"
+          	on-demand="true"/>
+    </ant-tasks>
+    <output-descriptor-types>
+      <output-descriptor-type
+        type="com.sap.ddic.output-descriptor"
+        classname="com.sap.tc.buildplugin.pp.GeneratorOutputDescriptor"/>
+    </output-descriptor-types>
+  </technology>
+</technologies>

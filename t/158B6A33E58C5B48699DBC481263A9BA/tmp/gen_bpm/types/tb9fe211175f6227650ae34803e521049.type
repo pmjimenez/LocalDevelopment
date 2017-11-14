@@ -1,0 +1,10 @@
+ROOT_0,TARGET_NAMESPACE=nobelbiocare.com/p_sfdc/pr/pm/re/year_to_date/P_BPM_004_Revenue_Year_To_Date/Year_To_Date
+ROOT_0,SCHEMA_LOCATION=nobelbiocare.com/p_sfdc/pr/pm/re/year_to_date/P_BPM_004_Revenue_Year_To_Date/Year_To_Date
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="nobelbiocare.com/p_sfdc/pr/pm/re/year_to_date/P_BPM_004_Revenue_Year_To_Date/Year_To_Date" xmlns:tns="nobelbiocare.com/p_sfdc/pr/pm/re/year_to_date/P_BPM_004_Revenue_Year_To_Date/Year_To_Date" xmlns:ns1="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:import namespace="http://nobelbiocare.com/BPM/SFDC/Revenue" schemaLocation="http://nobelbiocare.com/BPM/SFDC/Revenue"></xsd:import>   <xsd:element name="DO_Account_Ids" type="ns1:DT_AccountId" sdox:aliasName="$nobelbiocare.com/p_sfdc/pr/pm/re/year_to_date/P_BPM_004_Revenue_Year_To_Date/Year_To_Date:DO_Account_Ids" xmlns:sdox="commonj.sdo/xml"></xsd:element> </xsd:schema> 
+
+CHILD_0,TARGET_NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Revenue
+CHILD_0,SCHEMA_LOCATION=http://nobelbiocare.com/BPM/SFDC/Revenue
+CHILD_0,ROOTID=0
+CHILD_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:tns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:complexType name="DT_AccountId" sdox:aliasName="#DT_AccountId" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="Row" minOccurs="0" maxOccurs="unbounded" sdox:aliasName="$Row">         <xsd:complexType sdox:aliasName="E0356A04FD97BD09010B11E79C6C0205857FEB80">           <xsd:sequence>             <xsd:element name="Id" type="xsd:string" sdox:aliasName="$Id"></xsd:element>             <xsd:element name="SapId" type="xsd:string" sdox:aliasName="$SapId"></xsd:element>           </xsd:sequence>         </xsd:complexType>       </xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+

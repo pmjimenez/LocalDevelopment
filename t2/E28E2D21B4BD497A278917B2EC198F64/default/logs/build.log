@@ -1,0 +1,127 @@
+Development Component Build (2017-01-13 12:06:16 GMT+01:00 (CET))
+  Component name: po_salesforce_02
+  Component vendor: nobelbiocare.com
+  SC compartment: PO_SALESFORCE_02_SC
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: pedro.jimenez@MADNB2016
+  DC root folder: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\PO_SALESFORCE_02_SC\nobelbiocare.com\po_salesforce_02\_comp\
+  DC type: Product Description
+  Host: MADNB2016
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/pdef"
+   validating dependency to  public part "default" of DC "nobelbiocare.com/po_salesforce_02_sc"
+   validating dependency to  public part "default" of DC "nobelbiocare.com/salesforce_bpm_sc"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/pdef
+   starting build plugin from : D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\pdef\_comp\gen\default\public\def\
+
+
+
+Build Plugin 'sap.com/tc/bi/bp/pdef', Version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:53:16 +0200, CL209430)
+   development component:  po_salesforce_02 (nobelbiocare.com)
+      software component:  PO_SALESFORCE_02_SC (nobelbiocare.com)
+       support component:  Default
+                location:  localDevelopment
+                    type:  Product Description
+           build variant:  default
+         source location:  pedro.jimenez@MADNB2016
+         output location:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\E28E2D21B4BD497A278917B2EC198F64\default
+       generation folder:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\E28E2D21B4BD497A278917B2EC198F64
+       plugin start time:  2017-01-13 12:06:16 GMT+01:00 (CET)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.13-b02 (1.6, Sun Microsystems Inc.)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Checking path lengths for sources
+Path length checks finished in 0 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.009 seconds
+ 
+Creating Ant build file..
+  Creating output file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\E28E2D21B4BD497A278917B2EC198F64\default\logs\build.xml
+  Using Java class:     com.sap.tc.buildplugin.pdef.PdefBuildFileCreator
+  +++ com.sap.tc.buildplugin.pdef.PdefBuildFileCreator: chainName: sap.com~sl.pdef_chain
+  +++ forcing SDA creation, DC does not contain complete product model
+Build file creation finished in 0.019 seconds
+ 
+Starting Ant..
+  Using build file:     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\E28E2D21B4BD497A278917B2EC198F64\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+translate:
+      [echo] +++ com.sap.tc.buildplugin.pdef.PdefTaskGenerator: taskName: PdefGeneratorTask
+      [echo] localContext: com.sap.tc.buildplugin.util.DataContext@1bbb07d
+      [echo] inputPaths: {compile_pp=[D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\PO_SALESFORCE_02_SC\nobelbiocare.com\po_salesforce_02_sc\_comp\gen\default\public\default, D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SALESFORCE_BPM_SC\nobelbiocare.com\salesforce_bpm_sc\_comp\gen\default\public\default], source=[D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\PO_SALESFORCE_02_SC\nobelbiocare.com\po_salesforce_02\_comp\src]}
+      [echo] outputPaths: {default=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\E28E2D21B4BD497A278917B2EC198F64\testoutput, packdir=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\E28E2D21B4BD497A278917B2EC198F64\sld_pack01, tempdir=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\E28E2D21B4BD497A278917B2EC198F64\sld_temp01}
+      [echo] usedPaths: {}
+      [echo] parameters: {outputFolderName=testoutput}
+      [echo] File(source): D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\PO_SALESFORCE_02_SC\nobelbiocare.com\po_salesforce_02\_comp\src
+      [echo] File(compile_pp): D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\PO_SALESFORCE_02_SC\nobelbiocare.com\po_salesforce_02_sc\_comp\gen\default\public\default
+      [echo] File(compile_pp): D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SALESFORCE_BPM_SC\nobelbiocare.com\salesforce_bpm_sc\_comp\gen\default\public\default
+[PdefGeneratorTask] Executing inside of com.sap.tc.buildplugin.pdef.PdefValidator...
+[PdefGeneratorTask] packDir: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\E28E2D21B4BD497A278917B2EC198F64\sld_pack01
+[PdefGeneratorTask] tempDir: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\E28E2D21B4BD497A278917B2EC198F64\sld_temp01
+ 
+createPublicParts:
+  [pppacker] Packing public part 'default'
+  [pppacker] Packed   1 file  for entity / (Folder)
+  [pppacker] Packed 1 entity for public part 'default'
+     [timer] Packing of public part 'default' finished in 0.024 seconds
+ 
+ 
+createDeployArchive:
+       [cda] Preparing archive for deploy unit "default"
+       [cda]   deployment type: "CONTENT" / "SL-SDA"
+       [cda]   deploy options:
+       [cda]     software-type = CONTENT
+       [cda]     software-subtype = SL-SDA
+ 
+       [cda] Creating Ant build file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\E28E2D21B4BD497A278917B2EC198F64\default\logs\buildDeployArchive.xml
+ 
+ 
+       [cda] Collecting modules ...
+       [cda] Ant build file creation finished in 0.016 seconds
+ 
+packDeployArchive:
+ [srcpacker] Creating source archive
+ [srcpacker] No sources available for packing, no archive will be created.
+     [timer] Source archive creation finished in 0.015 seconds
+ 
+    [jarsap] Info: JarSAP version 20090803.1000
+    [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
+    [jarsap] Building: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\E28E2D21B4BD497A278917B2EC198F64\default\deploy\nobelbiocare.com~po_salesforce_02.sda with compression
+     [timer] JarSAP finished in 0.02 seconds
+ 
+ 
+build:
+ 
+Ant runtime 1.568 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2017-01-13 12:06:18 GMT+01:00 (CET)
+Total build plugin runtime: 1.698 seconds
+ 
+Build finished OK
+
+==== Post-Processing ====   started at 2017-01-13 12:06:18.595 CET
+Comparison of previous and actual build results took: 0.005 seconds
+
+Copy the build results 
+  from: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\E28E2D21B4BD497A278917B2EC198F64\default\
+  to:   D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\PO_SALESFORCE_02_SC\nobelbiocare.com\po_salesforce_02\_comp\gen\default\
+
+The build results of the following public parts were not copied, since they have not changed:
+  default

@@ -1,0 +1,10 @@
+# Critical error event definition p2.LoginFault (MOFId: E0EE4DB253F65DBDAE1511E4C499000C29AF3A8A)
+NETWORK,8C57162316B2F929DA98544351B12F73,p2.LoginFault
+REVISIONID,4,7,Galaxy exception compiler as of NetWeaver CE 7.31 SP 17 (Build Time: 2015-09-14 08:43:18)
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,8C57162316B2F929DA98544351B12F73,SCOPE=7F952D5A021974FE04622FB41C748A0D
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,8C57162316B2F929DA98544351B12F73,ROOT,NAME=LoginFault
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,8C57162316B2F929DA98544351B12F73,ROOT,NAMESPACE=urn:fault.partner.soap.sforce.com
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,8C57162316B2F929DA98544351B12F73,ROOT,TYPE=#LoginFault
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,8C57162316B2F929DA98544351B12F73,ROOT,TYPENAMESPACE=urn:fault.partner.soap.sforce.com
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,8C57162316B2F929DA98544351B12F73,ROOT,EXCEPTION_COMPILER_VERSION=2

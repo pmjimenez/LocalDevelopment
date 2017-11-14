@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:p2="http://sap.com/xi/XI/SplitAndMerge" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+				  
+	<wsdl:documentation/>
+	
+	 <wsdl:types>
+	<xsd:schema xmlns="http://nobelbiocare.com/BPM/SFDC/Revenue" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+    <xsd:element name="MT_Dummy_Account" type="DT_Dummy_Account"/>
+    <xsd:element name="MT_Dummy_Account_OwnerId" type="DT_Dummy_Account_OwnerId"/>
+    <xsd:complexType name="DT_Dummy_Account_OwnerId">
+        <xsd:annotation>
+            <xsd:appinfo source="http://sap.com/xi/VersionID">758daec3eeb311e68cb80000005f8a66</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="Account" type="DT_Dummy_Account">
+                <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">757dfffceeb311e6a5c60205857feb80</xsd:appinfo>
+                    <xsd:documentation/>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="Onwers" type="DT_OwnerId">
+                <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">757dfffdeeb311e68daa0205857feb80</xsd:appinfo>
+                    <xsd:documentation/>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+            <xsd:complexType name="DT_Dummy_Account">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" name="ACCOUNTS">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="OWNERID" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:documentation>Owner Id</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ACCSAPID" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:documentation>Account__r_SAP_ID__c</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="SAPID" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="VKORG" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="SALESORG" type="xsd:string"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+            <xsd:complexType name="DT_OwnerId">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" name="Owners">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="OWNER" type="xsd:string"/>
+                <xsd:element name="SALESORG" type="xsd:string"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+        </xsd:schema>
+
+	
+
+	</wsdl:types>
+  
+ 	<wsdl:message name="OMRequestMessage">
+		<wsdl:documentation/>
+			<wsdl:part element="p1:MT_Dummy_Account_OwnerId" name="MT_Dummy_Account_OwnerId"/>
+	</wsdl:message>
+
+	<wsdl:message name="OMResponseMessage">
+		<wsdl:documentation/>
+			    <wsdl:part element="p1:MT_Dummy_Account" name="MT_Dummy_Account"/>
+	</wsdl:message>
+ 
+  <wsdl:portType name="nobelbiocarecom_p_sfdcprpmreaccount_performance_OM_AccPer_OwnerPortType">
+  	<wsdl:documentation/>
+    <wsdl:operation name="OM_AccPer_Owner">
+      <wsdl:input message="p1:OMRequestMessage"/>
+      <wsdl:output message="p1:OMResponseMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  
+  <wsdl:binding name="OM_AccPer_OwnerBinding" type="p1:nobelbiocarecom_p_sfdcprpmreaccount_performance_OM_AccPer_OwnerPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="OM_AccPer_Owner">
+      <soap:operation/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  
+  <wsdl:service name="nobelbiocare_com_p_sfdc_pr_pm_re_account_performance_OM_AccPer_Owner_Service">
+    <wsdl:port binding="p1:OM_AccPer_OwnerBinding" name="nobelbiocarecom_p_sfdcprpmreaccount_performance_OM_AccPer_OwnerPortType">
+      <soap:address xmlns:soap="http/schemas.xmlsoap.org/wsdl/soap/" location="http://localhost:50500/nobelbiocare.com~p_sfdc/pr/pm/re/account_performance/wsdl/OM_AccPer_Owner"/>
+    </wsdl:port>
+  </wsdl:service>
+  
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+		<ifw:genericProperties>
+			<ifw:swcvinfo>
+				<ifw:guid>dc2258106ad711e697b4e1ec0a3e5c13</ifw:guid>
+				<ifw:name>BPM, 1.0 of nobelbiocare.com</ifw:name>
+			</ifw:swcvinfo>
+			<ifw:ominfo>
+				<ifw:guid>f46ba33595253d2387ec68c37b4315c4</ifw:guid>
+			</ifw:ominfo>
+		</ifw:genericProperties>
+	</ifw:properties>
+  
+</wsdl:definitions>

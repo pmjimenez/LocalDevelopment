@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<development-component
+		version="1.0.5"
+		xmlns="http://xml.sap.com/2002/11/DevelopmentComponent"
+		xmlns:IDX="urn:sap.com:DevelopmentComponent:1.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xml.sap.com/2002/11/DevelopmentComponent dcdef.xsd">
+	<name>tc/bpem/content/predefs/types</name>
+	<vendor>sap.com</vendor>
+	<caption>Built-in datatypes and mapping functions</caption>
+	<description>Contains predefined XSD datatypes (e.g. string, decimal), which must always be identical.</description>
+	<component-type>
+		<vendor>sap.com</vendor>
+		<type>Data Mapping</type>
+	</component-type>
+	<properties>
+		<localization xmlns="http://xml.sap.com/2003/06/Localization" xmlns:ns0="http://xml.sap.com/2003/06/Localization">
+			<domain>BC</domain>
+			<originalLocale>en</originalLocale>
+		</localization>
+		<moin xmlns="http://xml.sap.com/2007/05/MoinModel">
+			<moin_folders/>
+			<moin_resource_folders>
+				<folder path="rep"/>
+				<folder path="src"/>
+			</moin_resource_folders>
+		</moin>
+	</properties>
+	<build-plugin>
+		<dc-ref>
+			<name>tc/bi/datamap/bp</name>
+			<vendor>sap.com</vendor>
+		</dc-ref>
+		<pp-ref>def</pp-ref>
+	</build-plugin>
+	<folders>
+		<source-folder>rep</source-folder>
+		<source-folder>src</source-folder>
+	</folders>
+	<dependencies>
+		<dependency>
+			<dc-ref>
+				<name>reftypescontent</name>
+				<vendor>sap.com</vendor>
+			</dc-ref>
+			<pp-ref>default</pp-ref>
+			<at-build-time/>
+		</dependency>
+	</dependencies>
+	<access-control-list>
+		<grant forwarding-allowed="false">
+			<dc-ref>
+				<name>*</name>
+				<vendor>*</vendor>
+			</dc-ref>
+		</grant>
+	</access-control-list>
+	<attributes>
+		<attribute>
+			<attribute-type>ACHAssignment</attribute-type>
+			<attribute-vendor>sap.com</attribute-vendor>
+			<attribute-value>BC-BMT-BPM-MAP</attribute-value>
+		</attribute>
+		<attribute>
+			<attribute-type>is_moin_dc</attribute-type>
+			<attribute-vendor>sap.com</attribute-vendor>
+			<attribute-value>true</attribute-value>
+		</attribute>
+	</attributes>
+</development-component>

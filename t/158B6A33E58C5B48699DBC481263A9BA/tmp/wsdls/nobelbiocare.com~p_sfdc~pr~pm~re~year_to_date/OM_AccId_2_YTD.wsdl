@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <wsdl:documentation></wsdl:documentation>
+  <ns1:properties xmlns:ns1="urn:com-sap:ifr:v2:wsdl">
+		<ns1:genericProperties>
+			<ns1:swcvinfo>
+				<ns1:guid>dc2258106ad711e697b4e1ec0a3e5c13</ns1:guid>
+				<ns1:name>BPM, 1.0 of nobelbiocare.com</ns1:name>
+			</ns1:swcvinfo>
+			<ns1:ominfo>
+				<ns1:guid>2248832a885d3aac9cec1afdf7b9168c</ns1:guid>
+			</ns1:ominfo>
+		</ns1:genericProperties>
+	</ns1:properties>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+      <xsd:complexType name="DT_AccId_Found">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">f2011afe010111e78c830000005f8a66</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="Found" type="tns:DT_GCVMAYF" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">e8d09b71010111e799ff0205857feb80</xsd:appinfo>
+              <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="Rejected" type="tns:DT_GCVMAYF" minOccurs="0">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">e8d09b72010111e7b4de0205857feb80</xsd:appinfo>
+              <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_GCVMAYF">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">CVM Actual Year Data</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="CORRELATION" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Correlation id</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="DELTA" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>'X' for delta load, full load otherwise</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="NUMBER" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Specifies the message number</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="TOTAL" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Messages total</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="ROW" minOccurs="0" maxOccurs="unbounded">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="CUSTOMER" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="FISCYEAR" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="CURRENCY" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="BIC_GAMT161" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="BIC_GAMT221" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="FISCVARNT" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="ERROR" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="ACCID" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="SALESORG" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_YTD_AccId">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">3f7e350c010111e7bc170000005f8a66</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="YTD" type="tns:DT_GCVMAYF" maxOccurs="unbounded"></xsd:element>
+          <xsd:element name="AccountId" type="tns:DT_AccountId" maxOccurs="unbounded"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_AccountId">
+        <xsd:sequence>
+          <xsd:element name="Row" minOccurs="0" maxOccurs="unbounded">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="Id" type="xsd:string"></xsd:element>
+                <xsd:element name="SapId" type="xsd:string"></xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="MT_AccId_Found" type="tns:DT_AccId_Found"></xsd:element>
+      <xsd:element name="MT_YTD_AccId" type="tns:DT_YTD_AccId"></xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="OMRequestMessage">
+    <wsdl:part name="MT_YTD_AccId" element="tns:MT_YTD_AccId"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="OMResponseMessage">
+    <wsdl:part name="MT_AccId_Found" element="tns:MT_AccId_Found"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="nobelbiocarecom_p_sfdcprpmreyear_to_date_OM_AccId_2_YTDPortType">
+    <wsdl:documentation></wsdl:documentation>
+    <wsdl:operation name="OM_AccId_2_YTD">
+      <wsdl:input message="tns:OMRequestMessage"></wsdl:input>
+      <wsdl:output message="tns:OMResponseMessage"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OM_AccId_2_YTDBinding" type="tns:nobelbiocarecom_p_sfdcprpmreyear_to_date_OM_AccId_2_YTDPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="OM_AccId_2_YTD">
+      <soap:operation></soap:operation>
+      <wsdl:input>
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="nobelbiocare_com_p_sfdc_pr_pm_re_year_to_date_OM_AccId_2_YTD_Service">
+    <wsdl:port name="nobelbiocarecom_p_sfdcprpmreyear_to_date_OM_AccId_2_YTDPortType" binding="tns:OM_AccId_2_YTDBinding">
+      <soap:address location="http://localhost:50500/nobelbiocare.com~p_sfdc/pr/pm/re/year_to_date/wsdl/OM_AccId_2_YTD"></soap:address>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

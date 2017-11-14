@@ -1,0 +1,10 @@
+# Message event definition MIZ040_Triggering (MOFId: E0EE4DB2D6E1CCCEAE1111E4BFB7000C29AF3A8A)
+NETWORK,26b22328bdc67fdb1eaf9b499599bc36,nobelbiocare.com/po_salesforce_02/pr/pm/MIZ040_Triggering
+REVISIONID,4,7,Galaxy interface compiler as of NetWeaver CE 7.30. Give yourself to the dark side.
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/po_salesforce_02/pr/pm/MIZ040_Triggering,MIZ040_Salesforce_TravelOD_Customers_Trigger_Req,SCOPE=8EBB5A7B61764FE6E490C6D0B008F377
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/po_salesforce_02/pr/pm/MIZ040_Triggering,MIZ040_Salesforce_TravelOD_Customers_Trigger_Req,ELEMENT,NAME=$http://nobelbiocare.com/Salesforce/Contacts:MT_SalesF_TravelOD_Customers_Trigger_Req
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/po_salesforce_02/pr/pm/MIZ040_Triggering,MIZ040_Salesforce_TravelOD_Customers_Trigger_Req,ELEMENT,NAMESPACE=http://nobelbiocare.com/Salesforce/Contacts
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/po_salesforce_02/pr/pm/MIZ040_Triggering,MIZ040_Salesforce_TravelOD_Customers_Trigger_Req,TYPE,NAME=#23#DT_Period
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/po_salesforce_02/pr/pm/MIZ040_Triggering,MIZ040_Salesforce_TravelOD_Customers_Trigger_Req,TYPE,NAMESPACE=http://nobelbiocare.com/Salesforce/Contacts
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/po_salesforce_02/pr/pm/MIZ040_Triggering,MIZ040_Salesforce_TravelOD_Customers_Trigger_Req,MESSAGEPATTERN_INONLY=true
