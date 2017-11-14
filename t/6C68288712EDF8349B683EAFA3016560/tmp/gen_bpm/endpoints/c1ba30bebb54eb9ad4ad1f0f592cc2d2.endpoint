@@ -1,0 +1,10 @@
+# Message event definition TR_Start_Revenue_GetSum (MOFId: E016575C593B0017F9D811E680D80205857FEB80)
+NETWORK,c1ba30bebb54eb9ad4ad1f0f592cc2d2,nobelbiocare.com/p_sfdc/pr/pm/re/get_sum/TR_Start_Revenue_GetSum
+REVISIONID,4,7,Galaxy interface compiler as of NetWeaver CE 7.30. Give yourself to the dark side.
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/get_sum/TR_Start_Revenue_GetSum,MI284_BPM_GetSum_Push_ia,SCOPE=9A67E0DE69AB5C0875BA48FE3C957147
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/get_sum/TR_Start_Revenue_GetSum,MI284_BPM_GetSum_Push_ia,ELEMENT,NAME=$http://nobelbiocare.com/BPM/SFDC/Revenue:MT_GCVMRPOP
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/get_sum/TR_Start_Revenue_GetSum,MI284_BPM_GetSum_Push_ia,ELEMENT,NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Revenue
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/get_sum/TR_Start_Revenue_GetSum,MI284_BPM_GetSum_Push_ia,TYPE,NAME=#23#DT_GCVMRPOP
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/get_sum/TR_Start_Revenue_GetSum,MI284_BPM_GetSum_Push_ia,TYPE,NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Revenue
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/get_sum/TR_Start_Revenue_GetSum,MI284_BPM_GetSum_Push_ia,MESSAGEPATTERN_INONLY=true

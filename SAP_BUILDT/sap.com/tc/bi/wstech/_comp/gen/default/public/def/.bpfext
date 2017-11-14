@@ -1,0 +1,39 @@
+<technologies version="1">
+  <technology name="sap.com/tc/bi/wstech">
+    <uses>sap.com/tc/bi/javatech</uses>
+    <datacontextprovider>
+      <provider classname="com.sap.tc.buildplugin.WebServiceMacroContextProvider"/>
+    </datacontextprovider>
+    <buildfile-creators>
+      <library implementation-name="com.sap.tc.buildplugin.WebServiceBase"
+               interface-name="com.sap.tc.buildplugin.IWebServiceBase"
+               context-name="webServiceBase"/>
+    </buildfile-creators>
+    <generators>
+      <generator type="sap.com~wsgen"
+                 implementation-type="java"
+                 implementation-name="com.sap.tc.buildplugin.gen.WebServiceGenerator">
+        <input-types>
+          <type pattern="**/*.wssc,**/*.wssi,**/*.wsws"/>
+          <type pattern="**/*.wscc,**/*.wsci,**/*.wscconf"/>
+        </input-types>
+        <inputs>
+          <input name="default" required="true" default-value="$dc_packageDirsAsFiles"/>
+        </inputs>
+        <outputs>
+          <output name="default" required="true">
+            <description>The output path where generated class files will be
+              put</description>
+            <default-value>${dc_gen_tempDir}/gen_ws</default-value>
+          </output>
+        </outputs>
+        <parameters>
+          <parameter name="projectname" default-value="$dc_deployFile"/>
+        </parameters>
+      </generator>
+    </generators>
+    <ant-tasks>
+      <task name="wsgen" classname="com.sap.ide.es.ws.dtrtconverter.extensions.WSRTDesriptorsBuildController" on-demand="true"/>
+    </ant-tasks>
+  </technology>
+</technologies>

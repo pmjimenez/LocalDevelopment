@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" xmlns:sap="http://www.sap.com" xmlns:sapconfig="http://www.sap.com/webas/2007/03/esoa/config/system" xmlns:sapimplbpm="http://www.sap.com/webas/2007/03/esoa/implementation/bpm" xmlns:sapinterfacewsdlloc="http://www.sap.com/xmlns/sapsca/1.0" xmlns:xins="http://www.sap.com/xmlns/sapsca/xi/1.0" name="p_sfdc~pr~pm~re~flow_control" targetNamespace="http://www.sap.com">
+<component name="nobelbiocare.com~p_sfdc~pr~pm~re~flow_control~BPMcomponent">
+<sapimplbpm:implementation.bpm/>
+<reference name="9134b189-179d-4c89-b002-c61482b4aaf0" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SampleTimerServiceGroup">
+<interface.wsdl interface="http://sap.com/glx/sampletimer/#wsdl.interface(SampleTimer)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~flow_control.bpem#wsdls/sap.com~tc~bpem~content~predefs~default/rootwsdl_SimpleTimerServices.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="d7c1408a-8c41-4384-a836-c9596063748f" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_Control_Flow_SOAP">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI286_BPM_ControlFlow_ia)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~flow_control.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~flow_control/MI286_BPM_ControlFlow_ia.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="67208703-90ba-4225-97fc-a196126b24c4" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_Control_Flow_XI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI286_BPM_ControlFlow_NextStep_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~flow_control.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~flow_control/MI286_BPM_ControlFlow_NextStep_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_REVENUE_SFDC"/>
+</reference>
+<reference name="a8968864-fdaa-4a7e-ab07-fd9c1b5ceb8a" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_Control_Flow_XI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI286_BPM_ControlFlowMail_oa)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~flow_control.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~flow_control/MI286_BPM_ControlFlowMail_oa.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_REVENUE_SFDC"/>
+</reference>
+<reference name="6d24c730-1bce-493c-a0cc-535dbc41be3c" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_Control_Flow_XI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI286_BPM_SetDTPChainStatus_oa)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~flow_control.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~flow_control/MI286_BPM_SetDTPChainStatus_oa.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_REVENUE_SFDC"/>
+</reference>
+</component>
+<sapconfig:serviceGroups>
+<sapconfig:serviceGroup bundle="651c7a63-bd3f-49d4-8870-8e1380706378.consgroup" sgName="SR_Revenue_Control_Flow_XI"/>
+<sapconfig:serviceGroup bundle="f1ba7d92-1e6c-4505-83cf-aaf8ccba39d0.consgroup" sgName="SR_Revenue_Control_Flow_SOAP"/>
+</sapconfig:serviceGroups>
+</composite>

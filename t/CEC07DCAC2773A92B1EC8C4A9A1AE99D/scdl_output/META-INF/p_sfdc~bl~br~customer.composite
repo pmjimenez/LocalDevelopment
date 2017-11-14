@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" xmlns:brms="http://www.sap.com/xmlns/sapsca/brms/1.0" xmlns:sap="http://www.sap.com" xmlns:sapsca="http://www.sap.com/xmlns/sapsca/1.0" name="p_sfdc~bl~br~customer" targetNamespace="http://www.sap.com">
+<component name="nobelbiocare.com~p_sfdc~bl~br~customer-BRM001_Customer_Dummy_PE_Table" sapsca:helperContextManagement="containerManaged">
+<brms:implementation.brm/>
+<service name="BRM001_Customer_Dummy_PE_Table">
+<interface.wsdl interface="http://nobelbiocare.com#wsdl.interface(BRM001_Customer_Dummy_PE_TablePortType)" sapsca:location="nobelbiocare.com~p_sfdc~bl~br~customer.bpem#gen_bpm/brms2/ws/BRM001_Customer_Dummy_PE_Table.wsdl"/>
+<binding.ws port="/BRM001_Customer_Dummy_PE_Table/BRM001_Customer_Dummy_PE_TablePortType#wsdl.endpoint(http://nobelbiocare.com#BRM001_Customer_Dummy_PE_TablePortType)"/>
+<sapsca:sapextensions entityType="RULESET" guid="RS6038107908d411e7c00f0205857feb80">
+<sapsca:input>
+<sapsca:type name="MT_BRM001_Customer_Dummy_PE_Table" namespace="http://nobelbiocare.com/BPM/SFDC/Customer"/>
+</sapsca:input>
+<sapsca:output>
+<sapsca:type name="MT_BRM001_Customer_Dummy_PE_Table" namespace="http://nobelbiocare.com/BPM/SFDC/Customer"/>
+</sapsca:output>
+</sapsca:sapextensions>
+</service>
+</component>
+</composite>

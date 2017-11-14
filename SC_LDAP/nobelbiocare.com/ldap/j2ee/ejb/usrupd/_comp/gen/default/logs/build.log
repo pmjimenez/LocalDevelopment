@@ -1,0 +1,122 @@
+Development Component Build (2017-04-04 12:31:58 GMT+01:00 (CEST))
+  Component name: ldap/j2ee/ejb/usrupd
+  Component vendor: nobelbiocare.com
+  SC compartment: SC_LDAP
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: pedro.jimenez@MADNB2016
+  DC root folder: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_LDAP\nobelbiocare.com\ldap\j2ee\ejb\usrupd\_comp\
+  DC type: J2EE
+  DC subtype: EJBModule
+  Host: MADNB2016
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/ejbmodule"
+   validating dependency to  public part "api" of DC "nobelbiocare.com/ldap/j2ee/extlib/ldapapi"
+   validating dependency to  public part "archives" of DC "nobelbiocare.com/ldap/j2ee/extlib/ldapapi"
+   validating dependency to  public part "api" of DC "sap.com/engine.jee5.facade"
+   validating dependency to  public part "api" of DC "sap.com/tc/bl/logging/api"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/ejbmodule
+   starting build plugin from : D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\ejbmodule\_comp\gen\default\public\ejb\
+
+
+
+Build Plugin 'EJBModulePlugin', Version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:52:54 +0200, CL209430)
+   development component:  ldap/j2ee/ejb/usrupd (nobelbiocare.com)
+      software component:  SC_LDAP (nobelbiocare.com)
+                location:  localDevelopment
+                    type:  J2EE, subtype EJBModule
+           build variant:  default
+         source location:  pedro.jimenez@MADNB2016
+         output location:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\48BB0E0CC7D15E8E681D6DC756D752A8\default
+       generation folder:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\48BB0E0CC7D15E8E681D6DC756D752A8
+       plugin start time:  2017-04-04 12:31:58 GMT+02:00 (CEST)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.13-b02 (1.6, Sun Microsystems Inc.)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Package folder ".apt_generated" exists but is empty and will be ignored.
+Checking path lengths for sources
+Path length checks finished in 0 seconds
+ 
+Preparing data context..
+Using custom manifest file "ejbModule/META-INF/MANIFEST.MF"
+Data context preparation finished in 0.016 seconds
+ 
+Creating Ant build file..
+  Creating output file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\48BB0E0CC7D15E8E681D6DC756D752A8\default\logs\build.xml
+  Using Java class:     com.sap.tc.buildplugin.BuildEJBModule
+Build file creation finished in 0.016 seconds
+ 
+Starting Ant..
+  Using build file:     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\48BB0E0CC7D15E8E681D6DC756D752A8\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+compile:
+      [echo] Starting Java compiler using the current JVM
+      [echo] Settings:
+      [echo]         debug: on
+      [echo]      optimize: off
+      [echo]   deprecation: default
+      [echo]       verbose: default
+      [echo]      encoding: UTF-8
+      [echo]        source: default
+      [echo]        target: default
+      [echo]   source path: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_LDAP\nobelbiocare.com\ldap\j2ee\ejb\usrupd\_comp\ejbModule
+      [echo]    class path:
+      [echo]       D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\logging\api\_comp\gen\default\public\api\lib\java\tc~bl~logging~api~defaultttt.jar
+      [echo]       D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_LDAP\nobelbiocare.com\ldap\j2ee\extlib\ldapapi\_comp\gen\default\public\api\lib\java\ldap.jar
+      [echo]       D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\ec~java~jsf~api.jar
+      [echo]       D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\engine.jee5.facade.jar
+      [echo]       D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\engine.jee5.facade\_comp\gen\default\public\api\lib\java\orpersistence_client_lib_filtered.jar
+      [echo]    output dir: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\48BB0E0CC7D15E8E681D6DC756D752A8\classes
+     [javac] Compiling 8 source files to D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\48BB0E0CC7D15E8E681D6DC756D752A8\classes
+     [timer] Java compilation finished in 0.094 seconds
+ 
+      [echo] Start XLF conversion
+  [xlf2prop] Found 0 XLF files to convert in folder "ejbModule"
+     [timer] XLF conversion finished in 0 seconds
+ 
+ 
+createPublicParts:
+  [pppacker] Packing public part 'client'
+  [pppacker] Nothing packed for public part 'client'
+     [timer] Packing of public part 'client' finished in 0.016 seconds
+ 
+  [pppacker] Packing public part 'ejbjar'
+  [pppacker] Packed  18 files for entity nobelbiocare.com~ldap~j2ee~ejb~usrupd (EJB-JAR)
+  [pppacker] Packed 1 entity for public part 'ejbjar'
+     [timer] Packing of public part 'ejbjar' finished in 0.031 seconds
+ 
+ 
+build:
+ 
+Ant runtime 0.141 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2017-04-04 12:31:58 GMT+02:00 (CEST)
+Total build plugin runtime: 0.25 seconds
+ 
+Build finished with WARNING
+
+==== Post-Processing ====   started at 2017-04-04 12:31:58.401 CEST
+Comparison of previous and actual build results took: 0 seconds
+
+Copy the build results 
+  from: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\48BB0E0CC7D15E8E681D6DC756D752A8\default\
+  to:   D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_LDAP\nobelbiocare.com\ldap\j2ee\ejb\usrupd\_comp\gen\default\
+
+The build results of the following public parts were not copied, since they have not changed:
+  ejbjar
+  client

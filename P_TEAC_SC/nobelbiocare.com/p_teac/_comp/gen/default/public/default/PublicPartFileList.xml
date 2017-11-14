@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>p_teac</name>
+<vendor>nobelbiocare.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Product Description</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>default</name>
+<purpose>compilation</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>p_teac_sc</name>
+<vendor>nobelbiocare.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Software Component Description</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">default</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>sc_teac</name>
+<vendor>nobelbiocare.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Software Component Description</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">default</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components/>
+<archives>
+<archive location="javalib" path="lib/java/nobelbiocare.com~p_teac~default.jar" type="jar">
+<property key="attributes">jar,java-library</property>
+</archive>
+</archives>
+<entities>
+<entity>
+<name>/</name>
+<entity-type>Folder</entity-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="DC" source-path="src">
+<file path=".description"/>
+</fileset>
+</entity>
+</entities>
+</content>

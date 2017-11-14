@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow id="E0EE4DB20DB39AAA04A511E7B83F0205857FEB80" label="e7b872b7ad753f31935edbbdf429ef44" orientation="horizontal" language="en" activePoolId="E0B1AF7442E062D504A511E7A4EC0205857FEB80" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" procvisVersion="1" >
+<Pool id="E0B1AF7442E062D504A511E7A4EC0205857FEB80" label="23fc95bcf66c3f788d435db741d945ff" subject="b818e37bf5ad32fa800b155edf6143b7" hasDeadlines="false" boundaryVisible="true">
+<Lane id="E0B1AF744301591804A511E7A79D0205857FEB80" label="3256e6dd876f3fa4be5a57ef00c5f5d7">
+<Node type="EmbeddedSubWorkflow" id="E0B1AF74FC5A747704A511E7C72A0205857FEB80" label="821515ddb1053856b673926cf0668697"  loopType="parallel">
+<Node type="DataObject" id="E009322E7AF9FC202AA311E7A3BA00FFC53F5B0A" label="ab59c4eacc1c39d69c0e1a973537bb7f">
+<Position x="3291" y="834" />
+<Size x="30" y="42" />
+
+</Node>
+<Node type="AutomatedActivity" id="E009322EB317DC322A8F11E7B8D400FFC53F5B0A" label="03952070b6f838fa9fc7cdf0cc5fcb08">
+<BoundaryEvent type="IntermediateErrorEvent" id="E009322EE4458CBC2A8F11E7C70D00FFC53F5B0A" label="43bd77193b143cc1bb74df1aa9568068">
+<Connector  id="E009322EE60CA8682A8F11E7B4A200FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C1BF9AD97147011E795D600FFC53F5B0A" type="SequenceConnector">
+<Point x="3270" y="768" />
+<Point x="3270" y="690" />
+<Point x="3544" y="690" />
+</Connector>
+<Position x="3341" y="461" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E009322E7207C8102A9E11E7CD8A00FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E0B1AF74557B15CD04A711E7ACAC0205857FEB80" type="SequenceConnector">
+<Point x="3307" y="795" />
+<Point x="3471" y="795" />
+</Connector>
+<Position x="3260" y="768" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/SFDC/Customer" name="MI277_BPM_GetCustomerOwner_os"/>
+<Operation>MI277_BPM_GetCustomerOwner_os</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAPXI</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="DataObject" id="E012BF1E107A0D750EDE11E7C39E00FFC53F5B0A" label="e8d15354370b3583ae5f2fb7b6f359cd">
+<Position x="1656" y="717" />
+<Size x="30" y="42" />
+
+</Node>
+<Node type="AutomatedActivity" id="E012BF1E83FD8AAC0EEE11E7B29200FFC53F5B0A" label="82954746363832ceb85fdde550d7099d">
+<BoundaryEvent type="IntermediateErrorEvent" id="E016575CC4A26CD8147011E7AD2A00FFC53F5B0A" label="4f56aed7c4b235fdbab1fa28a847fa94">
+<Connector  id="E016575CC5D57D9F147011E799D200FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C99A7BDA6147011E780D000FFC53F5B0A" type="SequenceConnector">
+<Point x="1260" y="768" />
+<Point x="1260" y="668" />
+<Point x="1430" y="668" />
+</Connector>
+<Position x="1331" y="461" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E016575C4353CEA1147111E7A6D000FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C3FAF875E147111E7BEA500FFC53F5B0A" type="SequenceConnector">
+<Point x="1297" y="795" />
+<Point x="1430" y="795" />
+</Connector>
+<Position x="1250" y="768" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/SFDC/Customer" name="MI289_BPM_GetAccountId_os"/>
+<Operation>MI289_BPM_GetAccountId_os</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAPXI</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="AutomatedActivity" id="E012BF1EA94538C70EDD11E78C7900FFC53F5B0A" label="db3348bdd09d3d9d8b6925953b097fb7">
+<BoundaryEvent type="IntermediateErrorEvent" id="E016575CDC8DBE50146F11E7BB3A00FFC53F5B0A" label="c71199810a1b311e85590f528b1dcb22">
+<Connector  id="E016575CDE311328146F11E79B7000FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575CD2D2511C146F11E7843A00FFC53F5B0A" type="SequenceConnector">
+<Point x="1634" y="655" />
+<Point x="1634" y="479" />
+<Point x="1957" y="478" />
+</Connector>
+<Position x="1705" y="348" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E012BF1EB3B26ED40EDD11E7899800FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E012BF1EB3B26EC80EDD11E7A06200FFC53F5B0A" type="SequenceConnector">
+<Point x="1671" y="682" />
+<Point x="1784" y="682" />
+</Connector>
+<Position x="1624" y="655" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/SFDC/Customer" name="MI278_BPM_GetAccountLocationId_os"/>
+<Operation>MI278_BPM_GetAccountLocationId_os</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAPXI</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="DataObject" id="E012BF1EAA2284690EEE11E7A25E00FFC53F5B0A" label="d44b605a263a389cbeff94b776eb32f6">
+<Position x="1320" y="841" />
+<Size x="30" y="42" />
+
+</Node>
+<Node type="ExclusiveChoice" id="E012BF1EB3B26EC80EDD11E7A06200FFC53F5B0A" label="10a66bd25542332881e551e1bbf0b1bb">
+<Connector  id="E012BF1EB77801470EDD11E7BF7600FFC53F5B0A" label="aa1cb44c5f453e7f8f161e934a557810" target="E0B1AF744972AF3204A611E7B3D40205857FEB80" type="SequenceConnector" isDefault="false">
+<Point x="1784" y="682" />
+<Point x="1784" y="585" />
+<Point x="1897" y="584" />
+<LabelPosition x="2055" y="289"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Connector  id="E012BF1EBCF71F800EDD11E7939D00FFC53F5B0A" label="3e386cc540e23d689327628094c5eec7" target="E016575CFA4E7E170FEE11E7C1DE0205857FEB80" type="SequenceConnector" isDefault="true">
+<Point x="1784" y="682" />
+<Point x="1815" y="682" />
+<Point x="1843" y="682" />
+<Point x="2047" y="682" />
+<LabelPosition x="2180" y="357"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Position x="1764" y="662" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="AutomatedActivity" id="E012BF1ED0BEBC010EF611E7A1A400FFC53F5B0A" label="b65b0ce5dbc739009bdfe22dc3bfc170">
+<BoundaryEvent type="IntermediateErrorEvent" id="E016575C173D081B147011E7A94800FFC53F5B0A" label="a9b9d0bd64013848a2417406d96390db">
+<Connector  id="E016575C207046B5147011E7C6A800FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C1BF9AD97147011E795D600FFC53F5B0A" type="SequenceConnector">
+<Point x="3000" y="768" />
+<Point x="3000" y="690" />
+<Point x="3544" y="690" />
+</Connector>
+<Position x="3071" y="461" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E012BF1EDC83FEA40EF611E7A0F600FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575CD6B2A76C19ED11E7C18254EFEC7B6400" type="SequenceConnector">
+<Point x="3037" y="795" />
+<Point x="3160" y="795" />
+</Connector>
+<Position x="2990" y="768" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/SFDC/Customer" name="MI291_BPM_AccountTeamMember_Delete_os"/>
+<Operation>MI291_BPM_AccountTeamMember_Delete_os</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAPXI</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="ExclusiveChoice" id="E012BF1ED478366E0EF811E7C96A00FFC53F5B0A" label="e10df5c321933e6bade6e12fc076a475">
+<Connector  id="E012BF1EDB02C6DB0EF811E7BED300FFC53F5B0A" label="bf8182fed0cd39efb57be76d8f736d6b" target="E016575CFD4EC9B4088B11E7B0520205857FEB80" type="SequenceConnector" isDefault="false">
+<Point x="436" y="795" />
+<Point x="575" y="795" />
+<LabelPosition x="820" y="549"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Connector  id="E012BF1ED9968EE70EF811E7CBA300FFC53F5B0A" label="e2a818f49ee93ede919b798a35e5801f" target="E016575C0A741FC7088C11E7C6D60205857FEB80" type="SequenceConnector" isDefault="true">
+<Point x="436" y="795" />
+<Point x="436" y="1041" />
+<Point x="690" y="1041" />
+<LabelPosition x="776" y="709"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Position x="416" y="775" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="ArtificialUncontrolledJoin" id="E012BF1ED9968EEE0EF811E7821200FFC53F5B0A" label="b698929fafc33e7588f0a7b71b28f121">
+<Connector  id="E012BF1ED9968EEB0EF811E79FCB00FFC53F5B0A" label="aa37445b2e173bcab2c9810f72deaf85" target="E016575C0A741FC7088C11E7C6D60205857FEB80" type="SequenceConnector">
+</Connector>
+<Position x="643" y="1014" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="AutomatedActivity" id="E012BF1EF04014300EEC11E7AFB100FFC53F5B0A" label="e86f79b559c73822a49514e8db97ac2a">
+<BoundaryEvent type="IntermediateErrorEvent" id="E016575CB9969813146F11E7AEB800FFC53F5B0A" label="6a11888d91723f99a3fe995769a02c18">
+<Connector  id="E016575CBB595C11146F11E78FB700FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575CB2D7633A146F11E794C500FFC53F5B0A" type="SequenceConnector">
+<Point x="2350" y="641" />
+<Point x="2350" y="539" />
+<Point x="2677" y="538" />
+</Connector>
+<Position x="2421" y="334" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E016575C25B93827155E11E7A61C00FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575CFA7E061913C811E7C3600205857FEB80" type="SequenceConnector">
+<Point x="2387" y="668" />
+<Point x="2627" y="668" />
+</Connector>
+<Position x="2340" y="641" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/SFDC/Customer" name="MI289_BPM_CustomerLocation_Delete_os"/>
+<Operation>MI289_BPM_CustomerLocation_Delete_os</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAPXI</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="ExclusiveChoice" id="E016575C0520F5FF0E7F11E79BA50205857FEB80" label="303b1d76040931988765dc8aeab34186">
+<Connector  id="E016575C5C97C4ED0E7F11E7C21A0205857FEB80" label="95b0ab99d02e3b37b7e4f9315c914445" target="E016575CE9B4EABE0FE611E792010205857FEB80" type="SequenceConnector" isDefault="false">
+<Point x="340" y="795" />
+<Point x="340" y="579" />
+<Point x="459" y="578" />
+<LabelPosition x="660" y="392"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Connector  id="E016575C16744C170E7F11E79E1B0205857FEB80" label="b4029dd5f57e3295a751a2d5211c373d" target="E012BF1ED478366E0EF811E7C96A00FFC53F5B0A" type="SequenceConnector" isDefault="true">
+<Point x="340" y="795" />
+<Point x="436" y="795" />
+<LabelPosition x="720" y="500"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Position x="320" y="775" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="AutomatedActivity" id="E016575C0A741FC7088C11E7C6D60205857FEB80" label="bddeaaef8ba2333da7585d9a9e9ed89f">
+<BoundaryEvent type="IntermediateErrorEvent" id="E016575C6A0562B6146E11E7B5BD00FFC53F5B0A" label="a55418bed2b13783afa92ef88b57f3ac">
+<Connector  id="E016575C6E26C6CF146E11E7BA3E00FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C0D2DEC4E146E11E7A14800FFC53F5B0A" type="SequenceConnector">
+<Point x="653" y="1014" />
+<Point x="653" y="632" />
+<Point x="1117" y="632" />
+</Connector>
+<Position x="724" y="707" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E016575C8CE46E9A0FEB11E78E860205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C8CE46E8E0FEB11E7C1700205857FEB80" type="SequenceConnector">
+<Point x="690" y="1041" />
+<Point x="877" y="1041" />
+</Connector>
+<Position x="643" y="1014" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com" name="BRM001_Customer_Dummy_PE_TablePortType"/>
+<Operation>getDummyValues</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAP</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="MappingActivity" id="E016575C0D2DEC4E146E11E7A14800FFC53F5B0A" label="da6bc8a05a2139bf89ea13723a49fd32">
+<Connector  id="E016575C795B718F146E11E7A64E00FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E012BF1E83FD8AAC0EEE11E7B29200FFC53F5B0A" type="SequenceConnector">
+<Point x="1117" y="632" />
+<Point x="1297" y="632" />
+<Point x="1297" y="795" />
+</Connector>
+<Position x="1070" y="605" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="ArtificialUncontrolledJoin" id="E016575C1379AD7D0FE611E7BAA30205857FEB80" label="84fdc8f234b331ba913e19c7691c0d28">
+<Connector  id="E016575C1379AD7A0FE611E7983D0205857FEB80" label="ae82efe09293336b9aeec1646051c320" target="E012BF1E83FD8AAC0EEE11E7B29200FFC53F5B0A" type="SequenceConnector">
+</Connector>
+<Position x="1250" y="768" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="MappingActivity" id="E016575C1BF9AD97147011E795D600FFC53F5B0A" label="ddd6281396d83edfb2439458e4f7ed20">
+<Connector  id="E016575C223F072B147011E7A21600FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C4AE224EC144C11E7B4F70205857FEB80" type="SequenceConnector">
+<Point x="3544" y="690" />
+<Point x="3599" y="690" />
+<Point x="3634" y="690" />
+<Point x="3634" y="746" />
+<Point x="3631" y="795" />
+</Connector>
+<Position x="3497" y="663" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="ArtificialUncontrolledJoin" id="E016575C207080A8147011E7B47F00FFC53F5B0A" label="9cc3c825e07733579821e890e2021d2d">
+<Connector  id="E016575C207080A5147011E7A02700FFC53F5B0A" label="52e32bc7b5b230dc842ffce24d6fffe1" target="E016575C1BF9AD97147011E795D600FFC53F5B0A" type="SequenceConnector">
+</Connector>
+<Position x="3497" y="663" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="ArtificialUncontrolledJoin" id="E016575C223F1DE7147011E781EC00FFC53F5B0A" label="8d73267e5a54385381b51d90997f0854">
+<Connector  id="E016575C223F1DE4147011E7B71900FFC53F5B0A" label="30d582c6e2fb33dd84476fa8a2bcc60b" target="E016575C4AE224EC144C11E7B4F70205857FEB80" type="SequenceConnector">
+</Connector>
+<Position x="3584" y="768" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="AutomatedActivity" id="E016575C3114BB1E13B811E7BA650205857FEB80" label="2ac48cdd4340303ab4b5a83ab814cf0f">
+<BoundaryEvent type="IntermediateErrorEvent" id="E016575C6301DA9D146E11E784AD00FFC53F5B0A" label="0e8626db40b23409a81e9b5e08ecbc10">
+<Connector  id="E016575C64BA7E3C146E11E7A11C00FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C0D2DEC4E146E11E7A14800FFC53F5B0A" type="SequenceConnector">
+<Point x="1050" y="717" />
+<Point x="1050" y="632" />
+<Point x="1117" y="632" />
+</Connector>
+<Position x="1121" y="410" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E016575CC75FBB4714A511E79C4200FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E012BF1E83FD8AAC0EEE11E7B29200FFC53F5B0A" type="SequenceConnector">
+<Point x="1087" y="744" />
+<Point x="1170" y="744" />
+<Point x="1170" y="795" />
+<Point x="1297" y="795" />
+</Connector>
+<Position x="1040" y="717" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/SFDC/Customer" name="MI277_BPM_Change_CustomerData_os"/>
+<Operation>MI277_BPM_Change_CustomerData_os</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAPXI</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="UncontrolledMerge" id="E016575C3FAF875E147111E7BEA500FFC53F5B0A" label="b423e7cc018d3ac1ac6ba7ca2f762c8d">
+<Connector  id="E016575C44C33C6F147111E7A8A400FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E0B1AF743FFF65FA04A611E7CC8C0205857FEB80" type="SequenceConnector">
+<Point x="1430" y="795" />
+<Point x="1590" y="795" />
+</Connector>
+<Position x="1410" y="775" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="MappingActivity" id="E016575C4134435B0FE511E7BADD0205857FEB80" label="cdce275e865930e081465a340bebe059">
+<Connector  id="E016575C1379AD770FE611E780FC0205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E012BF1E83FD8AAC0EEE11E7B29200FFC53F5B0A" type="SequenceConnector">
+<Point x="463" y="438" />
+<Point x="740" y="439" />
+<Point x="1297" y="439" />
+<Point x="1297" y="795" />
+</Connector>
+<Position x="416" y="411" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="AutomatedActivity" id="E016575C4AE224EC144C11E7B4F70205857FEB80" label="2f1d4281c4f33478a9471d6f349e372a">
+<Connector  id="E016575C5508476F144C11E7CD0A0205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E0B1AF74FC5DAC7704A511E7C38E0205857FEB80" type="SequenceConnector">
+<Point x="3631" y="795" />
+<Point x="3735" y="795" />
+</Connector>
+<Position x="3584" y="768" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/SFDC/Customer" name="MI276_BPM_SendAleaud_oa"/>
+<Operation>MI276_BPM_SendAleaud_oa</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAPXI</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="ExclusiveChoice" id="E016575C4D7EE3AF148B11E7C98100FFC53F5B0A" label="c648971e97773840828610d9dd389c3b">
+<Connector  id="E016575C3E539EE7148C11E78BA800FFC53F5B0A" label="3251065c419435e0ba9d91b45fe8f108" target="E016575C3114BB1E13B811E7BA650205857FEB80" type="SequenceConnector" isDefault="false">
+<Point x="877" y="795" />
+<Point x="928" y="744" />
+<Point x="1087" y="744" />
+<LabelPosition x="1278" y="464"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Connector  id="E016575C3FEB17B6148C11E7CBE800FFC53F5B0A" label="90633652e6d03e08b752443ae42583fd" target="E016575C56AE2CF8148B11E7A96C00FFC53F5B0A" type="SequenceConnector" isDefault="true">
+<Point x="877" y="795" />
+<Point x="929" y="888" />
+<Point x="1037" y="888" />
+<LabelPosition x="1256" y="588"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Position x="857" y="775" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="UncontrolledMerge" id="E016575C4E89884313E111E783410205857FEB80" label="44e700d1c40f3767bb3e752a7b02b1bd">
+<Connector  id="E016575CDE2A4C8F155D11E7CC3600FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E0B1AF744985240204A711E7CA730205857FEB80" type="SequenceConnector">
+<Point x="2154" y="682" />
+<Point x="2180" y="682" />
+<Point x="2180" y="795" />
+</Connector>
+<Position x="2134" y="662" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="AutomatedActivity" id="E016575C56AE2CF8148B11E7A96C00FFC53F5B0A" label="e3c90ede307333ff8cf1ab828c3bfa64">
+<BoundaryEvent type="IntermediateErrorEvent" id="E016575C5792F1B4148C11E7C03500FFC53F5B0A" label="e09b1bc6faa5325293f6f4864b7766eb">
+<Connector  id="E016575C59F775F7148C11E7C0C800FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C0D2DEC4E146E11E7A14800FFC53F5B0A" type="SequenceConnector">
+<Point x="1000" y="861" />
+<Point x="1000" y="632" />
+<Point x="1117" y="632" />
+</Connector>
+<Position x="1071" y="554" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E016575C381CA391148C11E7874800FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E012BF1E83FD8AAC0EEE11E7B29200FFC53F5B0A" type="SequenceConnector">
+<Point x="1037" y="888" />
+<Point x="1170" y="888" />
+<Point x="1170" y="796" />
+<Point x="1297" y="795" />
+</Connector>
+<Position x="990" y="861" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/SFDC/Customer" name="MI277_BPM_Upsert_CustomerData_os"/>
+<Operation>MI277_BPM_Upsert_CustomerData_os</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAPXI</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="ExclusiveChoice" id="E016575C5C508BF80FF311E7841F0205857FEB80" label="e5ff1fcbfcfd3638b17cef87be7aa5ce">
+<Connector  id="E016575C5F4EA9A40FF311E7AA710205857FEB80" label="46c6aa7dfc3737d99c4d815ee626d85f" target="E016575CA9C719ED0FF311E7B95E0205857FEB80" type="SequenceConnector" isDefault="false">
+<Point x="2910" y="795" />
+<Point x="2910" y="1026" />
+<Point x="2910" y="1066" />
+<Point x="3327" y="1066" />
+<LabelPosition x="3250" y="785"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Connector  id="E016575C62A5D2660FF311E793DC0205857FEB80" label="dde1f424581f3a36aa0a93cde9917526" target="E012BF1ED0BEBC010EF611E7A1A400FFC53F5B0A" type="SequenceConnector" isDefault="true">
+<Point x="2910" y="795" />
+<Point x="3037" y="795" />
+<LabelPosition x="3278" y="486"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Position x="2890" y="775" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="UncontrolledMerge" id="E016575C6177952113E111E7BA8A0205857FEB80" label="d9e938bc9eaf3d9780158244b4568497">
+<Connector  id="E016575CF27BA960155D11E7BFED00FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C5C508BF80FF311E7841F0205857FEB80" type="SequenceConnector">
+<Point x="2770" y="795" />
+<Point x="2910" y="795" />
+</Connector>
+<Position x="2750" y="775" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="ArtificialUncontrolledJoin" id="E016575C64BAD3D4146E11E7B41D00FFC53F5B0A" label="b02b073fd8c83398aa7a4cf00a4718b7">
+<Connector  id="E016575C64BAD3D1146E11E7959B00FFC53F5B0A" label="084dafb37a7b39e994c48b040fd54e8e" target="E016575C0D2DEC4E146E11E7A14800FFC53F5B0A" type="SequenceConnector">
+</Connector>
+<Position x="1070" y="605" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="UncontrolledMerge" id="E016575C6A32DA1413E111E783ED0205857FEB80" label="787576e22732368895ffdf1f92e0ad88">
+<Connector  id="E016575C71AF283A13E111E7AC2E0205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E0B1AF744985240204A711E7CA730205857FEB80" type="SequenceConnector">
+<Point x="2180" y="910" />
+<Point x="2180" y="795" />
+</Connector>
+<Position x="2160" y="890" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="ExclusiveChoice" id="E016575C781351B5132411E79B240205857FEB80" label="8ce36ed118b83b529156a97e120c4dcb">
+<Connector  id="E016575C79DABF8A132411E7ADC10205857FEB80" label="1a5d1b0eb6cd3872ad640209e166d179" target="E016575C6A32DA1413E111E783ED0205857FEB80" type="SequenceConnector" isDefault="false">
+<Point x="1660" y="978" />
+<Point x="1660" y="1080" />
+<Point x="2180" y="1080" />
+<Point x="2180" y="910" />
+<LabelPosition x="2103" y="750"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Connector  id="E016575C7E0434E9132411E784C00205857FEB80" label="91b403ef31323fc68226dbe09cf82585" target="E016575CEDBFF57513C911E7BF560205857FEB80" type="SequenceConnector" isDefault="true">
+<Point x="1660" y="978" />
+<Point x="1824" y="978" />
+<LabelPosition x="2039" y="700"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Position x="1640" y="958" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="MappingActivity" id="E016575C84ED3CD60FEB11E7AE870205857FEB80" label="5344611526bf3d0fbd5a8bdcac245a57">
+<Connector  id="E016575C92EFA4A30FEB11E7A8CF0205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E012BF1E83FD8AAC0EEE11E7B29200FFC53F5B0A" type="SequenceConnector">
+<Point x="1297" y="1041" />
+<Point x="1297" y="795" />
+</Connector>
+<Position x="1250" y="1014" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="ExclusiveChoice" id="E016575C8CE46E8E0FEB11E7C1700205857FEB80" label="5162d6ec06573092907563c4882e16e6">
+<Connector  id="E016575C973924470FEB11E7C9EA0205857FEB80" label="87b539fc89a834a38b7d54e76280992c" target="E05CE2FCB025081C30B511E791BA00FFC53F5B0A" type="SequenceConnector" isDefault="false">
+<Point x="877" y="1041" />
+<Point x="877" y="924" />
+<LabelPosition x="1235" y="738"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Connector  id="E016575C913F46830FEB11E780740205857FEB80" label="b1a07c1fff143011ae23bd5f45a533cd" target="E016575C84ED3CD60FEB11E7AE870205857FEB80" type="SequenceConnector" isDefault="true">
+<Point x="877" y="1041" />
+<Point x="1297" y="1041" />
+<LabelPosition x="1403" y="785"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Position x="857" y="1021" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="MappingActivity" id="E016575C99A7BDA6147011E780D000FFC53F5B0A" label="eb903df676d83d8291530e50aa185f3c">
+<Connector  id="E016575C4199E9D0147111E7ACCD00FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C3FAF875E147111E7BEA500FFC53F5B0A" type="SequenceConnector">
+<Point x="1430" y="668" />
+<Point x="1430" y="795" />
+</Connector>
+<Position x="1383" y="641" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="MappingActivity" id="E016575CA9C719ED0FF311E7B95E0205857FEB80" label="5e03c02d7c323065bd6b5e6ca4c6bd11">
+<Connector  id="E016575CAFB925410FF311E7CF830205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C4AE224EC144C11E7B4F70205857FEB80" type="SequenceConnector">
+<Point x="3327" y="1066" />
+<Point x="3631" y="1066" />
+<Point x="3631" y="795" />
+</Connector>
+<Position x="3280" y="1039" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="MappingActivity" id="E016575CB2D7633A146F11E794C500FFC53F5B0A" label="4b15be2bcd103523a614f092ab43eb73">
+<Connector  id="E016575CC566C315146F11E796C300FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C6177952113E111E7BA8A0205857FEB80" type="SequenceConnector">
+<Point x="2677" y="538" />
+<Point x="2770" y="539" />
+<Point x="2770" y="795" />
+</Connector>
+<Position x="2630" y="511" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="ExclusiveChoice" id="E016575CBB8D316A13B211E7B8910205857FEB80" label="61dce98fc93832aa8b962b09aa275442">
+<Connector  id="E016575CD2A4AEF813B211E78C530205857FEB80" label="9329aba889233e78bf47f32638620f63" target="E012BF1EF04014300EEC11E7AFB100FFC53F5B0A" type="SequenceConnector" isDefault="false">
+<Point x="2300" y="795" />
+<Point x="2300" y="668" />
+<Point x="2387" y="668" />
+<LabelPosition x="2604" y="436"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Connector  id="E016575CD717D1C513B211E7C1660205857FEB80" label="04c84adc29073e84929d299ecf2d462a" target="E016575C6177952113E111E7BA8A0205857FEB80" type="SequenceConnector" isDefault="true">
+<Point x="2300" y="795" />
+<Point x="2552" y="795" />
+<Point x="2614" y="795" />
+<Point x="2699" y="795" />
+<Point x="2770" y="795" />
+<LabelPosition x="2710" y="502"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Position x="2280" y="775" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="ArtificialUncontrolledJoin" id="E016575CBCACEFBB146F11E78AD400FFC53F5B0A" label="9028ecbdadfc35cb909bbe80f2e70bdb">
+<Connector  id="E016575CBCACEFB8146F11E7CD2700FFC53F5B0A" label="f085b9c8a54832aaa29142157dfe71ba" target="E016575CB2D7633A146F11E794C500FFC53F5B0A" type="SequenceConnector">
+</Connector>
+<Position x="2630" y="511" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="MappingActivity" id="E016575CC05743030FF711E78D690205857FEB80" label="9eed4d32697d37ababf5c2dd6c878431">
+<Connector  id="E016575CCE098AEE0FF711E7C54E0205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E0DCF6CD8C3CBB250B2311E7A6470205857FEB80" type="SequenceConnector">
+<Point x="107" y="795" />
+<Point x="220" y="795" />
+</Connector>
+<Position x="60" y="768" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="MappingActivity" id="E016575CD2D2511C146F11E7843A00FFC53F5B0A" label="73c3ab5f02053d4c9c10d96d1fc907f0">
+<Connector  id="E016575CE46598A3146F11E7C3C600FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C4E89884313E111E783410205857FEB80" type="SequenceConnector">
+<Point x="1957" y="478" />
+<Point x="2154" y="479" />
+<Point x="2154" y="682" />
+</Connector>
+<Position x="1910" y="451" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="ExclusiveChoice" id="E016575CD6B2A76C19ED11E7C18254EFEC7B6400" label="b5e2b86b41e234a59078f2b5de3eb68d">
+<Connector  id="E016575CECD6D56B19ED11E7C92254EFEC7B6400" label="fc979962e3103a5383ec005d0fa413b2" target="E009322EB317DC322A8F11E7B8D400FFC53F5B0A" type="SequenceConnector" isDefault="false">
+<Point x="3160" y="795" />
+<Point x="3307" y="795" />
+<LabelPosition x="3528" y="477"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Connector  id="E016575CDAA93D8D19ED11E7921354EFEC7B6400" label="ff739303e34e3a4ebde334fdc37e5b90" target="E016575C4AE224EC144C11E7B4F70205857FEB80" type="SequenceConnector" isDefault="true">
+<Point x="3160" y="795" />
+<Point x="3160" y="957" />
+<Point x="3256" y="957" />
+<Point x="3631" y="957" />
+<Point x="3631" y="795" />
+<LabelPosition x="3655" y="661"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Position x="3140" y="775" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="ArtificialUncontrolledJoin" id="E016575CE0F7B86E146F11E7AA3000FFC53F5B0A" label="e44e3906a5e43a768c6198b5e301ab98">
+<Connector  id="E016575CE0F7B86B146F11E7851C00FFC53F5B0A" label="db2362f8fd89352c9d617d181a682136" target="E016575CD2D2511C146F11E7843A00FFC53F5B0A" type="SequenceConnector">
+</Connector>
+<Position x="1910" y="451" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="MappingActivity" id="E016575CE9B4EABE0FE611E792010205857FEB80" label="c3ebd25235dd3717b5889f50926d433a">
+<Connector  id="E016575C3873C7EA0FE711E7C6050205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E012BF1E83FD8AAC0EEE11E7B29200FFC53F5B0A" type="SequenceConnector">
+<Point x="459" y="578" />
+<Point x="740" y="578" />
+<Point x="1297" y="578" />
+<Point x="1297" y="795" />
+</Connector>
+<Position x="412" y="551" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="DataObject" id="E016575CEB1CCD2413A011E7A47A0205857FEB80" label="35a5d04d4b723853b43bc4d6a4efc322">
+<Position x="-26" y="295" />
+<Size x="0" y="0" />
+
+</Node>
+<Node type="DataObject" id="E016575CEB1DE33513A011E794440205857FEB80" label="168eae6d93c13f85bef613d6fccf3387">
+<Position x="-26" y="295" />
+<Size x="0" y="0" />
+
+</Node>
+<Node type="AutomatedActivity" id="E016575CEDBFF57513C911E7BF560205857FEB80" label="0e36675f958e3cbe8c45c08cc92e441b">
+<BoundaryEvent type="IntermediateErrorEvent" id="E016575CFD75CF5F146F11E7868200FFC53F5B0A" label="4b67c3f6bc59346486abad07d5992422">
+<Connector  id="E016575CFF144619146F11E78C2B00FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575CFA1FF9F1146F11E7CB7100FFC53F5B0A" type="SequenceConnector">
+<Point x="1787" y="951" />
+<Point x="1787" y="910" />
+<Point x="1947" y="910" />
+</Connector>
+<Position x="1858" y="644" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E016575CF227AABE13C911E7910D0205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C6A32DA1413E111E783ED0205857FEB80" type="SequenceConnector">
+<Point x="1824" y="978" />
+<Point x="2180" y="978" />
+<Point x="2180" y="910" />
+</Connector>
+<Position x="1777" y="951" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/SFDC/Customer" name="MI290_BPM_CustomerCreditCard_Set_os"/>
+<Operation>MI290_BPM_CustomerCreditCard_Set_os</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAPXI</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="DataObject" id="E016575CEEBAB24F0FE211E7C7980205857FEB80" label="eac8b1bfb1413747a25ea194fb0db3dd">
+<Position x="3684" y="702" />
+<Size x="30" y="42" />
+
+</Node>
+<Node type="MappingActivity" id="E016575CFA1FF9F1146F11E7CB7100FFC53F5B0A" label="4d8617d37ef635fc9a31adf741222c3e">
+<Connector  id="E016575C006F0268147011E7B00200FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C6A32DA1413E111E783ED0205857FEB80" type="SequenceConnector">
+<Point x="1947" y="910" />
+<Point x="2180" y="910" />
+</Connector>
+<Position x="1900" y="883" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="MappingActivity" id="E016575CFA4E7E170FEE11E7C1DE0205857FEB80" label="15801b50208b30b99dc0868d06d22c30">
+<Connector  id="E016575C05C856340FEF11E7A8D30205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C4E89884313E111E783410205857FEB80" type="SequenceConnector">
+<Point x="2047" y="682" />
+<Point x="2154" y="682" />
+</Connector>
+<Position x="2000" y="655" />
+<Size x="95" y="55" />
+
+</Node>
+<Node type="AutomatedActivity" id="E016575CFA7E061913C811E7C3600205857FEB80" label="55d1447c2ed633969ccc056627c2871e">
+<BoundaryEvent type="IntermediateErrorEvent" id="E016575CB63C891B146F11E7962700FFC53F5B0A" label="6e78f919faec3e0488382c93e9143950">
+<Connector  id="E016575CBCACD828146F11E7C64000FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575CB2D7633A146F11E794C500FFC53F5B0A" type="SequenceConnector">
+<Point x="2590" y="641" />
+<Point x="2590" y="539" />
+<Point x="2677" y="538" />
+</Connector>
+<Position x="2661" y="334" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E016575C01889CC813C911E78DB60205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C6177952113E111E7BA8A0205857FEB80" type="SequenceConnector">
+<Point x="2627" y="668" />
+<Point x="2770" y="668" />
+<Point x="2770" y="795" />
+</Connector>
+<Position x="2580" y="641" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/SFDC/Customer" name="MI289_BPM_CustomerLocation_Set_os"/>
+<Operation>MI289_BPM_CustomerLocation_Set_os</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAPXI</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="AutomatedActivity" id="E016575CFD4EC9B4088B11E7B0520205857FEB80" label="8683a70d4fb3379a91aa836efdc7667f">
+<BoundaryEvent type="IntermediateErrorEvent" id="E016575C5C29B79A146E11E7A76700FFC53F5B0A" label="3dbb742c987e3e188d98e55c13a22271">
+<Connector  id="E016575C5F11AE65146E11E7CC0B00FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C0D2DEC4E146E11E7A14800FFC53F5B0A" type="SequenceConnector">
+<Point x="538" y="768" />
+<Point x="538" y="632" />
+<Point x="1117" y="632" />
+</Connector>
+<Position x="609" y="461" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E0DCF6CD29EF75F70B2D11E7C91C0205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E0DCF6CD29EC1D570B2D11E79FAC0205857FEB80" type="SequenceConnector">
+<Point x="575" y="795" />
+<Point x="690" y="795" />
+</Connector>
+<Position x="528" y="768" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/SFDC/Customer" name="MI277_BPM_GetCustomerOwner_os"/>
+<Operation>MI277_BPM_GetCustomerOwner_os</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAPXI</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="AutomatedActivity" id="E05CE2FCB025081C30B511E791BA00FFC53F5B0A" label="9bd56cb24f573259a3083a9ca24953e8">
+<BoundaryEvent type="IntermediateErrorEvent" id="E05CE2FC791105FD30B611E78F1100FFC53F5B0A" label="3cafc9a2bcef35c999d664fa4c4c649f">
+<Connector  id="E05CE2FC7AD7144030B611E7B04400FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C0D2DEC4E146E11E7A14800FFC53F5B0A" type="SequenceConnector">
+<Point x="840" y="897" />
+<Point x="840" y="632" />
+<Point x="1117" y="632" />
+</Connector>
+<Position x="911" y="590" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E05CE2FCE9E7A7BE30B511E7976700FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C4D7EE3AF148B11E7C98100FFC53F5B0A" type="SequenceConnector">
+<Point x="877" y="924" />
+<Point x="877" y="795" />
+</Connector>
+<Position x="830" y="897" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/SFDC/Customer" name="MI277_BPM_GetCustomerOwner_os"/>
+<Operation>MI277_BPM_GetCustomerOwner_os</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAPXI</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="ArtificialUncontrolledJoin" id="E05CE2FCEC983A6030B511E7B38A00FFC53F5B0A" label="1b3c1ff4cdfd323d8b5aac6a7c6083f4">
+<Connector  id="E05CE2FCEC983A5D30B511E7C6F800FFC53F5B0A" label="631e94004b553048a40c47a23c38c94b" target="E016575C4D7EE3AF148B11E7C98100FFC53F5B0A" type="SequenceConnector">
+</Connector>
+<Position x="857" y="775" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="ParallelSplit" id="E0B1AF743FFF65FA04A611E7CC8C0205857FEB80" label="b2c9518a25b638899a2f0bb247c8e0be">
+<Connector  id="E0B1AF74504A26C804A611E7CD560205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C781351B5132411E79B240205857FEB80" type="SequenceConnector">
+<Point x="1590" y="795" />
+<Point x="1588" y="978" />
+<Point x="1660" y="978" />
+</Connector>
+<Connector  id="E016575CDC592D11155D11E7981900FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E012BF1EA94538C70EDD11E78C7900FFC53F5B0A" type="SequenceConnector">
+<Point x="1590" y="795" />
+<Point x="1590" y="682" />
+<Point x="1671" y="682" />
+</Connector>
+<Position x="1570" y="775" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="AutomatedActivity" id="E0B1AF744972AF3204A611E7B3D40205857FEB80" label="04728b7485023e8cbd2ce5d7a11a100f">
+<BoundaryEvent type="IntermediateErrorEvent" id="E016575CDACEF603146F11E7ABD200FFC53F5B0A" label="9b31cd285bc532c590a6d49ef1dda8c5">
+<Connector  id="E016575CE0F7A082146F11E7872D00FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575CD2D2511C146F11E7843A00FFC53F5B0A" type="SequenceConnector">
+<Point x="1860" y="557" />
+<Point x="1860" y="479" />
+<Point x="1957" y="478" />
+</Connector>
+<Position x="1931" y="250" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E0B1AF7449860B9B04A711E7B1920205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C4E89884313E111E783410205857FEB80" type="SequenceConnector">
+<Point x="1897" y="584" />
+<Point x="2154" y="584" />
+<Point x="2154" y="682" />
+</Connector>
+<Position x="1850" y="557" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/SFDC/Customer" name="MI278_BPM_CustomerShipDetails_Set_os"/>
+<Operation>MI278_BPM_CustomerShipDetails_Set_os</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAPXI</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="Synchronization" id="E0B1AF744985240204A711E7CA730205857FEB80" label="6a90d4b566af3e7dac318e0bfb170e84">
+<Connector  id="E016575C244FEBE1155E11E792DD00FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575CBB8D316A13B211E7B8910205857FEB80" type="SequenceConnector">
+<Point x="2180" y="795" />
+<Point x="2300" y="795" />
+</Connector>
+<Position x="2160" y="775" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="AutomatedActivity" id="E0B1AF74557B15CD04A711E7ACAC0205857FEB80" label="d1ab213ff9903190a29f4f01022d6f74">
+<BoundaryEvent type="IntermediateErrorEvent" id="E016575C19674A02147011E7AEB100FFC53F5B0A" label="2719a2ce4cf33750acf2641f2e8c8b73">
+<Connector  id="E016575C1E0DD636147011E7A95700FFC53F5B0A" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C1BF9AD97147011E795D600FFC53F5B0A" type="SequenceConnector">
+<Point x="3434" y="768" />
+<Point x="3434" y="690" />
+<Point x="3544" y="690" />
+</Connector>
+<Position x="3505" y="461" />
+<Size x="24" y="24" />
+
+</BoundaryEvent>
+<Connector  id="E0B1AF74593016BD04A711E7A4870205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575C4AE224EC144C11E7B4F70205857FEB80" type="SequenceConnector">
+<Point x="3471" y="795" />
+<Point x="3631" y="795" />
+</Connector>
+<Position x="3424" y="768" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/SFDC/Customer" name="MI291_BPM_AccountTeamMember_Set_os"/>
+<Operation>MI291_BPM_AccountTeamMember_Set_os</Operation>
+<ServiceGroup>SR_Customer_Sync_SOAPXI</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="AbstractStartEvent" id="E0B1AF74FC5B54A004A511E7ADCE0205857FEB80" label="dadb3fa688373404bb9811ed0e699440">
+<Connector  id="E016575CDD871D2A13A011E7CE480205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E016575CC05743030FF711E78D690205857FEB80" type="SequenceConnector">
+<Point x="25" y="795" />
+<Point x="107" y="795" />
+</Connector>
+<Position x="10" y="780" />
+<Size x="31" y="31" />
+
+</Node>
+<Node type="AbstractEndEvent" id="E0B1AF74FC5DAC7704A511E7C38E0205857FEB80" label="1564dfce162535f18d281b872695564b">
+<Position x="3720" y="780" />
+<Size x="31" y="31" />
+
+</Node>
+<Node type="ExclusiveChoice" id="E0DCF6CD29EC1D570B2D11E79FAC0205857FEB80" label="ff49c9e2338a30978316b5c253797a2c">
+<Connector  id="E0DCF6CD3006EDAF0B2D11E79D0A0205857FEB80" label="5000b664561d371eb34f5359d41009c1" target="E016575C4D7EE3AF148B11E7C98100FFC53F5B0A" type="SequenceConnector" isDefault="false">
+<Point x="690" y="795" />
+<Point x="877" y="795" />
+<LabelPosition x="1092" y="503"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Connector  id="E0DCF6CD39B44ED40B2D11E7B5E60205857FEB80" label="6efca0079dc030108086d734b3e79570" target="E016575C0A741FC7088C11E7C6D60205857FEB80" type="SequenceConnector" isDefault="true">
+<Point x="690" y="795" />
+<Point x="690" y="826" />
+<Point x="690" y="1041" />
+<LabelPosition x="1016" y="569"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Position x="670" y="775" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="DataObject" id="E0DCF6CD821288150B2D11E7CDF30205857FEB80" label="56251a4812623536aa87ff3c94d4e875">
+<Position x="562" y="841" />
+<Size x="30" y="42" />
+
+</Node>
+<Node type="ExclusiveChoice" id="E0DCF6CD8C3CBB250B2311E7A6470205857FEB80" label="656ffdf5618439e1a791fe630b3826d0">
+<Connector  id="E0DCF6CDC093EDE80B2511E7C5DC0205857FEB80" label="06e8e9e4ec7c35fba2486718aa63913f" target="E016575C0520F5FF0E7F11E79BA50205857FEB80" type="SequenceConnector" isDefault="false">
+<Point x="220" y="795" />
+<Point x="340" y="795" />
+<LabelPosition x="598" y="498"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Connector  id="E0DCF6CDAF7511700B2511E79C170205857FEB80" label="49198339b6623536814014fffbde92e4" target="E016575C4134435B0FE511E7BADD0205857FEB80" type="SequenceConnector" isDefault="true">
+<Point x="220" y="795" />
+<Point x="220" y="439" />
+<Point x="463" y="438" />
+<LabelPosition x="540" y="257"/>
+<LabelSize x="50" y="12"/>
+</Connector>
+<Position x="200" y="775" />
+<Size x="40" y="40" />
+
+</Node>
+<Node type="DataObject" id="E0DCF6CD904296A80B2D11E7B9D00205857FEB80" label="1853103609a933848b8222aaa1e5a721">
+<Position x="675" y="1092" />
+<Size x="30" y="42" />
+
+</Node>
+<Connector  id="E0B1AF748455181704A711E7953F0205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E0EE4DB20DBCA28D04A511E788B90205857FEB80" type="SequenceConnector">
+<Point x="383" y="74" />
+<Point x="4100" y="497" />
+<Point x="4100" y="1111" />
+</Connector>
+<Position x="310" y="21" />
+<Size x="147" y="107" /><ExpandedSize x="3803" y="994" />
+</Node>
+
+<Position x="57" y="0" />
+<Size x="4084" y="998" />
+</Lane>
+<Lane id="E0B1AF7475AAA7CB04A511E7B0540205857FEB80" label="bd6ce6a19b553cfda944b118726c75f1">
+<Node type="DataObject" id="E0DCF6CDFAA4E9F30B0011E7A4020205857FEB80" label="7204df35b5623d50bc99cdbcd49b4d85">
+<Position x="238" y="1006" />
+<Size x="30" y="42" />
+
+</Node>
+<Node type="StartEvent" id="E0EE4DB20DBA71C204A511E790D50205857FEB80" label="bc6e433d91f03972bc269b3b90917718">
+<Connector  id="E0B1AF747490EB8F04A711E7ADC80205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E0B1AF74FC5A747704A511E7C72A0205857FEB80" type="SequenceConnector">
+<Point x="155" y="1111" />
+<Point x="180" y="1111" />
+<Point x="180" y="492" />
+<Point x="383" y="74" />
+</Connector>
+<Position x="140" y="1096" />
+<Size x="31" y="31" />
+
+</Node>
+<Node type="EndEvent" id="E0EE4DB20DBCA28D04A511E788B90205857FEB80" label="c41a55ed24fa3a73a435e676b862f711">
+<Position x="4085" y="1096" />
+<Size x="31" y="31" />
+
+</Node>
+
+<Position x="57" y="996" />
+<Size x="4084" y="273" />
+</Lane>
+<Position x="30" y="0" />
+<Size x="4111" y="1269" />
+<description>d41d8cd98f00b204e9800998ecf8427e</description></Pool>
+<Pool id="E0EE4DB20CD68DBB04A511E797DC0205857FEB80" label="8558b4e13057375ab6814fd5283b62c6" subject="d41d8cd98f00b204e9800998ecf8427e" hasDeadlines="false" boundaryVisible="false">
+<Lane id="E0EE4DB20D1896F404A511E7C39C0205857FEB80" label="75930a109ebf3907a4317eb10b40dfeb">
+
+<Position x="0" y="321" />
+<Size x="1000" y="1000" />
+</Lane>
+<Position x="0" y="321" />
+<Size x="4141" y="1111" />
+<description>d41d8cd98f00b204e9800998ecf8427e</description></Pool>
+</Workflow>

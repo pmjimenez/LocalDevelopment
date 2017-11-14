@@ -1,0 +1,10 @@
+# Critical error event definition p2.IOException (MOFId: E0C4897FC488DAED7A9311E68D6D0205857FEB80)
+NETWORK,EE28CD83B28F8488F9048286203AC2AA,p2.IOException
+REVISIONID,4,7,Galaxy exception compiler as of NetWeaver CE 7.31 SP 17 (Build Time: 2015-09-14 08:43:18)
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,EE28CD83B28F8488F9048286203AC2AA,SCOPE=D3900525F381D6F166384D405B5B7EDB
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,EE28CD83B28F8488F9048286203AC2AA,ROOT,NAME=IOException
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,EE28CD83B28F8488F9048286203AC2AA,ROOT,NAMESPACE=http://server.speakers.nobelbiocare.cq.namics.com/
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,EE28CD83B28F8488F9048286203AC2AA,ROOT,TYPE=#IOException
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,EE28CD83B28F8488F9048286203AC2AA,ROOT,TYPENAMESPACE=http://server.speakers.nobelbiocare.cq.namics.com/
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,EE28CD83B28F8488F9048286203AC2AA,ROOT,EXCEPTION_COMPILER_VERSION=2

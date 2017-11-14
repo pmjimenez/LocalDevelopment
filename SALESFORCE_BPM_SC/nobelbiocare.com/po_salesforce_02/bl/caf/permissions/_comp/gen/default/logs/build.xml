@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    development component
+                     name: po_salesforce_02/bl/caf/permissions
+                   vendor: nobelbiocare.com
+                     type: Content
+                 sub-type: UME Permissions
+              type-vendor: sap.com
+
+       software component
+                     name: SALESFORCE_BPM_SC
+                   vendor: nobelbiocare.com
+
+                 location: localDevelopment
+          source location: pedro.jimenez@MADNB2016
+            build variant: default
+
+    building on MADNB2016, Windows 8/x86, version 6.2
+    using Java VM 'Java HotSpot(TM) Client VM', version 20.13-b02 (Sun Microsystems Inc.)
+    build started at 2017-01-13 12:05:37 GMT+01:00 (CET)
+
+    Build Plugin 'ContentPlugin', Version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:48:46 +0200, CL209430)
+    detailed versions:
+    sap.com:tc/bi/anttasks#def       7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:35 +0200, CL209430)
+    sap.com:tc/bi/bp/content#content 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:48:46 +0200, CL209430)
+    sap.com:tc/bi/core#def           7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:53:16 +0200, CL209430)
+    sap.com:tc/bi/exception#def      7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:34 +0200, CL209430)
+    sap.com:tc/bi/extddicdb#def      7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:41 +0200, CL209430)
+    sap.com:tc/bi/extsql#def         7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:37 +0200, CL209430)
+    sap.com:tc/bi/framework#def      7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:01 +0200, CL209430)
+    sap.com:tc/bi/i18n#def           7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:25 +0200, CL209430)
+    sap.com:tc/bi/javatech#def       7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:55 +0200, CL209430)
+    sap.com:tc/bi/jdoc#def           7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:34 +0200, CL209430)
+    sap.com:tc/bi/jdoc/util#def      7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:38 +0200, CL209430)
+    sap.com:tc/bi/jlincbs#def        7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:55 +0200, CL209430)
+    sap.com:tc/bi/settings#version   7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:49:26 +0200, CL209430)
+    sap.com:tc/bi/util#util          7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:16 +0200, CL209430)
+    sap.com:tc/bi/velocity#def       7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:24 +0200, CL209430)
+    sap.com:tc/bi/xml#def            7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:27 +0200, CL209430)
+ -->
+<project name="DC Build"
+         default="build"
+         basedir=".">
+<taskdef name="cda" classname="com.sap.tc.buildplugin.deploy.DeployArchiveTask"/>
+<taskdef name="pppacker" classname="com.sap.tc.buildplugin.pp.PPPackTask"/>
+<taskdef name="propertybag" classname="com.sap.tools.ant.taskdefs.PropertyBag"/>
+<taskdef name="sdadd" classname="com.sap.tools.ant.taskdefs.SdaDDTask"/>
+<taskdef name="timer" classname="com.sap.tools.ant.taskdefs.Timer"/>
+
+<target name="prepare">
+
+</target>
+
+<target name="createContentArchive" depends="prepare">
+<timer/>
+<pppacker ppname="Content Archive"
+          internal="true"
+          purpose="assembly"
+          root="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\980CC2CDDB4D32051CB0E32C1630B588\.ump">
+                <packer location="Content Archive" type="zip">
+                    <property key="path" value="nobelbiocare.com~po_salesforce_02~bl~caf~permissions.ump"/>
+                    <property key="attributes" value="SAP-J2EE-Module[container-type[com.sap.security.ume]]"/>
+                </packer>
+                <entity name="Content Archive" type="Content Archive">
+                                        <fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SALESFORCE_BPM_SC\nobelbiocare.com\po_salesforce_02\bl\caf\permissions\_comp\src" location="Content Archive"/>
+                                    </entity>
+                </pppacker>
+<timer message="Content Archive packaging finished in "/>
+</target>
+
+<target name="createDeployArchive" depends="createContentArchive">
+<sdadd file="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\980CC2CDDB4D32051CB0E32C1630B588/sda-dd.xml"
+       softwaretype="J2EE"
+       descriptortype="engine">
+<SubstitutionVariable name="com.sap.sld.GatewayHost"/>
+<SubstitutionVariable name="com.sap.sld.GatewayService"/>
+</sdadd>
+
+            <cda type="sap.com~j2ee.EAR_SDA" deployfile="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\980CC2CDDB4D32051CB0E32C1630B588\default\deploy/nobelbiocare.com~po_salesforce_02~bl~caf~permissions.ear">
+<descriptor type="sda-deployment-descriptor" file="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\980CC2CDDB4D32051CB0E32C1630B588/sda-dd.xml"/>
+<assemblyroot path="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\980CC2CDDB4D32051CB0E32C1630B588\.ump"/>
+
+            <assemblyroot path="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\980CC2CDDB4D32051CB0E32C1630B588\.ump"/>
+            </cda>
+</target>
+
+<target name="build" depends="prepare,createContentArchive,createDeployArchive">
+
+</target>
+</project>

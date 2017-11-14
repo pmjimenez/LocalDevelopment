@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://nobelbiocare.com" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://nobelbiocare.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://nobelbiocare.com/BPM/SFDC/Customer" xmlns:tns="http://nobelbiocare.com/BPM/SFDC/Customer">
+      <xsd:complexType name="DT_BRM001_Customer_Dummy_PE_Table">
+        <xsd:sequence>
+          <xsd:element name="ORG" type="xsd:string" minOccurs="0"></xsd:element>
+          <xsd:element name="ORGNAME" type="xsd:string" minOccurs="0"></xsd:element>
+          <xsd:element name="COMPANYCODE" type="xsd:string" minOccurs="0"></xsd:element>
+          <xsd:element name="COMPANYNAME" type="xsd:string" minOccurs="0"></xsd:element>
+          <xsd:element name="DUMMY_PE" type="xsd:string" minOccurs="0"></xsd:element>
+          <xsd:element name="LIVE" type="xsd:string" minOccurs="0"></xsd:element>
+          <xsd:element name="SFDC_ID" type="xsd:string" minOccurs="0"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="MT_BRM001_Customer_Dummy_PE_Table" type="tns:DT_BRM001_Customer_Dummy_PE_Table"></xsd:element>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://nobelbiocare.com" elementFormDefault="qualified" xmlns:ns1="http://nobelbiocare.com/BPM/SFDC/Customer">
+      <xsd:import namespace="http://nobelbiocare.com/BPM/SFDC/Customer"></xsd:import>
+      <xsd:complexType name="RulesTypes-nobelbiocare.com-p-sfdc-bl-br-customer-BRM001-Customer-Dummy-PE-Table-BRM001-Customer-Dummy-PE-Table">
+        <xsd:sequence>
+          <xsd:element ref="ns1:MT_BRM001_Customer_Dummy_PE_Table"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Request-nobelbiocare.com-p-sfdc-bl-br-customer-BRM001-Customer-Dummy-PE-Table-BRM001-Customer-Dummy-PE-Table" type="tns:RulesTypes-nobelbiocare.com-p-sfdc-bl-br-customer-BRM001-Customer-Dummy-PE-Table-BRM001-Customer-Dummy-PE-Table"></xsd:element>
+      <xsd:element name="Response-nobelbiocare.com-p-sfdc-bl-br-customer-BRM001-Customer-Dummy-PE-Table-BRM001-Customer-Dummy-PE-Table" type="tns:RulesTypes-nobelbiocare.com-p-sfdc-bl-br-customer-BRM001-Customer-Dummy-PE-Table-BRM001-Customer-Dummy-PE-Table"></xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="RulesResponse">
+    <wsdl:part name="output" element="tns:Response-nobelbiocare.com-p-sfdc-bl-br-customer-BRM001-Customer-Dummy-PE-Table-BRM001-Customer-Dummy-PE-Table"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RulesRequest">
+    <wsdl:part name="parameters" element="tns:Request-nobelbiocare.com-p-sfdc-bl-br-customer-BRM001-Customer-Dummy-PE-Table-BRM001-Customer-Dummy-PE-Table"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="BRM001_Customer_Dummy_PE_TablePortType">
+    <wsdl:operation name="getDummyValues" parameterOrder="parameters">
+      <wsdl:input message="tns:RulesRequest"></wsdl:input>
+      <wsdl:output message="tns:RulesResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BRM001_Customer_Dummy_PE_TablePortTypeBinding" type="tns:BRM001_Customer_Dummy_PE_TablePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="getDummyValues">
+      <soap:operation soapAction=""></soap:operation>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BRM001_Customer_Dummy_PE_Table">
+    <wsdl:port name="BRM001_Customer_Dummy_PE_TablePort" binding="tns:BRM001_Customer_Dummy_PE_TablePortTypeBinding">
+      <soap:address location="http://localhost:50500/nobelbiocare.com~p_sfdc~bl~br~customer-BRM001_Customer_Dummy_PE_Table/BRM001_Customer_Dummy_PE_Table/BRM001_Customer_Dummy_PE_TablePortType"></soap:address>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

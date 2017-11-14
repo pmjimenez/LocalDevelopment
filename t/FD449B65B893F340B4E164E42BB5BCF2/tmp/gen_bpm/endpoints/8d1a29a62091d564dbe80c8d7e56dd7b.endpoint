@@ -1,0 +1,10 @@
+# Message event definition TR_Start_Revenue_ProductMix (MOFId: E0E1B8C61D1D205BFA1411E6C60A0205857FEB80)
+NETWORK,8d1a29a62091d564dbe80c8d7e56dd7b,nobelbiocare.com/p_sfdc/pr/pm/re/prdmix/TR_Start_Revenue_ProductMix
+REVISIONID,4,7,Galaxy interface compiler as of NetWeaver CE 7.30. Give yourself to the dark side.
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/prdmix/TR_Start_Revenue_ProductMix,MI283_BPM_ProductMixPerformanceBudget_Push_ia,SCOPE=ECF8BF3DA19AF0F0DE86FAD501F26345
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/prdmix/TR_Start_Revenue_ProductMix,MI283_BPM_ProductMixPerformanceBudget_Push_ia,ELEMENT,NAME=$http://nobelbiocare.com/BPM/SFDC/Revenue:MT_GCVMPRDMD
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/prdmix/TR_Start_Revenue_ProductMix,MI283_BPM_ProductMixPerformanceBudget_Push_ia,ELEMENT,NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Revenue
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/prdmix/TR_Start_Revenue_ProductMix,MI283_BPM_ProductMixPerformanceBudget_Push_ia,TYPE,NAME=#23#DT_GCVMPRDMD
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/prdmix/TR_Start_Revenue_ProductMix,MI283_BPM_ProductMixPerformanceBudget_Push_ia,TYPE,NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Revenue
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/prdmix/TR_Start_Revenue_ProductMix,MI283_BPM_ProductMixPerformanceBudget_Push_ia,MESSAGEPATTERN_INONLY=true

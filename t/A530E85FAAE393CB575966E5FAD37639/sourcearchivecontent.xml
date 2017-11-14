@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mapping version="1.0">
+<development-component component-type="J2EE" name="ldap/j2ee/ejb/usrupd" src-archive="nobelbiocare.com~ldap~j2ee~ejb~usrupd~ejbjar_srcarchive.zip" sub-type="EJBModule" type-vendor="sap.com" vendor="nobelbiocare.com">
+<sourcefolder srcfolderpath="ejbModule">
+<sourceelement path="nobelbiocare/com/ldap/common/LDAPUpdateEJBBean.java"/>
+<sourceelement path="nobelbiocare/com/ldap/common/LDAPUpdateEJBBeanLocal.java"/>
+<sourceelement path="nobelbiocare/com/ldap/common/Response.java"/>
+<sourceelement path="nobelbiocare/com/ldap/common/User.java"/>
+<sourceelement path="nobelbiocare/com/ldap/common/UserResp.java"/>
+<sourceelement path="nobelbiocare/com/ldap/util/DNConstants.java"/>
+<sourceelement path="nobelbiocare/com/ldap/util/Log.java"/>
+<sourceelement path="nobelbiocare/com/ldap/util/Operations.java"/>
+</sourcefolder>
+</development-component>
+</mapping>

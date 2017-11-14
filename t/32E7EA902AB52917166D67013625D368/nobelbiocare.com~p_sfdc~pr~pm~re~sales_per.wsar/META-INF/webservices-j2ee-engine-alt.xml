@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webservices xmlns="http://www.sap.com/webas/710/ws/webservices-j2ee-engine-alt-descriptor">
+  <webservice-description>
+    <webservice-name>MI279_BPM_SalesRepPerformance_Push_ia_nobelbiocarecom2Fpsfdc2Fpr2Fpm2Fre2Fsalesper2FTRStartRevSalesRepPerformance</webservice-name>
+    <wsdl-file>META-INF/wsdl/nobelbiocarecom2Fpsfdc2Fpr2Fpm2Fre2Fsalesper2FTRStartRevSalesRepPerformance/src/wsdl/MI279_BPM_SalesRepPerformance_Push_ia.wsdl</wsdl-file>
+    <wsdl-service namespace="http://nobelbiocare.com/BPM/SFDC/Revenue">MI279_BPM_SalesRepPerformance_Push_iaService</wsdl-service>
+    <port-component>
+      <port-name>MI279_BPM_SalesRepPerformance_Push_ia</port-name>
+      <wsdl-port namespace="http://nobelbiocare.com/BPM/SFDC/Revenue">MI279_BPM_SalesRepPerformance_Push_iaPort</wsdl-port>
+      <url>/bpm/nobelbiocarecom/psfdc/pr/pm/re/salesper/TRStartRevSalesRepPerformance</url>
+      <implementation-link>
+        <property name="implementation-id">GalaxyImpl</property>
+        <property name="service-identifier">nobelbiocare.com/p_sfdc/pr/pm/re/sales_per/TR_Start_Rev_Sales_Rep_Performance</property>
+      </implementation-link>
+      <meta-data/>
+    </port-component>
+  </webservice-description>
+</webservices>

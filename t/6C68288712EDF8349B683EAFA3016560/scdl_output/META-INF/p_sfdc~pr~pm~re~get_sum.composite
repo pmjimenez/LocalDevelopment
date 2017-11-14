@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" xmlns:sap="http://www.sap.com" xmlns:sapconfig="http://www.sap.com/webas/2007/03/esoa/config/system" xmlns:sapimplbpm="http://www.sap.com/webas/2007/03/esoa/implementation/bpm" xmlns:sapinterfacewsdlloc="http://www.sap.com/xmlns/sapsca/1.0" xmlns:xins="http://www.sap.com/xmlns/sapsca/xi/1.0" name="p_sfdc~pr~pm~re~get_sum" targetNamespace="http://www.sap.com">
+<component name="nobelbiocare.com~p_sfdc~pr~pm~re~get_sum~BPMcomponent">
+<sapimplbpm:implementation.bpm/>
+<reference name="74c64edc-bc31-4ce2-ab88-07027449fe79" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_GetSum_SOAP">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(nobelbiocarecom_p_sfdcprpmreget_sum_OM_GetSum_RejectedPortType)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~get_sum.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~get_sum/OM_GetSum_Rejected.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="d41f56f3-e029-45cb-992c-184207992e4a" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_GetSum_XI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI284_BPM_GetSum_EndCall_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~get_sum.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~get_sum/MI284_BPM_GetSum_EndCall_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_REVENUE_SFDC"/>
+</reference>
+<reference name="fd4c8c57-fa9a-4717-90f6-244ddbef9c63" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_GetSum_XI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI286_BPM_ControlFlow_oa)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~get_sum.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~get_sum/MI286_BPM_ControlFlow_oa.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_REVENUE_SFDC"/>
+</reference>
+<reference name="6e2ae398-faae-4b24-b7de-0f5938c77dd6" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_GetSum_XI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI284_BPM_GetSum_Push_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~get_sum.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~get_sum/MI284_BPM_GetSum_Push_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_REVENUE_SFDC"/>
+</reference>
+<reference name="8fbf341e-ccff-4d25-94d2-aa80507d15ab" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SampleTimerServiceGroup">
+<interface.wsdl interface="http://sap.com/glx/sampletimer/#wsdl.interface(SampleTimer)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~get_sum.bpem#wsdls/sap.com~tc~bpem~content~predefs~default/rootwsdl_SimpleTimerServices.wsdl"/>
+<binding.ws/>
+</reference>
+</component>
+<component name="nobelbiocare.com~p_sfdc~pr~pm~re~get_sum~OperationMappingComponent" sapinterfacewsdlloc:helperContextManagement="containerManaged">
+<sapimplbpm:implementation.piom/>
+<service name="nobelbiocare_com_p_sfdc_pr_pm_re_get_sum_OM_GetSum_Rejected_Service">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(nobelbiocarecom_p_sfdcprpmreget_sum_OM_GetSum_RejectedPortType)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~get_sum.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~get_sum/OM_GetSum_Rejected.wsdl"/>
+<binding.ws port="/nobelbiocare_com_p_sfdc_pr_pm_re_get_sum_OM_GetSum_Rejected_Service/nobelbiocarecom_p_sfdcprpmreget_sum_OM_GetSum_RejectedPortType#wsdl.endpoint(http://nobelbiocare.com/BPM/SFDC/Revenue#nobelbiocarecom_p_sfdcprpmreget_sum_OM_GetSum_RejectedPortType)"/>
+<sapinterfacewsdlloc:sapextensions omguid="dd24bfff983d31f4a5fe568810bbd9fb" svguid="dc2258106ad711e697b4e1ec0a3e5c13">
+<sapinterfacewsdlloc:input>
+<sapinterfacewsdlloc:type name="MT_GetSum_Results" namespace="http://nobelbiocare.com/BPM/SFDC/Revenue"/>
+</sapinterfacewsdlloc:input>
+<sapinterfacewsdlloc:output>
+<sapinterfacewsdlloc:type name="MT_GCVMRPOP" namespace="http://nobelbiocare.com/BPM/SFDC/Revenue"/>
+</sapinterfacewsdlloc:output>
+</sapinterfacewsdlloc:sapextensions>
+</service>
+</component>
+<sapconfig:serviceGroups>
+<sapconfig:serviceGroup bundle="633a5035-2222-4fda-8b39-724b9cc0f1ff.consgroup" sgName="SR_Revenue_GetSum_SOAP"/>
+<sapconfig:serviceGroup bundle="f209fc87-fc5e-464b-9467-715b73255f00.consgroup" sgName="SR_Revenue_GetSum_XI"/>
+</sapconfig:serviceGroups>
+<sapconfig:service-group-configuration serviceGroup="SR_Revenue_GetSum_SOAP">
+<sapconfig:localProvider/>
+</sapconfig:service-group-configuration>
+</composite>

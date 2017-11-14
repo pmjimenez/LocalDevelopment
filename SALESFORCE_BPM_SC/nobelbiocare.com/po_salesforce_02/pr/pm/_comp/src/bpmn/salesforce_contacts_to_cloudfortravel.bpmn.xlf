@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xliff version="1.1" xmlns="urn:oasis:names:tc:xliff:document:1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<file tool="MOIN S2X File Generator" original="self" source-language="en" product-name="MOIN S2X File Generator" datatype="s2x">
+<header>
+<skl>
+</skl>
+<phase-group>
+</phase-group>
+<s2x xmlns="http://www.sap.com">
+<dtr>
+<dc></dc>
+<rel></rel>
+<sc></sc>
+</dtr>
+<giltDirectives>
+<develContact>Default</develContact>
+<domain></domain>
+<collection></collection>
+<originalLocale xml:lang="en"/>
+<maxLength>255</maxLength>
+</giltDirectives>
+</s2x>
+</header>
+<body>
+<group restype="generaltext">
+<trans-unit id="0FFB11C45B8211E5B2D4000C29A832E6" resname="e1f89d6aefeb3f23a7fd92841a3bcc46" maxwidth="255" translate="no"><source>Notify SalesForce Login Error</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="8161E0EA5B8611E5CEE3000C29A832E6" resname="2d89861d61c638d4b2b56210b750f954" maxwidth="255" translate="yes"><source>BPM Notification. Contacts Replication error.</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0FFD78F65B8211E5ACB5000C29A832E6" resname="d8b8f77ddfe03cc791e089e748230a5a" maxwidth="255" translate="no"><source>Notification 0_InputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0FFD78F85B8211E595AD000C29A832E6" resname="29dd4c84554d3a2c877c5c2e55824bc2" maxwidth="255" translate="no"><source>Notification 0_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="4D6F33845AFA11E592BF000C29A832E6" resname="074c02c2150535caa23fb493a23e71f3" maxwidth="255" translate="no"><source>p2.LoginFault</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="4DA1333B5AFA11E5AD02000C29A832E6" resname="1bcd809547e23ae3bf1d8575d42222dc" maxwidth="255" translate="no"><source>p2.LoginFault_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="665BEC9C5B8511E59702000C29A832E6" resname="ceb2e3eeff733e578f15689adeeb564e" maxwidth="255" translate="yes"><source>DO_LoginFault</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="846285A25B8411E5A082000C29A832E6" resname="466aebbf3f813016b0eda16cd62683cc" maxwidth="255" translate="no"><source>Artificial Sequence Connector (Notify SalesForce Login Error)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="846285A55B8411E5A493000C29A832E6" resname="624e38bc3a50396584c387ee17f75332" maxwidth="255" translate="no"><source>Artificial Uncontrolled Join (Notify SalesForce Login Error)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="FA7333685B8011E5A18C000C29A832E6" resname="1e8b1e614a0533bba7a1ed66e432dfbc" maxwidth="255" translate="no"><source>TechnicalError</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="FAAC7A9D5B8011E589B0000C29A832E6" resname="54edcc289e8c3516846098ef06542585" maxwidth="255" translate="no"><source>TechnicalError_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="07D5959CB5CD11E493C6000C29AF3A8A" resname="3ce03340bc273368932ffb61fe6b66c0" maxwidth="255" translate="no"><source>p2.StandardFaultMessage</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="152FDB5CB5C711E4C6E8000C29AF3A8A" resname="f2bd658197793af99ec2199f38e14696" maxwidth="255" translate="yes"><source>DO_QueryLocator</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="1DB3673BB5D411E4A4D8000C29AF3A8A" resname="5af5992add3d3f6286b063e05e90d6bb" maxwidth="255" translate="no"><source>Yes</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="1DD28368B5D411E4B11C000C29AF3A8A" resname="58002cb23397399dad94525e1c28ecc8" maxwidth="255" translate="no"><source>Artificial Sequence Connector (Query More to SalesForce)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="1DD2836BB5D411E4A4BE000C29AF3A8A" resname="f85b2d7217b93a24b272e2bc48f977b1" maxwidth="255" translate="no"><source>Artificial Uncontrolled Join (Query More to SalesForce)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="20331869B5D511E4C069000C29AF3A8A" resname="1f04da8b4eb73a38be7ae0f212194b2d" maxwidth="255" translate="no"><source>No</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="2BA83294B39A11E4BF65000C29AF3A8A" resname="a06b8f6e2ac8392baf81ce18f951b192" maxwidth="255" translate="yes"><source>Query More to SalesForce</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="2BAA8A69B39A11E4C0D6000C29AF3A8A" resname="9882f32363a9346c9dfb1725c030904b" maxwidth="255" translate="no"><source>Automated 0_InputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="2BAA8A6BB39A11E4A9C3000C29AF3A8A" resname="1a3f3a5ea04c3131b673fa7c2e04f66d" maxwidth="255" translate="no"><source>Automated 0_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="2BC4AC28B39A11E4A943000C29AF3A8A" resname="5a3fafe5e6a630adaf3836ede8166a3d" maxwidth="255" translate="yes"><source>Yes</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="394DDBE3B5CC11E48945000C29AF3A8A" resname="4d9f805b1feb3df4ac26b1d236598a8c" maxwidth="255" translate="yes"><source>Push More Contacts to CloudForTravel</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="39577B14B5CC11E4CC02000C29AF3A8A" resname="c350c8e607f732e98f378dfb242d7724" maxwidth="255" translate="no"><source>Automated 0_InputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="39577B16B5CC11E4AE77000C29AF3A8A" resname="f301965827db37689fab13e770e16c91" maxwidth="255" translate="no"><source>Automated 0_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="44D8DDADB2D911E496D6000C29AF3A8A" resname="c8c244aa7cb131d197b01be124167615" maxwidth="255" translate="yes"><source>Send Replication Result To SAP</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="44D8DDB1B2D911E4A3DD000C29AF3A8A" resname="9741093185be3ae885eebb460eb8f502" maxwidth="255" translate="no"><source>Automated 1_InputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="44D8DDB3B2D911E4837E000C29AF3A8A" resname="0b910fb165b9386caf5b64e65c6fe43a" maxwidth="255" translate="no"><source>Automated 1_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="550125AFB2D911E4CF52000C29AF3A8A" resname="844c0fce85593037837781f102b685c3" maxwidth="255" translate="no"><source>Artificial Sequence Connector (End)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="550125B2B2D911E4A696000C29AF3A8A" resname="05bdac6a0f7c3b39ab0a44f76c970e90" maxwidth="255" translate="no"><source>Artificial Uncontrolled Join (End)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="73506EBBB2D111E48BD4000C29AF3A8A" resname="00782e011c5f3303a4537956fe874d7f" maxwidth="255" translate="yes"><source>DO_Contacts_Counter</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="780AD8F0B5D511E4A2B4000C29AF3A8A" resname="f9c82e5b6378332da3face30863023c1" maxwidth="255" translate="no"><source>No</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="AD0425D8B5CE11E4A89A000C29AF3A8A" resname="95a7d0888b8c362aa7757bb49a329795" maxwidth="255" translate="yes"><source>Send More Replication Result To SAP</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="AD0425DCB5CE11E4B7C5000C29AF3A8A" resname="da3c7408864b388597990b5d76715e8b" maxwidth="255" translate="no"><source>Automated 2_InputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="AD0425DEB5CE11E49025000C29AF3A8A" resname="cffc9e3b39ad35e4997b892cd31c6784" maxwidth="255" translate="no"><source>Automated 2_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="B1198B7BB5D311E4863F000C29AF3A8A" resname="4a23c71e860f312bb84e983fefa082c0" maxwidth="255" translate="no"><source>More Contacts?</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="F3C62C23B3A011E4B456000C29AF3A8A" resname="380107c8c3373307bce54f92be413fe1" maxwidth="255" translate="no"><source>p2.ApiFault</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="FF6691CAB39911E4B0B9000C29AF3A8A" resname="11ae714c396335e19947573a2510f01e" maxwidth="255" translate="no"><source>More Contacts?</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="19614A63B2AA11E49FEB000C29AF3A8A" resname="b5533da0002e31a9bdf5da5498e07413" maxwidth="255" translate="yes"><source>DO_CFT_Result</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="5A35559DB2A611E49EE7000C29AF3A8A" resname="a7f47874dc923cb9a472c8a34dfb17d8" maxwidth="255" translate="no"><source>DO_QueryResult</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="9703934AB2A611E4CCC4000C29AF3A8A" resname="f02928c629cd3f78ad128a725e7d6f19" maxwidth="255" translate="no"><source>No</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="99F128C0B2A111E486EC000C29AF3A8A" resname="641f221be184343d83d69de532cca36c" maxwidth="255" translate="no"><source>p2.ApiFault</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="9EF0E1EDB2A911E4CB57000C29AF3A8A" resname="f3a6db6439493d9a99f45097dac5a459" maxwidth="255" translate="yes"><source>Push Contacts to CloudForTravel</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="9EF36660B2A911E4B1D9000C29AF3A8A" resname="bd43a6d27d273b048e537c4e8ad34a40" maxwidth="255" translate="no"><source>Automated 0_InputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="9EF36662B2A911E4BDF9000C29AF3A8A" resname="dfe98484809b3f5a8ab85c7f7c6a241e" maxwidth="255" translate="no"><source>Automated 0_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="B19FA994B2A911E49A2C000C29AF3A8A" resname="e882e3f1c6e738e88be37c8182957b4b" maxwidth="255" translate="no"><source>Yes</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="F7B21B59B2A911E4BDCA000C29AF3A8A" resname="ec2fc8e5d98d3bd4b446aca1243bb8aa" maxwidth="255" translate="no"><source>p2.StandardFaultMessage</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0BE6B091AE1111E486B0000C29AF3A8A" resname="a8f54fdc9fb33ef6932855ff00510fcd" maxwidth="255" translate="yes"><source>SalesForce_Contacts_to_CloudForTravel</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0BE6B094AE1111E4A586000C29AF3A8A" resname="27729c86bfbc36a186cd7a705619a4d6" maxwidth="255" translate="no"><source>SalesForce_Contacts_to_CloudForTravel</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0BE921F1AE1111E4A9B2000C29AF3A8A" resname="b51540ab5b813856a57b80b3fc820ec1" maxwidth="255" translate="no"><source>TextVariables</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0BE921F4AE1111E49FAE000C29AF3A8A" resname="34563131cc37316fbdd52c870b169fa4" maxwidth="255" translate="no"><source>TextVariables_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0BEB7181AE1111E4845B000C29AF3A8A" resname="9756c4ac8b943f1c8e40d3c8d24c770e" maxwidth="255" translate="no"><source>ProcessInstanceAttributes</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0BEB7186AE1111E488AE000C29AF3A8A" resname="f55b79c58d023c939594428bd269a333" maxwidth="255" translate="no"><source>Administrators</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0BEB7189AE1111E4A775000C29AF3A8A" resname="e270db0b3bb13d9f94ada096348b66a8" maxwidth="255" translate="no"><source>Administrators_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0C3A447AAE1111E4CB7B000C29AF3A8A" resname="805d1eae7d843f769b34e03650951bbb" maxwidth="255" translate="no"><source>SalesForce_Contacts_to_CloudForTravel</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0C3C9113AE1111E4CF03000C29AF3A8A" resname="8f83e2b883ad3d6f8a0b8217862b2c25" maxwidth="255" translate="no"><source>SalesForce_Contacts_to_CloudForTravel_PotentialOwners</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0C3C9116AE1111E4AEC4000C29AF3A8A" resname="bedd8ee8cf5135b39c5e691440220e83" maxwidth="255" translate="no"><source>Default_PotentialOwners_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0C88E53EAE1111E4B2B3000C29AF3A8A" resname="bca78a180a3a3c58b7237257e7c1f72d" maxwidth="255" translate="no"><source>SalesForce_Contacts_to_CloudForTravel_ExcludedOwners</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0C88E541AE1111E48114000C29AF3A8A" resname="8ffac98bd1bb31f2a1189c15376e562e" maxwidth="255" translate="no"><source>Default_ExcludedOwners_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0CD78D37AE1111E4C5A1000C29AF3A8A" resname="2309500e3c573711950ea0d0d442c37d" maxwidth="255" translate="no"><source>NobelBiocare Contact Replication Pool</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0CD78D3AAE1111E4ADB8000C29AF3A8A" resname="156875411df33d6f9aafe4d0a3a98bb9" maxwidth="255" translate="yes"><source>nobel</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0CD9FF14AE1111E4C27A000C29AF3A8A" resname="d8f3d8da21f23d2eaa1f2eaeb553463f" maxwidth="255" translate="no"><source>TextVariables</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0CD9FF17AE1111E4C37D000C29AF3A8A" resname="7b72b3f68ffc3b98823e45f386353179" maxwidth="255" translate="no"><source>TextVariables_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0CDC55DFAE1111E4857C000C29AF3A8A" resname="baed0f94db17370cbd84df0955132fdf" maxwidth="255" translate="no"><source>ProcessInstanceAttributes</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0CDEBB56AE1111E4B9DA000C29AF3A8A" resname="69b27acef756325d846aff94cc964701" maxwidth="255" translate="no"><source>Administrators</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0CDEBB59AE1111E49778000C29AF3A8A" resname="bebb5fa0ab5e35ad96431ffc8eb46f4b" maxwidth="255" translate="no"><source>Administrators_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0D15984FAE1111E49B0F000C29AF3A8A" resname="9f377016979f3e5090fc6853b8c8656a" maxwidth="255" translate="no"><source>SAP ERP Requestor</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0D17E780AE1111E48B77000C29AF3A8A" resname="a7ede157be833287b821bd80c9a74160" maxwidth="255" translate="no"><source>SAP_ERP_Requestor_PotentialOwners</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0D17E783AE1111E480B9000C29AF3A8A" resname="4f0f4fb83697396e88968bd60a06c41a" maxwidth="255" translate="no"><source>__PotentialOwners_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0D55D2ABAE1111E4C721000C29AF3A8A" resname="79fe61cb83283e0196ef7c00fe265dd1" maxwidth="255" translate="no"><source>SAP_ERP_Requestor_ExcludedOwners</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0D5857D8AE1111E4950A000C29AF3A8A" resname="1f096760bb273f02878a0a9b2d41d00b" maxwidth="255" translate="no"><source>__ExcludedOwners_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0D9D7D8AAE1111E4C75B000C29AF3A8A" resname="aec5635f231b360d986854c4d5b5415c" maxwidth="255" translate="no"><source>Salesforce Contact Provider</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0D9FE99DAE1111E4A6D9000C29AF3A8A" resname="5a2961f7f0fa39ed92329aecc90aab84" maxwidth="255" translate="no"><source>Salesforce_Contact_Provider_PotentialOwners</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0D9FE9A0AE1111E4A8B5000C29AF3A8A" resname="c79591dff47c3a49aee8fc8acd9c77e4" maxwidth="255" translate="no"><source>__PotentialOwners_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0DE4E8F9AE1111E480F5000C29AF3A8A" resname="53039fed50113bdfac98b15b498662d1" maxwidth="255" translate="no"><source>Salesforce_Contact_Provider_ExcludedOwners</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0DE4E8FCAE1111E49993000C29AF3A8A" resname="9dc8e70c152330f897ac6e65af9a3be0" maxwidth="255" translate="no"><source>__ExcludedOwners_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0E22FAEAAE1111E4985C000C29AF3A8A" resname="e14af175c32639f1a5ff2fa4bd880ca4" maxwidth="255" translate="no"><source>SAP Cloud For Travel Contact Receiver</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0E22FAEFAE1111E4C8EB000C29AF3A8A" resname="572fd656cb2f30ea91ecb3cfed15a513" maxwidth="255" translate="no"><source>SAP_Cloud_For_Travel_Contact_Receiver_PotentialOwners</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0E22FAF2AE1111E4ABB5000C29AF3A8A" resname="a385871600ee35679fe633331388656b" maxwidth="255" translate="no"><source>__PotentialOwners_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0E634FDEAE1111E4A931000C29AF3A8A" resname="ce8f2f2dc4d03dd6b4a529416eb92f9d" maxwidth="255" translate="no"><source>SAP_Cloud_For_Travel_Contact_Receiver_ExcludedOwners</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0E634FE1AE1111E48FB1000C29AF3A8A" resname="6253af4dfe2d375cbef629b62e0ce001" maxwidth="255" translate="no"><source>__ExcludedOwners_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0E9F0B5CAE1111E4A8E3000C29AF3A8A" resname="537679ef01123391961875ce589fd555" maxwidth="255" translate="no"><source>Start</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0E9F0B60AE1111E4C9F8000C29AF3A8A" resname="9466759090453491bd685a03196993e8" maxwidth="255" translate="no"><source>Start_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0EA14D89AE1111E4C997000C29AF3A8A" resname="f9650030d2bb326095f0c3653c361fba" maxwidth="255" translate="no"><source>End</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0EA14D8DAE1111E4A4D7000C29AF3A8A" resname="053fb4a89cea37339fa1a7f247cc5170" maxwidth="255" translate="no"><source>End_InputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="2CFBA811AE1211E4CACF000C29AF3A8A" resname="c9ac9b84fa693f378aa0169238b5d7ec" maxwidth="255" translate="no"><source>DO_LoginResult</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="4B1A554CAE1211E4970E000C29AF3A8A" resname="2c9eda4cfef531e785dfc97867f327a2" maxwidth="255" translate="no"><source>Query to SalesForce</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="4B1A5550AE1211E4CE01000C29AF3A8A" resname="68f3f32715903ac6b364356e395309bb" maxwidth="255" translate="no"><source>Automated 1_InputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="4B1A5552AE1211E4BB27000C29AF3A8A" resname="4e138ee1b80e3813851045f5fda58f48" maxwidth="255" translate="no"><source>Automated 1_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="53F65DBEAE1511E4CF7D000C29AF3A8A" resname="d39333a5e2a53398ab0858169c34259c" maxwidth="255" translate="no"><source>p2.LoginFault</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="D80F993FAE1211E4AE1E000C29AF3A8A" resname="81218b2568fa383daa13956c3f79473a" maxwidth="255" translate="no"><source>New Contacts?</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="DCBFA24BAE1111E496D1000C29AF3A8A" resname="b9eb90b14cb5344886252b730cc5aad1" maxwidth="255" translate="yes"><source>DO_Trigger</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="F5D8C395AE1111E4C25B000C29AF3A8A" resname="0f7832ff4c66322b85090387773feb05" maxwidth="255" translate="no"><source>Login to SalesForce</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="F5D8C399AE1111E49496000C29AF3A8A" resname="2890ca4ee5f23d8489235e9b98ffda2a" maxwidth="255" translate="no"><source>Automated 0_InputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="F5D8C39BAE1111E4C45A000C29AF3A8A" resname="3f15328b613036ae8bb517dabce604e9" maxwidth="255" translate="no"><source>Automated 0_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+</group>
+<group restype="description">
+<trans-unit id="4D6F33865AFA11E5A0F8000C29A832E6" resname="c6dd6bae353932b99d6dfc3302e0b819" maxwidth="16380" translate="yes"><source>This error is raised when the user is locked or the pair user/password is not valid.\r\nSalesforce returns a response message (Fault Message) with the specific error.</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="846285A35B8411E58D49000C29A832E6" resname="418d04c17be53981adc97968e37e278a" maxwidth="16380" translate="no"><source>Artificial Sequence Connector (Notify SalesForce Login Error)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="846285A65B8411E5C1B4000C29A832E6" resname="42cba7b115d631e5b74790b217c48fbf" maxwidth="16380" translate="no"><source>Artificial Uncontrolled Join (Notify SalesForce Login Error)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="FA73336A5B8011E59D93000C29A832E6" resname="3c2fb8730fc432b98ae1e815da6dda4d" maxwidth="16380" translate="yes"><source>The error that is thrown when a technical exception occurs (Like if the SalesForce server is not available). This error is always critical.</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="1DD28369B5D411E49628000C29AF3A8A" resname="23f5aceb14e135448b8dc3b1c12b1bfd" maxwidth="16380" translate="no"><source>Artificial Sequence Connector (Query More to SalesForce)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="1DD2836CB5D411E4B824000C29AF3A8A" resname="b15d2295b58b35d7883bda9e4d839c3e" maxwidth="16380" translate="no"><source>Artificial Uncontrolled Join (Query More to SalesForce)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="550125B0B2D911E48D5F000C29AF3A8A" resname="31e6f9bd3943360bb7101c4faf0418c4" maxwidth="16380" translate="no"><source>Artificial Sequence Connector (End)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="550125B3B2D911E49804000C29AF3A8A" resname="833e95525b223316bef2658338506691" maxwidth="16380" translate="no"><source>Artificial Uncontrolled Join (End)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="73506EBDB2D111E4C453000C29AF3A8A" resname="9d7435fa452230309acdd945f1d377e2" maxwidth="16380" translate="yes"><source>This value will never be initialized to use it as a an if without else (avoiding forced mapping of BPM)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="9EF0E1EFB2A911E4A003000C29AF3A8A" resname="7689d21c86b33211b43627509587a436" maxwidth="16380" translate="yes"><source>Additionally starts contact counter! (DO_Contacts_Counter)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0BEB7187AE1111E4AEB6000C29AF3A8A" resname="d70331a26aa43b94a28d96b99d9aa9f8" maxwidth="16380" translate="no"><source>Role for Admins</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="0CDEBB57AE1111E4A6AE000C29AF3A8A" resname="38a5afe5f0dd3758b23cd852577afb1e" maxwidth="16380" translate="no"><source>Role for Admins</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+</group>
+<group restype="generaltextlong">
+<trans-unit id="0C19D3B55B8911E5B09B000C29A832E6" resname="5cb4c78e81f73f36ab9b622a93b899d1" maxwidth="16380" translate="yes"><source>The BPM instance ID {2} has failed in the step &quot;Login to SalesForce&quot;.\r\n\r\nError code: {0}.\r\nError message: {1}\r\n\r\nThe query ID sent from SAP is {3}.\r\n\r\n==============================================================\r\nThis is an automatically generated email. Do not reply using this email address.\r\nIf you have questions please create a ticket.</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+</group>
+</body>
+</file>
+</xliff>

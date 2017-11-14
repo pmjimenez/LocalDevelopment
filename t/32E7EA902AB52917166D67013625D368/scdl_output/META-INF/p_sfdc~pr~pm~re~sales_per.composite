@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" xmlns:sap="http://www.sap.com" xmlns:sapconfig="http://www.sap.com/webas/2007/03/esoa/config/system" xmlns:sapimplbpm="http://www.sap.com/webas/2007/03/esoa/implementation/bpm" xmlns:sapinterfacewsdlloc="http://www.sap.com/xmlns/sapsca/1.0" xmlns:xins="http://www.sap.com/xmlns/sapsca/xi/1.0" name="p_sfdc~pr~pm~re~sales_per" targetNamespace="http://www.sap.com">
+<component name="nobelbiocare.com~p_sfdc~pr~pm~re~sales_per~BPMcomponent">
+<sapimplbpm:implementation.bpm/>
+<reference name="a15002c8-d9a1-4ef7-a70b-bd2460efa34f" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_Sales_Rep_XI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI288_BPM_GetJobResult_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~sales_per.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~sales_per/MI288_BPM_GetJobResult_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_REVENUE_SFDC"/>
+</reference>
+<reference name="1494a07a-db58-4d74-a3f0-011ddad77684" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_Sales_Rep_XI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI279_BPM_Get_UserId_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~sales_per.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~sales_per/MI279_BPM_Get_UserId_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_REVENUE_SFDC"/>
+</reference>
+<reference name="5096e0b4-e683-4a39-a34e-388b7da354c1" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_Sales_Rep_XI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI279_BPM_Get_UserSalesOrg_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~sales_per.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~sales_per/MI279_BPM_Get_UserSalesOrg_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_REVENUE_SFDC"/>
+</reference>
+<reference name="2d4f6fb2-4c3f-4b68-809f-3c36be0ec98b" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_Sales_Rep_XI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI286_BPM_ControlFlow_oa)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~sales_per.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~sales_per/MI286_BPM_ControlFlow_oa.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_REVENUE_SFDC"/>
+</reference>
+<reference name="638abbd1-5b03-4596-a826-fb4c8ecd9a19" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_SalesPerformance_SOAP">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(nobelbiocarecom_p_sfdcprpmresales_per_OM_SalesRep_RejectedPortType)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~sales_per.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~sales_per/OM_SalesRep_Rejected.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="e0743bce-72b2-4db5-9f3e-b4a89e9f6e67" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_Sales_Rep_XI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(MI279_BPM_SalesRepPerformance_Push_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~sales_per.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~sales_per/MI279_BPM_SalesRepPerformance_Push_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_REVENUE_SFDC"/>
+</reference>
+<reference name="0567a1eb-a803-41ea-a7c4-bbf9767fa916" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Revenue_SalesPerformance_SOAP">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(nobelbiocarecom_p_sfdcprpmresales_per_OM_SalesRep_OwnerPortType)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~sales_per.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~sales_per/OM_SalesRep_Owner.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="addc4c07-dccb-4820-827c-fcd227050c1f" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SampleTimerServiceGroup">
+<interface.wsdl interface="http://sap.com/glx/sampletimer/#wsdl.interface(SampleTimer)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~sales_per.bpem#wsdls/sap.com~tc~bpem~content~predefs~default/rootwsdl_SimpleTimerServices.wsdl"/>
+<binding.ws/>
+</reference>
+</component>
+<component name="nobelbiocare.com~p_sfdc~pr~pm~re~sales_per~OperationMappingComponent" sapinterfacewsdlloc:helperContextManagement="containerManaged">
+<sapimplbpm:implementation.piom/>
+<service name="nobelbiocare_com_p_sfdc_pr_pm_re_sales_per_OM_SalesRep_Rejected_Service">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(nobelbiocarecom_p_sfdcprpmresales_per_OM_SalesRep_RejectedPortType)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~sales_per.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~sales_per/OM_SalesRep_Rejected.wsdl"/>
+<binding.ws port="/nobelbiocare_com_p_sfdc_pr_pm_re_sales_per_OM_SalesRep_Rejected_Service/nobelbiocarecom_p_sfdcprpmresales_per_OM_SalesRep_RejectedPortType#wsdl.endpoint(http://nobelbiocare.com/BPM/SFDC/Revenue#nobelbiocarecom_p_sfdcprpmresales_per_OM_SalesRep_RejectedPortType)"/>
+<sapinterfacewsdlloc:sapextensions omguid="f9fd4ac6e06d330a84fec6e3b5eff500" svguid="dc2258106ad711e697b4e1ec0a3e5c13">
+<sapinterfacewsdlloc:input>
+<sapinterfacewsdlloc:type name="MT_SalesRepPerformance_Result" namespace="http://nobelbiocare.com/BPM/SFDC/Revenue"/>
+</sapinterfacewsdlloc:input>
+<sapinterfacewsdlloc:output>
+<sapinterfacewsdlloc:type name="MT_GSALSREPD" namespace="http://nobelbiocare.com/BPM/SFDC/Revenue"/>
+</sapinterfacewsdlloc:output>
+</sapinterfacewsdlloc:sapextensions>
+</service>
+<service name="nobelbiocare_com_p_sfdc_pr_pm_re_sales_per_OM_SalesRep_Owner_Service">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Revenue#wsdl.interface(nobelbiocarecom_p_sfdcprpmresales_per_OM_SalesRep_OwnerPortType)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~re~sales_per.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~re~sales_per/OM_SalesRep_Owner.wsdl"/>
+<binding.ws port="/nobelbiocare_com_p_sfdc_pr_pm_re_sales_per_OM_SalesRep_Owner_Service/nobelbiocarecom_p_sfdcprpmresales_per_OM_SalesRep_OwnerPortType#wsdl.endpoint(http://nobelbiocare.com/BPM/SFDC/Revenue#nobelbiocarecom_p_sfdcprpmresales_per_OM_SalesRep_OwnerPortType)"/>
+<sapinterfacewsdlloc:sapextensions omguid="c2ad16af652737c2a95ee2abe673ac58" svguid="dc2258106ad711e697b4e1ec0a3e5c13">
+<sapinterfacewsdlloc:input>
+<sapinterfacewsdlloc:type name="MT_SalesRepPerformance_OwnerId" namespace="http://nobelbiocare.com/BPM/SFDC/Revenue"/>
+</sapinterfacewsdlloc:input>
+<sapinterfacewsdlloc:output>
+<sapinterfacewsdlloc:type name="MT_GSALSREPD" namespace="http://nobelbiocare.com/BPM/SFDC/Revenue"/>
+</sapinterfacewsdlloc:output>
+</sapinterfacewsdlloc:sapextensions>
+</service>
+</component>
+<sapconfig:serviceGroups>
+<sapconfig:serviceGroup bundle="3be8e6ca-fa58-4e6d-82b7-450c18e42b2d.consgroup" sgName="SR_Revenue_Sales_Rep_XI"/>
+<sapconfig:serviceGroup bundle="c351bc8c-69cb-4eb1-9d7e-77ab15fe937d.consgroup" sgName="SR_Revenue_SalesPerformance_SOAP"/>
+</sapconfig:serviceGroups>
+<sapconfig:service-group-configuration serviceGroup="SR_Revenue_SalesPerformance_SOAP">
+<sapconfig:localProvider/>
+</sapconfig:service-group-configuration>
+</composite>

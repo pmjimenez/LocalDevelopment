@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow id="E03D999BAA49719F6DF511E685F60205857FEB80" label="23619f3dcc7632419f6559ecc615efa4" orientation="horizontal" language="en" activePoolId="E03D999BAA4A11EC6DF511E6BD110205857FEB80" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" procvisVersion="1" >
+<Pool id="E03D999BA9DB6E836DF511E6BD280205857FEB80" label="488dc28328d63dab83f42b6bb0f84a65" subject="d41d8cd98f00b204e9800998ecf8427e" hasDeadlines="false" boundaryVisible="false">
+<Lane id="E03D999BA9FFA4C56DF511E6A0920205857FEB80" label="7fdb124c6814367f9d46e593578b7c8b">
+
+<Position x="0" y="0" />
+<Size x="1000" y="1000" />
+</Lane>
+<Position x="0" y="0" />
+<Size x="1306" y="541" />
+<description>d41d8cd98f00b204e9800998ecf8427e</description></Pool>
+<Pool id="E03D999BAA4A11EC6DF511E6BD110205857FEB80" label="ab4098e7c91438bbaeb1bd001b29599f" subject="d4f459d1b2c733f19b9313b632c9b52c" hasDeadlines="false" boundaryVisible="true">
+<Lane id="E03D999BAA70D28F6DF511E6CF8C0205857FEB80" label="8e28a148a476337fa0056cdd3221ed85">
+<Node type="StartEvent" id="E03D999BAAE2B8D86DF511E6CE1E0205857FEB80" label="2cedfb9b70043a11b4d0d7f6b3311faf">
+<Connector  id="E0DCF6CDD103EC806F7911E6BB170205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E0630A07C98922D66E0011E6C8BC0205857FEB80" type="SequenceConnector">
+<Point x="165" y="125" />
+<Point x="357" y="125" />
+</Connector>
+<Position x="150" y="110" />
+<Size x="31" y="31" />
+
+</Node>
+<Node type="TerminationEndEvent" id="E03D999BAAE3A9B56DF511E68F1E0205857FEB80" label="33e68e765cf9349dbc14f4a569dacfe2">
+<Position x="1140" y="120" />
+<Size x="31" y="31" />
+
+</Node>
+<Node type="DataObject" id="E0630A07A557E4E56DF911E6928E0205857FEB80" label="745e22305c9538e6a3a7e30de04df90a">
+<Position x="342" y="40" />
+<Size x="30" y="42" />
+
+</Node>
+<Node type="DataObject" id="E0630A07B40DAF566DF811E698960205857FEB80" label="12d03f480f2d3e819ac8f89cc55d9981">
+<Position x="150" y="40" />
+<Size x="30" y="42" />
+
+</Node>
+<Node type="AutomatedActivity" id="E0630A07C98922D66E0011E6C8BC0205857FEB80" label="31a382e533ad32ca909da058a21c931b"  loopType="parallel">
+<Connector  id="E0C4897F9F73840F7A9311E6A26E0205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E0C4897F1292F6CF7A9111E6878D0205857FEB80" type="SequenceConnector">
+<Point x="357" y="125" />
+<Point x="434" y="125" />
+<Point x="434" y="360" />
+<Point x="553" y="263" />
+</Connector>
+<Position x="310" y="98" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/Speakers" name="MI264_BPM_GetAttachaments_os"/>
+<Operation>MI264_BPM_GetAttachaments_os</Operation>
+<ServiceGroup>MI264_BPM_GetAttachments_os</ServiceGroup>
+</Service>
+
+</Node>
+
+<Position x="57" y="30" />
+<Size x="1249" y="161" />
+</Lane>
+<Lane id="E03D999BAAA9F4B86DF511E688D20205857FEB80" label="5065601375db3d159dab416558bcc9ad">
+<Node type="EmbeddedSubWorkflow" id="E0C4897F1292F6CF7A9111E6878D0205857FEB80" label="24d07046c09e32a89f83d9396b3c0d18"  loopType="parallel">
+<Node type="AbstractStartEvent" id="E0C4897F12A011E87A9111E6BE5B0205857FEB80" label="76aa6b1463093e488f07b2a3fc1bde19">
+<Connector  id="E0C4897F88E054167A9311E6A28E0205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E0C4897F88D791C27A9311E6B4B70205857FEB80" type="SequenceConnector">
+<Point x="52" y="128" />
+<Point x="177" y="128" />
+</Connector>
+<Position x="37" y="113" />
+<Size x="31" y="31" />
+
+</Node>
+<Node type="AbstractEndEvent" id="E0C4897F12A130217A9111E68FA00205857FEB80" label="996807aa8eaa3f3fb9ac9e775fa43104">
+<Position x="460" y="113" />
+<Size x="31" y="31" />
+
+</Node>
+<Node type="AutomatedActivity" id="E0C4897F248731907A9411E6B3E10205857FEB80" label="49cf43fd6d9b3bdcbd26650bee1d744e">
+<Connector  id="E0C4897F2E8FDCEC7A9411E6B4E50205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E0C4897F12A130217A9111E68FA00205857FEB80" type="SequenceConnector">
+<Point x="377" y="128" />
+<Point x="475" y="128" />
+</Connector>
+<Position x="330" y="101" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/Speakers" name="MI265_BPM_SpeakerImport_Result_oa"/>
+<Operation>MI265_BPM_SpeakerImport_Result_oa</Operation>
+<ServiceGroup>MI265_BPM_SpeakerImport_Result_oa</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="DataObject" id="E0C4897F5289F56B7A9411E6C7040205857FEB80" label="a7beda92f96f3810801e71ddb9c8a6fc">
+<Position x="162" y="31" />
+<Size x="30" y="42" />
+
+</Node>
+<Node type="AutomatedActivity" id="E0C4897F88D791C27A9311E6B4B70205857FEB80" label="79dc2100661138fe9492292fe94ce81d">
+<Connector  id="E0C4897F249790DF7A9411E6C60E0205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E0C4897F248731907A9411E6B3E10205857FEB80" type="SequenceConnector">
+<Point x="177" y="128" />
+<Point x="377" y="128" />
+</Connector>
+<Position x="130" y="101" />
+<Size x="95" y="55" />
+<Service>
+<ServiceInterface namespace="http://nobelbiocare.com/BPM/Speakers" name="MI263_BPM_SpeakerImport_os"/>
+<Operation>MI263_BPM_SpeakerImport_os</Operation>
+<ServiceGroup>MI263_BPM_SpeakerImport_os</ServiceGroup>
+</Service>
+
+</Node>
+<Node type="DataObject" id="E0C4897FB0394DD97A9311E68C300205857FEB80" label="063d5b8b7eab3fc98615726fa7483bb2">
+<Position x="-26" y="-26" />
+<Size x="0" y="0" />
+
+</Node>
+<Node type="DataObject" id="E0C4897FB039BDFA7A9311E68BA00205857FEB80" label="9c90afd85d1d3fe68f74c591a0e4f1ff">
+<Position x="-26" y="-26" />
+<Size x="0" y="0" />
+
+</Node>
+<Connector  id="E0C4897FAA5BBDFA7A9311E6A7060205857FEB80" label="d41d8cd98f00b204e9800998ecf8427e" target="E03D999BAAE3A9B56DF511E68F1E0205857FEB80" type="SequenceConnector">
+<Point x="553" y="263" />
+<Point x="1079" y="360" />
+<Point x="1079" y="135" />
+<Point x="1155" y="135" />
+</Connector>
+<Position x="480" y="210" />
+<Size x="147" y="107" /><ExpandedSize x="583" y="353" />
+</Node>
+
+<Position x="57" y="189" />
+<Size x="1249" y="352" />
+</Lane>
+<Position x="30" y="30" />
+<Size x="1276" y="511" />
+<description>d41d8cd98f00b204e9800998ecf8427e</description></Pool>
+</Workflow>

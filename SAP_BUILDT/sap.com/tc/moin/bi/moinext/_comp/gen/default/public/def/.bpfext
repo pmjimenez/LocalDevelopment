@@ -1,0 +1,87 @@
+<technologies version="1">
+  <technology name="sap.com/tc/moin/bi/moinext">
+    <uses>sap.com/tc/bi/javatech</uses>
+    <entity>
+      <descriptor type="Model Folder Tree">
+        <handler classname="com.sap.tc.moin.bi.moinext.entities.EHModelingFolderTree" >
+        	<configuration destination="modelinglibrary"></configuration></handler>
+      </descriptor>
+    </entity>
+    <packer>
+    	<configuration location="modelinglibrary">
+    		<property key="type" value="zip"/>
+    		<property key="path" value="lib/moin/${dc_deployFile}${pp_name_suffix}.zip"/>
+    	</configuration>
+    </packer>
+	
+	
+	<buildstepcreators>
+		<creator>
+			<type>moin-forced-shutdown</type>
+			<classname>com.sap.tc.moin.bi.moinext.steps.MoinForcedShutdownBuildCreator</classname>
+		</creator>
+	</buildstepcreators>
+	
+	<build-steps>
+    	<step name="moinforcedshutdown" type="moin-forced-shutdown" sequence="build" execute-before="destroycontext">
+	   		<configuration />
+    	</step>
+    </build-steps>
+	
+    <ant-tasks>
+	  <task name="MoinDcConfigurationProviderProxyTask" classname="com.sap.tc.moin.bi.moinext.tasks.MoinDcConfigurationProviderProxyTask">
+        <description>MOIN Proxy for the DC configuration provider.</description>
+      </task>
+	  <task name="MoinShutdownHookInstallerTask" classname="com.sap.tc.moin.bi.moinext.tasks.MoinShutdownHookInstallerTask">
+        <description>MOIN shutdown hook installer.</description>
+      </task>
+      <task name="MOINInit" classname="com.sap.tc.moin.ant.task.MoinInitTask">
+        <description>MOIN Initialiser Task with Meta-Model initialization</description>
+      </task>
+	  <task name="MOINInitWithMetaModels" classname="com.sap.tc.moin.ant.task.MoinInitWithMetaModelsTask">
+        <description>MOIN Initialiser Task</description>
+      </task>
+      <task name="MOINShutdown" classname="com.sap.tc.moin.ant.task.MoinShutdownTask">
+        <description>MOIN Shutdown Task</description>
+      </task>
+    </ant-tasks>  
+    <generators>
+      <generator type="sap.com~moininit">
+        <implementation-type>java</implementation-type>
+        <implementation-name>com.sap.tc.moin.bi.moinext.generators.MoinInitGenerator</implementation-name>
+        <input-types>
+          <type pattern="**/*.xmi" attributes="debug"/>
+        </input-types>
+        <inputs>
+          <input name="default" required="true" default-value="$dc_sourceDirsAsFiles"/>
+        </inputs>
+        <usedpaths>
+          <path name="models" default-value="$dc_depend_compilePPs">
+            <description>List of compilation PP roots to look for model archives</description>
+          </path>
+          <path name="metamodels" default-value="$dc_depend_infrastructurePPs">
+            <description>List of combined Java/metamodel archives</description>
+          </path>
+        </usedpaths>
+        <parameters>
+          <parameter name="verbose" default-value="true"/>
+          <parameter name="vendor" default-value="$dc_vendor"/>
+          <parameter name="dcname" default-value="$dc_name"/>
+          <parameter name="scname" default-value="$dc_scname"/>
+          <parameter name="loadfromjavalib" default-value="true"/>
+	  <parameter name="outputFolderRoot" default-value="${dc_gen_tempDir}/moin_temp_out"/>
+	  <parameter name="outputFolderName"/>
+	  <parameter name="outputGenFolderRoot" default-value="${dc_gen_tempDir}"/>	
+        </parameters>
+      </generator>
+      <generator type="sap.com~moinshutdown">
+        <implementation-type>java</implementation-type>
+        <implementation-name>com.sap.tc.moin.bi.moinext.generators.MoinShutdownGenerator</implementation-name>
+        <inputs>
+          <!-- dummy definition, the generator is skipped in generator chains otherwise  -->
+          <input name="default" required="true" default-value="$dc_sourceDirsAsFiles"/>
+        </inputs>
+      </generator>
+    </generators>
+   </technology>
+</technologies>

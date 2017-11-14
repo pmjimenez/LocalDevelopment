@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<technologies version="1">
+  <technology name="sap.com/bie/sca/scdl/contributors/xi">
+    <uses>sap.com/tc/bi/core</uses>
+<definition>
+      <object-attributes key="com.sap.bie.sca.scdl.mc.gen.impl.XiBindingScdlReferenceExtensionContribution" attributes="ext-point[bie.sca.scdl.gen.mc.ref]" class="java.lang.String"/>
+    </definition>
+    
+  </technology>
+</technologies>

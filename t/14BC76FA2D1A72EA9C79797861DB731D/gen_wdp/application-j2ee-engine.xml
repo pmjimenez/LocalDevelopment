@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application-j2ee-engine>
+      <reference reference-type="hard">
+      <reference-target target-type="library" provider-name="sap.com">tc/bl/logging/api</reference-target>
+    </reference>
+      <reference reference-type="hard">
+      <reference-target target-type="library" provider-name="sap.com">tc/aii/base/offline/facade</reference-target>
+    </reference>
+      <reference reference-type="hard">
+      <reference-target target-type="library" provider-name="sap.com">tc/ddic/runtime/facade</reference-target>
+    </reference>
+      <reference reference-type="hard">
+      <reference-target target-type="library" provider-name="sap.com">tc/bl/exception/lib</reference-target>
+    </reference>
+      <reference reference-type="hard">
+      <reference-target target-type="library" provider-name="sap.com">tc/cmi</reference-target>
+    </reference>
+      <reference reference-type="hard">
+      <reference-target target-type="application" provider-name="nobelbiocare.com">po_salesforce_02/infra/sgc</reference-target>
+    </reference>
+      <reference reference-type="hard">
+      <reference-target target-type="application" provider-name="sap.com">tc/wd/api</reference-target>
+    </reference>
+          <provider-name>nobelbiocare.com</provider-name>  
+      </application-j2ee-engine>

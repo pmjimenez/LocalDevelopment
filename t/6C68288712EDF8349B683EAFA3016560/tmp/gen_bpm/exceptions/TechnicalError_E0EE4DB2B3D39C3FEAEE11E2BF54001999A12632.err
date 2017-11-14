@@ -1,0 +1,10 @@
+# Critical error event definition TechnicalError (MOFId: E0EE4DB2B3D39C3FEAEE11E2BF54001999A12632)
+NETWORK,DA9D141412328479689D7B679549F6BA,TechnicalError
+REVISIONID,4,7,Galaxy exception compiler as of NetWeaver CE 7.31 SP 17 (Build Time: 2015-09-14 08:43:18)
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,DA9D141412328479689D7B679549F6BA,SCOPE=A34ED8303568D795396B29D6DAF8C891
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,DA9D141412328479689D7B679549F6BA,ROOT,NAME=parameters
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,DA9D141412328479689D7B679549F6BA,ROOT,NAMESPACE=sap.com/tc/bpem/content/predefs/default/TechnicalError
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,DA9D141412328479689D7B679549F6BA,ROOT,TYPE=#TechnicalErrorType
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,DA9D141412328479689D7B679549F6BA,ROOT,TYPENAMESPACE=sap.com/glx/
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,DA9D141412328479689D7B679549F6BA,ROOT,EXCEPTION_COMPILER_VERSION=2

@@ -1,0 +1,10 @@
+ROOT_0,TARGET_NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Customer
+ROOT_0,SCHEMA_LOCATION=http://nobelbiocare.com/BPM/SFDC/Customer
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://nobelbiocare.com/BPM/SFDC/Customer" xmlns:tns="http://nobelbiocare.com/BPM/SFDC/Customer" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="MT_CustomerOwner" type="tns:DT_CustomerOwner" sdox:aliasName="$http://nobelbiocare.com/BPM/SFDC/Customer:MT_CustomerOwner" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="DT_CustomerOwner" sdox:aliasName="#DT_CustomerOwner" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="OwnerId" type="xsd:string" minOccurs="0" sdox:aliasName="$OwnerId"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+
+ROOT_1,TARGET_NAMESPACE=urn:partner.soap.sforce.com
+ROOT_1,SCHEMA_LOCATION=urn:partner.soap.sforce.com
+ROOT_1,ROOTID=1
+ROOT_1,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="urn:partner.soap.sforce.com" xmlns:tns="urn:partner.soap.sforce.com" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="query" sdox:aliasName="$urn:partner.soap.sforce.com:query" xmlns:sdox="commonj.sdo/xml">     <xsd:complexType sdox:aliasName="E0469530B9D6405D0B2D11E7C1F20205857FEB80">       <xsd:sequence>         <xsd:element name="queryString" type="xsd:string" sdox:aliasName="$urn:partner.soap.sforce.com:queryString"></xsd:element>       </xsd:sequence>     </xsd:complexType>   </xsd:element> </xsd:schema> 
+

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>tc/mie/bi/model/gfw</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>MM_Inf</name>
+<purpose>infrastructure</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>com/sap/mi/gfw/mm</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>com.sap.tc.moin.nwdi.dctype.mm</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">def_assmbl</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components>
+<source-component>
+<id>1</id>
+<development-component>
+<name>com/sap/mi/gfw/mm</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>com.sap.tc.moin.nwdi.dctype.mm</type>
+<sub-type/>
+</component-type>
+</development-component>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>tc/moin/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>External Library</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/moin/jmicore/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>External Library</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</source-component>
+</source-components>
+<archives>
+<archive location="javalib" path="lib/java/sap.com~tc~mie~bi~model~gfw~MM_Inf.jar" type="jar">
+<property key="attributes">jar,java-library</property>
+</archive>
+<archive location="modelinglibrary" path="lib/moin/sap.com~com~sap~mi~gfw~mm~def_assmbl.zip" type="zip">
+<property key="attributes"/>
+</archive>
+<archive location="srcarchive" path="src/java/src.zip" type="zip"/>
+</archives>
+<entities>
+<entity>
+<id>5a8bfb86-49ad-4d2b-b210-55c024821794</id>
+<name/>
+<entity-type/>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<source-id>1</source-id>
+<fileset location="javalib" source-location="gen" source-path="bin">
+<file path="com/sap/mi/gfw/mm/datatypes/Color$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/datatypes/Color.class"/>
+<file path="com/sap/mi/gfw/mm/datatypes/DatatypesPackage.class"/>
+<file path="com/sap/mi/gfw/mm/datatypes/Point$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/datatypes/Point.class"/>
+<file path="com/sap/mi/gfw/mm/datatypes/ViewPort$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/datatypes/ViewPort.class"/>
+<file path="com/sap/mi/gfw/mm/datatypes/__impl/ColorImpl.class"/>
+<file path="com/sap/mi/gfw/mm/datatypes/__impl/ColorWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/datatypes/__impl/DatatypesPackageImpl.class"/>
+<file path="com/sap/mi/gfw/mm/datatypes/__impl/DatatypesPackageWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/datatypes/__impl/PointImpl.class"/>
+<file path="com/sap/mi/gfw/mm/datatypes/__impl/ViewPortImpl.class"/>
+<file path="com/sap/mi/gfw/mm/datatypes/__impl/ViewPortWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/graphics/GraphicsPackage.class"/>
+<file path="com/sap/mi/gfw/mm/graphics/__impl/GraphicsPackageImpl.class"/>
+<file path="com/sap/mi/gfw/mm/graphics/__impl/GraphicsPackageWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/links/DiagramLink$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/links/DiagramLink.class"/>
+<file path="com/sap/mi/gfw/mm/links/DiagramLinkReferencesDiagram.class"/>
+<file path="com/sap/mi/gfw/mm/links/DiagramLinkReferencesPictogramLinks.class"/>
+<file path="com/sap/mi/gfw/mm/links/LinksPackage.class"/>
+<file path="com/sap/mi/gfw/mm/links/PictogramElementContainsPictogramLink.class"/>
+<file path="com/sap/mi/gfw/mm/links/PictogramLink$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/links/PictogramLink.class"/>
+<file path="com/sap/mi/gfw/mm/links/PictogramLinkReferencesBusinessObjects.class"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/DiagramLinkImpl.class"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/DiagramLinkReferencesDiagramImpl.class"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/DiagramLinkReferencesDiagramWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/DiagramLinkReferencesPictogramLinksImpl.class"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/DiagramLinkReferencesPictogramLinksWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/DiagramLinkWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/LinksPackageImpl.class"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/LinksPackageWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/PictogramElementContainsPictogramLinkImpl.class"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/PictogramElementContainsPictogramLinkWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/PictogramLinkImpl.class"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/PictogramLinkReferencesBusinessObjectsImpl.class"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/PictogramLinkReferencesBusinessObjectsWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/PictogramLinkWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/AbstractStyle$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/AbstractStyle.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/AbstractText$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/AbstractText.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Anchor$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Anchor.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/AnchorContainer$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/AnchorContainer.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/AnchorcontainerAggregatesAnchors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/BoxRelativeAnchor$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/BoxRelativeAnchor.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Button$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Button.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ChopboxAnchor$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ChopboxAnchor.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ComplexGraphicsAlgorithm$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ComplexGraphicsAlgorithm.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Connection$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Connection.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ConnectionContainsConnectionDecorators.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ConnectionDecorator$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ConnectionDecorator.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ConnectionEndsAtAnchor.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ConnectionStartsAtAnchor.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ContainerShape$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ContainerShape.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ContainershapeContainsShapes.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Diagram$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Diagram.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/DiagramAggregatesConnections.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/DiagramContainsColors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/DiagramlinkReferencesDiagram.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/DirectConnection$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/DirectConnection.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Ellipse$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Ellipse.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/FanConnection$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/FanConnection.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/FixPointAnchor$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/FixPointAnchor.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Font$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Font.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/FreeFormConnection$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/FreeFormConnection.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithm$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithm.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithmContainer$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithmContainer.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithmContainsGraphicsAlgorithms.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithmForAnchor.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithmHasBackgroundColor.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithmHasForegroundColor.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithmReferencesStyle.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/HorizontalConnection$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/HorizontalConnection.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Image$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Image.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/LineStyle.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/LineStyleEnum.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/LinkToDiagram$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/LinkToDiagram.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ManhattanConnection$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ManhattanConnection.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/MultiText$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/MultiText.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Orientation.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/OrientationEnum.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/PictogramElement$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/PictogramElement.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/PictogramelementContainsGraphicsalgorithm.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/PictogramsPackage.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/PlatformGraphicsAlgorithm$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/PlatformGraphicsAlgorithm.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Polygon$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Polygon.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Polyline$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Polyline.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Property$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Property.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/PropertyContainer$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/PropertyContainer.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Rectangle$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Rectangle.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/RenderingStyle$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/RenderingStyle.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/RoundedRectangle$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/RoundedRectangle.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Shape$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Shape.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Style$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Style.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/StyleContainer$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/StyleContainer.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/StyleContainerContainsStyles.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Text$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Text.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/VerticalConnection$Descriptors.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/VerticalConnection.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/AnchorcontainerAggregatesAnchorsImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/AnchorcontainerAggregatesAnchorsWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/BoxRelativeAnchorImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/BoxRelativeAnchorWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ButtonImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ButtonWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ChopboxAnchorImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ChopboxAnchorWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionContainsConnectionDecoratorsImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionContainsConnectionDecoratorsWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionDecoratorImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionDecoratorWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionEndsAtAnchorImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionEndsAtAnchorWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionStartsAtAnchorImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionStartsAtAnchorWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ContainerShapeImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ContainerShapeWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ContainershapeContainsShapesImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ContainershapeContainsShapesWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramAggregatesConnectionsImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramAggregatesConnectionsWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramContainsColorsImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramContainsColorsWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramlinkReferencesDiagramImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramlinkReferencesDiagramWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DirectConnectionImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DirectConnectionWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/EllipseImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/EllipseWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FanConnectionImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FanConnectionWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FixPointAnchorImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FixPointAnchorWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FontImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FontWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FreeFormConnectionImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FreeFormConnectionWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmContainsGraphicsAlgorithmsImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmContainsGraphicsAlgorithmsWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmForAnchorImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmForAnchorWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmHasBackgroundColorImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmHasBackgroundColorWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmHasForegroundColorImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmHasForegroundColorWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmReferencesStyleImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmReferencesStyleWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/HorizontalConnectionImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/HorizontalConnectionWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ImageImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ImageWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/LinkToDiagramImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/LinkToDiagramWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ManhattanConnectionImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ManhattanConnectionWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/MultiTextImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/MultiTextWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PictogramelementContainsGraphicsalgorithmImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PictogramelementContainsGraphicsalgorithmWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PictogramsPackageImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PictogramsPackageWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PlatformGraphicsAlgorithmImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PlatformGraphicsAlgorithmWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PolygonImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PolygonWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PolylineImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PolylineWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PropertyImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/RectangleImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/RectangleWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/RenderingStyleImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/RenderingStyleWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/RoundedRectangleImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/RoundedRectangleWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ShapeImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ShapeWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/StyleContainerContainsStylesImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/StyleContainerContainsStylesWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/StyleImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/StyleWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/TextImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/TextWrapper.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/VerticalConnectionImpl.class"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/VerticalConnectionWrapper.class"/>
+<file path="com/sap/tc/moin/packageDBC52BCAD0663FAED92A10C3184B7ECBF7A95F4C/MetamodelExtension.class"/>
+</fileset>
+<fileset location="javalib" source-location="gen" source-path="src">
+<file path="com/sap/tc/moin/MetaModelExtension.properties"/>
+<file path="com/sap/tc/moin/packageDBC52BCAD0663FAED92A10C3184B7ECBF7A95F4C/extension.idxb"/>
+<file path="com/sap/tc/moin/packageDBC52BCAD0663FAED92A10C3184B7ECBF7A95F4C/extension.idxh"/>
+<file path="com/sap/tc/moin/packageDBC52BCAD0663FAED92A10C3184B7ECBF7A95F4C/names.idxb"/>
+</fileset>
+<fileset location="modelinglibrary" source-location="DC" source-path="">
+<file path="moin/meta/Metamodel.moinmm"/>
+</fileset>
+<fileset location="modelinglibrary" source-location="gen" source-path="descriptors">
+<file path="metamodel.properties"/>
+</fileset>
+<fileset location="srcarchive" source-location="gen" source-path="src">
+<file path="com/sap/mi/gfw/mm/datatypes/Color.java"/>
+<file path="com/sap/mi/gfw/mm/datatypes/DatatypesPackage.java"/>
+<file path="com/sap/mi/gfw/mm/datatypes/Point.java"/>
+<file path="com/sap/mi/gfw/mm/datatypes/ViewPort.java"/>
+<file path="com/sap/mi/gfw/mm/datatypes/__impl/ColorImpl.java"/>
+<file path="com/sap/mi/gfw/mm/datatypes/__impl/ColorWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/datatypes/__impl/DatatypesPackageImpl.java"/>
+<file path="com/sap/mi/gfw/mm/datatypes/__impl/DatatypesPackageWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/datatypes/__impl/PointImpl.java"/>
+<file path="com/sap/mi/gfw/mm/datatypes/__impl/ViewPortImpl.java"/>
+<file path="com/sap/mi/gfw/mm/datatypes/__impl/ViewPortWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/graphics/GraphicsPackage.java"/>
+<file path="com/sap/mi/gfw/mm/graphics/__impl/GraphicsPackageImpl.java"/>
+<file path="com/sap/mi/gfw/mm/graphics/__impl/GraphicsPackageWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/links/DiagramLink.java"/>
+<file path="com/sap/mi/gfw/mm/links/DiagramLinkReferencesDiagram.java"/>
+<file path="com/sap/mi/gfw/mm/links/DiagramLinkReferencesPictogramLinks.java"/>
+<file path="com/sap/mi/gfw/mm/links/LinksPackage.java"/>
+<file path="com/sap/mi/gfw/mm/links/PictogramElementContainsPictogramLink.java"/>
+<file path="com/sap/mi/gfw/mm/links/PictogramLink.java"/>
+<file path="com/sap/mi/gfw/mm/links/PictogramLinkReferencesBusinessObjects.java"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/DiagramLinkImpl.java"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/DiagramLinkReferencesDiagramImpl.java"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/DiagramLinkReferencesDiagramWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/DiagramLinkReferencesPictogramLinksImpl.java"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/DiagramLinkReferencesPictogramLinksWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/DiagramLinkWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/LinksPackageImpl.java"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/LinksPackageWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/PictogramElementContainsPictogramLinkImpl.java"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/PictogramElementContainsPictogramLinkWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/PictogramLinkImpl.java"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/PictogramLinkReferencesBusinessObjectsImpl.java"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/PictogramLinkReferencesBusinessObjectsWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/links/__impl/PictogramLinkWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/AbstractStyle.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/AbstractText.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Anchor.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/AnchorContainer.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/AnchorcontainerAggregatesAnchors.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/BoxRelativeAnchor.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Button.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ChopboxAnchor.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ComplexGraphicsAlgorithm.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Connection.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ConnectionContainsConnectionDecorators.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ConnectionDecorator.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ConnectionEndsAtAnchor.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ConnectionStartsAtAnchor.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ContainerShape.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ContainershapeContainsShapes.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Diagram.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/DiagramAggregatesConnections.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/DiagramContainsColors.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/DiagramlinkReferencesDiagram.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/DirectConnection.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Ellipse.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/FanConnection.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/FixPointAnchor.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Font.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/FreeFormConnection.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithm.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithmContainer.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithmContainsGraphicsAlgorithms.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithmForAnchor.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithmHasBackgroundColor.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithmHasForegroundColor.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/GraphicsAlgorithmReferencesStyle.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/HorizontalConnection.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Image.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/LineStyle.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/LineStyleEnum.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/LinkToDiagram.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/ManhattanConnection.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/MultiText.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Orientation.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/OrientationEnum.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/PictogramElement.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/PictogramelementContainsGraphicsalgorithm.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/PictogramsPackage.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/PlatformGraphicsAlgorithm.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Polygon.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Polyline.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Property.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/PropertyContainer.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Rectangle.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/RenderingStyle.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/RoundedRectangle.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Shape.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Style.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/StyleContainer.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/StyleContainerContainsStyles.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/Text.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/VerticalConnection.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/AnchorcontainerAggregatesAnchorsImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/AnchorcontainerAggregatesAnchorsWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/BoxRelativeAnchorImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/BoxRelativeAnchorWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ButtonImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ButtonWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ChopboxAnchorImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ChopboxAnchorWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionContainsConnectionDecoratorsImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionContainsConnectionDecoratorsWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionDecoratorImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionDecoratorWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionEndsAtAnchorImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionEndsAtAnchorWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionStartsAtAnchorImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionStartsAtAnchorWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ConnectionWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ContainerShapeImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ContainerShapeWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ContainershapeContainsShapesImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ContainershapeContainsShapesWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramAggregatesConnectionsImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramAggregatesConnectionsWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramContainsColorsImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramContainsColorsWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramlinkReferencesDiagramImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DiagramlinkReferencesDiagramWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DirectConnectionImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/DirectConnectionWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/EllipseImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/EllipseWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FanConnectionImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FanConnectionWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FixPointAnchorImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FixPointAnchorWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FontImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FontWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FreeFormConnectionImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/FreeFormConnectionWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmContainsGraphicsAlgorithmsImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmContainsGraphicsAlgorithmsWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmForAnchorImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmForAnchorWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmHasBackgroundColorImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmHasBackgroundColorWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmHasForegroundColorImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmHasForegroundColorWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmReferencesStyleImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/GraphicsAlgorithmReferencesStyleWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/HorizontalConnectionImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/HorizontalConnectionWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ImageImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ImageWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/LinkToDiagramImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/LinkToDiagramWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ManhattanConnectionImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ManhattanConnectionWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/MultiTextImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/MultiTextWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PictogramelementContainsGraphicsalgorithmImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PictogramelementContainsGraphicsalgorithmWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PictogramsPackageImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PictogramsPackageWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PlatformGraphicsAlgorithmImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PlatformGraphicsAlgorithmWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PolygonImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PolygonWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PolylineImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PolylineWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/PropertyImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/RectangleImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/RectangleWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/RenderingStyleImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/RenderingStyleWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/RoundedRectangleImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/RoundedRectangleWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ShapeImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/ShapeWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/StyleContainerContainsStylesImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/StyleContainerContainsStylesWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/StyleImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/StyleWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/TextImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/TextWrapper.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/VerticalConnectionImpl.java"/>
+<file path="com/sap/mi/gfw/mm/pictograms/__impl/VerticalConnectionWrapper.java"/>
+<file path="com/sap/tc/moin/MetaModelExtension.properties"/>
+<file path="com/sap/tc/moin/packageDBC52BCAD0663FAED92A10C3184B7ECBF7A95F4C/MetamodelExtension.java"/>
+<file path="com/sap/tc/moin/packageDBC52BCAD0663FAED92A10C3184B7ECBF7A95F4C/extension.idxb"/>
+<file path="com/sap/tc/moin/packageDBC52BCAD0663FAED92A10C3184B7ECBF7A95F4C/extension.idxh"/>
+<file path="com/sap/tc/moin/packageDBC52BCAD0663FAED92A10C3184B7ECBF7A95F4C/names.idxb"/>
+</fileset>
+</entity>
+</entities>
+</content>

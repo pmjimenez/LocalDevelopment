@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mapping version="1.0">
+<development-component component-type="Service Composition" name="p_sfdc/bl/scomp" src-archive="nobelbiocare.com~p_sfdc~bl~scomp~EJB_srcarchive.zip" type-vendor="sap.com" vendor="nobelbiocare.com">
+<sourcefolder srcfolderpath="gen-src">
+<sourceelement path="com/sap/sa/rt/callback/CompiledMappingRulesRegistry.java"/>
+<sourceelement path="com/sap/sa/rt/callback/JAXBContextProvider.java"/>
+<sourceelement path="com/sap/sa/rt/callback/p_sfdc_bl_scomp/SDOHelperContextProvider.java"/>
+</sourcefolder>
+</development-component>
+</mapping>

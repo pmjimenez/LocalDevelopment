@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<application-j2ee-engine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="application-j2ee-engine.xsd">
+<reference reference-type="hard">
+<reference-target provider-name="nobelbiocare.com" target-type="application">p_sfdc/infra/sgc</reference-target>
+</reference>
+<provider-name>nobelbiocare.com</provider-name>
+</application-j2ee-engine>

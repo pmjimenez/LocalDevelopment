@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:p2="http://sap.com/xi/XI/SplitAndMerge" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+				  
+	<wsdl:documentation/>
+	
+	 <wsdl:types>
+	<xsd:schema xmlns="http://nobelbiocare.com/BPM/SFDC/Revenue" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+    <xsd:element name="MT_LYTD_Rejected" type="DT_LYTD_Rejected"/>
+    <xsd:complexType name="DT_LYTD_Rejected">
+        <xsd:annotation>
+            <xsd:appinfo source="http://sap.com/xi/VersionID">b75dc3bff94911e6c9b70000005f8a66</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="Rejected" type="DT_GCVMLYTDF"/>
+            <xsd:element minOccurs="0" name="Locked" type="DT_GCVMLYTDF"/>
+        </xsd:sequence>
+    </xsd:complexType>
+<xsd:element name="MT_LastYearToDate_Result" type="DT_LastYearToDate_Result"/>
+    <xsd:complexType name="DT_Results">
+        <xsd:annotation>
+            <xsd:appinfo source="http://sap.com/xi/VersionID">007916a5eedb11e6999e0000005f8a66</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" name="Result">
+                <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a259deb4eee811e6c3760205857feb80</xsd:appinfo>
+                    <xsd:documentation/>
+                </xsd:annotation>
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="success" type="xsd:string">
+                            <xsd:annotation>
+                                <xsd:appinfo source="http://sap.com/xi/TextID">a259deb2eee811e6b67e0205857feb80</xsd:appinfo>
+                                <xsd:documentation/>
+                            </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element minOccurs="0" name="statuscode" type="xsd:string">
+                            <xsd:annotation>
+                                <xsd:appinfo source="http://sap.com/xi/TextID">a259deb3eee811e68b950205857feb80</xsd:appinfo>
+                                <xsd:documentation/>
+                            </xsd:annotation>
+                        </xsd:element>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="DT_LastYearToDate_Result">
+        <xsd:annotation>
+            <xsd:appinfo source="http://sap.com/xi/VersionID">5094697bf39411e69e130000005f8a66</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="LYTD" type="DT_GCVMLYTDF"/>
+            <xsd:element name="Result" type="DT_Results"/>
+        </xsd:sequence>
+    </xsd:complexType>
+            <xsd:complexType name="DT_GCVMLYTDF">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">CVM Last Year to Date Data</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="CORRELATION" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Correlation id</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="DELTA" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>'X' for delta load, full load otherwise</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="NUMBER" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Specifies the message number</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="TOTAL" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Messages total</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ROW">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="CUSTOMER" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="FISCYEAR" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="CURRENCY" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT161" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT221" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="FISCVARNT" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="ERROR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:documentation>Error description when rejected</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ACCID" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="SALESORG" type="xsd:string"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+        </xsd:schema>
+
+	
+
+	</wsdl:types>
+  
+ 	<wsdl:message name="OMRequestMessage">
+		<wsdl:documentation/>
+			<wsdl:part element="p1:MT_LastYearToDate_Result" name="MT_LastYearToDate_Result"/>
+	</wsdl:message>
+
+	<wsdl:message name="OMResponseMessage">
+		<wsdl:documentation/>
+			    <wsdl:part element="p1:MT_LYTD_Rejected" name="MT_LYTD_Rejected"/>
+	</wsdl:message>
+ 
+  <wsdl:portType name="nobelbiocarecom_p_sfdcprpmrelytd_OM_LYTD_RejectedPortType">
+  	<wsdl:documentation/>
+    <wsdl:operation name="OM_LYTD_Rejected">
+      <wsdl:input message="p1:OMRequestMessage"/>
+      <wsdl:output message="p1:OMResponseMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  
+  <wsdl:binding name="OM_LYTD_RejectedBinding" type="p1:nobelbiocarecom_p_sfdcprpmrelytd_OM_LYTD_RejectedPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="OM_LYTD_Rejected">
+      <soap:operation/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  
+  <wsdl:service name="nobelbiocare_com_p_sfdc_pr_pm_re_lytd_OM_LYTD_Rejected_Service">
+    <wsdl:port binding="p1:OM_LYTD_RejectedBinding" name="nobelbiocarecom_p_sfdcprpmrelytd_OM_LYTD_RejectedPortType">
+      <soap:address xmlns:soap="http/schemas.xmlsoap.org/wsdl/soap/" location="http://localhost:50500/nobelbiocare.com~p_sfdc/pr/pm/re/lytd/wsdl/OM_LYTD_Rejected"/>
+    </wsdl:port>
+  </wsdl:service>
+  
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+		<ifw:genericProperties>
+			<ifw:swcvinfo>
+				<ifw:guid>dc2258106ad711e697b4e1ec0a3e5c13</ifw:guid>
+				<ifw:name>BPM, 1.0 of nobelbiocare.com</ifw:name>
+			</ifw:swcvinfo>
+			<ifw:ominfo>
+				<ifw:guid>a4b510e5dbeb3c0eb52b145131b33bc5</ifw:guid>
+			</ifw:ominfo>
+		</ifw:genericProperties>
+	</ifw:properties>
+  
+</wsdl:definitions>

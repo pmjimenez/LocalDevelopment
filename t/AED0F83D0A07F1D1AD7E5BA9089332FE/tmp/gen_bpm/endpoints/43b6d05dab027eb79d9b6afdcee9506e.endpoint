@@ -1,0 +1,10 @@
+# Message event definition MT_MI263_SpeakerImport (MOFId: E09230FFAA8F8EDD6DF811E6B5670205857FEB80)
+NETWORK,43b6d05dab027eb79d9b6afdcee9506e,nobelbiocare.com/p_teac/pr/pm/speakers/MT_MI263_SpeakerImport
+REVISIONID,4,7,Galaxy interface compiler as of NetWeaver CE 7.30. Give yourself to the dark side.
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_teac/pr/pm/speakers/MT_MI263_SpeakerImport,MI263_BPM_SpeakerImport_ia,SCOPE=BF57F4BF5F8A615BEE4F0B2A633DEF3F
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_teac/pr/pm/speakers/MT_MI263_SpeakerImport,MI263_BPM_SpeakerImport_ia,ELEMENT,NAME=$http://nobelbiocare.com/BPM/Speakers:MT_Speakers_Request
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_teac/pr/pm/speakers/MT_MI263_SpeakerImport,MI263_BPM_SpeakerImport_ia,ELEMENT,NAMESPACE=http://nobelbiocare.com/BPM/Speakers
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_teac/pr/pm/speakers/MT_MI263_SpeakerImport,MI263_BPM_SpeakerImport_ia,TYPE,NAME=#23#DT_Speakers_Request
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_teac/pr/pm/speakers/MT_MI263_SpeakerImport,MI263_BPM_SpeakerImport_ia,TYPE,NAMESPACE=http://nobelbiocare.com/BPM/Speakers
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_teac/pr/pm/speakers/MT_MI263_SpeakerImport,MI263_BPM_SpeakerImport_ia,MESSAGEPATTERN_INONLY=true

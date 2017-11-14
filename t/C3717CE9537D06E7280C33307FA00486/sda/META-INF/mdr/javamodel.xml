@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<javamodel cafmmId="a2712d62-e9e5-11e6-9ef5-00ffc53f5b0a">
+	<complextype  javaName="com.sap.caf.rt.exception.FaultInfo" name="FaultInfo" namespace="http://www.sap.com/caf/sap.com/caf.core/faults" 
+		anonymous="false" globalElement="false" 
+		parent="TODO" >
+		<property  javaName="nestedStackTraceString" getter="getNestedStackTraceString" setter="setNestedStackTraceString" type="java.lang.String" name="nestedStackTraceString" />
+	</complextype>
+	<complextype  javaName="com.sap.caf.rt.bol.util.QueryFilter" name="QueryFilter" namespace="http://www.sap.com/caf/query_filter" 
+		anonymous="false" globalElement="false" 
+		parent="TODO" >
+		<property  javaName="operation" getter="getOperation" setter="setOperation" type="java.lang.String" name="operation" />
+		<property  javaName="action" getter="getAction" setter="setAction" type="java.lang.String" name="action" />
+		<property  javaName="attribute" getter="getAttribute" setter="setAttribute" type="java.lang.String" name="attribute" />
+		<property  javaName="value" getter="getValue" setter="setValue" type="java.lang.Object" name="value" />
+		<property  javaName="valueLow" getter="getValueLow" setter="setValueLow" type="java.lang.Object" name="valueLow" />
+		<property  javaName="valueHigh" getter="getValueHigh" setter="setValueHigh" type="java.lang.Object" name="valueHigh" />
+		<property  javaName="condition" getter="getCondition" setter="setCondition" type="com.sap.caf.rt.bol.util.Condition" name="condition" />
+	</complextype>
+
+
+
+</javamodel>

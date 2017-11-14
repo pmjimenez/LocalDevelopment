@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/BPM/SFDC/Customer" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="MI290_BPM_CustomerCreditCard_Set_os" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Customer">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+    <ifw:category>ifmmessif</ifw:category>
+    <ifw:VersionID>757d2ab90a3311e7c1bb0000005f8a66</ifw:VersionID>
+    <ifw:lifeCycleInfo>
+      <objectState/>
+      <objectstatus value="A"/>
+      <personresponsible value="chpeji"/>
+      <changed by="chpeji" on="1489660178637"/>
+    </ifw:lifeCycleInfo>
+    <ifw:runtimeVersion uri="urn:sap-com:soap:runtime:application:client"/>
+    <ifw:communicationProfile uri="prf_dt_if_com_stateless"/>
+    <ifw:securityProfile uri="prf_dt_if_sec_basic"/>
+    <ifw:interfacePattern p2p="true"/>
+    <ifw:isSensitiveData>false</ifw:isSensitiveData>
+    <ifw:classifications>
+      <ifw:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"/>
+      <ifw:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="ec0889c2754634feb91db9e600c30c7e"/>
+    </ifw:classifications>
+    <ifw:additionalAttributes/>
+    <ifw:methods>
+      <ifw:method name="MI290_BPM_CustomerCreditCard_Set_os">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>false</ifw:isInbound>
+        <ifw:interfaceCategory>outbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:contextobjects/>
+      </ifw:method>
+    </ifw:methods>
+    <ifw:messages>
+      <ifw:message name="MT_CreditCardResult">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">MT_CreditCardResult</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://nobelbiocare.com/BPM/SFDC/Customer</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://nobelbiocare.com/BPM/SFDC/Customer</ifw:technicalNamespace>
+        <ifw:VersionID>632ee69d0a3311e7a50d0000005f8a66</ifw:VersionID>
+        <ifw:xmlNamespace>http://nobelbiocare.com/BPM/SFDC/Customer</ifw:xmlNamespace>
+        <ifw:dataType name="DT_CreditCardResult" namespace="http://nobelbiocare.com/BPM/SFDC/Customer" swcvId="dc2258106ad711e697b4e1ec0a3e5c13" uri="name=DT_CreditCardResult~namespace=http://nobelbiocare.com/BPM/SFDC/Customer~swcvId=dc2258106ad711e697b4e1ec0a3e5c13"/>
+      </ifw:message>
+      <ifw:message name="MT_Customer_CreditCard">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">MT_Customer_CreditCard</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://nobelbiocare.com/BPM/SFDC/Customer</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://nobelbiocare.com/BPM/SFDC/Customer</ifw:technicalNamespace>
+        <ifw:VersionID>54eb38e5097011e784750000005f8a66</ifw:VersionID>
+        <ifw:xmlNamespace>http://nobelbiocare.com/BPM/SFDC/Customer</ifw:xmlNamespace>
+        <ifw:dataType name="DT_Customer_CreditCard" namespace="http://nobelbiocare.com/BPM/SFDC/Customer" swcvId="dc2258106ad711e697b4e1ec0a3e5c13" uri="name=DT_Customer_CreditCard~namespace=http://nobelbiocare.com/BPM/SFDC/Customer~swcvId=dc2258106ad711e697b4e1ec0a3e5c13"/>
+      </ifw:message>
+    </ifw:messages>
+    <ifw:matchingInterfaces/>
+    <ifw:genericProperties>
+      <ifw:swcvinfo>
+        <ifw:guid>dc2258106ad711e697b4e1ec0a3e5c13</ifw:guid>
+        <ifw:name>BPM, 1.0 of nobelbiocare.com</ifw:name>
+      </ifw:swcvinfo>
+      <ifw:languages>
+        <ifw:language internalCode="EN" original="true"/>
+      </ifw:languages>
+      <ifw:documentation type="I">
+        <name>_ID_ec0889c2754634feb91db9e600c30c7e_ifmmessif</name>
+        <namespace>http://nobelbiocare.com/BPM/SFDC/Customer</namespace>
+      </ifw:documentation>
+    </ifw:genericProperties>
+  </ifw:properties>
+  <wsp:Policy wsu:Id="OP_MI290_BPM_CustomerCreditCard_Set_os"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://nobelbiocare.com/BPM/SFDC/Customer" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Customer">
+      <xsd:element name="MT_CreditCardResult" type="DT_CreditCardResult"/>
+      <xsd:element name="MT_Customer_CreditCard" type="DT_Customer_CreditCard"/>
+      <xsd:complexType name="DT_Customer_CreditCard">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Account__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SAP_ID" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="CreditCard">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="credit_card_category" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="credit_card_default" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="credit_card_Lock_reason" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="credit_card_name" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="credit_card_token_num" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="credit_card_type" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="credit_card_valid_From" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="credit_card_valid_To" type="xsd:string"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_CreditCardResult">
+        <xsd:sequence>
+          <xsd:element name="Status" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Error" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_Customer_CreditCard">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:MT_Customer_CreditCard" name="MT_Customer_CreditCard"/>
+  </wsdl:message>
+  <wsdl:message name="MT_CreditCardResult">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:MT_CreditCardResult" name="MT_CreditCardResult"/>
+  </wsdl:message>
+  <wsdl:portType name="MI290_BPM_CustomerCreditCard_Set_os">
+    <wsdl:documentation/>
+    <wsdl:operation name="MI290_BPM_CustomerCreditCard_Set_os">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_MI290_BPM_CustomerCreditCard_Set_os"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_Customer_CreditCard"/>
+      <wsdl:output message="p1:MT_CreditCardResult"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MI290_BPM_CustomerCreditCard_Set_osBinding" type="p1:MI290_BPM_CustomerCreditCard_Set_os">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="MI290_BPM_CustomerCreditCard_Set_os">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue" name="MI286_BPM_ControlFlow_NextStep_os" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <wsdl:documentation></wsdl:documentation>
+  <ns1:UsingPolicy xmlns:ns1="http://schemas.xmlsoap.org/ws/2004/09/policy" wsdl:required="true"></ns1:UsingPolicy>
+  <ns2:properties xmlns:ns2="urn:com-sap:ifr:v2:wsdl">
+    <ns2:category>ifmmessif</ns2:category>
+    <ns2:VersionID>6798adb1f1ce11e684500000005f8a66</ns2:VersionID>
+    <ns2:lifeCycleInfo>
+      <objectState></objectState>
+      <objectstatus value="A"></objectstatus>
+      <personresponsible value="chpeji"></personresponsible>
+      <changed by="chpeji" on="1486978734696"></changed>
+    </ns2:lifeCycleInfo>
+    <ns2:runtimeVersion uri="urn:sap-com:soap:application:esr:client:710"></ns2:runtimeVersion>
+    <ns2:communicationProfile uri="prf_dt_if_com_stateless"></ns2:communicationProfile>
+    <ns2:securityProfile uri="prf_dt_if_sec_low"></ns2:securityProfile>
+    <ns2:interfacePattern p2p="false">L</ns2:interfacePattern>
+    <ns2:isSensitiveData>false</ns2:isSensitiveData>
+    <ns2:classifications>
+      <ns2:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"></ns2:classification>
+      <ns2:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="1eba1ac20b303e47a46a16560afc4ecf"></ns2:classification>
+    </ns2:classifications>
+    <ns2:additionalAttributes></ns2:additionalAttributes>
+    <ns2:methods>
+      <ns2:method name="MI286_BPM_ControlFlow_NextStep_os">
+        <ns2:isSynchron>true</ns2:isSynchron>
+        <ns2:isIdempotent>false</ns2:isIdempotent>
+        <ns2:isInbound>false</ns2:isInbound>
+        <ns2:interfaceCategory>outbound</ns2:interfaceCategory>
+        <ns2:communicationProfile uri="prf_dt_op_com_sync"></ns2:communicationProfile>
+        <ns2:lifeCycleInfo>
+          <objectState></objectState>
+        </ns2:lifeCycleInfo>
+        <ns2:contextobjects></ns2:contextobjects>
+      </ns2:method>
+    </ns2:methods>
+    <ns2:messages>
+      <ns2:message name="MT_Chain_Res">
+        <ns2:messType>ifmmessage</ns2:messType>
+        <ns2:keyElements>
+          <ns2:elem id="NAME">MT_Chain_Res</ns2:elem>
+          <ns2:elem id="NAMESPACE">http://nobelbiocare.com/BPM/SFDC/Revenue</ns2:elem>
+        </ns2:keyElements>
+        <ns2:technicalNamespace>http://nobelbiocare.com/BPM/SFDC/Revenue</ns2:technicalNamespace>
+        <ns2:VersionID>d24fb6f4f1ce11e695f80000005f8a66</ns2:VersionID>
+        <ns2:xmlNamespace>http://nobelbiocare.com/BPM/SFDC/Revenue</ns2:xmlNamespace>
+        <ns2:dataType name="DT_Chain_Res" namespace="http://nobelbiocare.com/BPM/SFDC/Revenue" swcvId="dc2258106ad711e697b4e1ec0a3e5c13" uri="name=DT_Chain_Res~namespace=http://nobelbiocare.com/BPM/SFDC/Revenue~swcvId=dc2258106ad711e697b4e1ec0a3e5c13"></ns2:dataType>
+      </ns2:message>
+      <ns2:message name="p2.StandardMessageFault">
+        <ns2:messType>ifmfaultm</ns2:messType>
+        <ns2:keyElements>
+          <ns2:elem id="NAME">StandardMessageFault</ns2:elem>
+          <ns2:elem id="NAMESPACE">http://sap.com/xi/BASIS/Global</ns2:elem>
+        </ns2:keyElements>
+        <ns2:technicalNamespace>http://sap.com/xi/BASIS/Global</ns2:technicalNamespace>
+        <ns2:VersionID>dabba660701411dcb5de0017a4aa3b42</ns2:VersionID>
+        <ns2:xmlNamespace>http://sap.com/xi/BASIS/Global</ns2:xmlNamespace>
+        <ns2:dataType name="ExchangeFaultData" namespace="http://sap.com/xi/BASIS/Global" swcvId="dc2258106ad711e697b4e1ec0a3e5c13" uri="name=ExchangeFaultData~namespace=http://sap.com/xi/BASIS/Global~swcvId=dc2258106ad711e697b4e1ec0a3e5c13"></ns2:dataType>
+      </ns2:message>
+      <ns2:message name="MT_Chain_Req">
+        <ns2:messType>ifmmessage</ns2:messType>
+        <ns2:keyElements>
+          <ns2:elem id="NAME">MT_Chain_Req</ns2:elem>
+          <ns2:elem id="NAMESPACE">http://nobelbiocare.com/BPM/SFDC/Revenue</ns2:elem>
+        </ns2:keyElements>
+        <ns2:technicalNamespace>http://nobelbiocare.com/BPM/SFDC/Revenue</ns2:technicalNamespace>
+        <ns2:VersionID>c4ba2a3bf1ce11e6b3910000005f8a66</ns2:VersionID>
+        <ns2:xmlNamespace>http://nobelbiocare.com/BPM/SFDC/Revenue</ns2:xmlNamespace>
+        <ns2:dataType name="DT_Chain_Req" namespace="http://nobelbiocare.com/BPM/SFDC/Revenue" swcvId="dc2258106ad711e697b4e1ec0a3e5c13" uri="name=DT_Chain_Req~namespace=http://nobelbiocare.com/BPM/SFDC/Revenue~swcvId=dc2258106ad711e697b4e1ec0a3e5c13"></ns2:dataType>
+      </ns2:message>
+    </ns2:messages>
+    <ns2:matchingInterfaces></ns2:matchingInterfaces>
+    <ns2:genericProperties>
+      <ns2:swcvinfo>
+        <ns2:guid>dc2258106ad711e697b4e1ec0a3e5c13</ns2:guid>
+        <ns2:name>BPM, 1.0 of nobelbiocare.com</ns2:name>
+      </ns2:swcvinfo>
+      <ns2:languages>
+        <ns2:language internalCode="EN" original="true"></ns2:language>
+      </ns2:languages>
+      <ns2:documentation type="I">
+        <name>_ID_1eba1ac20b303e47a46a16560afc4ecf_ifmmessif</name>
+        <namespace>http://nobelbiocare.com/BPM/SFDC/Revenue</namespace>
+      </ns2:documentation>
+    </ns2:genericProperties>
+  </ns2:properties>
+  <ns3:Policy xmlns:ns3="http://schemas.xmlsoap.org/ws/2004/09/policy" ns4:Id="OP_MI286_BPM_ControlFlow_NextStep_os" xmlns:ns4="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"></ns3:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://sap.com/xi/BASIS/Global" xmlns:tns="http://sap.com/xi/BASIS/Global">
+      <xsd:complexType name="ExchangeLogData">
+        <xsd:sequence>
+          <xsd:element name="severity" type="xsd:string" minOccurs="0"></xsd:element>
+          <xsd:element name="text" type="xsd:string"></xsd:element>
+          <xsd:element name="url" type="xsd:string" minOccurs="0"></xsd:element>
+          <xsd:element name="id" type="xsd:string" minOccurs="0"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ExchangeFaultData">
+        <xsd:sequence>
+          <xsd:element name="faultText" type="xsd:string"></xsd:element>
+          <xsd:element name="faultUrl" type="xsd:string" minOccurs="0"></xsd:element>
+          <xsd:element name="faultDetail" type="tns:ExchangeLogData" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="StandardMessageFault">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="standard" type="tns:ExchangeFaultData"></xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xsd:schema targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+      <xsd:complexType name="DT_Chain_Req">
+        <xsd:sequence>
+          <xsd:element name="CHAIN" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_Chain_Res">
+        <xsd:sequence>
+          <xsd:element name="LOGID" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="MT_Chain_Req" type="tns:DT_Chain_Req"></xsd:element>
+      <xsd:element name="MT_Chain_Res" type="tns:DT_Chain_Res"></xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="p2.StandardMessageFault">
+    <wsdl:documentation>Standard Message Fault</wsdl:documentation>
+    <wsdl:part name="StandardMessageFault" xmlns:ns5="http://sap.com/xi/BASIS/Global" element="ns5:StandardMessageFault"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="MT_Chain_Res">
+    <wsdl:part name="MT_Chain_Res" element="tns:MT_Chain_Res"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="MT_Chain_Req">
+    <wsdl:part name="MT_Chain_Req" element="tns:MT_Chain_Req"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="MI286_BPM_ControlFlow_NextStep_os">
+    <wsdl:documentation></wsdl:documentation>
+    <wsdl:operation name="MI286_BPM_ControlFlow_NextStep_os">
+      <wsdl:documentation></wsdl:documentation>
+      <ns6:Policy xmlns:ns6="http://schemas.xmlsoap.org/ws/2004/09/policy">
+        <ns6:PolicyReference URI="#OP_MI286_BPM_ControlFlow_NextStep_os"></ns6:PolicyReference>
+      </ns6:Policy>
+      <wsdl:input message="tns:MT_Chain_Req"></wsdl:input>
+      <wsdl:output message="tns:MT_Chain_Res"></wsdl:output>
+      <wsdl:fault name="p2.StandardMessageFault" message="tns:p2.StandardMessageFault"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MI286_BPM_ControlFlow_NextStep_osBinding" type="tns:MI286_BPM_ControlFlow_NextStep_os">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="MI286_BPM_ControlFlow_NextStep_os">
+      <soap:operation soapAction="http://sap.com/xi/WebService/soap1.1"></soap:operation>
+      <wsdl:input>
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+      <wsdl:fault name="p2.StandardMessageFault">
+        <soap:fault name="p2.StandardMessageFault" use="literal"></soap:fault>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

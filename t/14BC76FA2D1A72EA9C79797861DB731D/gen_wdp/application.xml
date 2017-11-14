@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd"
+   version="5">   
+  <display-name>po_salesforce_02~ui~wd</display-name>
+     <module>
+        <web>
+          <web-uri>nobelbiocare.com~po_salesforce_02~ui~wd.war</web-uri>
+         <context-root>
+             webdynpro/resources/nobelbiocare.com/po_salesforce_02~ui~wd
+         </context-root>
+       </web>
+    </module>
+</application>

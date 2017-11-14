@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:p2="http://sap.com/xi/XI/SplitAndMerge" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+				  
+	<wsdl:documentation/>
+	
+	 <wsdl:types>
+	<xsd:schema xmlns="http://nobelbiocare.com/BPM/SFDC/Revenue" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+    <xsd:element name="MT_GCVMPRDMD" type="DT_GCVMPRDMD"/>
+    <xsd:element name="MT_ProductMix_ProductId" type="DT_ProductMix_ProductId"/>
+    <xsd:complexType name="DT_ProductMix_ProductId">
+        <xsd:annotation>
+            <xsd:appinfo source="http://sap.com/xi/VersionID">35f023f0f42411e6cfb40000005f8a66</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="ProductMix" type="DT_GCVMPRDMD"/>
+            <xsd:element name="ProductId" type="DT_ProductId"/>
+        </xsd:sequence>
+    </xsd:complexType>
+            <xsd:complexType name="DT_ProductId">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Row">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="ProductId" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="SAP_Material_Number" type="xsd:string"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+            <xsd:complexType name="DT_GCVMPRDMD">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">CVM Product Mix Data</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="CORRELATION" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Correlation id</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="DELTA" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>'X' for delta load, full load otherwise</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="NUMBER" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Specifies the message number</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="TOTAL" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Messages total</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="BULK" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Use Bulk API</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ROW">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="CUSTOMER" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="MATERIAL" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="FISCPER" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="SALESORG" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="CURRENCY" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT161" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT221" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GQTY015" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="UNIT" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="FISCVARNT" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GPERDAY01" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="PRODUCT" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="ERROR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:documentation>Rejection error</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+        </xsd:schema>
+
+	
+
+	</wsdl:types>
+  
+ 	<wsdl:message name="OMRequestMessage">
+		<wsdl:documentation/>
+			<wsdl:part element="p1:MT_ProductMix_ProductId" name="MT_ProductMix_ProductId"/>
+	</wsdl:message>
+
+	<wsdl:message name="OMResponseMessage">
+		<wsdl:documentation/>
+			    <wsdl:part element="p1:MT_GCVMPRDMD" name="MT_GCVMPRDMD"/>
+	</wsdl:message>
+ 
+  <wsdl:portType name="nobelbiocarecom_p_sfdcprpmreprdmix_OM_ProctMix_PrdIdPortType">
+  	<wsdl:documentation/>
+    <wsdl:operation name="OM_ProctMix_PrdId">
+      <wsdl:input message="p1:OMRequestMessage"/>
+      <wsdl:output message="p1:OMResponseMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  
+  <wsdl:binding name="OM_ProctMix_PrdIdBinding" type="p1:nobelbiocarecom_p_sfdcprpmreprdmix_OM_ProctMix_PrdIdPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="OM_ProctMix_PrdId">
+      <soap:operation/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  
+  <wsdl:service name="nobelbiocare_com_p_sfdc_pr_pm_re_prdmix_OM_ProctMix_PrdId_Service">
+    <wsdl:port binding="p1:OM_ProctMix_PrdIdBinding" name="nobelbiocarecom_p_sfdcprpmreprdmix_OM_ProctMix_PrdIdPortType">
+      <soap:address xmlns:soap="http/schemas.xmlsoap.org/wsdl/soap/" location="http://localhost:50500/nobelbiocare.com~p_sfdc/pr/pm/re/prdmix/wsdl/OM_ProctMix_PrdId"/>
+    </wsdl:port>
+  </wsdl:service>
+  
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+		<ifw:genericProperties>
+			<ifw:swcvinfo>
+				<ifw:guid>dc2258106ad711e697b4e1ec0a3e5c13</ifw:guid>
+				<ifw:name>BPM, 1.0 of nobelbiocare.com</ifw:name>
+			</ifw:swcvinfo>
+			<ifw:ominfo>
+				<ifw:guid>3972ef4542543ba480c1597a2cb9da81</ifw:guid>
+			</ifw:ominfo>
+		</ifw:genericProperties>
+	</ifw:properties>
+  
+</wsdl:definitions>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>p_sfdc/bl/caf/metadata</name>
+<vendor>nobelbiocare.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Composite Application</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>compilation</name>
+<purpose>compilation</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>p_sfdc/bl/caf/dictionary</name>
+<vendor>nobelbiocare.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Dictionary</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+</dependency>
+<dependency>
+<dc-ref>
+<name>p_sfdc/bl/caf/ear</name>
+<vendor>nobelbiocare.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>Enterprise Application</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">client</pp-ref>
+<pp-ref purpose="assembly">persistence</pp-ref>
+<pp-ref purpose="compilation">gen_client</pp-ref>
+</dependency>
+<dependency>
+<dc-ref>
+<name>p_sfdc/bl/caf/ejbmodule</name>
+<vendor>nobelbiocare.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">ejbjar</pp-ref>
+<pp-ref purpose="compilation">client</pp-ref>
+<pp-ref purpose="assembly">persistence</pp-ref>
+<pp-ref purpose="compilation">gen_client</pp-ref>
+</dependency>
+<dependency>
+<dc-ref>
+<name>p_sfdc/bl/caf/permissions</name>
+<vendor>nobelbiocare.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Content</type>
+<sub-type>UME Permissions</sub-type>
+</component-type>
+</dc-ref>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/core/metadata</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Composite Application</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">compilation</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/core/metadata</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Composite Application</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">compilation</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components/>
+<archives>
+<archive location="javalib" path="lib/java/nobelbiocare.com~p_sfdc~bl~caf~metadata~compilation.jar" type="jar">
+<property key="attributes">jar,java-library</property>
+</archive>
+</archives>
+<entities>
+<entity>
+<name>MMR</name>
+<entity-type>Folder Tree</entity-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="DC" source-path="src">
+<file path="MMR/ca_model.cafmm"/>
+</fileset>
+</entity>
+</entities>
+</content>

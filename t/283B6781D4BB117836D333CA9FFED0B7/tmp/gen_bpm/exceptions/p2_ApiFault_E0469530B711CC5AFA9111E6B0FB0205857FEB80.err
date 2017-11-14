@@ -1,0 +1,10 @@
+# Critical error event definition p2.ApiFault (MOFId: E0469530B711CC5AFA9111E6B0FB0205857FEB80)
+NETWORK,F97342F27668419DE7FB333923CF1A83,p2.ApiFault
+REVISIONID,4,7,Galaxy exception compiler as of NetWeaver CE 7.31 SP 17 (Build Time: 2015-09-14 08:43:18)
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,F97342F27668419DE7FB333923CF1A83,SCOPE=115EAFD5A0B3E5A3FA2E99AEBB230BD7
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,F97342F27668419DE7FB333923CF1A83,ROOT,NAME=fault
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,F97342F27668419DE7FB333923CF1A83,ROOT,NAMESPACE=urn:fault.partner.soap.sforce.com
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,F97342F27668419DE7FB333923CF1A83,ROOT,TYPE=#ApiFault
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,F97342F27668419DE7FB333923CF1A83,ROOT,TYPENAMESPACE=urn:fault.partner.soap.sforce.com
+CONFIG,com.sap.glx.adapter.internal.ExceptionAdapter,Exception,F97342F27668419DE7FB333923CF1A83,ROOT,EXCEPTION_COMPILER_VERSION=2

@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>caf/runtime/ear</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>Enterprise Application</sub-type>
+</component-type>
+</development-component>
+<public-part>
+<name>api</name>
+<purpose>compilation</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>caf/cmf/api/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/cmf/dao/rt/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/km.proxyjava</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">assembly</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">gen_api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/api/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/base/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/connectivity</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">destmapping</pp-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/connectivity</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">destmapping</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/dict</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Dictionary</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">ddic_types_assembly</pp-ref>
+<pp-ref purpose="compilation">ddic_types_compilation</pp-ref>
+<at-deploy-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/dict</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Dictionary</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">ddic_types_assembly</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/impl</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/impl</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">ejbjar</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/impl</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">gen_api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/security</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">ClientAPI</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/security</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/security</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">ejbjar</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/security</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">gen_api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/vf</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">cmi</pp-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>com.sap.base.technology.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>com.sap.dictionary.runtime</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.application.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Service</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.j2ee14.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.jee5.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">apiwithoutjsf</pp-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.service.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Service</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/cm/base</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/cmi</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">default</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/ddic/runtime/facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">runtime</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/je/usermanagement/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/wd/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Web Dynpro</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">default</pp-ref>
+<pp-ref purpose="compilation">gci</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components>
+<source-component>
+<id>1</id>
+<development-component>
+<name>caf/runtime/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</development-component>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>com.sap.base.technology.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.application.lib.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.jee5.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">apiwithoutjsf</pp-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.jee5.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</source-component>
+<source-component>
+<id>2</id>
+<development-component>
+<name>caf/runtime/impl</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</development-component>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>caf/cmf/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">compilation</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/cmf/dao/rt</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">compilation</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/cmf/dao/rt</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">factories</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/km.proxyjava</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">ClientApi</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">gen_api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/base</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">compilation</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/connectivity</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/vf</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/vf</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">cmi</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>com.sap.base.technology.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>com.sap.dictionary.runtime</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.application.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Service</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.jee5.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.service.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Service</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/cm/base</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/cmi</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">default</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/ddic/runtime/facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">runtime</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/je/usermanagement/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/wd/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Web Dynpro</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">default</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</source-component>
+<source-component>
+<id>3</id>
+<development-component>
+<name>caf/runtime/security</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</development-component>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>caf/cmf/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">compilation</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">gen_api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/base</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">compilation</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/runtime/impl</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">ClientAPI</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.application.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Service</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.jee5.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/je/usermanagement/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">api</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</source-component>
+</source-components>
+<archives>
+<archive location="javalib" path="lib/java/sap.com~caf~runtime~ear~api.jar" type="jar">
+<property key="attributes">jar,java-library</property>
+</archive>
+<archive location="jdoclet" path="doc/java/sap.com~caf~runtime~api~api.jdar" type="zip">
+<property key="attributes">java-documentation-archive,solid</property>
+</archive>
+<archive location="srcarchive" path="src/java/src.zip" type="zip"/>
+</archives>
+<entities>
+<entity>
+<id>fcb39a5f-c3e5-45e3-b634-359c24246b84</id>
+<name/>
+<entity-type/>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<source-id>3</source-id>
+<fileset location="javalib" source-location="gen" source-path="classes">
+<file path="com/sap/caf/rt/bol/IBusinessObjectNodeBase.class"/>
+<file path="com/sap/caf/rt/bol/IBusinessObjectNodeServiceBase.class"/>
+<file path="com/sap/caf/rt/bol/IDependentObject.class"/>
+<file path="com/sap/caf/rt/bol/util/Condition.class"/>
+<file path="com/sap/caf/rt/bol/util/Order.class"/>
+<file path="com/sap/caf/rt/bol/util/OrderBy.class"/>
+<file path="com/sap/caf/rt/bol/util/Paging.class"/>
+<file path="com/sap/caf/rt/bol/util/QueryFilter.class"/>
+<file path="com/sap/caf/rt/bol/util/QueryFilterFactory.class"/>
+<file path="com/sap/caf/rt/connectivity/exception/CAFBAPIExecException$BAPIErrorMessageDescription.class"/>
+<file path="com/sap/caf/rt/connectivity/exception/CAFBAPIExecException.class"/>
+<file path="com/sap/caf/rt/connectivity/exception/CAFExtExecException.class"/>
+<file path="com/sap/caf/rt/connectivity/exception/CAFRFCExecException.class"/>
+<file path="com/sap/caf/rt/connectivity/exception/CAFWSExecException.class"/>
+<file path="com/sap/caf/rt/exception/CAFBONodeException.class"/>
+<file path="com/sap/caf/rt/exception/CAFBaseException.class"/>
+<file path="com/sap/caf/rt/exception/CAFBaseRuntimeException.class"/>
+<file path="com/sap/caf/rt/exception/CAFCreateException.class"/>
+<file path="com/sap/caf/rt/exception/CAFDataAccessException.class"/>
+<file path="com/sap/caf/rt/exception/CAFDeleteException.class"/>
+<file path="com/sap/caf/rt/exception/CAFFindException.class"/>
+<file path="com/sap/caf/rt/exception/CAFIllegalStateException.class"/>
+<file path="com/sap/caf/rt/exception/CAFLockException.class"/>
+<file path="com/sap/caf/rt/exception/CAFMissingMandatoryValueException.class"/>
+<file path="com/sap/caf/rt/exception/CAFOptimisticLockException.class"/>
+<file path="com/sap/caf/rt/exception/CAFPermissionException.class"/>
+<file path="com/sap/caf/rt/exception/CAFPessimisticLockException.class"/>
+<file path="com/sap/caf/rt/exception/CAFRetrieveException.class"/>
+<file path="com/sap/caf/rt/exception/CAFServiceException.class"/>
+<file path="com/sap/caf/rt/exception/CAFUnsupportedOperationException.class"/>
+<file path="com/sap/caf/rt/exception/CAFUpdateException.class"/>
+<file path="com/sap/caf/rt/exception/CAFValueTooLongException.class"/>
+<file path="com/sap/caf/rt/exception/FaultInfo.class"/>
+</fileset>
+<fileset location="javalib" source-location="gen" source-path="classes/com/sap/caf/rt/util/">
+<file path="com/sap/caf/rt/util/OrderByEntry.class" source-path="OrderByEntry.class"/>
+</fileset>
+<fileset location="jdoclet" source-location="gen" source-path="javadoc/api">
+<file path=".digest"/>
+<file path=".log"/>
+<file path=".symbols"/>
+<file path="class-list"/>
+<file path="com/sap/caf/rt/bol/IBusinessObjectNodeBase.jdoc"/>
+<file path="com/sap/caf/rt/bol/IBusinessObjectNodeServiceBase.jdoc"/>
+<file path="com/sap/caf/rt/bol/IDependentObject.jdoc"/>
+<file path="com/sap/caf/rt/bol/package-info.jdoc"/>
+<file path="com/sap/caf/rt/bol/util/Condition.jdoc"/>
+<file path="com/sap/caf/rt/bol/util/Order.jdoc"/>
+<file path="com/sap/caf/rt/bol/util/OrderBy.jdoc"/>
+<file path="com/sap/caf/rt/bol/util/Paging.jdoc"/>
+<file path="com/sap/caf/rt/bol/util/QueryFilter.jdoc"/>
+<file path="com/sap/caf/rt/bol/util/QueryFilterFactory.jdoc"/>
+<file path="com/sap/caf/rt/bol/util/package-info.jdoc"/>
+<file path="com/sap/caf/rt/connectivity/exception/CAFBAPIExecException$BAPIErrorMessageDescription.jdoc"/>
+<file path="com/sap/caf/rt/connectivity/exception/CAFBAPIExecException.jdoc"/>
+<file path="com/sap/caf/rt/connectivity/exception/CAFExtExecException.jdoc"/>
+<file path="com/sap/caf/rt/connectivity/exception/CAFRFCExecException.jdoc"/>
+<file path="com/sap/caf/rt/connectivity/exception/CAFWSExecException.jdoc"/>
+<file path="com/sap/caf/rt/connectivity/exception/package-info.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFBONodeException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFBaseException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFBaseRuntimeException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFCreateException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFDataAccessException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFDeleteException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFFindException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFIllegalStateException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFLockException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFMissingMandatoryValueException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFOptimisticLockException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFPermissionException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFPessimisticLockException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFRetrieveException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFServiceException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFUnsupportedOperationException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFUpdateException.jdoc"/>
+<file path="com/sap/caf/rt/exception/CAFValueTooLongException.jdoc"/>
+<file path="com/sap/caf/rt/exception/FaultInfo.jdoc"/>
+<file path="com/sap/caf/rt/exception/package-info.jdoc"/>
+<file path="com/sap/caf/rt/util/OrderByEntry.jdoc"/>
+<file path="com/sap/caf/rt/util/package-info.jdoc"/>
+<file path="publisher-doc/sapcm.dc/sap.com/caf/runtime/api/publisher-info.jdoc"/>
+<file path="publisher-doc/sapcm.pp/sap.com/caf/runtime/api/api/publisher-info.jdoc"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="src/packages">
+<file path="com/sap/caf/rt/bol/IBusinessObjectNodeBase.java"/>
+<file path="com/sap/caf/rt/bol/IBusinessObjectNodeServiceBase.java"/>
+<file path="com/sap/caf/rt/bol/IDependentObject.java"/>
+<file path="com/sap/caf/rt/bol/util/Condition.java"/>
+<file path="com/sap/caf/rt/bol/util/Order.java"/>
+<file path="com/sap/caf/rt/bol/util/OrderBy.java"/>
+<file path="com/sap/caf/rt/bol/util/Paging.java"/>
+<file path="com/sap/caf/rt/bol/util/QueryFilter.java"/>
+<file path="com/sap/caf/rt/bol/util/QueryFilterFactory.java"/>
+<file path="com/sap/caf/rt/connectivity/exception/CAFBAPIExecException.java"/>
+<file path="com/sap/caf/rt/connectivity/exception/CAFExtExecException.java"/>
+<file path="com/sap/caf/rt/connectivity/exception/CAFRFCExecException.java"/>
+<file path="com/sap/caf/rt/connectivity/exception/CAFWSExecException.java"/>
+<file path="com/sap/caf/rt/exception/CAFBONodeException.java"/>
+<file path="com/sap/caf/rt/exception/CAFBaseException.java"/>
+<file path="com/sap/caf/rt/exception/CAFBaseRuntimeException.java"/>
+<file path="com/sap/caf/rt/exception/CAFCreateException.java"/>
+<file path="com/sap/caf/rt/exception/CAFDataAccessException.java"/>
+<file path="com/sap/caf/rt/exception/CAFDeleteException.java"/>
+<file path="com/sap/caf/rt/exception/CAFFindException.java"/>
+<file path="com/sap/caf/rt/exception/CAFIllegalStateException.java"/>
+<file path="com/sap/caf/rt/exception/CAFLockException.java"/>
+<file path="com/sap/caf/rt/exception/CAFMissingMandatoryValueException.java"/>
+<file path="com/sap/caf/rt/exception/CAFOptimisticLockException.java"/>
+<file path="com/sap/caf/rt/exception/CAFPermissionException.java"/>
+<file path="com/sap/caf/rt/exception/CAFPessimisticLockException.java"/>
+<file path="com/sap/caf/rt/exception/CAFRetrieveException.java"/>
+<file path="com/sap/caf/rt/exception/CAFServiceException.java"/>
+<file path="com/sap/caf/rt/exception/CAFUnsupportedOperationException.java"/>
+<file path="com/sap/caf/rt/exception/CAFUpdateException.java"/>
+<file path="com/sap/caf/rt/exception/CAFValueTooLongException.java"/>
+<file path="com/sap/caf/rt/exception/FaultInfo.java"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="src/packages/com/sap/caf/rt/util/">
+<file path="com/sap/caf/rt/util/OrderByEntry.java" source-path="OrderByEntry.java"/>
+</fileset>
+</entity>
+</entities>
+</content>

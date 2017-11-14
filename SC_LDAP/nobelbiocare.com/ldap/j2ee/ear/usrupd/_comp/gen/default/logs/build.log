@@ -1,0 +1,111 @@
+Development Component Build (2017-04-04 12:31:58 GMT+01:00 (CEST))
+  Component name: ldap/j2ee/ear/usrupd
+  Component vendor: nobelbiocare.com
+  SC compartment: SC_LDAP
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: pedro.jimenez@MADNB2016
+  DC root folder: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_LDAP\nobelbiocare.com\ldap\j2ee\ear\usrupd\_comp\
+  DC type: J2EE
+  DC subtype: Enterprise Application
+  Host: MADNB2016
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/enterpriseApplication"
+   validating dependency to  public part "ejbjar" of DC "nobelbiocare.com/ldap/j2ee/ejb/usrupd"
+   validating dependency to used DC "nobelbiocare.com/ldap/j2ee/extlib/ldapapi"
+   validating dependency to  public part "api" of DC "nobelbiocare.com/ldap/j2ee/extlib/ldapapi"
+   validating dependency to  public part "archives" of DC "nobelbiocare.com/ldap/j2ee/extlib/ldapapi"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/enterpriseApplication
+   starting build plugin from : D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\enterpriseApplication\_comp\gen\default\public\enterpriseApplication\
+
+
+
+Build Plugin 'EnterpriseApplicationPlugin', Version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:50:02 +0200, CL209430)
+   development component:  ldap/j2ee/ear/usrupd (nobelbiocare.com)
+      software component:  SC_LDAP (nobelbiocare.com)
+                location:  localDevelopment
+                    type:  J2EE, subtype Enterprise Application
+           build variant:  default
+         source location:  pedro.jimenez@MADNB2016
+         output location:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\A530E85FAAE393CB575966E5FAD37639\default
+       generation folder:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\A530E85FAAE393CB575966E5FAD37639
+       plugin start time:  2017-04-04 12:31:58 GMT+02:00 (CEST)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.13-b02 (1.6, Sun Microsystems Inc.)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Checking path lengths for sources
+Path length checks finished in 0 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.016 seconds
+ 
+Creating Ant build file..
+  Creating output file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\A530E85FAAE393CB575966E5FAD37639\default\logs\build.xml
+  Using Java class:     com.sap.tc.buildplugin.BuildEnterpriseApplication
+Target "createDeployArchive" has a dependency on "compile" but no such target exists. Dependency will be ignored.
+Build file creation finished in 0.015 seconds
+ 
+Starting Ant..
+  Using build file:     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\A530E85FAAE393CB575966E5FAD37639\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+createDeployArchive:
+       [cdu] Preparing archive for deploy unit "default"
+       [cdu]   deployment type: "J2EE"
+       [cdu] Runtime dependency to "ldap/j2ee/extlib/ldapapi" ("nobelbiocare.com") will be ignored because of an incompatible type.
+       [cdu] Deploy-time dependency to "ldap/j2ee/extlib/ldapapi" ("nobelbiocare.com") will be ignored because of an incompatible type.
+ 
+       [cdu] Creating Ant build file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\A530E85FAAE393CB575966E5FAD37639\default\logs\buildDeployArchive.xml
+ 
+       [cdu] Creating descriptor META-INF/sda-dd.xml ...
+ 
+       [cdu] Skipping creation of application.xml for JEE5 archive.
+ 
+       [cdu] Validating descriptor D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_LDAP\nobelbiocare.com\ldap\j2ee\ear\usrupd\_comp\META-INF\application-j2ee-engine.xml
+       [cdu] Setting provider name to "nobelbiocare.com".
+ 
+       [cdu] Collecting modules ...
+       [cdu] Adding module 'nobelbiocare.com~ldap~j2ee~ejb~usrupd.jar' from DC 'ldap/j2ee/ejb/usrupd' (vendor 'nobelbiocare.com'), public part 'ejbjar'
+       [cdu] Adding module 'ldap.jar' from DC 'ldap/j2ee/extlib/ldapapi' (vendor 'nobelbiocare.com'), public part 'archives'
+       [cdu] Ant build file creation finished in 0.016 seconds
+ 
+packDeployArchive:
+ [srcpacker] Creating source archive
+ [srcpacker] Adding source archive from nobelbiocare.com~ldap/j2ee/ejb/usrupd
+     [timer] Source archive creation finished in 0.015 seconds
+ 
+    [jarsap] Info: JarSAP version 20090803.1000
+    [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
+    [jarsap] Building: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\A530E85FAAE393CB575966E5FAD37639\default\deploy\nobelbiocare.com~ldap~j2ee~ear~usrupd.ear with compression
+     [timer] JarSAP finished in 0.032 seconds
+ 
+ 
+build:
+ 
+Ant runtime 0.079 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2017-04-04 12:31:58 GMT+02:00 (CEST)
+Total build plugin runtime: 0.188 seconds
+ 
+Build finished with WARNING
+
+==== Post-Processing ====   started at 2017-04-04 12:31:58.667 CEST
+Comparison of previous and actual build results took: 0 seconds
+
+Copy the build results 
+  from: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\A530E85FAAE393CB575966E5FAD37639\default\
+  to:   D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_LDAP\nobelbiocare.com\ldap\j2ee\ear\usrupd\_comp\gen\default\

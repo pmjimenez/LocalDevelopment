@@ -1,0 +1,614 @@
+Development Component Build (2017-11-14 10:26:39 GMT+01:00 (CET))
+  Component name: p_sfdc/pr/pm/cu/customer_sync
+  Component vendor: nobelbiocare.com
+  SC compartment: SC_SFDC
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: pedro.jimenez@MADNB2016
+  DC root folder: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\p_sfdc\pr\pm\cu\customer_sync\_comp\
+  DC type: Process Composer
+  Host: MADNB2016
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bpem/bi/bp/buildtool"
+   validating dependency to used DC "nobelbiocare.com/p_sfdc/infra/sgc"
+   validating dependency to  public part "mc" of DC "nobelbiocare.com/p_sfdc/infra/sgc"
+   validating dependency to used DC "sap.com/bie/sca/scdl/contributors/glx"
+   validating dependency to  public part "def" of DC "sap.com/bie/sca/scdl/contributors/glx"
+   validating dependency to used DC "sap.com/bie/sca/scdl/contributors/mc"
+   validating dependency to  public part "def" of DC "sap.com/bie/sca/scdl/contributors/mc"
+   validating dependency to  public part "def" of DC "sap.com/bie/sca/scdl/contributors/xi"
+   validating dependency to used DC "sap.com/bie/sca/scdl/gen"
+   validating dependency to  public part "def" of DC "sap.com/bie/sca/scdl/gen"
+   validating dependency to used DC "sap.com/bie/sca/scdl/gen/mc"
+   validating dependency to  public part "def" of DC "sap.com/bie/sca/scdl/gen/mc"
+   validating dependency to used DC "sap.com/bie/sca/scdl/gen/xlf2prop"
+   validating dependency to  public part "def" of DC "sap.com/bie/sca/scdl/gen/xlf2prop"
+   validating dependency to  public part "MM_Inf" of DC "sap.com/ide/es/config/mc/model/bi"
+   validating dependency to used DC "sap.com/tc/bpem/content/predefs/default"
+   validating dependency to  public part "def_cmp" of DC "sap.com/tc/bpem/content/predefs/default"
+   validating dependency to used DC "sap.com/tc/bpem/content/predefs/types"
+   validating dependency to  public part "def_cmp" of DC "sap.com/tc/bpem/content/predefs/types"
+   validating dependency to  public part "MM_Inf" of DC "sap.com/tc/moin/bi/model/textverticalization"
+   validating dependency to  public part "def" of DC "sap.com/tc/moin/bi/moinext"
+   validating dependency to  public part "libinf" of DC "sap.com/tc/moin/bi/moinlibs"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bpem/bi/bp/buildtool
+   starting build plugin from : D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\BPEM-BUILDT\sap.com\tc\bpem\bi\bp\buildtool\_comp\gen\default\public\def\
+
+
+
+Build Plugin 'sap.com/tc/bpem/bi/bp/buildtool', Version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:53:16 +0200, CL209430)
+   development component:  p_sfdc/pr/pm/cu/customer_sync (nobelbiocare.com)
+      software component:  SC_SFDC (nobelbiocare.com)
+                location:  localDevelopment
+                    type:  Process Composer
+           build variant:  default
+         source location:  pedro.jimenez@MADNB2016
+         output location:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default
+       generation folder:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\D4193CFD60960F38BBBB32068F975AFE
+       plugin start time:  2017-11-14 10:26:41 GMT+01:00 (CET)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.45-b01 (1.6, Sun Microsystems Inc.)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Checking path lengths for sources
+This component contains long pathnames, this may lead to build errors or unexpected results. (For example: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\p_sfdc\pr\pm\cu\customer_sync\_comp\mc\com\sap\netweaver\developerstudio\cc\LocalDevelopment~p_sfdc~pr~pm~cu~customer_sync~nobelbiocare\com\Business User.authprofile )
+Path length checks finished in 0 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.016 seconds
+ 
+Creating Ant build file..
+  Creating output file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\logs\build.xml
+  Using Java class:     com.sap.tc.glx.BuildFileCreator
+Mapped output path "default" of generator "sap.com~bpem_chain/moininit" is not defined.
+MoinInit generator started.
+MOIN archive DC referenced: sap.com/tc/bpem/content/predefs/default
+MOIN archive found: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\BPEM-CONTENT\sap.com\tc\bpem\content\predefs\default\_comp\gen\default\public\def_cmp\lib\moin\sap.com~tc~bpem~content~predefs~default~def_cmp.zip
+MOIN archive DC referenced: sap.com/tc/bpem/content/predefs/types
+MOIN archive found: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SERVICE-COMP\sap.com\tc\bpem\content\predefs\types\_comp\gen\default\public\def_cmp\lib\moin\sap.com~tc~bpem~content~predefs~types~def_cmp.zip
+Metamodels found.
+MoinInit generator started.
+MOIN archive DC referenced: sap.com/tc/bpem/content/predefs/default
+MOIN archive found: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\BPEM-CONTENT\sap.com\tc\bpem\content\predefs\default\_comp\gen\default\public\def_cmp\lib\moin\sap.com~tc~bpem~content~predefs~default~def_cmp.zip
+MOIN archive DC referenced: sap.com/tc/bpem/content/predefs/types
+MOIN archive found: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SERVICE-COMP\sap.com\tc\bpem\content\predefs\types\_comp\gen\default\public\def_cmp\lib\moin\sap.com~tc~bpem~content~predefs~types~def_cmp.zip
+Metamodels found.
+Output folder found.
+Target "Xlf2PropBase" has a dependency on "compile" but no such target exists. Dependency will be ignored.
+Target "ScdlBase" has a dependency on "compile" but no such target exists. Dependency will be ignored.
+Build file creation finished in 0.109 seconds
+ 
+Starting Ant..
+  Using build file:     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+ScdlBase:
+  [MOINInit] Meta models found.
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ESCONF_BUILDT\sap.com\ide\es\config\mc\model\bi\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~ide~es~config~mc~model_xmi.zip
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\bpem\bi\model\flow\_comp\gen\default\public\MM_Inf\lib\moin\glx~ide_xmi.jar
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\BPEM-BUILDT\sap.com\tc\bpem\bi\model\triggernet\_comp\gen\default\public\MM_Inf\lib\moin\glx~tnet_xmi.jar
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\wsdl20\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~wsdl20_xmi.zip
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\xsd1\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~xsd1_xmi.zip
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\mie\bi\model\gfw\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~com~sap~mi~gfw~mm~def_assmbl.zip
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip
+  [MOINInit] DataArea name: DefaultDataArea
+  [MOINInit] Moin initialized in 7494 milliseconds.
+      [echo] Registering folder: gensrc/extcfg for path: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\D4193CFD60960F38BBBB32068F975AFE\gensrc\extcfg/
+      [echo] Starting Extension Configuration generator...
+  [gen_scdl] 		[SCDL_GEN] Initializing Scdl Generation...
+  [gen_scdl] 		[SCDL_GEN] Initialization successfully completed.
+  [gen_scdl] 		[SCDL_GEN] Starting retrieval of information from contributors...
+  [gen_scdl] [System.out] [Invoked from com.sap.tc.esmp.tools.wsdlexport.core.SdoWsdlExporter.addSchemaDoc(SdoWsdlExporter.java:453)]
+  [gen_scdl] [System.out] inline
+  [gen_scdl] 		[SCDL_GEN] Information retrieval from contributors successfully completed!
+  [gen_scdl] 		[SCDL_GEN] Starting composite export to SCDL...
+  [gen_scdl] 			[SCDL-EXPORT] Scdl file output location: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\D4193CFD60960F38BBBB32068F975AFE/scdl_output\META-INF\p_sfdc~pr~pm~cu~customer_sync.composite
+  [gen_scdl] 			[SCDL-EXPORT] sca contribution XML output location: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\D4193CFD60960F38BBBB32068F975AFE/scdl_output\META-INF\sca-contribution.xml
+  [gen_scdl] 		[SCDL_GEN] Conversion successfully completed!
+     [timer] Extension Configuration generator finished in 2.639 seconds
+ 
+[MOINShutdown] About to shutdown MOIN...
+[MOINShutdown] MOIN shut down in 78 milliseconds.
+ 
+Xlf2PropBase:
+      [echo] Start XLF conversion
+  [xlf2prop] Found 6 XLF files to convert in folder "mc"
+     [timer] XLF conversion finished in 0.48 seconds
+ 
+      [copy] Copying 6 files to D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\D4193CFD60960F38BBBB32068F975AFE\xlf_out
+ 
+Bpem:
+  [MOINInit] Meta models found.
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ESCONF_BUILDT\sap.com\ide\es\config\mc\model\bi\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~ide~es~config~mc~model_xmi.zip
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\bpem\bi\model\flow\_comp\gen\default\public\MM_Inf\lib\moin\glx~ide_xmi.jar
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\BPEM-BUILDT\sap.com\tc\bpem\bi\model\triggernet\_comp\gen\default\public\MM_Inf\lib\moin\glx~tnet_xmi.jar
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\wsdl20\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~wsdl20_xmi.zip
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\xsd1\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~xsd1_xmi.zip
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\mie\bi\model\gfw\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~com~sap~mi~gfw~mm~def_assmbl.zip
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip
+  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip
+  [MOINInit] DataArea name: DefaultDataArea
+  [MOINInit] Moin initialized in 1553 milliseconds.
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Metamodel version validation...
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Sanity check is enabled, com.glx.sanity.check system property isn't false.
+  [BpemTask] WSDL Location:src/wsdl/MI290_BPM_CustomerCreditCard_Set_os.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync
+  [BpemTask] [System.out] [Invoked from com.sap.tc.esmp.tools.wsdlexport.core.SdoWsdlExporter.addSchemaDoc(SdoWsdlExporter.java:453)]
+  [BpemTask] [System.out] inline
+  [BpemTask] WSDL Location:src/wsdl/BRM001_Customer_Dummy_PE_Table.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync
+  [BpemTask] WSDL Location:src/wsdl/MI278_BPM_CustomerShipDetails_Set_os.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync
+  [BpemTask] WSDL Location:src/wsdl/MI291_BPM_AccountTeamMember_Set_os.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync
+  [BpemTask] WSDL Location:src/wsdl/MI278_BPM_GetAccountLocationId_os.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync
+  [BpemTask] WSDL Location:src/wsdl/MI277_BPM_Upsert_CustomerData_os.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync
+  [BpemTask] WSDL Location:src/wsdl/MI277_BPM_Change_CustomerData_os.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync
+  [BpemTask] WSDL Location:src/wsdl/MI289_BPM_CustomerLocation_Delete_os.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync
+  [BpemTask] WSDL Location:src/wsdl/MI289_BPM_CustomerLocation_Set_os.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync
+  [BpemTask] WSDL Location:src/wsdl/MI289_BPM_GetAccountId_os.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync
+  [BpemTask] WSDL Location:src/wsdl/MI277_BPM_GetCustomerOwner_os.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync
+  [BpemTask] WSDL Location:src/wsdl/MI276_BPM_SendAleaud_oa.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync
+  [BpemTask] WSDL Location:src/wsdl/MI291_BPM_AccountTeamMember_Delete_os.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync
+  [BpemTask] WSDL Location:src/wsdl/rootwsdl_SimpleTimerServices.wsdl
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/default
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.SourceVersioner compile(host, artifact) - Generating version IDs for sources...
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Initiating rule compilation.
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Initiating event definition constraint check.
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Constraint check for event definitions is done.
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Initiating event definition compilation.
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Event def: com.sap.glx.ide.model.galaxy.workflow.MessageEventDefinition (Java Type)
+  [BpemTask] Galaxy.Workflow.MessageEventDefinition (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/triggers/tr_customer_sync_salesforce.eventdef#E0DCF6CDD97A1DC60B0011E7ADDB0205857FEB80 (MRI)
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/nobelbiocare.com.bpm.sfdc.customer.types#E007956A7516A9FF139E11E7B64A0205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling com.sap.glx.ide.model.galaxy.workflow.MessageEventDefinition (Java Type)
+  [BpemTask] Galaxy.Workflow.MessageEventDefinition (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/triggers/tr_customer_sync_salesforce.eventdef#E0DCF6CDD97A1DC60B0011E7ADDB0205857FEB80 (MRI), CompilerType: INTERFACECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Initiating task constraint check.
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Constraint check for Tasks is done.
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Initiating task compilation.
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Initiating data mapping validation.
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Data mapping validation is done.
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Initiating process constraint check.
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Constraint check for processes is done
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Initiating process compilation.
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling com.sap.glx.ide.model.galaxy.workflow.Collaboration (Java Type)
+  [BpemTask] Galaxy.Workflow.Collaboration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0EE4DB20CD5A76504A511E791DC0205857FEB80 (MRI), CompilerType: XLFFACTORY
+  [BpemTask] Packaging XLF file 'D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\p_sfdc\pr\pm\cu\customer_sync\_comp\src\bpmn\p_bpm_009_customer_sync_sap_cvm.bpmn.xlf'.
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling com.sap.glx.ide.model.galaxy.workflow.Collaboration (Java Type)
+  [BpemTask] Galaxy.Workflow.Collaboration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0EE4DB20CD5A76504A511E791DC0205857FEB80 (MRI), CompilerType: DIAGRAMTOXMLCONVERTER
+  [BpemTask] PV file generation: parsing...
+  [BpemTask] PV file generation done.
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0B1AF7442E230C404A511E780820205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0DCF6CD4B2F31612C2011E7A02400FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/boolean/and.function#481F3B2A913CF8E01AC311DD91950018717335EB (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/boolean/and.function#481F3B2A9135CCF01AC311DDCCFD0018717335EB (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/default/_comp/src/functions/sap.com/bpem/glx/built-in/principal/getprincipals.function#481F3B33968275A41AC311DDC9ED0018717335EB (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/default/_comp/src/functions/sap.com/bpem/glx/built-in/principal/getprincipals.function#481F3B33968004A11AC311DDAA030018717335EB (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C85019C8314A711E7861F00FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0B1AF7442E40FF604A511E7BB4E0205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/nobelbiocare.com.bpm.sfdc.customer.types#E0356A040F2841A10EF511E7B0E600FFC53F5B0A (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/nobelbiocare.com.bpm.sfdc.customer.types#E0356A040F2841A00EF511E7C65A00FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/partner.soap.sforce.com.types#E0469530B9D6405C0B2D11E7991F0205857FEB80 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/nobelbiocare.com.bpm.sfdc.customer.types#E0356A04303D192E0EDD11E7B55800FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C17D3C80C193D11E7906154EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C13D8B0B1193E11E7C1A154EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0DCF6CD99BAE46A0B2E11E788D90205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/string-equal.function#481F3B3295D916401AC311DD8E890018717335EB (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/string-equal.function#481F3B3295D45B571AC311DDB2BA0018717335EB (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C053CDDFD193C11E781F654EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0DCF6CD4B2258AB2C2011E7C15400FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575CA73A51F4193711E79F2B54EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/nobelbiocare.com.types#E0E1B8C6E4CB9154095A11E7A9870205857FEB80 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/nobelbiocare.com.types#E0E1B8C6E4CBDFA6095A11E7B1070205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C13D3FBC4193E11E7B97A54EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E012BF1EAA22846D0EEE11E7984800FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C17D59C9C193D11E79E1054EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/boolean/or.function#481F3B2B917631501AC311DD94FD0018717335EB (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/boolean/or.function#481F3B2B917176601AC311DD95790018717335EB (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E012BF1E107A0D790EDE11E795BD00FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C17C53C70193D11E7CD6F54EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/generic/nilled.function#496CA15C3F654A69E17C11DDBE180019991C7C01 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/generic/nilled.function#496CA15C3F63C3C3E17C11DDBBED0019991C7C01 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0DCF6CD4B31A4852C2011E7BAEF00FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/string.function#481F3B33963AE5501AC311DDC2690018717335EB (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/string.function#481F3B3396362A671AC311DDC30C0018717335EB (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/nobelbiocare.com.bpm.sfdc.customer.types#E0356A04303D192E0EDD11E7B55800FFC53F5B0A (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/partner.soap.sforce.com.types#E007956A1580759E132711E7C7670205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E009322E7AF9FC242AA311E783F400FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0B1AF744302278B04A511E7AEF00205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/string-length.function#481F3B3295F80FF61AC311DDCC830018717335EB (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/string-length.function#481F3B3295F5C6051AC311DDBFA60018717335EB (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0B1AF7442E3444604A511E7B0D60205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0B1AF7475AAA7CF04A511E7AE830205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575CBEF1A80C0FEB11E7A94E0205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/nobelbiocare.com.bpm.sfdc.customer.types#E0356A041DA9F04A0EDD11E7AE7500FFC53F5B0A (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/partner.soap.sforce.com.types#E0C792CE256E5FC6148411E7956D00FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/generic/count.function#49182A2ED4053498AF2311DD90AF0019991C7C01 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/generic/count.function#49182A2ED403ADF0AF2311DD98410019991C7C01 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575CEEBB7AB50FE211E7C2990205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C13E2418E193E11E7B93A54EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/nobelbiocare.com.bpm.sfdc.customer.types#E0356A048B8282FF0EED11E7A1E400FFC53F5B0A (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/partner.soap.sforce.com.types#E0C792CE9D6A801F148811E7BF6400FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C13E4AA29193E11E798F254EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0DCF6CD4B249EF52C2011E7A27700FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C13D1930D193E11E787D254EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0DCF6CD904296AC0B2D11E7C9580205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C13DB341D193E11E7BC7A54EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0DCF6CD4B2CE48E2C2011E7B23000FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C0A62BE72193C11E78CD254EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/generic/isset.function#492D235E1CDA4480BBA411DD8C2C0019991C7C01 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/generic/isset.function#492D235E1CD42A00BBA411DDA7860019991C7C01 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C05418569193C11E797AB54EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C17C34C66193D11E7C6D854EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/substring.function#481F3B339659DF041AC311DD94990018717335EB (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/substring.function#481F3B33965524171AC311DD8CC30018717335EB (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C13DD5BD8193E11E7C54D54EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C05418568193C11E7C1EB54EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575CEB1DA26E13A011E79EE20205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C0A64FA62193C11E783BB54EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/concat.function#481F3B3295C3B9881AC311DDAEFA0018717335EB (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/concat.function#481F3B3295C148851AC311DDB0480018717335EB (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/nobelbiocare.com.bpm.sfdc.customer.types#E0469530650856CF0B2E11E7B4000205857FEB80 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/partner.soap.sforce.com.types#E0C792CE256E5FC6148411E7956D00FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C1AE0F8C6193C11E79F8A54EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575CA035B34B0FF311E7C9220205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0E1B8C6E98270F5127311E7A2FB0205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C1AE82531193C11E7A43B54EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C1AE37416193C11E7CF9E54EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C15522D12193C11E7882154EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/boolean/not.function#481F3B2B915E63901AC311DDB23E0018717335EB (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/boolean/not.function#481F3B2B9159A8A01AC311DDB39D0018717335EB (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/nobelbiocare.com.bpm.sfdc.customer.types#E007956AE36429CA0FE211E7B8160205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C17CAF07F193D11E79B3454EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0DCF6CD4B39BAEC2C2011E7B2B500FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C1AEAAD81193C11E7BD3354EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/partner.soap.sforce.com.types#E0469530B9D6405C0B2D11E7991F0205857FEB80 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/nobelbiocare.com.bpm.sfdc.customer.types#E0469530B9D3EA9F0B2D11E79A8F0205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/nobelbiocare.com.bpm.sfdc.customer.types#E0469530650856CF0B2E11E7B4000205857FEB80 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/partner.soap.sforce.com.types#E0C792CE9D6A801F148811E7BF6400FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C6B33DA7013A111E790B00205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/nobelbiocare.com.bpm.sfdc.customer.types#E0356A042A88FCD40EF711E7A46700FFC53F5B0A (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/rep/wsdl/partner.soap.sforce.com.types#E0C792CEB15BBABE148811E7B5A400FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0B1AF74431D273104A511E7BBFC0205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575CAC1F6A0F146511E7A55D0205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/starts-with.function#481F3B339627D2881AC311DDC5910018717335EB (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/starts-with.function#481F3B33962561831AC311DD941C0018717335EB (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0DCF6CD821288190B2D11E78DF50205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/finite-integer/numeric-greater-than.function#481F3B2E934E4CBA1AC311DDB3610018717335EB (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/finite-integer/numeric-greater-than.function#481F3B2E934BDBB51AC311DD9ADF0018717335EB (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C154FC552193C11E7AB6754EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/default/_comp/src/triggers/technicalerror.eventdef#E0EE4DB2B3D5EBBEEAEE11E2BC6C001999A12632 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C850396CE14A711E7855A00FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0B1AF7475C6F49104A511E7CC650205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/string-join.function#481F3B3295F10B1A1AC311DD892B0018717335EB (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/text/string-join.function#481F3B3295EE9A161AC311DD84D60018717335EB (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575CEB1CCD2313A011E7C7440205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0DCF6CD4B2A5BA92C2011E79E6900FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0DCF6CD4B3762D32C2011E7998400FFC53F5B0A (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C17CCBA6F193D11E7C68554EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C17CEA008193D11E7CA6C54EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C0A605DA5193C11E79B5154EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0DCF6CDFAA4E9F70B0011E7AAB50205857FEB80 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C15489604193C11E7CA4254EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/generic/get.function#49182A9D1602AB22AF2411DD80790019991C7C01 (MRI), com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/types/_comp/rep/functions/sap.com/bpem/glx/built-in/generic/get.function#49182A9D15FE1747AF2411DDC68E0019991C7C01 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E016575C154D53E8193C11E7CF2554EFEC7B6400 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling [com.sap.tc.esmp.mm.xsd1.XsdElementDeclaration (Java Type)
+  [BpemTask] XSD1.XsdElementDeclaration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/default/_comp/src/triggers/technicalerror.eventdef#E0EE4DB2B3D5EBBEEAEE11E2BC6C001999A12632 (MRI)], CompilerType: TYPECOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling com.sap.glx.ide.model.galaxy.workflow.ErrorEventDefinition (Java Type)
+  [BpemTask] Galaxy.Workflow.ErrorEventDefinition (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/sap.com/tc/bpem/content/predefs/default/_comp/src/triggers/technicalerror.eventdef#E0EE4DB2B3D39C3FEAEE11E2BF54001999A12632 (MRI), CompilerType: EXCEPTIONCOMPILER
+  [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask processCompilerObj(obj , compDir) - Compiling com.sap.glx.ide.model.galaxy.workflow.Collaboration (Java Type)
+  [BpemTask] Galaxy.Workflow.Collaboration (MOF Type)
+  [BpemTask] PF.DefaultDataArea:DCs/nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/_comp/src/bpmn/p_bpm_009_customer_sync_sap_cvm.bpmn#E0EE4DB20CD5A76504A511E791DC0205857FEB80 (MRI), CompilerType: BPMN2CSVCOMPILER
+  [BpemTask] Compiling process 'Customer Synchronization SAP to CVM' ...
+  [BpemTask] Node 'SWITCH_Customer_Synchronization_SAP_to_CVM_token_state_wo_suspend_1' of the generated triggernet has no outgoing connector.
+  [BpemTask] Transforming Trigger Network into CSV...
+  [BpemTask] Node 'SWITCH_Customer_Synchronization_SAP_to_CVM_token_state_wo_suspend_1' of the generated triggernet has no outgoing connector.
+  [BpemTask] WS Provisioning post processing started for %d artifacts found.
+  [BpemTask] 1
+  [BpemTask] Modelled endpoint for post processing found (service '%s', operation '%s', interface '{%s}%s'.
+  [BpemTask] nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/TR_Customer_Sync_SalesForce
+  [BpemTask] MI276_BPM_CustomerData_Set_ia
+  [BpemTask] http://nobelbiocare.com/BPM/SFDC/Customer
+  [BpemTask] MI276_BPM_CustomerData_Set_ia
+  [BpemTask] Writing WSDL location '%s' to file '%s'.
+  [BpemTask] src/wsdl/MI276_BPM_CustomerData_Set_ia.wsdl
+  [BpemTask] META-INF/wsdl/nobelbiocarecom2Fpsfdc2Fpr2Fpm2Fcu2Fcustomersync2FTRCustomerSyncSalesForce/src/wsdl/MI276_BPM_CustomerData_Set_ia.wsdl
+  [BpemTask] Creating metadata for service url '%s'.
+  [BpemTask] /bpm/nobelbiocarecom/psfdc/pr/pm/cu/customersync/TRCustomerSyncSalesForce
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA generateArchive(outArchive, srcDir) - D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\ctx\nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.wsar archive is generated
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA copyMcArchive(File publicFolder) -Including Mass Configuration archive into sda
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA copyScdlFiles(File scdlFolder) - Including SCDL files into sda
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA getSubdirFiles(String parent, File subdir)  - copyFile: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\ctx/p_sfdc~pr~pm~cu~customer_sync.composite
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA getSubdirFiles(String parent, File subdir)  - copyFile: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\ctx/sca-contribution.xml
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA copyScdlGlobalizationFiles(File scdlXlfFolder) - Including SCDL globalization files into sda
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA copyScdlGlobalizationFiles(File scdlXlfFolder) - copyFile: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\ctx/1852e78a-ee9e-40e8-a48e-54406f08bc7d.consgroup.properties
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA copyScdlGlobalizationFiles(File scdlXlfFolder) - copyFile: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\ctx/1b0d2a60-e2ad-4b82-942d-4f9a386e744c.consgroup.properties
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA copyScdlGlobalizationFiles(File scdlXlfFolder) - copyFile: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\ctx/Business or Technical User.authprofile.properties
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA copyScdlGlobalizationFiles(File scdlXlfFolder) - copyFile: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\ctx/Business User.authprofile.properties
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA copyScdlGlobalizationFiles(File scdlXlfFolder) - copyFile: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\ctx/No Authentication.authprofile.properties
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA copyScdlGlobalizationFiles(File scdlXlfFolder) - copyFile: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\ctx/Technical User.authprofile.properties
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA execute(name, vendor, location, version, srcDir) -Generating SDA...
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA generateArchive(outArchive, srcDir) - D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\ctx\nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem archive is generated
+[MOINShutdown] About to shutdown MOIN...
+[MOINShutdown] MOIN shut down in 94 milliseconds.
+    [delete] Deleting directory D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\ctx
+    [delete] Deleting: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\sda-dd.xml
+ 
+createPublicParts:
+  [pppacker] Packing public part 'def_cmp'
+  [pppacker] DC being built: p_sfdc/pr/pm/cu/customer_sync
+  [pppacker] Searching for entity: mc.
+  [pppacker] Checking path: mc
+  [pppacker] Checking path: rep
+  [pppacker] Checking path: src
+  [pppacker] Packed  13 files for entity mc (Model Folder Tree)
+  [pppacker] DC being built: p_sfdc/pr/pm/cu/customer_sync
+  [pppacker] Searching for entity: rep.
+  [pppacker] Checking path: mc
+  [pppacker] Checking path: rep
+  [pppacker] Checking path: src
+  [pppacker] Packed   5 files for entity rep (Model Folder Tree)
+  [pppacker] DC being built: p_sfdc/pr/pm/cu/customer_sync
+  [pppacker] Searching for entity: src.
+  [pppacker] Checking path: mc
+  [pppacker] Checking path: rep
+  [pppacker] Checking path: src
+  [pppacker] Packed  19 files for entity src (Model Folder Tree)
+  [pppacker] Packed 3 entities for public part 'def_cmp'
+     [timer] Packing of public part 'def_cmp' finished in 0.789 seconds
+ 
+ 
+build:
+ 
+Ant runtime 27.658 seconds
+ 
+Ant build finished OK
+MOIN forced shutdown initiated.
+ 
+Build plugin finished at 2017-11-14 10:27:09 GMT+01:00 (CET)
+Total build plugin runtime: 28.424 seconds
+ 
+Build finished with WARNING
+
+==== Post-Processing ====   started at 2017-11-14 10:27:09.703 CET
+Comparison of previous and actual build results took: 0.031 seconds
+
+Copy the build results 
+  from: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\
+  to:   D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\p_sfdc\pr\pm\cu\customer_sync\_comp\gen\default\
+
+The build results of the following public parts were not copied, since they have not changed:
+  def_cmp

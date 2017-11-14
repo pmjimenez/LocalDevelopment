@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Partition xmlns:m='http://xml.sap.com/moin'>
+<C n='sap.com/com/sap/ide/es/config/mc/model' i='1' v='2.0.0'/>
+<M c='1' q='mc.logicalsystem.QName' i='471DAFAC55EC9E6C814111DCA447003005C6B92C'/>
+<M c='1' q='mc.servicereferences.ServiceReference' i='471DAFAC55EE250E814111DC8ECA003005C6B92C'/>
+<M c='1' q='mc.servicereferences.serviceref_logicalSystem' i='471DAFAC55EFABA2814111DCC1B9003005C6B92C' se='1' ce='-1' oe='-1'/>
+<M c='1' q='mc.servicereferences.serviceref_authenticationProfile' i='471DAFAC55EFABA5814111DCA3E1003005C6B92C' se='1' ce='-1' oe='-1'/>
+<M c='1' q='mc.servicereferences.serviceref_qname' i='471DAFAC55F13240814111DCC062003005C6B92C' se='1' ce='1' oe='-1'/>
+<M c='1' q='mc.servicereferences.ServiceReferenceCustomAttributes' i='E071FFE67B8562C5384611E09E32002710A58A9C'/>
+<M c='1' q='mc.servicereferences.ref_CustomAttributes' i='E071FFE6FAC645EF384611E08198002710A58A9C' se='1' ce='-1' oe='-1'/>
+<mc.logicalsystem.QName m:c='1' m:i='E012BF1E9FA62A88B2D911E4C432000C29AF3A8A' name='MIZ050C_TravelOD_contacts_Resp_EnhancedSAP' namespace='http://nobelbiocare.com/Salesforce/Contacts'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E012BF1E9FA62A89B2D911E49C1E000C29AF3A8A' id='cc81b8e3-e952-47ed-a882-7a6786796c0f' type='WS' bindingType='XI' scdlBindingType='xi'/>
+<mc.logicalsystem.QName m:c='1' m:i='E0356A0427C94C4BAE1211E4CDCF000C29AF3A8A' name='MIZ041_Salesforce_login' namespace='http://nobelbiocare.com/Salesforce/Contacts'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E0356A0427C94C4CAE1211E4815D000C29AF3A8A' id='6d294f96-214b-4b3f-88ae-aa2c84b96900' type='WS' bindingType='XI' scdlBindingType='xi'/>
+<mc.logicalsystem.QName m:c='1' m:i='E0356A047B233F42AE1111E4C746000C29AF3A8A' name='MIZ040_Salesforce_TravelOD_Customers_Trigger_Req' namespace='http://nobelbiocare.com/Salesforce/Contacts'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E0356A047B233F43AE1111E49698000C29AF3A8A' id='3e15c914-2095-48d0-853e-e48a770332bd' type='WS' bindingType='XI' scdlBindingType='xi'/>
+<mc.logicalsystem.QName m:c='1' m:i='E0356A047C0CB921AE1711E4ADC1000C29AF3A8A' name='MIZ050_TravelOD_contacts' namespace='http://nobelbiocare.com/Salesforce/Contacts'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E0356A047C0CB922AE1711E4B33C000C29AF3A8A' id='5d6bee05-83b7-493d-8dd7-ff2a455f678a' type='WS' bindingType='XI' scdlBindingType='xi'/>
+<mc.logicalsystem.QName m:c='1' m:i='E0356A04F68935E8AE1111E498A2000C29AF3A8A' name='SampleTimer' namespace='http://sap.com/glx/sampletimer/'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E0356A04F68935E9AE1111E483CB000C29AF3A8A' id='a6125ab3-3ca6-44bd-9897-7795781931da' type='WS' bindingType='WS' scdlBindingType='ws'/>
+<mc.logicalsystem.QName m:c='1' m:i='E0367719E5674A90B3A011E4CF85000C29AF3A8A' name='MIZ044_Salesforce_queryMore' namespace='http://nobelbiocare.com/Salesforce/Contacts'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E0367719E5674A91B3A011E4ACD1000C29AF3A8A' id='b8ae50d0-fdba-49b4-b1ad-2e20af5fe5dc' type='WS' bindingType='XI' scdlBindingType='xi'/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E03D999BA445369EAE1311E499C7000C29AF3A8A' key='senderServiceName' value='BPM_SYSTEM'/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E03D999BB0B8DBB7AE1311E4BF30000C29AF3A8A' key='senderServiceName' value='BPM_SYSTEM'/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E03D999BB86A619FAE1311E4AD9C000C29AF3A8A' key='senderServiceName' value='BPM_SYSTEM'/>
+<mc.logicalsystem.QName m:c='1' m:i='E04695308F7B8FE3B2A111E4B00B000C29AF3A8A' name='MIZ043_Salesforce_query' namespace='http://nobelbiocare.com/Salesforce/Contacts'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E04695308F7B8FE4B2A111E49A84000C29AF3A8A' id='7983295b-5fa5-45d0-844b-de89c2cc6701' type='WS' bindingType='XI' scdlBindingType='xi'/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0630A07BCB94E32B2D911E4926B000C29AF3A8A' key='senderServiceName' value='BPM_SYSTEM'/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E07B8DB97872940AAE1811E4CD85000C29AF3A8A' key='senderServiceName' value='BPM_SYSTEM'/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0A5ADB5F73F6DA7B3A011E48E8F000C29AF3A8A' key='senderServiceName' value='BPM_SYSTEM'/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0C851179DAF96B5B2A111E4B383000C29AF3A8A' key='senderServiceName' value='BPM_SYSTEM'/>
+<mc.servicereferences.serviceref_logicalSystem c='1'>
+<L f='local:E012BF1E9F9C875DB2D911E4B64D000C29AF3A8A' s='E012BF1E9FA62A89B2D911E49C1E000C29AF3A8A'/>
+<L f='local:E0356A0427B87AF3AE1211E481B9000C29AF3A8A' s='E0356A0427C94C4CAE1211E4815D000C29AF3A8A'/>
+<L f='local:E0356A047B0E0134AE1111E4BE7C000C29AF3A8A' s='E0356A047B233F43AE1111E49698000C29AF3A8A'/>
+<L f='local:E0356A047C07EA80AE1711E4C981000C29AF3A8A' s='E0356A047C0CB922AE1711E4B33C000C29AF3A8A'/>
+<L f='local:4925559F5D230461B6FD11DD82620018717335EB' s='E0356A04F68935E9AE1111E483CB000C29AF3A8A'/>
+<L f='local:E0367719E54F5C71B3A011E49C10000C29AF3A8A' s='E0367719E5674A91B3A011E4ACD1000C29AF3A8A'/>
+<L f='local:E04695308F7207D4B2A111E4A7BA000C29AF3A8A' s='E04695308F7B8FE4B2A111E49A84000C29AF3A8A'/>
+</mc.servicereferences.serviceref_logicalSystem>
+<mc.servicereferences.serviceref_authenticationProfile c='1'>
+<L f='local:E0356A047B21010CAE1111E4BCC5000C29AF3A8A' s='E012BF1E9FA62A89B2D911E49C1E000C29AF3A8A'/>
+<L f='local:E0356A047B21010CAE1111E4BCC5000C29AF3A8A' s='E0356A0427C94C4CAE1211E4815D000C29AF3A8A'/>
+<L f='local:E0356A047B21010CAE1111E4BCC5000C29AF3A8A' s='E0356A047B233F43AE1111E49698000C29AF3A8A'/>
+<L f='local:E0356A047B21010CAE1111E4BCC5000C29AF3A8A' s='E0356A047C0CB922AE1711E4B33C000C29AF3A8A'/>
+<L f='local:E0356A047B21010CAE1111E4BCC5000C29AF3A8A' s='E0356A04F68935E9AE1111E483CB000C29AF3A8A'/>
+<L f='local:E0356A047B21010CAE1111E4BCC5000C29AF3A8A' s='E0367719E5674A91B3A011E4ACD1000C29AF3A8A'/>
+<L f='local:E0356A047B21010CAE1111E4BCC5000C29AF3A8A' s='E04695308F7B8FE4B2A111E49A84000C29AF3A8A'/>
+</mc.servicereferences.serviceref_authenticationProfile>
+<mc.servicereferences.serviceref_qname c='1'>
+<L f='E012BF1E9FA62A88B2D911E4C432000C29AF3A8A' s='E012BF1E9FA62A89B2D911E49C1E000C29AF3A8A'/>
+<L f='E0356A0427C94C4BAE1211E4CDCF000C29AF3A8A' s='E0356A0427C94C4CAE1211E4815D000C29AF3A8A'/>
+<L f='E0356A047B233F42AE1111E4C746000C29AF3A8A' s='E0356A047B233F43AE1111E49698000C29AF3A8A'/>
+<L f='E0356A047C0CB921AE1711E4ADC1000C29AF3A8A' s='E0356A047C0CB922AE1711E4B33C000C29AF3A8A'/>
+<L f='E0356A04F68935E8AE1111E498A2000C29AF3A8A' s='E0356A04F68935E9AE1111E483CB000C29AF3A8A'/>
+<L f='E0367719E5674A90B3A011E4CF85000C29AF3A8A' s='E0367719E5674A91B3A011E4ACD1000C29AF3A8A'/>
+<L f='E04695308F7B8FE3B2A111E4B00B000C29AF3A8A' s='E04695308F7B8FE4B2A111E49A84000C29AF3A8A'/>
+</mc.servicereferences.serviceref_qname>
+<mc.servicereferences.ref_CustomAttributes c='1'>
+<L f='E0630A07BCB94E32B2D911E4926B000C29AF3A8A' s='E012BF1E9FA62A89B2D911E49C1E000C29AF3A8A'/>
+<L f='E03D999BA445369EAE1311E499C7000C29AF3A8A' s='E0356A0427C94C4CAE1211E4815D000C29AF3A8A'/>
+<L f='E03D999BB86A619FAE1311E4AD9C000C29AF3A8A' s='E0356A047B233F43AE1111E49698000C29AF3A8A'/>
+<L f='E07B8DB97872940AAE1811E4CD85000C29AF3A8A' s='E0356A047C0CB922AE1711E4B33C000C29AF3A8A'/>
+<L f='E0A5ADB5F73F6DA7B3A011E48E8F000C29AF3A8A' s='E0367719E5674A91B3A011E4ACD1000C29AF3A8A'/>
+<L f='E0C851179DAF96B5B2A111E4B383000C29AF3A8A' s='E04695308F7B8FE4B2A111E49A84000C29AF3A8A'/>
+</mc.servicereferences.ref_CustomAttributes>
+</Partition>

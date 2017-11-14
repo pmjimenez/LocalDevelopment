@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>LocalDevelopment~p_sfdc~ui~wd~nobelbiocare.com</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.sap.dictionary.tools.generation.GenerationBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.sap.ide.cmi.generation.GenerationBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.sap.ide.webdynpro.generation.GenerationBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.sap.mi.fwk.MoinConstraintChecker</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.sap.ide.webdynpro.archivebuilder.WebDynproNature</nature>
+		<nature>com.sap.ide.cmi.archivebuilder.CMINature</nature>
+		<nature>com.sap.dictionary.tools.archivebuilder.DictionaryNature</nature>
+		<nature>com.sap.ide.dii05.lib.dcnature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>com.sap.mi.fwk.dcfwk.MoinNature</nature>
+		<nature>com.sap.ide.es.config.mc.runtime.massconfignature</nature>
+	</natures>
+</projectDescription>

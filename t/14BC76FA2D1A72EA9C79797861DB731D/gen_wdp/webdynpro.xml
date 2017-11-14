@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+    <application-config>    
+    </application-config>
+    <components/>
+    <services/>
+    <webdynpro>
+        <!-- applications -->
+        <applications>
+        </applications>
+        <!-- components -->
+        <components>
+        </components>
+        <!-- interface definitions -->
+        <interfaces>
+        </interfaces>
+        <!-- models -->
+        <models>
+        </models>
+        <runtime-classes>
+        </runtime-classes> 
+        <wdgeninfo>
+            <wdgencomponent name="SapMetamodelCore">7.3117.20150914093542.0000 (release=NW731CORE_17_REL, buildtime=2015-09-16T18:11:52+0000, changelist=413114, host=vmw6054, is-central=true)</wdgencomponent>
+            <wdgencomponent name="SapMetamodelCommon">7.3117.20150914093542.0000 (release=NW731CORE_17_REL, buildtime=2015-09-16T18:13:39+0000, changelist=413114, host=vmw6054, is-central=true)</wdgencomponent>
+            <wdgencomponent name="SapMetamodelDictionary">7.3117.20150914083542.0000 (release=NW731CORE_17_REL, buildtime=2015-09-16T18:18:36+0000, changelist=413032, host=vmw6054, is-central=true)</wdgencomponent>
+            <wdgencomponent name="SapMetamodelWebDynpro">7.3117.20150914093542.0000 (release=NW731CORE_17_REL, buildtime=2015-09-16T18:27:23+0000, changelist=622310, host=vmw6054, is-central=true)</wdgencomponent>
+            <wdgencomponent name="SapGenerationFrameworkCore">7.3117.20150914093542.0000 (release=NW731CORE_17_REL, buildtime=2015-09-16T18:11:17+0000, changelist=413057, host=vmw6054, is-central=true)</wdgencomponent>
+            <wdgencomponent name="SapDictionaryGenerationCore">7.3117.20150914093542.0000 (release=NW731CORE_17_REL, buildtime=2015-09-16T18:24:40+0000, changelist=413030, host=vmw6054, is-central=true)</wdgencomponent>
+            <wdgencomponent name="SapDictionaryGenerationTemplates">7.3117.20150914093542.0000 (release=NW731CORE_17_REL, buildtime=2015-09-16T18:24:52+0000, changelist=413030, host=vmw6054, is-central=true)</wdgencomponent>
+            <wdgencomponent name="SapWebDynproGenerationCore">7.3117.20150914093542.0000 (release=NW731CORE_17_REL, buildtime=2015-09-16T18:43:23+0000, changelist=622309, host=vmw6054, is-central=true)</wdgencomponent>
+            <wdgencomponent name="SapWebDynproGenerationTemplates">7.3117.20150914093542.0000 (release=NW731CORE_17_REL, buildtime=2015-09-16T18:43:12+0000, changelist=622309, host=vmw6054, is-central=true)</wdgencomponent>
+            <wdgencomponent name="SapIdeWebDynproCheckLayer">7.3117.20150914093542.0000 (release=NW731CORE_17_REL, buildtime=2015-09-16T18:42:52+0000, changelist=622309, host=vmw6054, is-central=true)</wdgencomponent>
+            <wdgencomponent name="SapWebDynproRuntimeGen">7.3117.20150914083542.0000 (release=NW731CORE_17_REL, buildtime=2015-09-16T18:41:09+0000, changelist=622312, host=vmw6054, is-central=true)</wdgencomponent>
+        </wdgeninfo>
+    </webdynpro>
+</application>

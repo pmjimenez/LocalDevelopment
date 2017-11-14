@@ -1,0 +1,9 @@
+#macro(BuildServiceComposition)
+      #StartTargetDep("createDeployArchive" "compile")
+            #set($ppRoot = $dc_util.createTempDir("EJB"))
+            #BeginPackInternalPP("EJB" $ppRoot)
+                <entity name="$dc_deployFile" type="EJB-JAR"/>
+            #EndPackInternalPP("EJB")
+            #DefaultEARGeneration($dc_depend_assemblyDirs)
+      #EndTarget()
+#end

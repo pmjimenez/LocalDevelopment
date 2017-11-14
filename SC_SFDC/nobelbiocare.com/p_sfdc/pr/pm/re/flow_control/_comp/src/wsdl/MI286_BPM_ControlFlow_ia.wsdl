@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="MI286_BPM_ControlFlow_ia" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <wsp:Policy wsu:Id="OP_MI286_BPM_ControlFlow_ia"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+      <xsd:element name="MT_FlowControl" type="DT_FlowControl"/>
+      <xsd:complexType name="DT_FlowControl">
+        <xsd:sequence>
+          <xsd:element name="CORRELATION" type="xsd:string"/>
+          <xsd:element name="DELTALOAD" type="xsd:string"/>
+          <xsd:element name="TOTALMESSAGES" type="xsd:integer"/>
+          <xsd:element name="MESSAGENUMBER" type="xsd:integer"/>
+          <xsd:element name="PROCESS" type="xsd:string"/>
+          <xsd:element name="STATUS" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ERROR" type="xsd:string"/>
+          <xsd:element name="BPMID" type="xsd:string"/>
+          <xsd:element name="ROWSOK" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="REJECTEDROWS">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="ROW" type="xsd:string"/>
+                <xsd:element name="ERROR" type="xsd:string"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_FlowControl">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:MT_FlowControl" name="MT_FlowControl"/>
+  </wsdl:message>
+  <wsdl:portType name="MI286_BPM_ControlFlow_ia">
+    <wsdl:documentation/>
+    <wsdl:operation name="MI286_BPM_ControlFlow_ia">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_MI286_BPM_ControlFlow_ia"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_FlowControl"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MI286_BPM_ControlFlow_iaBinding" type="p1:MI286_BPM_ControlFlow_ia">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="MI286_BPM_ControlFlow_ia">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<development-components version="4">
+<properties>
+<minimizeClassFiles xmlns="http://xml.sap.com/2004/07/DCProperties/WebDynpro">auto</minimizeClassFiles>
+<projectVersion xmlns="http://xml.sap.com/2004/07/DCProperties/WebDynpro">1</projectVersion>
+</properties>
+<development-component>
+<name>p_sfdc/infra/sgc</name>
+<vendor>nobelbiocare.com</vendor>
+<type>MassConfiguration</type>
+<sub-type/>
+<at-build-time>true</at-build-time>
+<at-deploy-time>true</at-deploy-time>
+<at-runtime>true</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type>application</runtime-type>
+</development-component>
+<development-component>
+<name>bie/sca/scdl/contributors/mc</name>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+<at-build-time>true</at-build-time>
+<at-deploy-time>false</at-deploy-time>
+<at-runtime>false</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type/>
+</development-component>
+<development-component>
+<name>bie/sca/scdl/contributors/wd</name>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+<at-build-time>true</at-build-time>
+<at-deploy-time>false</at-deploy-time>
+<at-runtime>false</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type/>
+</development-component>
+<development-component>
+<name>bie/sca/scdl/gen</name>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+<at-build-time>true</at-build-time>
+<at-deploy-time>false</at-deploy-time>
+<at-runtime>false</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type/>
+</development-component>
+<development-component>
+<name>bie/sca/scdl/gen/mc</name>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+<at-build-time>true</at-build-time>
+<at-deploy-time>false</at-deploy-time>
+<at-runtime>false</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type/>
+</development-component>
+<development-component>
+<name>bie/sca/scdl/gen/xlf2prop</name>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+<at-build-time>true</at-build-time>
+<at-deploy-time>false</at-deploy-time>
+<at-runtime>false</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type/>
+</development-component>
+<development-component>
+<name>ide/es/config/mc/model/bi</name>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+<at-build-time>true</at-build-time>
+<at-deploy-time>false</at-deploy-time>
+<at-runtime>false</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type/>
+</development-component>
+<development-component>
+<name>tc/aii/base/offline/facade</name>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+<at-build-time>true</at-build-time>
+<at-deploy-time>true</at-deploy-time>
+<at-runtime>true</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type>library</runtime-type>
+</development-component>
+<development-component>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+<at-build-time>true</at-build-time>
+<at-deploy-time>true</at-deploy-time>
+<at-runtime>true</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type>library</runtime-type>
+</development-component>
+<development-component>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+<at-build-time>true</at-build-time>
+<at-deploy-time>true</at-deploy-time>
+<at-runtime>true</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type>library</runtime-type>
+</development-component>
+<development-component>
+<name>tc/cmi</name>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+<at-build-time>true</at-build-time>
+<at-deploy-time>true</at-deploy-time>
+<at-runtime>true</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type>library</runtime-type>
+</development-component>
+<development-component>
+<name>tc/ddic/runtime/facade</name>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+<at-build-time>true</at-build-time>
+<at-deploy-time>true</at-deploy-time>
+<at-runtime>true</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type>library</runtime-type>
+</development-component>
+<development-component>
+<name>tc/moin/bi/model/textverticalization</name>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+<at-build-time>true</at-build-time>
+<at-deploy-time>false</at-deploy-time>
+<at-runtime>false</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type/>
+</development-component>
+<development-component>
+<name>tc/moin/bi/moinext</name>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+<at-build-time>true</at-build-time>
+<at-deploy-time>false</at-deploy-time>
+<at-runtime>false</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type/>
+</development-component>
+<development-component>
+<name>tc/moin/bi/moinlibs</name>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+<at-build-time>true</at-build-time>
+<at-deploy-time>false</at-deploy-time>
+<at-runtime>false</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type/>
+</development-component>
+<development-component>
+<name>tc/wd/api</name>
+<vendor>sap.com</vendor>
+<type>Web Dynpro</type>
+<sub-type/>
+<at-build-time>true</at-build-time>
+<at-deploy-time>true</at-deploy-time>
+<at-runtime>true</at-runtime>
+<build-time-qualifier/>
+<deploy-time-qualifier/>
+<runtime-qualifier/>
+<runtime-type>application</runtime-type>
+</development-component>
+</development-components>

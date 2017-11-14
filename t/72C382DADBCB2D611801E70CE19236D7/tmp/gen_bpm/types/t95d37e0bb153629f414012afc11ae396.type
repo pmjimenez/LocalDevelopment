@@ -1,0 +1,5 @@
+ROOT_0,TARGET_NAMESPACE=http://nobelbiocare.com/Salesforce/Contacts
+ROOT_0,SCHEMA_LOCATION=http://nobelbiocare.com/Salesforce/Contacts
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://nobelbiocare.com/Salesforce/Contacts" xmlns:tns="http://nobelbiocare.com/Salesforce/Contacts" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="MT_SalesF_TravelOD_Customers_Trigger_Req" type="tns:DT_Period" sdox:aliasName="$http://nobelbiocare.com/Salesforce/Contacts:MT_SalesF_TravelOD_Customers_Trigger_Req" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="DT_Period" sdox:aliasName="#DT_Period" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="QueryID" type="xsd:string" minOccurs="0" sdox:aliasName="$QueryID"></xsd:element>       <xsd:element name="Query" type="xsd:string" sdox:aliasName="$Query"></xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+

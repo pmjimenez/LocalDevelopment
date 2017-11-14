@@ -1,0 +1,10 @@
+ROOT_0,TARGET_NAMESPACE=nobelbiocare.com/p_sfdc/pr/pm/re/prdmix/P_BPM_007_Revenue_Product_Mix_Performance/Product_Mix_Performance
+ROOT_0,SCHEMA_LOCATION=nobelbiocare.com/p_sfdc/pr/pm/re/prdmix/P_BPM_007_Revenue_Product_Mix_Performance/Product_Mix_Performance
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="nobelbiocare.com/p_sfdc/pr/pm/re/prdmix/P_BPM_007_Revenue_Product_Mix_Performance/Product_Mix_Performance" xmlns:tns="nobelbiocare.com/p_sfdc/pr/pm/re/prdmix/P_BPM_007_Revenue_Product_Mix_Performance/Product_Mix_Performance" xmlns:ns1="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:import namespace="http://nobelbiocare.com/BPM/SFDC/Revenue" schemaLocation="http://nobelbiocare.com/BPM/SFDC/Revenue"></xsd:import>   <xsd:element name="DO_Products" type="ns1:DT_ProductId" sdox:aliasName="$nobelbiocare.com/p_sfdc/pr/pm/re/prdmix/P_BPM_007_Revenue_Product_Mix_Performance/Product_Mix_Performance:DO_Products" xmlns:sdox="commonj.sdo/xml"></xsd:element> </xsd:schema> 
+
+CHILD_0,TARGET_NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Revenue
+CHILD_0,SCHEMA_LOCATION=http://nobelbiocare.com/BPM/SFDC/Revenue
+CHILD_0,ROOTID=0
+CHILD_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:tns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:complexType name="DT_ProductId" sdox:aliasName="#DT_ProductId" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="Row" minOccurs="0" maxOccurs="unbounded" sdox:aliasName="$Row">         <xsd:complexType sdox:aliasName="E0EB190761CB7204F9F611E6BFA40205857FEB80">           <xsd:sequence>             <xsd:element name="ProductId" type="xsd:string" minOccurs="0" sdox:aliasName="$ProductId"></xsd:element>             <xsd:element name="SAP_Material_Number" type="xsd:string" minOccurs="0" sdox:aliasName="$SAP_Material_Number"></xsd:element>           </xsd:sequence>         </xsd:complexType>       </xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+

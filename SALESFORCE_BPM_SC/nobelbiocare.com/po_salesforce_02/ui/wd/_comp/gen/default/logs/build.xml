@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    development component
+                     name: po_salesforce_02/ui/wd
+                   vendor: nobelbiocare.com
+                     type: Web Dynpro
+                 sub-type: 
+              type-vendor: sap.com
+
+       software component
+                     name: SALESFORCE_BPM_SC
+                   vendor: nobelbiocare.com
+
+                 location: localDevelopment
+          source location: pedro.jimenez@MADNB2016
+            build variant: default
+
+    building on MADNB2016, Windows 8/x86, version 6.2
+    using Java VM 'Java HotSpot(TM) Client VM', version 20.13-b02 (Sun Microsystems Inc.)
+    build started at 2017-01-13 12:06:12 GMT+01:00 (CET)
+
+    Build Plugin 'WebdynproPlugin', Version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:49:53 +0200, CL209430)
+    detailed versions:
+    sap.com:tc/bi/anttasks#def           7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:35 +0200, CL209430)
+    sap.com:tc/bi/bp/webDynpro#webDynpro 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:49:53 +0200, CL209430)
+    sap.com:tc/bi/core#def               7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:53:16 +0200, CL209430)
+    sap.com:tc/bi/ddictech#def           7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:28 +0200, CL209430)
+    sap.com:tc/bi/exception#def          7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:34 +0200, CL209430)
+    sap.com:tc/bi/extcm#def              7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:50 +0200, CL209430)
+    sap.com:tc/bi/extddic#def            7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:31 +0200, CL209430)
+    sap.com:tc/bi/extddicdb#def          7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:41 +0200, CL209430)
+    sap.com:tc/bi/extgf#def              7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:28 +0200, CL209430)
+    sap.com:tc/bi/extmm#def              7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:29 +0200, CL209430)
+    sap.com:tc/bi/extsql#def             7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:37 +0200, CL209430)
+    sap.com:tc/bi/extwd#def              7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:43 +0200, CL209430)
+    sap.com:tc/bi/framework#def          7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:01 +0200, CL209430)
+    sap.com:tc/bi/i18n#def               7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:25 +0200, CL209430)
+    sap.com:tc/bi/javatech#def           7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:55 +0200, CL209430)
+    sap.com:tc/bi/jdoc#def               7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:34 +0200, CL209430)
+    sap.com:tc/bi/jdoc/util#def          7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:38 +0200, CL209430)
+    sap.com:tc/bi/jlincbs#def            7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:55 +0200, CL209430)
+    sap.com:tc/bi/settings#version       7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:49:26 +0200, CL209430)
+    sap.com:tc/bi/tssap#def              7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:36 +0200, CL209430)
+    sap.com:tc/bi/util#util              7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:16 +0200, CL209430)
+    sap.com:tc/bi/velocity#def           7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:24 +0200, CL209430)
+    sap.com:tc/bi/wdtech#def             7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:48:38 +0200, CL209430)
+    sap.com:tc/bi/xml#def                7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:27 +0200, CL209430)
+    sap.com:tc/moin/bi/moinext#def       7.10 SP 17 (NW731CORE_17_REL, built on 2015-09-16 21:00:08 +0200, CL413149)
+ -->
+<project name="DC Build"
+         default="build"
+         basedir=".">
+<taskdef name="CreateDCDependencyInfo" classname="com.sap.tools.ant.taskdefs.CreateDCDependencyInfo"/>
+<taskdef name="MOINInit" classname="com.sap.tc.moin.ant.task.MoinInitTask"/>
+<taskdef name="MOINInitWithMetaModels" classname="com.sap.tc.moin.ant.task.MoinInitWithMetaModelsTask"/>
+<taskdef name="MOINShutdown" classname="com.sap.tc.moin.ant.task.MoinShutdownTask"/>
+<taskdef name="MoinDcConfigurationProviderProxyTask" classname="com.sap.tc.moin.bi.moinext.tasks.MoinDcConfigurationProviderProxyTask"/>
+<taskdef name="MoinShutdownHookInstallerTask" classname="com.sap.tc.moin.bi.moinext.tasks.MoinShutdownHookInstallerTask"/>
+<taskdef name="cda" classname="com.sap.tc.buildplugin.deploy.DeployArchiveTask"/>
+<taskdef name="checkfileset" classname="com.sap.tools.ant.taskdefs.EmptyFilesetCheck"/>
+<taskdef name="cmgen" classname="com.sap.ide.cmi.generation.ant.CMGenAntTask"/>
+<taskdef name="ddgen" classname="com.sap.dictionary.generation.ant.DDGenAntTask"/>
+<taskdef name="gen_scdl" classname="com.sap.bie.sca.scdl.gen.ScdlGenerator"/>
+<taskdef name="pppacker" classname="com.sap.tc.buildplugin.pp.PPPackTask"/>
+<taskdef name="prepda" classname="com.sap.tc.buildplugin.deploy.DeployArchivePrepTask"/>
+<taskdef name="propertybag" classname="com.sap.tools.ant.taskdefs.PropertyBag"/>
+<taskdef name="publicpartlist" classname="com.sap.tc.buildplugin.ddic.CreatePPEntitiesInfo"/>
+<taskdef name="sdadd" classname="com.sap.tools.ant.taskdefs.SdaDDTask"/>
+<taskdef name="timer" classname="com.sap.tools.ant.taskdefs.Timer"/>
+<taskdef name="wdgen" classname="com.sap.webdynpro.generation.ant.WDGenAntTask"/>
+<taskdef name="wdmin" classname="com.sap.tools.webdynpro.smart.ClassFileMinimizerTask"/>
+<taskdef name="xlf2prop" classname="com.sap.tc.buildplugin.util.XlfConverter"/>
+<!-- public part creation skipped because there are no public parts defined. -->
+
+<target name="compile">
+<!-- begin generator chain id 'sap.com~wdgen_chain', type 'sap.com~wdgen_chain' -->
+<!-- begin generator chain preprocessing -->
+<CreateDCDependencyInfo file="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\DCDependencyInfo.xml"/>
+<delete file="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\PublicPartFileList.xml"/>
+<publicpartlist file="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\PublicPartList.xml"/>
+<!-- end generator chain preprocessing -->
+<!-- begin generator id 'sap.com~wdgen_chain/ddgen', type 'sap.com~ddgen' -->
+<echo message="Starting dictionary generator"/>
+<timer/>
+<ddgen targetpath="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_ddic"
+       metadatapath="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D"
+       deployment="true"
+       vendor="nobelbiocare.com"
+       dcname="po_salesforce_02/ui/wd"
+       archivename="nobelbiocare.com~po_salesforce_02~ui~wd"
+       language=""
+       projectlanguage="en"
+       generateS2X="false">
+<sourcepath>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SALESFORCE_BPM_SC\nobelbiocare.com\po_salesforce_02\ui\wd\_comp\src\packages"/>
+</sourcepath>
+<addpath>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\exception\lib\_comp\gen\default\public\api\lib\java\core.exception.lib.api.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\logging\api\_comp\gen\default\public\api\lib\java\tc~bl~logging~api~defaultttt.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\aii\base\offline\facade\_comp\gen\default\public\api\lib\java\tc~aii~base~offline~facade.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\cmi\_comp\gen\default\public\default\lib\java\com.sap.tc.cmi.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\cmi\_comp\gen\default\public\default\lib\java\tc~cmi.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\SapMetamodelDictionaryContent.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.rtcontainer.facade.filter.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.runtime.facade.filter.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.services.facade.filter.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\tc~ddic~runtime~facade.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\extddic\_comp\gen\default\public\def\lib\model\SapMetamodelDictionaryContent.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\SapMetamodelWebdynproContent.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\SapMetamodelWebdynproResources.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\sap.com~tc~wd~api~default.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\gci\lib\java\sap.com~tc~wd~api~gci.jar"/>
+</addpath>
+</ddgen>
+<mkdir dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_ddic\datatypes"/>
+<mkdir dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_ddic\dbtables"/>
+<timer message="Dictionary generator finished in "/>
+<!-- end generator id 'sap.com~wdgen_chain/ddgen', type 'sap.com~ddgen' -->
+<!-- begin generator id 'sap.com~wdgen_chain/cmgen', type 'sap.com~cmgen' -->
+<echo message="Starting common model generator"/>
+<timer/>
+<cmgen targetpath="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_cmi"
+       metadatapath="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D"
+       deployment="true"
+       vendor="nobelbiocare.com"
+       dcname="po_salesforce_02/ui/wd"
+       archivename="nobelbiocare.com~po_salesforce_02~ui~wd"
+       language=""
+       projectlanguage="en"
+       generateS2X="false">
+<sourcepath>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SALESFORCE_BPM_SC\nobelbiocare.com\po_salesforce_02\ui\wd\_comp\src\packages"/>
+</sourcepath>
+<addpath>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\exception\lib\_comp\gen\default\public\api\lib\java\core.exception.lib.api.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\logging\api\_comp\gen\default\public\api\lib\java\tc~bl~logging~api~defaultttt.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\aii\base\offline\facade\_comp\gen\default\public\api\lib\java\tc~aii~base~offline~facade.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\cmi\_comp\gen\default\public\default\lib\java\com.sap.tc.cmi.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\cmi\_comp\gen\default\public\default\lib\java\tc~cmi.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\SapMetamodelDictionaryContent.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.rtcontainer.facade.filter.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.runtime.facade.filter.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.services.facade.filter.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\tc~ddic~runtime~facade.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\extddic\_comp\gen\default\public\def\lib\model\SapMetamodelDictionaryContent.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\SapMetamodelWebdynproContent.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\SapMetamodelWebdynproResources.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\sap.com~tc~wd~api~default.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\gci\lib\java\sap.com~tc~wd~api~gci.jar"/>
+</addpath>
+</cmgen>
+<mkdir dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_cmi\packages"/>
+<timer message="Common model generator finished in "/>
+<!-- end generator id 'sap.com~wdgen_chain/cmgen', type 'sap.com~cmgen' -->
+<!-- begin generator id 'sap.com~wdgen_chain/wdgen', type 'sap.com~wdgen' -->
+<echo message="Starting WebDynpro generator"/>
+<timer/>
+<publicpartlist file="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_wdp\PublicPartList.xml"/>
+<wdgen targetpath="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_wdp"
+       metadatapath="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D"
+       deployment="true"
+       vendor="nobelbiocare.com"
+       dcname="po_salesforce_02/ui/wd"
+       archivename="nobelbiocare.com~po_salesforce_02~ui~wd"
+       language=""
+       projectlanguage="en"
+       generateS2X="false">
+<sourcepath>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SALESFORCE_BPM_SC\nobelbiocare.com\po_salesforce_02\ui\wd\_comp\src\packages"/>
+</sourcepath>
+<addpath>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\exception\lib\_comp\gen\default\public\api\lib\java\core.exception.lib.api.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\logging\api\_comp\gen\default\public\api\lib\java\tc~bl~logging~api~defaultttt.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\aii\base\offline\facade\_comp\gen\default\public\api\lib\java\tc~aii~base~offline~facade.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\cmi\_comp\gen\default\public\default\lib\java\com.sap.tc.cmi.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\cmi\_comp\gen\default\public\default\lib\java\tc~cmi.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\SapMetamodelDictionaryContent.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.rtcontainer.facade.filter.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.runtime.facade.filter.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.services.facade.filter.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\tc~ddic~runtime~facade.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\extddic\_comp\gen\default\public\def\lib\model\SapMetamodelDictionaryContent.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\SapMetamodelWebdynproContent.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\SapMetamodelWebdynproResources.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\sap.com~tc~wd~api~default.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\gci\lib\java\sap.com~tc~wd~api~gci.jar"/>
+</addpath>
+</wdgen>
+<mkdir dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_wdp\packages"/>
+<timer message="WebDynpro generator finished in "/>
+<!-- end generator id 'sap.com~wdgen_chain/wdgen', type 'sap.com~wdgen' -->
+<!-- begin generator extension type 'sap.com~sqlj' for generator id 'sap.com~wdgen_chain/javac' -->
+<!-- No *.sqlj files found, skipping SQLJ preprocessing. -->
+<!-- end generator extension type 'sap.com~sqlj' for generator id 'sap.com~wdgen_chain/javac' -->
+<!-- begin generator id 'sap.com~wdgen_chain/javac', type 'sap.com~javac' -->
+<echo message="Starting Java compiler using the current JVM"/>
+<timer/>
+<echo message="Settings:"/>
+<echo message="        debug: on"/>
+<echo message="     optimize: off"/>
+<echo message="  deprecation: default"/>
+<echo message="      verbose: default"/>
+<echo message="     encoding: UTF-8"/>
+<echo message="       source: default"/>
+<echo message="       target: default"/>
+<echo message=" source paths: "/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SALESFORCE_BPM_SC\nobelbiocare.com\po_salesforce_02\ui\wd\_comp\src\packages"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_ddic/datatypes"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_cmi/packages"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_wdp/packages"/>
+<echo message="   class path:"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\logging\api\_comp\gen\default\public\api\lib\java\tc~bl~logging~api~defaultttt.jar"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\cmi\_comp\gen\default\public\default\lib\java\com.sap.tc.cmi.jar"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\cmi\_comp\gen\default\public\default\lib\java\tc~cmi.jar"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\exception\lib\_comp\gen\default\public\api\lib\java\core.exception.lib.api.jar"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\gci\lib\java\sap.com~tc~wd~api~gci.jar"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\aii\base\offline\facade\_comp\gen\default\public\api\lib\java\tc~aii~base~offline~facade.jar"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.rtcontainer.facade.filter.jar"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.runtime.facade.filter.jar"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.services.facade.filter.jar"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\tc~ddic~runtime~facade.jar"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\SapMetamodelDictionaryContent.zip"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\sap.com~tc~wd~api~default.jar"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\SapMetamodelWebdynproContent.zip"/>
+<echo message="      D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\SapMetamodelWebdynproResources.zip"/>
+<echo message="   output dir: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\classes"/>
+<checkfileset fail="false">
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SALESFORCE_BPM_SC\nobelbiocare.com\po_salesforce_02\ui\wd\_comp\src\packages">
+<include name="**/*.class"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_ddic/datatypes">
+<include name="**/*.class"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_cmi/packages">
+<include name="**/*.class"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_wdp/packages">
+<include name="**/*.class"/>
+</fileset>
+</checkfileset>
+<javac includeAntRuntime="no"
+       destdir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\classes"
+       encoding="UTF-8"
+       deprecation="false"
+       debug="on"
+       tempdir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D">
+<src path="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SALESFORCE_BPM_SC\nobelbiocare.com\po_salesforce_02\ui\wd\_comp\src\packages"/>
+<src path="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_ddic/datatypes"/>
+<src path="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_cmi/packages"/>
+<src path="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_wdp/packages"/>
+<include name="**/*.java"/>
+<classpath>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\logging\api\_comp\gen\default\public\api\lib\java\tc~bl~logging~api~defaultttt.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\cmi\_comp\gen\default\public\default\lib\java\com.sap.tc.cmi.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\cmi\_comp\gen\default\public\default\lib\java\tc~cmi.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\exception\lib\_comp\gen\default\public\api\lib\java\core.exception.lib.api.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\gci\lib\java\sap.com~tc~wd~api~gci.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\aii\base\offline\facade\_comp\gen\default\public\api\lib\java\tc~aii~base~offline~facade.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.rtcontainer.facade.filter.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.runtime.facade.filter.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.services.facade.filter.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\tc~ddic~runtime~facade.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\SapMetamodelDictionaryContent.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\sap.com~tc~wd~api~default.jar"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\SapMetamodelWebdynproContent.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java\SapMetamodelWebdynproResources.zip"/>
+</classpath>
+</javac>
+<timer message="Java compilation finished in "/>
+<!-- end generator id 'sap.com~wdgen_chain/javac', type 'sap.com~javac' -->
+<!-- begin generator extension type 'sap.com~ddgen_cleanup' for generator id 'sap.com~wdgen_chain/javac' -->
+<!-- end generator extension type 'sap.com~ddgen_cleanup' for generator id 'sap.com~wdgen_chain/javac' -->
+<!-- begin generator extension type 'sap.com~jlin' for generator id 'sap.com~wdgen_chain/javac' -->
+<!-- JLin disabled. -->
+<!-- end generator extension type 'sap.com~jlin' for generator id 'sap.com~wdgen_chain/javac' -->
+<!-- begin generator extension type 'sap.com~sqlj' for generator id 'sap.com~wdgen_chain/javac' -->
+<!-- No *.sqlj files found, skipping SQLJ post-processing. -->
+<!-- end generator extension type 'sap.com~sqlj' for generator id 'sap.com~wdgen_chain/javac' -->
+<!-- begin generator extension type 'sap.com~jdo' for generator id 'sap.com~wdgen_chain/javac' -->
+<!-- No *.jdo files found, skipping JDO enhancer. -->
+<!-- end generator extension type 'sap.com~jdo' for generator id 'sap.com~wdgen_chain/javac' -->
+<!-- begin generator extension type 'sap.com~xlf2prop' for generator id 'sap.com~wdgen_chain/javac' -->
+<echo message="Start XLF conversion"/>
+<timer/>
+<xlf2prop todir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\classes">
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SALESFORCE_BPM_SC\nobelbiocare.com\po_salesforce_02\ui\wd\_comp\src\packages">
+<exclude name="**/*.dtsimpletype*.xlf"/>
+<exclude name="**/*.dtstructure*.xlf"/>
+<exclude name="**/*.wdcomponent*.xlf"/>
+<exclude name="**/*.wdconfigobject*.xlf"/>
+<exclude name="**/*.wdcontroller*.xlf"/>
+<exclude name="**/*.wdview*.xlf"/>
+<exclude name="**/*.wdwindow*.xlf"/>
+<exclude name="**/*.wdapplication*.xlf"/>
+<exclude name="**/*.wdlocalcompintfdef*.xlf"/>
+<exclude name="**/*.wdinterfaceview*.xlf"/>
+<exclude name="**/*.wdmessagepool*.xlf"/>
+<exclude name="**/*.wdnavigation*.xlf"/>
+<exclude name="**/*.wdmodel*.xlf"/>
+<exclude name="**/*.wdmodelclass*.xlf"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_ddic/datatypes">
+<exclude name="**/*.dtsimpletype*.xlf"/>
+<exclude name="**/*.dtstructure*.xlf"/>
+<exclude name="**/*.wdcomponent*.xlf"/>
+<exclude name="**/*.wdconfigobject*.xlf"/>
+<exclude name="**/*.wdcontroller*.xlf"/>
+<exclude name="**/*.wdview*.xlf"/>
+<exclude name="**/*.wdwindow*.xlf"/>
+<exclude name="**/*.wdapplication*.xlf"/>
+<exclude name="**/*.wdlocalcompintfdef*.xlf"/>
+<exclude name="**/*.wdinterfaceview*.xlf"/>
+<exclude name="**/*.wdmessagepool*.xlf"/>
+<exclude name="**/*.wdnavigation*.xlf"/>
+<exclude name="**/*.wdmodel*.xlf"/>
+<exclude name="**/*.wdmodelclass*.xlf"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_cmi/packages">
+<exclude name="**/*.dtsimpletype*.xlf"/>
+<exclude name="**/*.dtstructure*.xlf"/>
+<exclude name="**/*.wdcomponent*.xlf"/>
+<exclude name="**/*.wdconfigobject*.xlf"/>
+<exclude name="**/*.wdcontroller*.xlf"/>
+<exclude name="**/*.wdview*.xlf"/>
+<exclude name="**/*.wdwindow*.xlf"/>
+<exclude name="**/*.wdapplication*.xlf"/>
+<exclude name="**/*.wdlocalcompintfdef*.xlf"/>
+<exclude name="**/*.wdinterfaceview*.xlf"/>
+<exclude name="**/*.wdmessagepool*.xlf"/>
+<exclude name="**/*.wdnavigation*.xlf"/>
+<exclude name="**/*.wdmodel*.xlf"/>
+<exclude name="**/*.wdmodelclass*.xlf"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_wdp/packages">
+<exclude name="**/*.dtsimpletype*.xlf"/>
+<exclude name="**/*.dtstructure*.xlf"/>
+<exclude name="**/*.wdcomponent*.xlf"/>
+<exclude name="**/*.wdconfigobject*.xlf"/>
+<exclude name="**/*.wdcontroller*.xlf"/>
+<exclude name="**/*.wdview*.xlf"/>
+<exclude name="**/*.wdwindow*.xlf"/>
+<exclude name="**/*.wdapplication*.xlf"/>
+<exclude name="**/*.wdlocalcompintfdef*.xlf"/>
+<exclude name="**/*.wdinterfaceview*.xlf"/>
+<exclude name="**/*.wdmessagepool*.xlf"/>
+<exclude name="**/*.wdnavigation*.xlf"/>
+<exclude name="**/*.wdmodel*.xlf"/>
+<exclude name="**/*.wdmodelclass*.xlf"/>
+</fileset>
+</xlf2prop>
+<timer message="XLF conversion finished in "/>
+<!-- end generator extension type 'sap.com~xlf2prop' for generator id 'sap.com~wdgen_chain/javac' -->
+<!-- begin generator extension type 'sap.com~jdoc' for generator id 'sap.com~wdgen_chain/javac' -->
+<!-- Javadoc generation disabled. -->
+<!-- end generator extension type 'sap.com~jdoc' for generator id 'sap.com~wdgen_chain/javac' -->
+<!-- begin generator id 'sap.com~wdgen_chain/wdmin', type 'sap.com~wdmin' -->
+<echo message="Starting WebDynpro class minimizer (mode 'auto')"/>
+<timer/>
+<path id="fwkclasspath.1484305572260">
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\logging\api\_comp\gen\default\public\api\lib\java">
+<include name="tc~bl~logging~api~defaultttt.jar"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\cmi\_comp\gen\default\public\default\lib\java">
+<include name="com.sap.tc.cmi.jar"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\cmi\_comp\gen\default\public\default\lib\java">
+<include name="tc~cmi.jar"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ENGFACADE\sap.com\tc\bl\exception\lib\_comp\gen\default\public\api\lib\java">
+<include name="core.exception.lib.api.jar"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\gci\lib\java">
+<include name="sap.com~tc~wd~api~gci.jar"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\aii\base\offline\facade\_comp\gen\default\public\api\lib\java">
+<include name="tc~aii~base~offline~facade.jar"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java">
+<include name="dictionary.rtcontainer.facade.filter.jar"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java">
+<include name="dictionary.runtime.facade.filter.jar"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java">
+<include name="dictionary.services.facade.filter.jar"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java">
+<include name="tc~ddic~runtime~facade.jar"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java">
+<include name="SapMetamodelDictionaryContent.zip"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java">
+<include name="sap.com~tc~wd~api~default.jar"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java">
+<include name="SapMetamodelWebdynproContent.zip"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\WD-RUNTIME\sap.com\tc\wd\api\_comp\gen\default\public\default\lib\java">
+<include name="SapMetamodelWebdynproResources.zip"/>
+</fileset>
+</path>
+<wdmin classlayout="nointf"
+       log="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\wdminimize.log"
+       dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\classes"
+       debug="all"
+       ppfilelist="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\PublicPartFileList.xml"
+       mode="auto">
+<classpath>
+<pathelement path="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\classes"/>
+</classpath>
+<fwkclasspath refid="fwkclasspath.1484305572260"/>
+</wdmin>
+<timer message="WebDynpro class minimizer finished in "/>
+<!-- end generator id 'sap.com~wdgen_chain/wdmin', type 'sap.com~wdmin' -->
+<!-- begin generator chain postprocessing -->
+<!-- end generator chain postprocessing -->
+<!-- end generator chain id 'sap.com~wdgen_chain', type 'sap.com~wdgen_chain' -->
+</target>
+
+<target name="createWDA" depends="compile">
+<timer/>
+<pppacker ppname="WebDynpro Application Jar"
+          internal="true"
+          purpose="intermediate"
+          root="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\wd-app-jar">
+<entity name=""
+        package=""
+        type="Java Package Tree"
+        subtype="Class">
+<exclude name="**/*.wd*"/>
+</entity>
+</pppacker>
+<timer message="WebDynpro Application Jar packaging finished in "/>
+<mkdir dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\wda-pp"/>
+<timer/>
+<pppacker ppname="WebDynpro Application"
+          internal="true"
+          purpose="assembly"
+          root="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\wda-pp">
+<entity name="WebDynpro Archive"
+        type="WebDynpro Archive"
+        subtype="Archive"/>
+<entityHandler classname="com.sap.tc.buildplugin.pp.entity.EHWebDynproArchive">
+<entitytype type="WebDynpro Archive" subtype="Archive"/>
+</entityHandler>
+<assemblyroot dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\wd-app-jar"/>
+</pppacker>
+<timer message="WebDynpro Application packaging finished in "/>
+</target>
+
+<target name="createDeployArchive" depends="createWDA">
+<echo message="Create deploy file nobelbiocare.com~po_salesforce_02~ui~wd"/>
+        	<mkdir dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\14BC76FA2D1A72EA9C79797861DB731D\default\deploy"/>
+            <sdadd file="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D/wd.xml"
+       softwaretype="J2EE"
+       descriptortype="engine">
+<SubstitutionVariable name="com.sap.sld.GatewayHost"/>
+<SubstitutionVariable name="com.sap.sld.GatewayService"/>
+</sdadd>
+
+
+                <!-- [D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_wdp] -->
+                            
+                    <cda type="sap.com~j2ee.EAR_SDA" deployfile="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\14BC76FA2D1A72EA9C79797861DB731D\default\deploy/nobelbiocare.com~po_salesforce_02~ui~wd.ear">
+<descriptor type="sda-deployment-descriptor" file="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D/wd.xml"/>
+<assemblyroot path="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\wda-pp"/>
+<assemblyroot path="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\wda-pp"/>
+
+                        <descriptor type="application.xml"             file="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_wdp/application.xml"/>
+                        <descriptor type="application-j2ee-engine.xml" file="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gen_wdp/application-j2ee-engine.xml"/>
+            <option key="update-descriptors" value="true"/>
+            <moduletype mode="exclude-immediate" type="SAP-J2EE-Module[container-type[MOBILE]]"/>
+            <moduletype mode="include-immediate" type="SAP-J2EE-Module"/>
+            <moduletype mode="include-immediate" type="J2EE-Module"/>
+            <moduletype mode="exclude-immediate" type="jar"/>
+                        </cda>
+</target>
+
+<target name="Xlf2PropBase" depends="compile">
+<!-- begin generator chain id 'sap.com~xlf2prop_gen_chain', type 'sap.com~xlf2prop_gen_chain' -->
+<!-- begin generator id 'sap.com~xlf2prop_gen_chain/xlf2prop', type 'sap.com~xlf2prop~standalone' -->
+<echo message="Start XLF conversion"/>
+<timer/>
+<xlf2prop todir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\xlf_temp">
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SALESFORCE_BPM_SC\nobelbiocare.com\po_salesforce_02\ui\wd\_comp//mc"/>
+</xlf2prop>
+<timer message="XLF conversion finished in "/>
+<!-- end generator id 'sap.com~xlf2prop_gen_chain/xlf2prop', type 'sap.com~xlf2prop~standalone' -->
+<!-- begin generator id 'sap.com~xlf2prop_gen_chain/xlf2propflatcopy', type 'sap.com~xlf2prop~flat' -->
+<copy flatten="true"
+      includeemptydirs="false"
+      todir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\xlf_out">
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\xlf_temp"/>
+</copy>
+<!-- end generator id 'sap.com~xlf2prop_gen_chain/xlf2propflatcopy', type 'sap.com~xlf2prop~flat' -->
+<!-- end generator chain id 'sap.com~xlf2prop_gen_chain', type 'sap.com~xlf2prop_gen_chain' -->
+<prepda>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\xlf_out" prefix="META-INF/sca-resources/"/>
+</prepda>
+</target>
+
+<target name="ScdlBase" depends="compile">
+<!-- begin generator chain id 'sap.com~scdl_gen_chain', type 'sap.com~scdl_gen_chain' -->
+<!-- begin generator id 'sap.com~scdl_gen_chain/moininit', type 'sap.com~moininit' -->
+<MoinDcConfigurationProviderProxyTask/>
+<MOINInit>
+<metaModelsPath>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\ESCONF_BUILDT\sap.com\ide\es\config\mc\model\bi\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~ide~es~config~mc~model_xmi.zip"/>
+<pathelement location="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip"/>
+</metaModelsPath>
+</MOINInit>
+<echo message="Registering folder: gensrc/extcfg for path: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D\gensrc\extcfg/"/>
+<MoinShutdownHookInstallerTask/>
+<!-- end generator id 'sap.com~scdl_gen_chain/moininit', type 'sap.com~moininit' -->
+<!-- begin generator id 'sap.com~scdl_gen_chain/gen_scdl', type 'sap.com~gen_scdl' -->
+<echo message="Starting Extension Configuration generator..."/>
+<timer/>
+<gen_scdl/>
+<timer message="Extension Configuration generator finished in "/>
+<!-- end generator id 'sap.com~scdl_gen_chain/gen_scdl', type 'sap.com~gen_scdl' -->
+<!-- begin generator id 'sap.com~scdl_gen_chain/shutdown', type 'sap.com~moinshutdown' -->
+<MOINShutdown/>
+<!-- end generator id 'sap.com~scdl_gen_chain/shutdown', type 'sap.com~moinshutdown' -->
+<!-- end generator chain id 'sap.com~scdl_gen_chain', type 'sap.com~scdl_gen_chain' -->
+<prepda>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\14BC76FA2D1A72EA9C79797861DB731D/scdl_output">
+<include name="META-INF/**"/>
+</fileset>
+</prepda>
+</target>
+
+<target name="build" depends="compile,Xlf2PropBase,ScdlBase,createWDA,createDeployArchive">
+
+</target>
+</project>

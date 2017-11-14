@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>tc/moin/bi/model/textverticalization</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>MM_Inf</name>
+<purpose>infrastructure</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>tc/moin/model/textverticalization</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>com.sap.tc.moin.nwdi.dctype.mm</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">MM_Asseml</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components>
+<source-component>
+<id>1</id>
+<development-component>
+<name>tc/moin/model/textverticalization</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>com.sap.tc.moin.nwdi.dctype.mm</type>
+<sub-type/>
+</component-type>
+</development-component>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>tc/moin/model/textverticalization_packer</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>com.sap.tc.moin.nwdi.dctype.mm</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="">MM_Asseml</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</source-component>
+</source-components>
+<archives>
+<archive location="javalib" path="lib/java/sap.com~tc~moin~bi~model~textverticalization~MM_Inf.jar" type="jar">
+<property key="attributes">jar,java-library</property>
+</archive>
+<archive location="modelinglibrary" path="lib/moin/sap.com~tc~moin~model~textverticalization_xmi.zip" type="zip">
+<property key="attributes"/>
+</archive>
+</archives>
+<entities>
+<entity>
+<id>5a8bfb86-49ad-4d2b-b210-55c024821794</id>
+<name/>
+<entity-type/>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<source-id>1</source-id>
+<fileset location="javalib">
+<file path="META-INF/MANIFEST.MF"/>
+<file path="com/sap/tc/moin/MetaModelExtension.properties"/>
+<file path="com/sap/tc/moin/ocl/gen/oclgenerated1b95bc4c4ab43a3e1d6aa87f95a261a6fb822e37/OclGenerated1B95Bc4C4Ab43A3E1D6Aa87F95A261A6Fb822E37Package.class"/>
+<file path="com/sap/tc/moin/ocl/gen/oclgenerated1b95bc4c4ab43a3e1d6aa87f95a261a6fb822e37/__impl/OclGenerated1B95Bc4C4Ab43A3E1D6Aa87F95A261A6Fb822E37PackageImpl.class"/>
+<file path="com/sap/tc/moin/ocl/gen/oclgenerated1b95bc4c4ab43a3e1d6aa87f95a261a6fb822e37/__impl/OclGenerated1B95Bc4C4Ab43A3E1D6Aa87F95A261A6Fb822E37PackageWrapper.class"/>
+<file path="com/sap/tc/moin/ocl/gen/oclgenerated1b95bc4c4ab43a3e1d6aa87f95a261a6fb822e37/__impl/package-version.properties"/>
+<file path="com/sap/tc/moin/ocl/gen/oclgenerated1b95bc4c4ab43a3e1d6aa87f95a261a6fb822e37/package-version.properties"/>
+<file path="com/sap/tc/moin/package2EAF7FE76F11BE12F7F23D4FEA420B5D50AD5B5F/MetamodelExtension.class"/>
+<file path="com/sap/tc/moin/package2EAF7FE76F11BE12F7F23D4FEA420B5D50AD5B5F/extension.idxb"/>
+<file path="com/sap/tc/moin/package2EAF7FE76F11BE12F7F23D4FEA420B5D50AD5B5F/extension.idxh"/>
+<file path="com/sap/tc/moin/package2EAF7FE76F11BE12F7F23D4FEA420B5D50AD5B5F/names.idxb"/>
+<file path="com/sap/tc/moin/package2EAF7FE76F11BE12F7F23D4FEA420B5D50AD5B5F/package-version.properties"/>
+<file path="com/sap/tc/moin/textverticalization/TextverticalizationPackage.class"/>
+<file path="com/sap/tc/moin/textverticalization/TranslatableText$Descriptors.class"/>
+<file path="com/sap/tc/moin/textverticalization/TranslatableText.class"/>
+<file path="com/sap/tc/moin/textverticalization/TranslatableTextFragment$Descriptors.class"/>
+<file path="com/sap/tc/moin/textverticalization/TranslatableTextFragment.class"/>
+<file path="com/sap/tc/moin/textverticalization/__impl/TextverticalizationPackageImpl.class"/>
+<file path="com/sap/tc/moin/textverticalization/__impl/TextverticalizationPackageWrapper.class"/>
+<file path="com/sap/tc/moin/textverticalization/__impl/TranslatableTextFragmentImpl.class"/>
+<file path="com/sap/tc/moin/textverticalization/__impl/TranslatableTextImpl.class"/>
+<file path="com/sap/tc/moin/textverticalization/__impl/package-version.properties"/>
+<file path="com/sap/tc/moin/textverticalization/eh/TvParserErrorHandler$TranslatableTextClass.class"/>
+<file path="com/sap/tc/moin/textverticalization/eh/TvParserErrorHandler.class"/>
+<file path="com/sap/tc/moin/textverticalization/eh/package-version.properties"/>
+<file path="com/sap/tc/moin/textverticalization/package-version.properties"/>
+</fileset>
+<fileset location="modelinglibrary">
+<file path="moin/meta/textverticalization.moinmm"/>
+<file path="moin/reginfo/errorhandler.xml"/>
+<file path="moin/reginfo/metamodel.xml"/>
+<file path="moin/reginfo/moinarch.properties"/>
+</fileset>
+</entity>
+</entities>
+</content>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" xmlns:sap="http://www.sap.com" xmlns:sapconfig="http://www.sap.com/webas/2007/03/esoa/config/system" xmlns:sapimplbpm="http://www.sap.com/webas/2007/03/esoa/implementation/bpm" xmlns:sapinterfacewsdlloc="http://www.sap.com/xmlns/sapsca/1.0" xmlns:xins="http://www.sap.com/xmlns/sapsca/xi/1.0" name="p_sfdc~pr~pm~cu~customer_sync" targetNamespace="http://www.sap.com">
+<component name="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync~BPMcomponent">
+<sapimplbpm:implementation.bpm/>
+<reference name="9d3490a3-a1d7-4c1d-abad-3176122209b4" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Customer_Sync_SOAPXI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Customer#wsdl.interface(MI289_BPM_CustomerLocation_Set_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync/MI289_BPM_CustomerLocation_Set_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_CUSTSYNCH_SFDC"/>
+</reference>
+<reference name="a6b4ff88-8917-4fca-ad7e-f9c8b591e118" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Customer_Sync_SOAPXI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Customer#wsdl.interface(MI291_BPM_AccountTeamMember_Delete_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync/MI291_BPM_AccountTeamMember_Delete_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_CUSTSYNCH_SFDC"/>
+</reference>
+<reference name="86ea9437-c5ce-475c-98e3-0cb3591f661c" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Customer_Sync_SOAPXI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Customer#wsdl.interface(MI278_BPM_GetAccountLocationId_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync/MI278_BPM_GetAccountLocationId_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_CUSTSYNCH_SFDC"/>
+</reference>
+<reference name="e8ff0072-9442-4f14-8a6a-6f31b2fba5e5" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Customer_Sync_SOAPXI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Customer#wsdl.interface(MI276_BPM_SendAleaud_oa)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync/MI276_BPM_SendAleaud_oa.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_CUSTSYNCH_SFDC"/>
+</reference>
+<reference name="b6d29b26-bda0-4bd6-8ad6-77d075dbed56" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Customer_Sync_SOAPXI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Customer#wsdl.interface(MI289_BPM_CustomerLocation_Delete_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync/MI289_BPM_CustomerLocation_Delete_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_CUSTSYNCH_SFDC"/>
+</reference>
+<reference name="4e05f4e3-b9a2-48ed-a886-1bef87b01a5d" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Customer_Sync_SOAP">
+<interface.wsdl interface="http://nobelbiocare.com#wsdl.interface(BRM001_Customer_Dummy_PE_TablePortType)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync/BRM001_Customer_Dummy_PE_Table.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="ca2f96c8-5084-4dee-accf-4f2b12a74b6d" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Customer_Sync_SOAPXI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Customer#wsdl.interface(MI277_BPM_Upsert_CustomerData_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync/MI277_BPM_Upsert_CustomerData_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_CUSTSYNCH_SFDC"/>
+</reference>
+<reference name="8aacd9de-1972-4d2a-80ba-f0c17078d3a7" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Customer_Sync_SOAPXI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Customer#wsdl.interface(MI290_BPM_CustomerCreditCard_Set_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync/MI290_BPM_CustomerCreditCard_Set_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_CUSTSYNCH_SFDC"/>
+</reference>
+<reference name="92984076-75a2-4317-897a-47c6fcca6c73" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Customer_Sync_SOAPXI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Customer#wsdl.interface(MI278_BPM_CustomerShipDetails_Set_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync/MI278_BPM_CustomerShipDetails_Set_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_CUSTSYNCH_SFDC"/>
+</reference>
+<reference name="ba6049f8-daa6-470f-9ae6-5dac5ba7f6c6" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SampleTimerServiceGroup">
+<interface.wsdl interface="http://sap.com/glx/sampletimer/#wsdl.interface(SampleTimer)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem#wsdls/sap.com~tc~bpem~content~predefs~default/rootwsdl_SimpleTimerServices.wsdl"/>
+<binding.ws/>
+</reference>
+<reference name="f670fb74-7240-4e8b-9e8d-a72f4c2a6cc5" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Customer_Sync_SOAPXI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Customer#wsdl.interface(MI291_BPM_AccountTeamMember_Set_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync/MI291_BPM_AccountTeamMember_Set_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_CUSTSYNCH_SFDC"/>
+</reference>
+<reference name="5e750cf7-25e4-493f-9de7-7160b2378a90" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Customer_Sync_SOAPXI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Customer#wsdl.interface(MI277_BPM_Change_CustomerData_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync/MI277_BPM_Change_CustomerData_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_CUSTSYNCH_SFDC"/>
+</reference>
+<reference name="4f2a2e03-9391-4478-a9bf-f131f1ac1eac" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Customer_Sync_SOAPXI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Customer#wsdl.interface(MI289_BPM_GetAccountId_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync/MI289_BPM_GetAccountId_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_CUSTSYNCH_SFDC"/>
+</reference>
+<reference name="64c07866-cc39-4816-befc-b988615ddd64" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SR_Customer_Sync_SOAPXI">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/SFDC/Customer#wsdl.interface(MI277_BPM_GetCustomerOwner_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem#wsdls/nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync/MI277_BPM_GetCustomerOwner_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_CUSTSYNCH_SFDC"/>
+</reference>
+</component>
+<sapconfig:serviceGroups>
+<sapconfig:serviceGroup bundle="1852e78a-ee9e-40e8-a48e-54406f08bc7d.consgroup" sgName="SR_Customer_Sync_SOAP"/>
+<sapconfig:serviceGroup bundle="1b0d2a60-e2ad-4b82-942d-4f9a386e744c.consgroup" sgName="SR_Customer_Sync_SOAPXI"/>
+</sapconfig:serviceGroups>
+<sapconfig:service-group-configuration serviceGroup="SR_Customer_Sync_SOAP">
+<sapconfig:localProvider/>
+</sapconfig:service-group-configuration>
+</composite>

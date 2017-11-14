@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/Salesforce/Contacts" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="MIZ050C_TravelOD_contacts_Resp_EnhancedSAP" targetNamespace="http://nobelbiocare.com/Salesforce/Contacts">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+    <ifw:category>ifmmessif</ifw:category>
+    <ifw:VersionID>47cfb44de8ac11e2a96f00001e568b5a</ifw:VersionID>
+    <ifw:lifeCycleInfo>
+      <objectState/>
+      <objectstatus value="A"/>
+      <personresponsible value="chdaro"/>
+      <changed by="chdaro" on="1373383787153"/>
+    </ifw:lifeCycleInfo>
+    <ifw:communicationProfile uri="prf_dt_if_com_stateless"/>
+    <ifw:securityProfile uri="prf_dt_if_sec_low"/>
+    <ifw:interfacePattern p2p="false">L</ifw:interfacePattern>
+    <ifw:isSensitiveData>false</ifw:isSensitiveData>
+    <ifw:classifications>
+      <ifw:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"/>
+      <ifw:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="d3dcb1921c0b3cb5bc770ae7e7b3e598"/>
+    </ifw:classifications>
+    <ifw:additionalAttributes/>
+    <ifw:methods>
+      <ifw:method name="MIZ050_TravelOD_contacts">
+        <ifw:isSynchron>false</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>false</ifw:isInbound>
+        <ifw:interfaceCategory>abstract</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_async"/>
+        <ifw:lifeCycleInfo>
+          <objectState/>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+    </ifw:methods>
+    <ifw:messages>
+      <ifw:message name="p1.p2.CustomerBundleMaintainConfirmation_sync_V1">
+        <ifw:messType>ifmextmes</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ED_CONTACTS_RESULT_PROXY</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://nobelbiocare.com/Salesforce/Contacts</ifw:elem>
+          <ifw:elem id="SUBNAME">p2.CustomerBundleMaintainConfirmation_sync_V1</ifw:elem>
+          <ifw:elem id="SUBNAMESPACE">http://nobelbiocare.com/Salesforce/Contacts</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://nobelbiocare.com/Salesforce/Contacts</ifw:technicalNamespace>
+        <ifw:VersionID>081ca6ca882511e3a1e300001e568b5a</ifw:VersionID>
+      </ifw:message>
+    </ifw:messages>
+    <ifw:matchingInterfaces/>
+    <ifw:genericProperties>
+      <ifw:swcvinfo>
+        <ifw:guid>255c5620454211deb95ee197c2581f67</ifw:guid>
+        <ifw:name>SALESFORCE 1.0 of salesforce.com</ifw:name>
+      </ifw:swcvinfo>
+      <ifw:languages>
+        <ifw:language internalCode="EN" original="true"/>
+      </ifw:languages>
+      <ifw:documentation type="I">
+        <name>_ID_d3dcb1921c0b3cb5bc770ae7e7b3e598_ifmmessif</name>
+        <namespace>http://nobelbiocare.com/Salesforce/Contacts</namespace>
+      </ifw:documentation>
+    </ifw:genericProperties>
+  </ifw:properties>
+  <wsp:Policy wsu:Id="OP_MIZ050_TravelOD_contacts"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://sap.com/xi/AP/Common/GDT" xmlns:xi7="http://sap.com/xi/BASIS/Global" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sap.com/xi/AP/Common/GDT">
+      <xsd:import namespace="http://sap.com/xi/BASIS/Global"/>
+      <xsd:simpleType name="LogItemTemplatePlaceholderID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  Identifier
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:length value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogItemPlaceholderSubstitutionText">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  Text
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="50"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LANGUAGEINDEPENDENT_Name">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  Name
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string"/>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogItemNote">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  Note
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="200"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogItemSeverityCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  Code
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="1"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ObjectNodePartyTechnicalID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  Identifier
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="70"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogItemTypeID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  Identifier
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="40"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ChangeStateID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  Identifier
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="40"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogItemCategoryCode.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="15"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LogItemNoteTemplateText">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  Text
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="73"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="WebURI">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  URI
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:anyURI"/>
+      </xsd:simpleType>
+      <xsd:simpleType name="ProcessingResultCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  Code
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="2"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="BusinessPartnerInternalID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  Identifier
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="10"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="UUID.Content">
+        <xsd:restriction base="xsd:token">
+          <xsd:maxLength value="36"/>
+          <xsd:minLength value="36"/>
+          <xsd:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="LogItemNotePlaceholderSubstitutionList">
+        <xsd:sequence>
+          <xsd:element name="FirstPlaceholderID" type="LogItemTemplatePlaceholderID"/>
+          <xsd:element minOccurs="0" name="SecondPlaceholderID" type="LogItemTemplatePlaceholderID"/>
+          <xsd:element minOccurs="0" name="ThirdPlaceholderID" type="LogItemTemplatePlaceholderID"/>
+          <xsd:element minOccurs="0" name="FourthPlaceholderID" type="LogItemTemplatePlaceholderID"/>
+          <xsd:element name="FirstPlaceholderSubstitutionText" type="LogItemPlaceholderSubstitutionText"/>
+          <xsd:element minOccurs="0" name="SecondPlaceholderSubstitutionText" type="LogItemPlaceholderSubstitutionText"/>
+          <xsd:element minOccurs="0" name="ThirdPlaceholderSubstitutionText" type="LogItemPlaceholderSubstitutionText"/>
+          <xsd:element minOccurs="0" name="FourthPlaceholderSubstitutionText" type="LogItemPlaceholderSubstitutionText"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Log">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="BusinessDocumentProcessingResultCode" type="ProcessingResultCode"/>
+          <xsd:element minOccurs="0" name="MaximumLogItemSeverityCode" type="LogItemSeverityCode"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Item" type="LogItem"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="UUID">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  Identifier
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="UUID.Content">
+            <xsd:attribute name="schemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="schemeAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:complexType name="LogItemCategoryCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  Code
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+          <xsd:extension base="LogItemCategoryCode.Content">
+            <xsd:attribute name="listID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listVersionID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="15"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listAgencyID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listAgencySchemeID">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:token">
+                  <xsd:maxLength value="60"/>
+                  <xsd:minLength value="1"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="listAgencySchemeAgencyID" type="xi7:AgencyIdentificationCode"/>
+          </xsd:extension>
+        </xsd:simpleContent>
+      </xsd:complexType>
+      <xsd:complexType name="ContactsList">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ContactID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CountryCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="NPID" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="LogItem">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="TypeID" type="LogItemTypeID"/>
+          <xsd:element minOccurs="0" name="CategoryCode" type="LogItemCategoryCode"/>
+          <xsd:element minOccurs="0" name="SeverityCode" type="LogItemSeverityCode"/>
+          <xsd:element minOccurs="0" name="ReferenceObjectNodeSenderTechnicalID" type="ObjectNodePartyTechnicalID"/>
+          <xsd:element minOccurs="0" name="ReferenceMessageElementName" type="LANGUAGEINDEPENDENT_Name"/>
+          <xsd:element name="Note" type="LogItemNote"/>
+          <xsd:element minOccurs="0" name="NoteTemplateText" type="LogItemNoteTemplateText"/>
+          <xsd:element minOccurs="0" name="LogItemNotePlaceholderSubstitutionList" type="LogItemNotePlaceholderSubstitutionList"/>
+          <xsd:element minOccurs="0" name="WebURI" type="WebURI"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="http://sap.com/xi/A1S/Global" xmlns:xi4="http://sap.com/xi/AP/Common/GDT" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sap.com/xi/A1S/Global">
+      <xsd:import namespace="http://sap.com/xi/AP/Common/GDT"/>
+      <xsd:complexType name="CustomerBundleMaintainConfirmationMessage_sync_V1">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="QueryID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SubQueryID" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Size" type="xsd:integer"/>
+          <xsd:element minOccurs="0" name="BatchSize" type="xsd:integer"/>
+          <xsd:element minOccurs="0" name="QuerySource" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Customer" type="CustomerMaintainConfirmationBundleCustomer_V1"/>
+          <xsd:element name="Log" type="xi4:Log"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ContactsList" type="xi4:ContactsList"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CustomerMaintainConfirmationBundleCustomer_V1">
+        <xsd:sequence>
+          <xsd:element name="InternalID" type="xi4:BusinessPartnerInternalID"/>
+          <xsd:element name="UUID" type="xi4:UUID"/>
+        </xsd:sequence>
+        <xsd:attribute name="ReferenceObjectNodeSenderTechnicalID" type="xi4:ObjectNodePartyTechnicalID" use="required"/>
+        <xsd:attribute name="ChangeStateID" type="xi4:ChangeStateID" use="required"/>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="http://sap.com/xi/BASIS/Global" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sap.com/xi/BASIS/Global">
+      <xsd:simpleType name="AgencyIdentificationCode">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">
+            <ccts:RepresentationTerm xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:3.0">
+                  Code
+                  </ccts:RepresentationTerm>
+          </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:token">
+          <xsd:enumeration value="1"/>
+          <xsd:enumeration value="5"/>
+          <xsd:enumeration value="6"/>
+          <xsd:enumeration value="16"/>
+          <xsd:enumeration value="17"/>
+          <xsd:enumeration value="84"/>
+          <xsd:enumeration value="107"/>
+          <xsd:enumeration value="109"/>
+          <xsd:enumeration value="112"/>
+          <xsd:enumeration value="113"/>
+          <xsd:enumeration value="114"/>
+          <xsd:enumeration value="116"/>
+          <xsd:enumeration value="117"/>
+          <xsd:enumeration value="124"/>
+          <xsd:enumeration value="130"/>
+          <xsd:enumeration value="131"/>
+          <xsd:enumeration value="138"/>
+          <xsd:enumeration value="142"/>
+          <xsd:enumeration value="146"/>
+          <xsd:enumeration value="262"/>
+          <xsd:enumeration value="296"/>
+          <xsd:enumeration value="310"/>
+          <xsd:maxLength value="3"/>
+          <xsd:minLength value="1"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema xmlns="http://sap.com/xi/SAPGlobal20/Global" xmlns:xi3="http://sap.com/xi/A1S/Global" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://sap.com/xi/SAPGlobal20/Global">
+      <xsd:import namespace="http://sap.com/xi/A1S/Global"/>
+      <xsd:element name="CustomerBundleMaintainConfirmation_sync_V1" type="xi3:CustomerBundleMaintainConfirmationMessage_sync_V1"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="p1.p2.CustomerBundleMaintainConfirmation_sync_V1">
+    <wsdl:documentation/>
+    <wsdl:part xmlns:p6="http://sap.com/xi/SAPGlobal20/Global" element="p6:CustomerBundleMaintainConfirmation_sync_V1" name="CustomerBundleMaintainConfirmation_sync_V1"/>
+  </wsdl:message>
+  <wsdl:portType name="MIZ050C_TravelOD_contacts_Resp_EnhancedSAP">
+    <wsdl:documentation/>
+    <wsdl:operation name="MIZ050_TravelOD_contacts">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_MIZ050_TravelOD_contacts"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:p1.p2.CustomerBundleMaintainConfirmation_sync_V1"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MIZ050C_TravelOD_contacts_Resp_EnhancedSAPBinding" type="p1:MIZ050C_TravelOD_contacts_Resp_EnhancedSAP">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="MIZ050_TravelOD_contacts">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

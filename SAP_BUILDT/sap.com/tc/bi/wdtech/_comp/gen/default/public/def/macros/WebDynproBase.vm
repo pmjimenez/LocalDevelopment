@@ -1,0 +1,67 @@
+ #*
+ * This is the Velocity macro library used for WebDynpro generation.
+ *
+ * This library is only provided for convenience. All macros defined in this
+ * file should be backed by some Java implementation.
+ *#
+
+
+#**
+ * Default invocation of the WebDynpro generator chain.
+ *
+ * sources      list of source paths for the DDic, Common Model, WebDynpro
+ *              generator and the Java compiler.
+ *#
+#macro(FullDefaultWebDynproGeneration $sources)
+    $webDynproBase.fullDefaultWebDynproGeneration($sources)
+#end
+
+
+#**
+ * Default invocation of the WebDynpro generator.
+ *
+ * sources      list of source paths for the WebDynpro generator.
+ *
+ * classes       path to the target folder where the generator will store
+ *               its output
+ * metadatapath  path to the folder where the PublicPartList.xml is stored
+ *               and where the generator will place the generator output
+ *               descriptor
+ *#
+#macro(DefaultWebDynproGeneration $sources $classes $metadatapath)
+    $webDynproBase.defaultWebDynproGeneration($sources, $classes, $metadatapath)
+#end
+
+
+#**
+ * Default invocation of the Common Model generator.
+ *
+ * classes       path to the target folder where the generator will store
+ *               its output
+ * metadatapath  path to the folder where the PublicPartList.xml is stored
+ *               and where the generator will place the generator output
+ *               descriptor
+ *#
+#macro(DefaultCommonModelGeneration $sources $classes $metadatapath)
+    $webDynproBase.defaultCommonModelGeneration($sources, $classes, $metadatapath)
+#end
+
+
+#**
+ * Default invocation of the WebDynpro class file minimizer.
+ *#
+#macro(DefaultWebDynproMinimizer $classes $wdout)
+    $webDynproBase.defaultWebDynproMinimizer($classes, $wdout)
+#end
+
+
+#**
+ * Creates an internal public part containin the WebDynpro module archive
+ *
+ * @param wdapp_rootfolder  the rootfolder of the internal public part that
+ *                          will be created.
+ *#
+#macro(CreateWebDynproArchivePP $wdapp_rootfolder)
+    $webDynproBase.createWebDynproArchivePP($wdapp_rootfolder)
+#end
+

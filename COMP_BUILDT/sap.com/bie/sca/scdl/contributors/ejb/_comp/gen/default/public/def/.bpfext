@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<technologies version="1">
+  <technology name="sap.com/bie/sca/scdl/contributors/ejb">
+    <uses>sap.com/tc/bi/core</uses>
+
+    <definition>
+      <object-attributes key="com.sap.bie.sca.scdl.contributors.ejb.EjbScdlContributor" attributes="ext-point[bie.sca.scdl.gen]" class="java.lang.String"/>
+    </definition>
+
+  </technology>
+</technologies>

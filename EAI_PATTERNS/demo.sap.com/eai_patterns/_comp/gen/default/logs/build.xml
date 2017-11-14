@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    development component
+                     name: eai_patterns
+                   vendor: demo.sap.com
+                     type: Software Component Description
+                 sub-type: 
+              type-vendor: sap.com
+
+       software component
+                     name: EAI_PATTERNS
+                   vendor: demo.sap.com
+
+                 location: localDevelopment
+          source location: pedro.jimenez@MADNB2016
+            build variant: default
+
+    building on MADNB2016, Windows 8/x86, version 6.2
+    using Java VM 'Java HotSpot(TM) Client VM', version 20.13-b02 (Sun Microsystems Inc.)
+    build started at 2017-01-30 15:37:58 GMT+01:00 (CET)
+
+    Build Plugin 'sap.com/tc/bi/bp/scdef', Version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:53:16 +0200, CL209430)
+    detailed versions:
+    sap.com:tc/bi/anttasks#def     7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:35 +0200, CL209430)
+    sap.com:tc/bi/core#def         7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:53:16 +0200, CL209430)
+    sap.com:tc/bi/exception#def    7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:34 +0200, CL209430)
+    sap.com:tc/bi/extddicdb#def    7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:41 +0200, CL209430)
+    sap.com:tc/bi/extsld#def       7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:40 +0200, CL209430)
+    sap.com:tc/bi/extsql#def       7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:37 +0200, CL209430)
+    sap.com:tc/bi/framework#def    7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:01 +0200, CL209430)
+    sap.com:tc/bi/i18n#def         7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:25 +0200, CL209430)
+    sap.com:tc/bi/javatech#def     7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:55 +0200, CL209430)
+    sap.com:tc/bi/jdoc#def         7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:34 +0200, CL209430)
+    sap.com:tc/bi/jdoc/util#def    7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:38 +0200, CL209430)
+    sap.com:tc/bi/jlincbs#def      7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:55 +0200, CL209430)
+    sap.com:tc/bi/settings#version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:49:26 +0200, CL209430)
+    sap.com:tc/bi/util#util        7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:16 +0200, CL209430)
+    sap.com:tc/bi/velocity#def     7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:24 +0200, CL209430)
+    sap.com:tc/bi/xml#def          7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:27 +0200, CL209430)
+ -->
+<project name="DC Build"
+         default="build"
+         basedir=".">
+<taskdef name="ScdefGeneratorTask" classname="com.sap.tc.buildplugin.scdef.ScdefGeneratorTask"/>
+<taskdef name="cda" classname="com.sap.tc.buildplugin.deploy.DeployArchiveTask"/>
+<taskdef name="pppacker" classname="com.sap.tc.buildplugin.pp.PPPackTask"/>
+<taskdef name="propertybag" classname="com.sap.tools.ant.taskdefs.PropertyBag"/>
+<taskdef name="timer" classname="com.sap.tools.ant.taskdefs.Timer"/>
+
+<target name="translate">
+<!-- begin generator chain id 'sap.com~sl.scdef_chain', type 'sap.com~sl.scdef_chain' -->
+<!-- begin generator id 'sap.com~sl.scdef_chain/scdef', type 'sap.com~sl.scdef.task.generator' -->
+<echo message="+++ com.sap.tc.buildplugin.scdef.ScdefTaskGenerator: taskName: ScdefGeneratorTask"/>
+<echo message="localContext: com.sap.tc.buildplugin.util.DataContext@29470e"/>
+<echo message="inputPaths: {compile_pp=[], source=[D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\EAI_PATTERNS\demo.sap.com\eai_patterns\_comp\src]}"/>
+<echo message="outputPaths: {default=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\16C2738EBFA7618CA8DE35E8512EE56A\testoutput, packdir=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\16C2738EBFA7618CA8DE35E8512EE56A\sld_pack01, tempdir=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\16C2738EBFA7618CA8DE35E8512EE56A\sld_temp01}"/>
+<echo message="usedPaths: {}"/>
+<echo message="parameters: {outputFolderName=testoutput}"/>
+<echo message="File(source): D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\EAI_PATTERNS\demo.sap.com\eai_patterns\_comp\src"/>
+<ScdefGeneratorTask packdir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\16C2738EBFA7618CA8DE35E8512EE56A\sld_pack01" tempdir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\16C2738EBFA7618CA8DE35E8512EE56A\sld_temp01">
+<sdir sdir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\EAI_PATTERNS\demo.sap.com\eai_patterns\_comp\src"/>
+</ScdefGeneratorTask>
+<!-- end generator id 'sap.com~sl.scdef_chain/scdef', type 'sap.com~sl.scdef.task.generator' -->
+<!-- end generator chain id 'sap.com~sl.scdef_chain', type 'sap.com~sl.scdef_chain' -->
+</target>
+
+<target name="createPublicParts" depends="translate">
+<timer/>
+<pppacker ppname="default">
+</pppacker>
+<timer message="Packing of public part 'default' finished in "/>
+</target>
+
+<target name="createDeployArchive" depends="createPublicParts">
+<cda type="sap.com~SDA" deployfile="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\16C2738EBFA7618CA8DE35E8512EE56A\default\deploy/demo.sap.com~eai_patterns.sda">
+<descriptor type="sda-deployment-descriptor" file="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\16C2738EBFA7618CA8DE35E8512EE56A\sld_temp01\sda-dd.xml"/>
+<option key="software-type" value="CONTENT"/>
+<option key="software-subtype" value="SL-SDA"/>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\16C2738EBFA7618CA8DE35E8512EE56A\sld_pack01"/>
+</cda>
+</target>
+
+<target name="build" depends="translate,createPublicParts,createDeployArchive">
+
+</target>
+</project>

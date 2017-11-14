@@ -1,0 +1,85 @@
+#**
+ * Ant build script for Data Dictionary DCs
+ *#
+#macro(BuildDdicComponent)
+    #set($offline_ddic = false)
+    #set($offline_ddic = $dc_util.booleanValue($dc_util.getOption("com.sap.ddic.offline-deployable")))
+
+    #if($dc_subtype == "Core")
+        #set($offline_ddic = true)
+    #end
+
+    #set($ddic_metadir = $dc_util.createTempDir("gdd_metainf"))
+    #set($translation_dir = $dc_util.createTempDir("translation_dir"))
+    #set($temp_genddic_dir  = $dc_util.createTempDir("gdd"))
+
+    #set($temp_public_dir   = "${dc_gen_tempDir}/pp")
+    #set($temp_genddic_dir_datatypes = "$temp_genddic_dir/datatypes")
+
+
+    #StartTarget("compile")
+
+        <publicpartlist file="${ddic_metadir}/PublicPartList.xml"/>
+
+        ## delete the PublicPartFileList before ddgen generator call
+        <delete file="${ddic_metadir}/PublicPartFileList.xml"/>
+
+        #DefaultDDicGeneration($dc_packageDirsAsFiles $temp_genddic_dir $ddic_metadir)
+
+        #CompileDCJavaSources()
+        #Compile($temp_genddic_dir_datatypes $dc_depend_compileDirs $dc_gen_javac_default_out)
+
+        ## jdo task
+        #if($dc_jdo_files.size() > 0 && $dc_packageDirs.size() > 0)
+            #JdoEnhance(${dc_rootDir} ${dc_gen_javac_default_out})
+        #end
+        <available file="${temp_genddic_dir}/datatypes/sdmDeployDd.xml" property="sdmDeployDd.present"/>
+    #EndTarget()
+
+
+    ##
+    ## Ant target to copy the files for the public parts
+    ##
+    $javaBase.createPublicParts()
+
+    #StartTargetIf("createDeployArchive" "compile" "sdmDeployDd.present")
+    #if($offline_ddic)
+        <echo message="Creating offline deployable archive."/>
+    #end
+
+        #*
+         * A DDIC deployable archive only contains database table definitions.
+         *
+         * The generated Java source files will be exposed via compilation PPs
+         * only.
+         *
+         * Therefore it is not needed to pack sources for DDIC deployable archives
+         *#
+
+        #MkDir($temp_genddic_dir_datatypes)
+        #set($empty_list = $dc_util.createList())
+        #BeginCreateDeployFile("sap.com~SDA" "${dc_deployDir}/${dc_deployFile}.sda" "${temp_genddic_dir_datatypes}/sdmDeployDd.xml" $empty_list)
+            #if ($offline_ddic)
+                <deployoption key="software-subtype" value="core"/>
+            #end
+            <fileset dir="$temp_genddic_dir_datatypes">
+                <include name="**/*.gdbtable"/>
+                <include name="**/*.gdbview"/>
+            </fileset>
+        #EndCreateDeployFile()	         
+    #EndTarget()
+
+    #StartTargetUnless("noCreateDeployArchive" "compile" "sdmDeployDd.present")
+        <echo message="No deploy archive created, no deployable dictionary elements available."/>
+    #EndTarget()
+    
+    #StartTargetIf("createDBContentArchive" "compile" "sdmDeployDd.present")        
+		#CreateDBContentTranslation()    
+		#CreateDBContentArchive(true)    
+	#EndTarget()
+	
+	#StartTargetUnless("createStandaloneDBContentArchive" "compile" "sdmDeployDd.present")
+		#CreateDBContentTranslation()
+		#CreateDBContentArchive(false)
+	#EndTarget()
+#end

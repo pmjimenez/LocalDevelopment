@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:c="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://nobelbiocare.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd0="http://nobelbiocare.com/BPM/SFDC/Customer" targetNamespace="http://nobelbiocare.com">
+  <wsdl:types>    
+    <xsd:schema xmlns:tns="http://nobelbiocare.com/BPM/SFDC/Customer" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Customer">
+  <xsd:element name="MT_BRM001_Customer_Dummy_PE_Table" type="tns:DT_BRM001_Customer_Dummy_PE_Table"/>
+  <xsd:complexType name="DT_BRM001_Customer_Dummy_PE_Table">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="ORG" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ORGNAME" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="COMPANYCODE" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="COMPANYNAME" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="DUMMY_PE" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="LIVE" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="SFDC_ID" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd0tns="http://nobelbiocare.com/BPM/SFDC/Customer" xmlns:yns="http://nobelbiocare.com" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://nobelbiocare.com">
+  <xs:import namespace="http://nobelbiocare.com/BPM/SFDC/Customer"/>		
+  <xs:element name="Request-nobelbiocare.com-p-sfdc-bl-br-customer-BRM001-Customer-Dummy-PE-Table-BRM001-Customer-Dummy-PE-Table" type="yns:RulesTypes-nobelbiocare.com-p-sfdc-bl-br-customer-BRM001-Customer-Dummy-PE-Table-BRM001-Customer-Dummy-PE-Table"/>		
+  <xs:element name="Response-nobelbiocare.com-p-sfdc-bl-br-customer-BRM001-Customer-Dummy-PE-Table-BRM001-Customer-Dummy-PE-Table" type="yns:RulesTypes-nobelbiocare.com-p-sfdc-bl-br-customer-BRM001-Customer-Dummy-PE-Table-BRM001-Customer-Dummy-PE-Table"/>			
+  <xs:complexType name="RulesTypes-nobelbiocare.com-p-sfdc-bl-br-customer-BRM001-Customer-Dummy-PE-Table-BRM001-Customer-Dummy-PE-Table">
+   <xs:sequence>
+    <xs:element ref="xsd0tns:MT_BRM001_Customer_Dummy_PE_Table"/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:schema>		
+  </wsdl:types>
+  <wsdl:message name="RulesRequest">
+    <wsdl:part element="tns:Request-nobelbiocare.com-p-sfdc-bl-br-customer-BRM001-Customer-Dummy-PE-Table-BRM001-Customer-Dummy-PE-Table" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="RulesResponse">
+    <wsdl:part element="tns:Response-nobelbiocare.com-p-sfdc-bl-br-customer-BRM001-Customer-Dummy-PE-Table-BRM001-Customer-Dummy-PE-Table" name="output"/>
+  </wsdl:message>
+  <wsdl:portType name="BRM001_Customer_Dummy_PE_TablePortType">
+    <wsdl:operation name="getDummyValues" parameterOrder="parameters">
+      <wsdl:input message="tns:RulesRequest"/>
+      <wsdl:output message="tns:RulesResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="BRM001_Customer_Dummy_PE_TablePortTypeBinding" type="tns:BRM001_Customer_Dummy_PE_TablePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getDummyValues">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BRM001_Customer_Dummy_PE_Table">
+    <wsdl:port binding="tns:BRM001_Customer_Dummy_PE_TablePortTypeBinding" name="BRM001_Customer_Dummy_PE_TablePort">
+      <soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="http://localhost:50500/nobelbiocare.com~p_sfdc~bl~br~customer-BRM001_Customer_Dummy_PE_Table/BRM001_Customer_Dummy_PE_Table/BRM001_Customer_Dummy_PE_TablePortType"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

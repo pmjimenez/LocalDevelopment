@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<job-definitions>
+	<job-definition description="Get cabinet events" 
+		name="GetCabinetEventsJob" retention-period="2">
+		<job-definition-parameter name="LIMIT"
+			data-type="String" direction="IN" />
+		<job-definition-parameter description="Event types separated by comma. Ex: AggregateEvent,ObjectEvent" name="EVENT_TYPES"
+			data-type="String" direction="IN" />
+		<job-definition-parameter description="Devices separated by comma (optional). Ex: Device1,Device2" name="DEVICES"
+			data-type="String" direction="IN" nullable="Y" />
+	</job-definition>
+</job-definitions>

@@ -1,0 +1,10 @@
+ROOT_0,TARGET_NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Revenue
+ROOT_0,SCHEMA_LOCATION=http://nobelbiocare.com/BPM/SFDC/Revenue
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:tns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="MT_ProductId" type="tns:DT_ProductId" sdox:aliasName="$http://nobelbiocare.com/BPM/SFDC/Revenue:MT_ProductId" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="DT_ProductId" sdox:aliasName="#DT_ProductId" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="Row" minOccurs="0" maxOccurs="unbounded" sdox:aliasName="$Row">         <xsd:complexType sdox:aliasName="E0EB190761CB7204F9F611E6BFA40205857FEB80">           <xsd:sequence>             <xsd:element name="ProductId" type="xsd:string" minOccurs="0" sdox:aliasName="$ProductId"></xsd:element>             <xsd:element name="SAP_Material_Number" type="xsd:string" minOccurs="0" sdox:aliasName="$SAP_Material_Number"></xsd:element>           </xsd:sequence>         </xsd:complexType>       </xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+
+ROOT_1,TARGET_NAMESPACE=urn:partner.soap.sforce.com
+ROOT_1,SCHEMA_LOCATION=urn:partner.soap.sforce.com
+ROOT_1,ROOTID=1
+ROOT_1,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="urn:partner.soap.sforce.com" xmlns:tns="urn:partner.soap.sforce.com" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="query" sdox:aliasName="$urn:partner.soap.sforce.com:query" xmlns:sdox="commonj.sdo/xml">     <xsd:complexType sdox:aliasName="E0EB190761CD935FF9F611E6CE1B0205857FEB80">       <xsd:sequence>         <xsd:element name="queryString" type="xsd:string" sdox:aliasName="$urn:partner.soap.sforce.com:queryString"></xsd:element>       </xsd:sequence>     </xsd:complexType>   </xsd:element> </xsd:schema> 
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" xmlns:sap="http://www.sap.com" xmlns:sapconfig="http://www.sap.com/webas/2007/03/esoa/config/system" xmlns:sapimplbpm="http://www.sap.com/webas/2007/03/esoa/implementation/bpm" xmlns:sapinterfacewsdlloc="http://www.sap.com/xmlns/sapsca/1.0" xmlns:xins="http://www.sap.com/xmlns/sapsca/xi/1.0" name="p_teac~pr~pm~speakers" targetNamespace="http://www.sap.com">
+<component name="nobelbiocare.com~p_teac~pr~pm~speakers~BPMcomponent">
+<sapimplbpm:implementation.bpm/>
+<reference name="3dd9df33-3c54-40aa-a37d-309f521e471a" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MI264_BPM_GetAttachments_os">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/Speakers#wsdl.interface(MI264_BPM_GetAttachaments_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~speakers.bpem#wsdls/nobelbiocare.com~p_teac~pr~pm~speakers/MI264_BPM_GetAttachaments_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="c879fe55-9cdd-44df-8e2d-a4d2eca59f1e" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MI265_BPM_SpeakerImport_Result_oa">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/Speakers#wsdl.interface(MI265_BPM_SpeakerImport_Result_oa)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~speakers.bpem#wsdls/nobelbiocare.com~p_teac~pr~pm~speakers/MI265_BPM_SpeakerImport_Result_oa.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="e5fcd903-a9c9-447e-b55e-f4c539480a6c" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MI263_BPM_SpeakerImport_os">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/Speakers#wsdl.interface(MI263_BPM_SpeakerImport_os)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~speakers.bpem#wsdls/nobelbiocare.com~p_teac~pr~pm~speakers/MI263_BPM_SpeakerImport_os.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="d813f7bc-3a38-4817-af6c-08fd4ff5f99a" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="MI263_BPM_SpeakerImport_ia">
+<interface.wsdl interface="http://nobelbiocare.com/BPM/Speakers#wsdl.interface(MI263_BPM_SpeakerImport_ia)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~speakers.bpem#wsdls/nobelbiocare.com~p_teac~pr~pm~speakers/MI263_BPM_SpeakerImport_ia.wsdl"/>
+<xins:binding.xi senderPartyName="" senderServiceName="BPM_SYSTEM"/>
+</reference>
+<reference name="ac4c4f79-f0c1-406d-89c6-ad252b3afee1" sapconfig:authenticationProfile="businessOrTechnicalUser" sapconfig:serviceGroup="SampleTimerServiceGroup">
+<interface.wsdl interface="http://sap.com/glx/sampletimer/#wsdl.interface(SampleTimer)" sapinterfacewsdlloc:location="nobelbiocare.com~p_teac~pr~pm~speakers.bpem#wsdls/sap.com~tc~bpem~content~predefs~default/rootwsdl_SimpleTimerServices.wsdl"/>
+<binding.ws/>
+</reference>
+</component>
+<sapconfig:serviceGroups>
+<sapconfig:serviceGroup bundle="2381b875-09be-4625-a345-d4fdbee1ffc3.consgroup" sgName="MI264_BPM_GetAttachments_os"/>
+<sapconfig:serviceGroup bundle="31de37ad-3c51-4ebb-9545-63d9061e6c89.consgroup" sgName="MI263_BPM_SpeakerImport_ia"/>
+<sapconfig:serviceGroup bundle="7ae40e28-6883-4495-bc6b-e98e2e024b90.consgroup" sgName="MI265_BPM_SpeakerImport_Result_oa"/>
+<sapconfig:serviceGroup bundle="d4348bba-1578-4ac9-bb27-0289f3976b0e.consgroup" sgName="MI263_BPM_SpeakerImport_os"/>
+</sapconfig:serviceGroups>
+</composite>

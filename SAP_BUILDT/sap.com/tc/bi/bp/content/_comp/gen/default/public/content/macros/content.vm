@@ -1,0 +1,76 @@
+#macro (BuildContent)
+
+	#if ($!dc_jarSAP_caption == "")
+		#set ($appname = $dc_jarSAP_name)
+	#else
+		#set ($appname = $dc_jarSAP_caption)
+	#end
+
+
+    #StartTarget("prepare")
+    #EndTarget()
+
+
+    #if ($dc_sourceDirsAsFiles.size() == 0)
+	#StartTargetDep("nop" "prepare")
+		<echo message="No source folder available, no archive will be created."/>
+	#EndTarget()
+    #else
+    #if ($buildContentDeployable)
+    #set($ca_rootfolder = $dc_util.createTempDir("${filetype}"))
+
+    #StartTargetDep("createContentArchive" "prepare")
+        ##
+        ## if there's a file checked in with the right suffix just copy it as module
+        ##
+        #set($existing_archives = $dc_util.findFiles($dc_sourceDirsAsFiles, "*$filetype"))
+        #if ($existing_archives.size() > 0)
+            #if ($existing_archives.size() > 1)
+                $dc_util.fail("Source folder contains more than one file with suffix ${filetype} : ${existing_archives}")
+            #else
+                #BeginPackInternalPP("Content Archive" "${ca_rootfolder}")
+                    <packer location="Content Archive" type="sda">
+                        <property key="path" value="${dc_deployFile}${filetype}"/>
+                        <property key="attributes" value="SAP-J2EE-Module[container-type[${swtype}]]"/>
+                    </packer>
+                    <entity name="Content Archive" type="Content Archive">
+            			#foreach ($src in $dc_sourceDirsAsFiles)
+                        <fileset dir="${src}" location="Content Archive">
+                            <include name="*${filetype}"/>
+                        </fileset>
+			            #end
+                    </entity>
+                #EndPackInternalPP("Content Archive")
+            #end
+        #else
+            ##
+            ## pack content of source folder(s) into zip-archive
+            ##
+            #BeginPackInternalPP("Content Archive" "${ca_rootfolder}")
+                <packer location="Content Archive" type="zip">
+                    <property key="path" value="${dc_deployFile}${filetype}"/>
+                    <property key="attributes" value="SAP-J2EE-Module[container-type[${swtype}]]"/>
+                </packer>
+                <entity name="Content Archive" type="Content Archive">
+                    #foreach ($src in $dc_sourceDirsAsFiles)
+                    <fileset dir="${src}" location="Content Archive"/>
+                    #end
+                </entity>
+            #EndPackInternalPP("Content Archive")
+        #end
+    #EndTarget()
+
+    ##
+    ## Create deployable archive
+    ##
+    #StartTargetDep("createDeployArchive" "createContentArchive")
+        #CreateDefaultJ2EEEngineDescriptor("${dc_gen_tempDir}/sda-dd.xml")
+        #BeginCreateDeployFile("sap.com~j2ee.EAR_SDA" "${dc_deployDir}/${dc_deployFile}.ear" "${dc_gen_tempDir}/sda-dd.xml" $dc_depend_assemblyPPs)
+            <assemblyroot path="${ca_rootfolder}"/>
+        #EndCreateDeployFile()
+    #EndTarget()
+    #else
+    $antBase.packPublicParts()
+    #end
+    #end
+#end

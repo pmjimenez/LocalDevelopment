@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Partition xmlns:m='http://xml.sap.com/moin'>
+<C n='sap.com/com/sap/ide/es/config/mc/model' i='1' v='2.0.0'/>
+<M c='1' q='mc.logicalsystem.QName' i='471DAFAC55EC9E6C814111DCA447003005C6B92C'/>
+<M c='1' q='mc.servicereferences.ServiceReference' i='471DAFAC55EE250E814111DC8ECA003005C6B92C'/>
+<M c='1' q='mc.servicereferences.serviceref_logicalSystem' i='471DAFAC55EFABA2814111DCC1B9003005C6B92C' se='1' ce='-1' oe='-1'/>
+<M c='1' q='mc.servicereferences.serviceref_authenticationProfile' i='471DAFAC55EFABA5814111DCA3E1003005C6B92C' se='1' ce='-1' oe='-1'/>
+<M c='1' q='mc.servicereferences.serviceref_qname' i='471DAFAC55F13240814111DCC062003005C6B92C' se='1' ce='1' oe='-1'/>
+<M c='1' q='mc.servicereferences.ServiceReferenceCustomAttributes' i='E071FFE67B8562C5384611E09E32002710A58A9C'/>
+<M c='1' q='mc.servicereferences.ref_CustomAttributes' i='E071FFE6FAC645EF384611E08198002710A58A9C' se='1' ce='-1' oe='-1'/>
+<mc.logicalsystem.QName m:c='1' m:i='E0356A049933D2C760A411E7852D54EFEC7B6400' name='MI284_BPM_GetSum_EndCall_os' namespace='http://nobelbiocare.com/BPM/SFDC/Revenue'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E0356A049933F12960A411E785A254EFEC7B6400' id='d41f56f3-e029-45cb-992c-184207992e4a' type='WS' bindingType='XI' scdlBindingType='xi'/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0A83D33BCE0DD28F9D511E69AE10205857FEB80' key='senderPartyName' value=''/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0A83D33BCE0DD29F9D511E6C3FA0205857FEB80' key='senderServiceName' value='BPM_REVENUE_SFDC'/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0A83D33CDCAE0B7F9D511E6C35D0205857FEB80' key='senderPartyName' value=''/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0A83D33CDCB1713F9D511E6B6650205857FEB80' key='senderServiceName' value='BPM_REVENUE_SFDC'/>
+<mc.logicalsystem.QName m:c='1' m:i='E0C5DFBD03D2B665F9D411E6C18F0205857FEB80' name='MI286_BPM_ControlFlow_oa' namespace='http://nobelbiocare.com/BPM/SFDC/Revenue'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E0C5DFBD03D2B666F9D411E684950205857FEB80' id='fd4c8c57-fa9a-4717-90f6-244ddbef9c63' type='WS' bindingType='XI' scdlBindingType='xi'/>
+<mc.logicalsystem.QName m:c='1' m:i='E0C5DFBDA2575B5DF9D511E6AC500205857FEB80' name='SampleTimer' namespace='http://sap.com/glx/sampletimer/'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E0C5DFBDA2575B5EF9D511E6ADEC0205857FEB80' id='8fbf341e-ccff-4d25-94d2-aa80507d15ab' type='WS' bindingType='WS' scdlBindingType='ws'/>
+<mc.logicalsystem.QName m:c='1' m:i='E0C5DFBDB0EAB445F9D511E689E20205857FEB80' name='nobelbiocarecom_p_sfdcprpmreget_sum_OM_GetSum_RejectedPortType' namespace='http://nobelbiocare.com/BPM/SFDC/Revenue'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E0C5DFBDB0EAB446F9D511E6B9460205857FEB80' id='74c64edc-bc31-4ce2-ab88-07027449fe79' type='WS' bindingType='WS' scdlBindingType='ws'/>
+<mc.logicalsystem.QName m:c='1' m:i='E0C5DFBDCA8B946CF9D311E69C090205857FEB80' name='MI284_BPM_GetSum_Push_os' namespace='http://nobelbiocare.com/BPM/SFDC/Revenue'/>
+<mc.servicereferences.ServiceReference m:c='1' m:i='E0C5DFBDCA8B946DF9D311E689360205857FEB80' id='6e2ae398-faae-4b24-b7de-0f5938c77dd6' type='WS' bindingType='XI' scdlBindingType='xi'/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0C792CEA4A2CFD460A411E780A054EFEC7B6400' key='senderPartyName' value=''/>
+<mc.servicereferences.ServiceReferenceCustomAttributes m:c='1' m:i='E0C792CEA4A2EA8160A411E7C12F54EFEC7B6400' key='senderServiceName' value='BPM_REVENUE_SFDC'/>
+<mc.servicereferences.serviceref_logicalSystem c='1'>
+<L f='local:E0C5DFBDCA894102F9D311E691CD0205857FEB80' s='E0356A049933F12960A411E785A254EFEC7B6400'/>
+<L f='local:E0C5DFBDCA894102F9D311E691CD0205857FEB80' s='E0C5DFBD03D2B666F9D411E684950205857FEB80'/>
+<L f='local:4925559F5D230461B6FD11DD82620018717335EB' s='E0C5DFBDA2575B5EF9D511E6ADEC0205857FEB80'/>
+<L f='local:E0C5DFBDB0E81D5CF9D511E6C7C40205857FEB80' s='E0C5DFBDB0EAB446F9D511E6B9460205857FEB80'/>
+<L f='local:E0C5DFBDCA894102F9D311E691CD0205857FEB80' s='E0C5DFBDCA8B946DF9D311E689360205857FEB80'/>
+</mc.servicereferences.serviceref_logicalSystem>
+<mc.servicereferences.serviceref_authenticationProfile c='1'>
+<L f='local:E0C5DFBD3E489E35F9D311E69FA70205857FEB80' s='E0356A049933F12960A411E785A254EFEC7B6400'/>
+<L f='local:E0C5DFBD3E489E35F9D311E69FA70205857FEB80' s='E0C5DFBD03D2B666F9D411E684950205857FEB80'/>
+<L f='local:E0C5DFBD3E489E35F9D311E69FA70205857FEB80' s='E0C5DFBDA2575B5EF9D511E6ADEC0205857FEB80'/>
+<L f='local:E0C5DFBD3E489E35F9D311E69FA70205857FEB80' s='E0C5DFBDB0EAB446F9D511E6B9460205857FEB80'/>
+<L f='local:E0C5DFBD3E489E35F9D311E69FA70205857FEB80' s='E0C5DFBDCA8B946DF9D311E689360205857FEB80'/>
+</mc.servicereferences.serviceref_authenticationProfile>
+<mc.servicereferences.serviceref_qname c='1'>
+<L f='E0356A049933D2C760A411E7852D54EFEC7B6400' s='E0356A049933F12960A411E785A254EFEC7B6400'/>
+<L f='E0C5DFBD03D2B665F9D411E6C18F0205857FEB80' s='E0C5DFBD03D2B666F9D411E684950205857FEB80'/>
+<L f='E0C5DFBDA2575B5DF9D511E6AC500205857FEB80' s='E0C5DFBDA2575B5EF9D511E6ADEC0205857FEB80'/>
+<L f='E0C5DFBDB0EAB445F9D511E689E20205857FEB80' s='E0C5DFBDB0EAB446F9D511E6B9460205857FEB80'/>
+<L f='E0C5DFBDCA8B946CF9D311E69C090205857FEB80' s='E0C5DFBDCA8B946DF9D311E689360205857FEB80'/>
+</mc.servicereferences.serviceref_qname>
+<mc.servicereferences.ref_CustomAttributes c='1'>
+<L f='E0C792CEA4A2CFD460A411E780A054EFEC7B6400' s='E0356A049933F12960A411E785A254EFEC7B6400'/>
+<L f='E0C792CEA4A2EA8160A411E7C12F54EFEC7B6400' s='E0356A049933F12960A411E785A254EFEC7B6400'/>
+<L f='E0A83D33BCE0DD28F9D511E69AE10205857FEB80' s='E0C5DFBD03D2B666F9D411E684950205857FEB80'/>
+<L f='E0A83D33BCE0DD29F9D511E6C3FA0205857FEB80' s='E0C5DFBD03D2B666F9D411E684950205857FEB80'/>
+<L f='E0A83D33CDCAE0B7F9D511E6C35D0205857FEB80' s='E0C5DFBDCA8B946DF9D311E689360205857FEB80'/>
+<L f='E0A83D33CDCB1713F9D511E6B6650205857FEB80' s='E0C5DFBDCA8B946DF9D311E689360205857FEB80'/>
+</mc.servicereferences.ref_CustomAttributes>
+</Partition>

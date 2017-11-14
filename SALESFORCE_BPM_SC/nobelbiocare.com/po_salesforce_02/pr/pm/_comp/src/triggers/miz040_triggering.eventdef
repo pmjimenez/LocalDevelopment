@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Partition xmlns:m='http://xml.sap.com/moin'>
+<C n='sap.com/glx/ide' i='1' v='2.0.0'/>
+<C n='sap.com/tc/moin/textverticalization' i='2' v='2.0.0'/>
+<C n='sap.com/tc/moin/util' i='3' v='1.0.0'/>
+<M c='1' q='Galaxy.Workflow.MessageEventDefinition' i='47BEE014D666B539E15411DCB9A7001321CBD1B1'/>
+<M c='1' q='Galaxy.Workflow.MessageEventDefinitionHasOperation' i='47C2D91202ED4EB5E3B311DCC463001558C33B4F' se='1' ce='-1' oe='-1'/>
+<M c='3' q='properties.PropertyBag' i='493E63563C546320C5EC11DD9396001999375840'/>
+<properties.PropertyBag m:c='3' m:i='E09C418AD6E1CCD1AE1111E4974D000C29AF3A8A' id='PartitionCreationInfo'>
+<properties key='creatorId' value='com.sap.glx.ide'/>
+<properties key='creatorVersion' value='2.0.0'/>
+</properties.PropertyBag>
+<Galaxy.Workflow.MessageEventDefinition m:c='1' m:i='E0EE4DB2D6E1CCCEAE1111E4BFB7000C29AF3A8A' nameTranslatable='false' documentationTranslatable='true'>
+<name maxWidth='255' originalText='MIZ040_Triggering' resType='generaltext' translate='false' transUnitId='D6E1CCCFAE1111E4906E000C29AF3A8A'/>
+<documentation maxWidth='16380' originalText='Trigger message comming from SAP with a query.' resType='description' translate='true' transUnitId='D6E1CCD0AE1111E4C10A000C29AF3A8A'/>
+</Galaxy.Workflow.MessageEventDefinition>
+<Galaxy.Workflow.MessageEventDefinitionHasOperation c='1'>
+<L f='local:E0EB19077CE5DE87AE1111E4BEE9000C29AF3A8A' s='E0EE4DB2D6E1CCCEAE1111E4BFB7000C29AF3A8A'/>
+</Galaxy.Workflow.MessageEventDefinitionHasOperation>
+</Partition>

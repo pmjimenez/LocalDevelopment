@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webservices xmlns="http://www.sap.com/webas/710/ws/webservices-j2ee-engine-alt-descriptor">
+  <webservice-description>
+    <webservice-name>MI276_BPM_CustomerData_Set_ia_nobelbiocarecom2Fpsfdc2Fpr2Fpm2Fcu2Fcustomersync2FTRCustomerSyncSalesForce</webservice-name>
+    <wsdl-file>META-INF/wsdl/nobelbiocarecom2Fpsfdc2Fpr2Fpm2Fcu2Fcustomersync2FTRCustomerSyncSalesForce/src/wsdl/MI276_BPM_CustomerData_Set_ia.wsdl</wsdl-file>
+    <wsdl-service namespace="http://nobelbiocare.com/BPM/SFDC/Customer">MI276_BPM_CustomerData_Set_iaService</wsdl-service>
+    <port-component>
+      <port-name>MI276_BPM_CustomerData_Set_ia</port-name>
+      <wsdl-port namespace="http://nobelbiocare.com/BPM/SFDC/Customer">MI276_BPM_CustomerData_Set_iaPort</wsdl-port>
+      <url>/bpm/nobelbiocarecom/psfdc/pr/pm/cu/customersync/TRCustomerSyncSalesForce</url>
+      <implementation-link>
+        <property name="implementation-id">GalaxyImpl</property>
+        <property name="service-identifier">nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/TR_Customer_Sync_SalesForce</property>
+      </implementation-link>
+      <meta-data/>
+    </port-component>
+  </webservice-description>
+</webservices>

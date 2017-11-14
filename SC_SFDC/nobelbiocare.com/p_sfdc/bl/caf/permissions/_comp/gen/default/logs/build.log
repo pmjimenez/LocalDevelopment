@@ -1,0 +1,113 @@
+Development Component Build (2017-11-06 17:08:38 GMT+01:00 (CET))
+  Component name: p_sfdc/bl/caf/permissions
+  Component vendor: nobelbiocare.com
+  SC compartment: SC_SFDC
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: pedro.jimenez@MADNB2016
+  DC root folder: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\p_sfdc\bl\caf\permissions\_comp\
+  DC type: Content
+  DC subtype: UME Permissions
+  Host: MADNB2016
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/content"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/content
+   starting build plugin from : D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\content\_comp\gen\default\public\content\
+
+
+
+Build Plugin 'ContentPlugin', Version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:48:46 +0200, CL209430)
+   development component:  p_sfdc/bl/caf/permissions (nobelbiocare.com)
+      software component:  SC_SFDC (nobelbiocare.com)
+       support component:  Default
+                location:  localDevelopment
+                    type:  Content, subtype UME Permissions
+           build variant:  default
+         source location:  pedro.jimenez@MADNB2016
+         output location:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\2BC12AAF1F708F3E81B478640EEA3D60\default
+       generation folder:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\2BC12AAF1F708F3E81B478640EEA3D60
+       plugin start time:  2017-11-06 17:08:38 GMT+01:00 (CET)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.45-b01 (1.6, Sun Microsystems Inc.)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Checking path lengths for sources
+Path length checks finished in 0 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.011 seconds
+ 
+Creating Ant build file..
+  Creating output file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\2BC12AAF1F708F3E81B478640EEA3D60\default\logs\build.xml
+  Using macro file:     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\content\_comp\gen\default\public\content\macros\build.vm
+Build file creation finished in 0.05 seconds
+ 
+Starting Ant..
+  Using build file:     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\2BC12AAF1F708F3E81B478640EEA3D60\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+prepare:
+ 
+createContentArchive:
+  [pppacker] Packed   1 file  for entity Content Archive (Content Archive)
+     [timer] Content Archive packaging finished in 0.023 seconds
+ 
+ 
+createDeployArchive:
+       [cda] Preparing archive for deploy unit "default"
+       [cda]   deployment type: "J2EE"
+       [cda]   assembly roots: 
+       [cda]     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\2BC12AAF1F708F3E81B478640EEA3D60\.ump
+       [cda]     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\2BC12AAF1F708F3E81B478640EEA3D60\.ump
+ 
+       [cda] Creating Ant build file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\2BC12AAF1F708F3E81B478640EEA3D60\default\logs\buildDeployArchive.xml
+ 
+ 
+       [cda] Creating descriptor META-INF/application.xml ...
+ 
+       [cda] Creating descriptor META-INF/application-j2ee-engine.xml ...
+       [cda] Adding module "nobelbiocare.com~p_sfdc~bl~caf~permissions.ump" with container type "com.sap.security.ume".
+ 
+       [cda] Collecting modules ...
+       [cda] Adding module 'nobelbiocare.com~p_sfdc~bl~caf~permissions.ump' from current development component
+       [cda] Ant build file creation finished in 0.059 seconds
+ 
+packDeployArchive:
+ [srcpacker] Creating source archive
+ [srcpacker] No sources available for packing, no archive will be created.
+     [timer] Source archive creation finished in 0.015 seconds
+ 
+    [jarsap] Info: JarSAP version 20090803.1000
+    [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
+    [jarsap] Building: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\2BC12AAF1F708F3E81B478640EEA3D60\default\deploy\nobelbiocare.com~p_sfdc~bl~caf~permissions.ear with compression
+     [timer] JarSAP finished in 0.014 seconds
+ 
+ 
+build:
+ 
+Ant runtime 0.151 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2017-11-06 17:08:38 GMT+01:00 (CET)
+Total build plugin runtime: 0.324 seconds
+ 
+Build finished OK
+
+==== Post-Processing ====   started at 2017-11-06 17:08:38.601 CET
+Comparison of previous and actual build results took: 0 seconds
+
+Copy the build results 
+  from: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\2BC12AAF1F708F3E81B478640EEA3D60\default\
+  to:   D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\p_sfdc\bl\caf\permissions\_comp\gen\default\

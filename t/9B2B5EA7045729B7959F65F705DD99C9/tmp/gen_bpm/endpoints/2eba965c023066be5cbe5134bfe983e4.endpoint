@@ -1,0 +1,10 @@
+# Message event definition TR_START_REVENUE_CONTROL_FLOW (MOFId: E0C792CE6765D082EA1211E6C475548757986900)
+NETWORK,2eba965c023066be5cbe5134bfe983e4,nobelbiocare.com/p_sfdc/pr/pm/re/flow_control/TR_START_REVENUE_CONTROL_FLOW
+REVISIONID,4,7,Galaxy interface compiler as of NetWeaver CE 7.30. Give yourself to the dark side.
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/flow_control/TR_START_REVENUE_CONTROL_FLOW,MI286_BPM_ControlFlow_ia,SCOPE=8152D31389888D4FCEB44C6574309A18
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/flow_control/TR_START_REVENUE_CONTROL_FLOW,MI286_BPM_ControlFlow_ia,ELEMENT,NAME=$http://nobelbiocare.com/BPM/SFDC/Revenue:MT_FlowControl
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/flow_control/TR_START_REVENUE_CONTROL_FLOW,MI286_BPM_ControlFlow_ia,ELEMENT,NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Revenue
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/flow_control/TR_START_REVENUE_CONTROL_FLOW,MI286_BPM_ControlFlow_ia,TYPE,NAME=#23#DT_FlowControl
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/flow_control/TR_START_REVENUE_CONTROL_FLOW,MI286_BPM_ControlFlow_ia,TYPE,NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Revenue
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/flow_control/TR_START_REVENUE_CONTROL_FLOW,MI286_BPM_ControlFlow_ia,MESSAGEPATTERN_INONLY=true

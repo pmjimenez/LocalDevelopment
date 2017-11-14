@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<technologies version="1">
+  <technology name="sap.com/bie/sca/scdl/gen">
+    <uses>sap.com/tc/bi/core</uses>
+    
+    <ant-targets>
+			<target>
+				<name>ScdlBase</name>
+				<step>build</step>
+				<implementation-type>java</implementation-type>
+				<implementation-name>com.sap.bie.sca.scdl.base.ScdlBase</implementation-name>
+				<execute-after>compile</execute-after>
+			</target>
+	</ant-targets>
+    
+	<ant-tasks>
+		<task name="gen_scdl" classname="com.sap.bie.sca.scdl.gen.ScdlGenerator" on-demand="false"/>
+	</ant-tasks>
+	
+	<generators>
+
+			<generator type="sap.com~gen_scdl" implementation-type="java"
+				implementation-name="com.sap.bie.sca.scdl.gen.ScdlGeneratorBuildFileCreator">
+				
+				<parameters>
+					<!-- this is needed for temp moin generation -->
+					<parameter name="outputFolderName" default-value="moin_output" />
+				</parameters>
+			
+			</generator>
+		
+			<chain type="sap.com~scdl_gen_chain" implementation-type="java">
+
+				<generators sequence="moininit,gen_scdl,shutdown">
+					<generator id="moininit" type="sap.com~moininit" />
+					<generator id="gen_scdl" type="sap.com~gen_scdl" />
+					<generator id="shutdown" type="sap.com~moinshutdown" />
+				</generators>
+
+				<outputs>
+					<output name="default" required="true">
+						<description>
+							The output path where xmis generated during
+							the DC build will be stored.
+						</description>
+					</output>
+				</outputs>
+
+				<!-- output folder name for the moininit -->
+				<parameters>
+					<parameter name="outputFolderName"/>
+				</parameters>
+
+				<links>
+					<!-- link the chain's output to the moininit output -->
+					<link>
+						<source type="output" name="default" />
+						<destination id="moininit" type="parameter" name="outputFolderRoot" />
+					</link>
+					<!-- link the chain's outputFolderName parameter to the moininit outputFolderName parameter -->
+					<link>
+						<source type="parameter" name="outputFolderName" />
+						<destination id="moininit" type="parameter" name="outputFolderName" />
+					</link>
+					<!-- link the chain's outputFolderName parameter to the ext_cfg_mm outputFolderName parameter -->
+					<link>
+						<source type="parameter" name="outputFolderName" />
+						<destination id="gen_scdl" type="parameter" name="outputFolderName" />
+					</link>
+				</links>
+			</chain>
+	</generators>
+		
+    <entity>
+      <descriptor type="Composite Entity">
+        <handler classname="com.sap.bie.sca.scdl.pp.ScdlEntityHandler"/>
+      </descriptor>
+    </entity>
+    
+  </technology>
+</technologies>

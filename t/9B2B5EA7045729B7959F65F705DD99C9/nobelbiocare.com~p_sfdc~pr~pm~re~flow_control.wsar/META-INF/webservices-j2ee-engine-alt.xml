@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webservices xmlns="http://www.sap.com/webas/710/ws/webservices-j2ee-engine-alt-descriptor">
+  <webservice-description>
+    <webservice-name>MI286_BPM_ControlFlow_ia_nobelbiocarecom2Fpsfdc2Fpr2Fpm2Fre2Fflowcontrol2FTRSTARTREVENUECONTROLFLOW</webservice-name>
+    <wsdl-file>META-INF/wsdl/nobelbiocarecom2Fpsfdc2Fpr2Fpm2Fre2Fflowcontrol2FTRSTARTREVENUECONTROLFLOW/src/wsdl/MI286_BPM_ControlFlow_ia.wsdl</wsdl-file>
+    <wsdl-service namespace="http://nobelbiocare.com/BPM/SFDC/Revenue">MI286_BPM_ControlFlow_iaService</wsdl-service>
+    <port-component>
+      <port-name>MI286_BPM_ControlFlow_ia</port-name>
+      <wsdl-port namespace="http://nobelbiocare.com/BPM/SFDC/Revenue">MI286_BPM_ControlFlow_iaPort</wsdl-port>
+      <url>/bpm/nobelbiocarecom/psfdc/pr/pm/re/flowcontrol/TRSTARTREVENUECONTROLFLOW</url>
+      <implementation-link>
+        <property name="implementation-id">GalaxyImpl</property>
+        <property name="service-identifier">nobelbiocare.com/p_sfdc/pr/pm/re/flow_control/TR_START_REVENUE_CONTROL_FLOW</property>
+      </implementation-link>
+      <meta-data/>
+    </port-component>
+  </webservice-description>
+</webservices>

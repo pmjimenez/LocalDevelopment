@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://nobelbiocare.com/BPM/TnE" name="MI256_BPM_Get_Speaker_engagement_oa" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://nobelbiocare.com/BPM/TnE" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <wsdl:documentation></wsdl:documentation>
+  <ns1:UsingPolicy xmlns:ns1="http://schemas.xmlsoap.org/ws/2004/09/policy" wsdl:required="true"></ns1:UsingPolicy>
+  <ns2:properties xmlns:ns2="urn:com-sap:ifr:v2:wsdl">
+    <ns2:category>ifmmessif</ns2:category>
+    <ns2:VersionID>526186bf816c11e69d6e0000005f8a66</ns2:VersionID>
+    <ns2:lifeCycleInfo>
+      <objectState></objectState>
+      <objectstatus value="A"></objectstatus>
+      <personresponsible value="chdaro"></personresponsible>
+      <changed by="chdaro" on="1474623491413"></changed>
+    </ns2:lifeCycleInfo>
+    <ns2:runtimeVersion uri="urn:sap-com:soap:runtime:application:client"></ns2:runtimeVersion>
+    <ns2:communicationProfile uri="prf_dt_if_com_stateless"></ns2:communicationProfile>
+    <ns2:securityProfile uri="prf_dt_if_sec_basic"></ns2:securityProfile>
+    <ns2:interfacePattern p2p="true"></ns2:interfacePattern>
+    <ns2:isSensitiveData>false</ns2:isSensitiveData>
+    <ns2:classifications>
+      <ns2:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"></ns2:classification>
+      <ns2:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="beb2f88406a33bc6b6bc8be7e6c13cfb"></ns2:classification>
+    </ns2:classifications>
+    <ns2:additionalAttributes></ns2:additionalAttributes>
+    <ns2:methods>
+      <ns2:method name="MI256_BPM_Get_Speaker_engagement_oa">
+        <ns2:isSynchron>true</ns2:isSynchron>
+        <ns2:isIdempotent>false</ns2:isIdempotent>
+        <ns2:isInbound>false</ns2:isInbound>
+        <ns2:interfaceCategory>outbound</ns2:interfaceCategory>
+        <ns2:communicationProfile uri="prf_dt_op_com_sync"></ns2:communicationProfile>
+        <ns2:contextobjects></ns2:contextobjects>
+      </ns2:method>
+    </ns2:methods>
+    <ns2:messages>
+      <ns2:message name="MT_Speaker_Engagement">
+        <ns2:messType>ifmmessage</ns2:messType>
+        <ns2:keyElements>
+          <ns2:elem id="NAME">MT_Speaker_Engagement</ns2:elem>
+          <ns2:elem id="NAMESPACE">http://nobelbiocare.com/BPM/TnE</ns2:elem>
+        </ns2:keyElements>
+        <ns2:technicalNamespace>http://nobelbiocare.com/BPM/TnE</ns2:technicalNamespace>
+        <ns2:VersionID>2bf32abd817111e686090000005f8a66</ns2:VersionID>
+        <ns2:xmlNamespace>http://nobelbiocare.com/BPM/TnE</ns2:xmlNamespace>
+        <ns2:dataType name="DT_Speaker_Engagement" namespace="http://nobelbiocare.com/BPM/TnE" swcvId="dc2258106ad711e697b4e1ec0a3e5c13" uri="name=DT_Speaker_Engagement~namespace=http://nobelbiocare.com/BPM/TnE~swcvId=dc2258106ad711e697b4e1ec0a3e5c13"></ns2:dataType>
+      </ns2:message>
+      <ns2:message name="p2.queryRequest">
+        <ns2:messType>ifmextmes</ns2:messType>
+        <ns2:keyElements>
+          <ns2:elem id="NAME">ED_CVM_WSDL_APEX_Partner</ns2:elem>
+          <ns2:elem id="NAMESPACE">http://nobelbiocare.com/BPM/TnE</ns2:elem>
+          <ns2:elem id="SUBNAME">queryRequest</ns2:elem>
+          <ns2:elem id="SUBNAMESPACE">urn:partner.soap.sforce.com</ns2:elem>
+        </ns2:keyElements>
+        <ns2:technicalNamespace>http://nobelbiocare.com/BPM/TnE</ns2:technicalNamespace>
+        <ns2:VersionID>8308dcf6816f11e69adf0000005f8a66</ns2:VersionID>
+      </ns2:message>
+      <ns2:message name="p2.ApiFault">
+        <ns2:messType>ifmextmes</ns2:messType>
+        <ns2:keyElements>
+          <ns2:elem id="NAME">ED_CVM_WSDL_APEX_Partner</ns2:elem>
+          <ns2:elem id="NAMESPACE">http://nobelbiocare.com/BPM/TnE</ns2:elem>
+          <ns2:elem id="SUBNAME">ApiFault</ns2:elem>
+          <ns2:elem id="SUBNAMESPACE">urn:partner.soap.sforce.com</ns2:elem>
+        </ns2:keyElements>
+        <ns2:technicalNamespace>http://nobelbiocare.com/BPM/TnE</ns2:technicalNamespace>
+        <ns2:VersionID>8308dcf6816f11e69adf0000005f8a66</ns2:VersionID>
+      </ns2:message>
+    </ns2:messages>
+    <ns2:matchingInterfaces></ns2:matchingInterfaces>
+    <ns2:genericProperties>
+      <ns2:swcvinfo>
+        <ns2:guid>dc2258106ad711e697b4e1ec0a3e5c13</ns2:guid>
+        <ns2:name>BPM, 1.0 of nobelbiocare.com</ns2:name>
+      </ns2:swcvinfo>
+      <ns2:languages>
+        <ns2:language internalCode="EN" original="true"></ns2:language>
+      </ns2:languages>
+      <ns2:documentation type="I">
+        <name>_ID_beb2f88406a33bc6b6bc8be7e6c13cfb_ifmmessif</name>
+        <namespace>http://nobelbiocare.com/BPM/TnE</namespace>
+      </ns2:documentation>
+    </ns2:genericProperties>
+  </ns2:properties>
+  <ns3:Policy xmlns:ns3="http://schemas.xmlsoap.org/ws/2004/09/policy" ns4:Id="OP_MI256_BPM_Get_Speaker_engagement_oa" xmlns:ns4="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"></ns3:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://nobelbiocare.com/BPM/TnE">
+      <xsd:complexType name="DT_Speaker_Engagement">
+        <xsd:sequence>
+          <xsd:element name="SpeakerEngagement" minOccurs="0">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="Campaign_Course_Id" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="SpeakerEng_Id" type="xsd:string" minOccurs="0"></xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="MT_Speaker_Engagement" type="tns:DT_Speaker_Engagement"></xsd:element>
+    </xsd:schema>
+    <xsd:schema targetNamespace="urn:fault.partner.soap.sforce.com" xmlns:tns="urn:fault.partner.soap.sforce.com">
+      <xsd:simpleType name="ExceptionCode">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="APEX_TRIGGER_COUPLING_LIMIT"></xsd:enumeration>
+          <xsd:enumeration value="API_CURRENTLY_DISABLED"></xsd:enumeration>
+          <xsd:enumeration value="API_DISABLED_FOR_ORG"></xsd:enumeration>
+          <xsd:enumeration value="ARGUMENT_OBJECT_PARSE_ERROR"></xsd:enumeration>
+          <xsd:enumeration value="BATCH_PROCESSING_HALTED"></xsd:enumeration>
+          <xsd:enumeration value="CANNOT_DELETE_OWNER"></xsd:enumeration>
+          <xsd:enumeration value="CANT_ADD_STANDADRD_PORTAL_USER_TO_TERRITORY"></xsd:enumeration>
+          <xsd:enumeration value="CANT_ADD_STANDARD_PORTAL_USER_TO_TERRITORY"></xsd:enumeration>
+          <xsd:enumeration value="CIRCULAR_OBJECT_GRAPH"></xsd:enumeration>
+          <xsd:enumeration value="CLIENT_NOT_ACCESSIBLE_FOR_USER"></xsd:enumeration>
+          <xsd:enumeration value="CLIENT_REQUIRE_UPDATE_FOR_USER"></xsd:enumeration>
+          <xsd:enumeration value="CONTENT_HUB_AUTHENTICATION_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="CONTENT_HUB_FILE_DOWNLOAD_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="CONTENT_HUB_FILE_NOT_FOUND_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="CONTENT_HUB_INVALID_OBJECT_TYPE_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="CONTENT_HUB_SECURITY_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="CONTENT_HUB_UNEXPECTED_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="CUSTOM_METADATA_LIMIT_EXCEEDED"></xsd:enumeration>
+          <xsd:enumeration value="DATACLOUD_API_CLIENT_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="DATACLOUD_API_DISABLED_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="DATACLOUD_API_SERVER_BUSY_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="DATACLOUD_API_SERVER_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="DATACLOUD_API_TIMEOUT_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="DATACLOUD_API_UNAVAILABLE"></xsd:enumeration>
+          <xsd:enumeration value="DUPLICATE_ARGUMENT_VALUE"></xsd:enumeration>
+          <xsd:enumeration value="DUPLICATE_VALUE"></xsd:enumeration>
+          <xsd:enumeration value="EMAIL_BATCH_SIZE_LIMIT_EXCEEDED"></xsd:enumeration>
+          <xsd:enumeration value="EMAIL_TO_CASE_INVALID_ROUTING"></xsd:enumeration>
+          <xsd:enumeration value="EMAIL_TO_CASE_LIMIT_EXCEEDED"></xsd:enumeration>
+          <xsd:enumeration value="EMAIL_TO_CASE_NOT_ENABLED"></xsd:enumeration>
+          <xsd:enumeration value="ENVIRONMENT_HUB_MEMBERSHIP_CONFLICT"></xsd:enumeration>
+          <xsd:enumeration value="EXCEEDED_ID_LIMIT"></xsd:enumeration>
+          <xsd:enumeration value="EXCEEDED_LEAD_CONVERT_LIMIT"></xsd:enumeration>
+          <xsd:enumeration value="EXCEEDED_MAX_SIZE_REQUEST"></xsd:enumeration>
+          <xsd:enumeration value="EXCEEDED_MAX_TYPES_LIMIT"></xsd:enumeration>
+          <xsd:enumeration value="EXCEEDED_QUOTA"></xsd:enumeration>
+          <xsd:enumeration value="EXTERNAL_OBJECT_AUTHENTICATION_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="EXTERNAL_OBJECT_CONNECTION_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="EXTERNAL_OBJECT_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="EXTERNAL_OBJECT_UNSUPPORTED_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="FEDERATED_SEARCH_ERROR"></xsd:enumeration>
+          <xsd:enumeration value="FEED_NOT_ENABLED_FOR_OBJECT"></xsd:enumeration>
+          <xsd:enumeration value="FUNCTIONALITY_NOT_ENABLED"></xsd:enumeration>
+          <xsd:enumeration value="FUNCTIONALITY_TEMPORARILY_UNAVAILABLE"></xsd:enumeration>
+          <xsd:enumeration value="ILLEGAL_QUERY_PARAMETER_VALUE"></xsd:enumeration>
+          <xsd:enumeration value="INACTIVE_OWNER_OR_USER"></xsd:enumeration>
+          <xsd:enumeration value="INACTIVE_PORTAL"></xsd:enumeration>
+          <xsd:enumeration value="INSUFFICIENT_ACCESS"></xsd:enumeration>
+          <xsd:enumeration value="INTERNAL_CANVAS_ERROR"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_ASSIGNMENT_RULE"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_BATCH_REQUEST"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_BATCH_SIZE"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_CLIENT"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_CROSS_REFERENCE_KEY"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_DATE_FORMAT"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_FIELD"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_FILTER_LANGUAGE"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_FILTER_VALUE"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_ID_FIELD"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_INPUT_COMBINATION"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_LOCALE_LANGUAGE"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_LOCATOR"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_LOGIN"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_MULTIPART_REQUEST"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_NEW_PASSWORD"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_OPERATION"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_OPERATION_WITH_EXPIRED_PASSWORD"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_PACKAGE_VERSION"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_PAGING_OPTION"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_QUERY_FILTER_OPERATOR"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_QUERY_LOCATOR"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_QUERY_SCOPE"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_REPLICATION_DATE"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_SEARCH"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_SEARCH_SCOPE"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_SESSION_ID"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_SOAP_HEADER"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_SORT_OPTION"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_SSO_GATEWAY_URL"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_TYPE"></xsd:enumeration>
+          <xsd:enumeration value="INVALID_TYPE_FOR_OPERATION"></xsd:enumeration>
+          <xsd:enumeration value="JIGSAW_ACTION_DISABLED"></xsd:enumeration>
+          <xsd:enumeration value="JIGSAW_IMPORT_LIMIT_EXCEEDED"></xsd:enumeration>
+          <xsd:enumeration value="JIGSAW_REQUEST_NOT_SUPPORTED"></xsd:enumeration>
+          <xsd:enumeration value="JSON_PARSER_ERROR"></xsd:enumeration>
+          <xsd:enumeration value="LICENSING_UNKNOWN_ERROR"></xsd:enumeration>
+          <xsd:enumeration value="LIMIT_EXCEEDED"></xsd:enumeration>
+          <xsd:enumeration value="LOGIN_CHALLENGE_ISSUED"></xsd:enumeration>
+          <xsd:enumeration value="LOGIN_CHALLENGE_PENDING"></xsd:enumeration>
+          <xsd:enumeration value="LOGIN_DURING_RESTRICTED_DOMAIN"></xsd:enumeration>
+          <xsd:enumeration value="LOGIN_DURING_RESTRICTED_TIME"></xsd:enumeration>
+          <xsd:enumeration value="LOGIN_MUST_USE_SECURITY_TOKEN"></xsd:enumeration>
+          <xsd:enumeration value="MALFORMED_ID"></xsd:enumeration>
+          <xsd:enumeration value="MALFORMED_QUERY"></xsd:enumeration>
+          <xsd:enumeration value="MALFORMED_SEARCH"></xsd:enumeration>
+          <xsd:enumeration value="MISSING_ARGUMENT"></xsd:enumeration>
+          <xsd:enumeration value="MISSING_RECORD"></xsd:enumeration>
+          <xsd:enumeration value="MUTUAL_AUTHENTICATION_FAILED"></xsd:enumeration>
+          <xsd:enumeration value="NOT_MODIFIED"></xsd:enumeration>
+          <xsd:enumeration value="NO_SOFTPHONE_LAYOUT"></xsd:enumeration>
+          <xsd:enumeration value="NUMBER_OUTSIDE_VALID_RANGE"></xsd:enumeration>
+          <xsd:enumeration value="OPERATION_TOO_LARGE"></xsd:enumeration>
+          <xsd:enumeration value="ORG_IN_MAINTENANCE"></xsd:enumeration>
+          <xsd:enumeration value="ORG_IS_DOT_ORG"></xsd:enumeration>
+          <xsd:enumeration value="ORG_IS_SIGNING_UP"></xsd:enumeration>
+          <xsd:enumeration value="ORG_LOCKED"></xsd:enumeration>
+          <xsd:enumeration value="ORG_NOT_OWNED_BY_INSTANCE"></xsd:enumeration>
+          <xsd:enumeration value="PASSWORD_LOCKOUT"></xsd:enumeration>
+          <xsd:enumeration value="PORTAL_NO_ACCESS"></xsd:enumeration>
+          <xsd:enumeration value="POST_BODY_PARSE_ERROR"></xsd:enumeration>
+          <xsd:enumeration value="QUERY_TIMEOUT"></xsd:enumeration>
+          <xsd:enumeration value="QUERY_TOO_COMPLICATED"></xsd:enumeration>
+          <xsd:enumeration value="REQUEST_LIMIT_EXCEEDED"></xsd:enumeration>
+          <xsd:enumeration value="REQUEST_RUNNING_TOO_LONG"></xsd:enumeration>
+          <xsd:enumeration value="SERVER_UNAVAILABLE"></xsd:enumeration>
+          <xsd:enumeration value="SERVICE_DESK_NOT_ENABLED"></xsd:enumeration>
+          <xsd:enumeration value="SOCIALCRM_FEEDSERVICE_API_CLIENT_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="SOCIALCRM_FEEDSERVICE_API_SERVER_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="SOCIALCRM_FEEDSERVICE_API_UNAVAILABLE"></xsd:enumeration>
+          <xsd:enumeration value="SSO_SERVICE_DOWN"></xsd:enumeration>
+          <xsd:enumeration value="TOO_MANY_APEX_REQUESTS"></xsd:enumeration>
+          <xsd:enumeration value="TOO_MANY_RECIPIENTS"></xsd:enumeration>
+          <xsd:enumeration value="TOO_MANY_RECORDS"></xsd:enumeration>
+          <xsd:enumeration value="TRIAL_EXPIRED"></xsd:enumeration>
+          <xsd:enumeration value="UNABLE_TO_LOCK_ROW"></xsd:enumeration>
+          <xsd:enumeration value="UNKNOWN_ATTACHMENT_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="UNKNOWN_EXCEPTION"></xsd:enumeration>
+          <xsd:enumeration value="UNSUPPORTED_API_VERSION"></xsd:enumeration>
+          <xsd:enumeration value="UNSUPPORTED_ATTACHMENT_ENCODING"></xsd:enumeration>
+          <xsd:enumeration value="UNSUPPORTED_CLIENT"></xsd:enumeration>
+          <xsd:enumeration value="UNSUPPORTED_MEDIA_TYPE"></xsd:enumeration>
+          <xsd:enumeration value="XML_PARSER_ERROR"></xsd:enumeration>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="ApiFault">
+        <xsd:sequence>
+          <xsd:element name="exceptionCode" type="tns:ExceptionCode" form="qualified"></xsd:element>
+          <xsd:element name="exceptionMessage" type="xsd:string" form="qualified"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="fault" type="tns:ApiFault"></xsd:element>
+    </xsd:schema>
+    <xsd:schema targetNamespace="urn:partner.soap.sforce.com" xmlns:tns2="urn:partner.soap.sforce.com">
+      <xsd:element name="query">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="queryString" type="xsd:string" form="qualified"></xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="p2.ApiFault">
+    <wsdl:documentation></wsdl:documentation>
+    <wsdl:part name="fault" xmlns:ns5="urn:fault.partner.soap.sforce.com" element="ns5:fault"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="p2.queryRequest">
+    <wsdl:part name="parameters" xmlns:ns6="urn:partner.soap.sforce.com" element="ns6:query"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="MT_Speaker_Engagement">
+    <wsdl:part name="MT_Speaker_Engagement" element="tns:MT_Speaker_Engagement"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="MI256_BPM_Get_Speaker_engagement_oa">
+    <wsdl:documentation></wsdl:documentation>
+    <wsdl:operation name="MI256_BPM_Get_Speaker_engagement_oa">
+      <wsdl:documentation></wsdl:documentation>
+      <ns7:Policy xmlns:ns7="http://schemas.xmlsoap.org/ws/2004/09/policy">
+        <ns7:PolicyReference URI="#OP_MI256_BPM_Get_Speaker_engagement_oa"></ns7:PolicyReference>
+      </ns7:Policy>
+      <wsdl:input message="tns:p2.queryRequest"></wsdl:input>
+      <wsdl:output message="tns:MT_Speaker_Engagement"></wsdl:output>
+      <wsdl:fault name="p2.ApiFault" message="tns:p2.ApiFault"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MI256_BPM_Get_Speaker_engagement_oaBinding" type="tns:MI256_BPM_Get_Speaker_engagement_oa">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="MI256_BPM_Get_Speaker_engagement_oa">
+      <soap:operation soapAction="http://sap.com/xi/WebService/soap1.1"></soap:operation>
+      <wsdl:input>
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+      <wsdl:fault name="p2.ApiFault">
+        <soap:fault name="p2.ApiFault" use="literal"></soap:fault>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

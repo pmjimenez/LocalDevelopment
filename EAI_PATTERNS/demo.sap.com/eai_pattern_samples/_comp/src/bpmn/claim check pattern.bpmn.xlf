@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xliff version="1.1" xmlns="urn:oasis:names:tc:xliff:document:1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<file tool="MOIN S2X File Generator" original="self" source-language="en" product-name="MOIN S2X File Generator" datatype="s2x">
+<header>
+<skl>
+</skl>
+<phase-group>
+</phase-group>
+<s2x xmlns="http://www.sap.com">
+<dtr>
+<dc></dc>
+<rel></rel>
+<sc></sc>
+</dtr>
+<giltDirectives>
+<develContact></develContact>
+<domain></domain>
+<collection></collection>
+<originalLocale xml:lang="en"/>
+<maxLength>255</maxLength>
+</giltDirectives>
+</s2x>
+</header>
+<body>
+<group restype="generaltext">
+<trans-unit id="00B8EBF474BD11E2CE14183DA23EE1B1" resname="b8b20448721a3c9fb01986d0533778c4" maxwidth="255" translate="no"><source>All Received? </source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="1C6C1BCF74C011E2810A183DA23EE1B1" resname="06268e3ea1863f98aefbd3f3f1e20f21" maxwidth="255" translate="yes"><source>MsgIDList</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="2DACE0D774BD11E29AD2183DA23EE1B1" resname="b9ed1eb333b73ea597fe94b095b739d6" maxwidth="255" translate="no"><source>Retrieve Msgs from Database</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="2DACE0DB74BD11E2C81B183DA23EE1B1" resname="69c554e422cf38aab8b4e3e376ef5be8" maxwidth="255" translate="no"><source>Automated 0_InputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="2DAD170374BD11E2C2FD183DA23EE1B1" resname="7fe4adc2856430f78f4a20283f728623" maxwidth="255" translate="no"><source>Automated 0_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="2DBA2C5474BD11E280D1183DA23EE1B1" resname="87bf7e9db63233f8a1652830b1642fba" maxwidth="255" translate="no"><source>Yes - All Received</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="37AFD7D674BD11E2A8B5183DA23EE1B1" resname="78048b5702ee3edd825da96a08f6a004" maxwidth="255" translate="no"><source>Wait For Next Order Msg</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="37AFED5174BD11E2A714183DA23EE1B1" resname="9413ffdbd69336218be190fd5b228d06" maxwidth="255" translate="no"><source>Intermediate Message 0_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="41E614F774BD11E282A6183DA23EE1B1" resname="616b921b5d833a0e854d51d9cbd7ce0b" maxwidth="255" translate="yes"><source>Update Msg Status in Database to &quot;Processed&quot;</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="41E614FB74BD11E29C84183DA23EE1B1" resname="b40d8ea91fe33b9198bdc0c263bb7f90" maxwidth="255" translate="no"><source>Automated 1_InputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="41E64E9074BD11E28995183DA23EE1B1" resname="d9efe9c2f15d315f80b4b8d8517d19f6" maxwidth="255" translate="no"><source>Automated 1_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="54FBF69D74BD11E29A78183DA23EE1B1" resname="03c7395d7801336fad427e67f07b1f79" maxwidth="255" translate="yes"><source>Send Consolidated Collection of Msg Data</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="54FBF6A174BD11E2967D183DA23EE1B1" resname="d61c96e379293fc3a31df1ae668d89e7" maxwidth="255" translate="no"><source>Automated 2_InputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="54FC2B1F74BD11E2C099183DA23EE1B1" resname="1ad534c7175233bba09cb117b68a5449" maxwidth="255" translate="no"><source>Automated 2_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="588DB5D574BE11E2C0BA183DA23EE1B1" resname="5deda98b251c3ebcb0e2564f14d2dfbc" maxwidth="255" translate="no"><source>No - More Expected</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="5FB5A42F74BE11E2B764183DA23EE1B1" resname="1c850085792e3029bcdf3619dc3791b8" maxwidth="255" translate="yes"><source>Increment Counter</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="5FB5A43374BE11E2B30A183DA23EE1B1" resname="5c20d0b3e971359d886a2dbe36354468" maxwidth="255" translate="no"><source>Mapping 1_InputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="5FB5A43574BE11E2B26F183DA23EE1B1" resname="43f864b2ccad3f1aa846cd70237c79ab" maxwidth="255" translate="no"><source>Mapping 1_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="707642FD74BE11E283C8183DA23EE1B1" resname="a9bd0c00f66336ef9c7e49a56cae43c1" maxwidth="255" translate="no"><source>Annotation 0</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="9A6B2B3574BE11E28DDD183DA23EE1B1" resname="aed1b0de30443410bc30e968076b215e" maxwidth="255" translate="no"><source>Annotation 1</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="C8158A2274C011E280F4183DA23EE1B1" resname="c7d6d975c39f3a45a4ba791d8dcbd7fb" maxwidth="255" translate="no"><source>Annotation 2</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="DE27C25C74BF11E2A4B5183DA23EE1B1" resname="15f5176527223051b1b4a073ad4fb262" maxwidth="255" translate="yes"><source>LargeMsgList</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="F77DBF0774BC11E29174183DA23EE1B1" resname="027358fae75d3efca96734192610fd9b" maxwidth="255" translate="no"><source>Merge</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="728DD7C2757811E29C3B183DA23EE1B1" resname="f814c10371b03f59bb949c952210960c" maxwidth="255" translate="yes"><source>End</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="728DD7C6757811E2C83F183DA23EE1B1" resname="1d21b33a11fa3cd3969042b582b1e296" maxwidth="255" translate="no"><source>End Event 0_InputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="278AEA0C74BC11E2C00D183DA23EE1B1" resname="153896e725fb3ecb97634e07b97dbf25" maxwidth="255" translate="yes"><source>Claim Check Pattern</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="278AEA0F74BC11E2C001183DA23EE1B1" resname="a74120ceec173d32b2afc427e21dcc20" maxwidth="255" translate="no"><source>Claim Check Pattern</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="278D1C7474BC11E2959B183DA23EE1B1" resname="7b627a5420f03ef1bdc6a36bcacaf1a2" maxwidth="255" translate="no"><source>TextVariables</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="278D3DB174BC11E28EFD183DA23EE1B1" resname="0c3fda96eeb038f1bac5cd8f6919f8ed" maxwidth="255" translate="no"><source>TextVariables_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="278E9BE774BC11E2C2A1183DA23EE1B1" resname="6889b813d3b639fa865c39d7b91403d0" maxwidth="255" translate="no"><source>ProcessInstanceAttributes</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="278FD89074BC11E2AAB4183DA23EE1B1" resname="d4f28f54470b377f9ba66c44ff61fddf" maxwidth="255" translate="no"><source>Administrators</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="278FF1FB74BC11E2B030183DA23EE1B1" resname="69450c0b8e9b35329f56b504f194161c" maxwidth="255" translate="no"><source>Administrators_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27A8A2F474BC11E29BE8183DA23EE1B1" resname="edea1c341cb53235b7f82b7d3658bb26" maxwidth="255" translate="no"><source>Claim Check Pattern</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27AA1D2174BC11E2A844183DA23EE1B1" resname="343ad1ba46d332da9942fdd764888cf2" maxwidth="255" translate="no"><source>Claim_Check_Pattern_PotentialOwners</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27AA43E174BC11E2828B183DA23EE1B1" resname="43b3026ea34933c6bbb00d5cf4c24bfd" maxwidth="255" translate="no"><source>Default_PotentialOwners_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27CCA97774BC11E2BAA8183DA23EE1B1" resname="72555951d5ea364bba1eaa1888ab58df" maxwidth="255" translate="no"><source>Claim_Check_Pattern_ExcludedOwners</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27CCE4B374BC11E29848183DA23EE1B1" resname="bd13ed496e383a6682061be94f9f3767" maxwidth="255" translate="no"><source>Default_ExcludedOwners_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27E4FAD574BC11E2A125183DA23EE1B1" resname="374ed1bf2ff735829ca8dcc7dc76c2cf" maxwidth="255" translate="no"><source>Claim Check SnooZ Example (Requires 7.31 SP5)</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27E514C874BC11E2C10E183DA23EE1B1" resname="23c55598aa7034da8ebe18b9acad375a" maxwidth="255" translate="yes"><source>Claim Check SnooZ Example</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27E5DBB974BC11E281F2183DA23EE1B1" resname="6ac1b32f0c5d3310a2e7afb16c3d4ebc" maxwidth="255" translate="no"><source>TextVariables</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27E6144974BC11E2AC14183DA23EE1B1" resname="cf2f98711de13c3c98d3dd260708fe85" maxwidth="255" translate="no"><source>TextVariables_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27E7175674BC11E29752183DA23EE1B1" resname="4caaa792ddea35b1bb760d079dd64a58" maxwidth="255" translate="no"><source>ProcessInstanceAttributes</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27E85EFB74BC11E2BB1D183DA23EE1B1" resname="3fb9144e19873693abaa80672189ea4b" maxwidth="255" translate="no"><source>Administrators</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27E85EFE74BC11E2B441183DA23EE1B1" resname="9c11f249f9053904b4ee13b98587235a" maxwidth="255" translate="no"><source>Administrators_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27FD843874BC11E2B6A9183DA23EE1B1" resname="06f021d861de35848cd1d72c27addbb0" maxwidth="255" translate="no"><source>SnooZ Order System</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27FEE1AC74BC11E2BCCD183DA23EE1B1" resname="31109634dd2338149aa5951d7f3e45ac" maxwidth="255" translate="no"><source>SnooZ_Order_System_PotentialOwners</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27FF173774BC11E2A3B3183DA23EE1B1" resname="2ccd00ade50834629526e70913a3814d" maxwidth="255" translate="no"><source>SnooZ_Order_System_PotentialOwners_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="2817F47674BC11E283F9183DA23EE1B1" resname="a9c61475899835a5b08c2837fef932e6" maxwidth="255" translate="no"><source>SnooZ_Order_System_ExcludedOwners</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="28180DFB74BC11E2B696183DA23EE1B1" resname="a3bf8e15b0ce311b8bed41cf68e35d3c" maxwidth="255" translate="no"><source>SnooZ_Order_System_ExcludedOwners_Mapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="28393E8874BC11E2CC01183DA23EE1B1" resname="8273f2a85a233e8da987aded2ba7601e" maxwidth="255" translate="no"><source>Start</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="28397E6A74BC11E294CD183DA23EE1B1" resname="b401e21438f53a76afdb9e21c364804e" maxwidth="255" translate="no"><source>Start_OutputMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+</group>
+<group restype="description">
+<trans-unit id="2DACE0D974BD11E2BE22183DA23EE1B1" resname="1d5d7c2532b53eaf83e5c3d23152881d" maxwidth="16380" translate="yes"><source>Service Interface: OriginalMessageAccessor\r\nOperation: getMergedMessageUsingMultiMapping</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="37AFED4F74BD11E2B353183DA23EE1B1" resname="ea24df001faa3e68951652da18bc5694" maxwidth="16380" translate="yes"><source>The order message is received and immediately stored to the database.  A claim check (Message ID) is returned and added to a list of IDs claim checked so far, i.e. the MsgIDList. </source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="41E614F974BD11E2A27C183DA23EE1B1" resname="00498923b4e1305ca4d2118879c3140f" maxwidth="16380" translate="yes"><source>Service Interface: MessageStatusUpdater\r\nOperation: updateMessageStatusToProcessed</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="54FBF69F74BD11E29E97183DA23EE1B1" resname="9b8c5ddea522355db001e02557c40206" maxwidth="16380" translate="yes"><source>Blog reference: Integration Configuration 2 (ICO2). \r\nThe consolidated message e.g. sent back from SAP NetWeaver BPM to PI(AEX).</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="707642FE74BE11E2C733183DA23EE1B1" resname="72b7e4739454395c8cd69b656ef73dd8" maxwidth="16380" translate="yes"><source>Start of a new collection of Orders.  \r\nThe intention is to minimize the amount of time the process itself is handling the data.  Instead messages are stored immediately to a database storage area, returning only a small Message ID, and the stored messages are only retrieved when required later in the process.\r\n  </source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="9A6B2B3674BE11E2C41B183DA23EE1B1" resname="f98f1a835dc93253ac924d0481a52f13" maxwidth="16380" translate="yes"><source>The decision as to whether all messages have been received can use a counter or a timer or some other criteria.  Refer to the model &quot;Claim Check Variation&quot; to understand this option. </source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="C8158A2374C011E2CCC5183DA23EE1B1" resname="73f5c7c7f306382f8018ee7e2354ca73" maxwidth="16380" translate="yes"><source>Update the message status to ensure each message is processed only once\r\n</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="278AEA0D74BC11E2B900183DA23EE1B1" resname="d6c35bdb2d6a3f6e81bd9fbced63a7f5" maxwidth="16380" translate="yes"><source>How can we reduce the data volume of a message sent across the system without sacrificing information content?</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="278FD89174BC11E2C394183DA23EE1B1" resname="e02bc4380c3d3b0bb173e672a38b9838" maxwidth="16380" translate="no"><source>Role for Admins</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27E514C774BC11E2BE97183DA23EE1B1" resname="9bb1203263503921a9ef8240b49c4c57" maxwidth="16380" translate="yes"><source>How can we reduce the data volume of a message sent across the system without sacrificing information content?\r\nFor more information please refer to SCN Blog: Enterprise Patterns in Process Orchestration - Claim Check</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="27E85EFC74BC11E2A543183DA23EE1B1" resname="546b048d08713edc8e3f82d8bd79f333" maxwidth="16380" translate="no"><source>Role for Admins</source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+<trans-unit id="28393E8A74BC11E2A115183DA23EE1B1" resname="a90791a44212302894cf9adbad6feee0" maxwidth="16380" translate="yes"><source>Blog reference: Integration Configuration 1 (ICO1). \r\nThe incoming order message, e.g. sent from SAP NetWeaver PI(AEX) to BPM.\r\nThe WSDL of the incoming request message is imported from the ESR. </source><s2x xmlns="http://www.sap.com"><textState>new</textState></s2x></trans-unit>
+</group>
+</body>
+</file>
+</xliff>

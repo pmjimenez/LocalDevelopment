@@ -1,0 +1,5 @@
+ROOT_0,TARGET_NAMESPACE=http://server.speakers.nobelbiocare.cq.namics.com/
+ROOT_0,SCHEMA_LOCATION=http://server.speakers.nobelbiocare.cq.namics.com/
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://server.speakers.nobelbiocare.cq.namics.com/" xmlns:tns="http://server.speakers.nobelbiocare.cq.namics.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="IOException" type="tns:IOException" sdox:aliasName="$http://server.speakers.nobelbiocare.cq.namics.com/:IOException" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="IOException" sdox:aliasName="#IOException" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence></xsd:sequence>   </xsd:complexType> </xsd:schema> 
+

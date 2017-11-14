@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="MI280_BPM_CustomerPerformance_Push_ia" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <wsp:Policy wsu:Id="OP_MI280_BPM_CustomerPerformance_Push_ia"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+      <xsd:element name="MT_GCVMBIBOD" type="DT_GCVMBIBOD"/>
+      <xsd:complexType name="DT_GCVMBIBOD">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Account performance - CVM Billings and Bookings</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="CORRELATION" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Correlation id</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="DELTA" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>'X' for delta load, full load otherwise</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="NUMBER" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Specifies the message number</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="TOTAL" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Messages total</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ROW">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="CUSTOMER" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="CALDAY" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="SALESORG" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="CURRENCY" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT161" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT221" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT222" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT223" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="FISCVARNT" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="FISCPER" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GPERDAY01" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="FLAGACCOUNT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:documentation>Flag to mark account creation</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="ERROR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:documentation>Rejection error</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_GCVMBIBOD">
+    <wsdl:documentation> Account performance - CVM Billings and Bookings</wsdl:documentation>
+    <wsdl:part element="p1:MT_GCVMBIBOD" name="MT_GCVMBIBOD"/>
+  </wsdl:message>
+  <wsdl:portType name="MI280_BPM_CustomerPerformance_Push_ia">
+    <wsdl:documentation/>
+    <wsdl:operation name="MI280_BPM_CustomerPerformance_Push_ia">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_MI280_BPM_CustomerPerformance_Push_ia"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_GCVMBIBOD"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MI280_BPM_CustomerPerformance_Push_iaBinding" type="p1:MI280_BPM_CustomerPerformance_Push_ia">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="MI280_BPM_CustomerPerformance_Push_ia">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

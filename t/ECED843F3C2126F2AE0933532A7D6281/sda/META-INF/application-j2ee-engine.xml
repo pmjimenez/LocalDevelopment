@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<application-j2ee-engine>
+<reference reference-type="hard">
+<reference-target provider-name="nobelbiocare.com" target-type="application">p_sfdc/infra/sgc</reference-target>
+</reference>
+<reference reference-type="hard">
+<reference-target provider-name="sap.com" target-type="library">sa/runtime/lib</reference-target>
+</reference>
+<provider-name>nobelbiocare.com</provider-name>
+</application-j2ee-engine>

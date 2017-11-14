@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webservices xmlns="http://www.sap.com/webas/710/ws/webservices-j2ee-engine-alt-descriptor">
+  <webservice-description>
+    <webservice-name>MI283_BPM_ProductMixPerformanceBudget_Push_ia_nobelbiocarecom2Fpsfdc2Fpr2Fpm2Fre2Fprdmix2FTRStartRevenueProductMix</webservice-name>
+    <wsdl-file>META-INF/wsdl/nobelbiocarecom2Fpsfdc2Fpr2Fpm2Fre2Fprdmix2FTRStartRevenueProductMix/src/wsdl/MI283_BPM_ProductMixPerformanceBudget_Push_ia.wsdl</wsdl-file>
+    <wsdl-service namespace="http://nobelbiocare.com/BPM/SFDC/Revenue">MI283_BPM_ProductMixPerformanceBudget_Push_iaService</wsdl-service>
+    <port-component>
+      <port-name>MI283_BPM_ProductMixPerformanceBudget_Push_ia</port-name>
+      <wsdl-port namespace="http://nobelbiocare.com/BPM/SFDC/Revenue">MI283_BPM_ProductMixPerformanceBudget_Push_iaPort</wsdl-port>
+      <url>/bpm/nobelbiocarecom/psfdc/pr/pm/re/prdmix/TRStartRevenueProductMix</url>
+      <implementation-link>
+        <property name="implementation-id">GalaxyImpl</property>
+        <property name="service-identifier">nobelbiocare.com/p_sfdc/pr/pm/re/prdmix/TR_Start_Revenue_ProductMix</property>
+      </implementation-link>
+      <meta-data/>
+    </port-component>
+  </webservice-description>
+</webservices>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue" name="MI288_BPM_GetJobResult_os" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <wsdl:documentation></wsdl:documentation>
+  <ns1:UsingPolicy xmlns:ns1="http://schemas.xmlsoap.org/ws/2004/09/policy" wsdl:required="true"></ns1:UsingPolicy>
+  <ns2:properties xmlns:ns2="urn:com-sap:ifr:v2:wsdl">
+    <ns2:category>ifmmessif</ns2:category>
+    <ns2:VersionID>3e0694f903dd11e7a5b40000005f8a66</ns2:VersionID>
+    <ns2:lifeCycleInfo>
+      <objectState></objectState>
+      <objectstatus value="A"></objectstatus>
+      <personresponsible value="chpeji"></personresponsible>
+      <changed by="chpeji" on="1488963442304"></changed>
+    </ns2:lifeCycleInfo>
+    <ns2:runtimeVersion uri="urn:sap-com:soap:runtime:application:client"></ns2:runtimeVersion>
+    <ns2:communicationProfile uri="prf_dt_if_com_stateless"></ns2:communicationProfile>
+    <ns2:securityProfile uri="prf_dt_if_sec_basic"></ns2:securityProfile>
+    <ns2:interfacePattern p2p="true"></ns2:interfacePattern>
+    <ns2:isSensitiveData>false</ns2:isSensitiveData>
+    <ns2:classifications>
+      <ns2:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"></ns2:classification>
+      <ns2:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="561cc7e7fc8530659514e712b0b43ab7"></ns2:classification>
+    </ns2:classifications>
+    <ns2:additionalAttributes></ns2:additionalAttributes>
+    <ns2:methods>
+      <ns2:method name="MI288_BPM_GetJobResult_os">
+        <ns2:isSynchron>true</ns2:isSynchron>
+        <ns2:isIdempotent>false</ns2:isIdempotent>
+        <ns2:isInbound>false</ns2:isInbound>
+        <ns2:interfaceCategory>outbound</ns2:interfaceCategory>
+        <ns2:communicationProfile uri="prf_dt_op_com_sync"></ns2:communicationProfile>
+        <ns2:contextobjects></ns2:contextobjects>
+      </ns2:method>
+    </ns2:methods>
+    <ns2:messages>
+      <ns2:message name="xmln.ExternalSFDCJob">
+        <ns2:messType>ifmextmes</ns2:messType>
+        <ns2:keyElements>
+          <ns2:elem id="NAME">ED_CVM_ExternalJob_Query</ns2:elem>
+          <ns2:elem id="NAMESPACE">http://nobelbiocare.com/BPM/SFDC/Revenue</ns2:elem>
+          <ns2:elem id="SUBNAME">ExternalSFDCJob</ns2:elem>
+          <ns2:elem id="SUBNAMESPACE"></ns2:elem>
+        </ns2:keyElements>
+        <ns2:technicalNamespace>http://nobelbiocare.com/BPM/SFDC/Revenue</ns2:technicalNamespace>
+        <ns2:VersionID>f71b1028f7b911e6a1230000005f8a66</ns2:VersionID>
+      </ns2:message>
+      <ns2:message name="p2.aggregateJobResult">
+        <ns2:messType>ifmextmes</ns2:messType>
+        <ns2:keyElements>
+          <ns2:elem id="NAME">ED_CVM_AggregateJobResult</ns2:elem>
+          <ns2:elem id="NAMESPACE">http://nobelbiocare.com/BPM/SFDC/Revenue</ns2:elem>
+          <ns2:elem id="SUBNAME">aggregateJobResult</ns2:elem>
+          <ns2:elem id="SUBNAMESPACE">http://www.force.com/2009/06/asyncapi/dataload</ns2:elem>
+        </ns2:keyElements>
+        <ns2:technicalNamespace>http://nobelbiocare.com/BPM/SFDC/Revenue</ns2:technicalNamespace>
+        <ns2:VersionID>d538bea403dc11e7a90b0000005f8a66</ns2:VersionID>
+      </ns2:message>
+    </ns2:messages>
+    <ns2:matchingInterfaces></ns2:matchingInterfaces>
+    <ns2:genericProperties>
+      <ns2:swcvinfo>
+        <ns2:guid>dc2258106ad711e697b4e1ec0a3e5c13</ns2:guid>
+        <ns2:name>BPM, 1.0 of nobelbiocare.com</ns2:name>
+      </ns2:swcvinfo>
+      <ns2:languages>
+        <ns2:language internalCode="EN" original="true"></ns2:language>
+      </ns2:languages>
+      <ns2:documentation type="I">
+        <name>_ID_561cc7e7fc8530659514e712b0b43ab7_ifmmessif</name>
+        <namespace>http://nobelbiocare.com/BPM/SFDC/Revenue</namespace>
+      </ns2:documentation>
+    </ns2:genericProperties>
+  </ns2:properties>
+  <ns3:Policy xmlns:ns3="http://schemas.xmlsoap.org/ws/2004/09/policy" ns4:Id="OP_MI288_BPM_GetJobResult_os" xmlns:ns4="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"></ns3:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.force.com/2009/06/asyncapi/dataload" xmlns:tns="http://www.force.com/2009/06/asyncapi/dataload">
+      <xsd:complexType name="batchInfoType">
+        <xsd:sequence>
+          <xsd:element name="id" type="xsd:string" form="qualified"></xsd:element>
+          <xsd:element name="jobId" type="xsd:string" form="qualified"></xsd:element>
+          <xsd:element name="state" type="xsd:string" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="stateMessage" type="xsd:string" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="createdDate" type="xsd:dateTime" form="qualified"></xsd:element>
+          <xsd:element name="systemModstamp" type="xsd:dateTime" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="numberRecordsProcessed" type="xsd:int" form="qualified"></xsd:element>
+          <xsd:element name="numberRecordsFailed" type="xsd:int" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="totalProcessingTime" type="xsd:long" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="apiActiveProcessingTime" type="xsd:long" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="apexProcessingTime" type="xsd:long" minOccurs="0" form="qualified"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="aggregateBatchResultType">
+        <xsd:sequence>
+          <xsd:element name="batchInfo" type="tns:batchInfoType" form="qualified"></xsd:element>
+          <xsd:element name="results" type="tns:resultsType" form="qualified"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="resultsType">
+        <xsd:sequence>
+          <xsd:element name="result" type="tns:resultType" minOccurs="0" maxOccurs="unbounded" form="qualified"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="resultType">
+        <xsd:sequence>
+          <xsd:element name="errors" type="tns:ResultErrorType" minOccurs="0" maxOccurs="unbounded" form="qualified"></xsd:element>
+          <xsd:element name="id" type="xsd:string" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="success" type="xsd:boolean" form="qualified"></xsd:element>
+          <xsd:element name="created" type="xsd:boolean" form="qualified"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ResultErrorType">
+        <xsd:sequence>
+          <xsd:element name="fields" type="xsd:string" minOccurs="0" maxOccurs="unbounded" nillable="true" form="qualified"></xsd:element>
+          <xsd:element name="message" type="xsd:string" form="qualified"></xsd:element>
+          <xsd:element name="statusCode" type="xsd:string" form="qualified"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="aggregateJobResultType">
+        <xsd:sequence>
+          <xsd:element name="externalJobId" type="xsd:string" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="status" type="xsd:string" form="qualified"></xsd:element>
+          <xsd:element name="jobInfo" type="tns:jobInfoType" form="qualified"></xsd:element>
+          <xsd:element name="aggregateBatchResults" type="tns:aggregateBatchResultsType" form="qualified"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="jobInfoType">
+        <xsd:sequence>
+          <xsd:element name="id" type="xsd:string" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="operation" type="xsd:string" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="object" type="xsd:string" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="createdById" type="xsd:string" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="createdDate" type="xsd:dateTime" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="systemModstamp" type="xsd:dateTime" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="state" type="xsd:string" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="externalIdFieldName" type="xsd:string" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="concurrencyMode" type="xsd:string" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="contentType" type="xsd:string" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="numberBatchesQueued" type="xsd:int" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="numberBatchesInProgress" type="xsd:int" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="numberBatchesCompleted" type="xsd:int" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="numberBatchesFailed" type="xsd:int" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="numberBatchesTotal" type="xsd:int" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="numberRecordsProcessed" type="xsd:int" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="numberRetries" type="xsd:int" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="apiVersion" type="xsd:string" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="assignmentRuleId" type="xsd:string" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="numberRecordsFailed" type="xsd:int" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="totalProcessingTime" type="xsd:long" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="apiActiveProcessingTime" type="xsd:long" minOccurs="0" form="qualified"></xsd:element>
+          <xsd:element name="apexProcessingTime" type="xsd:long" minOccurs="0" form="qualified"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="aggregateBatchResultsType">
+        <xsd:sequence>
+          <xsd:element name="aggregateBatchResult" type="tns:aggregateBatchResultType" minOccurs="0" maxOccurs="unbounded" form="qualified"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="aggregateJobResult" type="tns:aggregateJobResultType"></xsd:element>
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:complexType name="ExternalSFDCJobQuery">
+        <xsd:sequence>
+          <xsd:element name="ObjectType" type="xsd:string"></xsd:element>
+          <xsd:element name="Operation" type="xsd:string"></xsd:element>
+          <xsd:element name="Condition" type="xsd:string" minOccurs="0"></xsd:element>
+          <xsd:element name="sObjects" type="xsd:string" minOccurs="0"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ExternalSFDCJob" type="ExternalSFDCJobQuery"></xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="xmln.ExternalSFDCJob">
+    <wsdl:part name="ExternalSFDCJob" element="ExternalSFDCJob"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="p2.aggregateJobResult">
+    <wsdl:part name="aggregateJobResult" xmlns:ns5="http://www.force.com/2009/06/asyncapi/dataload" element="ns5:aggregateJobResult"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="MI288_BPM_GetJobResult_os">
+    <wsdl:documentation></wsdl:documentation>
+    <wsdl:operation name="MI288_BPM_GetJobResult_os">
+      <wsdl:documentation></wsdl:documentation>
+      <ns6:Policy xmlns:ns6="http://schemas.xmlsoap.org/ws/2004/09/policy">
+        <ns6:PolicyReference URI="#OP_MI288_BPM_GetJobResult_os"></ns6:PolicyReference>
+      </ns6:Policy>
+      <wsdl:input message="tns:xmln.ExternalSFDCJob"></wsdl:input>
+      <wsdl:output message="tns:p2.aggregateJobResult"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MI288_BPM_GetJobResult_osBinding" type="tns:MI288_BPM_GetJobResult_os">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="MI288_BPM_GetJobResult_os">
+      <soap:operation soapAction="http://sap.com/xi/WebService/soap1.1"></soap:operation>
+      <wsdl:input>
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

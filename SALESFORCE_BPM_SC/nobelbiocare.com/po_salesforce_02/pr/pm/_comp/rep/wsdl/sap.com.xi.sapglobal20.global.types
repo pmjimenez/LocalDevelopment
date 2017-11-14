@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Partition xmlns:m='http://xml.sap.com/moin'>
+<C n='sap.com/tc/esmp/model/xsd1' i='1' v='1.0.0'/>
+<M c='1' q='XSD1.ElementDeclarationsForSchema' i='469C6D400C4DCDF84560411F368FD039C03CB967' se='0' ce='-1' oe='-1'/>
+<M c='1' q='XSD1.XsdSchemaDocument' i='469C6D402172D8D944DF4AAE11EDBA7FA5E4BC95' ova='attributes'/>
+<M c='1' q='XSD1.SchemaForImportLocation' i='469C6D402D8A07D14AD74B740627EAB71F556B1F' se='1' ce='-1' oe='-1'/>
+<M c='1' q='XSD1.TypeDefinitionForElementDeclaration' i='469C6D40336985B2134640A40FFEE35867EBBE13' se='0' ce='-1' oe='-1'/>
+<M c='1' q='XSD1.DirectivesForSchema' i='469C6D4069E819628914433A2C74C54A9CD03731' se='0' ce='0' oe='-1'/>
+<M c='1' q='XSD1.XsdElementDeclaration' i='469C6D4087FB3855FECB4BED2DC9DDBA2FA3696D' ova='attributes'/>
+<M c='1' q='XSD1.XsdImport' i='469C6D40E1E12A1B7EB2430F29B28C55A5E44989' ova='attributes'/>
+<XSD1.XsdSchemaDocument m:c='1' m:i='E0A5ADB5AAED51B2B2D911E48EA3000C29AF3A8A' namespace='http://sap.com/xi/SAPGlobal20/Global' name='src/wsdl/MIZ050C_TravelOD_contacts_Resp_EnhancedSAP.wsdl' attributeFormDefault='unqualified' elementFormDefault='unqualified'/>
+<XSD1.XsdImport m:c='1' m:i='E0A5ADB5AAED51B3B2D911E4BC11000C29AF3A8A' namespace='http://sap.com/xi/A1S/Global'/>
+<XSD1.XsdImport m:c='1' m:i='E0A5ADB5AD652451B2D911E4CECB000C29AF3A8A' namespace='http://sap.com/xi/A1S/Global'/>
+<XSD1.XsdSchemaDocument m:c='1' m:i='E0EB19077E8238BFAE1711E4A96D000C29AF3A8A' namespace='http://sap.com/xi/SAPGlobal20/Global' name='src/wsdl/MIZ050_TravelOD_contacts.wsdl' attributeFormDefault='unqualified' elementFormDefault='unqualified'/>
+<XSD1.XsdElementDeclaration m:c='1' m:i='E0EB19077E8238C1AE1711E4B0C6000C29AF3A8A' namespace='http://sap.com/xi/SAPGlobal20/Global' name='CustomerBundleMaintainConfirmation_sync_V1' lexicalForm='qualified' form='qualified' nillable='false' isAbstract='false'/>
+<XSD1.XsdElementDeclaration m:c='1' m:i='E0EB19077E849C9EAE1711E4959C000C29AF3A8A' namespace='http://sap.com/xi/SAPGlobal20/Global' name='CustomerBundleMaintainRequest_sync_V1' lexicalForm='qualified' form='qualified' nillable='false' isAbstract='false'/>
+<XSD1.ElementDeclarationsForSchema c='1'>
+<L f='E0A5ADB5AAED51B2B2D911E48EA3000C29AF3A8A' s='E0EB19077E8238C1AE1711E4B0C6000C29AF3A8A'/>
+<L f='E0EB19077E8238BFAE1711E4A96D000C29AF3A8A' s='E0EB19077E8238C1AE1711E4B0C6000C29AF3A8A'/>
+<L f='E0EB19077E8238BFAE1711E4A96D000C29AF3A8A' s='E0EB19077E849C9EAE1711E4959C000C29AF3A8A'/>
+</XSD1.ElementDeclarationsForSchema>
+<XSD1.SchemaForImportLocation c='1'>
+<L f='local:E0A5ADB5AA4D81CEB2D911E48A60000C29AF3A8A' s='E0A5ADB5AAED51B3B2D911E4BC11000C29AF3A8A'/>
+<L f='local:E0EB19077D0E4D6CAE1711E4C9F9000C29AF3A8A' s='E0A5ADB5AD652451B2D911E4CECB000C29AF3A8A'/>
+</XSD1.SchemaForImportLocation>
+<XSD1.TypeDefinitionForElementDeclaration c='1'>
+<L f='E0EB19077E8238C1AE1711E4B0C6000C29AF3A8A' s='local:E0EB19077D581390AE1711E4C09D000C29AF3A8A'/>
+<L f='E0EB19077E849C9EAE1711E4959C000C29AF3A8A' s='local:E0EB19077D44FD20AE1711E4924D000C29AF3A8A'/>
+</XSD1.TypeDefinitionForElementDeclaration>
+<XSD1.DirectivesForSchema c='1'>
+<L f='E0A5ADB5AAED51B2B2D911E48EA3000C29AF3A8A' s='E0A5ADB5AAED51B3B2D911E4BC11000C29AF3A8A'/>
+<L f='E0EB19077E8238BFAE1711E4A96D000C29AF3A8A' s='E0A5ADB5AD652451B2D911E4CECB000C29AF3A8A'/>
+</XSD1.DirectivesForSchema>
+</Partition>

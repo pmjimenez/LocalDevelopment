@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/BPM/SFDC/Customer" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="MI276_BPM_CustomerData_Set_ia" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Customer">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <wsp:Policy wsu:Id="OP_MI276_BPM_CustomerData_Set_ia"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://nobelbiocare.com/BPM/SFDC/Customer" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Customer">
+      <xsd:element name="MT_CustomersData" type="DT_CustomersData"/>
+      <xsd:complexType name="DT_Account_Location">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Location">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="Account" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="City" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Country" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Fax" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Matchkey1" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Matchkey2" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Name_2" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Name_3" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Name_4" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Name" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Phone" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Postal_Code" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="SAP_ID" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Regio" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Land" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Street" type="xsd:string"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_CustomersData">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Customer">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="IDocNum" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="KUNNR" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Account" type="DT_CustomerData"/>
+                <xsd:element minOccurs="0" name="ShipSold" type="DT_Location_ShipSoldTo"/>
+                <xsd:element minOccurs="0" name="AccLocation" type="DT_Account_Location"/>
+                <xsd:element minOccurs="0" name="CreditCards" type="DT_Customer_CreditCard"/>
+                <xsd:element minOccurs="0" name="TeamMember" type="DT_Account_TeamMember"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_Account_TeamMember">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="KUNN2" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="AccountId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="UserId" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_CustomerData">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Various_E1KNVVM" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="KUNN2" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Operation" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IDoc_num" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IDoc_Creation_Date" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IDoc_Creation_Time" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IDoc_Regio" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="IDoc_Land" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="BillingStreet" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Billing_City__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Billing_Country__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Billing_District__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Billing_Zip_Postal_Code__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Deletion_Flag__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Fax" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Name" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Name_2__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Name_3__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Name_4__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="id" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Customer_Since__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Email__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Billing_Schedule__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="CurrencyIsoCode" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="OwnerId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Parent_id" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Parent_SAP_KUNNR__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Parent_SAP_NAME1__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Partner_Program_status_level__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Phone" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Phone_2__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SAP_ID__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SAP_Sales_Order_Block__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SAP_VKORG__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Sales_Order_Block__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Tax_Number_1__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Tax_Number_2__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Sales_Region__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Sales_District__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Company_Code__c" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_Location_ShipSoldTo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="id" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="City__c0" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Country__c0" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Fax__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Name_2__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Name_3__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Name_4__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Name__c0" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Phone__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Postal_Code__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SAP_ID__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="State__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Street__c" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_Customer_CreditCard">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Account__c" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="SAP_ID" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="CreditCard">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="credit_card_category" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="credit_card_default" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="credit_card_Lock_reason" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="credit_card_name" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="credit_card_token_num" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="credit_card_type" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="credit_card_valid_From" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="credit_card_valid_To" type="xsd:string"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_CustomersData">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:MT_CustomersData" name="MT_CustomersData"/>
+  </wsdl:message>
+  <wsdl:portType name="MI276_BPM_CustomerData_Set_ia">
+    <wsdl:documentation/>
+    <wsdl:operation name="MI276_BPM_CustomerData_Set_ia">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_MI276_BPM_CustomerData_Set_ia"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_CustomersData"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MI276_BPM_CustomerData_Set_iaBinding" type="p1:MI276_BPM_CustomerData_Set_ia">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="MI276_BPM_CustomerData_Set_ia">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

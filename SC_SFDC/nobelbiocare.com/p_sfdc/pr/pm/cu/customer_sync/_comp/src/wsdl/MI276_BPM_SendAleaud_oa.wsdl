@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/BPM/SFDC/Customer" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="MI276_BPM_SendAleaud_oa" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Customer">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+    <ifw:category>ifmmessif</ifw:category>
+    <ifw:VersionID>4a7091500fe011e7ac800000005f8a66</ifw:VersionID>
+    <ifw:lifeCycleInfo>
+      <objectState/>
+      <objectstatus value="A"/>
+      <personresponsible value="chpeji"/>
+      <changed by="chpeji" on="1490284167191"/>
+    </ifw:lifeCycleInfo>
+    <ifw:runtimeVersion uri="urn:sap-com:soap:runtime:application:client"/>
+    <ifw:communicationProfile uri="prf_dt_if_com_stateless"/>
+    <ifw:securityProfile uri="prf_dt_if_sec_basic"/>
+    <ifw:interfacePattern p2p="true"/>
+    <ifw:isSensitiveData>false</ifw:isSensitiveData>
+    <ifw:classifications>
+      <ifw:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"/>
+      <ifw:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="b29c275eb5d833519d73efce7c6e11e0"/>
+    </ifw:classifications>
+    <ifw:additionalAttributes/>
+    <ifw:methods>
+      <ifw:method name="MI276_BPM_SendAleaud_oa">
+        <ifw:isSynchron>false</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>false</ifw:isInbound>
+        <ifw:interfaceCategory>outbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_async"/>
+        <ifw:contextobjects/>
+      </ifw:method>
+    </ifw:methods>
+    <ifw:messages>
+      <ifw:message name="MT_ResultNotification">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">MT_ResultNotification</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://nobelbiocare.com/BPM/SFDC/Customer</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://nobelbiocare.com/BPM/SFDC/Customer</ifw:technicalNamespace>
+        <ifw:VersionID>8a4a3dc30fc011e797c50000005f8a66</ifw:VersionID>
+        <ifw:xmlNamespace>http://nobelbiocare.com/BPM/SFDC/Customer</ifw:xmlNamespace>
+        <ifw:dataType name="DT_ResultNotification" namespace="http://nobelbiocare.com/BPM/SFDC/Customer" swcvId="dc2258106ad711e697b4e1ec0a3e5c13" uri="name=DT_ResultNotification~namespace=http://nobelbiocare.com/BPM/SFDC/Customer~swcvId=dc2258106ad711e697b4e1ec0a3e5c13"/>
+      </ifw:message>
+    </ifw:messages>
+    <ifw:matchingInterfaces/>
+    <ifw:genericProperties>
+      <ifw:swcvinfo>
+        <ifw:guid>dc2258106ad711e697b4e1ec0a3e5c13</ifw:guid>
+        <ifw:name>BPM, 1.0 of nobelbiocare.com</ifw:name>
+      </ifw:swcvinfo>
+      <ifw:languages>
+        <ifw:language internalCode="EN" original="true"/>
+      </ifw:languages>
+      <ifw:documentation type="I">
+        <name>_ID_b29c275eb5d833519d73efce7c6e11e0_ifmmessif</name>
+        <namespace>http://nobelbiocare.com/BPM/SFDC/Customer</namespace>
+      </ifw:documentation>
+    </ifw:genericProperties>
+  </ifw:properties>
+  <wsp:Policy wsu:Id="OP_MI276_BPM_SendAleaud_oa"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://nobelbiocare.com/BPM/SFDC/Customer" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Customer">
+      <xsd:element name="MT_ResultNotification" type="DT_ResultNotification"/>
+      <xsd:complexType name="DT_ResultNotification">
+        <xsd:sequence>
+          <xsd:element name="Docnum" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Result">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="Error" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="sfdcid" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="Text" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="SplitText" type="xsd:string"/>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_ResultNotification">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:MT_ResultNotification" name="MT_ResultNotification"/>
+  </wsdl:message>
+  <wsdl:portType name="MI276_BPM_SendAleaud_oa">
+    <wsdl:documentation/>
+    <wsdl:operation name="MI276_BPM_SendAleaud_oa">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_MI276_BPM_SendAleaud_oa"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_ResultNotification"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MI276_BPM_SendAleaud_oaBinding" type="p1:MI276_BPM_SendAleaud_oa">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="MI276_BPM_SendAleaud_oa">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

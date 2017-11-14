@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<application-j2ee-engine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="application-j2ee-engine.xsd">
+	<reference reference-type="hard">
+    	<reference-target provider-name="sap.com" target-type="application">tc~esi~esp~wsrm~app</reference-target>
+	</reference>
+<reference reference-type="hard">
+<reference-target provider-name="nobelbiocare.com" target-type="application">p_sfdc/infra/sgc</reference-target>
+</reference>
+<reference reference-type="hard">
+<reference-target provider-name="sap.com" target-type="application">caf/core/ear</reference-target>
+</reference>
+<reference reference-type="hard">
+<reference-target provider-name="sap.com" target-type="application">caf/runtime/ear</reference-target>
+</reference>
+<reference reference-type="hard">
+<reference-target provider-name="sap.com" target-type="library">engine.jee5.facade</reference-target>
+</reference>
+<reference reference-type="hard">
+<reference-target provider-name="sap.com" target-type="library">tc/bl/exception/lib</reference-target>
+</reference>
+<reference reference-type="hard">
+<reference-target provider-name="sap.com" target-type="application">tc/bl/jra/api</reference-target>
+</reference>
+<reference reference-type="hard">
+<reference-target provider-name="sap.com" target-type="library">tc/bl/logging/api</reference-target>
+</reference>
+<reference reference-type="hard">
+<reference-target provider-name="sap.com" target-type="library">tc/je/usermanagement/api</reference-target>
+</reference>
+<reference reference-type="hard">
+<reference-target provider-name="sap.com" target-type="service">tc/je/webservices/api</reference-target>
+</reference>
+<provider-name>nobelbiocare.com</provider-name>
+</application-j2ee-engine>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sap.cafmm="http:///sap/cafmm.ecore" xmlns:sap.coremm="http:///sap/coremm.ecore">
+  <sap.cafmm:Application createdAt="Fri Feb 06 15:58:42 CET 2015" createdBy="Administrator" modifiedAt="Fri Feb 06 15:58:42 CET 2015" modifiedBy="Administrator" version="0" GUID="a448ca7d-ae10-11e4-cadd-000c29af3a8a" name="po_salesforce_02.bl.caf" namespace="http://www.sap.com/caf/nobelbiocare.com" vendorName="nobelbiocare.com" metamodelVersion="38" platformVersion="7.2.0">
+    <packages createdAt="Fri Feb 06 15:58:42 CET 2015" createdBy="Administrator" modifiedAt="Fri Feb 06 15:58:42 CET 2015" modifiedBy="Administrator" GUID="a44b4ab9-ae10-11e4-c8a8-000c29af3a8a" name="modeled" namespace="http://www.sap.com/caf/nobelbiocare.com/po_salesforce_02.bl.caf"/>
+    <packages createdAt="Fri Feb 06 15:58:42 CET 2015" createdBy="Administrator" modifiedAt="Fri Feb 06 15:58:42 CET 2015" modifiedBy="Administrator" GUID="a44da4fc-ae10-11e4-8fc9-000c29af3a8a" name="external" namespace="http://www.sap.com/caf/nobelbiocare.com/po_salesforce_02.bl.caf"/>
+    <dependencies createdAt="Fri Feb 06 15:58:42 CET 2015" createdBy="Administrator" modifiedAt="Fri Feb 06 15:58:42 CET 2015" modifiedBy="Administrator" GUID="a44da4fd-ae10-11e4-a42c-000c29af3a8a" dependencyGuid="5816BD4E-6F0A-473C-03EC-93066516" dependencyVersion="266" dependencyName="caf.core" dependencyVendorName="sap.com">
+      <usedApplication href="nwdi:CAF@caf/core/metadata@sap.com#5816BD4E-6F0A-473C-03EC-93066516"/>
+    </dependencies>
+    <applicationAspects xsi:type="sap.cafmm:RuntimeApplicationAspect" createdAt="Fri Feb 06 15:58:42 CET 2015" createdBy="Administrator" modifiedAt="Fri Feb 06 15:58:42 CET 2015" modifiedBy="Administrator" GUID="a44da4fe-ae10-11e4-8f72-000c29af3a8a" name="NWDIApplicationAspect" namespace="http://www.sap.com/caf/nobelbiocare.com/po_salesforce_02.bl.caf" physicalName="po_salesforce_02/bl/caf"/>
+  </sap.cafmm:Application>
+  <sap.coremm:Configuration GUID="a44ffd51-ae10-11e4-8319-000c29af3a8a" name="SemanticalUnits">
+    <subConfigurations GUID="a44ffd52-ae10-11e4-c0c8-000c29af3a8a" name="LocalSession">
+      <entries GUID="a44ffd53-ae10-11e4-b8f7-000c29af3a8a" value=""/>
+    </subConfigurations>
+  </sap.coremm:Configuration>
+</xmi:XMI>

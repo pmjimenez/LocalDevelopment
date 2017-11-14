@@ -1,0 +1,49 @@
+>>> === execute (on Fri Jan 13 12:06:17 CET 2017)===
+com.sap.tc.buildplugin.pdef.PdefValidator: Execution starts on Fri Jan 13 12:06:17 CET 2017
+
+
+
+File: sourceDir1: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\PO_SALESFORCE_02_SC\nobelbiocare.com\po_salesforce_02\_comp\src
+File: compilePPDir1: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\PO_SALESFORCE_02_SC\nobelbiocare.com\po_salesforce_02_sc\_comp\gen\default\public\default
+File: compilePPDir2: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SALESFORCE_BPM_SC\nobelbiocare.com\salesforce_bpm_sc\_comp\gen\default\public\default
+>>> === getProductValueMap===
+InputFileMap: {.description=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\PO_SALESFORCE_02_SC\nobelbiocare.com\po_salesforce_02\_comp\src\.description}
+Reading product info from: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\PO_SALESFORCE_02_SC\nobelbiocare.com\po_salesforce_02\_comp\src\.description
+ProductValueMap: {Name=PO_SALESFORCE_02, Vendor=nobelbiocare.com, Version=1.0}
+<<< === getProductValueMap===
+>>> === generateProductCR===
+>>> === getSoftcompValueMap===
+InputFileMap: {.description=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\PO_SALESFORCE_02_SC\nobelbiocare.com\po_salesforce_02_sc\_comp\gen\default\public\default\.description}
+SoftcompValueMap: {Name=PO_SALESFORCE_02_SC, GUID=925d8630-ae10-11e4-a1e8-f079c0a80185, Vendor=nobelbiocare.com, ElementTypeID=0, Version=1.0}
+<<< === getSoftcompValueMap===
+>>> === getSoftcompValueMap===
+InputFileMap: {.description=D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SALESFORCE_BPM_SC\nobelbiocare.com\salesforce_bpm_sc\_comp\gen\default\public\default\.description}
+SoftcompValueMap: {Name=SALESFORCE_BPM_SC, GUID=6bf70ca0-ae10-11e4-91b9-f079c0a80185, Vendor=nobelbiocare.com, ElementTypeID=0, Version=1.0}
+<<< === getSoftcompValueMap===
+Opening model input stream from plugin resource for task: ModelImport
+Resource opened for ModelImport: data/cimmodel.dat
+>>> === createCIMContentAndExport===
+No PPMS numbers available in product
+>>> === addSoftwareComponentsToSoftwareUnit===
+Next softcomp map to add: {Name=PO_SALESFORCE_02_SC, GUID=925d8630-ae10-11e4-a1e8-f079c0a80185, Vendor=nobelbiocare.com, ElementTypeID=0, Version=1.0}
+unit: //plugin/active:SAP_SoftwareFeature.IdentifyingNumber="0",Name="null",ProductName="PO_SALESFORCE_02",Vendor="nobelbiocare.com",Version="1.0"
+name: PO_SALESFORCE_02_SC
+vendor: nobelbiocare.com
+version: 1.0
+elementTypeId: 0
+GUID: 925d8630-ae10-11e4-a1e8-f079c0a80185
+Next softcomp map to add: {Name=SALESFORCE_BPM_SC, GUID=6bf70ca0-ae10-11e4-91b9-f079c0a80185, Vendor=nobelbiocare.com, ElementTypeID=0, Version=1.0}
+unit: //plugin/active:SAP_SoftwareFeature.IdentifyingNumber="0",Name="null",ProductName="PO_SALESFORCE_02",Vendor="nobelbiocare.com",Version="1.0"
+name: SALESFORCE_BPM_SC
+vendor: nobelbiocare.com
+version: 1.0
+elementTypeId: 0
+GUID: 6bf70ca0-ae10-11e4-91b9-f079c0a80185
+<<< === addSoftwareComponentsToSoftwareUnit===
+<<< === createCIMContentAndExport===
+Opening model input stream from plugin resource for task: ModelCopy
+Resource opened for ModelCopy: data/cimmodel.dat
+<<< === generateProductCR===
+>>> === generateProductLD===
+<<< === generateProductLD===
+com.sap.tc.buildplugin.pdef.PdefValidator: Execution ends on Fri Jan 13 12:06:18 CET 2017

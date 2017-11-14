@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mapping version="1.0">
+<development-component component-type="J2EE" name="rfid/j2ee/ejb/getevents" src-archive="nobelbiocare.com~rfid~j2ee~ejb~getevents~ejbjar_srcarchive.zip" sub-type="EJBModule" type-vendor="sap.com" vendor="nobelbiocare.com">
+<sourcefolder srcfolderpath="ejbModule">
+<sourceelement path="com/nobelbiocare/pi/j2ee/ejb/job/GetCabinetEventsJob.java"/>
+<sourceelement path="com/nobelbiocare/rfid_cabinet/DTEvents.java"/>
+<sourceelement path="com/nobelbiocare/rfid_cabinet/DTEventsResponse.java"/>
+<sourceelement path="com/nobelbiocare/rfid_cabinet/DTGetEvents.java"/>
+<sourceelement path="com/nobelbiocare/rfid_cabinet/DTSetEvents.java"/>
+<sourceelement path="com/nobelbiocare/rfid_cabinet/MI300GetEventsCabinetsOs.java"/>
+<sourceelement path="com/nobelbiocare/rfid_cabinet/MI300GetEventsCabinetsOsService.java"/>
+<sourceelement path="com/nobelbiocare/rfid_cabinet/MI302SetEventsCabinetsOa.java"/>
+<sourceelement path="com/nobelbiocare/rfid_cabinet/MI302SetEventsCabinetsOaService.java"/>
+<sourceelement path="com/nobelbiocare/rfid_cabinet/ObjectFactory.java"/>
+<sourceelement path="com/nobelbiocare/rfid_cabinet/package-info.java"/>
+</sourcefolder>
+</development-component>
+</mapping>

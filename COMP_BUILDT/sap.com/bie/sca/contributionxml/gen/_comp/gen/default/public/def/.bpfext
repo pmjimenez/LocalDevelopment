@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<technologies version="1">
+  <technology name="sap.com/bie/sca/contributionxml/gen">
+    <uses>sap.com/tc/bi/core</uses>
+
+	<ant-targets>
+      <target>
+        <name>sca_contrib_target</name>
+        <step>build</step>
+        <implementation-type>java</implementation-type>
+        <implementation-name>com.sap.bie.sca.contributionxml.base.ScaContributionXmlGen</implementation-name>
+        <execute-before>createPublicParts</execute-before>
+      </target>
+    </ant-targets>
+    
+    <ant-tasks>
+		<task name="gen_contribution_xml" classname="com.sap.bie.sca.contributionxml.gen.ScaContributionGenerator" on-demand="false"/>
+	</ant-tasks>
+    
+    <generators>
+		<generator type="sap.com~gen_contribution_xml" implementation-type="java"
+			implementation-name="com.sap.bie.sca.contributionxml.gen.ScaContributionBuildFileCreator">	
+		
+			<outputs>
+				<output name="default" required="true">
+					<description>
+					
+					</description>
+				</output>
+			</outputs>
+		</generator>	
+	</generators>		
+	<!--
+    <entity>
+      <descriptor type="Type" subtype="Subtype1,Subtype2,etc">
+        <description>Optional description</description>
+        <handler classname="org.example....EHMyEntity"/>
+      </descriptor>
+    </entity>
+
+    <development-component>
+      <descriptor vendor="org.example" type="DC Type" subtype="">
+        <public-parts default="permit"/>
+      </descriptor>
+    </development-component>
+
+    <datacontextprovider>
+      <provider classname="org.example.MyContextProvider"/>
+    </datacontextprovider>
+
+    <generators>
+      <generator type="org.example~mygen"
+        implementation-type="macro"
+        implementation-name="MyGenerator">
+        <input-types>
+          <type pattern="**/*.myf"/>
+        </input-types>
+        <output-types>
+          <type pattern="**/*.myfc"/>
+        </output-types>
+
+        <inputs>
+          <input name="default" required="true" default-value="$dc_packageDirsAsFiles"/>
+        </inputs>
+        <outputs>
+          <output name="default" required="true" default-value="$local_output"/>
+        </outputs>
+        <usedpaths>
+          <path name="default" default-value="$dc_depend_compileArchives"/>
+        </usedpaths>
+        <parameters>
+          <parameter name="myparameter" default-value="Yes">
+            <description>Character encoding of source files</description>
+          </parameter>
+        </parameters>
+      </generator>
+
+      <extension type="org.example~myext" extends="org.example~mygen"
+        implementation-type="java"
+        implementation-after="org.example.MyExt"
+        description="...">
+        <input-types>
+          <type pattern="**/*.myf2"/>
+        </input-types>
+      </extension>
+    </generators>    
+
+    <buildfile-creators>
+      <creator>
+        <classname>org.example.Creator</classname>
+        <step>build</step>
+        <sequence>build</sequence>
+      </creator>
+    </buildfile-creators>
+    -->
+  </technology>
+</technologies>

@@ -1,0 +1,123 @@
+Development Component Build (2017-11-06 17:08:38 GMT+01:00 (CET))
+  Component name: p_sfdc/bl/ddic
+  Component vendor: nobelbiocare.com
+  SC compartment: SC_SFDC
+  Configuration: LocalDevelopment
+  Location: localDevelopment
+  Source code location: pedro.jimenez@MADNB2016
+  DC root folder: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\p_sfdc\bl\ddic\_comp\
+  DC type: Dictionary
+  Host: MADNB2016
+
+DC Model check:
+   DC is available locally
+   validating dependency to build plugin "sap.com/tc/bi/bp/ddic"
+   validating dependency to  public part "runtime" of DC "sap.com/tc/ddic/runtime/facade"
+   DC model check OK
+
+Start build plugin:
+   using build plugin: sap.com/tc/bi/bp/ddic
+   starting build plugin from : D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\ddic\_comp\gen\default\public\ddic\
+
+
+
+Build Plugin 'DictionaryPlugin', Version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:49:13 +0200, CL209430)
+   development component:  p_sfdc/bl/ddic (nobelbiocare.com)
+      software component:  SC_SFDC (nobelbiocare.com)
+       support component:  Default
+                location:  localDevelopment
+                    type:  Dictionary
+           build variant:  default
+         source location:  pedro.jimenez@MADNB2016
+         output location:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\98D726B15ED0909B8C37C1CA05900321\default
+       generation folder:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\98D726B15ED0909B8C37C1CA05900321
+       plugin start time:  2017-11-06 17:08:38 GMT+01:00 (CET)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.45-b01 (1.6, Sun Microsystems Inc.)
+
+
+General options:
+  convert *.xlf to *.properties: yes
+  include sources for debugging: yes
+ 
+
+
+Package folder "src/packages" exists but is empty and will be ignored.
+Source folder "src/content" exists but is empty and will be ignored.
+Checking path lengths for sources
+Path length checks finished in 0 seconds
+ 
+Preparing data context..
+Data context preparation finished in 0.016 seconds
+ 
+Creating Ant build file..
+  Creating output file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\98D726B15ED0909B8C37C1CA05900321\default\logs\build.xml
+  Using macro file:     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\ddic\_comp\gen\default\public\ddic\macros\build.vm
+Build file creation finished in 0.065 seconds
+ 
+Starting Ant..
+  Using build file:     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\98D726B15ED0909B8C37C1CA05900321\default\logs\build.xml
+  Using build target:   build
+  Using Ant version:    1.7.1
+ 
+compile:
+      [echo] Starting dictionary generator
+     [ddgen] 
+     [ddgen] [Info]    Required property sourcepath is empty: Skipping task
+     [mkdir] Created dir: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\98D726B15ED0909B8C37C1CA05900321\gdd\dbtables
+     [timer] Dictionary generator finished in 0.001 seconds
+ 
+      [echo] Nothing to compile (No package-folder defined)
+      [echo] Starting Java compiler using the current JVM
+      [echo] Settings:
+      [echo]         debug: on
+      [echo]      optimize: off
+      [echo]   deprecation: default
+      [echo]       verbose: default
+      [echo]      encoding: UTF-8
+      [echo]        source: default
+      [echo]        target: default
+      [echo]   source path: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\98D726B15ED0909B8C37C1CA05900321\gdd\datatypes
+      [echo]    class path:
+      [echo]       D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\SapMetamodelDictionaryContent.zip
+      [echo]       D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.rtcontainer.facade.filter.jar
+      [echo]       D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.runtime.facade.filter.jar
+      [echo]       D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\dictionary.services.facade.filter.jar
+      [echo]       D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\FRAMEWORK\sap.com\tc\ddic\runtime\facade\_comp\gen\default\public\runtime\lib\java\tc~ddic~runtime~facade.jar
+      [echo]    output dir: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\98D726B15ED0909B8C37C1CA05900321\classes
+     [timer] Java compilation finished in 0.004 seconds
+ 
+      [echo] Start XLF conversion
+  [xlf2prop] Found 0 XLF files to convert in folder "D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\98D726B15ED0909B8C37C1CA05900321\gdd\datatypes"
+     [timer] XLF conversion finished in 0 seconds
+ 
+ 
+createDeployArchive:
+ 
+noCreateDeployArchive:
+      [echo] No deploy archive created, no deployable dictionary elements available.
+ 
+createDBContentArchive:
+ 
+createStandaloneDBContentArchive:
+      [echo] Starting translation of database content
+      [echo] No *.dcb files found. Skipping translation of database content.
+     [timer] Translation of database content finished in 0 seconds
+ 
+ 
+build:
+ 
+Ant runtime 0.055 seconds
+ 
+Ant build finished OK
+ 
+Build plugin finished at 2017-11-06 17:08:38 GMT+01:00 (CET)
+Total build plugin runtime: 0.269 seconds
+ 
+Build finished with WARNING
+
+==== Post-Processing ====   started at 2017-11-06 17:08:38.994 CET
+Comparison of previous and actual build results took: 0 seconds
+
+Copy the build results 
+  from: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\98D726B15ED0909B8C37C1CA05900321\default\
+  to:   D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\SC_SFDC\nobelbiocare.com\p_sfdc\bl\ddic\_comp\gen\default\

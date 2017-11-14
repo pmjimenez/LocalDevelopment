@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <wsdl:documentation></wsdl:documentation>
+  <ns1:properties xmlns:ns1="urn:com-sap:ifr:v2:wsdl">
+		<ns1:genericProperties>
+			<ns1:swcvinfo>
+				<ns1:guid>dc2258106ad711e697b4e1ec0a3e5c13</ns1:guid>
+				<ns1:name>BPM, 1.0 of nobelbiocare.com</ns1:name>
+			</ns1:swcvinfo>
+			<ns1:ominfo>
+				<ns1:guid>325d324d716134d691b070a1d19e7235</ns1:guid>
+			</ns1:ominfo>
+		</ns1:genericProperties>
+	</ns1:properties>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+      <xsd:complexType name="DT_Materials">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">276ba14d479a11e7c0f80000005f8a66</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="Row" minOccurs="0" maxOccurs="unbounded">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="material" type="xsd:string"></xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="MT_Materials" type="tns:DT_Materials"></xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="OMRequestMessage">
+    <wsdl:part name="MT_Materials" element="tns:MT_Materials"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="OMResponseMessage">
+    <wsdl:part name="MT_Materials_OUT" element="tns:MT_Materials"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="nobelbiocarecom_p_sfdcprpmreprdmix_OM_ProdMx_DelDupPortType">
+    <wsdl:documentation></wsdl:documentation>
+    <wsdl:operation name="OM_ProdMx_DelDup">
+      <wsdl:input message="tns:OMRequestMessage"></wsdl:input>
+      <wsdl:output message="tns:OMResponseMessage"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OM_ProdMx_DelDupBinding" type="tns:nobelbiocarecom_p_sfdcprpmreprdmix_OM_ProdMx_DelDupPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="OM_ProdMx_DelDup">
+      <soap:operation></soap:operation>
+      <wsdl:input>
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="nobelbiocare_com_p_sfdc_pr_pm_re_prdmix_OM_ProdMx_DelDup_Service">
+    <wsdl:port name="nobelbiocarecom_p_sfdcprpmreprdmix_OM_ProdMx_DelDupPortType" binding="tns:OM_ProdMx_DelDupBinding">
+      <soap:address location="http://localhost:50500/nobelbiocare.com~p_sfdc/pr/pm/re/prdmix/wsdl/OM_ProdMx_DelDup"></soap:address>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

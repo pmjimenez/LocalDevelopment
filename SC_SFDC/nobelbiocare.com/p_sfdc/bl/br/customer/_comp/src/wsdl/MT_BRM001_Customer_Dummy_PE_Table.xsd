@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://nobelbiocare.com/BPM/SFDC/Customer"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://nobelbiocare.com/BPM/SFDC/Customer">
+	<xsd:element name="MT_BRM001_Customer_Dummy_PE_Table" type="DT_BRM001_Customer_Dummy_PE_Table" />
+	<xsd:complexType name="DT_BRM001_Customer_Dummy_PE_Table">
+		<xsd:sequence>
+			<xsd:element name="ORG" type="xsd:string" minOccurs="0" />
+			<xsd:element name="ORGNAME" type="xsd:string" minOccurs="0" />
+			<xsd:element name="COMPANYCODE" type="xsd:string"
+				minOccurs="0" />
+			<xsd:element name="COMPANYNAME" type="xsd:string"
+				minOccurs="0" />
+			<xsd:element name="DUMMY_PE" type="xsd:string" minOccurs="0" />
+			<xsd:element name="LIVE" type="xsd:string" minOccurs="0" />
+			<xsd:element name="SFDC_ID" type="xsd:string" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

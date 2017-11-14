@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/Salesforce/Contacts" xmlns:p2="urn:partner.soap.sforce.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="MIZ044_Salesforce_queryMore" targetNamespace="http://nobelbiocare.com/Salesforce/Contacts">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+    <ifw:category>ifmmessif</ifw:category>
+    <ifw:VersionID>c0af26b2b39f11e4b84e0000005f8a66</ifw:VersionID>
+    <ifw:lifeCycleInfo>
+      <objectState/>
+      <objectstatus value="A"/>
+      <personresponsible value="chdaro"/>
+      <changed by="chdaro" on="1423846253518"/>
+    </ifw:lifeCycleInfo>
+    <ifw:runtimeVersion uri="urn:sap-com:soap:runtime:application:client"/>
+    <ifw:communicationProfile uri="prf_dt_if_com_stateless"/>
+    <ifw:securityProfile uri="prf_dt_if_sec_basic"/>
+    <ifw:interfacePattern p2p="true"/>
+    <ifw:isSensitiveData>false</ifw:isSensitiveData>
+    <ifw:classifications>
+      <ifw:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"/>
+      <ifw:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="b2fcd86570003cdcae5acaec40515133"/>
+    </ifw:classifications>
+    <ifw:additionalAttributes/>
+    <ifw:methods>
+      <ifw:method name="MIZ044_Salesforce_queryMore">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>false</ifw:isInbound>
+        <ifw:interfaceCategory>outbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:contextobjects/>
+      </ifw:method>
+    </ifw:methods>
+    <ifw:messages>
+      <ifw:message name="p2.queryMoreRequest">
+        <ifw:messType>ifmextmes</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ED_SalesForce_API_Partner_Customized</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://nobelbiocare.com/Salesforce/Contacts</ifw:elem>
+          <ifw:elem id="SUBNAME">queryMoreRequest</ifw:elem>
+          <ifw:elem id="SUBNAMESPACE">urn:partner.soap.sforce.com</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://nobelbiocare.com/Salesforce/Contacts</ifw:technicalNamespace>
+        <ifw:VersionID>a3ad5a39b6b311e486be0000005f8a66</ifw:VersionID>
+      </ifw:message>
+      <ifw:message name="p2.ApiFault">
+        <ifw:messType>ifmextmes</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ED_SalesForce_API_Partner_Customized</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://nobelbiocare.com/Salesforce/Contacts</ifw:elem>
+          <ifw:elem id="SUBNAME">ApiFault</ifw:elem>
+          <ifw:elem id="SUBNAMESPACE">urn:partner.soap.sforce.com</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://nobelbiocare.com/Salesforce/Contacts</ifw:technicalNamespace>
+        <ifw:VersionID>a3ad5a39b6b311e486be0000005f8a66</ifw:VersionID>
+      </ifw:message>
+      <ifw:message name="p2.queryMoreResponse">
+        <ifw:messType>ifmextmes</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ED_SalesForce_API_Partner_Customized</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://nobelbiocare.com/Salesforce/Contacts</ifw:elem>
+          <ifw:elem id="SUBNAME">queryMoreResponse</ifw:elem>
+          <ifw:elem id="SUBNAMESPACE">urn:partner.soap.sforce.com</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://nobelbiocare.com/Salesforce/Contacts</ifw:technicalNamespace>
+        <ifw:VersionID>a3ad5a39b6b311e486be0000005f8a66</ifw:VersionID>
+      </ifw:message>
+    </ifw:messages>
+    <ifw:matchingInterfaces/>
+    <ifw:genericProperties>
+      <ifw:swcvinfo>
+        <ifw:guid>255c5620454211deb95ee197c2581f67</ifw:guid>
+        <ifw:name>SALESFORCE 1.0 of salesforce.com</ifw:name>
+      </ifw:swcvinfo>
+      <ifw:languages>
+        <ifw:language internalCode="EN" original="true"/>
+      </ifw:languages>
+      <ifw:documentation type="I">
+        <name>_ID_b2fcd86570003cdcae5acaec40515133_ifmmessif</name>
+        <namespace>http://nobelbiocare.com/Salesforce/Contacts</namespace>
+      </ifw:documentation>
+    </ifw:genericProperties>
+  </ifw:properties>
+  <wsp:Policy wsu:Id="OP_MIZ044_Salesforce_queryMore"/>
+  <wsdl:types>
+    <xsd:schema xmlns="urn:sobject.partner.soap.sforce.com" xmlns:tns="urn:partner.soap.sforce.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:sobject.partner.soap.sforce.com">
+      <xsd:import namespace="urn:partner.soap.sforce.com"/>
+      <xsd:complexType name="Custom_Account">
+        <xsd:sequence>
+          <xsd:element form="qualified" name="Id" nillable="true" type="tns:ID"/>
+          <xsd:element form="qualified" name="Billing_City__c" type="xsd:string"/>
+          <xsd:element form="qualified" name="Billing_Country__c" type="xsd:string"/>
+          <xsd:element form="qualified" name="Billing_Zip_Postal_Code__c" type="xsd:string"/>
+          <xsd:element form="qualified" name="Billing_State_Province__c" type="xsd:string"/>
+          <xsd:element form="qualified" name="Billing_Street__c" type="xsd:string"/>
+          <xsd:element form="qualified" name="Name" type="xsd:string"/>
+          <xsd:element form="qualified" name="SAP_ID__c" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="type" type="xsd:string"/>
+      </xsd:complexType>
+      <xsd:complexType name="sObject_Custom_QueryResp">
+        <xsd:sequence>
+          <xsd:element form="qualified" name="type" type="xsd:string"/>
+          <xsd:element form="qualified" maxOccurs="unbounded" minOccurs="0" name="fieldsToNull" nillable="true" type="xsd:string"/>
+          <xsd:element form="qualified" name="Id" nillable="true" type="tns:ID"/>
+          <xsd:element form="qualified" minOccurs="0" name="Account" type="Custom_Account"/>
+          <xsd:element form="qualified" minOccurs="0" name="Email" type="xsd:string"/>
+          <xsd:element form="qualified" minOccurs="0" name="Fax" type="xsd:string"/>
+          <xsd:element form="qualified" minOccurs="0" name="FirstName" type="xsd:string"/>
+          <xsd:element form="qualified" name="LastName" type="xsd:string"/>
+          <xsd:element form="qualified" minOccurs="0" name="License_No__c" type="xsd:string"/>
+          <xsd:element form="qualified" minOccurs="0" name="NPID__c" type="xsd:string"/>
+          <xsd:element form="qualified" minOccurs="0" name="Phone" type="xsd:string"/>
+          <xsd:element form="qualified" name="SAP_TOD_ID__c" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="urn:fault.partner.soap.sforce.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:fault.partner.soap.sforce.com">
+      <xsd:element name="fault" type="ApiFault"/>
+      <xsd:simpleType name="ExceptionCode">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="APEX_TRIGGER_COUPLING_LIMIT"/>
+          <xsd:enumeration value="API_CURRENTLY_DISABLED"/>
+          <xsd:enumeration value="API_DISABLED_FOR_ORG"/>
+          <xsd:enumeration value="ARGUMENT_OBJECT_PARSE_ERROR"/>
+          <xsd:enumeration value="BATCH_PROCESSING_HALTED"/>
+          <xsd:enumeration value="CANNOT_DELETE_OWNER"/>
+          <xsd:enumeration value="CANT_ADD_STANDADRD_PORTAL_USER_TO_TERRITORY"/>
+          <xsd:enumeration value="CANT_ADD_STANDARD_PORTAL_USER_TO_TERRITORY"/>
+          <xsd:enumeration value="CIRCULAR_OBJECT_GRAPH"/>
+          <xsd:enumeration value="CLIENT_NOT_ACCESSIBLE_FOR_USER"/>
+          <xsd:enumeration value="CLIENT_REQUIRE_UPDATE_FOR_USER"/>
+          <xsd:enumeration value="CONTENT_HUB_AUTHENTICATION_EXCEPTION"/>
+          <xsd:enumeration value="CONTENT_HUB_FILE_DOWNLOAD_EXCEPTION"/>
+          <xsd:enumeration value="CONTENT_HUB_FILE_NOT_FOUND_EXCEPTION"/>
+          <xsd:enumeration value="CONTENT_HUB_INVALID_OBJECT_TYPE_EXCEPTION"/>
+          <xsd:enumeration value="CONTENT_HUB_SECURITY_EXCEPTION"/>
+          <xsd:enumeration value="CONTENT_HUB_UNEXPECTED_EXCEPTION"/>
+          <xsd:enumeration value="CUSTOM_METADATA_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="DATACLOUD_API_CLIENT_EXCEPTION"/>
+          <xsd:enumeration value="DATACLOUD_API_DISABLED_EXCEPTION"/>
+          <xsd:enumeration value="DATACLOUD_API_SERVER_BUSY_EXCEPTION"/>
+          <xsd:enumeration value="DATACLOUD_API_SERVER_EXCEPTION"/>
+          <xsd:enumeration value="DATACLOUD_API_TIMEOUT_EXCEPTION"/>
+          <xsd:enumeration value="DATACLOUD_API_UNAVAILABLE"/>
+          <xsd:enumeration value="DUPLICATE_ARGUMENT_VALUE"/>
+          <xsd:enumeration value="DUPLICATE_VALUE"/>
+          <xsd:enumeration value="EMAIL_BATCH_SIZE_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="EMAIL_TO_CASE_INVALID_ROUTING"/>
+          <xsd:enumeration value="EMAIL_TO_CASE_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="EMAIL_TO_CASE_NOT_ENABLED"/>
+          <xsd:enumeration value="ENVIRONMENT_HUB_MEMBERSHIP_CONFLICT"/>
+          <xsd:enumeration value="EXCEEDED_ID_LIMIT"/>
+          <xsd:enumeration value="EXCEEDED_LEAD_CONVERT_LIMIT"/>
+          <xsd:enumeration value="EXCEEDED_MAX_SIZE_REQUEST"/>
+          <xsd:enumeration value="EXCEEDED_MAX_TYPES_LIMIT"/>
+          <xsd:enumeration value="EXCEEDED_QUOTA"/>
+          <xsd:enumeration value="EXTERNAL_OBJECT_AUTHENTICATION_EXCEPTION"/>
+          <xsd:enumeration value="EXTERNAL_OBJECT_CONNECTION_EXCEPTION"/>
+          <xsd:enumeration value="EXTERNAL_OBJECT_EXCEPTION"/>
+          <xsd:enumeration value="EXTERNAL_OBJECT_UNSUPPORTED_EXCEPTION"/>
+          <xsd:enumeration value="FEDERATED_SEARCH_ERROR"/>
+          <xsd:enumeration value="FEED_NOT_ENABLED_FOR_OBJECT"/>
+          <xsd:enumeration value="FUNCTIONALITY_NOT_ENABLED"/>
+          <xsd:enumeration value="FUNCTIONALITY_TEMPORARILY_UNAVAILABLE"/>
+          <xsd:enumeration value="ILLEGAL_QUERY_PARAMETER_VALUE"/>
+          <xsd:enumeration value="INACTIVE_OWNER_OR_USER"/>
+          <xsd:enumeration value="INACTIVE_PORTAL"/>
+          <xsd:enumeration value="INSUFFICIENT_ACCESS"/>
+          <xsd:enumeration value="INTERNAL_CANVAS_ERROR"/>
+          <xsd:enumeration value="INVALID_ASSIGNMENT_RULE"/>
+          <xsd:enumeration value="INVALID_BATCH_REQUEST"/>
+          <xsd:enumeration value="INVALID_BATCH_SIZE"/>
+          <xsd:enumeration value="INVALID_CLIENT"/>
+          <xsd:enumeration value="INVALID_CROSS_REFERENCE_KEY"/>
+          <xsd:enumeration value="INVALID_DATE_FORMAT"/>
+          <xsd:enumeration value="INVALID_FIELD"/>
+          <xsd:enumeration value="INVALID_FILTER_LANGUAGE"/>
+          <xsd:enumeration value="INVALID_FILTER_VALUE"/>
+          <xsd:enumeration value="INVALID_ID_FIELD"/>
+          <xsd:enumeration value="INVALID_INPUT_COMBINATION"/>
+          <xsd:enumeration value="INVALID_LOCALE_LANGUAGE"/>
+          <xsd:enumeration value="INVALID_LOCATOR"/>
+          <xsd:enumeration value="INVALID_LOGIN"/>
+          <xsd:enumeration value="INVALID_MULTIPART_REQUEST"/>
+          <xsd:enumeration value="INVALID_NEW_PASSWORD"/>
+          <xsd:enumeration value="INVALID_OPERATION"/>
+          <xsd:enumeration value="INVALID_OPERATION_WITH_EXPIRED_PASSWORD"/>
+          <xsd:enumeration value="INVALID_PACKAGE_VERSION"/>
+          <xsd:enumeration value="INVALID_PAGING_OPTION"/>
+          <xsd:enumeration value="INVALID_QUERY_FILTER_OPERATOR"/>
+          <xsd:enumeration value="INVALID_QUERY_LOCATOR"/>
+          <xsd:enumeration value="INVALID_QUERY_SCOPE"/>
+          <xsd:enumeration value="INVALID_REPLICATION_DATE"/>
+          <xsd:enumeration value="INVALID_SEARCH"/>
+          <xsd:enumeration value="INVALID_SEARCH_SCOPE"/>
+          <xsd:enumeration value="INVALID_SESSION_ID"/>
+          <xsd:enumeration value="INVALID_SOAP_HEADER"/>
+          <xsd:enumeration value="INVALID_SORT_OPTION"/>
+          <xsd:enumeration value="INVALID_SSO_GATEWAY_URL"/>
+          <xsd:enumeration value="INVALID_TYPE"/>
+          <xsd:enumeration value="INVALID_TYPE_FOR_OPERATION"/>
+          <xsd:enumeration value="JIGSAW_ACTION_DISABLED"/>
+          <xsd:enumeration value="JIGSAW_IMPORT_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="JIGSAW_REQUEST_NOT_SUPPORTED"/>
+          <xsd:enumeration value="JSON_PARSER_ERROR"/>
+          <xsd:enumeration value="LICENSING_UNKNOWN_ERROR"/>
+          <xsd:enumeration value="LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="LOGIN_CHALLENGE_ISSUED"/>
+          <xsd:enumeration value="LOGIN_CHALLENGE_PENDING"/>
+          <xsd:enumeration value="LOGIN_DURING_RESTRICTED_DOMAIN"/>
+          <xsd:enumeration value="LOGIN_DURING_RESTRICTED_TIME"/>
+          <xsd:enumeration value="LOGIN_MUST_USE_SECURITY_TOKEN"/>
+          <xsd:enumeration value="MALFORMED_ID"/>
+          <xsd:enumeration value="MALFORMED_QUERY"/>
+          <xsd:enumeration value="MALFORMED_SEARCH"/>
+          <xsd:enumeration value="MISSING_ARGUMENT"/>
+          <xsd:enumeration value="MISSING_RECORD"/>
+          <xsd:enumeration value="MUTUAL_AUTHENTICATION_FAILED"/>
+          <xsd:enumeration value="NOT_MODIFIED"/>
+          <xsd:enumeration value="NO_SOFTPHONE_LAYOUT"/>
+          <xsd:enumeration value="NUMBER_OUTSIDE_VALID_RANGE"/>
+          <xsd:enumeration value="OPERATION_TOO_LARGE"/>
+          <xsd:enumeration value="ORG_IN_MAINTENANCE"/>
+          <xsd:enumeration value="ORG_IS_DOT_ORG"/>
+          <xsd:enumeration value="ORG_IS_SIGNING_UP"/>
+          <xsd:enumeration value="ORG_LOCKED"/>
+          <xsd:enumeration value="ORG_NOT_OWNED_BY_INSTANCE"/>
+          <xsd:enumeration value="PASSWORD_LOCKOUT"/>
+          <xsd:enumeration value="PORTAL_NO_ACCESS"/>
+          <xsd:enumeration value="POST_BODY_PARSE_ERROR"/>
+          <xsd:enumeration value="QUERY_TIMEOUT"/>
+          <xsd:enumeration value="QUERY_TOO_COMPLICATED"/>
+          <xsd:enumeration value="REQUEST_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="REQUEST_RUNNING_TOO_LONG"/>
+          <xsd:enumeration value="SERVER_UNAVAILABLE"/>
+          <xsd:enumeration value="SERVICE_DESK_NOT_ENABLED"/>
+          <xsd:enumeration value="SOCIALCRM_FEEDSERVICE_API_CLIENT_EXCEPTION"/>
+          <xsd:enumeration value="SOCIALCRM_FEEDSERVICE_API_SERVER_EXCEPTION"/>
+          <xsd:enumeration value="SOCIALCRM_FEEDSERVICE_API_UNAVAILABLE"/>
+          <xsd:enumeration value="SSO_SERVICE_DOWN"/>
+          <xsd:enumeration value="TOO_MANY_APEX_REQUESTS"/>
+          <xsd:enumeration value="TOO_MANY_RECIPIENTS"/>
+          <xsd:enumeration value="TOO_MANY_RECORDS"/>
+          <xsd:enumeration value="TRIAL_EXPIRED"/>
+          <xsd:enumeration value="UNABLE_TO_LOCK_ROW"/>
+          <xsd:enumeration value="UNKNOWN_ATTACHMENT_EXCEPTION"/>
+          <xsd:enumeration value="UNKNOWN_EXCEPTION"/>
+          <xsd:enumeration value="UNSUPPORTED_API_VERSION"/>
+          <xsd:enumeration value="UNSUPPORTED_ATTACHMENT_ENCODING"/>
+          <xsd:enumeration value="UNSUPPORTED_CLIENT"/>
+          <xsd:enumeration value="UNSUPPORTED_MEDIA_TYPE"/>
+          <xsd:enumeration value="XML_PARSER_ERROR"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="ApiFault">
+        <xsd:sequence>
+          <xsd:element form="qualified" name="exceptionCode" type="ExceptionCode"/>
+          <xsd:element form="qualified" name="exceptionMessage" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="urn:partner.soap.sforce.com" xmlns:ens="urn:sobject.partner.soap.sforce.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:partner.soap.sforce.com">
+      <xsd:import namespace="urn:sobject.partner.soap.sforce.com"/>
+      <xsd:element name="queryMoreResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element form="qualified" name="result" type="QueryResult"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="queryMore">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element form="qualified" minOccurs="0" name="DC_ENDPOINT_VALUE" type="xsd:string"/>
+            <xsd:element form="qualified" minOccurs="0" name="DC_ENDPOINT_NAME" type="xsd:string"/>
+            <xsd:element form="qualified" minOccurs="0" name="DC_ENDPOINT_NAMESPACE" type="xsd:string"/>
+            <xsd:element form="qualified" minOccurs="0" name="CF_SESSION_ID" type="xsd:string"/>
+            <xsd:element form="qualified" minOccurs="0" name="CF_BATCH_SIZE" type="xsd:string"/>
+            <xsd:element form="qualified" minOccurs="0" name="CF_UPDATE_MRU" type="xsd:string"/>
+            <xsd:element form="qualified" name="queryLocator" type="QueryLocator"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:simpleType name="ID">
+        <xsd:restriction base="xsd:string">
+          <xsd:length value="18"/>
+          <xsd:pattern value="[a-zA-Z0-9]{18}"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="QueryLocator">
+        <xsd:restriction base="xsd:string"/>
+      </xsd:simpleType>
+      <xsd:complexType name="QueryResult">
+        <xsd:sequence>
+          <xsd:element form="qualified" name="done" type="xsd:boolean"/>
+          <xsd:element form="qualified" name="queryLocator" nillable="true" type="QueryLocator"/>
+          <xsd:element form="qualified" maxOccurs="unbounded" minOccurs="0" name="records" nillable="true" type="ens:sObject_Custom_QueryResp"/>
+          <xsd:element form="qualified" name="size" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="p2.queryMoreRequest">
+    <wsdl:documentation/>
+    <wsdl:part element="p2:queryMore" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="p2.queryMoreResponse">
+    <wsdl:documentation/>
+    <wsdl:part element="p2:queryMoreResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="p2.ApiFault">
+    <wsdl:documentation/>
+    <wsdl:part xmlns:fns="urn:fault.partner.soap.sforce.com" element="fns:fault" name="fault"/>
+  </wsdl:message>
+  <wsdl:portType name="MIZ044_Salesforce_queryMore">
+    <wsdl:documentation/>
+    <wsdl:operation name="MIZ044_Salesforce_queryMore">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_MIZ044_Salesforce_queryMore"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:p2.queryMoreRequest"/>
+      <wsdl:output message="p1:p2.queryMoreResponse"/>
+      <wsdl:fault message="p1:p2.ApiFault" name="p2.ApiFault"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MIZ044_Salesforce_queryMoreBinding" type="p1:MIZ044_Salesforce_queryMore">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="MIZ044_Salesforce_queryMore">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="p2.ApiFault">
+        <soap:fault xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="p2.ApiFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

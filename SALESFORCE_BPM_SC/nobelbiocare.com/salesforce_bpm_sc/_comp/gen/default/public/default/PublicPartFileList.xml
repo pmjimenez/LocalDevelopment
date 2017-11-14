@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>salesforce_bpm_sc</name>
+<vendor>nobelbiocare.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Software Component Description</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>default</name>
+<purpose>compilation</purpose>
+</public-part>
+<dependencies/>
+</metadata>
+<source-components/>
+<archives>
+<archive location="filesystem" type="filesystem"/>
+</archives>
+<entities>
+<entity>
+<name>/</name>
+<entity-type>Folder</entity-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="filesystem" source-location="DC" source-path="src">
+<file path=".description"/>
+</fileset>
+</entity>
+</entities>
+</content>

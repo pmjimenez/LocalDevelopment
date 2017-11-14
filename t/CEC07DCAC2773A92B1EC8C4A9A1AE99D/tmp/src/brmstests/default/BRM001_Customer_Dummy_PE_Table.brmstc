@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:testCase xmlns:ns2="http://www.sap.com/ruletesting/12/2008/model" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:xmlTestCase" name="BRM001_Customer_Dummy_PE_Table" guid="SIMPTC603c365508d411e7cd390205857feb80">
+    <testMapping xsi:type="ns2:xmlTestCaseMapping" mappingGuid="TM603c365708d411e7a2e20205857feb80">
+        <baseXml xmlPath="src/brmstests/MT_BRM001_Customer_Dummy_PE_Table.xml" luid="XMLa4dba2ff08e011e7bfc80205857feb80">
+            <xsdModelElements/>
+        </baseXml>
+    </testMapping>
+    <testTarget xsi:type="ns2:simpleRulesetTestTarget" rulesetName="BRM001_Customer_Dummy_PE_Table" projectName="nobelbiocare.com~p_sfdc~bl~br~customer" guid="TT603c365608d411e7c2680205857feb80"/>
+</ns2:testCase>

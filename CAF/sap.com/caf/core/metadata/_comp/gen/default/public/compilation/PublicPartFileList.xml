@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>caf/core/metadata</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Composite Application</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>MMR</name>
+<purpose>assembly</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>bi/mmr/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">defLib</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>bi/mmr/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">defLib</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>bi/mmr/mmrbuild</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Java</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">default</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>bi/mmr/mmrlib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">defLib</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>bi/mmr/mmrlib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">defLib</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/core/dictionary</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Dictionary</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/core/ear</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>Enterprise Application</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">client</pp-ref>
+<pp-ref purpose="assembly">persistence</pp-ref>
+<pp-ref purpose="compilation">gen_client</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/core/ejbmodule</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE</type>
+<sub-type>EJBModule</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="assembly">ejbjar</pp-ref>
+<pp-ref purpose="compilation">client</pp-ref>
+<pp-ref purpose="assembly">persistence</pp-ref>
+<pp-ref purpose="compilation">gen_client</pp-ref>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/core/permissions</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Content</type>
+<sub-type>UME Permissions</sub-type>
+</component-type>
+</dc-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/metamodel/mmr</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Metamodel Repository</type>
+<sub-type>MMR</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">metamodel</pp-ref>
+<pp-ref purpose="assembly">assembly</pp-ref>
+<pp-ref purpose="compilation">compilation</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>caf/metamodel/mmr</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Metamodel Repository</type>
+<sub-type>MMR</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">metamodel</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/exception/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bl/logging/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components/>
+<archives>
+<archive location="mmrlib" path="lib/java/sap.com~caf~core~metadata.jar" type="jar">
+<property key="attributes">SAP-J2EE-Module[container-type[metamodelrepository]],jar,java-library</property>
+</archive>
+</archives>
+<entities>
+<entity>
+<name>JMI Archive</name>
+<entity-type>JMI Archive</entity-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+</entity>
+<entity>
+<name>MMR Archive</name>
+<entity-type>MMR Archive</entity-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="mmrlib">
+<file path="MMR/IndexPartitions.xml"/>
+<file path="MMR/PartitionConfiguration.xml"/>
+<file path="MMR/_metadata"/>
+<file path="MMR/ca_model.cafmm"/>
+<file path="MMR/ca_model_M.mmrp"/>
+<file path="MMR/sap.com~caf~core~metadata/IndexPartitions.xml"/>
+</fileset>
+</entity>
+</entities>
+</content>

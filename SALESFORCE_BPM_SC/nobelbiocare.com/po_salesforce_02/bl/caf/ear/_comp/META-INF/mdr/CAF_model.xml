@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Model applicationGUID="a448ca7d-ae10-11e4-cadd-000c29af3a8a">
+<ReferencedApplication referencedApplicationGUID="5816BD4E-6F0A-473C-03EC-93066516"/>
+<DAO CreatedAt="Fri Feb 06 15:58:42 CET 2015" CreatedBy="Administrator" GUID="a44b4ab9-ae10-11e4-c8a8-000c29af3a8a" ModifiedAt="Fri Feb 06 15:58:42 CET 2015" ModifiedBy="Administrator" Name="modeled" Namespace="http://www.sap.com/caf/nobelbiocare.com/po_salesforce_02.bl.caf" Visibility="PUBLIC" class="com.sap.caf.foundation.mm.cafmm.impl.dao.mdr.DAO_Package"/>
+<DAO CreatedAt="Fri Feb 06 15:58:42 CET 2015" CreatedBy="Administrator" GUID="a44da4fc-ae10-11e4-8fc9-000c29af3a8a" ModifiedAt="Fri Feb 06 15:58:42 CET 2015" ModifiedBy="Administrator" Name="external" Namespace="http://www.sap.com/caf/nobelbiocare.com/po_salesforce_02.bl.caf" Visibility="PUBLIC" class="com.sap.caf.foundation.mm.cafmm.impl.dao.mdr.DAO_Package"/>
+<DAO CreatedAt="Fri Feb 06 15:58:42 CET 2015" CreatedBy="Administrator" GUID="a44da4fe-ae10-11e4-8f72-000c29af3a8a" ModifiedAt="Fri Feb 06 15:58:42 CET 2015" ModifiedBy="Administrator" Name="NWDIApplicationAspect" Namespace="http://www.sap.com/caf/nobelbiocare.com/po_salesforce_02.bl.caf" PhysicalName="po_salesforce_02/bl/caf" class="com.sap.caf.foundation.mm.cafmm.impl.dao.mdr.DAO_RuntimeApplicationAspect"/>
+<DAO CreatedAt="Fri Feb 06 15:58:42 CET 2015" CreatedBy="Administrator" DependencyGuid="5816BD4E-6F0A-473C-03EC-93066516" DependencyName="caf.core" DependencyVendorName="sap.com" DependencyVersion="266" GUID="a44da4fd-ae10-11e4-a42c-000c29af3a8a" ModifiedAt="Fri Feb 06 15:58:42 CET 2015" ModifiedBy="Administrator" class="com.sap.caf.foundation.mm.cafmm.impl.dao.mdr.DAO_ApplicationDependency"/>
+<DAO CreatedAt="Fri Feb 06 15:58:42 CET 2015" CreatedBy="Administrator" GUID="a448ca7d-ae10-11e4-cadd-000c29af3a8a" MetamodelVersion="38" ModifiedAt="Fri Feb 06 15:58:42 CET 2015" ModifiedBy="Administrator" Name="po_salesforce_02.bl.caf" Namespace="http://www.sap.com/caf/nobelbiocare.com" PlatformVersion="7.2.0" VendorName="nobelbiocare.com" Version="0" class="com.sap.caf.foundation.mm.cafmm.impl.dao.mdr.DAO_Application"/>
+<Reference sourceGUID="a44b4ab9-ae10-11e4-c8a8-000c29af3a8a" targetGUID="a448ca7d-ae10-11e4-cadd-000c29af3a8a" targetRole="EnclosingApplication" type="single"/>
+<Reference sourceGUID="a44da4fc-ae10-11e4-8fc9-000c29af3a8a" targetGUID="a448ca7d-ae10-11e4-cadd-000c29af3a8a" targetRole="EnclosingApplication" type="single"/>
+<Reference sourceGUID="a44da4fe-ae10-11e4-8f72-000c29af3a8a" targetGUID="a448ca7d-ae10-11e4-cadd-000c29af3a8a" targetRole="Application" type="single"/>
+<Reference sourceGUID="a44da4fd-ae10-11e4-a42c-000c29af3a8a" targetGUID="5816BD4E-6F0A-473C-03EC-93066516" targetRole="UsedApplication" type="single"/>
+<Reference sourceGUID="a448ca7d-ae10-11e4-cadd-000c29af3a8a" targetGUID="a44da4fe-ae10-11e4-8f72-000c29af3a8a" targetRole="ApplicationAspects" type="multpile"/>
+<Reference sourceGUID="a448ca7d-ae10-11e4-cadd-000c29af3a8a" targetGUID="a44b4ab9-ae10-11e4-c8a8-000c29af3a8a" targetRole="Packages" type="multpile"/>
+<Reference sourceGUID="a448ca7d-ae10-11e4-cadd-000c29af3a8a" targetGUID="a44da4fc-ae10-11e4-8fc9-000c29af3a8a" targetRole="Packages" type="multpile"/>
+<Reference sourceGUID="a448ca7d-ae10-11e4-cadd-000c29af3a8a" targetGUID="a44da4fd-ae10-11e4-a42c-000c29af3a8a" targetRole="Dependencies" type="multpile"/>
+</Model>

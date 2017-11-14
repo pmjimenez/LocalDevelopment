@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    development component
+                     name: po_salesforce_02
+                   vendor: nobelbiocare.com
+                     type: Product Description
+                 sub-type: 
+              type-vendor: sap.com
+
+       software component
+                     name: PO_SALESFORCE_02_SC
+                   vendor: nobelbiocare.com
+
+                 location: localDevelopment
+          source location: pedro.jimenez@MADNB2016
+            build variant: default
+
+    building on MADNB2016, Windows 8/x86, version 6.2
+    using Java VM 'Java HotSpot(TM) Client VM', version 20.13-b02 (Sun Microsystems Inc.)
+    build started at 2017-01-13 12:06:16 GMT+01:00 (CET)
+
+    Build Plugin 'sap.com/tc/bi/bp/pdef', Version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:53:16 +0200, CL209430)
+    detailed versions:
+    sap.com:tc/bi/anttasks#def     7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:35 +0200, CL209430)
+    sap.com:tc/bi/core#def         7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:53:16 +0200, CL209430)
+    sap.com:tc/bi/exception#def    7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:34 +0200, CL209430)
+    sap.com:tc/bi/extddicdb#def    7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:41 +0200, CL209430)
+    sap.com:tc/bi/extsld#def       7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:40 +0200, CL209430)
+    sap.com:tc/bi/extsql#def       7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:37 +0200, CL209430)
+    sap.com:tc/bi/framework#def    7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:01 +0200, CL209430)
+    sap.com:tc/bi/i18n#def         7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:25 +0200, CL209430)
+    sap.com:tc/bi/javatech#def     7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:55 +0200, CL209430)
+    sap.com:tc/bi/jdoc#def         7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:34 +0200, CL209430)
+    sap.com:tc/bi/jdoc/util#def    7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:38 +0200, CL209430)
+    sap.com:tc/bi/jlincbs#def      7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:55 +0200, CL209430)
+    sap.com:tc/bi/settings#version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:49:26 +0200, CL209430)
+    sap.com:tc/bi/util#util        7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:47:16 +0200, CL209430)
+    sap.com:tc/bi/velocity#def     7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:24 +0200, CL209430)
+    sap.com:tc/bi/xml#def          7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:51:27 +0200, CL209430)
+ -->
+<project name="DC Deploy build"
+         default="packDeployArchive"
+         basedir=".">
+<taskdef name="PdefGeneratorTask" classname="com.sap.tc.buildplugin.pdef.PdefGeneratorTask"/>
+<taskdef name="jarsap" classname="com.sap.sdm.ant.JarSAP"/>
+<taskdef name="propertybag" classname="com.sap.tools.ant.taskdefs.PropertyBag"/>
+<taskdef name="srcpacker" classname="com.sap.tc.buildplugin.ant.taskdefs.SourceArchiveCreatorTask"/>
+<taskdef name="timer" classname="com.sap.tools.ant.taskdefs.Timer"/>
+<property name="dtr-workspace" value="pedro.jimenez@MADNB2016"/>
+
+<target name="packDeployArchive">
+<timer/>
+<srcpacker destination="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\E28E2D21B4BD497A278917B2EC198F64\sda\src.zip" archiveLocation="srcarchive"/>
+<timer message="Source archive creation finished in "/>
+<timer/>
+<jarsap jarfile="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\E28E2D21B4BD497A278917B2EC198F64\default\deploy\nobelbiocare.com~po_salesforce_02.sda"
+        softwaresubtype="SL-SDA"
+        deployfile="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\E28E2D21B4BD497A278917B2EC198F64\sda\META-INF\sda-dd.xml"
+        csncomponent="Default">
+<component vendor="nobelbiocare.com"
+           name="po_salesforce_02"
+           location="localDevelopment"
+           counter="20170113110618"
+           scvendor="nobelbiocare.com"
+           scname="PO_SALESFORCE_02_SC"/>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\E28E2D21B4BD497A278917B2EC198F64\sda">
+<exclude name="**/.cvsignore"/>
+<exclude name="**/.nfs*"/>
+<exclude name="**/SCCS/**"/>
+<exclude name="**/._*"/>
+<exclude name="**/#*#"/>
+<exclude name="**/.#*"/>
+<exclude name="**/.svn/**"/>
+<exclude name="**/vssver.scc"/>
+<exclude name="**/CVS/**"/>
+<exclude name="**/%*%"/>
+<exclude name="**/*~"/>
+</fileset>
+<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\E28E2D21B4BD497A278917B2EC198F64\sld_pack01">
+<exclude name="**/.cvsignore"/>
+<exclude name="**/.nfs*"/>
+<exclude name="**/SCCS/**"/>
+<exclude name="**/._*"/>
+<exclude name="**/#*#"/>
+<exclude name="**/.#*"/>
+<exclude name="**/.svn/**"/>
+<exclude name="**/vssver.scc"/>
+<exclude name="**/CVS/**"/>
+<exclude name="**/%*%"/>
+<exclude name="**/*~"/>
+<exclude name="META-INF/sda-dd.xml"/>
+</fileset>
+</jarsap>
+<timer message="JarSAP finished in "/>
+</target>
+</project>

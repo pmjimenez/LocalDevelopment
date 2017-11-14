@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mapping version="1.0">
+<development-component component-type="J2EE" name="caf/core/ear" src-archive="sap.com~caf~core~ear~persistence_srcarchive.zip" sub-type="Enterprise Application" type-vendor="sap.com" vendor="sap.com">
+<sourcefolder srcfolderpath="src/com/sap/caf/core/services/bonode/document/document/">
+<sourceelement path="com/sap/caf/core/services/bonode/document/document/AssociationDocumentTorelatedObjectRefs.java" zip-path="AssociationDocumentTorelatedObjectRefs.java"/>
+<sourceelement path="com/sap/caf/core/services/bonode/document/document/DocumentBO.java" zip-path="DocumentBO.java"/>
+</sourcefolder>
+<sourcefolder srcfolderpath="src/com/sap/caf/core/services/bonode/document/document/relatedobject/">
+<sourceelement path="com/sap/caf/core/services/bonode/document/document/relatedobject/RelatedObjectBO.java" zip-path="RelatedObjectBO.java"/>
+</sourcefolder>
+</development-component>
+</mapping>

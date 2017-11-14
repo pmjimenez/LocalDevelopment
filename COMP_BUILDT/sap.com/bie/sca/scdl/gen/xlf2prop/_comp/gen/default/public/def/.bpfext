@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<technologies version="1">
+  <technology name="sap.com/bie/sca/scdl/gen/xlf2prop">
+    <uses>sap.com/tc/bi/core</uses>
+
+    <ant-targets>
+			<target>
+				<name>Xlf2PropBase</name>
+				<step>build</step>
+				<implementation-type>java</implementation-type>
+				<implementation-name>com.sap.bie.sca.scdl.base.mc.Xlf2PropBase</implementation-name>
+				<execute-after>compile</execute-after>
+			</target>
+	</ant-targets>
+<!-- 
+	<ant-tasks>
+		<task name="xlf2propflatcopy" classname="com.sap.bie.sca.scdl.gen.mc.Xlf2PropFlattenerTask" on-demand="false"/>
+	</ant-tasks>
+ -->
+	<generators>
+			<generator type="sap.com~xlf2prop~flat" implementation-type="java"
+				implementation-name="com.sap.bie.sca.scdl.gen.mc.Xlf2PropConverterFlattener">
+				
+				<inputs>
+					<input name="default" required="true"/>
+				</inputs>
+				<outputs>
+					<output name="default" required="true"/>
+				</outputs>
+			</generator>
+			<chain type="sap.com~xlf2prop_gen_chain" implementation-type="java">
+
+				<generators>
+					<generator id="xlf2prop" type="sap.com~xlf2prop~standalone" />
+					<generator id="xlf2propflatcopy" type="sap.com~xlf2prop~flat" />
+				</generators>
+
+				<inputs>
+					<input name="xlf_source" default-value="${dc_rootDir}/mc"/>
+				</inputs>
+
+				<outputs>
+					<output name="xlf_out" default-value="xlf_out" required="true"/>
+					<output name="xlf_temp" default-value="xlf_temp" required="true"/>
+				</outputs>
+
+				<links>
+					<!-- link the chain's xlf source to the xlf converter-->
+					<link>
+						<source type="input" name="xlf_source" />
+						<destination id="xlf2prop" type="input" name="default" />
+					</link>
+					<link>
+						<source type="output" name="xlf_temp" />
+						<!-- <source type="output" name="xlf_out" /> -->
+						<destination id="xlf2prop" type="output" name="default" />
+					</link>
+    		          <link>
+			            <source id="xlf2prop" type="output" name="default"/>
+			            <destination id="xlf2propflatcopy" type="input" name="default"/>
+			          </link>
+					<link>
+						<source type="output" name="xlf_out" />
+						<destination id="xlf2propflatcopy" type="output" name="default" />
+					</link>
+				</links>
+			</chain>
+	</generators>
+
+    <entity>
+      <descriptor type="Xlf2Prop Entity">
+        <handler classname="com.sap.bie.sca.scdl.pp.mc.Xlf2PropEntityHandler"/>
+      </descriptor>
+    </entity>
+
+    <entity>
+      <descriptor type="Xlf2Prop WEB Entity">
+        <handler classname="com.sap.bie.sca.scdl.pp.mc.Xlf2PropWebEntityHandler"/>
+      </descriptor>
+    </entity>
+  </technology>
+</technologies>

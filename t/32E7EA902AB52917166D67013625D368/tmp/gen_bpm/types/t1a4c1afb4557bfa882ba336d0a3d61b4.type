@@ -1,0 +1,10 @@
+ROOT_0,TARGET_NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Revenue
+ROOT_0,SCHEMA_LOCATION=http://nobelbiocare.com/BPM/SFDC/Revenue
+ROOT_0,ROOTID=0
+ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:tns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="MT_UserSalesOrg" type="tns:DT_UserSalesOrg" sdox:aliasName="$http://nobelbiocare.com/BPM/SFDC/Revenue:MT_UserSalesOrg" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="DT_UserSalesOrg" sdox:aliasName="#DT_UserSalesOrg" xmlns:sdox="commonj.sdo/xml">     <xsd:annotation>       <xsd:appinfo source="http://sap.com/xi/VersionID">b23be93ff28c11e6a7980000005f8a66</xsd:appinfo>     </xsd:annotation>     <xsd:sequence>       <xsd:element name="Row" minOccurs="0" maxOccurs="unbounded" sdox:aliasName="$Row">         <xsd:complexType sdox:aliasName="E0E14F86FBD56D34F56511E69BD2548757986900">           <xsd:sequence>             <xsd:element name="User" type="xsd:string" minOccurs="0" sdox:aliasName="$User"></xsd:element>             <xsd:element name="SalesOrg" type="xsd:string" minOccurs="0" sdox:aliasName="$SalesOrg"></xsd:element>           </xsd:sequence>         </xsd:complexType>       </xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
+
+ROOT_1,TARGET_NAMESPACE=urn:partner.soap.sforce.com
+ROOT_1,SCHEMA_LOCATION=urn:partner.soap.sforce.com
+ROOT_1,ROOTID=1
+ROOT_1,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="urn:partner.soap.sforce.com" xmlns:tns="urn:partner.soap.sforce.com" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="query" sdox:aliasName="$urn:partner.soap.sforce.com:query" xmlns:sdox="commonj.sdo/xml">     <xsd:complexType sdox:aliasName="E0E14F868517B8D3F56511E68648548757986900">       <xsd:sequence>         <xsd:element name="queryString" type="xsd:string" sdox:aliasName="$urn:partner.soap.sforce.com:queryString"></xsd:element>       </xsd:sequence>     </xsd:complexType>   </xsd:element> </xsd:schema> 
+

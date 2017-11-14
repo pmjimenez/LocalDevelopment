@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<definitions xmlns:mns1="http://www.sap.com/caf/sap.com/caf.core/services" xmlns:mns2="http://www.sap.com/caf/sap.com/caf.core/faults" xmlns:mns3="http://www.sap.com/caf/query_filter" xmlns:mns4="http://www.sap.com/caf/sap.com/caf.core/services/bi" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://com.sap.caf/merged" name="all_merged" targetNamespace="http://com.sap.caf/merged" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" jaxb:version="2.0" targetNamespace="http://com.sap.caf/merged">
+      <xsd:annotation>
+        <xsd:appinfo>
+          <jaxb:globalBindings underscoreBinding="asCharInWord"/>
+        </xsd:appinfo>
+      </xsd:annotation>
+      <xsd:element name="empty-element"/>
+    </xsd:schema>
+    <xsd:schema xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" jaxb:version="2.0" targetNamespace="http://www.sap.com/caf/sap.com/caf.core/services">
+      <xsd:annotation>
+        <xsd:appinfo>
+          <jaxb:schemaBindings>
+            <jaxb:package name="com.sap.caf.core.services.types"/>
+          </jaxb:schemaBindings>
+        </xsd:appinfo>
+      </xsd:annotation>
+      <xsd:complexType name="Document">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="createdBy" nillable="false" type="mns1:UserId"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="createdAt" nillable="false" type="xsd:dateTime"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="modifiedAt" nillable="false" type="xsd:dateTime"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="modifiedBy" nillable="false" type="mns1:UserId"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="title" nillable="false" type="mns1:LongText"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="link" nillable="false" type="mns1:Rid"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="description" nillable="false" type="mns1:LongText"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="contentLength" nillable="false" type="xsd:long"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="contentType" nillable="false" type="mns1:ShortText"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="parentFolder" nillable="true" type="mns1:Rid"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="documentId" nillable="true" type="mns1:Rid"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="key" nillable="false" type="mns1:Id"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="UserId">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="32"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="LongText">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="256"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Rid">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1024"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ShortText">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="30"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Id">
+        <xsd:restriction base="xsd:string">
+          <xsd:length value="36"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="RelatedObject">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="key" nillable="false" type="mns1:Id"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="createdBy" nillable="false" type="mns1:UserId"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="createdAt" nillable="false" type="xsd:dateTime"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="modifiedAt" nillable="false" type="xsd:dateTime"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="modifiedBy" nillable="false" type="mns1:UserId"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="refObjectKey" nillable="false" type="mns1:Id"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="refObjectType" nillable="false" type="mns1:LongText"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="refObjectRid" nillable="false" type="mns1:Rid"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DocumentLockInfo">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="lockOwner" nillable="false" type="mns1:LongText"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="allowUnlock" nillable="false" type="xsd:boolean"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="xLongText">
+        <xsd:restriction base="xsd:string"/>
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" jaxb:version="2.0" targetNamespace="http://www.sap.com/caf/sap.com/caf.core/faults">
+      <xsd:annotation>
+        <xsd:appinfo>
+          <jaxb:schemaBindings>
+            <jaxb:package name="com.sap.caf.rt.exception"/>
+          </jaxb:schemaBindings>
+        </xsd:appinfo>
+      </xsd:annotation>
+      <xsd:complexType name="FaultInfo">
+        <xsd:sequence>
+          <xsd:element name="nestedStackTraceString" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="CAFFindException" type="mns2:FaultInfo"/>
+      <xsd:element name="CAFCreateException" type="mns2:FaultInfo"/>
+      <xsd:element name="CAFPermissionException" type="mns2:FaultInfo"/>
+      <xsd:element name="CAFRetrieveException" type="mns2:FaultInfo"/>
+      <xsd:element name="CAFUpdateException" type="mns2:FaultInfo"/>
+      <xsd:element name="CAFDeleteException" type="mns2:FaultInfo"/>
+      <xsd:element name="CAFBONodeException" type="mns2:FaultInfo"/>
+      <xsd:element name="CAFBaseException" type="mns2:FaultInfo"/>
+      <xsd:element name="CAFServiceException" type="mns2:FaultInfo"/>
+      <xsd:element name="CAFLockException" type="mns2:FaultInfo"/>
+      <xsd:element name="CAFDataAccessException" type="mns2:FaultInfo"/>
+      <xsd:element name="CAFOptimisticLockException" type="mns2:FaultInfo"/>
+      <xsd:element name="CAFPessimisticLockException" type="mns2:FaultInfo"/>
+    </xsd:schema>
+    <xsd:schema xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" jaxb:version="2.0" targetNamespace="http://www.sap.com/caf/query_filter">
+      <xsd:annotation>
+        <xsd:appinfo>
+          <jaxb:schemaBindings>
+            <jaxb:package name="com.sap.caf.rt.bol.util"/>
+          </jaxb:schemaBindings>
+        </xsd:appinfo>
+      </xsd:annotation>
+      <xsd:simpleType name="condition">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="EQ"/>
+          <xsd:enumeration value="LT"/>
+          <xsd:enumeration value="GT"/>
+          <xsd:enumeration value="LE"/>
+          <xsd:enumeration value="GE"/>
+          <xsd:enumeration value="NEQ"/>
+          <xsd:enumeration value="BETWEEN"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="QueryFilter">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="operation" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="action" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="attribute" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="value" type="xsd:anySimpleType"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="valueLow" type="xsd:anySimpleType"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="valueHigh" type="xsd:anySimpleType"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="condition" type="mns3:condition"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" jaxb:version="2.0" targetNamespace="http://www.sap.com/caf/sap.com/caf.core/services/bi">
+      <xsd:annotation>
+        <xsd:appinfo>
+          <jaxb:schemaBindings>
+            <jaxb:package name="com.sap.caf.core.services.bi"/>
+          </jaxb:schemaBindings>
+        </xsd:appinfo>
+      </xsd:annotation>
+      <xsd:complexType name="IBIExpression"/>
+    </xsd:schema>
+  </types>
+  <message name="dummyMsg">
+    <part element="tns:empty-element" name="parameters"/>
+  </message>
+  <portType name="all_mergedSEI">
+    <operation name="doNothing">
+      <input message="tns:dummyMsg"/>
+      <output message="tns:dummyMsg"/>
+    </operation>
+  </portType>
+  <binding name="all_mergedBinding" type="tns:all_mergedSEI">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="doNothing">
+      <soap:operation soapAction="http://com.sap.caf/merged/doNothing"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="all_mergedClient">
+    <port binding="tns:all_mergedBinding" name="all_mergedBindingPort">
+      <soap:address location="http://www.example.org/"/>
+    </port>
+  </service>
+</definitions>

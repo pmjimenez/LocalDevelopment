@@ -1,0 +1,225 @@
+<technologies version="1">
+  <technology name="sap.com/tc/bi/wdtech">
+    <uses>sap.com/tc/bi/ddictech</uses>
+    <entity>
+      <descriptor type="Common Model" subtype="Source">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHWebDynproCommonModel"/>
+      </descriptor>
+      <descriptor type="Web Dynpro Component" subtype="Source">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHWebDynproComponent"/>
+      </descriptor>
+      <descriptor type="Web Dynpro Component Interface Definition" subtype="Source">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHWebDynproComponent"/>
+      </descriptor>
+      <descriptor type="Interactive Form" subtype="default">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHAdobeInteractiveForm"/>
+      </descriptor>
+      <descriptor type="WebDynpro Archive" subtype="Archive,Source">
+        <handler classname="com.sap.tc.buildplugin.pp.entity.EHWebDynproArchive"/>
+      </descriptor>
+      <descriptor type="Mobile WebDynpro Module"/>
+    </entity>
+    <datacontextprovider>
+      <provider classname="com.sap.tc.buildplugin.WebDynproMacroContextProvider"/>
+      <element name="webdynpro_model_path" class="java.io.File" attributes="web-dynpro[model]"/>
+    </datacontextprovider>
+    <generators>
+      <generator type="sap.com~wdgen">
+        <implementation-type>java</implementation-type>
+        <implementation-name>com.sap.tc.buildplugin.gen.WebDynproGenerator</implementation-name>
+        <input-types>
+          <type pattern="**/*.wd*" attributes="debug"/>
+        </input-types>
+        <inputs>
+          <input name="default" required="true" default-value="$dc_packageDirsAsFiles"/>
+        </inputs>
+        <outputs>
+          <output name="default" required="true">
+            <description>The output path where generated class files will be
+              put</description>
+            <default-value>gen_wdp</default-value>
+          </output>
+          <output name="packages" required="false">
+            <description>
+              relative folder to "default" output where Java classes are generated
+            </description>
+            <default-value>${default}/packages</default-value>
+            <attributes>virtual</attributes>
+          </output>
+        </outputs>
+        <usedpaths>
+          <path name="models" default-value="$webdynpro_model_path">
+            <description>List of model archives</description>
+          </path>
+          <path name="classpath" default-value="$dc_depend_compileArchives"/>
+          <path name="metadata">
+            <description>Directory used for exchanging information using XML
+              descriptor files.</description>
+          </path>
+        </usedpaths>
+        <parameters>
+          <parameter name="deployment" default-value="true"/>
+          <parameter name="language" default-value="$wd_languages"/>
+          <parameter name="vendor" default-value="$dc_vendor"/>
+          <parameter name="dcname" default-value="$dc_name"/>
+          <parameter name="archivename" default-value="$wd_deployFile"/>
+          <parameter name="projectlanguage" default-value="$dc_originalLocale"/>
+        </parameters>
+      </generator>
+      <generator type="sap.com~wdmin"
+        implementation-type="java"
+        implementation-name="com.sap.tc.buildplugin.gen.WebDynproMinimizer">
+        <inputs>
+          <input name="classes" required="true"/>
+          <input name="wdgen_out" required="true"/>
+        </inputs>
+        <outputs>
+          <output name="logpath" required="true">
+            <description>Folder where minimizer log is written.</description>
+            <default-value>$dc_gen_tempDir</default-value>
+          </output>
+        </outputs>
+        <usedpaths>
+          <path name="classpath" default-value="$dc_depend_compileArchives"/>
+        </usedpaths>
+      </generator>
+      <generator type="sap.com~cmgen">
+        <implementation-type>java</implementation-type>
+        <implementation-name>com.sap.tc.buildplugin.gen.CommonModelGenerator</implementation-name>
+        <inputs>
+          <input name="default" required="true" default-value="$dc_packageDirsAsFiles">
+            <description>Source paths containing Data Dictionary objects.</description>
+          </input>
+        </inputs>
+        <outputs>
+          <output name="default" required="true" default-value="gen_cmi">
+            <description>The output path where generated class files will be
+              put</description>
+          </output>
+          <output name="packages" required="false">
+            <description>
+              relative folder to "default" output where Java classes are generated
+            </description>
+            <default-value>${default}/packages</default-value>
+            <attributes>virtual</attributes>
+          </output>
+        </outputs>
+        <usedpaths>
+          <path name="models" default-value="$webdynpro_model_path">
+            <description>List of model archives</description>
+          </path>
+          <path name="classpath" default-value="$dc_depend_compileArchives"/>
+          <path name="metadata">
+            <description>Directory used for exchanging information using XML descriptor files.</description>
+          </path>
+        </usedpaths>
+        <parameters>
+          <parameter name="deployment" default-value="true"/>
+          <parameter name="language" default-value="$cm_languages"/>
+          <parameter name="vendor" default-value="$dc_vendor"/>
+          <parameter name="dcname" default-value="$dc_name"/>
+          <parameter name="archivename" default-value="$wd_deployFile"/>
+          <parameter name="projectlanguage" default-value="$dc_originalLocale"/>
+        </parameters>
+      </generator>
+      <chain type="sap.com~wdgen_chain"
+        implementation-type="java"
+        implementation-before="com.sap.tc.buildplugin.gen.WDChainPreprocessor"
+        implementation-after="com.sap.tc.buildplugin.gen.WDChainPostprocessor">
+        <generators>
+          <generator id="ddgen" type="sap.com~ddgen"/>
+          <generator id="cmgen" type="sap.com~cmgen"/>
+          <generator id="wdgen" type="sap.com~wdgen"/>
+          <generator id="javac" type="sap.com~javac"/>
+          <generator id="wdmin" type="sap.com~wdmin"/>
+        </generators>
+        <!-- external interface for the chain -->
+        <inputs>
+          <input name="default" required="true" default-value="$dc_packageDirsAsFiles"/>
+        </inputs>
+        <usedpaths>
+          <path name="metadata" required="true" default-value="$dc_gen_tempDir"/>
+        </usedpaths>
+        <links>
+          <!-- link input folder to default input for ddgen/cmgen/wdgen -->
+          <link>
+            <source                 type="input" name="default"/>
+            <destination id="ddgen" type="input" name="default"/>
+          </link>
+          <link>
+            <source      id="ddgen" type="input" name="default"/>
+            <destination id="cmgen" type="input" name="default"/>
+          </link>
+          <link>
+            <source      id="cmgen" type="input" name="default"/>
+            <destination id="wdgen" type="input" name="default"/>
+          </link>
+          <!-- link metadata folder to ddgen/cmgen/wdgen -->
+          <link>
+            <source                 type="usedpath" name="metadata"/>
+            <destination id="ddgen" type="usedpath" name="metadata"/>
+            <destination id="cmgen" type="usedpath" name="metadata"/>
+            <destination id="wdgen" type="usedpath" name="metadata"/>
+          </link>
+          <!-- internal links -->
+          <!-- map output to Javac input -->
+          <link>
+            <source      id="ddgen" type="output" name="packages"/>
+            <source      id="cmgen" type="output" name="packages"/>
+            <source      id="wdgen" type="output" name="packages"/>
+            <destination id="javac" type="input"  name="default"/>
+            <options attributes="com.sap[suppress-xlf2property]"/>
+          </link>
+          <!-- map output to wdmin input -->
+          <link>
+            <source id="wdgen" type="usedpath" name="metadata"/>
+            <destination id="wdmin" type="input" name="wdgen_out"/>
+          </link>
+          <link>
+            <source id="javac" type="output" name="default"/>
+            <destination id="wdmin" type="input" name="classes"/>
+          </link>
+        </links>
+      </chain>
+    </generators>
+    <source-filesets>
+      <generator type="sap.com~xlf2prop">
+        <exclude name="**/*.wdcomponent*.xlf"/>
+        <exclude name="**/*.wdconfigobject*.xlf"/>
+        <exclude name="**/*.wdcontroller*.xlf"/>
+        <exclude name="**/*.wdview*.xlf"/>
+        <exclude name="**/*.wdwindow*.xlf"/>
+        <exclude name="**/*.wdapplication*.xlf"/>
+        <exclude name="**/*.wdlocalcompintfdef*.xlf"/>
+        <exclude name="**/*.wdinterfaceview*.xlf"/>
+        <exclude name="**/*.wdmessagepool*.xlf"/>
+        <exclude name="**/*.wdnavigation*.xlf"/>
+        <exclude name="**/*.wdmodel*.xlf"/>
+        <exclude name="**/*.wdmodelclass*.xlf"/>
+      </generator>
+    </source-filesets>
+    <buildfile-creators>
+      <library>
+        <implementation-name>com.sap.tc.buildplugin.WebDynproBase</implementation-name>
+        <interface-name>com.sap.tc.buildplugin.IWebDynproBase</interface-name>
+        <context-name>webDynproBase</context-name>
+      </library>
+    </buildfile-creators>
+    <ant-tasks>
+      <task name="wdgen" classname="com.sap.webdynpro.generation.ant.WDGenAntTask" on-demand="true"/>
+      <task name="cmgen" classname="com.sap.ide.cmi.generation.ant.CMGenAntTask" on-demand="true"/>
+      <task name="wdmin" classname="com.sap.tools.webdynpro.smart.ClassFileMinimizerTask" on-demand="true"/>
+      <task name="CreateDCDependencyInfo" classname="com.sap.tools.ant.taskdefs.CreateDCDependencyInfo" on-demand="true"/>
+      <task name="publicpartlist" classname="com.sap.tc.buildplugin.ddic.CreatePPEntitiesInfo" on-demand="true"/>
+    </ant-tasks>
+    <packer>
+      <configuration location="WebDynpro Archive">
+        <property key="type" value="jar"/>
+        <property key="manifest" value="${bi_manifest_Name}"/>
+        <property key="path" value="deploy/webdynpro/${wd_packageFile}.war"/>
+        <property key="attributes" value="J2EE-Module[module-type[web]]"/>
+        <property key="disregard-in-empty-check" value="META-INF/MANIFEST.MF"/>
+      </configuration>
+    </packer>
+  </technology>
+</technologies>

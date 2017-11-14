@@ -1,0 +1,10 @@
+# Message event definition TR_Customer_Sync_SalesForce (MOFId: E0DCF6CDD97A1DC60B0011E7ADDB0205857FEB80)
+NETWORK,223476fa499cb0bfa1b0f40074a08f85,nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/TR_Customer_Sync_SalesForce
+REVISIONID,4,7,Galaxy interface compiler as of NetWeaver CE 7.30. Give yourself to the dark side.
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/TR_Customer_Sync_SalesForce,MI276_BPM_CustomerData_Set_ia,SCOPE=FFCA8CA3F0EE060B5997420AC01E9D74
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/TR_Customer_Sync_SalesForce,MI276_BPM_CustomerData_Set_ia,ELEMENT,NAME=$http://nobelbiocare.com/BPM/SFDC/Customer:MT_CustomersData
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/TR_Customer_Sync_SalesForce,MI276_BPM_CustomerData_Set_ia,ELEMENT,NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Customer
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/TR_Customer_Sync_SalesForce,MI276_BPM_CustomerData_Set_ia,TYPE,NAME=#23#DT_CustomersData
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/TR_Customer_Sync_SalesForce,MI276_BPM_CustomerData_Set_ia,TYPE,NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Customer
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/cu/customer_sync/TR_Customer_Sync_SalesForce,MI276_BPM_CustomerData_Set_ia,MESSAGEPATTERN_INONLY=true

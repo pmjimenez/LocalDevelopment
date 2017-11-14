@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:p2="urn:partner.soap.sforce.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="MI284_BPM_GetSum_Push_os" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+    <ifw:category>ifmmessif</ifw:category>
+    <ifw:VersionID>58c93277568f11e7bc510000005f8a66</ifw:VersionID>
+    <ifw:lifeCycleInfo>
+      <objectState/>
+      <objectstatus value="A"/>
+      <personresponsible value="chpeji"/>
+      <changed by="chpeji" on="1498055964667"/>
+    </ifw:lifeCycleInfo>
+    <ifw:runtimeVersion uri="urn:sap-com:soap:runtime:application:client"/>
+    <ifw:communicationProfile uri="prf_dt_if_com_stateless"/>
+    <ifw:securityProfile uri="prf_dt_if_sec_basic"/>
+    <ifw:interfacePattern p2p="true"/>
+    <ifw:isSensitiveData>false</ifw:isSensitiveData>
+    <ifw:classifications>
+      <ifw:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"/>
+      <ifw:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="3857bcc8c9fa3a41b3780b4fd9932a0e"/>
+    </ifw:classifications>
+    <ifw:additionalAttributes/>
+    <ifw:methods>
+      <ifw:method name="MI284_BPM_GetSum_Push_os">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>false</ifw:isInbound>
+        <ifw:interfaceCategory>outbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:contextobjects/>
+      </ifw:method>
+    </ifw:methods>
+    <ifw:messages>
+      <ifw:message name="p2.upsertResponse">
+        <ifw:messType>ifmextmes</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">ED_CVM_UpsertResult</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://nobelbiocare.com/BPM/SFDC/Revenue</ifw:elem>
+          <ifw:elem id="SUBNAME">upsertResponse</ifw:elem>
+          <ifw:elem id="SUBNAMESPACE">urn:partner.soap.sforce.com</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://nobelbiocare.com/BPM/SFDC/Revenue</ifw:technicalNamespace>
+        <ifw:VersionID>c97dee8ef5b411e69f080000005f8a66</ifw:VersionID>
+      </ifw:message>
+      <ifw:message name="MT_GCVMRPOP">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">MT_GCVMRPOP</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://nobelbiocare.com/BPM/SFDC/Revenue</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://nobelbiocare.com/BPM/SFDC/Revenue</ifw:technicalNamespace>
+        <ifw:VersionID>72da3dacf2d011e681350000005f8a66</ifw:VersionID>
+        <ifw:xmlNamespace>http://nobelbiocare.com/BPM/SFDC/Revenue</ifw:xmlNamespace>
+        <ifw:dataType name="DT_GCVMRPOP" namespace="http://nobelbiocare.com/BPM/SFDC/Revenue" swcvId="dc2258106ad711e697b4e1ec0a3e5c13" uri="name=DT_GCVMRPOP~namespace=http://nobelbiocare.com/BPM/SFDC/Revenue~swcvId=dc2258106ad711e697b4e1ec0a3e5c13"/>
+      </ifw:message>
+    </ifw:messages>
+    <ifw:matchingInterfaces/>
+    <ifw:genericProperties>
+      <ifw:swcvinfo>
+        <ifw:guid>dc2258106ad711e697b4e1ec0a3e5c13</ifw:guid>
+        <ifw:name>BPM, 1.0 of nobelbiocare.com</ifw:name>
+      </ifw:swcvinfo>
+      <ifw:languages>
+        <ifw:language internalCode="EN" original="true"/>
+      </ifw:languages>
+      <ifw:documentation type="I">
+        <name>_ID_3857bcc8c9fa3a41b3780b4fd9932a0e_ifmmessif</name>
+        <namespace>http://nobelbiocare.com/BPM/SFDC/Revenue</namespace>
+      </ifw:documentation>
+    </ifw:genericProperties>
+  </ifw:properties>
+  <wsp:Policy wsu:Id="OP_MI284_BPM_GetSum_Push_os"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+      <xsd:element name="MT_GCVMRPOP" type="DT_GCVMRPOP"/>
+      <xsd:complexType name="DT_GCVMRPOP">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">CVM Report Output - Revenue Get Sum</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="CORRELATION" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Correlation id</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="DELTA" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>'X' for delta load, full load otherwise</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="NUMBER" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Specifies the message number</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="TOTAL" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Messages total</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ROW">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="SALESORG" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT161" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT221" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT222" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT223" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT224" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT225" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT226" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT227" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="CURRENCY" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="ERROR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:documentation>Rejection error</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema xmlns="urn:partner.soap.sforce.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:partner.soap.sforce.com">
+      <xsd:element name="upsertResponse" type="BatchResult"/>
+      <xsd:simpleType name="StatusCode">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="ALL_OR_NONE_OPERATION_ROLLED_BACK"/>
+          <xsd:enumeration value="ALREADY_IN_PROCESS"/>
+          <xsd:enumeration value="APEX_DATA_ACCESS_RESTRICTION"/>
+          <xsd:enumeration value="ASSIGNEE_TYPE_REQUIRED"/>
+          <xsd:enumeration value="AURA_COMPILE_ERROR"/>
+          <xsd:enumeration value="BAD_CUSTOM_ENTITY_PARENT_DOMAIN"/>
+          <xsd:enumeration value="BCC_NOT_ALLOWED_IF_BCC_COMPLIANCE_ENABLED"/>
+          <xsd:enumeration value="CANNOT_CASCADE_PRODUCT_ACTIVE"/>
+          <xsd:enumeration value="CANNOT_CHANGE_FIELD_TYPE_OF_APEX_REFERENCED_FIELD"/>
+          <xsd:enumeration value="CANNOT_CHANGE_FIELD_TYPE_OF_REFERENCED_FIELD"/>
+          <xsd:enumeration value="CANNOT_CREATE_ANOTHER_MANAGED_PACKAGE"/>
+          <xsd:enumeration value="CANNOT_DEACTIVATE_DIVISION"/>
+          <xsd:enumeration value="CANNOT_DELETE_GLOBAL_ACTION_LIST"/>
+          <xsd:enumeration value="CANNOT_DELETE_LAST_DATED_CONVERSION_RATE"/>
+          <xsd:enumeration value="CANNOT_DELETE_MANAGED_OBJECT"/>
+          <xsd:enumeration value="CANNOT_DISABLE_LAST_ADMIN"/>
+          <xsd:enumeration value="CANNOT_ENABLE_IP_RESTRICT_REQUESTS"/>
+          <xsd:enumeration value="CANNOT_EXECUTE_FLOW_TRIGGER"/>
+          <xsd:enumeration value="CANNOT_FREEZE_SELF"/>
+          <xsd:enumeration value="CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY"/>
+          <xsd:enumeration value="CANNOT_MODIFY_MANAGED_OBJECT"/>
+          <xsd:enumeration value="CANNOT_PASSWORD_LOCKOUT"/>
+          <xsd:enumeration value="CANNOT_POST_TO_ARCHIVED_GROUP"/>
+          <xsd:enumeration value="CANNOT_RENAME_APEX_REFERENCED_FIELD"/>
+          <xsd:enumeration value="CANNOT_RENAME_APEX_REFERENCED_OBJECT"/>
+          <xsd:enumeration value="CANNOT_RENAME_REFERENCED_FIELD"/>
+          <xsd:enumeration value="CANNOT_RENAME_REFERENCED_OBJECT"/>
+          <xsd:enumeration value="CANNOT_REPARENT_RECORD"/>
+          <xsd:enumeration value="CANNOT_UPDATE_CONVERTED_LEAD"/>
+          <xsd:enumeration value="CANT_DISABLE_CORP_CURRENCY"/>
+          <xsd:enumeration value="CANT_UNSET_CORP_CURRENCY"/>
+          <xsd:enumeration value="CHILD_SHARE_FAILS_PARENT"/>
+          <xsd:enumeration value="CIRCULAR_DEPENDENCY"/>
+          <xsd:enumeration value="CLEAN_SERVICE_ERROR"/>
+          <xsd:enumeration value="COLLISION_DETECTED"/>
+          <xsd:enumeration value="COMMUNITY_NOT_ACCESSIBLE"/>
+          <xsd:enumeration value="CONFLICTING_ENVIRONMENT_HUB_MEMBER"/>
+          <xsd:enumeration value="CONFLICTING_SSO_USER_MAPPING"/>
+          <xsd:enumeration value="CUSTOM_APEX_ERROR"/>
+          <xsd:enumeration value="CUSTOM_CLOB_FIELD_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="CUSTOM_ENTITY_OR_FIELD_LIMIT"/>
+          <xsd:enumeration value="CUSTOM_FIELD_INDEX_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="CUSTOM_INDEX_EXISTS"/>
+          <xsd:enumeration value="CUSTOM_LINK_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="CUSTOM_METADATA_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="CUSTOM_METADATA_REL_FIELD_MANAGEABILITY"/>
+          <xsd:enumeration value="CUSTOM_SETTINGS_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="CUSTOM_TAB_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="DATACLOUDADDRESS_NO_RECORDS_FOUND"/>
+          <xsd:enumeration value="DATACLOUDADDRESS_PROCESSING_ERROR"/>
+          <xsd:enumeration value="DATACLOUDADDRESS_SERVER_ERROR"/>
+          <xsd:enumeration value="DELETE_FAILED"/>
+          <xsd:enumeration value="DELETE_OPERATION_TOO_LARGE"/>
+          <xsd:enumeration value="DELETE_REQUIRED_ON_CASCADE"/>
+          <xsd:enumeration value="DEPENDENCY_EXISTS"/>
+          <xsd:enumeration value="DUPLICATES_DETECTED"/>
+          <xsd:enumeration value="DUPLICATE_CASE_SOLUTION"/>
+          <xsd:enumeration value="DUPLICATE_COMM_NICKNAME"/>
+          <xsd:enumeration value="DUPLICATE_CUSTOM_ENTITY_DEFINITION"/>
+          <xsd:enumeration value="DUPLICATE_CUSTOM_TAB_MOTIF"/>
+          <xsd:enumeration value="DUPLICATE_DEVELOPER_NAME"/>
+          <xsd:enumeration value="DUPLICATE_EXTERNAL_ID"/>
+          <xsd:enumeration value="DUPLICATE_MASTER_LABEL"/>
+          <xsd:enumeration value="DUPLICATE_SENDER_DISPLAY_NAME"/>
+          <xsd:enumeration value="DUPLICATE_USERNAME"/>
+          <xsd:enumeration value="DUPLICATE_VALUE"/>
+          <xsd:enumeration value="EMAIL_ADDRESS_BOUNCED"/>
+          <xsd:enumeration value="EMAIL_EXTERNAL_TRANSPORT_CONNECTION_ERROR"/>
+          <xsd:enumeration value="EMAIL_EXTERNAL_TRANSPORT_PERMISSION_ERROR"/>
+          <xsd:enumeration value="EMAIL_EXTERNAL_TRANSPORT_TOKEN_ERROR"/>
+          <xsd:enumeration value="EMAIL_EXTERNAL_TRANSPORT_TOO_MANY_REQUESTS_ERROR"/>
+          <xsd:enumeration value="EMAIL_EXTERNAL_TRANSPORT_UNKNOWN_ERROR"/>
+          <xsd:enumeration value="EMAIL_NOT_PROCESSED_DUE_TO_PRIOR_ERROR"/>
+          <xsd:enumeration value="EMAIL_OPTED_OUT"/>
+          <xsd:enumeration value="EMAIL_TEMPLATE_FORMULA_ERROR"/>
+          <xsd:enumeration value="EMAIL_TEMPLATE_MERGEFIELD_ACCESS_ERROR"/>
+          <xsd:enumeration value="EMAIL_TEMPLATE_MERGEFIELD_ERROR"/>
+          <xsd:enumeration value="EMAIL_TEMPLATE_MERGEFIELD_VALUE_ERROR"/>
+          <xsd:enumeration value="EMAIL_TEMPLATE_PROCESSING_ERROR"/>
+          <xsd:enumeration value="EMPTY_SCONTROL_FILE_NAME"/>
+          <xsd:enumeration value="ENTITY_FAILED_IFLASTMODIFIED_ON_UPDATE"/>
+          <xsd:enumeration value="ENTITY_IS_ARCHIVED"/>
+          <xsd:enumeration value="ENTITY_IS_DELETED"/>
+          <xsd:enumeration value="ENTITY_IS_LOCKED"/>
+          <xsd:enumeration value="ENTITY_SAVE_ERROR"/>
+          <xsd:enumeration value="ENTITY_SAVE_VALIDATION_ERROR"/>
+          <xsd:enumeration value="ENVIRONMENT_HUB_MEMBERSHIP_CONFLICT"/>
+          <xsd:enumeration value="ENVIRONMENT_HUB_MEMBERSHIP_ERROR_JOINING_HUB"/>
+          <xsd:enumeration value="ENVIRONMENT_HUB_MEMBERSHIP_USER_ALREADY_IN_HUB"/>
+          <xsd:enumeration value="ENVIRONMENT_HUB_MEMBERSHIP_USER_NOT_ORG_ADMIN"/>
+          <xsd:enumeration value="ERROR_IN_MAILER"/>
+          <xsd:enumeration value="EXCHANGE_WEB_SERVICES_URL_INVALID"/>
+          <xsd:enumeration value="FAILED_ACTIVATION"/>
+          <xsd:enumeration value="FIELD_CUSTOM_VALIDATION_EXCEPTION"/>
+          <xsd:enumeration value="FIELD_FILTER_VALIDATION_EXCEPTION"/>
+          <xsd:enumeration value="FIELD_INTEGRITY_EXCEPTION"/>
+          <xsd:enumeration value="FIELD_KEYWORD_LIST_MATCH_LIMIT"/>
+          <xsd:enumeration value="FIELD_MAPPING_ERROR"/>
+          <xsd:enumeration value="FIELD_MODERATION_RULE_BLOCK"/>
+          <xsd:enumeration value="FIELD_NOT_UPDATABLE"/>
+          <xsd:enumeration value="FILE_EXTENSION_NOT_ALLOWED"/>
+          <xsd:enumeration value="FILE_SIZE_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="FILTERED_LOOKUP_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="FIND_DUPLICATES_ERROR"/>
+          <xsd:enumeration value="FUNCTIONALITY_NOT_ENABLED"/>
+          <xsd:enumeration value="HAS_PUBLIC_REFERENCES"/>
+          <xsd:enumeration value="HTML_FILE_UPLOAD_NOT_ALLOWED"/>
+          <xsd:enumeration value="IMAGE_TOO_LARGE"/>
+          <xsd:enumeration value="INACTIVE_OWNER_OR_USER"/>
+          <xsd:enumeration value="INACTIVE_RULE_ERROR"/>
+          <xsd:enumeration value="INSERT_UPDATE_DELETE_NOT_ALLOWED_DURING_MAINTENANCE"/>
+          <xsd:enumeration value="INSUFFICIENT_ACCESS_ON_CROSS_REFERENCE_ENTITY"/>
+          <xsd:enumeration value="INSUFFICIENT_ACCESS_OR_READONLY"/>
+          <xsd:enumeration value="INSUFFICIENT_ACCESS_TO_INSIGHTSEXTERNALDATA"/>
+          <xsd:enumeration value="INSUFFICIENT_CREDITS"/>
+          <xsd:enumeration value="INTERNAL_ERROR"/>
+          <xsd:enumeration value="INVALID_ACCESS_LEVEL"/>
+          <xsd:enumeration value="INVALID_ACCESS_TOKEN"/>
+          <xsd:enumeration value="INVALID_ARGUMENT_TYPE"/>
+          <xsd:enumeration value="INVALID_ASSIGNEE_TYPE"/>
+          <xsd:enumeration value="INVALID_ASSIGNMENT_RULE"/>
+          <xsd:enumeration value="INVALID_BATCH_OPERATION"/>
+          <xsd:enumeration value="INVALID_CONTENT_TYPE"/>
+          <xsd:enumeration value="INVALID_CREDIT_CARD_INFO"/>
+          <xsd:enumeration value="INVALID_CROSS_REFERENCE_KEY"/>
+          <xsd:enumeration value="INVALID_CROSS_REFERENCE_TYPE_FOR_FIELD"/>
+          <xsd:enumeration value="INVALID_CURRENCY_CONV_RATE"/>
+          <xsd:enumeration value="INVALID_CURRENCY_CORP_RATE"/>
+          <xsd:enumeration value="INVALID_CURRENCY_ISO"/>
+          <xsd:enumeration value="INVALID_DATA_CATEGORY_GROUP_REFERENCE"/>
+          <xsd:enumeration value="INVALID_DATA_URI"/>
+          <xsd:enumeration value="INVALID_EMAIL_ADDRESS"/>
+          <xsd:enumeration value="INVALID_EMPTY_KEY_OWNER"/>
+          <xsd:enumeration value="INVALID_ENTITY_FOR_MATCH_ENGINE_ERROR"/>
+          <xsd:enumeration value="INVALID_ENTITY_FOR_MATCH_OPERATION_ERROR"/>
+          <xsd:enumeration value="INVALID_ENTITY_FOR_UPSERT"/>
+          <xsd:enumeration value="INVALID_ENVIRONMENT_HUB_MEMBER"/>
+          <xsd:enumeration value="INVALID_EVENT_DELIVERY"/>
+          <xsd:enumeration value="INVALID_EVENT_SUBSCRIPTION"/>
+          <xsd:enumeration value="INVALID_FIELD"/>
+          <xsd:enumeration value="INVALID_FIELD_FOR_INSERT_UPDATE"/>
+          <xsd:enumeration value="INVALID_FIELD_WHEN_USING_TEMPLATE"/>
+          <xsd:enumeration value="INVALID_FILTER_ACTION"/>
+          <xsd:enumeration value="INVALID_GOOGLE_DOCS_URL"/>
+          <xsd:enumeration value="INVALID_ID_FIELD"/>
+          <xsd:enumeration value="INVALID_INET_ADDRESS"/>
+          <xsd:enumeration value="INVALID_INPUT"/>
+          <xsd:enumeration value="INVALID_LINEITEM_CLONE_STATE"/>
+          <xsd:enumeration value="INVALID_MARKUP"/>
+          <xsd:enumeration value="INVALID_MASTER_OR_TRANSLATED_SOLUTION"/>
+          <xsd:enumeration value="INVALID_MESSAGE_ID_REFERENCE"/>
+          <xsd:enumeration value="INVALID_NAMESPACE_PREFIX"/>
+          <xsd:enumeration value="INVALID_OAUTH_URL"/>
+          <xsd:enumeration value="INVALID_OPERATION"/>
+          <xsd:enumeration value="INVALID_OPERATOR"/>
+          <xsd:enumeration value="INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST"/>
+          <xsd:enumeration value="INVALID_OWNER"/>
+          <xsd:enumeration value="INVALID_PACKAGE_LICENSE"/>
+          <xsd:enumeration value="INVALID_PACKAGE_VERSION"/>
+          <xsd:enumeration value="INVALID_PARTNER_NETWORK_STATUS"/>
+          <xsd:enumeration value="INVALID_PERSON_ACCOUNT_OPERATION"/>
+          <xsd:enumeration value="INVALID_PROVIDER_TYPE"/>
+          <xsd:enumeration value="INVALID_QUERY_LOCATOR"/>
+          <xsd:enumeration value="INVALID_READ_ONLY_USER_DML"/>
+          <xsd:enumeration value="INVALID_REFRESH_TOKEN"/>
+          <xsd:enumeration value="INVALID_RUNTIME_VALUE"/>
+          <xsd:enumeration value="INVALID_SAVE_AS_ACTIVITY_FLAG"/>
+          <xsd:enumeration value="INVALID_SESSION_ID"/>
+          <xsd:enumeration value="INVALID_SETUP_OWNER"/>
+          <xsd:enumeration value="INVALID_SIGNUP_COUNTRY"/>
+          <xsd:enumeration value="INVALID_SIGNUP_OPTION"/>
+          <xsd:enumeration value="INVALID_SITE_DELETE_EXCEPTION"/>
+          <xsd:enumeration value="INVALID_SITE_FILE_IMPORTED_EXCEPTION"/>
+          <xsd:enumeration value="INVALID_SITE_FILE_TYPE_EXCEPTION"/>
+          <xsd:enumeration value="INVALID_STATUS"/>
+          <xsd:enumeration value="INVALID_SUBDOMAIN"/>
+          <xsd:enumeration value="INVALID_TYPE"/>
+          <xsd:enumeration value="INVALID_TYPE_FOR_OPERATION"/>
+          <xsd:enumeration value="INVALID_TYPE_ON_FIELD_IN_RECORD"/>
+          <xsd:enumeration value="INVALID_USERID"/>
+          <xsd:enumeration value="IP_RANGE_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="JIGSAW_IMPORT_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="LICENSE_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="LIGHT_PORTAL_USER_EXCEPTION"/>
+          <xsd:enumeration value="LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="MALFORMED_ID"/>
+          <xsd:enumeration value="MANAGER_NOT_DEFINED"/>
+          <xsd:enumeration value="MASSMAIL_RETRY_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="MASS_MAIL_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="MATCH_DEFINITION_ERROR"/>
+          <xsd:enumeration value="MATCH_OPERATION_ERROR"/>
+          <xsd:enumeration value="MATCH_OPERATION_INVALID_ENGINE_ERROR"/>
+          <xsd:enumeration value="MATCH_OPERATION_INVALID_RULE_ERROR"/>
+          <xsd:enumeration value="MATCH_OPERATION_MISSING_ENGINE_ERROR"/>
+          <xsd:enumeration value="MATCH_OPERATION_MISSING_OBJECT_TYPE_ERROR"/>
+          <xsd:enumeration value="MATCH_OPERATION_MISSING_OPTIONS_ERROR"/>
+          <xsd:enumeration value="MATCH_OPERATION_MISSING_RULE_ERROR"/>
+          <xsd:enumeration value="MATCH_OPERATION_UNKNOWN_RULE_ERROR"/>
+          <xsd:enumeration value="MATCH_OPERATION_UNSUPPORTED_VERSION_ERROR"/>
+          <xsd:enumeration value="MATCH_PRECONDITION_FAILED"/>
+          <xsd:enumeration value="MATCH_RUNTIME_ERROR"/>
+          <xsd:enumeration value="MATCH_SERVICE_ERROR"/>
+          <xsd:enumeration value="MATCH_SERVICE_TIMED_OUT"/>
+          <xsd:enumeration value="MATCH_SERVICE_UNAVAILABLE_ERROR"/>
+          <xsd:enumeration value="MAXIMUM_CCEMAILS_EXCEEDED"/>
+          <xsd:enumeration value="MAXIMUM_DASHBOARD_COMPONENTS_EXCEEDED"/>
+          <xsd:enumeration value="MAXIMUM_HIERARCHY_CHILDREN_REACHED"/>
+          <xsd:enumeration value="MAXIMUM_HIERARCHY_LEVELS_REACHED"/>
+          <xsd:enumeration value="MAXIMUM_HIERARCHY_TREE_SIZE_REACHED"/>
+          <xsd:enumeration value="MAXIMUM_SIZE_OF_ATTACHMENT"/>
+          <xsd:enumeration value="MAXIMUM_SIZE_OF_DOCUMENT"/>
+          <xsd:enumeration value="MAX_ACTIONS_PER_RULE_EXCEEDED"/>
+          <xsd:enumeration value="MAX_ACTIVE_RULES_EXCEEDED"/>
+          <xsd:enumeration value="MAX_APPROVAL_STEPS_EXCEEDED"/>
+          <xsd:enumeration value="MAX_DEPTH_IN_FLOW_EXECUTION"/>
+          <xsd:enumeration value="MAX_FORMULAS_PER_RULE_EXCEEDED"/>
+          <xsd:enumeration value="MAX_RULES_EXCEEDED"/>
+          <xsd:enumeration value="MAX_RULE_ENTRIES_EXCEEDED"/>
+          <xsd:enumeration value="MAX_TASK_DESCRIPTION_EXCEEEDED"/>
+          <xsd:enumeration value="MAX_TM_RULES_EXCEEDED"/>
+          <xsd:enumeration value="MAX_TM_RULE_ITEMS_EXCEEDED"/>
+          <xsd:enumeration value="MAX_TRIGGERS_EXCEEDED"/>
+          <xsd:enumeration value="MERGE_FAILED"/>
+          <xsd:enumeration value="METADATA_FIELD_UPDATE_ERROR"/>
+          <xsd:enumeration value="MISSING_ARGUMENT"/>
+          <xsd:enumeration value="MISSING_RECORD"/>
+          <xsd:enumeration value="MIXED_DML_OPERATION"/>
+          <xsd:enumeration value="NONUNIQUE_SHIPPING_ADDRESS"/>
+          <xsd:enumeration value="NO_ACCESS_TOKEN"/>
+          <xsd:enumeration value="NO_ACCESS_TOKEN_FROM_REFRESH"/>
+          <xsd:enumeration value="NO_APPLICABLE_PROCESS"/>
+          <xsd:enumeration value="NO_ATTACHMENT_PERMISSION"/>
+          <xsd:enumeration value="NO_AUTH_PROVIDER"/>
+          <xsd:enumeration value="NO_INACTIVE_DIVISION_MEMBERS"/>
+          <xsd:enumeration value="NO_MASS_MAIL_PERMISSION"/>
+          <xsd:enumeration value="NO_PARTNER_PERMISSION"/>
+          <xsd:enumeration value="NO_REFRESH_TOKEN"/>
+          <xsd:enumeration value="NO_SUCH_USER_EXISTS"/>
+          <xsd:enumeration value="NO_TOKEN_ENDPOINT"/>
+          <xsd:enumeration value="NUMBER_OUTSIDE_VALID_RANGE"/>
+          <xsd:enumeration value="NUM_HISTORY_FIELDS_BY_SOBJECT_EXCEEDED"/>
+          <xsd:enumeration value="OPTED_OUT_OF_MASS_MAIL"/>
+          <xsd:enumeration value="OP_WITH_INVALID_USER_TYPE_EXCEPTION"/>
+          <xsd:enumeration value="PACKAGE_LICENSE_REQUIRED"/>
+          <xsd:enumeration value="PACKAGING_API_INSTALL_FAILED"/>
+          <xsd:enumeration value="PACKAGING_API_UNINSTALL_FAILED"/>
+          <xsd:enumeration value="PALI_INVALID_ACTION_ID"/>
+          <xsd:enumeration value="PALI_INVALID_ACTION_NAME"/>
+          <xsd:enumeration value="PALI_INVALID_ACTION_TYPE"/>
+          <xsd:enumeration value="PAL_INVALID_ASSISTANT_RECOMMENDATION_TYPE_ID"/>
+          <xsd:enumeration value="PAL_INVALID_ENTITY_ID"/>
+          <xsd:enumeration value="PAL_INVALID_FLEXIPAGE_ID"/>
+          <xsd:enumeration value="PAL_INVALID_LAYOUT_ID"/>
+          <xsd:enumeration value="PAL_INVALID_PARAMETERS"/>
+          <xsd:enumeration value="PA_API_EXCEPTION"/>
+          <xsd:enumeration value="PA_AXIS_FAULT"/>
+          <xsd:enumeration value="PA_INVALID_ID_EXCEPTION"/>
+          <xsd:enumeration value="PA_NO_ACCESS_EXCEPTION"/>
+          <xsd:enumeration value="PA_NO_DATA_FOUND_EXCEPTION"/>
+          <xsd:enumeration value="PA_URI_SYNTAX_EXCEPTION"/>
+          <xsd:enumeration value="PA_VISIBLE_ACTIONS_FILTER_ORDERING_EXCEPTION"/>
+          <xsd:enumeration value="PORTAL_NO_ACCESS"/>
+          <xsd:enumeration value="PORTAL_USER_ALREADY_EXISTS_FOR_CONTACT"/>
+          <xsd:enumeration value="PORTAL_USER_CREATION_RESTRICTED_WITH_ENCRYPTION"/>
+          <xsd:enumeration value="PRIVATE_CONTACT_ON_ASSET"/>
+          <xsd:enumeration value="PROCESSING_HALTED"/>
+          <xsd:enumeration value="QA_INVALID_CREATE_FEED_ITEM"/>
+          <xsd:enumeration value="QA_INVALID_SUCCESS_MESSAGE"/>
+          <xsd:enumeration value="QUERY_TIMEOUT"/>
+          <xsd:enumeration value="QUICK_ACTION_LIST_ITEM_NOT_ALLOWED"/>
+          <xsd:enumeration value="QUICK_ACTION_LIST_NOT_ALLOWED"/>
+          <xsd:enumeration value="RECORD_IN_USE_BY_WORKFLOW"/>
+          <xsd:enumeration value="REL_FIELD_BAD_ACCESSIBILITY"/>
+          <xsd:enumeration value="REPUTATION_MINIMUM_NUMBER_NOT_REACHED"/>
+          <xsd:enumeration value="REQUEST_RUNNING_TOO_LONG"/>
+          <xsd:enumeration value="REQUIRED_FEATURE_MISSING"/>
+          <xsd:enumeration value="REQUIRED_FIELD_MISSING"/>
+          <xsd:enumeration value="RETRIEVE_EXCHANGE_ATTACHMENT_FAILED"/>
+          <xsd:enumeration value="RETRIEVE_EXCHANGE_EMAIL_FAILED"/>
+          <xsd:enumeration value="RETRIEVE_EXCHANGE_EVENT_FAILED"/>
+          <xsd:enumeration value="RETRIEVE_GOOGLE_EMAIL_FAILED"/>
+          <xsd:enumeration value="RETRIEVE_GOOGLE_EVENT_FAILED"/>
+          <xsd:enumeration value="SALESFORCE_INBOX_TRANSPORT_CONNECTION_ERROR"/>
+          <xsd:enumeration value="SALESFORCE_INBOX_TRANSPORT_TOKEN_ERROR"/>
+          <xsd:enumeration value="SALESFORCE_INBOX_TRANSPORT_UNKNOWN_ERROR"/>
+          <xsd:enumeration value="SELF_REFERENCE_FROM_FLOW"/>
+          <xsd:enumeration value="SELF_REFERENCE_FROM_TRIGGER"/>
+          <xsd:enumeration value="SHARE_NEEDED_FOR_CHILD_OWNER"/>
+          <xsd:enumeration value="SINGLE_EMAIL_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="SOCIAL_ACCOUNT_NOT_FOUND"/>
+          <xsd:enumeration value="SOCIAL_ACTION_INVALID"/>
+          <xsd:enumeration value="SOCIAL_POST_INVALID"/>
+          <xsd:enumeration value="SOCIAL_POST_NOT_FOUND"/>
+          <xsd:enumeration value="STANDARD_PRICE_NOT_DEFINED"/>
+          <xsd:enumeration value="STORAGE_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="STRING_TOO_LONG"/>
+          <xsd:enumeration value="SUBDOMAIN_IN_USE"/>
+          <xsd:enumeration value="TABSET_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="TEMPLATE_NOT_ACTIVE"/>
+          <xsd:enumeration value="TEMPLATE_NOT_FOUND"/>
+          <xsd:enumeration value="TERMS_OF_SERVICE_UNREAD"/>
+          <xsd:enumeration value="TERRITORY_REALIGN_IN_PROGRESS"/>
+          <xsd:enumeration value="TEXT_DATA_OUTSIDE_SUPPORTED_CHARSET"/>
+          <xsd:enumeration value="TOO_MANY_APEX_REQUESTS"/>
+          <xsd:enumeration value="TOO_MANY_ENUM_VALUE"/>
+          <xsd:enumeration value="TOO_MANY_POSSIBLE_USERS_EXIST"/>
+          <xsd:enumeration value="TRANSFER_REQUIRES_READ"/>
+          <xsd:enumeration value="UNABLE_TO_LOCK_ROW"/>
+          <xsd:enumeration value="UNAVAILABLE_RECORDTYPE_EXCEPTION"/>
+          <xsd:enumeration value="UNAVAILABLE_REF"/>
+          <xsd:enumeration value="UNDELETE_FAILED"/>
+          <xsd:enumeration value="UNKNOWN_EXCEPTION"/>
+          <xsd:enumeration value="UNKNOWN_TOKEN_ERROR"/>
+          <xsd:enumeration value="UNSAFE_HTML_CONTENT"/>
+          <xsd:enumeration value="UNSPECIFIED_EMAIL_ADDRESS"/>
+          <xsd:enumeration value="UNSUPPORTED_APEX_TRIGGER_OPERATON"/>
+          <xsd:enumeration value="UNVERIFIED_SENDER_ADDRESS"/>
+          <xsd:enumeration value="USER_OWNS_PORTAL_ACCOUNT_EXCEPTION"/>
+          <xsd:enumeration value="USER_WITH_APEX_SHARES_EXCEPTION"/>
+          <xsd:enumeration value="VF_COMPILE_ERROR"/>
+          <xsd:enumeration value="WEBLINK_SIZE_LIMIT_EXCEEDED"/>
+          <xsd:enumeration value="WEBLINK_URL_INVALID"/>
+          <xsd:enumeration value="WRONG_CONTROLLER_TYPE"/>
+          <xsd:enumeration value="XCLEAN_UNEXPECTED_ERROR"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="Result">
+        <xsd:sequence>
+          <xsd:element form="qualified" maxOccurs="unbounded" minOccurs="0" name="errors" type="ResultError"/>
+          <xsd:element form="qualified" minOccurs="0" name="id" type="xsd:string"/>
+          <xsd:element form="qualified" name="success" type="xsd:boolean"/>
+          <xsd:element form="qualified" name="created" type="xsd:boolean"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="BatchResult">
+        <xsd:sequence>
+          <xsd:element form="qualified" maxOccurs="unbounded" minOccurs="0" name="result" type="Result"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ResultError">
+        <xsd:sequence>
+          <xsd:element form="qualified" maxOccurs="unbounded" minOccurs="0" name="fields" nillable="true" type="xsd:string"/>
+          <xsd:element form="qualified" name="message" type="xsd:string"/>
+          <xsd:element form="qualified" name="statusCode" type="StatusCode"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_GCVMRPOP">
+    <wsdl:documentation>CVM Report Output - Revenue Get Sum</wsdl:documentation>
+    <wsdl:part element="p1:MT_GCVMRPOP" name="MT_GCVMRPOP"/>
+  </wsdl:message>
+  <wsdl:message name="p2.upsertResponse">
+    <wsdl:documentation/>
+    <wsdl:part element="p2:upsertResponse" name="upsertResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="MI284_BPM_GetSum_Push_os">
+    <wsdl:documentation/>
+    <wsdl:operation name="MI284_BPM_GetSum_Push_os">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_MI284_BPM_GetSum_Push_os"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_GCVMRPOP"/>
+      <wsdl:output message="p1:p2.upsertResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MI284_BPM_GetSum_Push_osBinding" type="p1:MI284_BPM_GetSum_Push_os">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="MI284_BPM_GetSum_Push_os">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

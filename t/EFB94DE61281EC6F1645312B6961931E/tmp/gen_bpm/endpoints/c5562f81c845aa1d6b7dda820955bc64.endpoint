@@ -1,0 +1,10 @@
+# Message event definition TR_Start_Revenue_SalesRepBudget (MOFId: E0870461A595C4E0F9BB11E69D6C0205857FEB80)
+NETWORK,c5562f81c845aa1d6b7dda820955bc64,nobelbiocare.com/p_sfdc/pr/pm/re/sales_bgt/TR_Start_Revenue_SalesRepBudget
+REVISIONID,4,7,Galaxy interface compiler as of NetWeaver CE 7.30. Give yourself to the dark side.
+-- CONFIG --
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/sales_bgt/TR_Start_Revenue_SalesRepBudget,MI282_BPM_SalesRepPerformanceBudget_Push_ia,SCOPE=FADFF7BD69261FDA691A0B3C64289C20
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/sales_bgt/TR_Start_Revenue_SalesRepBudget,MI282_BPM_SalesRepPerformanceBudget_Push_ia,ELEMENT,NAME=$http://nobelbiocare.com/BPM/SFDC/Revenue:MT_GCVMSLRBD
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/sales_bgt/TR_Start_Revenue_SalesRepBudget,MI282_BPM_SalesRepPerformanceBudget_Push_ia,ELEMENT,NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Revenue
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/sales_bgt/TR_Start_Revenue_SalesRepBudget,MI282_BPM_SalesRepPerformanceBudget_Push_ia,TYPE,NAME=#23#DT_GCVMSLRBD
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/sales_bgt/TR_Start_Revenue_SalesRepBudget,MI282_BPM_SalesRepPerformanceBudget_Push_ia,TYPE,NAMESPACE=http://nobelbiocare.com/BPM/SFDC/Revenue
+CONFIG,com.sap.glx.adapter.UnifiedConnectivityAdapter,Request,ENDPOINTS,nobelbiocare.com/p_sfdc/pr/pm/re/sales_bgt/TR_Start_Revenue_SalesRepBudget,MI282_BPM_SalesRepPerformanceBudget_Push_ia,MESSAGEPATTERN_INONLY=true

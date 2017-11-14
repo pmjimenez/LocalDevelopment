@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://nobelbiocare.com/Salesforce/Contacts" name="MIZ040_Salesforce_TravelOD_Customers_Trigger_Req" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://nobelbiocare.com/Salesforce/Contacts" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <wsdl:documentation>Message interface for Asynchronous proxy triggering for customer replication</wsdl:documentation>
+  <ns1:UsingPolicy xmlns:ns1="http://schemas.xmlsoap.org/ws/2004/09/policy" wsdl:required="true"></ns1:UsingPolicy>
+  <ns2:properties xmlns:ns2="urn:com-sap:ifr:v2:wsdl">
+    <ns2:category>ifmmessif</ns2:category>
+    <ns2:VersionID>81888ce2a31d11e4a3c30000005f8a66</ns2:VersionID>
+    <ns2:lifeCycleInfo>
+      <objectState></objectState>
+      <objectstatus value="A"></objectstatus>
+      <personresponsible value="chdaro"></personresponsible>
+      <changed by="chdaro" on="1422031083174"></changed>
+    </ns2:lifeCycleInfo>
+    <ns2:runtimeVersion uri="urn:sap-com:soap:xms:application:xip"></ns2:runtimeVersion>
+    <ns2:communicationProfile uri="prf_dt_if_com_stateless"></ns2:communicationProfile>
+    <ns2:securityProfile uri="prf_dt_if_sec_basic"></ns2:securityProfile>
+    <ns2:interfacePattern p2p="true"></ns2:interfacePattern>
+    <ns2:isSensitiveData>false</ns2:isSensitiveData>
+    <ns2:classifications>
+      <ns2:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"></ns2:classification>
+      <ns2:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="d6cbefc6293f34329285faf6572bfacd"></ns2:classification>
+    </ns2:classifications>
+    <ns2:additionalAttributes></ns2:additionalAttributes>
+    <ns2:methods>
+      <ns2:method name="MIZ040_Salesforce_TravelOD_Customers_Trigger_Req">
+        <ns2:isSynchron>false</ns2:isSynchron>
+        <ns2:isIdempotent>false</ns2:isIdempotent>
+        <ns2:isInbound>true</ns2:isInbound>
+        <ns2:interfaceCategory>inbound</ns2:interfaceCategory>
+        <ns2:communicationProfile uri="prf_dt_op_com_async"></ns2:communicationProfile>
+        <ns2:contextobjects></ns2:contextobjects>
+      </ns2:method>
+    </ns2:methods>
+    <ns2:messages>
+      <ns2:message name="MT_SalesF_TravelOD_Customers_Trigger_Req">
+        <ns2:messType>ifmmessage</ns2:messType>
+        <ns2:keyElements>
+          <ns2:elem id="NAME">MT_SalesF_TravelOD_Customers_Trigger_Req</ns2:elem>
+          <ns2:elem id="NAMESPACE">http://nobelbiocare.com/Salesforce/Contacts</ns2:elem>
+        </ns2:keyElements>
+        <ns2:technicalNamespace>http://nobelbiocare.com/Salesforce/Contacts</ns2:technicalNamespace>
+        <ns2:VersionID>a3569219b3fa11e2a72600001e568b5a</ns2:VersionID>
+        <ns2:xmlNamespace>http://nobelbiocare.com/Salesforce/Contacts</ns2:xmlNamespace>
+        <ns2:dataType name="DT_Period" namespace="http://nobelbiocare.com/Salesforce/Contacts" swcvId="255c5620454211deb95ee197c2581f67" uri="name=DT_Period~namespace=http://nobelbiocare.com/Salesforce/Contacts~swcvId=255c5620454211deb95ee197c2581f67"></ns2:dataType>
+      </ns2:message>
+    </ns2:messages>
+    <ns2:matchingInterfaces></ns2:matchingInterfaces>
+    <ns2:genericProperties>
+      <ns2:swcvinfo>
+        <ns2:guid>255c5620454211deb95ee197c2581f67</ns2:guid>
+        <ns2:name>SALESFORCE 1.0 of salesforce.com</ns2:name>
+      </ns2:swcvinfo>
+      <ns2:languages>
+        <ns2:language internalCode="EN" original="true"></ns2:language>
+      </ns2:languages>
+      <ns2:documentation type="I">
+        <name>_ID_d6cbefc6293f34329285faf6572bfacd_ifmmessif</name>
+        <namespace>http://nobelbiocare.com/Salesforce/Contacts</namespace>
+      </ns2:documentation>
+    </ns2:genericProperties>
+  </ns2:properties>
+  <ns3:Policy xmlns:ns3="http://schemas.xmlsoap.org/ws/2004/09/policy" ns4:Id="OP_MIZ040_Salesforce_TravelOD_Customers_Trigger_Req" xmlns:ns4="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"></ns3:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://nobelbiocare.com/Salesforce/Contacts">
+      <xsd:complexType name="DT_Period">
+        <xsd:sequence>
+          <xsd:element name="QueryID" type="xsd:string" minOccurs="0"></xsd:element>
+          <xsd:element name="Query" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="MT_SalesF_TravelOD_Customers_Trigger_Req" type="tns:DT_Period"></xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_SalesF_TravelOD_Customers_Trigger_Req">
+    <wsdl:part name="MT_SalesF_TravelOD_Customers_Trigger_Req" element="tns:MT_SalesF_TravelOD_Customers_Trigger_Req"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="MIZ040_Salesforce_TravelOD_Customers_Trigger_Req">
+    <wsdl:documentation>Message interface for Asynchronous proxy triggering for customer replication</wsdl:documentation>
+    <wsdl:operation name="MIZ040_Salesforce_TravelOD_Customers_Trigger_Req">
+      <wsdl:documentation>Message interface for Asynchronous proxy triggering for customer replication</wsdl:documentation>
+      <ns5:Policy xmlns:ns5="http://schemas.xmlsoap.org/ws/2004/09/policy">
+        <ns5:PolicyReference URI="#OP_MIZ040_Salesforce_TravelOD_Customers_Trigger_Req"></ns5:PolicyReference>
+      </ns5:Policy>
+      <wsdl:input message="tns:MT_SalesF_TravelOD_Customers_Trigger_Req"></wsdl:input>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MIZ040_Salesforce_TravelOD_Customers_Trigger_ReqBinding" type="tns:MIZ040_Salesforce_TravelOD_Customers_Trigger_Req">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="MIZ040_Salesforce_TravelOD_Customers_Trigger_Req">
+      <soap:operation soapAction="http://sap.com/xi/WebService/soap1.1"></soap:operation>
+      <wsdl:input>
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

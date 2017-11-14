@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<content version="4">
+<metadata>
+<development-component>
+<name>po_salesforce_02/bl/scomp</name>
+<vendor>nobelbiocare.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Service Composition</type>
+<sub-type/>
+</component-type>
+</development-component>
+<public-part>
+<name>EJB</name>
+<purpose>assembly</purpose>
+</public-part>
+<dependencies>
+<dependency>
+<dc-ref>
+<name>po_salesforce_02/infra/sgc</name>
+<vendor>nobelbiocare.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>MassConfiguration</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">mc</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>po_salesforce_02/infra/sgc</name>
+<vendor>nobelbiocare.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>MassConfiguration</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">mc</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>bie/sca/scdl/contributors/ejb</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">def</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>bie/sca/scdl/contributors/mc</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">def</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>bie/sca/scdl/contributors/sa</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">def</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>bie/sca/scdl/gen</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">def</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>bie/sca/scdl/gen/mc</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">def</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>bie/sca/scdl/gen/util</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">def</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>bie/sca/scdl/gen/xlf2prop</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">def</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>engine.jee5.facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>ide/es/config/mc/model/bi</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>sa/runtime/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>sa/runtime/lib</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bi/wstech</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">def</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bi/model/flow</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/bi/model/flow</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/content/predefs/types</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Data Mapping</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">def_cmp</pp-ref>
+<at-deploy-time/>
+<at-runtime/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/bpem/content/predefs/types</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Data Mapping</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">def_cmp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esi/esp/wsrm/facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Service</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/wsdl20</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/wsdl20</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/xsd1</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Comp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/esmp/bi/model/xsd1</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/je/sca/api/facade</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/je/sdo21/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Primary Library</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/je/webservices/api</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>J2EE Server Component</type>
+<sub-type>Service</sub-type>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">api</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/mie/bi/model/gfw</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="compilation">MM_Cmp</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/mie/bi/model/gfw</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/moin/bi/model/textverticalization</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/moin/bi/model/util</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">MM_Inf</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/moin/bi/moinext</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">def</pp-ref>
+<at-build-time/>
+</dependency>
+<dependency>
+<dc-ref>
+<name>tc/moin/bi/moinlibs</name>
+<vendor>sap.com</vendor>
+<component-type>
+<vendor>sap.com</vendor>
+<type>Build Infrastructure Extension</type>
+<sub-type/>
+</component-type>
+</dc-ref>
+<pp-ref purpose="infrastructure">libinf</pp-ref>
+<at-build-time/>
+</dependency>
+</dependencies>
+</metadata>
+<source-components/>
+<archives>
+<archive location="javalib" path="lib/java/nobelbiocare.com~po_salesforce_02~bl~scomp.jar" type="jar">
+<property key="attributes">J2EE-Module[module-type[ejb]],jar</property>
+</archive>
+<archive location="srcarchive" path="src/java/src.zip" type="zip"/>
+</archives>
+<entities>
+<entity>
+<name>nobelbiocare.com~po_salesforce_02~bl~scomp</name>
+<entity-type>EJB-JAR</entity-type>
+<entity-type-vendor>sap.com</entity-type-vendor>
+<fileset location="javalib" source-location="DC" source-path="ejbModule">
+<file path="META-INF/MANIFEST.MF"/>
+<file path="META-INF/ejb-j2ee-engine.xml"/>
+</fileset>
+<fileset location="javalib" source-location="gen" source-path="classes">
+<file path="com/sap/sa/rt/callback/CompiledMappingRulesRegistry$ValueWrapper.class"/>
+<file path="com/sap/sa/rt/callback/CompiledMappingRulesRegistry.class"/>
+<file path="com/sap/sa/rt/callback/JAXBContextProvider.class"/>
+<file path="com/sap/sa/rt/callback/po_salesforce_02_bl_scomp/SDOHelperContextProvider.class"/>
+</fileset>
+<fileset location="srcarchive" source-location="DC" source-path="gen-src">
+<file path="com/sap/sa/rt/callback/CompiledMappingRulesRegistry.java"/>
+<file path="com/sap/sa/rt/callback/JAXBContextProvider.java"/>
+<file path="com/sap/sa/rt/callback/po_salesforce_02_bl_scomp/SDOHelperContextProvider.java"/>
+</fileset>
+</entity>
+</entities>
+</content>

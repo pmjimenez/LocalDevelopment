@@ -1,0 +1,26 @@
+<technologies version="1">
+  <technology name="sap.com/tc/bi/bp/content">
+    <uses>sap.com/tc/bi/javatech</uses>
+    <datacontextprovider>
+      <provider classname="com.sap.tc.buildplugin.ContentContextProvider"/>
+    </datacontextprovider>
+    <entity>
+      <descriptor type="Content Module">
+        <any-subtype/>
+      </descriptor>
+    </entity>
+    <deploy-units>
+      <deploy-unit>
+        <name>default</name>
+        <type>J2EE</type>
+        <!-- this should be defined somewhere as default for type J2EE ? Or should the runtime type imply the deploy type? -->
+        <archive-type>sap.com~j2ee.EAR_SDA</archive-type>
+        <runtime>SAPJ2EE-Component[type[application]]</runtime>
+
+        <assembly-selector>
+          <select-quick attributes="public-part[purpose[assembly]]"/>
+        </assembly-selector>
+      </deploy-unit>
+    </deploy-units>
+  </technology>
+</technologies>

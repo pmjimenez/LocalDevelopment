@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="MI279_BPM_SalesRepPerformance_Push_ia" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <wsp:Policy wsu:Id="OP_MI279_BPM_SalesRepPerformance_Push_ia"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+      <xsd:element name="MT_GSALSREPD" type="DT_GSALSREPD"/>
+            <xsd:complexType name="DT_GSALSREPD">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Sales Rep Perform Data</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="CORRELATION" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Correlation id</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="DELTA" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>'X' for delta load, full load otherwise</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="NUMBER" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Specifies the message number</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="TOTAL" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Messages total</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ROW">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="FISCPER" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="SALESORG" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="SALESEMPLY" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT161" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT221" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT222" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT223" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="CURRENCY" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="FISCVARNT" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GPERDAY01" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="OWNERID" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="ERROR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:documentation>Error description when rejected</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+        </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_GSALSREPD">
+    <wsdl:documentation>Sales Rep Perform Data</wsdl:documentation>
+    <wsdl:part element="p1:MT_GSALSREPD" name="MT_GSALSREPD"/>
+  </wsdl:message>
+  <wsdl:portType name="MI279_BPM_SalesRepPerformance_Push_ia">
+    <wsdl:documentation/>
+    <wsdl:operation name="MI279_BPM_SalesRepPerformance_Push_ia">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_MI279_BPM_SalesRepPerformance_Push_ia"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_GSALSREPD"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MI279_BPM_SalesRepPerformance_Push_iaBinding" type="p1:MI279_BPM_SalesRepPerformance_Push_ia">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="MI279_BPM_SalesRepPerformance_Push_ia">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

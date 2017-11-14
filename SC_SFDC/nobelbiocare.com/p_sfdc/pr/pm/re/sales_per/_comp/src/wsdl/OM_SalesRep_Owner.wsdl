@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:p2="http://sap.com/xi/XI/SplitAndMerge" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+				  
+	<wsdl:documentation/>
+	
+	 <wsdl:types>
+	<xsd:schema xmlns="http://nobelbiocare.com/BPM/SFDC/Revenue" targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+    <xsd:element name="MT_GSALSREPD" type="DT_GSALSREPD"/>
+    <xsd:element name="MT_SalesRepPerformance_OwnerId" type="DT_SalesRepPerformance_OwnerId"/>
+    <xsd:complexType name="DT_UserSalesOrg">
+        <xsd:annotation>
+            <xsd:appinfo source="http://sap.com/xi/VersionID">b23be93ff28c11e6a7980000005f8a66</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element minOccurs="0" name="User" type="xsd:string"/>
+                        <xsd:element minOccurs="0" name="SalesOrg" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="DT_UserId">
+        <xsd:annotation>
+            <xsd:appinfo source="http://sap.com/xi/VersionID">33302d14f28911e6caad0000005f8a66</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="Row">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="UserId" type="xsd:string"/>
+                        <xsd:element name="SAP_PE_Number" type="xsd:string"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="DT_SalesRepPerformance_OwnerId">
+        <xsd:annotation>
+            <xsd:appinfo source="http://sap.com/xi/VersionID">bcbc094bf37011e6cbce0000005f8a66</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="SalesRepPerformance" type="DT_GSALSREPD"/>
+            <xsd:element name="UserId" type="DT_UserId"/>
+            <xsd:element name="UserSalesOrg" type="DT_UserSalesOrg"/>
+        </xsd:sequence>
+    </xsd:complexType>
+            <xsd:complexType name="DT_GSALSREPD">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Sales Rep Perform Data</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="CORRELATION" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Correlation id</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="DELTA" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>'X' for delta load, full load otherwise</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="NUMBER" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Specifies the message number</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="TOTAL" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Messages total</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="ROW">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="FISCPER" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="SALESORG" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="SALESEMPLY" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT161" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT221" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT222" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GAMT223" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="CURRENCY" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="FISCVARNT" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="BIC_GPERDAY01" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="OWNERID" type="xsd:string"/>
+                <xsd:element minOccurs="0" name="ERROR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:documentation>Error description when rejected</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+        </xsd:schema>
+
+	
+
+	</wsdl:types>
+  
+ 	<wsdl:message name="OMRequestMessage">
+		<wsdl:documentation/>
+			<wsdl:part element="p1:MT_SalesRepPerformance_OwnerId" name="MT_SalesRepPerformance_OwnerId"/>
+	</wsdl:message>
+
+	<wsdl:message name="OMResponseMessage">
+		<wsdl:documentation/>
+			    <wsdl:part element="p1:MT_GSALSREPD" name="MT_GSALSREPD"/>
+	</wsdl:message>
+ 
+  <wsdl:portType name="nobelbiocarecom_p_sfdcprpmresales_per_OM_SalesRep_OwnerPortType">
+  	<wsdl:documentation/>
+    <wsdl:operation name="OM_SalesRep_Owner">
+      <wsdl:input message="p1:OMRequestMessage"/>
+      <wsdl:output message="p1:OMResponseMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  
+  <wsdl:binding name="OM_SalesRep_OwnerBinding" type="p1:nobelbiocarecom_p_sfdcprpmresales_per_OM_SalesRep_OwnerPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="OM_SalesRep_Owner">
+      <soap:operation/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  
+  <wsdl:service name="nobelbiocare_com_p_sfdc_pr_pm_re_sales_per_OM_SalesRep_Owner_Service">
+    <wsdl:port binding="p1:OM_SalesRep_OwnerBinding" name="nobelbiocarecom_p_sfdcprpmresales_per_OM_SalesRep_OwnerPortType">
+      <soap:address xmlns:soap="http/schemas.xmlsoap.org/wsdl/soap/" location="http://localhost:50500/nobelbiocare.com~p_sfdc/pr/pm/re/sales_per/wsdl/OM_SalesRep_Owner"/>
+    </wsdl:port>
+  </wsdl:service>
+  
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+		<ifw:genericProperties>
+			<ifw:swcvinfo>
+				<ifw:guid>dc2258106ad711e697b4e1ec0a3e5c13</ifw:guid>
+				<ifw:name>BPM, 1.0 of nobelbiocare.com</ifw:name>
+			</ifw:swcvinfo>
+			<ifw:ominfo>
+				<ifw:guid>c2ad16af652737c2a95ee2abe673ac58</ifw:guid>
+			</ifw:ominfo>
+		</ifw:genericProperties>
+	</ifw:properties>
+  
+</wsdl:definitions>

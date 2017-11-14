@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0" xmlns:brms="http://www.sap.com/xmlns/sapsca/brms/1.0" xmlns:sap="http://www.sap.com" xmlns:sapsca="http://www.sap.com/xmlns/sapsca/1.0" name="p_teac~bl~br~county" targetNamespace="http://www.sap.com">
+<component name="nobelbiocare.com~p_teac~bl~br~county-BR001_CountryConversion_CVM_SOL" sapsca:helperContextManagement="containerManaged">
+<brms:implementation.brm/>
+<service name="BR001_CountryConversion_CVM_SOL">
+<interface.wsdl interface="http://nobelbiocare.com#wsdl.interface(BR001_CountryConversion_CVM_SOLPortType)" sapsca:location="nobelbiocare.com~p_teac~bl~br~county.bpem#gen_bpm/brms2/ws/BR001_CountryConversion_CVM_SOL.wsdl"/>
+<binding.ws port="/BR001_CountryConversion_CVM_SOL/BR001_CountryConversion_CVM_SOLPortType#wsdl.endpoint(http://nobelbiocare.com#BR001_CountryConversion_CVM_SOLPortType)"/>
+<sapsca:sapextensions entityType="RULESET" guid="RSb73b2fbea1dd11e6cdf10205857feb80">
+<sapsca:input>
+<sapsca:type name="MT_BRM001_CountryCVM_To_CountrySOL" namespace="http://nobelbiocare.com/storeonline/TnE"/>
+</sapsca:input>
+<sapsca:output>
+<sapsca:type name="MT_BRM001_CountryCVM_To_CountrySOL" namespace="http://nobelbiocare.com/storeonline/TnE"/>
+</sapsca:output>
+</sapsca:sapextensions>
+</service>
+</component>
+</composite>
