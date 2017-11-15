@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sap.cafmm="http:///sap/cafmm.ecore" xmlns:sap.coremm="http:///sap/coremm.ecore">
+  <sap.cafmm:Application createdAt="Wed Nov 15 17:29:35 CET 2017" createdBy="pedro.jimenez" modifiedAt="Wed Nov 15 17:29:35 CET 2017" modifiedBy="pedro.jimenez" version="0" GUID="2aba5c9f-ca22-11e7-9009-00ffc53f5b0a" name="p_test.bl.caf" namespace="http://www.sap.com/caf/example.org" vendorName="example.org" metamodelVersion="38" platformVersion="7.2.0">
+    <packages createdAt="Wed Nov 15 17:29:35 CET 2017" createdBy="pedro.jimenez" modifiedAt="Wed Nov 15 17:29:35 CET 2017" modifiedBy="pedro.jimenez" GUID="2abb5088-ca22-11e7-978e-00ffc53f5b0a" name="modeled" namespace="http://www.sap.com/caf/example.org/p_test.bl.caf"/>
+    <packages createdAt="Wed Nov 15 17:29:35 CET 2017" createdBy="pedro.jimenez" modifiedAt="Wed Nov 15 17:29:35 CET 2017" modifiedBy="pedro.jimenez" GUID="2abc9a86-ca22-11e7-b256-00ffc53f5b0a" name="external" namespace="http://www.sap.com/caf/example.org/p_test.bl.caf"/>
+    <dependencies createdAt="Wed Nov 15 17:29:35 CET 2017" createdBy="pedro.jimenez" modifiedAt="Wed Nov 15 17:29:35 CET 2017" modifiedBy="pedro.jimenez" GUID="2abcf40a-ca22-11e7-c397-00ffc53f5b0a" dependencyGuid="5816BD4E-6F0A-473C-03EC-93066516" dependencyVersion="266" dependencyName="caf.core" dependencyVendorName="sap.com">
+      <usedApplication href="nwdi:CAF@caf/core/metadata@sap.com#5816BD4E-6F0A-473C-03EC-93066516"/>
+    </dependencies>
+    <applicationAspects xsi:type="sap.cafmm:RuntimeApplicationAspect" createdAt="Wed Nov 15 17:29:35 CET 2017" createdBy="pedro.jimenez" modifiedAt="Wed Nov 15 17:29:35 CET 2017" modifiedBy="pedro.jimenez" GUID="2abdded4-ca22-11e7-b6db-00ffc53f5b0a" name="NWDIApplicationAspect" namespace="http://www.sap.com/caf/example.org/p_test.bl.caf" physicalName="p_test/bl/caf"/>
+  </sap.cafmm:Application>
+  <sap.coremm:Configuration GUID="2abfa159-ca22-11e7-94e2-00ffc53f5b0a" name="SemanticalUnits">
+    <subConfigurations GUID="2abfa15a-ca22-11e7-b695-00ffc53f5b0a" name="LocalSession">
+      <entries GUID="2abfa15b-ca22-11e7-acd7-00ffc53f5b0a" value=""/>
+    </subConfigurations>
+  </sap.coremm:Configuration>
+</xmi:XMI>

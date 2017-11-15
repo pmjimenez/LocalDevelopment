@@ -6,6 +6,7 @@
 <sc-compartment name="J2EE-FRMW" root="J2EE-FRMW"/>
 <sc-compartment name="SAP_BUILDT" root="SAP_BUILDT"/>
 <sc-compartment name="VTP_BUILDT" root="VTP_BUILDT"/>
+<sc-compartment name="SC_TEST" root="SC_TEST"/>
 <sc-compartment name="WDEXTENSIONS" root="WDEXTENSIONS"/>
 <sc-compartment name="SC_SFDC" root="SC_SFDC"/>
 <sc-compartment name="VOICEVC" root="VOICEVC"/>
@@ -24,8 +25,8 @@
 <sc-compartment name="WD-RUNTIME" root="WD-RUNTIME"/>
 <sc-compartment name="MyComponents" root="DCs"/>
 <sc-compartment name="ESCONF_BUILDT" root="ESCONF_BUILDT"/>
-<sc-compartment name="SEA-FACADE" root="SEA-FACADE"/>
 <sc-compartment name="SAP_XIAF" root="SAP_XIAF"/>
+<sc-compartment name="SEA-FACADE" root="SEA-FACADE"/>
 <sc-compartment name="COMP_BUILDT" root="COMP_BUILDT"/>
 <sc-compartment name="SC_TEAC" root="SC_TEAC"/>
 <sc-compartment name="VCFREESTYLEKIT" root="VCFREESTYLEKIT"/>
@@ -50,7 +51,8 @@
 <sc-compartment name="EP-RUNTIME" root="EP-RUNTIME"/>
 <sc-compartment name="BPEM-COLLAB" root="BPEM-COLLAB"/>
 <sc-compartment name="SC_RFID_CABINET" root="SC_RFID_CABINET"/>
-<sc-compartment name="BPEM-CONTENT" root="BPEM-CONTENT"/>
+<sc-compartment name="P_TEST_SC" root="P_TEST_SC"/>
 <sc-compartment name="GP-CORE" root="GP-CORE"/>
+<sc-compartment name="BPEM-CONTENT" root="BPEM-CONTENT"/>
 </sc-compartments>
 </configuration-index>

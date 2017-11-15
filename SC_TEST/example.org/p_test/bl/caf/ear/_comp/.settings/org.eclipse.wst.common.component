@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="LocalDevelopment~p_test~bl~caf~ear~example.org">
+        <wb-resource deploy-path="/" source-path="/"/>
+        <dependent-module archiveName="LocalDevelopment~p_test~bl~caf~ejbmodule~example.org.jar" deploy-path="/" handle="module:/resource/LocalDevelopment~p_test~bl~caf~ejbmodule~example.org/LocalDevelopment~p_test~bl~caf~ejbmodule~example.org">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/resource/LocalDevelopment~p_test~infra~sgc~example.org/LocalDevelopment~p_test~infra~sgc~example.org">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

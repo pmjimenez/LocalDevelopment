@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration
 		caption="Local Development"
-		config-version="84"
+		config-version="88"
 		document-type-version="1.0"
 		is-local="yes"
 		name="LocalDevelopment"
@@ -671,6 +671,25 @@
 				</build-variant>
 			</build-variants>
 		</sc-compartment>
+		<sc-compartment archive-state="no" caption="P_TEST_SC" default-compartment="yes" name="P_TEST_SC" sc-name="P_TEST_SC" sc-vendor="example.org">
+			<compartment-description>Generated software component for product description</compartment-description>
+			<properties>
+				<nwdi:category xmlns:nwdi="urn:sap.com:NWDI">urn:sap.com:Compartment:Category:PRODUCT_DESCRIPTOR</nwdi:category>
+			</properties>
+			<source-state type="local"/>
+			<dependencies>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>SC_TEST</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SC_TEST" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
 		<sc-compartment archive-state="no" caption="SALESFORCE_BPM_SC" default-compartment="yes" name="SALESFORCE_BPM_SC" sc-name="SALESFORCE_BPM_SC" sc-vendor="nobelbiocare.com">
 			<compartment-description>SALESFORCE_BPM_SC</compartment-description>
 			<source-state type="local"/>
@@ -876,6 +895,99 @@
 						<variant-mapping used-compartment="PI-SCP-BUILDT" used-variant-name="default"/>
 						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
 						<variant-mapping used-compartment="SERVICE-COMP" used-variant-name="default"/>
+					</variant-mappings>
+				</build-variant>
+			</build-variants>
+		</sc-compartment>
+		<sc-compartment archive-state="no" caption="" default-compartment="yes" name="SC_TEST" sc-name="SC_TEST" sc-vendor="example.org">
+			<source-state type="local"/>
+			<dependencies>
+				<used-compartment>BPEM-ACC</used-compartment>
+				<used-compartment>BPEM-BUILDT</used-compartment>
+				<used-compartment>BPEM-COLLAB</used-compartment>
+				<used-compartment>BPEM-CONTENT</used-compartment>
+				<used-compartment>BPEM-FACADE</used-compartment>
+				<used-compartment>BPEM-MM</used-compartment>
+				<used-compartment>BRMS-BUILDT</used-compartment>
+				<used-compartment>BRMS-FACADE</used-compartment>
+				<used-compartment>CAF</used-compartment>
+				<used-compartment>CAF-MF</used-compartment>
+				<used-compartment>COMP_BUILDT</used-compartment>
+				<used-compartment>ECM-CORE</used-compartment>
+				<used-compartment>ENGFACADE</used-compartment>
+				<used-compartment>ENGINEAPI</used-compartment>
+				<used-compartment>EP-BASIS</used-compartment>
+				<used-compartment>EP-BASIS-API</used-compartment>
+				<used-compartment>EP-MODELING</used-compartment>
+				<used-compartment>EP-RUNTIME</used-compartment>
+				<used-compartment>EP_BUILDT</used-compartment>
+				<used-compartment>ESCONF_BUILDT</used-compartment>
+				<used-compartment>ESMP_BUILDT</used-compartment>
+				<used-compartment>FRAMEWORK</used-compartment>
+				<used-compartment>FRAMEWORK-EXT</used-compartment>
+				<used-compartment>GP-CORE</used-compartment>
+				<used-compartment>J2EE-FRMW</used-compartment>
+				<used-compartment>MMR_SERVER</used-compartment>
+				<used-compartment>MOIN_BUILDT</used-compartment>
+				<used-compartment>PI-SCP-BUILDT</used-compartment>
+				<used-compartment>SAP_BUILDT</used-compartment>
+				<used-compartment>SAP_XIAF</used-compartment>
+				<used-compartment>SEA-FACADE</used-compartment>
+				<used-compartment>SERVERCORE</used-compartment>
+				<used-compartment>SERVICE-COMP</used-compartment>
+				<used-compartment>UISAPUI5_JAVA</used-compartment>
+				<used-compartment>VCFRAMEWORK</used-compartment>
+				<used-compartment>VCFREESTYLEKIT</used-compartment>
+				<used-compartment>VOICEVC</used-compartment>
+				<used-compartment>VTP_BUILDT</used-compartment>
+				<used-compartment>WD-RUNTIME</used-compartment>
+				<used-compartment>WDEXTENSIONS</used-compartment>
+				<used-compartment>WSRM</used-compartment>
+			</dependencies>
+			<build-variants>
+				<build-variant name="default">
+					<variant-mappings>
+						<variant-mapping used-compartment="BPEM-ACC" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-COLLAB" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-CONTENT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="BPEM-MM" used-variant-name="default"/>
+						<variant-mapping used-compartment="BRMS-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="BRMS-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="CAF" used-variant-name="default"/>
+						<variant-mapping used-compartment="CAF-MF" used-variant-name="default"/>
+						<variant-mapping used-compartment="COMP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ECM-CORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGFACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="ENGINEAPI" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-BASIS-API" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-MODELING" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP-RUNTIME" used-variant-name="default"/>
+						<variant-mapping used-compartment="EP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ESCONF_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="ESMP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="FRAMEWORK-EXT" used-variant-name="default"/>
+						<variant-mapping used-compartment="GP-CORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="J2EE-FRMW" used-variant-name="default"/>
+						<variant-mapping used-compartment="MMR_SERVER" used-variant-name="default"/>
+						<variant-mapping used-compartment="MOIN_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="PI-SCP-BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="SAP_XIAF" used-variant-name="default"/>
+						<variant-mapping used-compartment="SEA-FACADE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SERVERCORE" used-variant-name="default"/>
+						<variant-mapping used-compartment="SERVICE-COMP" used-variant-name="default"/>
+						<variant-mapping used-compartment="UISAPUI5_JAVA" used-variant-name="default"/>
+						<variant-mapping used-compartment="VCFRAMEWORK" used-variant-name="default"/>
+						<variant-mapping used-compartment="VCFREESTYLEKIT" used-variant-name="default"/>
+						<variant-mapping used-compartment="VOICEVC" used-variant-name="default"/>
+						<variant-mapping used-compartment="VTP_BUILDT" used-variant-name="default"/>
+						<variant-mapping used-compartment="WD-RUNTIME" used-variant-name="default"/>
+						<variant-mapping used-compartment="WDEXTENSIONS" used-variant-name="default"/>
+						<variant-mapping used-compartment="WSRM" used-variant-name="default"/>
 					</variant-mappings>
 				</build-variant>
 			</build-variants>

@@ -17,7 +17,7 @@
 
     building on MADNB2016, Windows 8/x86, version 6.2
     using Java VM 'Java HotSpot(TM) Client VM', version 20.45-b01 (Sun Microsystems Inc.)
-    build started at 2017-11-08 15:35:12 GMT+01:00 (CET)
+    build started at 2017-11-15 17:23:55 GMT+01:00 (CET)
 
     Build Plugin 'sap.com/tc/bi/bp/pdef', Version 7.30 SP 17 (NW731CORE_17_REL, built on 2015-09-16 20:53:16 +0200, CL209430)
     detailed versions:
@@ -50,20 +50,20 @@
 
 <target name="packDeployArchive">
 <timer/>
-<srcpacker destination="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sda\src.zip" archiveLocation="srcarchive"/>
+<srcpacker destination="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sda\src.zip" archiveLocation="srcarchive"/>
 <timer message="Source archive creation finished in "/>
 <timer/>
-<jarsap jarfile="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\B3727BB4E97AC0955319D5C6E0496EAF\default\deploy\nobelbiocare.com~p_teac.sda"
+<jarsap jarfile="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\B3727BB4E97AC0955319D5C6E0496EAF\default\deploy\nobelbiocare.com~p_teac.sda"
         softwaresubtype="SL-SDA"
-        deployfile="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sda\META-INF\sda-dd.xml"
+        deployfile="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sda\META-INF\sda-dd.xml"
         csncomponent="Default">
 <component vendor="nobelbiocare.com"
            name="p_teac"
            location="localDevelopment"
-           counter="20171108143513"
+           counter="20171115162356"
            scvendor="nobelbiocare.com"
            scname="P_TEAC_SC"/>
-<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sda">
+<fileset dir="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sda">
 <exclude name="**/.cvsignore"/>
 <exclude name="**/.nfs*"/>
 <exclude name="**/SCCS/**"/>
@@ -76,7 +76,7 @@
 <exclude name="**/%*%"/>
 <exclude name="**/*~"/>
 </fileset>
-<fileset dir="D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sld_pack01">
+<fileset dir="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sld_pack01">
 <exclude name="**/.cvsignore"/>
 <exclude name="**/.nfs*"/>
 <exclude name="**/SCCS/**"/>
