@@ -1,4 +1,4 @@
-Development Component Build (2017-11-14 10:26:26 GMT+01:00 (CET))
+Development Component Build (2017-11-15 18:39:07 GMT+01:00 (CET))
   Component name: p_sfdc/infra/sgc
   Component vendor: nobelbiocare.com
   SC compartment: SC_SFDC
@@ -38,7 +38,7 @@ Build Plugin 'EnterpriseApplicationPlugin', Version 7.30 SP 17 (NW731CORE_17_REL
          source location:  pedro.jimenez@MADNB2016
          output location:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\45A86E207E278E484BB3F323FBBD759A\default
        generation folder:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\45A86E207E278E484BB3F323FBBD759A
-       plugin start time:  2017-11-14 10:26:31 GMT+01:00 (CET)
+       plugin start time:  2017-11-15 18:39:09 GMT+01:00 (CET)
                  Java VM:  Java HotSpot(TM) Client VM, 20.45-b01 (1.6, Sun Microsystems Inc.)
 
 
@@ -53,7 +53,7 @@ Checking path lengths for sources
 Path length checks finished in 0 seconds
  
 Preparing data context..
-Data context preparation finished in 0.094 seconds
+Data context preparation finished in 0.021 seconds
  
 Creating Ant build file..
   Creating output file: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\45A86E207E278E484BB3F323FBBD759A\default\logs\build.xml
@@ -65,7 +65,7 @@ Target "createPublicParts" has a dependency on "compile" but no such target exis
 Target "createDeployArchive" has a dependency on "compile" but no such target exists. Dependency will be ignored.
 Target "Xlf2PropBase" has a dependency on "compile" but no such target exists. Dependency will be ignored.
 Target "ScdlBase" has a dependency on "compile" but no such target exists. Dependency will be ignored.
-Build file creation finished in 0.406 seconds
+Build file creation finished in 0.909 seconds
  
 Starting Ant..
   Using build file:     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\45A86E207E278E484BB3F323FBBD759A\default\logs\build.xml
@@ -79,7 +79,7 @@ ScdlBase:
   [MOINInit] WARNING: [System.err] [Invoked from com.sap.bc.krn.perf.PerfTimes.internal_TRC(PerfTimes.java:103)]
   [MOINInit] WARNING: [System.err] PerfTimes : loadNativeLayer: loading jperflib failed. no jperflib in java.library.path
   [MOINInit] DataArea name: DefaultDataArea
-  [MOINInit] Moin initialized in 2364 milliseconds.
+  [MOINInit] Moin initialized in 839 milliseconds.
       [echo] Registering folder: gensrc/extcfg for path: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\45A86E207E278E484BB3F323FBBD759A\gensrc\extcfg/
       [echo] Starting Extension Configuration generator...
   [gen_scdl] 		[SCDL_GEN] Initializing Scdl Generation...
@@ -90,10 +90,10 @@ ScdlBase:
   [gen_scdl] 			[SCDL-EXPORT] Scdl file output location: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\45A86E207E278E484BB3F323FBBD759A/scdl_output\META-INF\p_sfdc~infra~sgc.composite
   [gen_scdl] 			[SCDL-EXPORT] sca contribution XML output location: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\45A86E207E278E484BB3F323FBBD759A/scdl_output\META-INF\sca-contribution.xml
   [gen_scdl] 		[SCDL_GEN] Conversion successfully completed!
-     [timer] Extension Configuration generator finished in 1.049 seconds
+     [timer] Extension Configuration generator finished in 0.88 seconds
  
 [MOINShutdown] About to shutdown MOIN...
-[MOINShutdown] MOIN shut down in 63 milliseconds.
+[MOINShutdown] MOIN shut down in 56 milliseconds.
  
 Xlf2PropBase:
       [echo] Start XLF conversion
@@ -109,7 +109,7 @@ createPublicParts:
   [pppacker] Model Folder Tree 'mc' is outside of defined package or source folders.
   [pppacker] Packed   0 files for entity mc (Model Folder Tree)
   [pppacker] Packed 1 entity for public part 'mc'
-     [timer] Packing of public part 'mc' finished in 0.1 seconds
+     [timer] Packing of public part 'mc' finished in 0.036 seconds
  
  
 createDeployArchive:
@@ -125,34 +125,34 @@ createDeployArchive:
        [cdu] Creating descriptor META-INF/application-j2ee-engine.xml ...
  
        [cdu] Collecting modules ...
-       [cdu] Ant build file creation finished in 0.047 seconds
+       [cdu] Ant build file creation finished in 0.066 seconds
  
 packDeployArchive:
       [copy] Copied 1 empty directory to 1 empty directory under D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\45A86E207E278E484BB3F323FBBD759A\sda\META-INF\sca-resources
  [srcpacker] Creating source archive
  [srcpacker] No sources available for packing, no archive will be created.
-     [timer] Source archive creation finished in 0.025 seconds
+     [timer] Source archive creation finished in 0.032 seconds
  
     [jarsap] Info: JarSAP version 20090803.1000
     [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
     [jarsap] Building: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\45A86E207E278E484BB3F323FBBD759A\default\deploy\nobelbiocare.com~p_sfdc~infra~sgc.ear with compression
-     [timer] JarSAP finished in 0.596 seconds
+     [timer] JarSAP finished in 0.083 seconds
  
  
 build:
  
-Ant runtime 5.31 seconds
+Ant runtime 2.187 seconds
  
 Ant build finished OK
 MOIN forced shutdown initiated.
  
-Build plugin finished at 2017-11-14 10:26:38 GMT+01:00 (CET)
-Total build plugin runtime: 7.545 seconds
+Build plugin finished at 2017-11-15 18:39:13 GMT+01:00 (CET)
+Total build plugin runtime: 3.985 seconds
  
 Build finished with WARNING
 
-==== Post-Processing ====   started at 2017-11-14 10:26:38.691 CET
-Comparison of previous and actual build results took: 0.093 seconds
+==== Post-Processing ====   started at 2017-11-15 18:39:13.670 CET
+Comparison of previous and actual build results took: 0.031 seconds
 
 Copy the build results 
   from: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\45A86E207E278E484BB3F323FBBD759A\default\

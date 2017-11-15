@@ -1,4 +1,4 @@
-Development Component Build (2017-11-14 10:26:39 GMT+01:00 (CET))
+Development Component Build (2017-11-15 18:39:13 GMT+01:00 (CET))
   Component name: p_sfdc/pr/pm/cu/customer_sync
   Component vendor: nobelbiocare.com
   SC compartment: SC_SFDC
@@ -50,7 +50,7 @@ Build Plugin 'sap.com/tc/bpem/bi/bp/buildtool', Version 7.30 SP 17 (NW731CORE_17
          source location:  pedro.jimenez@MADNB2016
          output location:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default
        generation folder:  D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\D4193CFD60960F38BBBB32068F975AFE
-       plugin start time:  2017-11-14 10:26:41 GMT+01:00 (CET)
+       plugin start time:  2017-11-15 18:39:14 GMT+01:00 (CET)
                  Java VM:  Java HotSpot(TM) Client VM, 20.45-b01 (1.6, Sun Microsystems Inc.)
 
 
@@ -86,7 +86,7 @@ Metamodels found.
 Output folder found.
 Target "Xlf2PropBase" has a dependency on "compile" but no such target exists. Dependency will be ignored.
 Target "ScdlBase" has a dependency on "compile" but no such target exists. Dependency will be ignored.
-Build file creation finished in 0.109 seconds
+Build file creation finished in 0.1 seconds
  
 Starting Ant..
   Using build file:     D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\logs\build.xml
@@ -104,7 +104,7 @@ ScdlBase:
   [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip
   [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip
   [MOINInit] DataArea name: DefaultDataArea
-  [MOINInit] Moin initialized in 7494 milliseconds.
+  [MOINInit] Moin initialized in 4081 milliseconds.
       [echo] Registering folder: gensrc/extcfg for path: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\D4193CFD60960F38BBBB32068F975AFE\gensrc\extcfg/
       [echo] Starting Extension Configuration generator...
   [gen_scdl] 		[SCDL_GEN] Initializing Scdl Generation...
@@ -117,7 +117,7 @@ ScdlBase:
   [gen_scdl] 			[SCDL-EXPORT] Scdl file output location: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\D4193CFD60960F38BBBB32068F975AFE/scdl_output\META-INF\p_sfdc~pr~pm~cu~customer_sync.composite
   [gen_scdl] 			[SCDL-EXPORT] sca contribution XML output location: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\D4193CFD60960F38BBBB32068F975AFE/scdl_output\META-INF\sca-contribution.xml
   [gen_scdl] 		[SCDL_GEN] Conversion successfully completed!
-     [timer] Extension Configuration generator finished in 2.639 seconds
+     [timer] Extension Configuration generator finished in 2.606 seconds
  
 [MOINShutdown] About to shutdown MOIN...
 [MOINShutdown] MOIN shut down in 78 milliseconds.
@@ -125,7 +125,7 @@ ScdlBase:
 Xlf2PropBase:
       [echo] Start XLF conversion
   [xlf2prop] Found 6 XLF files to convert in folder "mc"
-     [timer] XLF conversion finished in 0.48 seconds
+     [timer] XLF conversion finished in 0.406 seconds
  
       [copy] Copying 6 files to D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t\D4193CFD60960F38BBBB32068F975AFE\xlf_out
  
@@ -140,7 +140,7 @@ Bpem:
   [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip
   [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip
   [MOINInit] DataArea name: DefaultDataArea
-  [MOINInit] Moin initialized in 1553 milliseconds.
+  [MOINInit] Moin initialized in 1250 milliseconds.
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Metamodel version validation...
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Sanity check is enabled, com.glx.sanity.check system property isn't false.
   [BpemTask] WSDL Location:src/wsdl/MI290_BPM_CustomerCreditCard_Set_os.wsdl
@@ -563,7 +563,7 @@ Bpem:
   [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA execute(name, vendor, location, version, srcDir) -Generating SDA...
   [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA generateArchive(outArchive, srcDir) - D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\ctx\nobelbiocare.com~p_sfdc~pr~pm~cu~customer_sync.bpem archive is generated
 [MOINShutdown] About to shutdown MOIN...
-[MOINShutdown] MOIN shut down in 94 milliseconds.
+[MOINShutdown] MOIN shut down in 84 milliseconds.
     [delete] Deleting directory D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\ctx
     [delete] Deleting: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\deploy\sda-dd.xml
  
@@ -588,23 +588,23 @@ createPublicParts:
   [pppacker] Checking path: src
   [pppacker] Packed  19 files for entity src (Model Folder Tree)
   [pppacker] Packed 3 entities for public part 'def_cmp'
-     [timer] Packing of public part 'def_cmp' finished in 0.789 seconds
+     [timer] Packing of public part 'def_cmp' finished in 0.417 seconds
  
  
 build:
  
-Ant runtime 27.658 seconds
+Ant runtime 21.2 seconds
  
 Ant build finished OK
 MOIN forced shutdown initiated.
  
-Build plugin finished at 2017-11-14 10:27:09 GMT+01:00 (CET)
-Total build plugin runtime: 28.424 seconds
+Build plugin finished at 2017-11-15 18:39:36 GMT+01:00 (CET)
+Total build plugin runtime: 21.78 seconds
  
 Build finished with WARNING
 
-==== Post-Processing ====   started at 2017-11-14 10:27:09.703 CET
-Comparison of previous and actual build results took: 0.031 seconds
+==== Post-Processing ====   started at 2017-11-15 18:39:36.509 CET
+Comparison of previous and actual build results took: 0.02 seconds
 
 Copy the build results 
   from: D:\Users\pedro.jimenez\Desktop\Nobel\nwds-extsoa-7.3-EHP1-SP17-PAT0000-win32\eclipse\workspace.jdi\LocalDevelopment\t2\D4193CFD60960F38BBBB32068F975AFE\default\
