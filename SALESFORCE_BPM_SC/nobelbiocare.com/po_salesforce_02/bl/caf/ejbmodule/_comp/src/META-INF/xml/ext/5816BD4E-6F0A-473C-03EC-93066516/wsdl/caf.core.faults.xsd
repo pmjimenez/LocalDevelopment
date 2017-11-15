@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:vqdbdh="http://www.sap.com/caf/sap.com/caf.core/faults" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.sap.com/caf/sap.com/caf.core/faults">
+  
+  <xsd:element name="CAFCreateException">
+    <xsd:complexType></xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CAFFindException">
+    <xsd:complexType></xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CAFServiceException">
+    <xsd:complexType></xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CAFDeleteException">
+    <xsd:complexType></xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CAFRetrieveException">
+    <xsd:complexType></xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CAFBaseException">
+    <xsd:complexType></xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CAFBONodeException">
+    <xsd:complexType></xsd:complexType>
+  </xsd:element>
+  <xsd:element name="CAFUpdateException">
+    <xsd:complexType></xsd:complexType>
+  </xsd:element>
+</xsd:schema>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue" name="MI280_BPM_CustomerPerformance_Push_ia" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://nobelbiocare.com/BPM/SFDC/Revenue" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <wsdl:documentation></wsdl:documentation>
+  <ns1:UsingPolicy xmlns:ns1="http://schemas.xmlsoap.org/ws/2004/09/policy" wsdl:required="true"></ns1:UsingPolicy>
+  <ns2:Policy xmlns:ns2="http://schemas.xmlsoap.org/ws/2004/09/policy" ns3:Id="OP_MI280_BPM_CustomerPerformance_Push_ia" xmlns:ns3="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"></ns2:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://nobelbiocare.com/BPM/SFDC/Revenue">
+      <xsd:complexType name="DT_GCVMBIBOD">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Account performance - CVM Billings and Bookings</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="CORRELATION" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Correlation id</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="DELTA" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>'X' for delta load, full load otherwise</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="NUMBER" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Specifies the message number</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="TOTAL" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Messages total</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="ROW" minOccurs="0" maxOccurs="unbounded">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="CUSTOMER" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="CALDAY" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="SALESORG" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="CURRENCY" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="BIC_GAMT161" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="BIC_GAMT221" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="BIC_GAMT222" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="BIC_GAMT223" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="FISCVARNT" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="FISCPER" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="BIC_GPERDAY01" type="xsd:string" minOccurs="0"></xsd:element>
+                <xsd:element name="FLAGACCOUNT" type="xsd:string" minOccurs="0">
+                  <xsd:annotation>
+                    <xsd:documentation>Flag to mark account creation</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="ERROR" type="xsd:string" minOccurs="0">
+                  <xsd:annotation>
+                    <xsd:documentation>Rejection error</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="MT_GCVMBIBOD" type="tns:DT_GCVMBIBOD"></xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_GCVMBIBOD">
+    <wsdl:part name="MT_GCVMBIBOD" element="tns:MT_GCVMBIBOD"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="MI280_BPM_CustomerPerformance_Push_ia">
+    <wsdl:documentation></wsdl:documentation>
+    <wsdl:operation name="MI280_BPM_CustomerPerformance_Push_ia">
+      <wsdl:documentation></wsdl:documentation>
+      <ns4:Policy xmlns:ns4="http://schemas.xmlsoap.org/ws/2004/09/policy">
+        <ns4:PolicyReference URI="#OP_MI280_BPM_CustomerPerformance_Push_ia"></ns4:PolicyReference>
+      </ns4:Policy>
+      <wsdl:input message="tns:MT_GCVMBIBOD"></wsdl:input>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MI280_BPM_CustomerPerformance_Push_iaBinding" type="tns:MI280_BPM_CustomerPerformance_Push_ia">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"></soap:binding>
+    <wsdl:operation name="MI280_BPM_CustomerPerformance_Push_ia">
+      <soap:operation soapAction=""></soap:operation>
+      <wsdl:input>
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+    </wsdl:operation>
+    <ns5:PolicyReference xmlns:ns5="http://schemas.xmlsoap.org/ws/2004/09/policy" URI="#GLX_POLICY"></ns5:PolicyReference>
+  </wsdl:binding>
+  <wsdl:service name="MI280_BPM_CustomerPerformance_Push_iaService">
+    <wsdl:port name="MI280_BPM_CustomerPerformance_Push_iaPort" binding="tns:MI280_BPM_CustomerPerformance_Push_iaBinding">
+      <soap:address location="http://www.example.org/bpm/nobelbiocarecom/psfdc/pr/pm/re/accountperformance/TRStartRevenueAccountPerformance"></soap:address>
+    </wsdl:port>
+  </wsdl:service>
+  <ns6:Policy xmlns:ns6="http://schemas.xmlsoap.org/ws/2004/09/policy" ns7:Id="GLX_POLICY" xmlns:ns7="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <ns6:ExactlyOne>
+      <ns6:All>
+        <ns6:ExactlyOne>
+          <ns6:All>
+            <ns8:TransportBinding xmlns:ns8="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702">
+              <ns6:Policy>
+                <ns8:TransportToken>
+                  <ns6:Policy>
+                    <ns8:HttpsToken>
+                      <ns6:Policy>
+                        <ns8:HttpBasicAuthentication></ns8:HttpBasicAuthentication>
+                      </ns6:Policy>
+                    </ns8:HttpsToken>
+                  </ns6:Policy>
+                </ns8:TransportToken>
+                <ns8:AlgorithmSuite>
+                  <ns6:Policy>
+                    <ns8:TripleDesRsa15></ns8:TripleDesRsa15>
+                  </ns6:Policy>
+                </ns8:AlgorithmSuite>
+                <ns8:Layout>
+                  <ns6:Policy>
+                    <ns8:Strict></ns8:Strict>
+                  </ns6:Policy>
+                </ns8:Layout>
+              </ns6:Policy>
+            </ns8:TransportBinding>
+          </ns6:All>
+          <ns6:All>
+            <ns9:TransportBinding xmlns:ns9="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702">
+              <ns6:Policy>
+                <ns9:TransportToken>
+                  <ns6:Policy>
+                    <ns9:HttpsToken>
+                      <ns6:Policy>
+                        <ns10:HTTPSSO2 xmlns:ns10="http://www.sap.com/webas/630/soap/features/security/policy"></ns10:HTTPSSO2>
+                      </ns6:Policy>
+                    </ns9:HttpsToken>
+                  </ns6:Policy>
+                </ns9:TransportToken>
+                <ns9:AlgorithmSuite>
+                  <ns6:Policy>
+                    <ns9:TripleDesRsa15></ns9:TripleDesRsa15>
+                  </ns6:Policy>
+                </ns9:AlgorithmSuite>
+                <ns9:Layout>
+                  <ns6:Policy>
+                    <ns9:Strict></ns9:Strict>
+                  </ns6:Policy>
+                </ns9:Layout>
+              </ns6:Policy>
+            </ns9:TransportBinding>
+          </ns6:All>
+        </ns6:ExactlyOne>
+      </ns6:All>
+    </ns6:ExactlyOne>
+  </ns6:Policy>
+</wsdl:definitions>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:nootah="http://www.sap.com/caf/sap.com/caf.core/services" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.sap.com/caf/sap.com/caf.core/services">
+  
+  <xsd:simpleType name="Rid">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="1024"></xsd:maxLength>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ShortText">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="30"></xsd:maxLength>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="UserId">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="32"></xsd:maxLength>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Id">
+    <xsd:restriction base="xsd:string">
+      <xsd:length value="36"></xsd:length>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="LongText">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="256"></xsd:maxLength>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="DocumentLockInfo">
+    <xsd:sequence>
+      <xsd:element maxOccurs="1" minOccurs="0" name="lockOwner" nillable="false" type="nootah:LongText"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="allowUnlock" nillable="false" type="xsd:boolean"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Document">
+    <xsd:sequence>
+      <xsd:element maxOccurs="1" minOccurs="0" name="createdBy" nillable="false" type="nootah:UserId"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="createdAt" nillable="false" type="xsd:dateTime"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="modifiedAt" nillable="false" type="xsd:dateTime"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="modifiedBy" nillable="false" type="nootah:UserId"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="title" nillable="false" type="nootah:LongText"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="link" nillable="false" type="nootah:Rid"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="description" nillable="false" type="nootah:LongText"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="contentLength" nillable="false" type="xsd:long"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="contentType" nillable="false" type="nootah:ShortText"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="parentFolder" nillable="true" type="nootah:Rid"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="1" name="documentId" nillable="true" type="nootah:Rid"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="key" nillable="false" type="nootah:Id"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="RelatedObject">
+    <xsd:sequence>
+      <xsd:element maxOccurs="1" minOccurs="0" name="key" nillable="false" type="nootah:Id"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="createdBy" nillable="false" type="nootah:UserId"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="createdAt" nillable="false" type="xsd:dateTime"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="modifiedAt" nillable="false" type="xsd:dateTime"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="modifiedBy" nillable="false" type="nootah:UserId"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="refObjectKey" nillable="false" type="nootah:Id"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="refObjectType" nillable="false" type="nootah:LongText"></xsd:element>
+      <xsd:element maxOccurs="1" minOccurs="0" name="refObjectRid" nillable="false" type="nootah:Rid"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

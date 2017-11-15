@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Partition xmlns:m='http://xml.sap.com/moin'>
+<C n='sap.com/com/sap/ide/es/config/mc/model' i='1' v='2.0.0'/>
+<C n='sap.com/tc/moin/textverticalization' i='2' v='2.0.0'/>
+<M c='1' q='mc.authentication.AuthenticationProfile' i='471DA641B876CFC1813B11DCC1C3003005C6B92C'/>
+<mc.authentication.AuthenticationProfile m:c='1' m:i='E05CE2FCF02EB1F4EA0C11E69C34548757986900' name='Business User' type='BUSINESS_USER'>
+<displayName maxWidth='120' originalText='Business User' resType='label' translate='false' transUnitId='F02EB1F3EA0C11E6A3EE548757986900' resName='Business User.ap.name'/>
+<description maxWidth='120' originalText='Profile for service invocation with business user authentication.' resType='description' translate='false' transUnitId='F02EB1F2EA0C11E6C7DD548757986900' resName='Business User.ap.description'/>
+</mc.authentication.AuthenticationProfile>
+</Partition>

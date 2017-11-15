@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:p1="http://nobelbiocare.com/rfid_cabinet" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="MI300_GetEvents_Cabinets_os" targetNamespace="http://nobelbiocare.com/rfid_cabinet">
+  <wsdl:documentation/>
+  <wsp:UsingPolicy wsdl:required="true"/>
+  <ifw:properties xmlns:ifw="urn:com-sap:ifr:v2:wsdl">
+    <ifw:category>ifmmessif</ifw:category>
+    <ifw:VersionID>ff5f4b1a7b7611e7a2320000005f8a66</ifw:VersionID>
+    <ifw:lifeCycleInfo>
+      <objectState/>
+      <objectstatus value="A"/>
+      <personresponsible value="chpeji"/>
+      <changed by="chpeji" on="1502113758521"/>
+    </ifw:lifeCycleInfo>
+    <ifw:runtimeVersion uri="urn:sap-com:soap:application:esr:client:710"/>
+    <ifw:communicationProfile uri="prf_dt_if_com_stateless"/>
+    <ifw:securityProfile uri="prf_dt_if_sec_low"/>
+    <ifw:interfacePattern p2p="false">L</ifw:interfacePattern>
+    <ifw:isSensitiveData>false</ifw:isSensitiveData>
+    <ifw:classifications>
+      <ifw:classification name="ObjectType" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-type" valueCode="ifmmessif"/>
+      <ifw:classification name="ObjectID" namespace="http://uddi.sap.com/classification" uddikey="uddi:uddi.sap.com:categorization:object-id" valueCode="5765ebdfacc93ac0a6a6c9f0d73cef78"/>
+    </ifw:classifications>
+    <ifw:additionalAttributes/>
+    <ifw:methods>
+      <ifw:method name="MI300_GetEvents_Cabinets_os">
+        <ifw:isSynchron>true</ifw:isSynchron>
+        <ifw:isIdempotent>false</ifw:isIdempotent>
+        <ifw:isInbound>false</ifw:isInbound>
+        <ifw:interfaceCategory>outbound</ifw:interfaceCategory>
+        <ifw:communicationProfile uri="prf_dt_op_com_sync"/>
+        <ifw:lifeCycleInfo>
+          <objectState/>
+        </ifw:lifeCycleInfo>
+        <ifw:contextobjects/>
+      </ifw:method>
+    </ifw:methods>
+    <ifw:messages>
+      <ifw:message name="MT_GetEvents">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">MT_GetEvents</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://nobelbiocare.com/rfid_cabinet</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://nobelbiocare.com/rfid_cabinet</ifw:technicalNamespace>
+        <ifw:VersionID>8b79063b50e611e7cd890000005f8a66</ifw:VersionID>
+        <ifw:xmlNamespace>http://nobelbiocare.com/rfid_cabinet</ifw:xmlNamespace>
+        <ifw:dataType name="DT_GetEvents" namespace="http://nobelbiocare.com/rfid_cabinet" swcvId="3ac56a60bfd111dead0fca5fc2581f34" uri="name=DT_GetEvents~namespace=http://nobelbiocare.com/rfid_cabinet~swcvId=3ac56a60bfd111dead0fca5fc2581f34"/>
+      </ifw:message>
+      <ifw:message name="MT_EventsResponse">
+        <ifw:messType>ifmmessage</ifw:messType>
+        <ifw:keyElements>
+          <ifw:elem id="NAME">MT_EventsResponse</ifw:elem>
+          <ifw:elem id="NAMESPACE">http://nobelbiocare.com/rfid_cabinet</ifw:elem>
+        </ifw:keyElements>
+        <ifw:technicalNamespace>http://nobelbiocare.com/rfid_cabinet</ifw:technicalNamespace>
+        <ifw:VersionID>c69f7c7c51a511e7c5030000005f8a66</ifw:VersionID>
+        <ifw:xmlNamespace>http://nobelbiocare.com/rfid_cabinet</ifw:xmlNamespace>
+        <ifw:dataType name="DT_EventsResponse" namespace="http://nobelbiocare.com/rfid_cabinet" swcvId="3ac56a60bfd111dead0fca5fc2581f34" uri="name=DT_EventsResponse~namespace=http://nobelbiocare.com/rfid_cabinet~swcvId=3ac56a60bfd111dead0fca5fc2581f34"/>
+      </ifw:message>
+    </ifw:messages>
+    <ifw:matchingInterfaces/>
+    <ifw:genericProperties>
+      <ifw:swcvinfo>
+        <ifw:guid>3ac56a60bfd111dead0fca5fc2581f34</ifw:guid>
+        <ifw:name>RFID_CABINET 1.0 of nobelbiocare.com</ifw:name>
+      </ifw:swcvinfo>
+      <ifw:languages>
+        <ifw:language internalCode="EN" original="true"/>
+      </ifw:languages>
+      <ifw:documentation type="I">
+        <name>_ID_5765ebdfacc93ac0a6a6c9f0d73cef78_ifmmessif</name>
+        <namespace>http://nobelbiocare.com/rfid_cabinet</namespace>
+      </ifw:documentation>
+    </ifw:genericProperties>
+  </ifw:properties>
+  <wsp:Policy wsu:Id="OP_MI300_GetEvents_Cabinets_os"/>
+  <wsdl:types>
+    <xsd:schema xmlns="http://nobelbiocare.com/rfid_cabinet" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://nobelbiocare.com/rfid_cabinet">
+      <xsd:element name="MT_EventsResponse" type="DT_EventsResponse"/>
+      <xsd:element name="MT_GetEvents" type="DT_GetEvents"/>
+      <xsd:complexType name="DT_EventsResponse">
+        <xsd:sequence>
+          <xsd:element name="BatchId" type="xsd:string"/>
+          <xsd:element name="Count" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Events" type="DT_Events"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_GetEvents">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Limit" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>The number of messages to return.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="EventTypes" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>Event types separated by comma. Ex:HeartbeatEvent,SensorReadingEvent</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Device" type="xsd:string">
+            <xsd:annotation>
+              <xsd:documentation>The name of the device.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DT_Events">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="PassRfid" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Observe" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Adds" type="xsd:string"/>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Removes" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Device" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ReceivedTime" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="Type" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EventId" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="EventTime" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MT_GetEvents">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:MT_GetEvents" name="MT_GetEvents"/>
+  </wsdl:message>
+  <wsdl:message name="MT_EventsResponse">
+    <wsdl:documentation/>
+    <wsdl:part element="p1:MT_EventsResponse" name="MT_EventsResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="MI300_GetEvents_Cabinets_os">
+    <wsdl:documentation/>
+    <wsdl:operation name="MI300_GetEvents_Cabinets_os">
+      <wsdl:documentation/>
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_MI300_GetEvents_Cabinets_os"/>
+      </wsp:Policy>
+      <wsdl:input message="p1:MT_GetEvents"/>
+      <wsdl:output message="p1:MT_EventsResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MI300_GetEvents_Cabinets_osBinding" type="p1:MI300_GetEvents_Cabinets_os">
+    <soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="MI300_GetEvents_Cabinets_os">
+      <soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+      <wsdl:input>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+<wsdl:service name="MI300_GetEvents_Cabinets_os_Service">
+<wsdl:port xmlns:bprf="http://nobelbiocare.com/rfid_cabinet" binding="bprf:MI300_GetEvents_Cabinets_osBinding" name="MI300_GetEvents_Cabinets_os_Port">
+<soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="/"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>
