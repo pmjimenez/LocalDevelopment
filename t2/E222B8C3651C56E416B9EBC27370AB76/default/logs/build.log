@@ -1,13 +1,13 @@
-Development Component Build (2017-11-15 17:24:29 GMT+01:00 (CET))
+Development Component Build (2017-11-16 16:27:33 GMT+01:00 (CET))
   Component name: p_teac/bl/br/county
   Component vendor: nobelbiocare.com
   SC compartment: SC_TEAC
   Configuration: LocalDevelopment
   Location: localDevelopment
-  Source code location: pedro.jimenez@MADNB2016
-  DC root folder: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\SC_TEAC\nobelbiocare.com\p_teac\bl\br\county\_comp\
+  Source code location: 3508452@MAD-LROMERODA
+  DC root folder: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\SC_TEAC\nobelbiocare.com\p_teac\bl\br\county\_comp\
   DC type: com.sap.brmside.rulesdctype
-  Host: MADNB2016
+  Host: MAD-LROMERODA
 
 DC Model check:
    DC is available locally
@@ -20,7 +20,7 @@ DC Model check:
 
 Start build plugin:
    using build plugin: sap.com/tc/brms/bi/bp/buildtool
-   starting build plugin from : D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\BRMS-BUILDT\sap.com\tc\brms\bi\bp\buildtool\_comp\gen\default\public\def\
+   starting build plugin from : C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\BRMS-BUILDT\sap.com\tc\brms\bi\bp\buildtool\_comp\gen\default\public\def\
 
 
 
@@ -30,11 +30,11 @@ Build Plugin 'buildpluginbrms', Version 0.1b
                 location:  localDevelopment
                     type:  com.sap.brmside.rulesdctype
            build variant:  default
-         source location:  pedro.jimenez@MADNB2016
-         output location:  D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default
-       generation folder:  D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\E222B8C3651C56E416B9EBC27370AB76
-       plugin start time:  2017-11-15 17:24:29 GMT+01:00 (CET)
-                 Java VM:  Java HotSpot(TM) Client VM, 20.45-b01 (1.6, Sun Microsystems Inc.)
+         source location:  3508452@MAD-LROMERODA
+         output location:  C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default
+       generation folder:  C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t\E222B8C3651C56E416B9EBC27370AB76
+       plugin start time:  2017-11-16 16:27:33 GMT+01:00 (CET)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.13-b02 (1.6, Sun Microsystems Inc.)
 
 
 General options:
@@ -45,73 +45,71 @@ General options:
 
 Source folder "mc" does not exist and will be ignored.
 Checking path lengths for sources
-Path length checks finished in 0.002 seconds
+Path length checks finished in 0.001 seconds
  
 Preparing data context..
-Data context preparation finished in 0.012 seconds
+Data context preparation finished in 0.013 seconds
  
 Creating Ant build file..
-  Creating output file: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\logs\build.xml
+  Creating output file: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\logs\build.xml
   Using Java class:     com.sap.tc.glx.BuildFileCreator
 Mapped output path "default" of generator "sap.com~bpem_chain/moininit" is not defined.
 MoinInit generator started.
 MOIN archive DC referenced: sap.com/tc/bpem/content/predefs/types
-MOIN archive found: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\SERVICE-COMP\sap.com\tc\bpem\content\predefs\types\_comp\gen\default\public\def_cmp\lib\moin\sap.com~tc~bpem~content~predefs~types~def_cmp.zip
+MOIN archive found: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\SERVICE-COMP\sap.com\tc\bpem\content\predefs\types\_comp\gen\default\public\def_cmp\lib\moin\sap.com~tc~bpem~content~predefs~types~def_cmp.zip
 Metamodels found.
 MoinInit generator started.
 MOIN archive DC referenced: sap.com/tc/bpem/content/predefs/types
-MOIN archive found: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\SERVICE-COMP\sap.com\tc\bpem\content\predefs\types\_comp\gen\default\public\def_cmp\lib\moin\sap.com~tc~bpem~content~predefs~types~def_cmp.zip
+MOIN archive found: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\SERVICE-COMP\sap.com\tc\bpem\content\predefs\types\_comp\gen\default\public\def_cmp\lib\moin\sap.com~tc~bpem~content~predefs~types~def_cmp.zip
 Metamodels found.
 Output folder found.
 Target "ScdlBase" has a dependency on "compile" but no such target exists. Dependency will be ignored.
-Build file creation finished in 0.114 seconds
+Build file creation finished in 0.102 seconds
  
 Starting Ant..
-  Using build file:     D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\logs\build.xml
+  Using build file:     C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\logs\build.xml
   Using build target:   build
   Using Ant version:    1.7.1
  
 ScdlBase:
   [MOINInit] Meta models found.
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESCONF_BUILDT\sap.com\ide\es\config\mc\model\bi\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~ide~es~config~mc~model_xmi.zip
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\bpem\bi\model\flow\_comp\gen\default\public\MM_Inf\lib\moin\glx~ide_xmi.jar
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\BPEM-BUILDT\sap.com\tc\bpem\bi\model\triggernet\_comp\gen\default\public\MM_Inf\lib\moin\glx~tnet_xmi.jar
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\wsdl20\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~wsdl20_xmi.zip
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\xsd1\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~xsd1_xmi.zip
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\mie\bi\model\gfw\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~com~sap~mi~gfw~mm~def_assmbl.zip
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip
-  [MOINInit] WARNING: [System.err] [Invoked from com.sap.bc.krn.perf.PerfTimes.internal_TRC(PerfTimes.java:103)]
-  [MOINInit] WARNING: [System.err] PerfTimes : loadNativeLayer: loading jperflib failed. no jperflib in java.library.path
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESCONF_BUILDT\sap.com\ide\es\config\mc\model\bi\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~ide~es~config~mc~model_xmi.zip
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\bpem\bi\model\flow\_comp\gen\default\public\MM_Inf\lib\moin\glx~ide_xmi.jar
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\BPEM-BUILDT\sap.com\tc\bpem\bi\model\triggernet\_comp\gen\default\public\MM_Inf\lib\moin\glx~tnet_xmi.jar
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\wsdl20\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~wsdl20_xmi.zip
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\xsd1\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~xsd1_xmi.zip
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\mie\bi\model\gfw\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~com~sap~mi~gfw~mm~def_assmbl.zip
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip
   [MOINInit] DataArea name: DefaultDataArea
-  [MOINInit] Moin initialized in 2004 milliseconds.
-      [echo] Registering folder: gensrc/extcfg for path: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\E222B8C3651C56E416B9EBC27370AB76\gensrc\extcfg/
+  [MOINInit] Moin initialized in 812 milliseconds.
+      [echo] Registering folder: gensrc/extcfg for path: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t\E222B8C3651C56E416B9EBC27370AB76\gensrc\extcfg/
       [echo] Starting Extension Configuration generator...
   [gen_scdl] 		[SCDL_GEN] Initializing Scdl Generation...
   [gen_scdl] 		[SCDL_GEN] Initialization successfully completed.
   [gen_scdl] 		[SCDL_GEN] Starting retrieval of information from contributors...
   [gen_scdl] 		[SCDL_GEN] Information retrieval from contributors successfully completed!
   [gen_scdl] 		[SCDL_GEN] Starting composite export to SCDL...
-  [gen_scdl] 			[SCDL-EXPORT] Scdl file output location: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\E222B8C3651C56E416B9EBC27370AB76/scdl_output\META-INF\p_teac~bl~br~county.composite
-  [gen_scdl] 			[SCDL-EXPORT] sca contribution XML output location: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\E222B8C3651C56E416B9EBC27370AB76/scdl_output\META-INF\sca-contribution.xml
+  [gen_scdl] 			[SCDL-EXPORT] Scdl file output location: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t\E222B8C3651C56E416B9EBC27370AB76/scdl_output\META-INF\p_teac~bl~br~county.composite
+  [gen_scdl] 			[SCDL-EXPORT] sca contribution XML output location: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t\E222B8C3651C56E416B9EBC27370AB76/scdl_output\META-INF\sca-contribution.xml
   [gen_scdl] 		[SCDL_GEN] Conversion successfully completed!
-     [timer] Extension Configuration generator finished in 0.123 seconds
+     [timer] Extension Configuration generator finished in 0.047 seconds
  
 [MOINShutdown] About to shutdown MOIN...
-[MOINShutdown] MOIN shut down in 52 milliseconds.
+[MOINShutdown] MOIN shut down in 51 milliseconds.
  
 Bpem:
   [MOINInit] Meta models found.
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESCONF_BUILDT\sap.com\ide\es\config\mc\model\bi\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~ide~es~config~mc~model_xmi.zip
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\bpem\bi\model\flow\_comp\gen\default\public\MM_Inf\lib\moin\glx~ide_xmi.jar
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\BPEM-BUILDT\sap.com\tc\bpem\bi\model\triggernet\_comp\gen\default\public\MM_Inf\lib\moin\glx~tnet_xmi.jar
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\wsdl20\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~wsdl20_xmi.zip
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\xsd1\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~xsd1_xmi.zip
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\mie\bi\model\gfw\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~com~sap~mi~gfw~mm~def_assmbl.zip
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip
-  [MOINInit] Referenced meta-model: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESCONF_BUILDT\sap.com\ide\es\config\mc\model\bi\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~ide~es~config~mc~model_xmi.zip
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\bpem\bi\model\flow\_comp\gen\default\public\MM_Inf\lib\moin\glx~ide_xmi.jar
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\BPEM-BUILDT\sap.com\tc\bpem\bi\model\triggernet\_comp\gen\default\public\MM_Inf\lib\moin\glx~tnet_xmi.jar
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\wsdl20\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~wsdl20_xmi.zip
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\xsd1\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~xsd1_xmi.zip
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\mie\bi\model\gfw\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~com~sap~mi~gfw~mm~def_assmbl.zip
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip
+  [MOINInit] Referenced meta-model: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip
   [MOINInit] DataArea name: DefaultDataArea
-  [MOINInit] Moin initialized in 891 milliseconds.
+  [MOINInit] Moin initialized in 846 milliseconds.
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Metamodel version validation...
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Sanity check is enabled, com.glx.sanity.check system property isn't false.
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.SourceVersioner compile(host, artifact) - Generating version IDs for sources...
@@ -132,15 +130,15 @@ Bpem:
   [BpemTask] BC-BMT-BPM-SRV com.sap.tc.glx.BpemTask execute() - Initiating process compilation.
   [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA copyMcArchive(File publicFolder) -Including Mass Configuration archive into sda
   [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA copyScdlFiles(File scdlFolder) - Including SCDL files into sda
-  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA getSubdirFiles(String parent, File subdir)  - copyFile: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\deploy\ctx/p_teac~bl~br~county.composite
-  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA getSubdirFiles(String parent, File subdir)  - copyFile: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\deploy\ctx/sca-contribution.xml
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA getSubdirFiles(String parent, File subdir)  - copyFile: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\deploy\ctx/p_teac~bl~br~county.composite
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA getSubdirFiles(String parent, File subdir)  - copyFile: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\deploy\ctx/sca-contribution.xml
   [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA copyScdlGlobalizationFiles(File scdlXlfFolder) - Including SCDL globalization files into sda
   [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA execute(name, vendor, location, version, srcDir) -Generating SDA...
-  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA generateArchive(outArchive, srcDir) - D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\deploy\ctx\nobelbiocare.com~p_teac~bl~br~county.bpem archive is generated
+  [BpemTask] BC-BMT-BPM-SRV com.sap.glx.paradigmInterface.util.GenerateSDA generateArchive(outArchive, srcDir) - C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\deploy\ctx\nobelbiocare.com~p_teac~bl~br~county.bpem archive is generated
 [MOINShutdown] About to shutdown MOIN...
-[MOINShutdown] MOIN shut down in 65 milliseconds.
-    [delete] Deleting directory D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\deploy\ctx
-    [delete] Deleting: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\deploy\sda-dd.xml
+[MOINShutdown] MOIN shut down in 58 milliseconds.
+    [delete] Deleting directory C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\deploy\ctx
+    [delete] Deleting: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\deploy\sda-dd.xml
  
 createPublicParts:
   [pppacker] Packing public part 'def_cmp'
@@ -161,24 +159,24 @@ createPublicParts:
   [pppacker] Checking path: src
   [pppacker] Packed  11 files for entity src (Model Folder Tree)
   [pppacker] Packed 3 entities for public part 'def_cmp'
-     [timer] Packing of public part 'def_cmp' finished in 0.086 seconds
+     [timer] Packing of public part 'def_cmp' finished in 0.135 seconds
  
  
 build:
  
-Ant runtime 6.083 seconds
+Ant runtime 2.926 seconds
  
 Ant build finished OK
 MOIN forced shutdown initiated.
  
-Build plugin finished at 2017-11-15 17:24:36 GMT+01:00 (CET)
-Total build plugin runtime: 6.513 seconds
+Build plugin finished at 2017-11-16 16:27:37 GMT+01:00 (CET)
+Total build plugin runtime: 3.527 seconds
  
 Build finished with WARNING
 
-==== Post-Processing ====   started at 2017-11-15 17:24:36.453 CET
-Comparison of previous and actual build results took: 0.006 seconds
+==== Post-Processing ====   started at 2017-11-16 16:27:37.318 CET
+Comparison of previous and actual build results took: 0.01 seconds
 
 Copy the build results 
-  from: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\
-  to:   D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\SC_TEAC\nobelbiocare.com\p_teac\bl\br\county\_comp\gen\default\
+  from: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\
+  to:   C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\SC_TEAC\nobelbiocare.com\p_teac\bl\br\county\_comp\gen\default\

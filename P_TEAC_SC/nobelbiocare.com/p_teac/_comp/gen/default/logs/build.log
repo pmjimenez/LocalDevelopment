@@ -1,13 +1,13 @@
-Development Component Build (2017-11-15 17:23:55 GMT+01:00 (CET))
+Development Component Build (2017-11-16 16:23:50 GMT+01:00 (CET))
   Component name: p_teac
   Component vendor: nobelbiocare.com
   SC compartment: P_TEAC_SC
   Configuration: LocalDevelopment
   Location: localDevelopment
-  Source code location: pedro.jimenez@MADNB2016
-  DC root folder: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac\_comp\
+  Source code location: 3508452@MAD-LROMERODA
+  DC root folder: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac\_comp\
   DC type: Product Description
-  Host: MADNB2016
+  Host: MAD-LROMERODA
 
 DC Model check:
    DC is available locally
@@ -18,7 +18,7 @@ DC Model check:
 
 Start build plugin:
    using build plugin: sap.com/tc/bi/bp/pdef
-   starting build plugin from : D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\pdef\_comp\gen\default\public\def\
+   starting build plugin from : C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\SAP_BUILDT\sap.com\tc\bi\bp\pdef\_comp\gen\default\public\def\
 
 
 
@@ -29,11 +29,11 @@ Build Plugin 'sap.com/tc/bi/bp/pdef', Version 7.30 SP 17 (NW731CORE_17_REL, buil
                 location:  localDevelopment
                     type:  Product Description
            build variant:  default
-         source location:  pedro.jimenez@MADNB2016
-         output location:  D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\B3727BB4E97AC0955319D5C6E0496EAF\default
-       generation folder:  D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF
-       plugin start time:  2017-11-15 17:23:55 GMT+01:00 (CET)
-                 Java VM:  Java HotSpot(TM) Client VM, 20.45-b01 (1.6, Sun Microsystems Inc.)
+         source location:  3508452@MAD-LROMERODA
+         output location:  C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\B3727BB4E97AC0955319D5C6E0496EAF\default
+       generation folder:  C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF
+       plugin start time:  2017-11-16 16:23:50 GMT+01:00 (CET)
+                 Java VM:  Java HotSpot(TM) Client VM, 20.13-b02 (1.6, Sun Microsystems Inc.)
 
 
 General options:
@@ -46,39 +46,39 @@ Checking path lengths for sources
 Path length checks finished in 0 seconds
  
 Preparing data context..
-Data context preparation finished in 0 seconds
+Data context preparation finished in 0.012 seconds
  
 Creating Ant build file..
-  Creating output file: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\B3727BB4E97AC0955319D5C6E0496EAF\default\logs\build.xml
+  Creating output file: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\B3727BB4E97AC0955319D5C6E0496EAF\default\logs\build.xml
   Using Java class:     com.sap.tc.buildplugin.pdef.PdefBuildFileCreator
   +++ com.sap.tc.buildplugin.pdef.PdefBuildFileCreator: chainName: sap.com~sl.pdef_chain
   +++ forcing SDA creation, DC does not contain complete product model
-Build file creation finished in 0.031 seconds
+Build file creation finished in 0.025 seconds
  
 Starting Ant..
-  Using build file:     D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\B3727BB4E97AC0955319D5C6E0496EAF\default\logs\build.xml
+  Using build file:     C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\B3727BB4E97AC0955319D5C6E0496EAF\default\logs\build.xml
   Using build target:   build
   Using Ant version:    1.7.1
  
 translate:
       [echo] +++ com.sap.tc.buildplugin.pdef.PdefTaskGenerator: taskName: PdefGeneratorTask
-      [echo] localContext: com.sap.tc.buildplugin.util.DataContext@1168b43
-      [echo] inputPaths: {compile_pp=[D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac_sc\_comp\gen\default\public\default, D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\SC_TEAC\nobelbiocare.com\sc_teac\_comp\gen\default\public\default], source=[D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac\_comp\src]}
-      [echo] outputPaths: {default=D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\testoutput, packdir=D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sld_pack01, tempdir=D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sld_temp01}
+      [echo] localContext: com.sap.tc.buildplugin.util.DataContext@ecdd48
+      [echo] inputPaths: {compile_pp=[C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac_sc\_comp\gen\default\public\default, C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\SC_TEAC\nobelbiocare.com\sc_teac\_comp\gen\default\public\default], source=[C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac\_comp\src]}
+      [echo] outputPaths: {default=C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\testoutput, packdir=C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sld_pack01, tempdir=C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sld_temp01}
       [echo] usedPaths: {}
       [echo] parameters: {outputFolderName=testoutput}
-      [echo] File(source): D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac\_comp\src
-      [echo] File(compile_pp): D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac_sc\_comp\gen\default\public\default
-      [echo] File(compile_pp): D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\SC_TEAC\nobelbiocare.com\sc_teac\_comp\gen\default\public\default
+      [echo] File(source): C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac\_comp\src
+      [echo] File(compile_pp): C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac_sc\_comp\gen\default\public\default
+      [echo] File(compile_pp): C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\SC_TEAC\nobelbiocare.com\sc_teac\_comp\gen\default\public\default
 [PdefGeneratorTask] Executing inside of com.sap.tc.buildplugin.pdef.PdefValidator...
-[PdefGeneratorTask] packDir: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sld_pack01
-[PdefGeneratorTask] tempDir: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sld_temp01
+[PdefGeneratorTask] packDir: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sld_pack01
+[PdefGeneratorTask] tempDir: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t\B3727BB4E97AC0955319D5C6E0496EAF\sld_temp01
  
 createPublicParts:
   [pppacker] Packing public part 'default'
   [pppacker] Packed   1 file  for entity / (Folder)
   [pppacker] Packed 1 entity for public part 'default'
-     [timer] Packing of public part 'default' finished in 0.031 seconds
+     [timer] Packing of public part 'default' finished in 0.03 seconds
  
  
 createDeployArchive:
@@ -88,40 +88,37 @@ createDeployArchive:
        [cda]     software-type = CONTENT
        [cda]     software-subtype = SL-SDA
  
-       [cda] Creating Ant build file: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\B3727BB4E97AC0955319D5C6E0496EAF\default\logs\buildDeployArchive.xml
+       [cda] Creating Ant build file: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\B3727BB4E97AC0955319D5C6E0496EAF\default\logs\buildDeployArchive.xml
  
  
        [cda] Collecting modules ...
-       [cda] Ant build file creation finished in 0.017 seconds
+       [cda] Ant build file creation finished in 0.026 seconds
  
 packDeployArchive:
  [srcpacker] Creating source archive
  [srcpacker] No sources available for packing, no archive will be created.
-     [timer] Source archive creation finished in 0 seconds
+     [timer] Source archive creation finished in 0.016 seconds
  
     [jarsap] Info: JarSAP version 20090803.1000
     [jarsap] Info: JarSAPProcessing version 20090907.1000 / JarSL version 20100616.1800
-    [jarsap] Building: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\B3727BB4E97AC0955319D5C6E0496EAF\default\deploy\nobelbiocare.com~p_teac.sda with compression
-     [timer] JarSAP finished in 0.015 seconds
+    [jarsap] Building: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\B3727BB4E97AC0955319D5C6E0496EAF\default\deploy\nobelbiocare.com~p_teac.sda with compression
+     [timer] JarSAP finished in 0.029 seconds
  
  
 build:
  
-Ant runtime 1.066 seconds
+Ant runtime 0.874 seconds
  
 Ant build finished OK
  
-Build plugin finished at 2017-11-15 17:23:56 GMT+01:00 (CET)
-Total build plugin runtime: 1.198 seconds
+Build plugin finished at 2017-11-16 16:23:51 GMT+01:00 (CET)
+Total build plugin runtime: 1.011 seconds
  
 Build finished OK
 
-==== Post-Processing ====   started at 2017-11-15 17:23:56.651 CET
-Comparison of previous and actual build results took: 0 seconds
+==== Post-Processing ====   started at 2017-11-16 16:23:51.449 CET
+Comparison of previous and actual build results took: 0.008 seconds
 
 Copy the build results 
-  from: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\B3727BB4E97AC0955319D5C6E0496EAF\default\
-  to:   D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac\_comp\gen\default\
-
-The build results of the following public parts were not copied, since they have not changed:
-  default
+  from: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\B3727BB4E97AC0955319D5C6E0496EAF\default\
+  to:   C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac\_comp\gen\default\

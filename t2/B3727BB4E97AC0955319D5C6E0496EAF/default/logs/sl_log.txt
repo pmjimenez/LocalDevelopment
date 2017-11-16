@@ -1,23 +1,23 @@
->>> === execute (on Wed Nov 15 17:23:55 CET 2017)===
-com.sap.tc.buildplugin.pdef.PdefValidator: Execution starts on Wed Nov 15 17:23:55 CET 2017
+>>> === execute (on Thu Nov 16 16:23:50 CET 2017)===
+com.sap.tc.buildplugin.pdef.PdefValidator: Execution starts on Thu Nov 16 16:23:50 CET 2017
 
 
 
-File: sourceDir1: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac\_comp\src
-File: compilePPDir1: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac_sc\_comp\gen\default\public\default
-File: compilePPDir2: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\SC_TEAC\nobelbiocare.com\sc_teac\_comp\gen\default\public\default
+File: sourceDir1: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac\_comp\src
+File: compilePPDir1: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac_sc\_comp\gen\default\public\default
+File: compilePPDir2: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\SC_TEAC\nobelbiocare.com\sc_teac\_comp\gen\default\public\default
 >>> === getProductValueMap===
-InputFileMap: {.description=D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac\_comp\src\.description}
-Reading product info from: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac\_comp\src\.description
+InputFileMap: {.description=C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac\_comp\src\.description}
+Reading product info from: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac\_comp\src\.description
 ProductValueMap: {Name=P_TEAC, Vendor=nobelbiocare.com, Version=1.0}
 <<< === getProductValueMap===
 >>> === generateProductCR===
 >>> === getSoftcompValueMap===
-InputFileMap: {.description=D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac_sc\_comp\gen\default\public\default\.description}
+InputFileMap: {.description=C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\P_TEAC_SC\nobelbiocare.com\p_teac_sc\_comp\gen\default\public\default\.description}
 SoftcompValueMap: {Name=P_TEAC_SC, GUID=445dc570-6df5-11e6-a6ad-c5f80a3e750b, Vendor=nobelbiocare.com, ElementTypeID=0, Version=1.0}
 <<< === getSoftcompValueMap===
 >>> === getSoftcompValueMap===
-InputFileMap: {.description=D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\SC_TEAC\nobelbiocare.com\sc_teac\_comp\gen\default\public\default\.description}
+InputFileMap: {.description=C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\SC_TEAC\nobelbiocare.com\sc_teac\_comp\gen\default\public\default\.description}
 SoftcompValueMap: {Name=SC_TEAC, GUID=34ca0a10-6df5-11e6-c697-c5f80a3e750b, Vendor=nobelbiocare.com, ElementTypeID=0, Version=1.0}
 <<< === getSoftcompValueMap===
 Opening model input stream from plugin resource for task: ModelImport
@@ -46,4 +46,4 @@ Resource opened for ModelCopy: data/cimmodel.dat
 <<< === generateProductCR===
 >>> === generateProductLD===
 <<< === generateProductLD===
-com.sap.tc.buildplugin.pdef.PdefValidator: Execution ends on Wed Nov 15 17:23:56 CET 2017
+com.sap.tc.buildplugin.pdef.PdefValidator: Execution ends on Thu Nov 16 16:23:51 CET 2017

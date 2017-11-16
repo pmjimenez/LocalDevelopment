@@ -12,12 +12,12 @@
                    vendor: nobelbiocare.com
 
                  location: localDevelopment
-          source location: pedro.jimenez@MADNB2016
+          source location: 3508452@MAD-LROMERODA
             build variant: default
 
-    building on MADNB2016, Windows 8/x86, version 6.2
-    using Java VM 'Java HotSpot(TM) Client VM', version 20.45-b01 (Sun Microsystems Inc.)
-    build started at 2017-11-15 17:24:30 GMT+01:00 (CET)
+    building on MAD-LROMERODA, Windows 8/x86, version 6.2
+    using Java VM 'Java HotSpot(TM) Client VM', version 20.13-b02 (Sun Microsystems Inc.)
+    build started at 2017-11-16 16:27:34 GMT+01:00 (CET)
 
     Build Plugin 'buildpluginbrms', Version 0.1b
     detailed versions:
@@ -67,14 +67,14 @@
 <MoinDcConfigurationProviderProxyTask/>
 <MOINInit>
 <metaModelsPath>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESCONF_BUILDT\sap.com\ide\es\config\mc\model\bi\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~ide~es~config~mc~model_xmi.zip"/>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\bpem\bi\model\flow\_comp\gen\default\public\MM_Inf\lib\moin\glx~ide_xmi.jar"/>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\BPEM-BUILDT\sap.com\tc\bpem\bi\model\triggernet\_comp\gen\default\public\MM_Inf\lib\moin\glx~tnet_xmi.jar"/>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\wsdl20\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~wsdl20_xmi.zip"/>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\xsd1\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~xsd1_xmi.zip"/>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\mie\bi\model\gfw\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~com~sap~mi~gfw~mm~def_assmbl.zip"/>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip"/>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESCONF_BUILDT\sap.com\ide\es\config\mc\model\bi\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~ide~es~config~mc~model_xmi.zip"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\bpem\bi\model\flow\_comp\gen\default\public\MM_Inf\lib\moin\glx~ide_xmi.jar"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\BPEM-BUILDT\sap.com\tc\bpem\bi\model\triggernet\_comp\gen\default\public\MM_Inf\lib\moin\glx~tnet_xmi.jar"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\wsdl20\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~wsdl20_xmi.zip"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\xsd1\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~xsd1_xmi.zip"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\mie\bi\model\gfw\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~com~sap~mi~gfw~mm~def_assmbl.zip"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip"/>
 </metaModelsPath>
 </MOINInit>
 <MoinShutdownHookInstallerTask/>
@@ -86,8 +86,8 @@
 <MOINShutdown/>
 <!-- end generator id 'sap.com~bpem_chain/shutdown', type 'sap.com~moinshutdown' -->
 <!-- end generator chain id 'sap.com~bpem_chain', type 'sap.com~bpem_chain' -->
-<delete dir="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\deploy\ctx"/>
-<delete file="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\deploy\sda-dd.xml"/>
+<delete dir="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\deploy\ctx"/>
+<delete file="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t2\E222B8C3651C56E416B9EBC27370AB76\default\deploy\sda-dd.xml"/>
 </target>
 
 <target name="ScdlBase">
@@ -96,17 +96,17 @@
 <MoinDcConfigurationProviderProxyTask/>
 <MOINInit>
 <metaModelsPath>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESCONF_BUILDT\sap.com\ide\es\config\mc\model\bi\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~ide~es~config~mc~model_xmi.zip"/>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\bpem\bi\model\flow\_comp\gen\default\public\MM_Inf\lib\moin\glx~ide_xmi.jar"/>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\BPEM-BUILDT\sap.com\tc\bpem\bi\model\triggernet\_comp\gen\default\public\MM_Inf\lib\moin\glx~tnet_xmi.jar"/>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\wsdl20\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~wsdl20_xmi.zip"/>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\xsd1\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~xsd1_xmi.zip"/>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\mie\bi\model\gfw\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~com~sap~mi~gfw~mm~def_assmbl.zip"/>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip"/>
-<pathelement location="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESCONF_BUILDT\sap.com\ide\es\config\mc\model\bi\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~ide~es~config~mc~model_xmi.zip"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\bpem\bi\model\flow\_comp\gen\default\public\MM_Inf\lib\moin\glx~ide_xmi.jar"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\BPEM-BUILDT\sap.com\tc\bpem\bi\model\triggernet\_comp\gen\default\public\MM_Inf\lib\moin\glx~tnet_xmi.jar"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\wsdl20\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~wsdl20_xmi.zip"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\ESMP_BUILDT\sap.com\tc\esmp\bi\model\xsd1\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~esmp~model~xsd1_xmi.zip"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\mie\bi\model\gfw\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~com~sap~mi~gfw~mm~def_assmbl.zip"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\textverticalization\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~textverticalization_xmi.zip"/>
+<pathelement location="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\MOIN_BUILDT\sap.com\tc\moin\bi\model\util\_comp\gen\default\public\MM_Inf\lib\moin\sap.com~tc~moin~model~util_xmi.zip"/>
 </metaModelsPath>
 </MOINInit>
-<echo message="Registering folder: gensrc/extcfg for path: D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\E222B8C3651C56E416B9EBC27370AB76\gensrc\extcfg/"/>
+<echo message="Registering folder: gensrc/extcfg for path: C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t\E222B8C3651C56E416B9EBC27370AB76\gensrc\extcfg/"/>
 <MoinShutdownHookInstallerTask/>
 <!-- end generator id 'sap.com~scdl_gen_chain/moininit', type 'sap.com~moininit' -->
 <!-- begin generator id 'sap.com~scdl_gen_chain/gen_scdl', type 'sap.com~gen_scdl' -->
@@ -120,7 +120,7 @@
 <!-- end generator id 'sap.com~scdl_gen_chain/shutdown', type 'sap.com~moinshutdown' -->
 <!-- end generator chain id 'sap.com~scdl_gen_chain', type 'sap.com~scdl_gen_chain' -->
 <prepda>
-<fileset dir="D:\Users\pedro.jimenez\Desktop\TestNobel\eclipse\workspace.jdi\LocalDevelopment\t\E222B8C3651C56E416B9EBC27370AB76/scdl_output">
+<fileset dir="C:\NWDS74_SP17(for 12)\eclipse\workspace__TEST.jdi\LocalDevelopment\t\E222B8C3651C56E416B9EBC27370AB76/scdl_output">
 <include name="META-INF/**"/>
 </fileset>
 </prepda>
