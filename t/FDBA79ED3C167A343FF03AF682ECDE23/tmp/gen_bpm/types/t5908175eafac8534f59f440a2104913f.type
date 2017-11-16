@@ -1,5 +1,0 @@
-ROOT_0,TARGET_NAMESPACE=http://nobelbiocare.com/BPM/TnE
-ROOT_0,SCHEMA_LOCATION=http://nobelbiocare.com/BPM/TnE
-ROOT_0,ROOTID=0
-ROOT_0,SCHEMA=<?xml version="1.0" encoding="UTF-8"?> <xsd:schema targetNamespace="http://nobelbiocare.com/BPM/TnE" xmlns:tns="http://nobelbiocare.com/BPM/TnE" xmlns:xsd="http://www.w3.org/2001/XMLSchema">   <xsd:element name="MT_Course_Replication_Result" type="tns:DT_Course_Replication_Result" sdox:aliasName="$http://nobelbiocare.com/BPM/TnE:MT_Course_Replication_Result" xmlns:sdox="commonj.sdo/xml"></xsd:element>   <xsd:complexType name="DT_Course_Replication_Result" sdox:aliasName="#DT_Course_Replication_Result" xmlns:sdox="commonj.sdo/xml">     <xsd:sequence>       <xsd:element name="Id" type="xsd:string" sdox:aliasName="$Id"></xsd:element>       <xsd:element name="Result" type="xsd:string" sdox:aliasName="$Result"></xsd:element>       <xsd:element name="Error" type="xsd:boolean" sdox:aliasName="$Error">         <xsd:annotation>           <xsd:documentation>True means that an error has been detected</xsd:documentation>         </xsd:annotation>       </xsd:element>     </xsd:sequence>   </xsd:complexType> </xsd:schema> 
-
